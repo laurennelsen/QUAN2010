@@ -1,0 +1,645 @@
+\documentclass[12pt, letterpaper]{article}
+%\usepackage{geometry}
+\usepackage[inner=1.75cm,outer=1.75cm,top=1.75cm, bottom=1.75cm]{geometry}
+\pagestyle{empty}
+\usepackage{graphicx,multicol}
+%\usepackage{pdfpages}
+\usepackage{fancyhdr, lastpage, bbding, pmboxdraw}
+\usepackage[usenames,dvipsnames]{color}
+\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{darkred}{rgb}{.7,0,0}
+\definecolor{darkgreen}{rgb}{0,.6,0}
+\usepackage[colorlinks,pagebackref,pdfusetitle, urlcolor=darkblue,citecolor=darkblue, linkcolor=darkred,bookmarksnumbered,plainpages=false]{hyperref}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\newcommand{\ddx}{\frac{d}{dx}}
+\newcommand{\dydx}{\frac{dy}{dx}}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\dy}{\frac{dy}{dx}}
+
+\usepackage{tikzsymbols}
+
+\usepackage{bchart}
+
+\newcommand{\headervariable}{Chapter 9}
+
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{ \fancyplain{}{QUAN 2010, UCCS} }
+%\chead{ \fancyplain{}{} }
+\rhead{ \fancyplain{}{Course Notes:  \headervariable} }
+%\rfoot{\fancyplain{}{page \thepage\ of \pageref{LastPage}}}
+\fancyfoot[RO, LE]{\textbf{Chapter 9} page \thepage }
+\thispagestyle{plain}
+
+%%%%%%%%%%%% LISTING %%%
+\usepackage{listings}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\usepackage{verbatim} % used to display code
+\usepackage{fancyvrb}
+\usepackage{acronym}
+\usepackage{amsthm}
+%\VerbatimFootnotes % Required, otherwise verbatim does not work in footnotes!
+
+\usepackage{mathrsfs}
+
+
+\usepackage{arydshln} %For dashed lines in tabular environments.
+\usepackage{amssymb} %For \square.
+\usepackage{amsmath} %For align* and other things.
+\DeclareMathOperator{\csch}{csch}
+\DeclareMathOperator{\sech}{sech}
+\usepackage{enumerate}%,enumitem}
+
+
+
+\usepackage{ulem} %For strikeout text.
+
+\usepackage[final]{pdfpages} %For including PDF pages.
+
+\usepackage{hyperref}
+
+\newcommand{\laplace}{\mathscr{L}}
+\newcommand{\su}{\mathcal{U}}
+
+
+
+%\newcounter{LO}
+%\newcounter{LOexample}
+%\newcounter{LOtemp}
+
+\newcounter{exercise}
+
+\newcounter{visualconnection}
+
+%\usepackage{tcolorbox} %For boxing the text.
+\usepackage[skins]{tcolorbox}
+\usepackage{pgf}
+
+\newtcolorbox{statement}{colback=gray!10!white,colframe=black}
+
+\newtcolorbox{exercise}{colback=white,colframe=green!50!black,fonttitle=\bfseries,colbacktitle=gray, title={\stepcounter{exercise} Exercise \theexercise}}
+
+\newtcolorbox{contd}{colback=white,colframe=green!50!black,fonttitle=\bfseries,colbacktitle=gray, title={Exercise \theexercise, cont'd}}
+
+\newtcolorbox{learninggoal}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large L}EARNING~~{\Large G}OAL}}
+
+\newtcolorbox{defn}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large D}EFINITION}}
+
+\newtcolorbox{theorem}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large T}HEOREM}}
+
+\newtcolorbox{question}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large Q}UESTION}}
+
+
+\newtcolorbox{warning}{skin=enhanced, colback=gray!10!white, colframe=black, fonttitle=\bfseries, colbacktitle=white, coltitle=red!50!gray, attach boxed title to top left={xshift=3mm,yshift=-2mm}, title={\large Warning!}}
+
+\newtcolorbox{visualconnection}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=white, coltitle=blue!50!gray, attach boxed title to top left={xshift=3mm,yshift=-2mm}, title={\large\stepcounter{visualconnection} Visual Connection \Alph{visualconnection}}}
+
+\newtcolorbox{remark}{colback=white,colframe=black}
+
+
+
+%\usepackage[latin1]{inputenc} %Needed for accented characters?
+%\usepackage{amsfonts}
+%\usepackage{latexsym}
+
+%To print solutions, use \solutionstrue; To hide solutions, use \solutionsfalse.
+%\sol takes two arguments. #1 is the vertical length. #2 is the text.
+
+
+\newif\ifsolutions
+\solutionsfalse
+
+\ifsolutions
+    \newcommand{\soln}[2]{\begin{minipage}[c][#1]{\linewidth}{\textcolor{blue}{\textbf{Solution:}}\quad \textcolor{blue}{#2}}\end{minipage}}
+    \newcommand{\opsoln}[1]{#1}
+    \newcommand{\tblsoln}[1]{\textcolor{blue}{#1}}
+\else
+    \newcommand{\soln}[2]{\begin{minipage}[c][#1]{\linewidth}{\vfill}\end{minipage}}
+    \newcommand{\opsoln}[1]{0}
+    \newcommand{\tblsoln}[1]{\textcolor{white}{#1}}
+\fi
+
+\ifsolutions
+    \newcommand{\sol}[2]{\begin{minipage}[c][#1]{\linewidth}{\textcolor{blue}{}\quad \textcolor{blue}{#2}}\end{minipage}}
+    \newcommand{\opsol}[1]{#1}
+    \newcommand{\tblsol}[1]{\textcolor{blue}{#1}}
+\else
+    \newcommand{\sol}[2]{\begin{minipage}[c][#1]{\linewidth}{\vfill}\end{minipage}}
+    \newcommand{\opsol}[1]{0}
+    \newcommand{\tblsol}[1]{\textcolor{white}{#1}}
+\fi
+
+
+\renewcommand*\contentsname{Table of Contents}
+
+
+\usepackage{tocloft}
+\setlength\cftparskip{7pt}
+
+%From IODE:
+\newcommand{\vs}{\vskip.2cm} %customizable command for inserting small vertical space.  Usually appears between paragraphs.
+\usepackage[inline,shortlabels]{enumitem} % gives ability to continue with numbering (add [resume] after \begin{enumerate}) AND to make horizontal lists by adding * to enumerate (\begin{enumerate*})
+
+%\newcommand{\ds}{\displaystyle}
+\newcommand{\vv}{\vec{v}}
+\newcommand{\uu}{\vec{u}}
+\newcommand{\yy}{\vec{y}}
+
+\newcommand{\ww}{\textbf{w}}
+\newcommand{\xx}{\textbf{x}}
+\newcommand{\bb}{\textbf{b}}
+\newcommand{\dt}{\frac{d}{dt}}
+
+\newcommand{\RR}{\mathbb{R}}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}[thm]{Example}
+
+
+\theoremstyle{definition}
+%\newtheorem{defn}[thm]{Definition}
+
+\begin{document}
+
+%\setcounter{page}{1}
+\pagenumbering{arabic}
+
+
+\begin{center}
+
+{\LARGE \textsc{Chapter 9:  Hypothesis Testing for a Single Population}}
+\end{center}
+
+\begin{statement}
+\section*{The Big Idea}
+
+Hypothesis testing is one of the most widely used procedures in statistics today, so we will spend more than one chapter discussing it.  What is a hypothesis test?
+
+\vspace*{.1in}
+
+The basic idea behind hypothesis testing is to assume that a population parameter equals some value (the null hypothesis), draw a sample and calculate a statistic, then use sampling distributions concepts to determine the likelihood of drawing such a sample, given the assumption of the parameter value.
+
+\vspace*{.1in}
+
+Suppose we draw a random sample from the population and get a sample mean higher than the population mean.  How far it is from the population mean?  If $\mu$ is true, what is the probability that we would get this value?  Is it so different from our hypothesized mean that our hypothesis cannot be true?  We have to decide what ``so different" means.  Our sampling distribution tells us that the mean of all possible sample means should be the same as $\mu$, so we can use those probability concepts to decide whether we think this sample statistic is extreme enough from the hypothesized mean to reject the null hypothesis.
+
+\end{statement}
+
+
+\section*{Stating the Hypotheses}
+
+
+\begin{defn}
+\begin{itemize}
+
+\item A \textbf{hypothesis} is...
+\vspace*{.5in}
+
+\item The \textbf{null hypothesis}, denoted $H_0$, represents the status quo and involves stating...
+\vspace*{.5in}
+
+\item The \textbf{alternative hypothesis}, denoted $H_1$, represents the opposite of $H_0$, and is believed to be true if...
+\vspace*{.5in}
+
+\end{itemize}
+
+\end{defn}
+
+
+\begin{statement}
+\noindent\textbf{Example:}
+\begin{itemize}
+\item $H_0$: No more than $30\%$ of the registered voters in Santa Clara County voted in the primary election. 
+\item $H_1$: More than $30\%$ of the registered voters in Santa Clara County voted in the primary election. 
+\end{itemize}
+\end{statement}
+
+\begin{exercise}
+A medical trial is conducted to test whether or not a new medicine reduces cholesterol by $25\%$. State the null and alternative hypotheses.
+
+\end{exercise}
+
+\vfill
+
+\begin{statement}
+\noindent The purpose of hypothesis statements is to draw a conclusion about population parameters.
+\end{statement}
+
+\begin{exercise}
+We want to test whether the mean height of eighth graders is $66$ inches. State the null and alternative hypotheses. Fill in the correct symbol ($=$, $\neq$, $\geq$, $<$, $\leq $, $>$) for the null and alternative hypotheses.
+
+
+\end{exercise}
+
+\begin{itemize}
+\item $H_0$:  $\mu\underline{~~~~~~~~~}66$
+\vspace*{.1in}
+\item $H_1$:  $\mu\underline{~~~~~~~~~}66$\vspace*{.1in}
+
+\end{itemize}
+
+\begin{statement}
+\begin{itemize}
+\item A \textbf{one-tail hypothesis test} has an alternative hypothesis\\
+
+\vspace*{.2in} \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+
+\item A \textbf{two-tail hypothesis test} has an alternative hypothesis\\
+
+\vspace*{.2in} \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+
+
+\end{itemize}
+\end{statement}
+
+\newpage
+
+
+
+\begin{exercise}  (Your Turn 1)
+
+Identify the null and alternative hypotheses for each scenario.  Which involve a one-tail test and which involve a two-tail test?
+
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item In an effort to increase the number of people who fild their returns electronically, suppose the Internal Revenue Service (IRS) launches a promotional campaign on the benefits of this filing method.  As a follow-up to the campaign's effectiveness, the IRS would like to test if the proportion of people who plan to be ``e-filers" for the next tax season will exceed $70\%$.
+
+\vfill
+
+\item To plan properly for equipment and services during the upcoming year, Comcast would like to test the hypothesis that the average number of televisions in the homes of its customers is equal to $2.9$.
+
+\vfill
+
+\item The federal government would like to determine the effectiveness of a recent tax-break program for first-time home buyers.  Prior to the tax break, the average time period a house was on the market was $60$ days.  The government would like to test the claim that the current average time on the market is less than $60$ days.
+
+\vfill
+
+\end{enumerate}
+
+\newpage
+
+\section*{The Nuts and Bolts of Hypothesis Testing}
+
+\noindent We will learn two different procedures for completing a hypothesis test, but before we describe each, we need to define some key terms contained in these procedures.
+
+\begin{defn}
+\begin{itemize}
+
+\item The \textbf{rejection region} is...
+\vspace*{.5in}
+
+\item A \textbf{critical value} is...
+\vspace*{.5in}
+
+\item A \textbf{p-value} is...
+\vspace*{.5in}
+
+\end{itemize}
+\end{defn}
+
+\begin{exercise}
+Find the critical value(s) for each situation and draw the bell-curve depicting the rejection region.
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item A left-tailed test with $\alpha=0.01$
+
+\vfill
+
+\item A right-tailed test with $\alpha=0.10$
+
+\vfill
+
+\item A two-tailed test with $\alpha=0.05$
+
+\vfill
+
+\end{enumerate}
+
+\newpage
+
+\begin{exercise}
+Compute the p-value for each situation.
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item A left-tailed test with test statistic $z_{\overline{x}} = -2.75$
+
+\vfill
+
+\item A right-tailed test with test statistic $z_{\overline{x}} = 1.90$
+
+\vfill
+
+\item A two-tailed test with test statistic $z_{\overline{x}} = -1.84$
+
+\vfill
+
+\item A two-tailed test with test statistic $z_{\overline{x}} = 2.50$
+
+\vfill
+
+\end{enumerate}
+
+\newpage
+
+\section*{The Logic of Hypothesis Testing}
+
+
+\noindent The hypothesis test begins with the assumption that the null hypothesis, $H_0$, is true.  The goal of the process is to determine if there is enough evidence provided by the sample to infer that the alternative hypothesis, $H_1$, might be true.  The null hypothesis can never be accepted.  The most we can say is that we do not have enough evidence to reject the null.  The only two options are to 
+\begin{enumerate}[1)]
+
+\item reject the null hypothesis;
+\item fail to reject the null hypothesis.
+
+\end{enumerate}
+
+\noindent So how is the decision made to ``reject" or ``fail to reject" within each of our two hypothesis testing methods?
+
+\vspace*{.1in}
+
+\noindent \textbf{In the traditional method, the decision is made by comparing the test statistic to the critical value(s).}  When the test statistic falls in the rejection region, the decision is ``reject the null hypothesis".  When the test statistic does not fall in the rejection region, the decision is ``fail to reject the null hypothesis".
+
+\vspace*{.1in}
+
+\noindent \textbf{In the p-value method, the decision is made by comparing the p-value to the significance level.}  When the p-value is smaller than the significance level, the decision is ``reject the null hypothesis".  When the p-value is greater than or equal to the significance level, the decision is ``fail to reject the null hypothesis".
+
+\section*{Two Approches to Hypothesis Testing}
+
+\noindent Now we are finally ready to describe in depth two hypothesis testing procedures and work through some examples.  First, let's summarize the steps for the traditional method (aka the critical value method).
+
+\begin{statement}
+\section*{The Traditional (Critical Value) Method}
+
+\begin{enumerate}
+
+\item Identify the two hypotheses using appropriate notation.
+
+\item Draw the appropriate curve, identify the significance level, and label critical value(s).
+
+\item Calculate the appropriate test statistic.
+
+\item Compare the critical value(s) to the test statistic and make the decision.
+
+\item State the conclusion.
+
+\end{enumerate}
+
+\end{statement}
+
+
+\noindent Let's work through an example of using the traditional method.  In this example, the appropriate test statistic formula is:
+$$ z_{\overline{x}} = \frac{\overline{x}-\mu }{\sigma/\sqrt{n}} $$
+
+\begin{exercise} (Donnelly 9.7)
+
+A pizza place recently hired additional drivers and as a result now claims that its average delivery time for orders is under $46$ minutes.  A sample of $41$ customer deliveries was examined, and the average delivery time was found to be $41.5$ minutes.  Historically, the standard deviation for delivery time is $11.8$ minutes.  Assuming that $\alpha = 0.01$, does this sample provide enough evidence to support the delivery time claim made by the pizza place?
+
+$$ \alpha=~~~~~~~~~~~~~~~~~~~~~ \mu = ~~~~~~~~~~~~~~~~~~~~~ n = ~~~~~~~~~~~~~~~~~~~~~ \overline{x} = ~~~~~~~~~~~~~~~~~~~~~ \sigma = ~~~~~~~~~~~~~~~~~~~~~ $$
+
+\end{exercise}
+
+\begin{itemize}
+\item Step 1:  Identify the two hypotheses using appropriate notation.
+
+\vfill
+
+\item Step 2:  Draw the appropriate curve, identify the significance level, and label critical value(s).
+
+\vfill
+
+\item Step 3:  Calculate the appropriate test statistic.
+
+\vfill
+
+\item Step 4:  Compare the critical value(s) to the test statistic and make the decision.
+
+\vfill
+
+\item Step 5:  State the conclusion.
+
+\vfill
+
+\end{itemize}
+
+\newpage
+
+
+\begin{exercise}  (Donnelly 9.10)
+
+A grocery store claims that customers spend an average of $5$ minutes waiting for service at the store's deli counter.  A random sample of $40$ customers was timed at the deli counter, and the average service time was found to be $5.5$ minutes.  Assume the standard deviation is $1.7$ minutes per customer.  Assuming that $\alpha = 0.05$, does this sample provide enough evidence to counter the claim made by the store's management?
+$$ \alpha=~~~~~~~~~~~~~~~~~~~~~ \mu = ~~~~~~~~~~~~~~~~~~~~~ n = ~~~~~~~~~~~~~~~~~~~~~ \overline{x} = ~~~~~~~~~~~~~~~~~~~~~ \sigma = ~~~~~~~~~~~~~~~~~~~~~ $$
+
+\end{exercise}
+
+\begin{itemize}
+\item Step 1:  Identify the two hypotheses using appropriate notation.
+
+\vfill
+
+\item Step 2:  Draw the appropriate curve, identify the significance level, and label critical value(s).
+
+\vfill
+
+\item Step 3:  Calculate the appropriate test statistic.
+
+\vfill
+
+\item Step 4:  Compare the critical value(s) to the test statistic and make the decision.
+
+\vfill
+
+\item Step 5:  State the conclusion.
+
+\vfill
+
+\end{itemize}
+
+\newpage
+
+\noindent Next we summarize the steps for the p-value method.  Note that many are the same as those in the traditional method.
+
+\begin{statement}
+\section*{The p-value Method}
+
+\begin{enumerate}
+
+\item Identify the two hypotheses using appropriate notation.
+
+\item Draw the appropriate curve and identify the significance level.
+
+\item Calculate the appropriate test statistic and the associate p-value.
+
+\item Compare p-value and the significance level and make the decision.
+
+\item State the conclusion.
+
+\end{enumerate}
+\end{statement}
+
+\noindent Let's work through an example of using the p-value method.
+
+\begin{exercise}  (Donnelly 9.8)
+
+A sporting goods store believes the average age of its customers is $38$ or less.  A random sample of $40$ customers was surveyed, and the average customer age was found to be $41.2$ years.  Assume the standard deviation for customer age is $9.0$ years.  Assuming that $\alpha = 0.01$, does the sample provide enough evidence to refute the age claim made by the sporting goods store?
+
+$$ \alpha=~~~~~~~~~~~~~~~~~~~~~ \mu = ~~~~~~~~~~~~~~~~~~~~~ n = ~~~~~~~~~~~~~~~~~~~~~ \overline{x} = ~~~~~~~~~~~~~~~~~~~~~ \sigma = ~~~~~~~~~~~~~~~~~~~~~ $$
+
+
+\end{exercise}
+
+
+\begin{itemize}
+
+\item Step 1:  Identify the two hypotheses using appropriate notation.
+
+\vfill
+
+\item Step 2:  Draw the appropriate curve and identify the significance level.
+
+\vfill
+
+\item Step 3:  Calculate the appropriate test statistic and the associated p-value.
+
+\vfill
+
+\item Step 4:  Compare p-value and the significance level and make the decision.
+
+\vfill
+
+\item Step 5:  State the conclusion.
+
+\vfill
+
+
+\end{itemize}
+
+
+\newpage
+
+\section*{Type I and Type II Errors}
+
+\noindent Recall that the purpose of a hypothesis test is to verify the validity of a claim about a population based on a single sample.  Since we are relying on a sample, there is risk that the conclusions we draw about the population will be wrong due to sampling error.
+
+
+\begin{statement}
+\begin{itemize}
+
+\item \textbf{Type I error:} occurs when...
+\vspace*{.5in}
+
+\begin{itemize}
+\item The probability of making this error is known as $\alpha$, the \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+\vspace*{.2in}
+
+\item A Type I error is known as the \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~} 
+\end{itemize}
+
+
+\item \textbf{Type II error:}  occurs when...
+\vspace*{.5in}
+
+\begin{itemize}
+
+\item The probability of making this error is known as $\beta$.\\  
+
+A Type II error is known as the \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+
+\end{itemize}
+
+\end{itemize}
+\end{statement}
+
+
+\begin{center}
+\includegraphics[scale=1]{Images/hypothesistesting}
+\end{center}
+
+
+\section*{Hypothesis Testing for $\mu$ When $\sigma$ is Unknown}
+
+\noindent Up to this point, we've assumed that we know $\sigma$, the population mean.  But as we saw in the last chapter on confidence intervals, if we don't know $\mu$, it's pretty unrealistic that we would know $\sigma$.  So just like we did when creating confidence intervals, we will estimate $\sigma$ with the sample standard deviation, $s$.  This means that we will be dealing with the Student's $t$-distribution in place of the normal distribution.
+
+\vspace*{.1in}
+
+\noindent Hence, the test statistic for hypothesis tests of this type are computed with the formul:
+$$ t_{\overline{x}} = \frac{\overline{x}-\mu }{s/\sqrt{n}} $$
+
+
+\begin{exercise}  (Donnelly 9.20)
+
+In 2017, the average credit score for loans that were purchased by a government-sponsored mortgage loan company was $742$.  A random sample of $35$ mortgages recently purchased by the company was selected, and it was found that the average credit score was $752$ with a sample standard deviation of $22$.  Using $\alpha = 0.05$, is there enough evidence from this sample to conclude that the average credit score for mortgages purchased by the company has increased since 2017?  Use the traditional method of hypothesis testing.
+
+\end{exercise}
+
+\vfill
+
+\newpage
+
+\noindent In our next example, we will use the p-value method of hypothesis testing.  Unfortunately, tables for the Student's $t$-distribution are limited in the precision they can provide for our p-values.  Therefore, we will rely on Excel to compute the p-values using the following formulas:
+\begin{center}
+T.DIST($x$, df, cumulative), T.DIST.RT($x$, df), T.DIST.2T($x$, df)
+\end{center}
+where
+\begin{align*}
+x &= \text{ the test statistic, } t_{\overline{x}}\\
+\text{df} &= \text{ the degrees of freedom}\\
+\text{cumulative} &= \text{ TRUE (since we want the accumulated area left of our test statistic)}
+\end{align*}
+
+
+\begin{exercise}  (Donnelly 9.19)
+
+According to the financial reports by Snapchat, the average daily user of Snapchat created $19$ messages, or ``snaps," per day in Q3 2017.  A college student wants to find out if the number of Snapchat messages has changed since Q3 2017 and creates a random sample using information from students on her campus for the current semester.  The results are found in this lesson's Excel file.  Using $\alpha = 0.01$, test the hypothesis that the number of Snapchats sent by the average Snapchat user has not changed since Q3 2017.  Use the p-value method of hypothesis testing.
+
+\end{exercise}
+
+\vfill
+
+\newpage
+
+\section*{Hypothesis Testing for the Population Proportion}
+
+\noindent The last type of hypothesis test that we will study in this chapter involves the population proportion, $p$.  This test is useful for testing claims made about the proportion of something.  Recall that proportion data follow the binomial distribution, which can be approximated by the normal distribution under the conditions:
+\begin{center}
+$np\geq 5$ and $n(1-p)\geq 5$, where
+\begin{itemize}
+\item $p=$ the probability of success in the population
+\item $n=$ the sample size
+\end{itemize}
+\end{center}
+
+When these conditions are met, the test statistic for this hypothesis test is calculated with this formula:
+$$ z_p = \frac{\overline{p}-p}{\sqrt{\frac{p(1-p)}{n}}} $$
+
+\begin{exercise}  (Donnelly 9.31)
+
+In April 2010, $45\%$ of the unemployed had been out of work longer than six months.  Policy makers felt that this percentage declined during 2010 as the job market improved.  To test this theory, a random sample of $200$ unemployed people was selected, and it was found that $80$ had been out of work for more than six months.  Assuming $\alpha = 0.10$, what conclusions can be drawn about the proportion of the unemployed who have been out of work for more than six months?  Use the p-value method of hypothesis testing.
+
+\end{exercise}
+
+\vfill
+
+\newpage
+
+\begin{exercise}  (Donnelly 9.26)
+
+An increased number of colleges have been using online resources to research applicants.  According to a study from last year, $33\%$ of admissions officers indicated that they visited an applying student's social networking page.  A random sample of $500$ admissions officers was recently selected and it was found that $170$ of them visit the social networking sites of students applying to their college.  Assuming $\alpha = 0.05$, does this sample provide support for the hypothesis that the proportion of admissions officers who visit an applying students' social networking page has increased in the past year?  Use the traditional method of hypothesis testing.
+
+\end{exercise}
+
+\vfill
+
+
+
+
+
+
+\end{document}

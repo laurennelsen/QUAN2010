@@ -1,0 +1,699 @@
+\documentclass[12pt, letterpaper]{article}
+%\usepackage{geometry}
+\usepackage[inner=1.75cm,outer=1.75cm,top=1.75cm, bottom=1.75cm]{geometry}
+\pagestyle{empty}
+\usepackage{graphicx,multicol}
+%\usepackage{pdfpages}
+\usepackage{fancyhdr, lastpage, bbding, pmboxdraw}
+\usepackage[usenames,dvipsnames]{color}
+\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{darkred}{rgb}{.7,0,0}
+\definecolor{darkgreen}{rgb}{0,.6,0}
+\usepackage[colorlinks,pagebackref,pdfusetitle, urlcolor=darkblue,citecolor=darkblue, linkcolor=darkred,bookmarksnumbered,plainpages=false]{hyperref}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\newcommand{\ddx}{\frac{d}{dx}}
+\newcommand{\dydx}{\frac{dy}{dx}}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\dy}{\frac{dy}{dx}}
+
+\usepackage{tikzsymbols}
+
+\usepackage{bchart}
+
+\newcommand{\headervariable}{Chapter 3}
+
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{ \fancyplain{}{QUAN 2010, UCCS} }
+%\chead{ \fancyplain{}{} }
+\rhead{ \fancyplain{}{Course Notes:  \headervariable} }
+%\rfoot{\fancyplain{}{page \thepage\ of \pageref{LastPage}}}
+\fancyfoot[RO, LE]{\textbf{Chapter 3} page \thepage }
+\thispagestyle{plain}
+
+%%%%%%%%%%%% LISTING %%%
+\usepackage{listings}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\usepackage{verbatim} % used to display code
+\usepackage{fancyvrb}
+\usepackage{acronym}
+\usepackage{amsthm}
+%\VerbatimFootnotes % Required, otherwise verbatim does not work in footnotes!
+
+\usepackage{mathrsfs}
+
+
+\usepackage{arydshln} %For dashed lines in tabular environments.
+\usepackage{amssymb} %For \square.
+\usepackage{amsmath} %For align* and other things.
+\DeclareMathOperator{\csch}{csch}
+\DeclareMathOperator{\sech}{sech}
+\usepackage{enumerate}%,enumitem}
+
+
+
+\usepackage{ulem} %For strikeout text.
+
+\usepackage[final]{pdfpages} %For including PDF pages.
+
+\usepackage{hyperref}
+
+\newcommand{\laplace}{\mathscr{L}}
+\newcommand{\su}{\mathcal{U}}
+
+
+
+%\newcounter{LO}
+%\newcounter{LOexample}
+%\newcounter{LOtemp}
+
+\newcounter{exercise}
+
+\newcounter{visualconnection}
+
+%\usepackage{tcolorbox} %For boxing the text.
+\usepackage[skins]{tcolorbox}
+\usepackage{pgf}
+
+\newtcolorbox{statement}{colback=gray!10!white,colframe=black}
+
+\newtcolorbox{exercise}{colback=white,colframe=green!50!black,fonttitle=\bfseries,colbacktitle=gray, title={\stepcounter{exercise} Exercise \theexercise}}
+
+\newtcolorbox{contd}{colback=white,colframe=green!50!black,fonttitle=\bfseries,colbacktitle=gray, title={Exercise \theexercise, cont'd}}
+
+\newtcolorbox{learninggoal}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large L}EARNING~~{\Large G}OAL}}
+
+\newtcolorbox{defn}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large D}EFINITION}}
+
+\newtcolorbox{theorem}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large T}HEOREM}}
+
+\newtcolorbox{question}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large Q}UESTION}}
+
+
+\newtcolorbox{warning}{skin=enhanced, colback=gray!10!white, colframe=black, fonttitle=\bfseries, colbacktitle=white, coltitle=red!50!gray, attach boxed title to top left={xshift=3mm,yshift=-2mm}, title={\large Warning!}}
+
+\newtcolorbox{visualconnection}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=white, coltitle=blue!50!gray, attach boxed title to top left={xshift=3mm,yshift=-2mm}, title={\large\stepcounter{visualconnection} Visual Connection \Alph{visualconnection}}}
+
+\newtcolorbox{remark}{colback=white,colframe=black}
+
+
+
+%\usepackage[latin1]{inputenc} %Needed for accented characters?
+%\usepackage{amsfonts}
+%\usepackage{latexsym}
+
+%To print solutions, use \solutionstrue; To hide solutions, use \solutionsfalse.
+%\sol takes two arguments. #1 is the vertical length. #2 is the text.
+
+
+\newif\ifsolutions
+\solutionsfalse
+
+\ifsolutions
+    \newcommand{\soln}[2]{\begin{minipage}[c][#1]{\linewidth}{\textcolor{blue}{\textbf{Solution:}}\quad \textcolor{blue}{#2}}\end{minipage}}
+    \newcommand{\opsoln}[1]{#1}
+    \newcommand{\tblsoln}[1]{\textcolor{blue}{#1}}
+\else
+    \newcommand{\soln}[2]{\begin{minipage}[c][#1]{\linewidth}{\vfill}\end{minipage}}
+    \newcommand{\opsoln}[1]{0}
+    \newcommand{\tblsoln}[1]{\textcolor{white}{#1}}
+\fi
+
+\ifsolutions
+    \newcommand{\sol}[2]{\begin{minipage}[c][#1]{\linewidth}{\textcolor{blue}{}\quad \textcolor{blue}{#2}}\end{minipage}}
+    \newcommand{\opsol}[1]{#1}
+    \newcommand{\tblsol}[1]{\textcolor{blue}{#1}}
+\else
+    \newcommand{\sol}[2]{\begin{minipage}[c][#1]{\linewidth}{\vfill}\end{minipage}}
+    \newcommand{\opsol}[1]{0}
+    \newcommand{\tblsol}[1]{\textcolor{white}{#1}}
+\fi
+
+
+\renewcommand*\contentsname{Table of Contents}
+
+
+\usepackage{tocloft}
+\setlength\cftparskip{7pt}
+
+%From IODE:
+\newcommand{\vs}{\vskip.2cm} %customizable command for inserting small vertical space.  Usually appears between paragraphs.
+\usepackage[inline,shortlabels]{enumitem} % gives ability to continue with numbering (add [resume] after \begin{enumerate}) AND to make horizontal lists by adding * to enumerate (\begin{enumerate*})
+
+%\newcommand{\ds}{\displaystyle}
+\newcommand{\vv}{\vec{v}}
+\newcommand{\uu}{\vec{u}}
+\newcommand{\yy}{\vec{y}}
+
+\newcommand{\ww}{\textbf{w}}
+\newcommand{\xx}{\textbf{x}}
+\newcommand{\bb}{\textbf{b}}
+\newcommand{\dt}{\frac{d}{dt}}
+
+\newcommand{\RR}{\mathbb{R}}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}[thm]{Example}
+
+
+\theoremstyle{definition}
+%\newtheorem{defn}[thm]{Definition}
+
+\begin{document}
+
+%\setcounter{page}{1}
+\pagenumbering{arabic}
+
+
+\begin{center}
+
+{\LARGE \textsc{Chapter 3:  Calculating Descriptive Statistics}}
+\end{center}
+
+\noindent In this chapter, we'll learn how to compute descriptive statistics like the mean and standard deviation both by hand and with Excel.
+
+\section*{Measures of Central Tendency}
+
+In statistics, ``average" or ``typical" values are known as \textbf{measures of central tendency}.
+
+\begin{defn}
+The \textbf{mean} ($\mu$ or $\overline{x}$) is the most common measure of central tendency and is calculated by summing all the data points and dividing by the size of the data set.
+\begin{center}
+\textbf{Excel formula:}~~~~~~~~~~~~~~
+\end{center}
+\end{defn}
+
+\begin{tcolorbox}
+The mean is the sum of the data items divided by the number of items.
+$$ \text{Mean}=\frac{\sum x}{n}, $$
+where $\sum x$ represents the sum of all the data items and $n$ represents the number of items.
+\end{tcolorbox}
+
+\noindent The mean of a sample is symbolized by $\bar{x}$, and the mean of an entire population is symbolized by $\mu$ (the lowercase Greek letter \textit{mu}).
+
+\vskip.15in
+
+\begin{exercise}  The table below shows the ten highest-earning TV actors and the ten highest TV actresses for the 2010-2011 television season.\\
+\vskip.15in
+\begin{tabular}{|c|c|c|c|}\hline
+\textbf{Actor} & \textbf{Earnings} & \textbf{Actress} & \textbf{Earnings}\\
+ & (millions of dollars) &  & (millions of dollars)\\ \hline
+Charlie Sheen & $\$ 40$ & Eva Longoria & $\$13$\\ \hline
+Ray Romano & $\$20$ & Tina Fey & $\$13$\\ \hline
+Steve Carell & $\$15$ & Marcia Cross & $\$10$\\ \hline
+Mark Harmon & $\$13$ & Mariska Hargitay & $\$10$\\ \hline
+Jon Cryer & $\$11$ & Marg Helgenberger & $\$10$\\ \hline
+Laurence Fishburne & $\$11$ & Teri Hatcher & $\$9$\\ \hline
+Patrick Dempsey & $\$10$ & Felicity Huffman & $\$9$\\ \hline
+Simon Baker & $\$9$ & Courteney Cox & $\$7$\\ \hline
+Hugh Laurie & $\$9$ & Ellen Pompeo & $\$7$\\ \hline
+Chris Meloni & $\$9$ & Julianna Margulies & $\$7$\\ \hline
+\end{tabular}
+
+\begin{enumerate}[(a)]
+\item Find the mean earnings, in millions of dollars, for the ten highest-earning actors.
+
+\vfill
+
+\item Find the mean earnings in millions of dollars for the ten highest-earning actresses.
+
+\vfill
+
+\end{enumerate}
+\end{exercise}
+
+\vfill
+
+
+\newpage
+
+\begin{defn}
+The \textbf{median} is the value in the data set for which half of the observations are higher and half are lower.
+\begin{center}
+\textbf{Excel formula:}~~~~~~~~~~~~~~
+\end{center}
+\end{defn}
+
+\begin{tcolorbox}
+\textbf{The Median}\\
+To find the \textbf{median} of a group of data items,
+\begin{enumerate}[(a)]
+\item Arrange the data items in order, from smallest to largest.
+\item If the number of data items is odd, the median is the data item in the middle of the list.
+\item If the number of data items is even, the median is the mean of the two middle data items.
+\end{enumerate}
+\end{tcolorbox}
+
+
+\begin{exercise}  Find the median for each of the following groups of data:
+\begin{enumerate}[(a)]
+\item $84,90,98,95,88$
+\vfill
+\item $68,74,7,13,15,25,28,59,34,47$
+\vfill
+\end{enumerate}
+\end{exercise}
+
+\vfill
+
+
+\begin{exercise}
+How are the mean and median related to each other in each of the following frequency distribution shapes?  Why?
+
+\begin{enumerate}[(a)]
+
+\item symmetric:
+\vfill
+
+\item left-skewed:
+\vfill
+
+\item right-skewed:
+\vfill
+
+\end{enumerate}
+
+\end{exercise}
+
+\vfill
+
+
+\newpage
+
+
+\begin{tcolorbox}
+\textbf{Position of the Median}\\
+If $n$ data items are arranged in order, from smallest to largest, the median is the value in the $\displaystyle \frac{n+1}{2}$ position.
+\end{tcolorbox}
+
+\begin{exercise}  Find the median for the following group of data items.
+$$ 1,2,2,2,3,3,3,3,3,5,6,7,7,10,11,13,19,24,26 $$
+\end{exercise}
+
+\vfill
+
+
+\begin{question}  Statisticians generally use the median instead of the mean when reporting income.  Why do you think this is?
+\end{question}
+
+\vskip.15in
+
+\begin{exercise} Five employees in the assembly section of a television manufacturing company earn salaries of $\$ 19,700$, $\$20,400$, $\$ 21,500$, $\$22,600$, and $\$23,000$ annually.  The section manager has an annual salary of $\$95,000$.
+\begin{enumerate}[(a)]
+\item Find the median annual salary for the six people.
+\vfill
+\item Find the mean annual salary for the six people.
+\vfill
+\end{enumerate}
+\end{exercise}
+
+\vfill
+
+\begin{defn}
+An \textbf{outlier} is a value that is much higher or lower than most of the data.
+\end{defn}
+
+
+\newpage
+
+\begin{defn}
+The \textbf{mode} is the data value that occurs most often in a data set.  If more than one data value has the highest frequency, then each of these data values is a mode.  If there is no data value that occurs most often, then the data set has no mode.
+\end{defn}
+
+\begin{exercise}  Find the mode for each of the following groups of data:
+\begin{enumerate}[(a)]
+\item $7,2,4,7,8,10$
+\vfill
+\item $2,1,4,5,3$
+\vfill
+\item $3,3,4,5,6,6$
+\vfill
+\end{enumerate}
+\end{exercise}
+
+\vfill
+
+\begin{exercise}  
+Consider the following data values:  
+$$ 5,13,18,2,16,18,5,20 $$
+Calculate the mean, median, and mode by hand, and then describe the shape of the distribution.
+\end{exercise}
+
+\vfill
+
+\newpage
+
+
+\begin{exercise} \textbf{(Donnelly 3.6)}
+
+The data in this lesson's Excel file lists monthly average values for the Dow Jones Industrial Index for some months form January 2016 until December 2017.
+\begin{enumerate}[(a)]
+\item Calculate the mean, median, and mode (using Excel).
+\item Describe the shape of the distribution.
+\end{enumerate}
+
+
+\end{exercise}
+
+
+\vspace{2in}
+
+
+\section*{Measures of Variability}
+
+\textbf{Measures of variability} (or \textbf{dispersion}) describe the spread of a data set.  We will define the most common ones.
+
+\begin{defn}
+The \textbf{range} is the difference between the highest and lowest data values in a data set.
+$$ \text{Range}=\text{highest data value}-\text{lowest data value} $$
+\end{defn}
+
+\begin{exercise}
+
+The figure below shows the age of the eight oldest U.S. presidents at the start of their first term.
+
+\begin{bchart}[step=10,max=70]
+\bcbar[text=Joseph Biden]{78}
+\bcbar[text=Donald J. Trump]{70}
+\bcbar[text=Ronald Reagan]{69}
+\bcbar[text=William Henry Harrison]{68}
+\bcbar[text=James Buchanan]{65}
+\bcbar[text=George H. W. Bush]{64}
+\bcbar[text=Zachary Taylor]{64}
+\bcbar[text=Dwight D. Eisenhower]{62}
+\end{bchart}
+
+
+Find the age range for the eight oldest presidents.
+\end{exercise}
+
+\vfill
+
+
+
+
+\begin{defn}
+\textbf{Standard deviation} is another measure of variability, and standard deviation is found by determining how much each data item differs from the mean.
+
+\textbf{Computing the Standard Deviation for a Data Set}
+\begin{enumerate}
+\item Find the mean of the data items.
+\item Find the deviation of each data item from the mean:  $\text{data item}-\text{mean}$
+\item Square each deviation:  $(\text{data item} - \text{mean})^2$
+\item Sum the squared deviations:  $\sum(\text{data item} - \text{mean})^2$
+\item Divide the sum in step 4 by $n-1$, where $n$ represents the number of data items:  $\displaystyle\frac{\sum (\text{data item} - \text{mean})^2}{n-1}$
+\item Take the square root of the quotient in step 5.  This value is the standard deviation for the data set.
+$$ \text{Standard deviation}=\sqrt{\frac{\sum (\text{data item} - \text{mean})^2}{n-1}}\text{  or  } s=\sqrt{\frac{\sum(x-\bar{x})^2}{n-1}} $$
+\end{enumerate}
+\end{defn} 
+
+
+\begin{exercise}  Find the standard deviation for the ages of the seven presidents given above.
+\end{exercise}
+
+
+\vfill
+
+
+\newpage
+
+
+\begin{exercise} \textit{Interpreting Standard Deviation}\\
+Shown below are the means and standard deviations of the yearly returns on two investments from 1926 through 2004.
+\vskip.15in
+\begin{tabular}{|c|c|c|}\hline
+\textbf{Investment} & \textbf{Mean Yearly Return} & \textbf{Standard Deviation}\\ \hline
+Small-Company Stocks & $17.5\%$ & $33.3\%$\\ \hline
+Large-Company Stocks & $12.4\%$ & $20.4\%$\\ \hline
+\end{tabular}
+
+\begin{enumerate}[(a)]
+\item Use the means to determine which investment provided the greater yearly return.
+\vfill
+\item Use the standard deviations to determine which investment had the greater risk.  Explain your answer.
+\vfill
+\end{enumerate}
+\end{exercise}
+
+\vfill
+\vfill
+
+
+\begin{defn}
+The \textbf{variance} ($\sigma^2$ or $s^2$) measures the variability, or spread, of the data points in a set around the sets mean.
+$$ s^2 = ~~~~~~~~~~~~~~ $$
+\vspace*{.3in}
+\begin{center}
+In Excel: $~~~~~~~~~~~~~~$
+\end{center}
+\end{defn}
+
+
+\begin{exercise} \textbf{(Donnelly, Your Turn 4)}
+
+The data in this lesson's Excel file lists the number of books that seven adults have read during the last $12$ months.  
+$$ 10,10,4,8,13,6,11 $$
+Calculate the variance and standard deviation.
+
+\end{exercise}
+
+\vfill
+
+\newpage
+
+\section*{Using the Mean and Standard Deviation Together}
+
+There are a few important concepts that use the mean and standard deviation together to describe data sets.
+
+
+\begin{defn}
+The \textbf{coefficient of variation (cv)} measures the standard deviation in terms of its percentage of the mean.
+\begin{center}
+formula:  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\end{center}
+\vspace*{.2in}
+\end{defn}
+
+\begin{defn}
+The \textbf{$z$-score} identifies the number of standard deviations a particular value is from the mean of its distribution.
+\begin{center}
+formula:  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\vspace*{.2in}
+
+Excel formula:  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\end{center}
+\vspace*{.2in}
+\end{defn}
+
+\begin{exercise}
+The mean weight of newborn infants is $7$ pounds, and the standard deviation is $0.8$ pound.  The weights of newborn infants are normally distributed.  Find the $z$-score for a weight of 
+\begin{enumerate}[(a)]
+\item $9$ pounds
+\item $7$ pounds
+\item $6$ pounds
+\end{enumerate}
+
+\end{exercise}
+
+\vfill
+
+\begin{exercise}  
+
+Intelligence quotients (IQs) on the Stanford-Binet intelligence test are normally distributed with a mean of $100$ and a standard deviation of $16$.  What is the IQ corresponding to a $z$-score of $-1.5$?
+
+\end{exercise}
+
+\vfill
+
+\newpage
+
+
+\begin{statement}
+
+\textbf{The Empirical Rule} says that if a distribution follows a bell-shaped, symmetric curve centered around the mean, we should expect 
+\begin{itemize}
+\item approximately $68\%$ of the data to fall within one standard deviation of the mean,
+\item approximately $95\%$ of the data to flal within two standard deviations of the mean, and
+\item approximately $99.7\%$ of the data to fall within three standard deviations of the mean.
+\end{itemize}
+
+\begin{center}
+\includegraphics[scale=.9]{Images/NormalDistnRule}
+
+\textit{(Image from the book \textit{Thinking Mathematically} by Blitzer)}
+
+\end{center}
+
+\end{statement}
+
+\begin{theorem}
+\textbf{Chebyshev's Theorem:}  for any number $z$ greater than $1$, the percent of data points that fall within $z$ standard deviations from the mean is at least $\left( 1-\frac{1}{z^2}\right)\times 100$ for any distribution, regardless of its shape.
+\end{theorem}
+
+
+\begin{exercise}
+Assume the average selling price for houses in a certain county is $\$348,000$ with a standard deviation of $\$30,000$.
+\begin{enumerate}[(a)]
+\item Determine the coefficient of variation.
+\vfill
+\item Calculate the $z$-score for a house that sells for $\$379,000$.
+\vfill
+\item Using the Empirical Rule, determine the range of prices that includes $\$68\%$ of the homes around the mean.
+\vfill
+\vfill
+\item Using Chebyshev's Theorem, determine the range of prices that includes at least $91\%$ of the homes around the mean.
+\vfill
+\vfill
+\vfill
+\end{enumerate}
+\end{exercise}
+
+
+\newpage
+
+\section*{Measures of Relative Position}
+
+Measures of relative position compare the position of one value in relation to other values in the data set.
+
+\begin{defn}
+\textbf{Percentiles}\\
+If $n\%$ of the items in a distribution are less than a particular data item, we say that the data item is in the \textbf{$n$th percentile} of the distribution.
+
+\vspace*{.2in}
+In Excel:
+\vspace*{.2in}
+\end{defn}
+
+
+
+\begin{defn}
+The \textbf{percentile rank} identifies the percentile of a particular value within a data set.
+
+\vspace*{.2in}
+In Excel:
+\vspace*{.2in}
+\end{defn}
+
+\begin{exercise} A new baby is in the $50$th percentile for weight.  What does that mean?
+\end{exercise}
+
+\vfill
+
+
+\begin{defn}
+\textbf{Quartiles} are commonly encountered percentiles.  Quartiles divide data sets into four equal parts.
+\begin{center}
+\includegraphics[scale=.7]{Images/Quartiles}
+
+\textit{(Image from the book \textit{Thinking Mathematically} by Blitzer)}
+\end{center}
+
+The first, second, and third quartiles in a data set are the values for the $25$th, $50$th, and $75$th percentiles, respectively.
+
+\vspace*{.2in}
+In Excel:
+\vspace*{.2in}
+\end{defn}
+
+
+\begin{defn}
+The \textbf{interquartile range (IQR)} describes the range of the middle $50\%$ of a data set.
+$$ \text{Formula:}~~~~~~~~~~~~~~~~~~~~~~~~ $$
+
+\vspace*{.3in}
+\end{defn}
+
+\begin{exercise} \textbf{(Donnelly, Your Turn 8)}
+
+The data in this lesson's Excel file lists the U.S. and Canadian box-office revenues for the highest grossing films of all time (in millions of dollars).  Use Excel formulas to calculate the following:
+\begin{enumerate}
+\item The three quartiles and the IQR
+\item The $65$th percentile
+\item The percentile rank for the film \textit{Avatar}
+\end{enumerate}
+
+\end{exercise}
+
+\vfill
+
+
+
+\begin{defn}
+
+\begin{itemize}
+
+\item The list consisting of the minimum $Q1,Q2,Q3$, and maximum values of a data set is called \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}.
+
+\vspace*{.3in}
+
+
+\item The graphical display for this list is called the \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~} and also includes any outliers.
+
+\vspace*{.3in}
+
+\end{itemize}
+
+\end{defn}
+
+\begin{exercise} \textbf{(Donnelly 3.76)}
+
+The data in this lesson's Excel file indicates the battery life, in minutes, on a single charge, for $25$ iPads.
+
+\begin{enumerate}[(a)]
+\item Construct a box-and-whisker plot for the data.
+\item Compute the five-number summary for the data.
+\end{enumerate}
+
+\end{exercise}
+
+\vfill
+
+\newpage
+
+\section*{Measures of Association Between Two Variables}
+
+So far, the statistics we've studied have all dealt with describing one variable at a time.  Measures of association describe the relationship between two variables.
+
+\begin{defn}
+\begin{itemize}
+\item \textbf{sample covariance:}  measures the direction of the linear relationship between two variables.
+\begin{itemize}
+\item In Excel:
+\end{itemize}
+\item \textbf{sample correlation coefficient:}  measures \textbf{\underline{both}} the strength and direction of the linear relationship between two variables.
+\begin{itemize}
+\item In Excel:
+\end{itemize}
+\end{itemize}
+\end{defn}
+
+\begin{exercise} \textbf{(Donnelly 3.50)}
+
+A regional manager at Acme markets would like to develop a model to predict weekly sales of pet food based on the shelf space.  The data in this lesson's Excel file shows the results collected from nine randomly selected stores.
+
+\begin{enumerate}[(a)]
+\item Calculate the sample covariance.
+\item Calculate the sample correlation coefficient.
+\item Describe the relationship between $x$ and $y$.
+\end{enumerate}
+
+\end{exercise}
+
+\vfill
+
+\noindent\hrulefill
+
+\noindent\textbf{Examples:}
+
+\begin{center}
+\includegraphics[scale=.6]{Images/CorrelationCoefficients}
+
+\textit{(Image from the book \textit{Thinking Mathematically} by Blitzer)}
+
+\end{center}
+
+\end{document}

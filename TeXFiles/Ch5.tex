@@ -1,0 +1,568 @@
+\documentclass[12pt, letterpaper]{article}
+%\usepackage{geometry}
+\usepackage[inner=1.75cm,outer=1.75cm,top=1.75cm, bottom=1.75cm]{geometry}
+\pagestyle{empty}
+\usepackage{graphicx,multicol}
+%\usepackage{pdfpages}
+\usepackage{fancyhdr, lastpage, bbding, pmboxdraw}
+\usepackage[usenames,dvipsnames]{color}
+\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{darkred}{rgb}{.7,0,0}
+\definecolor{darkgreen}{rgb}{0,.6,0}
+\usepackage[colorlinks,pagebackref,pdfusetitle, urlcolor=darkblue,citecolor=darkblue, linkcolor=darkred,bookmarksnumbered,plainpages=false]{hyperref}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\newcommand{\ddx}{\frac{d}{dx}}
+\newcommand{\dydx}{\frac{dy}{dx}}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\dy}{\frac{dy}{dx}}
+
+\usepackage{tikzsymbols}
+
+\usepackage{bchart}
+
+\newcommand{\headervariable}{Chapter 5}
+
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{ \fancyplain{}{QUAN 2010, UCCS} }
+%\chead{ \fancyplain{}{} }
+\rhead{ \fancyplain{}{Course Notes:  \headervariable} }
+%\rfoot{\fancyplain{}{page \thepage\ of \pageref{LastPage}}}
+\fancyfoot[RO, LE]{\textbf{Chapter 5} page \thepage }
+\thispagestyle{plain}
+
+%%%%%%%%%%%% LISTING %%%
+\usepackage{listings}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\usepackage{verbatim} % used to display code
+\usepackage{fancyvrb}
+\usepackage{acronym}
+\usepackage{amsthm}
+%\VerbatimFootnotes % Required, otherwise verbatim does not work in footnotes!
+
+\usepackage{mathrsfs}
+
+
+\usepackage{arydshln} %For dashed lines in tabular environments.
+\usepackage{amssymb} %For \square.
+\usepackage{amsmath} %For align* and other things.
+\DeclareMathOperator{\csch}{csch}
+\DeclareMathOperator{\sech}{sech}
+\usepackage{enumerate}%,enumitem}
+
+
+
+\usepackage{ulem} %For strikeout text.
+
+\usepackage[final]{pdfpages} %For including PDF pages.
+
+\usepackage{hyperref}
+
+\newcommand{\laplace}{\mathscr{L}}
+\newcommand{\su}{\mathcal{U}}
+
+
+
+%\newcounter{LO}
+%\newcounter{LOexample}
+%\newcounter{LOtemp}
+
+\newcounter{exercise}
+
+\newcounter{visualconnection}
+
+%\usepackage{tcolorbox} %For boxing the text.
+\usepackage[skins]{tcolorbox}
+\usepackage{pgf}
+
+\newtcolorbox{statement}{colback=gray!10!white,colframe=black}
+
+\newtcolorbox{exercise}{colback=white,colframe=green!50!black,fonttitle=\bfseries,colbacktitle=gray, title={\stepcounter{exercise} Exercise \theexercise}}
+
+\newtcolorbox{contd}{colback=white,colframe=green!50!black,fonttitle=\bfseries,colbacktitle=gray, title={Exercise \theexercise, cont'd}}
+
+\newtcolorbox{learninggoal}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large L}EARNING~~{\Large G}OAL}}
+
+\newtcolorbox{defn}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large D}EFINITION}}
+
+\newtcolorbox{theorem}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large T}HEOREM}}
+
+\newtcolorbox{question}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large Q}UESTION}}
+
+
+\newtcolorbox{warning}{skin=enhanced, colback=gray!10!white, colframe=black, fonttitle=\bfseries, colbacktitle=white, coltitle=red!50!gray, attach boxed title to top left={xshift=3mm,yshift=-2mm}, title={\large Warning!}}
+
+\newtcolorbox{visualconnection}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=white, coltitle=blue!50!gray, attach boxed title to top left={xshift=3mm,yshift=-2mm}, title={\large\stepcounter{visualconnection} Visual Connection \Alph{visualconnection}}}
+
+\newtcolorbox{remark}{colback=white,colframe=black}
+
+
+
+%\usepackage[latin1]{inputenc} %Needed for accented characters?
+%\usepackage{amsfonts}
+%\usepackage{latexsym}
+
+%To print solutions, use \solutionstrue; To hide solutions, use \solutionsfalse.
+%\sol takes two arguments. #1 is the vertical length. #2 is the text.
+
+
+\newif\ifsolutions
+\solutionsfalse
+
+\ifsolutions
+    \newcommand{\soln}[2]{\begin{minipage}[c][#1]{\linewidth}{\textcolor{blue}{\textbf{Solution:}}\quad \textcolor{blue}{#2}}\end{minipage}}
+    \newcommand{\opsoln}[1]{#1}
+    \newcommand{\tblsoln}[1]{\textcolor{blue}{#1}}
+\else
+    \newcommand{\soln}[2]{\begin{minipage}[c][#1]{\linewidth}{\vfill}\end{minipage}}
+    \newcommand{\opsoln}[1]{0}
+    \newcommand{\tblsoln}[1]{\textcolor{white}{#1}}
+\fi
+
+\ifsolutions
+    \newcommand{\sol}[2]{\begin{minipage}[c][#1]{\linewidth}{\textcolor{blue}{}\quad \textcolor{blue}{#2}}\end{minipage}}
+    \newcommand{\opsol}[1]{#1}
+    \newcommand{\tblsol}[1]{\textcolor{blue}{#1}}
+\else
+    \newcommand{\sol}[2]{\begin{minipage}[c][#1]{\linewidth}{\vfill}\end{minipage}}
+    \newcommand{\opsol}[1]{0}
+    \newcommand{\tblsol}[1]{\textcolor{white}{#1}}
+\fi
+
+
+\renewcommand*\contentsname{Table of Contents}
+
+
+\usepackage{tocloft}
+\setlength\cftparskip{7pt}
+
+%From IODE:
+\newcommand{\vs}{\vskip.2cm} %customizable command for inserting small vertical space.  Usually appears between paragraphs.
+\usepackage[inline,shortlabels]{enumitem} % gives ability to continue with numbering (add [resume] after \begin{enumerate}) AND to make horizontal lists by adding * to enumerate (\begin{enumerate*})
+
+%\newcommand{\ds}{\displaystyle}
+\newcommand{\vv}{\vec{v}}
+\newcommand{\uu}{\vec{u}}
+\newcommand{\yy}{\vec{y}}
+
+\newcommand{\ww}{\textbf{w}}
+\newcommand{\xx}{\textbf{x}}
+\newcommand{\bb}{\textbf{b}}
+\newcommand{\dt}{\frac{d}{dt}}
+
+\newcommand{\RR}{\mathbb{R}}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}[thm]{Example}
+
+
+\theoremstyle{definition}
+%\newtheorem{defn}[thm]{Definition}
+
+\begin{document}
+
+%\setcounter{page}{1}
+\pagenumbering{arabic}
+
+
+\begin{center}
+
+{\LARGE \textsc{Chapter 5:  Discrete Probability Distributions}}
+\end{center}
+
+
+\begin{statement}
+Recall that in Chapter 2, we discussed the difference between discrete and continuous data.  For example, counting the number of customers who visit a Papa Murphy's pizza shop one evening is an example of discrete data.  On the other hand, measuring the weight of mozzarella put on each pepperoni pizza made at the Papa Murphy's pizza shop is an example of continuous data.  In general, discrete data is \textbf{counted} while continuous data is \textbf{measured}.  In this chapter, we learn how to determine discrete probabilities -- that is, the likelihood that certain discrete data values will occur.
+\end{statement}
+
+
+\begin{defn}
+\textbf{Two Types of Random Variables:}
+\begin{itemize}
+\item \underline{discrete random variable:}
+\vspace*{.8in}
+\item \underline{continuous random variable:}
+\vspace*{.8in}
+\end{itemize}
+\end{defn}
+
+
+\section*{Rules for a Discrete Probability Distribution}
+
+\begin{statement}
+\underline{discrete probability distribution:}  a listing of all possible outcomes of an experiment for a discrete random variable along with the relative frequency of each outcome
+
+\begin{enumerate}
+
+\item Each outcome in the distribution must be \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+\vspace*{.3in}
+
+\item $0\leq P(X)\leq 1$ for all $X$; i.e., \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+\vspace*{.3in}
+
+\item $\sum P(X) =1 $ for all $X$; i.e., \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+\vspace*{.3in}
+
+\end{enumerate}
+
+\end{statement}
+
+
+\section*{Descriptive Statistics for a Discrete Probability Distribution}
+
+\begin{itemize}
+
+\item The mean, or \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~} of a discrete probability distribution is 
+
+\vspace*{.1in}
+
+the weighted average of \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}.
+
+\vspace*{.2in}
+Formula:
+$$ E(X) = \mu = ~~~~~~~~~~~~~~~~~~~~~~~~~~~ $$
+\vspace*{.2in}
+
+\item Similarly, the \textbf{expected monetary value} is the mean when \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+
+\item The \textbf{variance} of a discrete probability distribution measures
+
+\vspace*{.1in}
+ \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+
+\vspace*{.2in}
+Formula:
+$$ \sigma^2 = ~~~~~~~~~~~~~~~~~~~~~~~~~~~ $$
+\vspace*{.2in}
+
+
+\item The \textbf{standard deviation} of a discrete probability distribution measures
+
+\vspace*{.1in}
+ \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+
+Formula:
+$$ \sigma = ~~~~~~~~~~~~~~~~~~~~~~~~~~~ $$
+\vspace*{.2in}
+
+
+\end{itemize}
+
+
+\begin{exercise} (Donnelly 5.7)
+The table below shows the discrete probability distribution for the number of bedrooms per house in a certain community:
+\begin{center}
+\begin{tabular}{c|c}
+\textbf{$\#$ of Bedrooms} & \textbf{Probability}\\ \hline
+3 & 0.23\\
+4 & 0.57\\
+5 & 0.14\\
+6 & ???
+\end{tabular}
+\end{center}
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item Determine the missing probability for a $6$ bedroom house.
+
+\vfill
+
+\item Determine the mean number of bedrooms per house.
+
+\vfill
+\newpage
+
+\item Determine the standard deviation for the number of bedrooms per house.
+\textit{(Hint:  Use the table below to compute the variance first.)}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}\hline
+$x$ & $P(x)$ & $\mu$ & $x-\mu$ & $(x-\mu)^2$ & $(x-\mu)^2P(x)$\\ \hline
+ & & & & & \\ \hline
+  & & & & & \\ \hline
+   & & & & & \\ \hline
+    & & & & & \\ \hline
+\end{tabular}
+\end{center}
+
+\vfill
+
+\end{enumerate}
+
+
+
+\begin{exercise} (Donnelly 5.45)
+
+Tees R Us manufactures and sells T-shirts for sporting events, is providing shirts for an upcoming tournament.  Each shirt will cost $\$9$ to produce and will be sold for $\$18$.  Any unsold shirts at the end of the tournament can be sold for $\$5$ a piece in the near future.  Tees R Us assumes the demand for the shirts will be $500$, $1000$, $1500$, or $2000$.  They also estimate that the probabilities of each of these sales levels occurring will be $15\%$, $20\%$, $25\%$, and $40\%$, respectively.  Determine the expected monetary value of the project if Tees R Us chooses to print $1500$ shirts for the tournament.
+
+\end{exercise}
+
+\vfill
+
+\newpage
+
+\section*{The Binomial Distribution}
+
+\begin{defn}
+A \textbf{binomial experiment} is a probability experiment possessing the following characteristics:
+\begin{enumerate}
+\item It has a fixed number of trials, $n$.
+\item Each trial has only two possible outcomes:  success or failure.
+\item The probability of success, $p$, and the probability of failure, $q$, are constant.
+\item Each trial is independent of the other trials.
+\end{enumerate}
+\end{defn}
+
+\begin{statement}
+The outcomes of a binomial experiment and the corresponding probabilities of these outcomes are called a \textbf{binomial distribution}.
+
+The probability of exactly $X$ successes in $n$ trials with probability of success, $p$, is
+$$ P(X) = \frac{n!}{X!(n-X)!}p^X(1-p)^{n-X}\text{  for } X=0,1,2,...,n $$
+
+\end{statement}
+
+\underline{Examples:} 
+
+\vspace*{2in}
+
+
+\newpage
+
+
+\begin{statement}
+
+Good news!  The mean and standard deviation of a binomial distribution are simple computations:
+$$ \mu = ~~~~~~~~~~~~~~~~~\text{ and } \sigma=~~~~~~~~~~~~~~~~~ $$
+
+\vspace*{.2in}
+
+As the number of trials in a binomial experiment increases, calculating the probabilities required using the complex formula becomes tedious.  Therefore, we will learn how to compute probabilities using tables and using Excel formulas.
+
+\vspace*{.2in}
+
+The appropriate table from your book is \textbf{Table 1}, and the Excel formula is 
+
+\textbf{BINOM.DIST}($x$,$n$,$p$,cumulative), where cumulative$=$TRUE ($x$ or fewer successes) or FALSE (exactly $x$ successes).
+
+
+\end{statement}
+
+
+\begin{exercise}  (Donnelly 5.10)
+
+Consider a binomial probability distribution with $p=0.65$ and $n=4$.  Calculate the probabilities below by using the formula.
+
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item $P(X=2)$
+
+\vfill
+
+\item $P(X\leq 1)$
+
+\vfill
+
+\item $P(X>3)$
+
+\vfill
+
+\end{enumerate}
+
+\newpage
+
+
+
+\begin{exercise} (Donnelly 5.19)
+
+According to \textit{Fortune}, as of January 2018, $5\%$ of chief executive officers (CEOs) were women.  Use Table $1$ to answer the following questions based on a random sample of $12$ CEOs.
+
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item Why does this scenario fit a binomial experiment?  Define the random variable, $X$, and clearly identify $n$ and $p$.
+
+\vfill
+\vfill
+\vfill
+
+\item What is the probability that fewer than four CEOs were female?
+
+\vfill
+
+\item What is the probability that at least two CEOs were female?
+
+\vfill
+
+\item What is the probability that one CEO was female?
+
+\vfill
+
+\item What are the mean and standard deviation number of female CEOs?
+
+\vfill
+
+\end{enumerate}
+
+\newpage
+
+
+\begin{exercise} (Donnelly 5.20)
+
+An e-commercy website claims that $7\%$ of people who visit the site make a purchase.  Use Excel to answer the following questions based on a random sample of $15$ people who visited the website.
+
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item Why does this scenario fit a binomial experiment?  Define the random variable, $X$, and clearly and identify $n$ and $p$.
+
+\vfill
+\vfill
+\vfill
+
+\item What is the probability that none of the people will make a purchase?
+
+\vfill
+
+\item What is the probability that less than three people will make a purchase?
+
+\vfill
+
+\item What is the probability that at least one person will make a purchase?
+
+\vfill
+
+\item Suppose that out of the $15$ customers, $5$ made a purchase.  What conclusions can be drawn about the sample?
+
+\vfill
+\vfill
+\vfill
+
+\end{enumerate}
+
+
+\newpage
+
+\section*{The Poisson Distribution}
+
+\begin{defn}
+A \textbf{Poisson process} is a probability experiment possessing the following characteristics:
+\begin{enumerate}
+\item It counts the number of occurrences of an event over a period of time, area, distance, or some other measurement.
+\item The mean is the same for each equal interval of measurement.
+\item The number of occurrences in distinct intervals is independent.
+\item The intervals defined in the Poisson process cannot overlap.
+\end{enumerate}
+\end{defn}
+
+
+
+\begin{exercise}
+(From \href{https://openstax.org/books/introductory-statistics/pages/4-6-poisson-distribution}{https://openstax.org/books/introductory-statistics/pages/4-6-poisson-distribution})
+
+The average number of loaves of bread put on a shelf in a bakery in a half-hour period is 12. Of interest is the number of loaves of bread put on the shelf in five minutes. The time interval of interest is five minutes. What is the probability that the number of loaves, selected randomly, put on the shelf in five minutes is three?
+\end{exercise}
+
+\vfill
+
+\begin{exercise}
+(From \href{https://openstax.org/books/introductory-statistics/pages/4-6-poisson-distribution}{https://openstax.org/books/introductory-statistics/pages/4-6-poisson-distribution})
+
+A bank expects to receive six bad checks per day, on average. What is the probability of the bank getting fewer than five bad checks on any given day? Of interest is the number of checks the bank receives in one day, so the time interval of interest is one day. Let X = the number of bad checks the bank receives in one day. If the bank expects to receive six bad checks per day then the average is six checks per day. Write a mathematical statement for the probability question.
+\end{exercise}
+
+\vfill
+
+\newpage
+
+\begin{statement}
+The outcome for the random variable for a \textbf{Poisson distribution} is the actual number of occurrences of an event over a period of time, area, distance, or any other type of measurement.
+
+\vspace*{.1in}
+
+The probability of exactly $X$ occurrences over a given interval is:
+$$ P(X) = \frac{\lambda^Xe^{-\lambda}}{X!} \text{ where $\lambda=$ the mean number of occurrences over the interval} $$
+
+\end{statement}
+
+
+\vfill
+
+\begin{statement}
+
+The mean and standard deviation of a Poisson distribution are even simpler than what we saw for a binomial distribution:
+$$ \mu = ~~~~~~~~~~~~~~~~~~\text{ and } \sigma=  ~~~~~~~~~~~~~~~~~~ $$
+
+\vspace*{.1in}
+
+Once again, we will frequently use tables and Excel formulas to compute probabilities associated with Poisson distributions.
+
+\vspace*{.1in}
+
+The appropriate table from your book is \textbf{Table 2}, and the Excel formula is \textbf{POISSON.DIST}($x$,$\lambda$,cumulative), where cumulative$=$TRUE ($x$ or fewer occurrences) or FALSE (exactly $x$ occurrences).
+\end{statement}
+
+\vfill
+
+\newpage
+
+\begin{exercise}  (Donnelly 5.23)
+
+Consider a Poisson probability distribution with $\lambda=5.6$.  Use the Poisson tables to help calculate the following probabilities.
+
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item exactly $5$ occurrences
+
+\vfill
+
+\item more than $6$ occurrences
+
+\vfill
+
+\item $3$ or fewer occurrences
+
+\vfill
+
+\end{enumerate}
+
+
+\begin{exercise}  (Donnelly 5.29)
+
+A customer support center for a computer manufacturer receives an average of $2.9$ phone calls every five minutes.  Assume the number of calls received follows the Poisson distribution.  Use Excel to answer the following questions.
+
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item What is the probability that no calls will arrive during the next five minutes?
+
+\vfill
+
+\item What is the probability that $3$ or more calls will arrive during the next five minutes?
+
+\vfill
+
+\item What is the probability that $3$ calls will arrive during the next ten minutes?
+
+\vfill
+
+\item What is the probability that no more than $2$ calls will arrive during the next ten minutes?
+
+\vfill
+
+\end{enumerate}
+
+
+
+
+\end{document}

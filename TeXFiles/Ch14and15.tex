@@ -1,0 +1,501 @@
+\documentclass[12pt, letterpaper]{article}
+%\usepackage{geometry}
+\usepackage[inner=1.75cm,outer=1.75cm,top=1.75cm, bottom=1.75cm]{geometry}
+\pagestyle{empty}
+\usepackage{graphicx,multicol}
+%\usepackage{pdfpages}
+\usepackage{fancyhdr, lastpage, bbding, pmboxdraw}
+\usepackage[usenames,dvipsnames]{color}
+\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{darkred}{rgb}{.7,0,0}
+\definecolor{darkgreen}{rgb}{0,.6,0}
+\usepackage[colorlinks,pagebackref,pdfusetitle, urlcolor=darkblue,citecolor=darkblue, linkcolor=darkred,bookmarksnumbered,plainpages=false]{hyperref}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\newcommand{\ddx}{\frac{d}{dx}}
+\newcommand{\dydx}{\frac{dy}{dx}}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\dy}{\frac{dy}{dx}}
+
+\usepackage{tikzsymbols}
+
+\usepackage{bchart}
+
+\newcommand{\headervariable}{Chapters 14 and 15}
+
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{ \fancyplain{}{QUAN 2010, UCCS} }
+%\chead{ \fancyplain{}{} }
+\rhead{ \fancyplain{}{Course Notes:  \headervariable} }
+%\rfoot{\fancyplain{}{page \thepage\ of \pageref{LastPage}}}
+\fancyfoot[RO, LE]{\textbf{Chapters 14 and 15} page \thepage }
+\thispagestyle{plain}
+
+%%%%%%%%%%%% LISTING %%%
+\usepackage{listings}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\usepackage{verbatim} % used to display code
+\usepackage{fancyvrb}
+\usepackage{acronym}
+\usepackage{amsthm}
+%\VerbatimFootnotes % Required, otherwise verbatim does not work in footnotes!
+
+\usepackage{mathrsfs}
+
+
+\usepackage{arydshln} %For dashed lines in tabular environments.
+\usepackage{amssymb} %For \square.
+\usepackage{amsmath} %For align* and other things.
+\DeclareMathOperator{\csch}{csch}
+\DeclareMathOperator{\sech}{sech}
+\usepackage{enumerate}%,enumitem}
+
+
+
+\usepackage{ulem} %For strikeout text.
+
+\usepackage[final]{pdfpages} %For including PDF pages.
+
+\usepackage{hyperref}
+
+\newcommand{\laplace}{\mathscr{L}}
+\newcommand{\su}{\mathcal{U}}
+
+
+
+%\newcounter{LO}
+%\newcounter{LOexample}
+%\newcounter{LOtemp}
+
+\newcounter{exercise}
+
+\newcounter{visualconnection}
+
+%\usepackage{tcolorbox} %For boxing the text.
+\usepackage[skins]{tcolorbox}
+\usepackage{pgf}
+
+\newtcolorbox{statement}{colback=gray!10!white,colframe=black}
+
+\newtcolorbox{exercise}{colback=white,colframe=green!50!black,fonttitle=\bfseries,colbacktitle=gray, title={\stepcounter{exercise} Exercise \theexercise}}
+
+\newtcolorbox{contd}{colback=white,colframe=green!50!black,fonttitle=\bfseries,colbacktitle=gray, title={Exercise \theexercise, cont'd}}
+
+\newtcolorbox{learninggoal}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large L}EARNING~~{\Large G}OAL}}
+
+\newtcolorbox{defn}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large D}EFINITION}}
+
+\newtcolorbox{theorem}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large T}HEOREM}}
+
+\newtcolorbox{question}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large Q}UESTION}}
+
+
+\newtcolorbox{warning}{skin=enhanced, colback=gray!10!white, colframe=black, fonttitle=\bfseries, colbacktitle=white, coltitle=red!50!gray, attach boxed title to top left={xshift=3mm,yshift=-2mm}, title={\large Warning!}}
+
+\newtcolorbox{visualconnection}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=white, coltitle=blue!50!gray, attach boxed title to top left={xshift=3mm,yshift=-2mm}, title={\large\stepcounter{visualconnection} Visual Connection \Alph{visualconnection}}}
+
+\newtcolorbox{remark}{colback=white,colframe=black}
+
+
+
+%\usepackage[latin1]{inputenc} %Needed for accented characters?
+%\usepackage{amsfonts}
+%\usepackage{latexsym}
+
+%To print solutions, use \solutionstrue; To hide solutions, use \solutionsfalse.
+%\sol takes two arguments. #1 is the vertical length. #2 is the text.
+
+
+\newif\ifsolutions
+\solutionsfalse
+
+\ifsolutions
+    \newcommand{\soln}[2]{\begin{minipage}[c][#1]{\linewidth}{\textcolor{blue}{\textbf{Solution:}}\quad \textcolor{blue}{#2}}\end{minipage}}
+    \newcommand{\opsoln}[1]{#1}
+    \newcommand{\tblsoln}[1]{\textcolor{blue}{#1}}
+\else
+    \newcommand{\soln}[2]{\begin{minipage}[c][#1]{\linewidth}{\vfill}\end{minipage}}
+    \newcommand{\opsoln}[1]{0}
+    \newcommand{\tblsoln}[1]{\textcolor{white}{#1}}
+\fi
+
+\ifsolutions
+    \newcommand{\sol}[2]{\begin{minipage}[c][#1]{\linewidth}{\textcolor{blue}{}\quad \textcolor{blue}{#2}}\end{minipage}}
+    \newcommand{\opsol}[1]{#1}
+    \newcommand{\tblsol}[1]{\textcolor{blue}{#1}}
+\else
+    \newcommand{\sol}[2]{\begin{minipage}[c][#1]{\linewidth}{\vfill}\end{minipage}}
+    \newcommand{\opsol}[1]{0}
+    \newcommand{\tblsol}[1]{\textcolor{white}{#1}}
+\fi
+
+
+\renewcommand*\contentsname{Table of Contents}
+
+
+\usepackage{tocloft}
+\setlength\cftparskip{7pt}
+
+%From IODE:
+\newcommand{\vs}{\vskip.2cm} %customizable command for inserting small vertical space.  Usually appears between paragraphs.
+\usepackage[inline,shortlabels]{enumitem} % gives ability to continue with numbering (add [resume] after \begin{enumerate}) AND to make horizontal lists by adding * to enumerate (\begin{enumerate*})
+
+%\newcommand{\ds}{\displaystyle}
+\newcommand{\vv}{\vec{v}}
+\newcommand{\uu}{\vec{u}}
+\newcommand{\yy}{\vec{y}}
+
+\newcommand{\ww}{\textbf{w}}
+\newcommand{\xx}{\textbf{x}}
+\newcommand{\bb}{\textbf{b}}
+\newcommand{\dt}{\frac{d}{dt}}
+
+\newcommand{\RR}{\mathbb{R}}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}[thm]{Example}
+
+
+\theoremstyle{definition}
+%\newtheorem{defn}[thm]{Definition}
+
+\begin{document}
+
+%\setcounter{page}{1}
+\pagenumbering{arabic}
+
+
+\begin{center}
+
+{\LARGE \textsc{Chapters 14 \& 15:  Correlation and Simple Linear Regression \& Multiple Regression and Model Building}}
+\end{center}
+
+
+\noindent Recall that a scatterplot is a graph used to explore a relationship between two variables.  The two variables can be defined further as the independent and dependent variables.
+
+\begin{itemize}
+
+\item An \textbf{independent variable}...
+\vspace*{.3in}
+
+\item A \textbf{dependent variable}...
+\vspace*{.3in}
+
+\end{itemize}
+
+
+\section*{Correlation Analysis}
+
+\noindent Correlation analysis provides a way to measure the strength and direction of the linear relationship between two variables (the aforementioned independent and dependent variables).  This is done by computing the \textbf{sample correlation coefficient, $\mathbf{r}$}.
+
+\vspace*{.1in}
+
+\noindent The range of the correlation coefficient is \underline{~~~~~~~~~~~~~~~~~~~~~~~~}.
+
+\begin{itemize}
+\item A \textbf{positive} value indicates \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+
+\vspace*{.1in}
+
+\item A \textbf{negative} value indicates \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+\end{itemize}
+
+\vspace*{.1in}
+
+\noindent Recall that we used the Excel formula, CORREL, to calculate this number back in Chapter 3.  Now we improve on that skill by learning how to use a hypothesis to assess the strength of the linear relationship described by $r$.
+
+\vspace*{.1in}
+
+\noindent The population correlation coefficient, $\rho$, refers to the correlation between all values of two variables in a population.  A value of $\rho =0$ means that there is no linear relationship between $x$ and $y$.  We don't know the value of $\rho$ so we use the sample correlation coefficient to test whether we have enough evidence from the sample to conclude that there is a linear relationship between the variables in the population.  The two hypotheses for this hypothesis test are:
+\begin{align*}
+H_0 &: \rho\leq 0\\
+H_1 &: \rho>0
+\end{align*}
+
+\noindent The test statistic uses the Student's $t$-distribution with formula:
+$$ t = \frac{r}{\sqrt{\frac{1-r^2}{n-2}}} $$
+
+
+\newpage
+
+
+\begin{exercise}  (Donnelly 14.5)
+
+The Twin Cities Pioneer Press argued in a 2018 article that wine and cheese were important for world history and the development of human physiology.  A researcher was interested in studying if there is actually a strong positive relationship between wine and cheese consumption.  The table in this lesson's Excel file shows U.S. per capita cheese and wine consumption for several years.
+
+\end{exercise}
+
+
+\begin{enumerate}[(a)]
+
+\item Determine the sample correlation coefficient between the U.S. per capita consumption of cheese and wine.
+
+\vfill
+
+\item Using $\alpha = 0.02$, test if the population correlation coefficient between the U.S. per capita consumption of cheese and wine is different from zero.  What conclusions can you draw?
+
+\vfill
+
+\end{enumerate}
+
+
+\newpage
+
+\section*{Developing a Regression Model}
+
+\noindent In this section, we learn techniques to create models that fit our data.  Regression analysis is the modeling procedure we will study.  We will discuss how to perform the calculations in the formulas involved in creating and assessing regression models.  However, in most cases we will rely on the ``Regression" tool in the Data Analysis tab of Excel.
+
+\vspace*{.1in}
+
+\begin{visualconnection}
+
+\begin{center}
+\vspace*{.15in}
+
+\href{https://www.desmos.com/calculator/punehfo8by}{https://www.desmos.com/calculator/punehfo8by}
+\end{center}
+
+\vspace*{.15in}
+
+\begin{center}
+\href{https://www.desmos.com/calculator/zgizpxbhxz}{https://www.desmos.com/calculator/zgizpxbhxz}
+
+\vspace*{.15in}
+
+\end{center}
+
+\end{visualconnection}
+
+\vspace*{.1in}
+
+\noindent \textbf{Regression analysis} enables us to describe \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+
+\begin{itemize}
+\item In \underline{simple} regression analysis, there is \underline{~~~~~~~~~~~~~} independent variable
+\vspace*{.1in}
+\item \underline{Multiple} regression analysis includes \underline{~~~~~~~~~~~~~} independent variables.
+\vspace*{.1in}
+\end{itemize}
+
+
+\begin{statement}
+The formula for the linear regression model created with sample data is:
+$$ \hat{y} = b_0+b_1x_1+b_2x_2 + \cdots +b_kx_k $$
+where
+\begin{align*}
+\hat{y} &= \text{ the predicted value of $y$ given all the $x$'s in the model}\\
+x_1,x_2,\cdots, x_k &= \text{ the independent variables in the model}\\
+k &= \text{ the number of independent variables in the model}\\
+b_0 &= \text{ the $y$-intercept of the regression line}\\
+b_k &= \text{ the average change in $\hat{y}$ due to a one-unit change in $x_k$ with all }\\
+ &     \text{ other $x$'s constant}
+\end{align*}
+
+The $b_k$ are called \textbf{regression coefficients}.  The simple regression model is often just called the \textbf{regression line}.
+\end{statement}
+
+\newpage
+
+\begin{exercise}  (Donnelly 14.56)
+
+As a measure of productivity, Verizon Wireless records the number of customers each of its retail employees activates weekly.  An activation is defined as either a new customer signing a cell phone contract or an existing customer renewing a contract.  The data table found in this lesson's Excel file shows the number of weekly activations for eight randomly selected employees along with their job-satisfaction levels rated on a scale of $1-10$ ($10=$ Most satisfied).
+
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item Construct a scatter plot for these data.  Let satisfaction be the independent variable and let activations be the dependent variable.
+
+\vfill
+
+\item Determine the equation of the regression line for the data.
+
+\vfill
+
+\item Interpret the value of the slope in the equation.
+
+\vfill
+
+\item Predict the number of activations for an employee with a satisfaction level of $7.4$.
+
+\vfill
+
+\item Calculate the correlation coefficient for this sample.
+
+\vfill
+
+\item Using $\alpha = 0.10$, test to determine if the population correlation coefficient is not equal to zero.  What conclusions can be made based on these results?
+
+\vfill
+
+\end{enumerate}
+
+\newpage
+
+\begin{exercise}  (Donnelly 15.6)
+
+A hospital would like to develop a regression model to predict the total hospital bill for a patient based on the age of the patient ($x_1$), the patient's length of stay ($x_2$), and the number of days in the hospital's intensive care unit (ICU) ($x_3$).  Data for these variables can be found in the table in this week's Excel file.
+
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item Construct a regression model using all three independent variables.
+
+\vfill
+
+\item Interpret the meaning of the regression coefficients.
+
+\vfill
+
+\item Predict the average hospital bill for a $76$-year-old person hospitalized for $5$ days with $3$ days spent in the ICU.
+
+\vfill
+
+\end{enumerate}
+
+\begin{defn}
+The regression line will not pass through each of the data points.  Hence, there is error between the true value of $y$ from the data and the value, $\hat{y}$, predicted by the regression line.  This difference is called the \textbf{residual}, $e_i$.
+\end{defn}
+
+\begin{visualconnection}
+\begin{center}
+\vspace*{.15in}
+\href{https://www.desmos.com/calculator/zgizpxbhxz}{https://www.desmos.com/calculator/zgizpxbhxz}
+
+\end{center}
+
+(Do this in Excel as well if there's time.)
+\end{visualconnection}
+
+\newpage
+
+
+\begin{center}
+\includegraphics[scale=.8]{Images/regression}
+\end{center}
+
+\vfill
+
+\begin{statement}
+\vfill
+The mathematical procedure that is used to find the regression line is the \textbf{least squares method}.  The least squares method aims to minimize the total squared error between the values of $y$ and $\hat{y}$.  This sum is also called the \textbf{sum of squares error (SSE),} and is defined by the formula $SSE = \sum_{i=1}^n (y_i-\hat{y}_i)^2$.  Minimizing the SSE results in the best fitting line through the data points.
+
+\vspace*{1in}
+
+\begin{center}
+\includegraphics[scale=.8]{Images/error}
+\end{center}
+
+\vfill
+
+\end{statement}
+
+\newpage
+
+\begin{defn}
+There are two other ``sum of squares" related to our data points:
+\begin{itemize}
+
+\item the total sum of squares (SST):
+$$ SST = ~~~~~~~~~~ $$
+
+\item the sum of squares regression (SSR)
+$$ SSR = ~~~~~~~~~~ $$
+
+\end{itemize}
+($\overline{y}=$ the average value of the dependent variable from the sample)
+\end{defn}
+
+\vfill
+
+
+\begin{statement}
+All of the sum of squares are related:
+$$ SST = ~~~~~~~~~~~~~~~~ $$
+
+\vspace*{.1in}
+\begin{itemize}
+
+\item The \textbf{total sum of squares (SST),} measures...
+\vspace*{.8in}
+
+\item The \textbf{sum of squares regression (SSR),} measures...
+\vspace*{.8in}
+
+\item The ratio of these two numbers, $R^2 = \frac{SSR}{SST}$, is called the \textbf{coefficient of determination}.  It measures the percentage of...
+\vspace*{1in} 
+
+
+\end{itemize}
+\end{statement}
+
+\vfill
+
+\newpage
+
+\begin{exercise} (Donnelly 14.56 Continued)
+
+As a measure of productivity, Verizon Wireless records the number of customers each of its retail employees activates weekly.  An activation is defined as either a new customer signing a cell phone contract or an existing customer renewing a contract.  The data table found in this lesson's Excel file shows the number of weekly activations for eight randomly selected employees along with their job-satisfaction levels rated on a scale of $1-10$ ($10=$ Most satisfied).
+
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item Identify the SST.  (Hint:  Use the ``Regression" output from Excel.)
+
+\vfill
+
+\item Partition the SST into the SSE and the SSR.
+
+\vfill
+
+\item Calculate the coefficient of determination, $R^2$.
+
+\vfill
+
+\item Interpret the coefficient of determination.
+
+\vfill
+
+\end{enumerate}
+
+\newpage
+
+\section*{Using Regression to Make a Prediction}
+
+We can use our regression model to make predictions based on given values of the independent variables -- just plug the given values into the respective independent variable of the regression model.  But how reliable is this prediction?  We only have sample data so the prediction isn't perfect.  Similar to what we did in Chapter 8, we will construct a confidence interval to aid in describing the accuracy of our predictions.
+
+There are a number of confidence intervals that we can create based on our regression model that provide insight into the validity of the model.  The only one we will focus on is related to the population slopes:
+$$ CI=b_1\pm t_{\alpha/2}s_b $$
+
+\bigskip
+
+\begin{statement}
+\noindent\textbf{Exercise 3 Continued:}
+A hospital would like to develop a regression model to predict the total hospital bill for a patient based on the age of the patient ($x_1$), the patient's length of stay ($x_2$), and the number of days in the hospital's intensive care unit (ICU) ($x_3$).  Data for these variables can be found in the table in this week's Excel file.
+\end{statement}
+
+
+\begin{enumerate}[(a)]
+
+\item  Find and interpret the adjusted coefficient of variation.
+
+\item Let $\alpha=0.10$, and test the following hypothesis:
+\begin{align*}
+H_0:& \beta_1=\beta_2=\beta_3=0\\
+H_1:&  \text{ at least one } \beta_i\neq 0
+\end{align*} 
+
+\item Let $\alpha=0.05$, and test to see if each of the $\beta_i$s is equal to zero.
+
+
+\item Construct and interpret the $95\%$ confidence interval for the regression coefficient for each of the independent variables in the model. 
+
+\end{enumerate}
+
+
+\end{document}

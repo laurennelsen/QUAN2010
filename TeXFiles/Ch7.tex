@@ -1,0 +1,569 @@
+\documentclass[12pt, letterpaper]{article}
+%\usepackage{geometry}
+\usepackage[inner=1.75cm,outer=1.75cm,top=1.75cm, bottom=1.75cm]{geometry}
+\pagestyle{empty}
+\usepackage{graphicx,multicol}
+%\usepackage{pdfpages}
+\usepackage{fancyhdr, lastpage, bbding, pmboxdraw}
+\usepackage[usenames,dvipsnames]{color}
+\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{darkred}{rgb}{.7,0,0}
+\definecolor{darkgreen}{rgb}{0,.6,0}
+\usepackage[colorlinks,pagebackref,pdfusetitle, urlcolor=darkblue,citecolor=darkblue, linkcolor=darkred,bookmarksnumbered,plainpages=false]{hyperref}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\newcommand{\ddx}{\frac{d}{dx}}
+\newcommand{\dydx}{\frac{dy}{dx}}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\dy}{\frac{dy}{dx}}
+
+\usepackage{tikzsymbols}
+
+\usepackage{bchart}
+
+\newcommand{\headervariable}{Chapter 7}
+
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{ \fancyplain{}{QUAN 2010, UCCS} }
+%\chead{ \fancyplain{}{} }
+\rhead{ \fancyplain{}{Course Notes:  \headervariable} }
+%\rfoot{\fancyplain{}{page \thepage\ of \pageref{LastPage}}}
+\fancyfoot[RO, LE]{\textbf{Chapter 7} page \thepage }
+\thispagestyle{plain}
+
+%%%%%%%%%%%% LISTING %%%
+\usepackage{listings}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\usepackage{verbatim} % used to display code
+\usepackage{fancyvrb}
+\usepackage{acronym}
+\usepackage{amsthm}
+%\VerbatimFootnotes % Required, otherwise verbatim does not work in footnotes!
+
+\usepackage{mathrsfs}
+
+
+\usepackage{arydshln} %For dashed lines in tabular environments.
+\usepackage{amssymb} %For \square.
+\usepackage{amsmath} %For align* and other things.
+\DeclareMathOperator{\csch}{csch}
+\DeclareMathOperator{\sech}{sech}
+\usepackage{enumerate}%,enumitem}
+
+
+
+\usepackage{ulem} %For strikeout text.
+
+\usepackage[final]{pdfpages} %For including PDF pages.
+
+\usepackage{hyperref}
+
+\newcommand{\laplace}{\mathscr{L}}
+\newcommand{\su}{\mathcal{U}}
+
+
+
+%\newcounter{LO}
+%\newcounter{LOexample}
+%\newcounter{LOtemp}
+
+\newcounter{exercise}
+
+\newcounter{visualconnection}
+
+%\usepackage{tcolorbox} %For boxing the text.
+\usepackage[skins]{tcolorbox}
+\usepackage{pgf}
+
+\newtcolorbox{statement}{colback=gray!10!white,colframe=black}
+
+\newtcolorbox{exercise}{colback=white,colframe=green!50!black,fonttitle=\bfseries,colbacktitle=gray, title={\stepcounter{exercise} Exercise \theexercise}}
+
+\newtcolorbox{contd}{colback=white,colframe=green!50!black,fonttitle=\bfseries,colbacktitle=gray, title={Exercise \theexercise, cont'd}}
+
+\newtcolorbox{learninggoal}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large L}EARNING~~{\Large G}OAL}}
+
+\newtcolorbox{defn}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large D}EFINITION}}
+
+\newtcolorbox{theorem}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large T}HEOREM}}
+
+\newtcolorbox{question}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large Q}UESTION}}
+
+
+\newtcolorbox{warning}{skin=enhanced, colback=gray!10!white, colframe=black, fonttitle=\bfseries, colbacktitle=white, coltitle=red!50!gray, attach boxed title to top left={xshift=3mm,yshift=-2mm}, title={\large Warning!}}
+
+\newtcolorbox{visualconnection}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=white, coltitle=blue!50!gray, attach boxed title to top left={xshift=3mm,yshift=-2mm}, title={\large\stepcounter{visualconnection} Visual Connection \Alph{visualconnection}}}
+
+\newtcolorbox{remark}{colback=white,colframe=black}
+
+
+
+%\usepackage[latin1]{inputenc} %Needed for accented characters?
+%\usepackage{amsfonts}
+%\usepackage{latexsym}
+
+%To print solutions, use \solutionstrue; To hide solutions, use \solutionsfalse.
+%\sol takes two arguments. #1 is the vertical length. #2 is the text.
+
+
+\newif\ifsolutions
+\solutionsfalse
+
+\ifsolutions
+    \newcommand{\soln}[2]{\begin{minipage}[c][#1]{\linewidth}{\textcolor{blue}{\textbf{Solution:}}\quad \textcolor{blue}{#2}}\end{minipage}}
+    \newcommand{\opsoln}[1]{#1}
+    \newcommand{\tblsoln}[1]{\textcolor{blue}{#1}}
+\else
+    \newcommand{\soln}[2]{\begin{minipage}[c][#1]{\linewidth}{\vfill}\end{minipage}}
+    \newcommand{\opsoln}[1]{0}
+    \newcommand{\tblsoln}[1]{\textcolor{white}{#1}}
+\fi
+
+\ifsolutions
+    \newcommand{\sol}[2]{\begin{minipage}[c][#1]{\linewidth}{\textcolor{blue}{}\quad \textcolor{blue}{#2}}\end{minipage}}
+    \newcommand{\opsol}[1]{#1}
+    \newcommand{\tblsol}[1]{\textcolor{blue}{#1}}
+\else
+    \newcommand{\sol}[2]{\begin{minipage}[c][#1]{\linewidth}{\vfill}\end{minipage}}
+    \newcommand{\opsol}[1]{0}
+    \newcommand{\tblsol}[1]{\textcolor{white}{#1}}
+\fi
+
+
+\renewcommand*\contentsname{Table of Contents}
+
+
+\usepackage{tocloft}
+\setlength\cftparskip{7pt}
+
+%From IODE:
+\newcommand{\vs}{\vskip.2cm} %customizable command for inserting small vertical space.  Usually appears between paragraphs.
+\usepackage[inline,shortlabels]{enumitem} % gives ability to continue with numbering (add [resume] after \begin{enumerate}) AND to make horizontal lists by adding * to enumerate (\begin{enumerate*})
+
+%\newcommand{\ds}{\displaystyle}
+\newcommand{\vv}{\vec{v}}
+\newcommand{\uu}{\vec{u}}
+\newcommand{\yy}{\vec{y}}
+
+\newcommand{\ww}{\textbf{w}}
+\newcommand{\xx}{\textbf{x}}
+\newcommand{\bb}{\textbf{b}}
+\newcommand{\dt}{\frac{d}{dt}}
+
+\newcommand{\RR}{\mathbb{R}}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}[thm]{Example}
+
+
+\theoremstyle{definition}
+%\newtheorem{defn}[thm]{Definition}
+
+\begin{document}
+
+%\setcounter{page}{1}
+\pagenumbering{arabic}
+
+
+\begin{center}
+
+{\LARGE \textsc{Chapter 7:  Sampling and Sampling Distributions}}
+\end{center}
+
+
+\section*{Basics of Sampling}
+
+\begin{itemize}
+
+\item A \underline{population} represents...
+
+\vspace*{.2in}
+
+A \underline{parameter} is a value that describes...
+
+\vspace*{.2in}
+
+\item A \underline{sample} is a...
+
+\vspace*{.2in}
+
+A \underline{statistic} is a value calculated from a sample and it estimates...
+
+\vspace*{.2in}
+
+
+\end{itemize}
+
+
+\section*{Types of Sampling}
+
+\noindent A probability sample is a sample in which each member of the population has a known, nonzero, chance of being selected for the sample.  There are five main types:
+
+\begin{itemize}
+
+\item simple random sample:
+
+\vspace*{.6in}
+
+\item systematic sampling:
+
+\vspace*{.6in}
+
+\item stratified sampling:
+
+\vspace*{.6in}
+
+\item cluster sampling:
+
+\vspace*{.6in}
+
+\item resampling:
+
+\vspace*{.6in}
+
+
+\end{itemize}
+
+\enlargethispage{2\baselineskip}
+
+A convenience sample is...
+\vspace*{.3in}
+\begin{itemize}
+\item The problem with this kind of sample is...
+\vspace*{.3in}
+\end{itemize}
+
+
+\newpage
+
+\begin{exercise}  (Your Turn 1)
+
+Identify the type of sampling technique for each of the following:
+
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item The first Monday of each month, customers who come to a store are asked to fill out a satisfaction survey.
+
+\vfill
+
+\item I randomly select four stores in a mall and ask each customer in those stores about his or her opinion of the latest health care legislation.
+
+\vfill
+
+\item I position myself on a busy intersection of a city street and ask people what their opinions are of a local sports team.
+
+\vfill
+
+\item Sixty percent of the students attending college are females.  A random sample is constructed that consists of $60\%$ females from the student population to ask what their opinions are of the college's food service.
+
+\vfill
+
+\item Using computer software, a manager randomly selects $20$ employees to participate in a job satisfaction survey.
+
+\vfill
+
+\end{enumerate}
+
+
+\section*{Errors in Sampling}
+
+\begin{itemize}
+
+\item \textbf{Sampling error} refers to differences between a sample and the population that exist only because of the observations selected for the sample (i.e. errors due to chance).  
+
+In other words, the difference between the statistic and the parameter due to the face that the sample is not a perfect representation of the population.
+
+\vfill
+
+\item \textbf{Nonsampling error} refers to differences between a sample and the population due to mistakes made in data acquisition or improper sample selection.
+
+\vfill
+
+\end{itemize}
+
+\newpage
+
+\begin{exercise}  (Donnelly 7.3)
+
+The table in this lesson's Excel file shows the total points scored in $16$ football games played during week 1 of the local Pop Warner youth football league.
+
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item Calculate the mean for this population.
+
+\vfill
+
+\item Calculate the sampling error using the first four games in the first row as your sample.
+
+\vfill
+
+\item Calculate the sampling error using all eight games in the first row as your sample.
+
+\vfill
+
+\item How does increasing the sample size affect the sampling error?
+
+\vfill
+
+\item Using a sample of size four, what is the largest sampling error that can be observed from this population?
+
+\vfill
+\vfill
+
+\end{enumerate}
+
+
+\newpage
+
+\begin{exercise}  (Donnelly 7.6)
+
+The data table found in this lesson's Excel file contains daily revenues for the past $350$ business days earned from cell phone accessories (Bluetooth headsets, memory cards, and so on) sold at a local Verizon retail store in Delaware.
+
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item Use Excel to draw a systematic sample consisting of $14$ days, and then calculate the sampling error for the sample.
+
+\vfill
+
+\item Use Excel to draw a systematic sample consisting of $35$ days, and then calculate the sampling error for the sample.
+
+\vfill
+
+\item Use Excel to draw a systematic sample consisting of $50$ days, and then calculate the sampling error for the sample.
+
+\vfill
+
+\item Compare the sampling error for parts a,b, and c, and explain the reason for the differences.
+
+\vfill
+
+\item What problems might be encountered with the sample obtained in part c?
+
+\vfill
+
+\end{enumerate}
+
+
+\section*{Sampling Distribution of the Mean}
+
+\noindent In addition to knowing how individual data values vary about the mean for a population, statisticians are interested in knowing how the means of samples of the same size taken from the same population vary about the population mean.  (i.e. how do groups of data compare to the overall data?)  This leads to arguably the most important topic in all of statistics.
+
+
+\begin{defn}
+A \textbf{sampling distribution of the mean} is a distribution of the mean from numerous samples of the same size.  This distribution has a mean, $\mu_{\overline{x}}$, and a standard error (i.e. the standard deviation of the sample means), $\sigma_{\overline{x}}$.
+\end{defn}
+
+\noindent There are three important properties that describe the distribution of sample means:
+
+\begin{enumerate}
+
+\item The sampling distribution of the mean of a random variable drawn from \underline{any population} is approximately normal for sufficiently large sample size.  The larger the sample size, the more closely the sample distribution resembles a normal distribution.
+
+\item The mean of the sample means will be the same as the population mean;  that is, $\mu_{\overline{x}}=\mu$.
+
+\item The standard deviation of the sample means will be smaller than the standard deviation of the population;  specifically, $\sigma_{\overleftarrow{x}}=\frac{\sigma}{\sqrt{n}}$.
+
+\end{enumerate}
+
+
+\begin{exercise}  (Donnelly 7.7)
+
+For a population with a mean equal to $250$ and a standard deviation equal to $25$, calculate the standard error of the mean for the following sample sizes.
+
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item $20$
+
+\vfill
+
+\item $50$
+
+\vfill
+
+\item $80$
+
+\vfill
+
+\item What can you conclude about the standard error as the sample size increases?
+
+\vfill
+
+\end{enumerate}
+
+\newpage
+
+
+\section*{The Central Limit Theorem}
+
+\begin{theorem}
+In short, the \textbf{Central Limit Theorem} says:
+\vspace*{1in}
+\end{theorem}
+
+\noindent There are basically three scenarios that come up that involve the use of the Central Limit Theorem:
+
+\begin{enumerate}
+
+\item If the samples are drawn from a normal population, then the sampling distribution of the sample means will also be normally distributed regardless of the size of the samples.
+
+\item The sampling distribution of the sample means will be normally distributed when samples of size $n\geq 30$ are drawn from population that is not necessarily normal.
+
+\item If samples of size $n<30$ are drawn from a population that is not necessarily normal, then the Central Limit Theorem does not apply and we cannot draw conclusions about the sampling distribution of the sample means.
+
+\end{enumerate}
+
+
+\begin{statement}
+Bottom line:  If the sample size is large enough, then we can use the Central Limit Theorem to answer questions about sample means using the same techniques that we used to answer questions about individual values of a normally distributed population.  All we need to do is adjust the $z$-score calculation to account for the new standard deviation.
+$$ \text{Generic $z$-score formula:  }  Z=\frac{X-\text{mean}}{\text{standard deviation}}   $$
+\end{statement}
+
+
+\begin{exercise}  (Donnelly 7.8)
+
+For a normal population with a mean equal to $87$ and a standard deviation equal to $16$, determine the probability of observing a sample mean of $90$ or less from a sample of size $15$.
+
+\end{exercise}
+
+\vfill
+
+\newpage
+
+\begin{exercise}  (Donnelly 7.9)
+
+For a population that is left-skewed with a mean of $21$ and a standard deviation equal to $15$, determine the probability of observing a sample mean of $18$ or more from a sample of size $33$.
+
+\end{exercise}
+
+\vfill
+\vfill
+\vfill
+
+
+\begin{exercise}  (Donnelly 7.21)
+
+According to the Organisation for Economic Cooperation and Development (OECD), adults worked an average of $1771$ hours in $2016$.  Assume the population standard deviation is $390$ hours and that a random sample of $50$ adults was selected.
+
+\end{exercise}
+
+
+\begin{enumerate}[(a)]
+
+\item Calculated the standard error of the mean.
+
+\vfill
+
+\item What is the probability that the sample mean will be more than $1790$ hours?
+
+\vfill
+\vfill
+
+\item What is the probability that the sample mean will be between $1720$ and $1760$ hours?
+
+\vfill
+\vfill
+
+\newpage
+
+\item Would a sample mean of $1799$ hours support the claim made by the organization?
+
+\vfill
+\vfill
+\vfill
+\vfill
+
+\item Identify the symmetrical interval that includes $95\%$ of the sample means if the true population mean is $1771$ hours.
+
+\vfill
+\vfill
+\vfill
+\vfill
+
+\end{enumerate}
+
+
+\section*{The Sampling Distribution of the Proportion}
+
+\noindent So far, the focus in this chapter has been on the distribution of sample means.  However, sometimes we deal with business scenarios where we are counting observations in a sample and in this case the sample proportion (or percentage), $\overline{p}$, is the statistic that is relevant rather than the sample mean, $\overline{x}$.
+
+\begin{defn}
+The \textbf{sampling distribution of the proportion} describes the pattern that the sample proportions tend to follow when randomly drawn from a population.  This distribution has a mean, $\overline{p}=\frac{x}{n}$, and a standard error (i.e. the standard deviation of the sample proportions), $\sigma_p = \sqrt{\frac{p(1-p)}{n}}$.
+\end{defn}
+
+
+\begin{exercise}  (Donnelly 7.25)
+
+For a population with a proportion equal to $0.32$, calculate the standard error of the proportion for the following sample sizes.
+
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item $35$
+
+\vfill
+
+\item $70$
+
+\vfill
+
+\item $105$
+
+\vfill
+
+\item What can you conclude about the standard error as the sample size increases?
+
+\vfill
+
+\end{enumerate}
+
+
+\newpage
+
+\begin{exercise}  (Donnelly 7.32)
+
+A social media survey found that $69\%$ of parents ``follow" their children on Instagram.  A random sample of $140$ parents was selected.
+
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item Calculated the standard error of the proportion.
+
+\vfill
+
+\item What is the probability that $104$ or more parents from this sample ``follow" their children on Instagram?
+
+\vfill
+\vfill
+
+\item What is the probability that between $97$ and $104$ parents from this sample ``follow" their children on Instagram?
+
+\vfill
+\vfill
+\vfill
+
+\item If $81$ parents responded that they ``follow" their children on Instagram, does this result support the findings of the social media survey?
+
+\vfill
+\vfill
+\vfill
+\vfill
+
+\end{enumerate}
+
+
+
+
+\end{document}

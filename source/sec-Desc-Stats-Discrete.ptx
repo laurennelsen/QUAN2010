@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Desc-Stats-Discrete" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Descriptive Statistics for a Discrete Probability Distribution</title>
+
+
+  <p>
+    ....insert stuff about things we might want to ask about a distribution....  what average value would we expect rolling a die or playing a gambling game?  how spread out are the values...?
+  </p>
+
+  <definition>
+  <p> 
+   
+    <ul>
+      <li>
+        <p>
+          The mean, or <em>expected value</em> of a discrete probability distribution is the weighted average of all outcomes of the random variable.
+          <m>E(X)=\mu=\sum_{i=1}^n x_iP(x_i)</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          The <em>expected monetary value</em> is the mean when the discrete random variable is in dollars ($)
+        </p>
+      </li>
+      <li>
+        <p>
+          The <em>variance</em> of a discrete probability distribution measures the spread of the individual values around the mean.
+          <m>\sigma^2=\sum_{i=1}^n (x_i-\mu)^2P(x_i)</m>
+        </p>
+      </li>
+      <li>
+        <p>
+          The <em>standard deviation</em> of a discrete probability distribution measures the dispersion of the outcome of the random variable in relation to the mean.
+          <m>\sigma=\sqrt{\sigma^2}</m>
+        </p>
+      </li>
+    </ul>
+  
+  </p>
+</definition>
+
+
+<example>
+  <p>(Donnely 5.7)  The table below shows the discrete probability distribution for the number of bedrooms per house in a certain community:
+  </p>
+
+    <tabular>
+    <row header="yes">
+      <cell halign="center"><term><m>\#</m> of Bedrooms</term></cell>
+      <cell halign="center"><term>Probability</term></cell>
+    </row>
+    <row class="odd">
+      <cell halign="center">3</cell>
+      <cell halign="center">0.23</cell>
+    </row>
+    <row class="even">
+      <cell halign="center">4</cell>
+      <cell halign="center">0.57</cell>
+    </row>
+    <row class="odd">
+      <cell halign="center">5</cell>
+      <cell halign="center">0.14</cell>
+    </row>
+    <row class="even">
+      <cell halign="center">6</cell>
+      <cell halign="center">???</cell>
+    </row>
+    </tabular>
+
+<p>
+  <ol>
+<li> Determine the missing probability for a 6-bedroom house.</li>
+<li> Determine the mean number of bedrooms per house.</li>
+<li> Determine the standard deviation for the number of bedrooms per house.  <em>(Hint:  Use the table below to compute the variance first....fix this or add something in Excel.....)</em></li>
+  </ol>
+
+</p>
+  <table>
+    <caption></caption>
+    <tabular>
+    <row header="yes">
+      <cell halign="center"><m>x</m></cell>
+      <cell halign="center"><m>P(x)</m></cell>
+      <cell halign="center"><m>\mu</m></cell>
+      <cell halign="center"><m>x-\mu</m></cell>
+      <cell halign="center"><m>(x-\mu)^2</m></cell>
+      <cell halign="center"><m>(x-\mu)^2P(x)</m></cell>
+    </row>
+    <row class="odd">
+      <cell halign="center"><nbsp/></cell>
+      <cell halign="center"></cell>
+      <cell halign="center"></cell>
+      <cell halign="center"></cell>
+      <cell halign="center"></cell>
+      <cell halign="center"></cell>
+    </row>
+    <row class="even">
+      <cell halign="center"></cell>
+      <cell halign="center"></cell>
+      <cell halign="center"></cell>
+      <cell halign="center"></cell>
+      <cell halign="center"></cell>
+      <cell halign="center"></cell>
+    </row>
+    <row class="odd">
+      <cell halign="center"></cell>
+      <cell halign="center"></cell>
+      <cell halign="center"></cell>
+      <cell halign="center"></cell>
+      <cell halign="center"></cell>
+      <cell halign="center"></cell>
+    </row>
+    <row class="even">
+      <cell halign="center"></cell>
+      <cell halign="center"></cell>
+      <cell halign="center"></cell>
+      <cell halign="center"></cell>
+      <cell halign="center"></cell>
+      <cell halign="center"></cell>
+    </row>
+    </tabular>
+  </table>
+
+</example>
+
+
+
+<p>
+  It turns out we can calculate this in Excel!
+  ...insert Excel commands....
+</p>
+
+
+
+<example>
+  <p>
+  (Donnelly 5.45)
+		</p>
+
+		<p>
+			Tees R Us manufactures and sells T-shirts for sporting events, is providing shirts for an upcoming tournament. Each shirt will cost <m>\$9</m> to produce and will be sold for <m>\$18</m>. Any unsold shirts at the end of the tournament can be sold for <m>\$5</m> a piece in the near future. Tees R Us assumes the demand for the shirts will be <m>500</m>, <m>1000</m>, <m>1500</m>, or <m>2000</m>. They also estimate that the probabilities of each of these sales levels occurring will be <m>15\%</m>, <m>20\%</m>, <m>25\%</m>, and <m>40\%</m>, respectively. Determine the expected monetary value of the project if Tees R Us chooses to print <m>1500</m> shirts for the tournament.
+    </p>
+</example>
+
+</section>

@@ -1,0 +1,666 @@
+\documentclass[12pt, letterpaper]{article}
+%\usepackage{geometry}
+\usepackage[inner=1.75cm,outer=1.75cm,top=1.75cm, bottom=1.75cm]{geometry}
+\pagestyle{empty}
+\usepackage{graphicx,multicol}
+%\usepackage{pdfpages}
+\usepackage{fancyhdr, lastpage, bbding, pmboxdraw}
+\usepackage[usenames,dvipsnames]{color}
+\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{darkred}{rgb}{.7,0,0}
+\definecolor{darkgreen}{rgb}{0,.6,0}
+\usepackage[colorlinks,pagebackref,pdfusetitle, urlcolor=darkblue,citecolor=darkblue, linkcolor=darkred,bookmarksnumbered,plainpages=false]{hyperref}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\newcommand{\ddx}{\frac{d}{dx}}
+\newcommand{\dydx}{\frac{dy}{dx}}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\dy}{\frac{dy}{dx}}
+
+\usepackage{tikzsymbols}
+
+\newcommand{\headervariable}{Chapters 1 and 2}
+
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{ \fancyplain{}{QUAN 2010, UCCS} }
+%\chead{ \fancyplain{}{} }
+\rhead{ \fancyplain{}{Course Notes:  \headervariable} }
+%\rfoot{\fancyplain{}{page \thepage\ of \pageref{LastPage}}}
+\fancyfoot[RO, LE]{\textbf{Chapters 1 and 2} page \thepage }
+\thispagestyle{plain}
+
+%%%%%%%%%%%% LISTING %%%
+\usepackage{listings}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\usepackage{verbatim} % used to display code
+\usepackage{fancyvrb}
+\usepackage{acronym}
+\usepackage{amsthm}
+%\VerbatimFootnotes % Required, otherwise verbatim does not work in footnotes!
+
+\usepackage{mathrsfs}
+
+
+\usepackage{arydshln} %For dashed lines in tabular environments.
+\usepackage{amssymb} %For \square.
+\usepackage{amsmath} %For align* and other things.
+\DeclareMathOperator{\csch}{csch}
+\DeclareMathOperator{\sech}{sech}
+\usepackage{enumerate}%,enumitem}
+
+
+
+\usepackage{ulem} %For strikeout text.
+
+\usepackage[final]{pdfpages} %For including PDF pages.
+
+\usepackage{hyperref}
+
+\newcommand{\laplace}{\mathscr{L}}
+\newcommand{\su}{\mathcal{U}}
+
+
+
+%\newcounter{LO}
+%\newcounter{LOexample}
+%\newcounter{LOtemp}
+
+\newcounter{exercise}
+
+\newcounter{visualconnection}
+
+%\usepackage{tcolorbox} %For boxing the text.
+\usepackage[skins]{tcolorbox}
+\usepackage{pgf}
+
+\newtcolorbox{statement}{colback=gray!10!white,colframe=black}
+
+\newtcolorbox{exercise}{colback=white,colframe=green!50!black,fonttitle=\bfseries,colbacktitle=gray, title={\stepcounter{exercise} Exercise \theexercise}}
+
+\newtcolorbox{contd}{colback=white,colframe=green!50!black,fonttitle=\bfseries,colbacktitle=gray, title={Exercise \theexercise, cont'd}}
+
+\newtcolorbox{learninggoal}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large L}EARNING~~{\Large G}OAL}}
+
+\newtcolorbox{defn}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large D}EFINITION}}
+
+\newtcolorbox{theorem}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large T}HEOREM}}
+
+\newtcolorbox{question}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large Q}UESTION}}
+
+
+\newtcolorbox{warning}{skin=enhanced, colback=gray!10!white, colframe=black, fonttitle=\bfseries, colbacktitle=white, coltitle=red!50!gray, attach boxed title to top left={xshift=3mm,yshift=-2mm}, title={\large Warning!}}
+
+\newtcolorbox{visualconnection}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=white, coltitle=blue!50!gray, attach boxed title to top left={xshift=3mm,yshift=-2mm}, title={\large\stepcounter{visualconnection} Visual Connection \Alph{visualconnection}}}
+
+\newtcolorbox{remark}{colback=white,colframe=black}
+
+
+
+%\usepackage[latin1]{inputenc} %Needed for accented characters?
+%\usepackage{amsfonts}
+%\usepackage{latexsym}
+
+%To print solutions, use \solutionstrue; To hide solutions, use \solutionsfalse.
+%\sol takes two arguments. #1 is the vertical length. #2 is the text.
+
+
+\newif\ifsolutions
+\solutionsfalse
+
+\ifsolutions
+    \newcommand{\soln}[2]{\begin{minipage}[c][#1]{\linewidth}{\textcolor{blue}{\textbf{Solution:}}\quad \textcolor{blue}{#2}}\end{minipage}}
+    \newcommand{\opsoln}[1]{#1}
+    \newcommand{\tblsoln}[1]{\textcolor{blue}{#1}}
+\else
+    \newcommand{\soln}[2]{\begin{minipage}[c][#1]{\linewidth}{\vfill}\end{minipage}}
+    \newcommand{\opsoln}[1]{0}
+    \newcommand{\tblsoln}[1]{\textcolor{white}{#1}}
+\fi
+
+\ifsolutions
+    \newcommand{\sol}[2]{\begin{minipage}[c][#1]{\linewidth}{\textcolor{blue}{}\quad \textcolor{blue}{#2}}\end{minipage}}
+    \newcommand{\opsol}[1]{#1}
+    \newcommand{\tblsol}[1]{\textcolor{blue}{#1}}
+\else
+    \newcommand{\sol}[2]{\begin{minipage}[c][#1]{\linewidth}{\vfill}\end{minipage}}
+    \newcommand{\opsol}[1]{0}
+    \newcommand{\tblsol}[1]{\textcolor{white}{#1}}
+\fi
+
+
+\renewcommand*\contentsname{Table of Contents}
+
+
+\usepackage{tocloft}
+\setlength\cftparskip{7pt}
+
+%From IODE:
+\newcommand{\vs}{\vskip.2cm} %customizable command for inserting small vertical space.  Usually appears between paragraphs.
+\usepackage[inline,shortlabels]{enumitem} % gives ability to continue with numbering (add [resume] after \begin{enumerate}) AND to make horizontal lists by adding * to enumerate (\begin{enumerate*})
+
+%\newcommand{\ds}{\displaystyle}
+\newcommand{\vv}{\vec{v}}
+\newcommand{\uu}{\vec{u}}
+\newcommand{\yy}{\vec{y}}
+
+\newcommand{\ww}{\textbf{w}}
+\newcommand{\xx}{\textbf{x}}
+\newcommand{\bb}{\textbf{b}}
+\newcommand{\dt}{\frac{d}{dt}}
+
+\newcommand{\RR}{\mathbb{R}}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}[thm]{Example}
+
+
+\theoremstyle{definition}
+%\newtheorem{defn}[thm]{Definition}
+
+\begin{document}
+
+%\setcounter{page}{1}
+\pagenumbering{arabic}
+
+
+\begin{center}
+
+{\LARGE \textsc{Chapters 1 and 2:  Intro. to Business Statistics and Displaying Descriptive Statistics}}
+\end{center}
+
+\begin{question}
+What is statistics?
+\end{question}
+
+\vfill
+
+\begin{question}
+What is data?
+\end{question}
+
+\vfill
+
+\begin{statement}
+\textbf{Branches of Statistics}
+
+The three main branches of statistics are:
+\begin{itemize}
+\item \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+\vspace*{.2in}
+\item \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+\vspace*{.2in}
+\item \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+\vspace*{.2in}
+\end{itemize}
+\end{statement}
+
+\vspace{.2in}
+
+\begin{statement}
+\begin{itemize}
+\item Goal of \textbf{descriptive statistics:}
+\vspace*{.3in}
+\item \textbf{predictive statistics} analyzes past data to:
+\vspace*{.3in}
+\end{itemize}
+\end{statement}
+
+\begin{statement}
+During our study of \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~} statistics, we will learn a variety of techniques that allow us to draw conclusions about a population based on a sample of data.
+\end{statement}
+
+
+\newpage
+
+\begin{tcolorbox}
+\begin{itemize}
+\item \textbf{population}:  set containing all the people or objects whose properties are to be described and analyzed by the data collector
+\item \textbf{sample}:  a subset or subgroup of the population
+\end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}
+\begin{itemize}
+\item \textbf{parameter}:  number that describes a characteristic of a population
+\item \textbf{statistic}:  a number that describes a characteristic of a sample
+\end{itemize}
+\end{tcolorbox}
+
+\begin{exercise}  A group of hotel owners in a large city decide to conduct a survey among citizens of the city to discover their opinions about casino gambling.
+
+\begin{enumerate}[(a)]
+\item Describe the population.
+
+
+\item One of the hotel owners suggests obtaining a sample by surveying all the people at six of the largest nightclubs in the city on a Saturday night.  Each person will be asked to express his or her opinion on casino gambling.  Does this seem like a good idea?
+
+
+
+\end{enumerate}
+\end{exercise}
+
+\vfill
+
+
+\begin{tcolorbox}
+A \textbf{random sample} is a sample obtained in such a way that every element in the population has an equal chance of being selected for the sample.
+\end{tcolorbox}
+
+\begin{exercise}  Think again about the group of hotel owners from Example 1 who are in a large city and are interested in how the city's citizens feel about casino gambling.  Which of the following would be the most appropriate way to select a random sample?
+
+\begin{enumerate}[(a)]
+\item Randomly survey people who live in the oceanfront condominiums in the city.
+\item Survey the first $200$ people whose names appear in the city's telephone directory.
+\item Randomly select neighborhoods of the city and then randomly survey people within the selected neighborhoods.
+\end{enumerate}
+
+\end{exercise}
+
+\vfill
+
+
+\begin{tcolorbox}
+Regardless of the sampling technique used, the sample should exhibit characteristics typical of those possessed by the target population.  This type of sample is called a \textbf{representative sample}.
+\end{tcolorbox}
+
+
+
+\begin{statement}
+The purpose of descriptive statistics is to summarize or display data so that the audience can quickly obtain an overview of the information.  There are two main types of data:  \textbf{quantitative data} and \textbf{qualitative data}.
+
+Let's define those and other types of data we will work with this semester.  Then we will move on to review how Excel is used to create meaningful tables, charts, and graphs that summarize our data.
+\end{statement}
+
+\section*{Types of Data}
+
+\begin{defn}
+\textbf{quantitative vs. qualitative data:}
+\vspace*{.3in}
+
+\begin{itemize}
+
+\item \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~} uses numbers to describe data.
+\vspace*{.3in}
+
+\item \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~} uses descriptive terms, i.e. categories, to describe data.
+\vspace*{.3in}
+
+\end{itemize}
+\end{defn}
+
+
+\begin{defn}
+\textbf{discrete vs. continuous data:}
+\vspace*{.3in}
+
+\begin{itemize}
+\item \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~} are based on observations that can be counted and are typically represented by whole numbers.
+\vspace*{.3in}
+
+\item \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~} are based on measured observations and can take on any real number.
+\vspace*{.3in}
+\end{itemize}
+
+\end{defn}
+
+
+\vspace*{.2in}
+
+\underline{Examples:}
+
+\vfill
+
+\newpage
+
+\section*{Levels of Measurement}
+
+\begin{itemize}
+
+\item A \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~} level of measurement deals strictly with qualitative data assigned to predetermined categories.\\
+\vspace*{.3in}
+
+\hspace*{.5in} \underline{Examples:}
+
+\vspace*{.3in}
+
+\item An \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~} level of measurement has all the properties of nominal data but with the added feature that we can rank order values from highest to lowest.\\
+\vspace*{.3in}
+
+\hspace*{.5in} \underline{Examples:}
+
+\vspace*{.3in}
+
+\item An \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~} level of measurement  deals strictly with quantitative data allowing the measurement of difference between categories with actual numbers in a meaningful way.\\
+\vspace*{.3in}
+
+\hspace*{.5in} \underline{Examples:}
+
+\vspace*{.3in}
+
+\item A \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~} level of measurement has all the features of interval data but with the added benefit of having a true zero point.\\
+\vspace*{.3in}
+
+\hspace*{.5in} \underline{Examples:}
+
+\vspace*{.3in}
+
+\end{itemize}
+
+\newpage
+
+\begin{exercise}
+Identify the type of data (qualitative, quantitative - discrete, quantitative - continuous) and the level of measurement for each data source.
+\begin{enumerate}[(a)]
+\item the temperature outside (in ${}^{\circ}$F)
+\item the price for one gallon of gasoline
+\item the letter grade earned in your statistics class
+\item the number of boxes of Cheerios on the shelf of a grocery store
+\item the types of cars driven by students in your class
+\item the number of times a person goes to the gym in a week
+\end{enumerate}
+\end{exercise}
+
+\vfill
+
+\newpage
+
+\section*{Quantitative Data Displays}
+
+\begin{defn}
+\begin{itemize}
+
+\item \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}:  a table that shows the number of data observations that fall into specific intervals or categories
+
+\item \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}:  a category in a frequency distribution
+
+\item \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}:  displays the proportion of observations of each class relative to the total number of observations
+
+
+\item \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}: totals the proportion of observations that are less than or equal to the class at which you are looking
+
+
+\end{itemize}
+\end{defn}
+
+\begin{exercise}
+Let's discuss these definitions in the example below:
+
+\vspace*{.2in}
+\begin{tabular}{|c|c|c|c|}\hline
+\text{Student Work Hours} & \text{Frequency} & \text{Relative Frequency} & \text{Cumulative Relative Frequency}\\ \hline
+ & & & \\  & & & \\ \hline
+  & & & \\ & & & \\  \hline
+   & & & \\ & & & \\  \hline
+    & & & \\ & & & \\  \hline
+     & & & \\ & & & \\  \hline
+      & & & \\ & & & \\  \hline
+\end{tabular}
+\end{exercise}
+
+
+\begin{defn}
+\begin{itemize}
+
+\item \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}: a graph shoing the number of observations in each class of a frequency distribution
+
+\item \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}: a line graph that plots the cumulative relative frequency distribution
+
+\end{itemize}
+\end{defn}
+
+\begin{visualconnection}
+UCCS Student Age Example:
+
+\vspace*{.2in}
+
+\url{https://public.tableau.com/views/COHigherEdFederalPellGrants/QuantitativeDataDisplayExampleStory?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link}
+\end{visualconnection}
+
+\newpage
+
+\begin{exercise}
+
+Histograms, Frequency Distributions, and Ogives
+\vspace*{.2in}
+
+\href{https://student.desmos.com/activitybuilder/student-greeting/64876f820f8e21b5a2baf096}{https://student.desmos.com/activitybuilder/student-greeting/64876f820f8e21b5a2baf096}
+
+
+\end{exercise}
+
+
+\begin{exercise}
+Optional Activity:  Creating histograms  (We will not do this in class)
+\vspace*{.2in}
+
+\href{https://student.desmos.com/activitybuilder/student-greeting/648771be70dc10a6b6798a8d}{https://student.desmos.com/activitybuilder/student-greeting/648771be70dc10a6b6798a8d}
+
+\end{exercise}
+
+
+\section*{Grouped Quantitative Data}
+
+\begin{statement}
+Some data sets (particularly those with continuous data) require several values to be grouped into a single class.  This grouping prevents having too many classes in the frequency distribution, which would make it difficult to detect patterns in the data.  Ideally, the number of classes in a frequency distribution should be between $4$ and $20$.
+\vspace*{.2in}
+
+\textbf{$\mathbf{2^k\geq n}$ Rule:}
+One method for determining the number of classes is the use the $2^k\geq n$ rule, where
+\begin{align*}
+k &= \text{Number of classes}\\
+n &= \text{Number of data points}
+\end{align*}
+The goal is to find the lowest value of $k$ that satisfies the rule.
+\end{statement}
+
+\textbf{Example:}
+
+\vfill
+
+\begin{statement}
+Once the number of classes, $k$, is decided, we must determine the width of each class.  The width is the range of the numbers that are put into each class.  The following formula calculates a good width:
+$$ \text{Estimated class width} = ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ $$
+\vspace{.2in}
+
+The formula provides a good estimate that should be rounded to a useful whole number that makes the frequency distribution more readable.
+\end{statement}
+
+\newpage
+
+
+\begin{exercise} \textbf{(Donnelly 2.9)}
+
+The table found in this lesson's Excel file lists the receipt total for $350$ randomly selected customers for the home improvement store Lowe's.
+\begin{enumerate}[(a)]
+\item Using Excel and the $2^k\geq n$ rule, construct a frequency distribution for the data.
+\item Using the results from part (a), calculate the relative frequencies for each class.
+\item Using the results from part (a), calculate the cumulative relative frequencies for each class.
+\item Construct a histogram.
+\end{enumerate}
+\end{exercise}
+
+\vfill
+
+\section*{Shapes of Histograms}
+
+
+\begin{itemize}
+\item \textbf{symmetric:}
+\vfill
+
+\item A distribution of data is \textbf{skewed} if a large number of data items are piled up at one end or the other, with a “tail” at the opposite end.
+\begin{center}
+\begin{multicols}{2}
+\includegraphics[scale=.65]{Images/SkewedRight}
+\includegraphics[scale=.65]{Images/SkewedLeft}
+\end{multicols}
+\textit{(Images from the book \textit{Thinking Mathematically} by Blitzer)}
+\end{center}
+\end{itemize}
+
+\newpage
+
+
+\section*{Scatter Plot}
+
+\begin{defn}
+\textbf{Scatter plots} provide a visual of the relationship between two quantitative variables -- the independent and dependent variables.
+
+\vspace{.2in}
+
+The \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~} variable is placed on the vertical axis of the scatter plot and is influenced by changes in the \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~} variable, which is placed on the horizontal axis.
+\end{defn}
+
+\begin{visualconnection}
+Example with home prices and square footage:
+\vspace*{.2in}
+
+\href{https://www.desmos.com/calculator/peb1jntxox}{https://www.desmos.com/calculator/peb1jntxox}
+
+\vspace*{.2in}
+
+What is the independent variable and what is the dependent variable?
+\end{visualconnection}
+
+\vspace*{1in}
+
+\begin{exercise} \textbf{(Donnelly 2.58)}
+
+A marketing research firm would like to display the relationship between a family's monthly food costs and the number of family members living in a household.  The data in this lesson's Excel file contains the monthly food costs and the number of family members for $16$ families.  Construct a scatter plot and describe the relationship between the number of household members and the family's monthly food costs.
+
+\end{exercise}
+
+\vfill
+
+\newpage
+
+\begin{defn}
+A \textbf{line chart} is a special type of scatterplot in which the data points in the scatter plot are connected with a line.
+\end{defn}
+
+
+\begin{exercise}
+Draw a line chart in the following example that shows the number of items sold in a given year.
+
+\begin{center}
+\includegraphics[scale=.3]{Images/linechart}
+\end{center}
+\end{exercise}
+
+
+\section*{Qualitative Data Displays}
+
+Qualitative data is handled differently when displayed, but you are already familiar with many of these different types of charts.  We quickly summarize them below.
+
+\begin{defn}
+\begin{itemize}
+
+\item \textbf{bar chart:}  useful for displaying qualitative data that is organized in categories
+
+\underline{Example:}  \href{bit.ly/3PhqoWl}{bit.ly/3PhqoWl}
+
+
+
+\item \textbf{horizontal bar chart:}  has bars displayed in a horizontal direction
+
+\underline{Example:}  \href{bit.ly/445JMtQ}{bit.ly/445JMtQ}
+
+\end{itemize}
+
+\noindent There are two types of bar charts with bars in a vertical direction:
+
+\begin{itemize}
+
+\item \textbf{clustered chart:}  displays groups of \textbf{several values side-by-side}
+
+\underline{Example:}  \href{bit.ly/3p6Xvl0}{bit.ly/3p6Xvl0}
+
+
+
+\item \textbf{stacked chart:}  displays groups of \textbf{several values in a single column} within the same category
+
+\underline{Example:}  \href{bit.ly/3JkCGcJ}{bit.ly/3JkCGcJ}
+
+
+\end{itemize}
+\end{defn}
+
+
+\begin{defn}
+
+\begin{itemize}
+
+\item \textbf{Pareto chart:}  a special type of bar chart used in quality control programs by businesses -- a distinguishing feature is that they show the categories in decreasing order.
+
+\item \textbf{Pie chart:}  a useful display when comparing proportions of categorial data.  Each segment represents the relative frequency of that category.
+
+\end{itemize}
+
+\end{defn}
+
+
+
+
+\begin{exercise} \textbf{(You Turn 7)}
+
+The table found in this lesson's Excel file shows an airline company's flight delay data.  The table shows the reasons for the delays and the relative frequency of each type of delay.  Construct a Pareto chart for the data.
+
+\end{exercise}
+
+\vfill
+
+\section*{Contingency (Pivot) Tables}
+
+\begin{defn}
+\textbf{Contingency tables} (known as \textbf{pivot tables} in Excel) provide a format to display the frequencies of two qualitative variables.  Contingency tables allow one to identify relationships between two or more variables.
+\end{defn}
+
+\begin{exercise} \textbf{(Donnelly 2.22)}
+
+A regional manager at Macy's compares customer satisfaction ratings (1,2,3, or 4 stars) at the company's Medford, Iowa, store (M); Eden, Iowa, store (E); and Darby, Iowa, store (D).  The table found in this lesson's Excel file shows data from $50$ customers.  Use Excel to construct a contingency table.  What conclusions can be drawn about store location and customer satisfaction?
+
+\end{exercise}
+
+\vfill
+
+\newpage
+
+\section*{Deceptions in Visual Displays of Data}
+
+Graphs can be used to distort the underlying data, making it difficult for the viewer to learn the truth.  The problem is not that statistics lie, but rather that liars use statistics.
+
+\begin{center}
+\includegraphics[scale=1.2]{Images/12_1example}
+\textit{(Image from the book \textit{Thinking Mathematically} by Blitzer)}
+\end{center}
+
+\bigskip
+
+\noindent\textbf{Now, we'll watch the video at the following link:}
+
+\begin{itemize}
+
+\item \href{https://www.youtube.com/watch?v=E91bGT9BjYk}{https://www.youtube.com/watch?v=E91bGT9BjYk}
+
+
+\end{itemize}
+
+\bigskip
+
+\begin{tcolorbox}
+\textbf{Things to watch for in visual displays of data:}
+\begin{enumerate}
+\item Is there a title that explains what is being displayed?
+\item Are numbers lined up with tick marks on the vertical axis that clearly indicate the scale?  Has the scale been varied to create a more or less dramatic impression than shown by the actual data?
+\item Do too many design and cosmetic effects draw attention from or distort the data?
+\item Has the wrong impression been created about how the data are changing because equally spaced time intervals are not used on the horizontal axis?  Furthermore, has a time interval been chosen that allows the data to be interpreted in various ways?
+\item Are bar sizes scaled proportionately in terms of the data they represent?
+\item Is there a source that indicates where the data in the display came from?  Do the data come from an entire population or a sample?  Was a random sample used and, if so, are there possible differences between what is displayed in the graph and what is occurring in the entire population?  Who is presenting the visual display and does that person have a special case to make for or against the trend shown by the graph?
+\end{enumerate}
+\end{tcolorbox}
+
+
+\end{document}

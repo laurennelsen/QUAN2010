@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Random-Variables" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Random Variables</title>
+
+  <p> Say some stuff about random variables in general.... </p>
+
+
+  <definition xml:id="def-RandomVariables">
+    <statement>
+        <p> Two Types of Random Variables:
+            <ul> 
+              <li> discrete random variable:  outcomes are whole numbers after performing an experiment</li>
+              <li> continuous random variable:  outcomes are any numerical value (including decimals or fractions) after performing an experiment </li>
+            </ul>
+        </p>
+    </statement>
+  </definition>
+
+  <p>
+    ...insert examples of these types of random variables.....
+    ....Random variables can be <q>distributed</q> differently....
+  </p>
+
+<definition xml:id="def-discrete-probability-distribution">
+  <statement>
+    <p>
+      A <em>discrete probability distribution</em> is a listing of all possible outcomes of an experiment for a discrete random variable along with the relative frequency of each outcome
+      <ol>
+        <li>
+          <p>
+            Each outcome in the distribution must be mutually exclusive
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>0\leq P(X)\leq 1</m> for all <m>X</m>; i.e., the probability of each outcome is between 0 and 1
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>\sum P(X)=1</m>; the sum of all probabilities is 1
+          </p>
+        </li>
+      </ol>
+    </p>
+  </statement>
+</definition>
+
+
+</section>

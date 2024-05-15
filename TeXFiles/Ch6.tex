@@ -1,0 +1,764 @@
+\documentclass[12pt, letterpaper]{article}
+%\usepackage{geometry}
+\usepackage[inner=1.75cm,outer=1.75cm,top=1.75cm, bottom=1.75cm]{geometry}
+\pagestyle{empty}
+\usepackage{graphicx,multicol}
+%\usepackage{pdfpages}
+\usepackage{fancyhdr, lastpage, bbding, pmboxdraw}
+\usepackage[usenames,dvipsnames]{color}
+\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{darkred}{rgb}{.7,0,0}
+\definecolor{darkgreen}{rgb}{0,.6,0}
+\usepackage[colorlinks,pagebackref,pdfusetitle, urlcolor=darkblue,citecolor=darkblue, linkcolor=darkred,bookmarksnumbered,plainpages=false]{hyperref}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\newcommand{\ddx}{\frac{d}{dx}}
+\newcommand{\dydx}{\frac{dy}{dx}}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\dy}{\frac{dy}{dx}}
+
+\usepackage{tikzsymbols}
+
+\usepackage{bchart}
+
+\newcommand{\headervariable}{Chapter 6}
+
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{ \fancyplain{}{QUAN 2010, UCCS} }
+%\chead{ \fancyplain{}{} }
+\rhead{ \fancyplain{}{Course Notes:  \headervariable} }
+%\rfoot{\fancyplain{}{page \thepage\ of \pageref{LastPage}}}
+\fancyfoot[RO, LE]{\textbf{Chapter 6} page \thepage }
+\thispagestyle{plain}
+
+%%%%%%%%%%%% LISTING %%%
+\usepackage{listings}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\usepackage{verbatim} % used to display code
+\usepackage{fancyvrb}
+\usepackage{acronym}
+\usepackage{amsthm}
+%\VerbatimFootnotes % Required, otherwise verbatim does not work in footnotes!
+
+\usepackage{mathrsfs}
+
+
+\usepackage{arydshln} %For dashed lines in tabular environments.
+\usepackage{amssymb} %For \square.
+\usepackage{amsmath} %For align* and other things.
+\DeclareMathOperator{\csch}{csch}
+\DeclareMathOperator{\sech}{sech}
+\usepackage{enumerate}%,enumitem}
+
+
+
+\usepackage{ulem} %For strikeout text.
+
+\usepackage[final]{pdfpages} %For including PDF pages.
+
+\usepackage{hyperref}
+
+\newcommand{\laplace}{\mathscr{L}}
+\newcommand{\su}{\mathcal{U}}
+
+
+
+%\newcounter{LO}
+%\newcounter{LOexample}
+%\newcounter{LOtemp}
+
+\newcounter{exercise}
+
+\newcounter{visualconnection}
+
+%\usepackage{tcolorbox} %For boxing the text.
+\usepackage[skins]{tcolorbox}
+\usepackage{pgf}
+
+\newtcolorbox{statement}{colback=gray!10!white,colframe=black}
+
+\newtcolorbox{exercise}{colback=white,colframe=green!50!black,fonttitle=\bfseries,colbacktitle=gray, title={\stepcounter{exercise} Exercise \theexercise}}
+
+\newtcolorbox{contd}{colback=white,colframe=green!50!black,fonttitle=\bfseries,colbacktitle=gray, title={Exercise \theexercise, cont'd}}
+
+\newtcolorbox{learninggoal}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large L}EARNING~~{\Large G}OAL}}
+
+\newtcolorbox{defn}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large D}EFINITION}}
+
+\newtcolorbox{theorem}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large T}HEOREM}}
+
+\newtcolorbox{question}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large Q}UESTION}}
+
+
+\newtcolorbox{warning}{skin=enhanced, colback=gray!10!white, colframe=black, fonttitle=\bfseries, colbacktitle=white, coltitle=red!50!gray, attach boxed title to top left={xshift=3mm,yshift=-2mm}, title={\large Warning!}}
+
+\newtcolorbox{visualconnection}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=white, coltitle=blue!50!gray, attach boxed title to top left={xshift=3mm,yshift=-2mm}, title={\large\stepcounter{visualconnection} Visual Connection \Alph{visualconnection}}}
+
+\newtcolorbox{remark}{colback=white,colframe=black}
+
+
+
+%\usepackage[latin1]{inputenc} %Needed for accented characters?
+%\usepackage{amsfonts}
+%\usepackage{latexsym}
+
+%To print solutions, use \solutionstrue; To hide solutions, use \solutionsfalse.
+%\sol takes two arguments. #1 is the vertical length. #2 is the text.
+
+
+\newif\ifsolutions
+\solutionsfalse
+
+\ifsolutions
+    \newcommand{\soln}[2]{\begin{minipage}[c][#1]{\linewidth}{\textcolor{blue}{\textbf{Solution:}}\quad \textcolor{blue}{#2}}\end{minipage}}
+    \newcommand{\opsoln}[1]{#1}
+    \newcommand{\tblsoln}[1]{\textcolor{blue}{#1}}
+\else
+    \newcommand{\soln}[2]{\begin{minipage}[c][#1]{\linewidth}{\vfill}\end{minipage}}
+    \newcommand{\opsoln}[1]{0}
+    \newcommand{\tblsoln}[1]{\textcolor{white}{#1}}
+\fi
+
+\ifsolutions
+    \newcommand{\sol}[2]{\begin{minipage}[c][#1]{\linewidth}{\textcolor{blue}{}\quad \textcolor{blue}{#2}}\end{minipage}}
+    \newcommand{\opsol}[1]{#1}
+    \newcommand{\tblsol}[1]{\textcolor{blue}{#1}}
+\else
+    \newcommand{\sol}[2]{\begin{minipage}[c][#1]{\linewidth}{\vfill}\end{minipage}}
+    \newcommand{\opsol}[1]{0}
+    \newcommand{\tblsol}[1]{\textcolor{white}{#1}}
+\fi
+
+
+\renewcommand*\contentsname{Table of Contents}
+
+
+\usepackage{tocloft}
+\setlength\cftparskip{7pt}
+
+%From IODE:
+\newcommand{\vs}{\vskip.2cm} %customizable command for inserting small vertical space.  Usually appears between paragraphs.
+\usepackage[inline,shortlabels]{enumitem} % gives ability to continue with numbering (add [resume] after \begin{enumerate}) AND to make horizontal lists by adding * to enumerate (\begin{enumerate*})
+
+%\newcommand{\ds}{\displaystyle}
+\newcommand{\vv}{\vec{v}}
+\newcommand{\uu}{\vec{u}}
+\newcommand{\yy}{\vec{y}}
+
+\newcommand{\ww}{\textbf{w}}
+\newcommand{\xx}{\textbf{x}}
+\newcommand{\bb}{\textbf{b}}
+\newcommand{\dt}{\frac{d}{dt}}
+
+\newcommand{\RR}{\mathbb{R}}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}[thm]{Example}
+
+
+\theoremstyle{definition}
+%\newtheorem{defn}[thm]{Definition}
+
+\begin{document}
+
+%\setcounter{page}{1}
+\pagenumbering{arabic}
+
+
+\begin{center}
+
+{\LARGE \textsc{Chapter 6:  Continuous Probability Distributions}}
+\end{center}
+
+
+\begin{statement}
+
+In this chapter, we study probability distributions that arise from continuous random variables, which are outcomes that take on any numerical value in an interval, including numbers with decimal points.  Recall that probabilities for specific values of a discrete random variable were easy to calculate and the graph of the discrete probability distribution looks like a histogram with a countable number of bars.  By contrast, only the probability of a range of values (not a specific value) can be calculated for a continuous random variable.  Why?
+
+\vspace*{.1in}
+
+Since there is an infinite number of possible values for a continuous random variable, the probability of one specific value is theoretically equal to zero!
+
+\vspace*{.1in}
+
+Let's study three specific continuous probability distributions and identify the types of data where they are useful.
+
+\end{statement}
+
+
+\section*{Common Continuous Probability Distributions}
+
+
+\begin{itemize}
+
+\item \underline{Normal Distribution}
+\begin{multicols}{2}
+\begin{center}
+\includegraphics[scale=.65]{Images/normal}
+\end{center}
+
+The normal distribution is useful when...
+\vspace*{.3in}
+\end{multicols}
+
+
+\item \underline{Exponential Distribution}
+\begin{multicols}{2}
+\begin{center}
+\includegraphics[scale=.65]{Images/exponential}
+\end{center}
+
+The exponential distribution is useful when...
+\vspace*{.3in}
+\end{multicols}
+
+\item \underline{Uniform Distribution}
+\begin{multicols}{2}
+\begin{center}
+\includegraphics[scale=.65]{Images/uniform}
+\end{center}
+
+The uniform distribution is useful when...
+\vspace*{.3in}
+\end{multicols}
+
+\end{itemize}
+
+
+\newpage
+
+
+\section*{The Normal Probability Distribution}
+
+\begin{statement}
+The mathematical expression that describes the shape of the normal probability distribution is called the normal probability density function:
+<p>
+	<me> f(x) = \frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2} </me>
+</p>
+
+Despite the complexity of this function, there are only two parameters that completely determine the shape of the distribution:  the mean, $\mu$, and the standard deviation, $\sigma$.  Let's take a closer look at how they impact the distribution.  (Don't worry -- we won't be using this formula to compute probabilities.  We have other tools!)
+\end{statement}
+
+\begin{visualconnection}
+\begin{center}
+\href{https://www.desmos.com/calculator/4dqcnidgji}{https://www.desmos.com/calculator/4dqcnidgji}
+\end{center}
+
+\textbf{Question:}  How does changing the standard deviation ($\sigma$) and the mean ($\mu$) change the curve?
+
+\vspace*{1.5in}
+
+\end{visualconnection}
+
+
+\section*{Characteristics of the Normal Probability Distribution}
+
+\begin{enumerate}
+
+\item The distribution is bell-shaped and \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~} around the mean.
+
+\vspace*{.2in}
+
+\item Because the shape is symmetrical, the \underline{~~~~~~~~~~~~~~~~~~~~~} and \underline{~~~~~~~~~~~~~~~~~~~~~} are equal and located at the center of the distribution.
+
+
+\vspace*{.2in}
+
+\item Random variables around the mean, where the curve is \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~} 
+
+\vspace*{.1in}
+have a higher probability of occurring than values \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~} of the distribution.
+
+\vspace*{.2in}
+
+\item The total area under the curve is \underline{~~~~~~~~~~~~~~~~~~~~~}.
+
+Since the distribution is symmetric, the area to the \underline{~~~~~~~~~~~~~~~~~~~~~} of the mean equals \underline{~~~~~~~~~~~~~~~~~~~~~}, as does the area to the \underline{~~~~~~~~~~~~~~~~~~~~~} of the mean.
+
+\vspace*{.2in}
+
+\item No matter how far in either direction the distribution curve extends, it never touches the horizontal axis -- but it gets increasingly closer.
+
+
+\end{enumerate}
+
+
+\newpage
+
+\section*{The Standard Normal Distribution}
+
+
+\begin{statement}
+Recall from Chapter 3 that the \textbf{$z$-score} describes the number of standard deviations that a particular value, $x$, is from the mean of its distribution:
+$$ z=\frac{x-\mu}{\sigma} $$
+\vspace*{.1in}
+
+\begin{itemize}
+
+\item Values of $x$ that are less than the mean have \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~} $z$-scores
+
+\item Values of $x$ that are more than the mean have \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~} $z$-scores
+
+\item The $z$-score for the mean equals \underline{~~~~~~~~~~~~~~~~~~~~~}
+
+\end{itemize}
+\end{statement}
+
+
+\begin{defn}
+When the original random variable, $x$, follows a normal distribution, $z$-scores also follow a normal distribution with $\mu =0$, $\sigma=1$.  It is called the \textbf{standard normal distribution}.
+
+\begin{center}
+\includegraphics[scale=.8]{Images/standardnormal}
+\end{center}
+
+\end{defn}
+
+
+The standard normal distribution allows us to calculate probabilities for any normal distribution (since we can standardize it with $z$-scores.  \textbf{Tables 3 and 4} in your book provide you with the cumulative area to the LEFT of the $z$-score.  So how do we use the table to find any probability for a normal distribution?  
+
+There are 3 basic types of problems:
+
+\begin{enumerate}
+
+\item To the left of any $z$-score:  Look up the $z$-score in the table and use the area given.
+
+\item To the right of any $z$-score:  Look up the $z$-score and subtract the area from $1$.
+
+\item Between any two $z$-scores:  Look up both $z$-scores and subtract the smaller area (smaller $z$-score) from the larger area (larger $z$-score).
+
+\end{enumerate}
+
+
+\newpage
+
+\begin{exercise} (Donnelly 6.1,2)  
+Find the following probabilities for a standard normal
+ distribution:
+
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item $P(Z\leq 1.50)$
+
+\vfill
+
+\item $P(Z>2.35)$
+
+\vfill
+
+\item $P(-0.86\leq Z\leq 1.76)$
+
+\vfill
+
+\end{enumerate}
+
+
+\newpage
+
+
+\begin{exercise}  (Donnelly 6.3,4)
+
+A random variable follows the normal probability distribution with a mean of $135$ and a standard deviation of $22$.
+
+\end{exercise}
+
+
+\begin{enumerate}[(a)]
+
+\item What is the probability that a randomly selected value from this population is less than $90$?
+
+\vfill
+
+\item What is the probability that a randomly selected value from this population is more than $40$?
+
+\vfill
+
+\item What is the probability that a randomly selected value from this population is between $120$ and $180$?
+
+\vfill
+
+\end{enumerate}
+
+
+\newpage
+
+
+\noindent Now that we've practiced doing computations associated with the normal distribution, let's examine the Excel formulas that will help.  The first two commands apply to situations where the goal is to compute a probability associated with a data value.
+
+\vspace*{.2in}
+
+\begin{itemize}
+\item The NORM.DIST($x$, mean, standard deviation, cumulative) applies to problems involving a normal distribution with a specified mean and standard deviation.
+
+\item The NORM.S.DIST($z$, cumulative) applies to problems involving the standard normal distribution ($\mu=0$ and $\sigma=1$).  
+
+\end{itemize}
+
+(As we've seen before, cumulative $=$ TRUE or FALSE.)
+
+
+\begin{exercise}  (Donnelly 6.1,2)
+
+Use Excel to find the following probabilities for a standard normal distribution:
+
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item $P(Z<-1.22)$
+
+\vfill
+
+\item $P(Z\geq -0.42)$
+
+\vfill
+
+\item $P(0.32\leq Z\leq 2.15)$
+
+\vfill
+
+\end{enumerate}
+
+
+
+
+\begin{exercise}  (Donnelly 6.3,4)
+
+A random variable follows the normal probability distribution with a mean of $80$ and a standard deviation of $20$.  Use Excel to help answer the following questions.
+
+\end{exercise}
+
+
+\begin{enumerate}[(a)]
+
+\item What is the probability that a randomly selected value from this population is less than $112$?
+
+\vfill
+
+\item What is the probability that a randomly selected value from this population is more than $95$?
+
+\vfill
+
+\item What is the probability that a randomly selected value from this population is between $50$ and $60$?
+
+\vfill
+
+\end{enumerate}
+
+
+\newpage
+
+What if we want to know the specific $X$ that satisfies a given probability?  Then we work backward using the tables and use the $z$-score formula in reverse.  If the exact probability cannot be found in the table, then we will use the closest values.
+
+\vspace*{.2in}
+
+The Excel formulas that apply to this situation are similar to the ones we saw earlier, replacing .DIST with .INV:
+\begin{itemize}
+\item NORM.INV(probability, mean, standard deviation) applies to normal distributions with a specified mean and standard deviation 
+\item NORM.S.INV(probability) is used for standard normal distributions
+\end{itemize}
+
+
+\begin{exercise}
+A random variable follows the normal probability distribution with a mean of $50$ and a standard deviation of $20$.
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item What value of $X$ represents the $75$th percentile?
+
+\vfill
+
+\item Find the value of $X$ so that $40\%$ probability lies below it.
+
+\vfill
+
+\item Find the value of $X$ that represents the highest $10\%$ of all values.
+
+\vfill
+
+\end{enumerate}
+
+\newpage
+
+\noindent Finally, we are ready to use all that we've learned so far to solve application problems involving the normal distribution.  There are a wide variety of problems in the business world (and other fields of study too!) that involve the normal distribution.
+
+\begin{exercise}  (Donnelly 6.11)
+
+According to the Internal Revenue Service, the average income tax refund for the 2009 tax year was $\$3114$.  Assume the refund per person follows the normal probability distribution with a standard deviation of $\$988$.
+
+\end{exercise}
+
+
+\begin{enumerate}[(a)]
+
+\item What is the probability that a randomly selected tax refund from the 2009 tax year will be more than $\$2300$?
+
+\vfill
+
+\item What is the probability that a randomly selected tax refund from the 2009 tax year will be less than $\$1600$?
+
+\vfill
+
+\item What is the probability that a randomly selected tax refund from the 2009 tax year will be between $\$3200$ and $\$4000$?
+
+\vfill
+
+\item What refund amount represents the $35$th percentile of tax returns?
+
+\vfill
+
+\end{enumerate}
+
+
+\begin{exercise}  (Donnelly 6.14)
+
+A credit score measures a person's creditworthiness.  Assume the average credit score for Americans is $688$.  Assume the scores are normally distributed with a standard deviation of $45$.
+
+\end{exercise}
+
+
+\begin{enumerate}[(a)]
+
+\item Determine the interval of credit scores that are one standard deviation around the mean.
+
+\vfill
+
+\item Determine the interval of credit scores that are two standard deviations around the mean.
+
+\vfill
+
+\item Determine the interval of credit scores that are three standard deviations around the mean.
+
+\vfill
+
+
+\end{enumerate}
+
+\newpage
+
+\section*{The Exponential Distribution}
+
+\begin{statement}
+The exponential probability distribution is a continuous distribution commonly used in business to measure the time between customer arrivals or the time between failures in a business process.
+
+\vspace*{.1in}
+
+The mathematical expression that describes the shape of the curve for the exponential probability distribution is called the exponential probability density function:
+$$ f(x)=\lambda e^{-\lambda x}\text{  where } \lambda=\text{ the mean number of occurrences over an interval} $$
+
+\vspace*{.1in}
+
+Recall that you saw $\lambda$ in Chapter 5 when the discrete Poisson distribution was introduced.  It is not a coincidence that we are using $\lambda$ in both of these distributions.  A \underline{discrete} random variable that follows a \textbf{Poisson distribution} with a mean equal to $\lambda$ has a counterpart \underline{continuous} random variable that follows the \textbf{exponential distribution} with mean equal to $\mu = \frac{1}{\lambda}$.
+
+\vspace*{.1in}
+
+It is easy to confuse these two -- try to remember that $\lambda$ is a countable (discrete) rate while $\mu$ is a measurable (continuous) interval.
+
+\vspace*{.1in}
+
+A small bit of good news: the standard deviation for an exponential distribution is equal to its mean.  That is, $\sigma = \mu = \frac{1}{\lambda}$.
+
+
+\end{statement}
+
+\begin{visualconnection}
+The only parameter in the formula is $\lambda$.  Let's look at how it impacts the shape of the distribution.
+\begin{center}
+\href{https://www.desmos.com/calculator/kq2tps7jbe}{https://www.desmos.com/calculator/kq2tps7jbe}
+\end{center}
+\end{visualconnection}
+
+\begin{statement}
+(The shape of the exponential curve is always right-skewed, but increases in ``steepness" as the mean, $\mu$, decreases.)
+\end{statement}
+
+
+\section*{Differences Between the Exponential and Normal Distributions}
+
+
+\begin{enumerate}
+
+\item The shape of the exponential distribution is \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~} 
+
+while the shape of the normal distribution is \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}.
+
+
+\item The shape of the exponential distribution is controlled by only one parameter, \underline{~~~~~~~~~~~~~}, 
+
+while the shape of the normal distribution requires two parameters, \underline{~~~~~~~~~~~~~} and \underline{~~~~~~~~~~~~~}.
+
+
+\item The values of an exponential distribution are always \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~};  they can never be \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~}. 
+
+Values of the normal distribution can be both \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~} and \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~}.
+
+\end{enumerate}
+
+
+\section*{Computing Probabilities for the Exponential Distributions}
+
+\noindent There is no table for helping us calculate probabilities associated with an exponential distribution.  So we will rely on a formula and Excel to help with these calculations.  The formula for calculating the probability that a random variable is less than a specified value is:
+$$ P(x\leq a) = 1-e^{-a\lambda} $$
+where $\lambda=$ the mean number of occurrences over an interval.
+
+
+
+
+\vspace*{.1in}
+
+The Excel formula for calculating the probabilities is EXPON.DIS($x$, $\lambda$, cumulative), where cumulative $=$ TRUE (if you want cumulative probability) or FALSE (if you do not want cumulative probability).
+
+
+\begin{exercise}  (Donnelly 6.21,22)
+
+An exponential probability distribution has a mean equal to $5$ minutes per customer.  Calculate the following probabilities for the distribution.
+
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item $P(X\leq 10)$
+
+\vfill
+
+\item $P(X>12)$
+
+\vfill
+
+\item $P(1\leq X\leq 5)$
+
+\vfill
+
+\end{enumerate}
+
+
+\begin{exercise}  (Donnelly 6.23,24)
+
+An exponential probability distribution has lambda equal to $18$ customers per hour.  Find the following probabilities.
+
+\end{exercise}
+
+
+\begin{enumerate}[(a)]
+
+\item What is the probability that the next customer will arrive within the next \underline{minute}?
+
+\vfill
+
+\item What is the probability that the next customer will arrive within the next $15$ \underline{minutes}?
+
+\vfill
+
+\newpage
+
+\item What is the probability that the next customer will arrive within the next $2$ to $5$ \underline{minutes}?
+
+\vfill
+
+\item What is the probability that the next customer will arrive within the next $45$ \underline{seconds}?
+
+\vfill
+
+\end{enumerate}
+
+
+\section*{The Uniform Distribution}
+
+\noindent The uniform distribution is a continuous distribution where the probability of any interval is equal to any other interval with the same width.
+
+\vspace*{.1in}
+
+\noindent The mathematical expression that describes the shape of the curve for the uniform probability distribution is called the continuous uniform probability density function:
+$$ f(x) = \begin{cases}
+\frac{1}{b-a} & \text{ if } a\leq x\leq b,\\
+0 & \text{ otherwise.}
+\end{cases} $$
+
+\noindent  Since this function is a constant, the shape of the uniform probability distribution is a rectangle.  So computing probabilities associated with it simply involves finding areas of rectangles: 
+$$ \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}$$
+
+\vspace*{.1in}
+
+\noindent The mean and standard deviation for the uniform distribution are:
+\begin{itemize}
+\item $\mu = $
+\vspace*{.2in}
+\item $\sigma = $
+\vspace*{.2in}
+\end{itemize}
+
+\newpage
+
+
+\begin{exercise}  (Donnelly 6.29,30,31)
+
+A random variable follows the continuous uniform distribution between $30$ and $60$.  Calculate the following probabilities for the distribution.
+
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item $P(X\leq 45)$
+
+\vfill
+
+\item $P(X>50)$
+
+\vfill
+
+\item $P(40\leq X\leq 55)$
+
+\vfill
+
+\item $P(X=35)$
+
+\vfill
+
+\end{enumerate}
+
+\newpage
+
+\begin{exercise}  (Donnelly 6.34)
+
+Assume the time required to pass through security at a particular airport follows the continuous uniform distribution with a minimum time of $8$ minutes and a maximum time of $31$ minutes.
+
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item Calculate the value of $f(x)$.
+
+\vfill
+
+\item What are the mean and standard deviation for this distribution?
+
+\vfill
+
+\item What is the probability that the next passenger will require less than $25$ minutes to pass through security?
+
+\vfill
+
+\item What is the probability that the next passenger will require more than $23$ minutes to pass through security?
+
+\vfill
+
+\item What is the probability that the next passenger will require between $13$ and $20$ minutes to pass through security?
+
+\vfill
+
+\item What time represents the $75$th percentile of this distribution?
+
+\vfill
+\vfill
+
+\end{enumerate}
+
+
+
+\end{document}

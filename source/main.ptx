@@ -6,7 +6,7 @@
 
   <book xml:id="QUAN_2010_Notes">
     <title>QUAN 2010 Notes</title>
-    <subtitle>An example to get you started</subtitle>
+    <subtitle>Introduction to Business Statistics</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
@@ -15,6 +15,8 @@
     <xi:include href="./ch-Intro.ptx" />
     
     <xi:include href="./ch-Descriptive-Statistics.ptx" />
+
+    <xi:include href="./ch-Discrete-Probability-Distributions.ptx" />
 
 
     <!-- Include backmatter -->

@@ -1,0 +1,532 @@
+\documentclass[12pt, letterpaper]{article}
+%\usepackage{geometry}
+\usepackage[inner=1.75cm,outer=1.75cm,top=1.75cm, bottom=1.75cm]{geometry}
+\pagestyle{empty}
+\usepackage{graphicx,multicol}
+%\usepackage{pdfpages}
+\usepackage{fancyhdr, lastpage, bbding, pmboxdraw}
+\usepackage[usenames,dvipsnames]{color}
+\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{darkred}{rgb}{.7,0,0}
+\definecolor{darkgreen}{rgb}{0,.6,0}
+\usepackage[colorlinks,pagebackref,pdfusetitle, urlcolor=darkblue,citecolor=darkblue, linkcolor=darkred,bookmarksnumbered,plainpages=false]{hyperref}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\newcommand{\ddx}{\frac{d}{dx}}
+\newcommand{\dydx}{\frac{dy}{dx}}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\dy}{\frac{dy}{dx}}
+
+\usepackage{tikzsymbols}
+
+\usepackage{bchart}
+
+\newcommand{\headervariable}{Chapter 10}
+
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{ \fancyplain{}{QUAN 2010, UCCS} }
+%\chead{ \fancyplain{}{} }
+\rhead{ \fancyplain{}{Course Notes:  \headervariable} }
+%\rfoot{\fancyplain{}{page \thepage\ of \pageref{LastPage}}}
+\fancyfoot[RO, LE]{\textbf{Chapter 10} page \thepage }
+\thispagestyle{plain}
+
+%%%%%%%%%%%% LISTING %%%
+\usepackage{listings}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\usepackage{verbatim} % used to display code
+\usepackage{fancyvrb}
+\usepackage{acronym}
+\usepackage{amsthm}
+%\VerbatimFootnotes % Required, otherwise verbatim does not work in footnotes!
+
+\usepackage{mathrsfs}
+
+
+\usepackage{arydshln} %For dashed lines in tabular environments.
+\usepackage{amssymb} %For \square.
+\usepackage{amsmath} %For align* and other things.
+\DeclareMathOperator{\csch}{csch}
+\DeclareMathOperator{\sech}{sech}
+\usepackage{enumerate}%,enumitem}
+
+
+
+\usepackage{ulem} %For strikeout text.
+
+\usepackage[final]{pdfpages} %For including PDF pages.
+
+\usepackage{hyperref}
+
+\newcommand{\laplace}{\mathscr{L}}
+\newcommand{\su}{\mathcal{U}}
+
+
+
+%\newcounter{LO}
+%\newcounter{LOexample}
+%\newcounter{LOtemp}
+
+\newcounter{exercise}
+
+\newcounter{visualconnection}
+
+%\usepackage{tcolorbox} %For boxing the text.
+\usepackage[skins]{tcolorbox}
+\usepackage{pgf}
+
+\newtcolorbox{statement}{colback=gray!10!white,colframe=black}
+
+\newtcolorbox{exercise}{colback=white,colframe=green!50!black,fonttitle=\bfseries,colbacktitle=gray, title={\stepcounter{exercise} Exercise \theexercise}}
+
+\newtcolorbox{contd}{colback=white,colframe=green!50!black,fonttitle=\bfseries,colbacktitle=gray, title={Exercise \theexercise, cont'd}}
+
+\newtcolorbox{learninggoal}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large L}EARNING~~{\Large G}OAL}}
+
+\newtcolorbox{defn}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large D}EFINITION}}
+
+\newtcolorbox{theorem}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large T}HEOREM}}
+
+\newtcolorbox{question}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large Q}UESTION}}
+
+
+\newtcolorbox{warning}{skin=enhanced, colback=gray!10!white, colframe=black, fonttitle=\bfseries, colbacktitle=white, coltitle=red!50!gray, attach boxed title to top left={xshift=3mm,yshift=-2mm}, title={\large Warning!}}
+
+\newtcolorbox{visualconnection}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=white, coltitle=blue!50!gray, attach boxed title to top left={xshift=3mm,yshift=-2mm}, title={\large\stepcounter{visualconnection} Visual Connection \Alph{visualconnection}}}
+
+\newtcolorbox{remark}{colback=white,colframe=black}
+
+
+
+%\usepackage[latin1]{inputenc} %Needed for accented characters?
+%\usepackage{amsfonts}
+%\usepackage{latexsym}
+
+%To print solutions, use \solutionstrue; To hide solutions, use \solutionsfalse.
+%\sol takes two arguments. #1 is the vertical length. #2 is the text.
+
+
+\newif\ifsolutions
+\solutionsfalse
+
+\ifsolutions
+    \newcommand{\soln}[2]{\begin{minipage}[c][#1]{\linewidth}{\textcolor{blue}{\textbf{Solution:}}\quad \textcolor{blue}{#2}}\end{minipage}}
+    \newcommand{\opsoln}[1]{#1}
+    \newcommand{\tblsoln}[1]{\textcolor{blue}{#1}}
+\else
+    \newcommand{\soln}[2]{\begin{minipage}[c][#1]{\linewidth}{\vfill}\end{minipage}}
+    \newcommand{\opsoln}[1]{0}
+    \newcommand{\tblsoln}[1]{\textcolor{white}{#1}}
+\fi
+
+\ifsolutions
+    \newcommand{\sol}[2]{\begin{minipage}[c][#1]{\linewidth}{\textcolor{blue}{}\quad \textcolor{blue}{#2}}\end{minipage}}
+    \newcommand{\opsol}[1]{#1}
+    \newcommand{\tblsol}[1]{\textcolor{blue}{#1}}
+\else
+    \newcommand{\sol}[2]{\begin{minipage}[c][#1]{\linewidth}{\vfill}\end{minipage}}
+    \newcommand{\opsol}[1]{0}
+    \newcommand{\tblsol}[1]{\textcolor{white}{#1}}
+\fi
+
+
+\renewcommand*\contentsname{Table of Contents}
+
+
+\usepackage{tocloft}
+\setlength\cftparskip{7pt}
+
+%From IODE:
+\newcommand{\vs}{\vskip.2cm} %customizable command for inserting small vertical space.  Usually appears between paragraphs.
+\usepackage[inline,shortlabels]{enumitem} % gives ability to continue with numbering (add [resume] after \begin{enumerate}) AND to make horizontal lists by adding * to enumerate (\begin{enumerate*})
+
+%\newcommand{\ds}{\displaystyle}
+\newcommand{\vv}{\vec{v}}
+\newcommand{\uu}{\vec{u}}
+\newcommand{\yy}{\vec{y}}
+
+\newcommand{\ww}{\textbf{w}}
+\newcommand{\xx}{\textbf{x}}
+\newcommand{\bb}{\textbf{b}}
+\newcommand{\dt}{\frac{d}{dt}}
+
+\newcommand{\RR}{\mathbb{R}}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}[thm]{Example}
+
+
+\theoremstyle{definition}
+%\newtheorem{defn}[thm]{Definition}
+
+\begin{document}
+
+%\setcounter{page}{1}
+\pagenumbering{arabic}
+
+
+\begin{center}
+
+{\LARGE \textsc{Chapter 10:  Hypothesis Tests Comparing Two Populations}}
+\end{center}
+
+\vspace*{-.3in}
+
+\section*{Overview}
+
+\vspace*{-.1in}
+
+\noindent In this chapter, we build on the ideas from the previous two chapters and use inferential statistics to compare two populations.  We will estimate the difference between two parameters using confidence intervals as well as perform hypothesis tests to compare the difference between the two parameters.  In either situation, after completing the previous chapters, you should have learned that to do various inference procedures, you really only need to know the proper sampling distribution and the format of your hypothesis.  All the other concepts are the same -- just apply the correct formulas.
+
+\vspace*{.1in}
+
+\noindent With two populations involving means, there are two options.  Data may be collected from two completely independent populations, or pairs of data points from the two populations may be collected where they are matched in some way.  Let's define these two concepts carefully before moving into the specifics of inferential statistics involving the comparison of two populations.
+
+
+\begin{itemize}
+
+\item In \textbf{independent samples}, the results from one population...
+\vspace*{.3in}
+
+An observation from one sample...
+\vspace*{.3in}
+
+\item In \textbf{dependent samples}, each observation from one sample...
+\vspace*{.2in}
+
+\end{itemize}
+
+\enlargethispage{2\baselineskip}
+
+
+\section*{Comparing Two Means with Independent Samples}
+
+\vspace*{-.1in}
+
+\noindent In this section, we study two-sample hypothesis tests and confidence intervals.  First, we will assume that the standard deviation, $\sigma$, is known.  Then we will look at the more realistic case where $\sigma$ is unknown.
+
+
+\begin{statement}
+\begin{itemize}
+
+\item The \textbf{sampling distribution for the difference in means} is normal given normal populations or large samples ($n\geq 30$).  The mean of this sampling distribution is:
+\vspace*{.3in}
+
+\item The \textbf{standard error} for this sampling distribution is $\ds \sigma_{\overline{x}_1 - \overline{x}_2} = \sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}. $
+
+
+\item The \textbf{test statistic} for a hypothesis test comparing the difference between two means with independent samples and known standard deviations is defined by:
+$$ z_{\overline{x}} = \frac{(\overline{x}_1 - \overline{x}_2)-(\mu_1-\mu_2)_{H_0}}{\sigma_{\overline{x}_1 - \overline{x}_2}}, $$
+
+where
+\vspace*{-.25in}
+\begin{align*}
+(\mu_1-\mu_2)_{H_0} &= \text{ the hypothesized difference in population means }\\
+ & ~~~~~~~~~~~~~~\text{(defined by the null hypothesis)}\\
+\sigma_{\overline{x}_1 - \overline{x}_2} &= \text{ the standard error for the difference between the two means}\\
+\overline{x}_1 - \overline{x}_2 &= \text{ the difference in sample means between Populations 1 and 2}
+\end{align*}
+
+
+\end{itemize}
+\end{statement}
+
+\newpage
+
+\noindent This formula is a little unwieldy so whenever we are dealing with raw data (not just summary statistics, we will use Excel to do all the time-consuming calculations.
+
+\vspace*{.1in}
+
+\noindent Now let's demonstrate the two ways we can perform this type of hypothesis test.  First, in Example 1 we will complete the hypothesis test by hand, manually computing all of the required calculations.  Then in Example 2 we will rely on Excel to do the calculations.  After stating the two hypotheses, we will navigate to the \textbf{Data Analysis} tool and choose \textbf{``z-Test Two-Sample for Means"} to complete the test.
+
+\begin{exercise}  (Donnelly 10.7)
+
+Suppose the Bureau of Labor Statistics would like to investigate if the average retirement age for a worker in Japan is higher than the average retirement age for a worker in the United States.  A random sample of $30$ retired U.S. workers had an average retirement age of $64.6$ years.  A random sample of $30$ retired Japanese workers had an average retirement age of $67.5$ years.  Assume the population standard deviation for the retirement age in the U.S. is $4.0$ years and for Japan is $4.5$ years.  Perform a hypothesis test using $\alpha=0.05$ to determine if the average retirement age in Japan is higher than it is in the United States.
+
+\end{exercise}
+
+\vfill  
+
+\newpage
+
+\begin{exercise}  (Your Turn 1)
+
+Major League Baseball officials (and many fans) have been concerned about the lengths of games, particularly playoff games.  Suppose the officials would like to test the hypothesis that the mean length of a playoff game is longer than the mean length of a regular season game.  The data in this lesson's Excel file shows the length of games, in minutes, for randomly selected games from the regular season and from the playoffs.  Assume the standard deviations of the playoff and regular season games are $25$ and $21$ minutes respectively.  Using $\alpha = 0.02$, can we conclude that playoff games are longer, on average, than regular season games?
+
+\end{exercise}
+
+\vfill
+
+
+\begin{statement}
+The formula for the \textbf{confidence interval} for the difference between two means given known standard deviations is
+$$ (\overline{x}_1 - \overline{x}_2)\pm z_{\alpha/2}\sigma_{\overline{x}_1 - \overline{x}_2} $$
+
+where again
+\begin{align*}
+\sigma_{\overline{x}_1-\overline{x}_2} &= \text{ the standard error for the difference between two means}\\
+\overline{x}_1-\overline{x}_2 &= \text{ the difference in sample means between Populations 1 and 2}
+\end{align*}
+\vspace*{.1in}
+Remember that your book likes to identify the two sides of the interval as LCL (lower confidence limit) and UCL (upper confidence limit).
+\end{statement}
+
+\newpage
+
+
+\begin{exercise}  (Donnelly 10.9)
+
+Expedia.com would like to estimate the difference between the average rental price of a car with automatic transmission versus the average rental price of a car with manual transmission at a certain airport.  The table below shows the average one-week rental prices for two random samples, as well as the population standard deviations and sample sizes for each type of car.
+
+\begin{center}
+\begin{tabular}{c|c|c|c}
+
+ & \textbf{Sample mean} & \textbf{Sample size} & \textbf{Population standard deviation}\\ \hline
+ 
+ \textbf{Automatic} & $\$ 411.30$ & $52$ & $\$23$\\ 
+ 
+ \textbf{Manual} & $\$ 372.80$ & $36$ & $\$ 27$\\
+
+\end{tabular}
+\end{center}
+
+Construct a $90\%$ confidence interval to estimate the difference in the average cost of a one-week rental between these two types of cars at the airport.  Can you conclude that a difference exists in the average rental price of the two types of cars?
+
+\end{exercise}
+
+\vfill
+
+\newpage
+
+\noindent When we don't know the population standard deviations, we substitute the sample standard deviations in their place.  Recall from Chapter 9 that this means the proper sampling distribution is the Student's $t$-distribution instead of the normal distribution (as long as the sample sizes are large and/or the samples are drawn from normal populations).  In addition, we also need to determine whether or not to assume that the unknown variances are equal or unequal.  We could use the $F$-test from Chapter 13 to draw this conclusion -- but most of the time you will be told which situation applies.  Let's examine the formulas associated with each of these two cases.
+
+\begin{statement}
+
+\textbf{\underline{Case 1:}}  \textbf{The population variances are not equal,} i.e., $\sigma_1^2\neq\sigma_2^2$
+
+The test statistic and confidence interval formulas are
+$$ t_{\overline{x}} = \frac{(\overline{x}_1-\overline{x}_2)-(\mu_1-\mu_2)_{H_0}}{\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}}\hspace*{.85in}  (\overline{x}_1-\overline{x}_2)\pm t_{\alpha/2}\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}} $$
+where
+\vspace*{-.2in}
+\begin{align*}
+(\mu_1-\mu_2)_{H_0} &= \text{ the hypothesized difference in population means (defined by the null hypothesis)}\\
+\overline{x}_1-\overline{x}_2 &= \text{ the difference in sample means between Populations 1 and 2}\\
+s_1^2,n_1 &= \text{ the variance and size, respectively, of the sample from Population 1}\\
+s_2^2,n_2 &= \text{ the variance and size, respectively, of the sample from Population 2}
+\end{align*}
+
+\vspace*{.1in}
+
+The test statistic, $t_{\overline{x}}$, has degrees of freedom, $df$, defined by the following formula:
+$$ df = \frac{\left(\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}\right)^2}{\frac{\left( \frac{s_1^2}{n_1} \right)^2}{n_1 -1}+\frac{\left( \frac{s_2^2}{n_2} \right)^2}{n_2 -1}} $$
+
+This looks messy, but note that you've already computed $\ds \frac{s_1^2}{n_1}$ and $\ds\frac{s_2^2}{n_2}$ during the test statistic calculation!
+
+\end{statement}
+
+\enlargethispage{3\baselineskip}
+
+\begin{statement}
+\textbf{\underline{Case 2:}}  \textbf{The population variances are equal,} i.e. $\sigma_1^2 = \sigma_2^2$
+
+In this scenario, the denominator of the test statistic (which recall from Case 1 includes the sample variances) gets simplified because we can pool the two sample variances.
+
+\vspace*{.1in}
+
+The test statistic and confidence interval formulas are:
+$$ t_{\overline{x}} = \frac{(\overline{x}_1-\overline{x}_2)-(\mu_1-\mu_2)}{\sqrt{s_p^2\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}}\hspace*{.85in}  (\overline{x}_1-\overline{x}_2)\pm t_{\alpha/2}\sqrt{s_p^2\left(\frac{1}{n_1}+\frac{1}{n_2}\right)} $$
+
+The \textbf{pooled variance}, $s_p^2$, is...
+\vspace*{.3in}
+
+The formula is actually quite easy to use:
+
+$$ s_p^2 = \frac{(n_1-1)s_1^2 +(n_2-1)s_2^2}{(n_1-1)+(n_2-1)} $$
+The test statistic, $t_{\overline{x}}$, has degrees of freedom, $df = n_1+n_2-2$.
+
+
+\end{statement}
+
+
+\newpage
+
+\noindent Once again, we will rely on Excel to do these computations for us whenever we have raw data.  After stating the two hypotheses, go to the \textbf{Data Analysis} tool and choose \textbf{``t-Test Two-Sample Assuming Equal Variances"} or \textbf{``t-Test Two-Sample Assuming Unequal Variances"} to complete the test.
+
+
+\begin{exercise}  (Donnelly 10.52)
+
+The airline industry measures fuel efficiency by calculating how many miles one seat can travel, whether occupied or not, on one gallon of jet fuel.  The data in this lesson's Excel file shows the fuel economy, in miles per seat, for $15$ randomly selected flights on Delta and US Airways.  Perform a hypothesis test using $\alpha = 0.05$ to determine if the average fuel efficiency differs between the two airlines.  Assume the population variances for the fuel efficiency for these two airlines are not equal.
+
+\end{exercise}
+
+\vfill
+
+\newpage
+
+\begin{exercise}  (Donnelly 10.45)
+
+During a recent decline in the housing market, it appeared that the average size of a newly-constructed house fell.  To investigate this trend, the square footages of a random sample of houses built in 2008 were compared to houses in 2018.  The following table summarizes the sample means and standard deviations for the two samples drawn in 2008 and 2018.  Assume that the population variances for the square footages of houses built in these two years are equal.
+
+\begin{center}
+\begin{tabular}{c|c|c}
+
+ & 2008 & 2018\\ \hline
+
+\textbf{Sample mean} & 2,462.3 & 2,257.0\\ 
+
+\textbf{Sample standard deviation} & 760.8 & 730.2\\
+
+\textbf{Sample size} & 45 & 40
+
+\end{tabular}
+\end{center}
+
+
+\end{exercise}
+
+\vfill
+
+
+\begin{enumerate}[(a)]
+
+\item Using $\alpha = 0.05$, perform a hypothesis test to determine if the average home constructed in 2008 was larger than a home built in 2018.
+
+\vfill
+\vfill
+\vfill
+
+\item Construct a $95\%$ confidence interval to estimate the average difference in the square footages of new homes constructed in these two years.
+
+\vfill
+\vfill
+
+\end{enumerate}
+
+
+\newpage
+
+
+\section*{Hypothesis Testing with Dependent Samples}
+
+\begin{statement}
+\noindent Recall that samples are dependent if there is some relationship whereby each value in one sample is paired with a corresponding value in the other sample.  Therefore, a hypothesis test that uses dependent samples is sometimes called a \textbf{matched pair test}.  We need to know the \textbf{matched-pair difference} for each pair, defined as $d=x_1-x_2$, where $x_1$ and $x_2$ are the matched-pair values from Populations 1 and 2, respectively.
+
+\vspace*{.1in}
+
+\noindent The \textbf{mean}, $\overline{d}$, and \textbf{standard deviation}, $s_d$, of these differences are defined by the formulas:
+$$ \overline{d}=\frac{\sum_{i=1}^n d_i}{ n }\hspace*{.8in}  s_d = \sqrt{\frac{\sum_{i=1}^n d_i^2 - \frac{\left( \sum_{i=1}^n d_i \right)^2}{n}}{n-1}} $$
+
+where
+\begin{align*}
+d_i &= \text{ the $i$th matched-pair difference}\\
+n &= \text{ the number of matched-pairs}
+\end{align*}
+
+\end{statement}
+
+\begin{statement}
+Recall that we can also use the AVERAGE and STDEV.S Excel formulas to compute the mean and standard deviation when we have all of the matched-pair differences.
+
+\vspace*{.1in}
+
+Next, we define the test statistic and confidence interval formulas for dependent (matched-pair) samples:
+
+$$ t_{\overline{x}} = \frac{\overline{d}-(\mu_d)_{H_0}}{\frac{s_d}{\sqrt{n}}}\hspace*{.8in} \overline{d}\pm t_{\alpha/2}\frac{s_d}{\sqrt{n}} $$
+
+where $(\mu_d)_{H_0}=$ the population mean matched-pair difference from the null hypothesis. 
+
+\end{statement}
+
+\noindent Again, we rely on Excel to do the computations whenever we have raw data.  After stating the two hypotheses, go to the \textbf{Data Analysis} tool and choose \textbf{``t-Test Paired Two-Sample for Means"}.
+
+
+\begin{exercise}  (Donnelly 10.50)
+
+Pfizer would like to test the effectiveness of a new cholesterol medication it has developed.  To test the effectiveness, the LDL cholesterol level of 12 randomly selected individuals was measured before and after they took medication.  The data table in this lesson's Excel file shows the LDL measurement levels.
+
+\begin{enumerate}[(a)]
+
+\item Perform a hypothesis test using $\alpha = 0.01$ to determine if the average LDL level is more than $50$ points lower for patients who have taken the new medication.
+
+\item Construct a $90\%$ confidence interval to estimate the average difference in LDL levels for people before and after they take the medication.
+
+\end{enumerate}
+
+\end{exercise}
+
+\vfill
+
+\newpage
+
+\section*{Comparing Two Proportions with Independent Samples}
+
+\noindent We are FINALLY done discussing inference for differences between population means.  So now it's time to look at the difference between two population proportions.  There are many interesting business applications for this scenario.  For example, perhaps USAA would like to know if the proportion of young male drivers who have car accidents differs from the proportion of young female drivers who have car accidents.
+
+\vspace*{.1in}
+
+\noindent The \textbf{sampling distribution for the difference in proportions} is \textbf{approximately normal} as long as we have relatively large ($n\geq 30$) sample sizes.  The mean of this sampling distribution is $p_1-p_2 = \overline{p}_1-\overline{p}_2$.
+
+\vspace*{.1in}
+
+\noindent The standard error for this distribution is $\ds\sigma_{p_1-p_2} = \sqrt{\frac{p_1(1-p_1)}{n_1}+\frac{p_2(1-p_2)}{n_2}}$.  However, $p_1$ and $p_2$ are unknown and so the sample proportions, $\overline{p}_1$ and $\overline{p}_2$, computed from the sample data, are used as estimates.
+
+\vspace*{.1in}
+
+\noindent This allows us to approximate the standard error for the difference in population proportions with:
+$$ \hat{\sigma}_{p_1-p_2} = \sqrt{\frac{\overline{p}_1(1-\overline{p}_1)}{n_1}+\frac{\overline{p}_2(1-\overline{p}_2)}{n_2}} $$
+
+\noindent So the confidence interval for the difference between the two proportions is found using the formula:
+$$ (\overline{p}_1-\overline{p}_2)\pm z_{\alpha/2}\hat{\sigma}_{p_1-p_2} $$
+
+\noindent And the test statistic for the hypothesis test for the difference between two proportions is defined by the formula:
+$$ z_p = \frac{(\overline{p}_1-\overline{p}_2)-(p_1-p_2)_{H_0}}{\hat{\sigma}_{p_1-p_2}} $$
+
+\noindent However, if we assume that $p_1=p_2$ in the null hypothesis (i.e. there is no difference in the population proportions, $p_1-p_2 =0$, which is very common), the sample data can be pooled.  That is, we define the weighted average of the two sample proportions by:
+$$ \hat{p} = \frac{x_1+x_2}{n_1+n_2} $$
+
+\noindent This simplifies the test statistic formula to:
+$$ z_p = \frac{(\overline{p}_1-\overline{p}_2) -0}{\sqrt{\hat{p}(1-\hat{p})\left( \frac{1}{n_1}+\frac{1}{n_2} \right)}} $$
+
+\noindent Unfortunately, the \textbf{Data Analysis} tool in Excel does not perform the calculations for this scenario, so we will do all of these problems ``by hand".
+
+\newpage
+
+
+\begin{exercise}  (Donnelly 10.37)
+
+Economists theorize that the 2007-2008 recession affected men more than women because men are typically employed in industries that have been hit hardest by the recession.  Women, on the other hand, are typically employed in services which are considered more recession resistant.  A sample of $170$ men and a sample of $150$ women were drawn.  In those samples, $21$ men were unemployed, and $11$ of the women were unemployed.  Perform a hypothesis test using $\alpha = 0.05$ to determine if the unemployment rate for men is higher than the rate for women.
+
+\end{exercise}
+
+
+\vfill
+
+\newpage
+
+\begin{exercise}  (Donnelly 10.61)
+
+Negative equity (also known as being ``underwater") refers to a scenario where the market value of a residence is worth less than the outstanding balance on the mortgage for that home.  Suppose the Federal Housing Administration (FHA), which is the government agency charged with supporting the home financing market would like to test the hypothesis that the proportion of home mortgages with negative equity in Florida is more than $7\%$ higher than the national proportion.  A random sample of $180$ mortgages from Florida found that $67$ were underwater.  A random sample of $190$ mortgages across the United States found that $42$ were underwater.
+
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item Using $\alpha = 0.05$, perform this hypothesis test for the FHA.
+
+\vfill
+\vfill
+\vfill
+
+\item Construct a $95\%$ confidence interval to estimate the difference in the proportion of underwater mortgages for these two populations.  Interpret the results.
+
+\vfill
+\vfill
+
+\end{enumerate}
+
+
+
+\end{document}

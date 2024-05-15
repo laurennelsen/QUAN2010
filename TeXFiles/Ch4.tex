@@ -1,0 +1,548 @@
+\documentclass[12pt, letterpaper]{article}
+%\usepackage{geometry}
+\usepackage[inner=1.75cm,outer=1.75cm,top=1.75cm, bottom=1.75cm]{geometry}
+\pagestyle{empty}
+\usepackage{graphicx,multicol}
+%\usepackage{pdfpages}
+\usepackage{fancyhdr, lastpage, bbding, pmboxdraw}
+\usepackage[usenames,dvipsnames]{color}
+\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{darkred}{rgb}{.7,0,0}
+\definecolor{darkgreen}{rgb}{0,.6,0}
+\usepackage[colorlinks,pagebackref,pdfusetitle, urlcolor=darkblue,citecolor=darkblue, linkcolor=darkred,bookmarksnumbered,plainpages=false]{hyperref}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\newcommand{\ddx}{\frac{d}{dx}}
+\newcommand{\dydx}{\frac{dy}{dx}}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\dy}{\frac{dy}{dx}}
+
+\usepackage{tikzsymbols}
+
+\usepackage{bchart}
+
+\newcommand{\headervariable}{Chapter 4}
+
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{ \fancyplain{}{QUAN 2010, UCCS} }
+%\chead{ \fancyplain{}{} }
+\rhead{ \fancyplain{}{Course Notes:  \headervariable} }
+%\rfoot{\fancyplain{}{page \thepage\ of \pageref{LastPage}}}
+\fancyfoot[RO, LE]{\textbf{Chapter 4} page \thepage }
+\thispagestyle{plain}
+
+%%%%%%%%%%%% LISTING %%%
+\usepackage{listings}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\usepackage{verbatim} % used to display code
+\usepackage{fancyvrb}
+\usepackage{acronym}
+\usepackage{amsthm}
+%\VerbatimFootnotes % Required, otherwise verbatim does not work in footnotes!
+
+\usepackage{mathrsfs}
+
+
+\usepackage{arydshln} %For dashed lines in tabular environments.
+\usepackage{amssymb} %For \square.
+\usepackage{amsmath} %For align* and other things.
+\DeclareMathOperator{\csch}{csch}
+\DeclareMathOperator{\sech}{sech}
+\usepackage{enumerate}%,enumitem}
+
+
+
+\usepackage{ulem} %For strikeout text.
+
+\usepackage[final]{pdfpages} %For including PDF pages.
+
+\usepackage{hyperref}
+
+\newcommand{\laplace}{\mathscr{L}}
+\newcommand{\su}{\mathcal{U}}
+
+
+
+%\newcounter{LO}
+%\newcounter{LOexample}
+%\newcounter{LOtemp}
+
+\newcounter{exercise}
+
+\newcounter{visualconnection}
+
+%\usepackage{tcolorbox} %For boxing the text.
+\usepackage[skins]{tcolorbox}
+\usepackage{pgf}
+
+\newtcolorbox{statement}{colback=gray!10!white,colframe=black}
+
+\newtcolorbox{exercise}{colback=white,colframe=green!50!black,fonttitle=\bfseries,colbacktitle=gray, title={\stepcounter{exercise} Exercise \theexercise}}
+
+\newtcolorbox{contd}{colback=white,colframe=green!50!black,fonttitle=\bfseries,colbacktitle=gray, title={Exercise \theexercise, cont'd}}
+
+\newtcolorbox{learninggoal}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large L}EARNING~~{\Large G}OAL}}
+
+\newtcolorbox{defn}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large D}EFINITION}}
+
+\newtcolorbox{theorem}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large T}HEOREM}}
+
+\newtcolorbox{question}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large Q}UESTION}}
+
+
+\newtcolorbox{warning}{skin=enhanced, colback=gray!10!white, colframe=black, fonttitle=\bfseries, colbacktitle=white, coltitle=red!50!gray, attach boxed title to top left={xshift=3mm,yshift=-2mm}, title={\large Warning!}}
+
+\newtcolorbox{visualconnection}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=white, coltitle=blue!50!gray, attach boxed title to top left={xshift=3mm,yshift=-2mm}, title={\large\stepcounter{visualconnection} Visual Connection \Alph{visualconnection}}}
+
+\newtcolorbox{remark}{colback=white,colframe=black}
+
+
+
+%\usepackage[latin1]{inputenc} %Needed for accented characters?
+%\usepackage{amsfonts}
+%\usepackage{latexsym}
+
+%To print solutions, use \solutionstrue; To hide solutions, use \solutionsfalse.
+%\sol takes two arguments. #1 is the vertical length. #2 is the text.
+
+
+\newif\ifsolutions
+\solutionsfalse
+
+\ifsolutions
+    \newcommand{\soln}[2]{\begin{minipage}[c][#1]{\linewidth}{\textcolor{blue}{\textbf{Solution:}}\quad \textcolor{blue}{#2}}\end{minipage}}
+    \newcommand{\opsoln}[1]{#1}
+    \newcommand{\tblsoln}[1]{\textcolor{blue}{#1}}
+\else
+    \newcommand{\soln}[2]{\begin{minipage}[c][#1]{\linewidth}{\vfill}\end{minipage}}
+    \newcommand{\opsoln}[1]{0}
+    \newcommand{\tblsoln}[1]{\textcolor{white}{#1}}
+\fi
+
+\ifsolutions
+    \newcommand{\sol}[2]{\begin{minipage}[c][#1]{\linewidth}{\textcolor{blue}{}\quad \textcolor{blue}{#2}}\end{minipage}}
+    \newcommand{\opsol}[1]{#1}
+    \newcommand{\tblsol}[1]{\textcolor{blue}{#1}}
+\else
+    \newcommand{\sol}[2]{\begin{minipage}[c][#1]{\linewidth}{\vfill}\end{minipage}}
+    \newcommand{\opsol}[1]{0}
+    \newcommand{\tblsol}[1]{\textcolor{white}{#1}}
+\fi
+
+
+\renewcommand*\contentsname{Table of Contents}
+
+
+\usepackage{tocloft}
+\setlength\cftparskip{7pt}
+
+%From IODE:
+\newcommand{\vs}{\vskip.2cm} %customizable command for inserting small vertical space.  Usually appears between paragraphs.
+\usepackage[inline,shortlabels]{enumitem} % gives ability to continue with numbering (add [resume] after \begin{enumerate}) AND to make horizontal lists by adding * to enumerate (\begin{enumerate*})
+
+%\newcommand{\ds}{\displaystyle}
+\newcommand{\vv}{\vec{v}}
+\newcommand{\uu}{\vec{u}}
+\newcommand{\yy}{\vec{y}}
+
+\newcommand{\ww}{\textbf{w}}
+\newcommand{\xx}{\textbf{x}}
+\newcommand{\bb}{\textbf{b}}
+\newcommand{\dt}{\frac{d}{dt}}
+
+\newcommand{\RR}{\mathbb{R}}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}[thm]{Example}
+
+
+\theoremstyle{definition}
+%\newtheorem{defn}[thm]{Definition}
+
+\begin{document}
+
+%\setcounter{page}{1}
+\pagenumbering{arabic}
+
+
+\begin{center}
+
+{\LARGE \textsc{Chapter 4:  Introduction to Probabilities}}
+\end{center}
+
+
+\noindent  Decision makers, including those in the business world, are greatly influenced by uncertainty.  Probability provides a valuable tool in quantifying uncertainty, leading to greater success in decision-making.
+
+\section*{An Introduction to Probability}
+
+\begin{defn}
+A \textbf{probability} is a numerical value between $0$ and $1$ that measures the chance, or likelihood, that a specific event will occur.  
+\end{defn}
+
+\noindent Before jumping into some examples, let's discuss some key terms for our study of probability concepts.
+
+\begin{defn}
+\begin{itemize}
+
+\item An \textbf{experiment} results in a specific \textbf{outcome} e.g., a coin flip (the experiment) results in a ``heads" or a ``tails" (the outcome).
+
+\item The \textbf{sample space} for an experiment consists of all possible outcomes e.g., $S=\{ \text{heads}, \text{ tails}\}$.  
+\begin{itemize}
+\item The outcomes must be \textbf{collectively exhaustive} and \textbf{mutually exclusive}.
+\begin{itemize}
+\item \textbf{Collectively exhaustive} means:  \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+\vspace*{.1in}
+\item \textbf{Mutually exclusive} means: \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+\end{itemize}
+\end{itemize}
+
+
+\item An \textbf{event} is a collection of outcome(s) of an experiment, e.g., a die roll results in ``an odd number".  More specifically, a \textbf{simple event} is an event with a single outcome.
+
+\end{itemize}
+\end{defn}
+
+\begin{exercise}
+A single die is rolled.
+\end{exercise}
+
+\begin{enumerate}[(a)]
+\item Define the sample space.
+\vfill
+\item Define the event, ``an odd number is rolled".  What is the probability of this event?
+\vfill
+
+\end{enumerate}
+
+\newpage
+
+
+\begin{exercise}
+A pair of dice are rolled.
+\end{exercise}
+
+\begin{enumerate}[(a)]
+\item Define the sample space.
+\vfill
+\item Define the event ``doubles are rolled".  What is the probability of this event?
+\vfill
+\item Define the event ``the sum of the dice is $10$".  What is the probability of this event?
+\vfill
+
+\end{enumerate}
+
+
+
+\begin{exercise}
+(Donnelly 4.8)  The table below shows the frequencies of executives' salary ranges at a particular organization.
+\begin{center}
+\begin{tabular}{c c}
+\textbf{Salary Range} & \textbf{Frequency}\\ \hline
+\text{Under } $\$60,000$ & 2\\
+$\$60,000$ \text{ to under } $\$ 70,000$ & 5\\
+$\$70,000$ \text{ to under } $\$ 80,000$ & 7\\
+$\$80,000$ \text{ to under } $\$ 90,000$ & 4\\
+$\$90,000$ \text{ to under } $\$ 100,000$ & 6\\
+$\$100,000$ \text{ or more} & ? \\ \hline
+\textbf{Total} & $\mathbf{26}$
+\end{tabular}
+\end{center}
+\end{exercise}
+
+
+\begin{enumerate}[(a)]
+\item How many executives at this organization earned $\$100,000$ or more per year?
+\vfill
+\item What is the probability of randomly selecting an executive who earned $\$100,000$ or more per year?
+\vfill
+\item What is the probability of randomly selecting an executive who earned $\$60,000$ or more per year?
+\vfill
+\item What is the probability of randomly selecting an executive  who earned between $\$70,000$ and $\$90,000$ per year?
+\vfill
+\end{enumerate}
+
+
+
+\vfill
+
+
+\newpage
+
+
+\begin{statement}
+\textbf{Basic Properties of Probability}
+
+\begin{enumerate}
+
+\item If $P(A)=1$, then:
+\vspace*{.3in}
+
+\item If $P(A)=0$, then:
+\vspace*{.3in}
+
+\item The probability of any event...
+\vspace*{.3in}
+
+\item The sum of all probabilities of simple events in a sample space...
+\vspace*{.3in}
+
+\item The \textbf{complement}, $A'$, is defined as...
+\vspace{.3in}
+
+\begin{itemize}
+\item The complement rule:
+\vspace*{.3in}
+\end{itemize}
+
+\end{enumerate}
+
+\end{statement}
+
+
+
+\begin{exercise}
+Draw one card from a standard deck of $52$ playing cards.
+\end{exercise}
+\begin{enumerate}[(a)]
+\item What is the sample space for this experiment?
+\vfill
+\item What is the probability of drawing a ``face card"?
+\vfill
+\item What is the probability of drawing ``a card divisible by $3$"?
+\vfill
+\item What is the probability of drawing ``a card NOT divisible by $3$"?
+\vfill
+\item What is the probability of drawing ``a face card and a card divisible by $3$"?
+\vfill
+\item What is the probability of drawing ``a red card or a black card"?
+\vfill
+\end{enumerate}
+
+
+\newpage
+
+\section*{Probability Rules for More than One Event} 
+
+\begin{defn}
+\begin{itemize}
+
+\item A \textbf{contingency table} shows....
+
+\vspace*{.7in}
+
+\item \textbf{Marginal probability} is...
+
+\vspace*{.7in}
+
+\end{itemize}
+\end{defn}
+
+\begin{exercise}
+(Donnelly 4.19)  A local car dealership currently has $36$ used GM, Ford, and Toyota vehicles on the lot that can be classified as either cars or trucks.  The following data are available:
+\begin{itemize}
+\item Twenty-six vehicles are cars
+\item Eleven vehicles are GMs
+\item Fifteen vehicles are Fords
+\item Three vehicles are both Toyotas and trucks
+\item Fourteen vehicles are both Fords and cars
+\end{itemize}
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item Create a contingency table that summarizes the data.
+
+\vfill
+\vfill
+\vfill
+
+\item What is the probability that a randomly selected vehicle is a Toyota?
+
+\vfill
+
+\item Wjhat is the probability that a randomly selected vehicle is a truck?
+
+\vfill
+
+\end{enumerate}
+
+\newpage
+
+
+\begin{defn}
+\begin{itemize}
+
+\item The \textbf{intersection} of Events A and B represents...
+\vspace*{.7in}
+
+\underline{Notation:}
+\vspace*{.2in}
+
+\item The \textbf{union} of Events A and B represents...
+\vspace*{.7in}
+
+\underline{Notation:}
+\vspace*{.2in}
+
+
+\end{itemize}
+\end{defn}
+
+
+\begin{defn}
+\begin{itemize}
+\item The \textbf{joint probability} of two events is the probability of the intersection of two events.
+
+\item The \textbf{addition rule} for probabilities is used to calculate the probability of...
+\vspace*{.5in}
+
+\begin{itemize}
+\item It depends on knowing whether or not two events are...
+\vspace*{.5in}
+\end{itemize}
+
+\begin{enumerate}
+\item For mutually exclusive events,
+$$ P(A\cup B) = ~~~~~~~~~~~~~ $$
+\item For events that are \underline{not} mutually exclusive, 
+$$ P(A\cup B)=~~~~~~~~~~~~~~~~~~~~~~~~~~ $$
+\end{enumerate}
+
+\end{itemize}
+\end{defn}
+
+
+\begin{exercise} (Continued)
+Use the contingency table from the previous exercise to answer the following questions.
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item What is the probability that a randomly selected vehicle is either a Ford or a car?
+
+\vfill
+
+\item What is the probability that a randomly selected vehicle is a GM truck?
+
+\vfill
+
+\end{enumerate}
+
+
+\newpage
+
+\section*{Conditional Probability}
+
+\begin{defn}
+\textbf{Conditional probability} is...
+\vspace*{1in}
+
+It is calculated using the formula
+$$ P(A|B) = ~~~~~~~~~~~~~~~~ $$
+\end{defn}
+
+
+\begin{defn}
+\begin{itemize}
+
+\item \textbf{Prior probability} is the probability that an event will occur as determined...
+\vspace*{.7in}
+
+
+\item \textbf{Posterior probability} is a revision of...
+\vspace*{.7in}
+
+\end{itemize}
+\end{defn}
+
+
+\begin{exercise} (Continued)
+Refer to your contingency table from the previous two exercises to answer the following questions.
+\end{exercise}
+
+\begin{enumerate}[(a)]
+\item What is the probability that a randomly selected vehicle is a Toyota, given it is a car?
+
+\vfill
+
+\item What is the probability that a randomly selected vehicle is a truck, given it is a Ford?
+
+\vfill
+
+\end{enumerate}
+
+
+\newpage
+
+\section*{Independent and Dependent Events}
+
+\begin{defn}
+
+\begin{itemize}
+\item Two events are \underline{~~~~~~~~~~~~~~~~~~~} if the occurrence of one event has no impact on the occurrence of the other event.  The definition for two independent events is:
+$$ \boxed{P(A|B)=~~~~~~~~~~~~~~~~} $$
+\item Events are \underline{~~~~~~~~~~~~~~~~~~~} if the occurrence of one event affects the occurrence of another event.
+\end{itemize}
+\end{defn}
+
+\begin{exercise} (Your Turn 8)
+The following table shows the number of adults (in thousands) in the United States who were employed and unemployed in 2018 along with their gender.
+\begin{center}
+\begin{tabular}{c|c c c}
+ & \textbf{Men} & \textbf{Women} & \textbf{Total}\\ \hline
+\textbf{Unemployed} & 2,222 & 1,641 & 3,863\\
+\textbf{Employed} & 63,510 & 53,255 & 116,765\\
+\textbf{Total} & 65,732 & 54,896 & 120,628
+\end{tabular}
+\end{center}
+
+\vspace*{.2in}
+
+
+Event A $=$ Person is unemployed
+
+Event B $=$ Person is a man
+
+\vspace*{.2in}
+
+Determine whether Events A and B are independent or dependent.
+
+\end{exercise}
+
+\vfill
+
+\newpage
+
+\begin{statement}
+The \textbf{multiplication rule} for probabilities is used to calculate the probability for...
+\vspace*{.5in}
+
+It depends on knowing whether or not two events are independent or dependent.
+\begin{itemize}
+\item For dependent events, $P(A\cap B) = ~~~~~~~~~~~$
+\vspace*{.1in}
+\item For independent events, $P(A\cap B) = ~~~~~~~~~~~$
+\vspace*{.1in}
+\end{itemize}
+\end{statement}
+
+
+\begin{exercise}
+A company has $140$ employees, of which $30$ are supervisors.  Eighty of the employees are married, and $20\%$ of the married employees are supervisors.  If a company employee is randomly selected, what is the probability that employee is marries and is a supervisor?
+\end{exercise}
+
+\vfill
+\vfill
+
+\begin{exercise}
+According to Statcounter in January 2018, $52\%$ of all web traffic came from mobile phones.  If five people are randomly chosen, what is the probability that all five used mobile phones to access the internet?
+\end{exercise}
+
+\vfill
+
+
+
+\end{document}

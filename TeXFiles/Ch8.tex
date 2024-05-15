@@ -1,0 +1,579 @@
+\documentclass[12pt, letterpaper]{article}
+%\usepackage{geometry}
+\usepackage[inner=1.75cm,outer=1.75cm,top=1.75cm, bottom=1.75cm]{geometry}
+\pagestyle{empty}
+\usepackage{graphicx,multicol}
+%\usepackage{pdfpages}
+\usepackage{fancyhdr, lastpage, bbding, pmboxdraw}
+\usepackage[usenames,dvipsnames]{color}
+\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{darkred}{rgb}{.7,0,0}
+\definecolor{darkgreen}{rgb}{0,.6,0}
+\usepackage[colorlinks,pagebackref,pdfusetitle, urlcolor=darkblue,citecolor=darkblue, linkcolor=darkred,bookmarksnumbered,plainpages=false]{hyperref}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\newcommand{\ddx}{\frac{d}{dx}}
+\newcommand{\dydx}{\frac{dy}{dx}}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\dy}{\frac{dy}{dx}}
+
+\usepackage{tikzsymbols}
+
+\usepackage{bchart}
+
+\newcommand{\headervariable}{Chapter 8}
+
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{ \fancyplain{}{QUAN 2010, UCCS} }
+%\chead{ \fancyplain{}{} }
+\rhead{ \fancyplain{}{Course Notes:  \headervariable} }
+%\rfoot{\fancyplain{}{page \thepage\ of \pageref{LastPage}}}
+\fancyfoot[RO, LE]{\textbf{Chapter 8} page \thepage }
+\thispagestyle{plain}
+
+%%%%%%%%%%%% LISTING %%%
+\usepackage{listings}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\usepackage{verbatim} % used to display code
+\usepackage{fancyvrb}
+\usepackage{acronym}
+\usepackage{amsthm}
+%\VerbatimFootnotes % Required, otherwise verbatim does not work in footnotes!
+
+\usepackage{mathrsfs}
+
+
+\usepackage{arydshln} %For dashed lines in tabular environments.
+\usepackage{amssymb} %For \square.
+\usepackage{amsmath} %For align* and other things.
+\DeclareMathOperator{\csch}{csch}
+\DeclareMathOperator{\sech}{sech}
+\usepackage{enumerate}%,enumitem}
+
+
+
+\usepackage{ulem} %For strikeout text.
+
+\usepackage[final]{pdfpages} %For including PDF pages.
+
+\usepackage{hyperref}
+
+\newcommand{\laplace}{\mathscr{L}}
+\newcommand{\su}{\mathcal{U}}
+
+
+
+%\newcounter{LO}
+%\newcounter{LOexample}
+%\newcounter{LOtemp}
+
+\newcounter{exercise}
+
+\newcounter{visualconnection}
+
+%\usepackage{tcolorbox} %For boxing the text.
+\usepackage[skins]{tcolorbox}
+\usepackage{pgf}
+
+\newtcolorbox{statement}{colback=gray!10!white,colframe=black}
+
+\newtcolorbox{exercise}{colback=white,colframe=green!50!black,fonttitle=\bfseries,colbacktitle=gray, title={\stepcounter{exercise} Exercise \theexercise}}
+
+\newtcolorbox{contd}{colback=white,colframe=green!50!black,fonttitle=\bfseries,colbacktitle=gray, title={Exercise \theexercise, cont'd}}
+
+\newtcolorbox{learninggoal}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large L}EARNING~~{\Large G}OAL}}
+
+\newtcolorbox{defn}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large D}EFINITION}}
+
+\newtcolorbox{theorem}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large T}HEOREM}}
+
+\newtcolorbox{question}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large Q}UESTION}}
+
+
+\newtcolorbox{warning}{skin=enhanced, colback=gray!10!white, colframe=black, fonttitle=\bfseries, colbacktitle=white, coltitle=red!50!gray, attach boxed title to top left={xshift=3mm,yshift=-2mm}, title={\large Warning!}}
+
+\newtcolorbox{visualconnection}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=white, coltitle=blue!50!gray, attach boxed title to top left={xshift=3mm,yshift=-2mm}, title={\large\stepcounter{visualconnection} Visual Connection \Alph{visualconnection}}}
+
+\newtcolorbox{remark}{colback=white,colframe=black}
+
+
+
+%\usepackage[latin1]{inputenc} %Needed for accented characters?
+%\usepackage{amsfonts}
+%\usepackage{latexsym}
+
+%To print solutions, use \solutionstrue; To hide solutions, use \solutionsfalse.
+%\sol takes two arguments. #1 is the vertical length. #2 is the text.
+
+
+\newif\ifsolutions
+\solutionsfalse
+
+\ifsolutions
+    \newcommand{\soln}[2]{\begin{minipage}[c][#1]{\linewidth}{\textcolor{blue}{\textbf{Solution:}}\quad \textcolor{blue}{#2}}\end{minipage}}
+    \newcommand{\opsoln}[1]{#1}
+    \newcommand{\tblsoln}[1]{\textcolor{blue}{#1}}
+\else
+    \newcommand{\soln}[2]{\begin{minipage}[c][#1]{\linewidth}{\vfill}\end{minipage}}
+    \newcommand{\opsoln}[1]{0}
+    \newcommand{\tblsoln}[1]{\textcolor{white}{#1}}
+\fi
+
+\ifsolutions
+    \newcommand{\sol}[2]{\begin{minipage}[c][#1]{\linewidth}{\textcolor{blue}{}\quad \textcolor{blue}{#2}}\end{minipage}}
+    \newcommand{\opsol}[1]{#1}
+    \newcommand{\tblsol}[1]{\textcolor{blue}{#1}}
+\else
+    \newcommand{\sol}[2]{\begin{minipage}[c][#1]{\linewidth}{\vfill}\end{minipage}}
+    \newcommand{\opsol}[1]{0}
+    \newcommand{\tblsol}[1]{\textcolor{white}{#1}}
+\fi
+
+
+\renewcommand*\contentsname{Table of Contents}
+
+
+\usepackage{tocloft}
+\setlength\cftparskip{7pt}
+
+%From IODE:
+\newcommand{\vs}{\vskip.2cm} %customizable command for inserting small vertical space.  Usually appears between paragraphs.
+\usepackage[inline,shortlabels]{enumitem} % gives ability to continue with numbering (add [resume] after \begin{enumerate}) AND to make horizontal lists by adding * to enumerate (\begin{enumerate*})
+
+%\newcommand{\ds}{\displaystyle}
+\newcommand{\vv}{\vec{v}}
+\newcommand{\uu}{\vec{u}}
+\newcommand{\yy}{\vec{y}}
+
+\newcommand{\ww}{\textbf{w}}
+\newcommand{\xx}{\textbf{x}}
+\newcommand{\bb}{\textbf{b}}
+\newcommand{\dt}{\frac{d}{dt}}
+
+\newcommand{\RR}{\mathbb{R}}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}[thm]{Example}
+
+
+\theoremstyle{definition}
+%\newtheorem{defn}[thm]{Definition}
+
+\begin{document}
+
+%\setcounter{page}{1}
+\pagenumbering{arabic}
+
+
+\begin{center}
+
+{\LARGE \textsc{Chapter 8:  Confidence Intervals}}
+\end{center}
+
+
+\noindent  One of the most important skills that you will learn in business statistics is to gather information from a sample and then use it to make a statement about the population from which it was chosen.  The goal is to estimate the value of a population parameter using a sample statistic.  For example, we might estimate the population mean, $\mu$, with the sample mean $\overline{x}$.  But just how good is the estimate for the sample?  Confidence intervals help us answer the question.
+
+
+\section*{Point Estimates}
+
+\begin{defn}
+A \textbf{point estimate} is a single numerical value that best estimates the population parameter of interest.  The most common are the
+
+\vspace*{.1in}
+\underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+and \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}.
+
+\end{defn}
+
+
+\begin{statement}
+The advantage of a point estimate is that it is easy to calculate and easy to understand.  The disadvantage is that it doesn't provide any information about the accuracy of the estimate.  For this reason, statisticians prefer an interval estimate, a range of values used to estimate the parameter.  This estimate \underline{may} or \underline{may not} contain the value of the parameter being estimated.
+\end{statement}
+
+
+\section*{Confidence Intervals for the Mean ($\sigma$ known)}
+
+\begin{defn}
+A \textbf{confidence interval for the mean} is an interval estimate around\\
+
+
+\underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}\\
+
+ that provides a range of \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+
+\vspace*{.2in}
+
+The formula for this confidence interval is \underline{~~~~~~~~~~~~~~~~~~~~~~}
+
+\vspace*{.2in}
+
+In words, this is the \underline{point estimate}, $\overline{x}$, plus or minus the \underline{margin of error}, \underline{~~~~~~~~~~~~~~~~~~~~~~}.  
+
+\vspace*{.2in}
+
+
+
+\begin{itemize}
+
+\item The \textbf{margin of error is...}
+\vspace*{.5in}
+
+
+\item A \textbf{confidence level} is the probability that...
+\vspace*{.5in}
+
+We decide in advance how confident we want to be that $\mu$ is in the interval.  Typical values are usually between $0.90$ and $0.99$, i.e., $90-99\%$.
+
+\item Similarly, the \textbf{significance level} represented by $\alpha$, is the probability that...
+\vspace*{.5in}
+
+Typical values are between $0.01$ and $0.10$, i.e., $1-10\%$.
+
+
+\end{itemize}
+
+\end{defn}
+
+
+\begin{exercise}  (Donnelly 8.5)
+
+Determine the margin of error for a confidence interval to estimate the population mean with $n=35$ and $\sigma=40$ for the following confidence levels:
+
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item $90\%$
+
+\vfill
+\vfill
+
+\item $94\%$
+
+\vfill
+\vfill
+
+\newpage
+
+\item $98\%$
+
+\vfill
+\vfill
+
+
+\item Describe the effect on the margin of error by increasing the confidence level.
+
+\vfill
+
+\end{enumerate}
+
+
+
+\begin{defn}
+A confidence interval has two ``sides":
+\begin{itemize}
+\item the \textbf{lower confidence limit}, $\overline{x}-z_{\alpha/2}\sigma_{\overline{x}}$, and 
+\item the \textbf{upper confidence limit}, $\overline{x}+z_{\alpha/2}\sigma_{\overline{x}}$.
+\end{itemize}
+These are often shortened to LCL and UCL, respectively.
+\end{defn}
+
+
+\begin{exercise}  (Donnelly 8.9)
+
+Banking fees have received much attention during the recent economic recession as banks look for ways to recover from the crisis.  A sample of $44$ customers paid an average fee of $\$12.85$ per month on their interest-bearing checking accounts.  Assume the population standard deviation is $\$1.87$.
+
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item What is the margin of error for this interval?
+
+\vfill
+\vfill
+
+\item What is the point estimate for the average fee for the population?
+
+\vfill
+
+\item Construct a $99\%$ confidence interval to estimate the average fee for the population.
+
+\vfill
+
+
+\end{enumerate}
+
+
+\newpage
+
+\begin{exercise}  (Donnelly 8.16)
+
+A car company developed a certain car model to appeal to young consumers.  The car company claims the average age of drivers of this certain car model is $27$ years old.  Suppose a random sample of $18$ drivers was drawn, and the average age of the drivers was found to be $28.20$ years.  Assume the standard deviation for the age of the car drivers to be $2.5$ years.
+
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item Construct a $95\%$ confidence interval to estimate the average age of the car driver.
+
+\vfill
+\vfill
+
+\item Does this result lend support to the car company's claims?
+
+\vfill
+
+\item What assumptions need to be made to construct this interval?
+
+\vfill
+
+\end{enumerate}
+
+\newpage
+\vspace*{-.7in}
+
+\section*{Interpreting Confidence Intervals}
+
+\noindent  When we interpret a confidence interval, we say that ``we are $90\%$ confident that the interval we calculated captures the population mean".  We DO NOT say ``there is a $90\%$ chance that the population mean falls between A and B".  It sounds the same, but it is not.  The latter implies that the population mean is a variable that we can say something about.  But it is not -- it is fixed, and we do not know what it is.
+
+\vspace*{.1in}
+
+\noindent Remember that we develop our confidence interval based on the sampling distribution of the sample mean.  We draw a sample and calculate an interval around the sample mean and say that we think we have ``captured" the population mean within the interval -- we do NOT know anything about the population mean.  We can only say something about our sample mean and interval.
+
+\begin{center}
+\includegraphics[scale=.78]{Images/samples}
+\end{center}
+
+\noindent If we were to repeatedly draw samples, each has the same margin of error (since the sample size and $\sigma$ are constant for all samples), but each sample mean likely varies.  After calculating all intervals, $90\%$ of them would result in intervals that include the population mean, but $5\%$ of them would have sample means so extreme (in the tail of the sampling distribution) that they would not include the population mean.  The figure above (from p. 341 of your textbook) illustrates this idea well.
+
+
+\newpage
+
+\section*{Confidence Intervals for the Mean ($\sigma$ unkown)}
+
+\noindent Up to this point, we have assumed that the population standard deviation, $\sigma$, was known.  This is unrealistic -- since we are creating an interval to estimate the population mean, $\mu$, we likely don't know the population standard deviation either!  Hence, we will estimate $\sigma$ with the value of the sample standard deviation, $s$.  But this introduces another source of unreliability, especially in small samples.  To keep the confidence interval at the desired level, we make the intervals wider by replacing the critical values in our confidence interval formula, $z_{\sigma/2}$, with larger critical values, $t_{\sigma/2}$.
+
+
+\section*{The Student's $t$-Distribution}
+
+\noindent The larger critical values come from the Student's $t$-distribution developed in 1908 by an Irish brewing employee, William S. Gosset.  He was a Guinness Brewery employee researching new methods of manufacturing ale.  He needed a distribution that could be used with small samples.  Employees were not allowed to publish research results, so he published under the pseudonym, Student.
+
+\vspace*{.1in}
+
+\noindent The key properties of the Student's $t$-Distribution:
+
+\begin{enumerate}
+
+\item It is symmetric around the mean (which is $0$ just like the standard normal distribution) and mound-shaped (similar to bell-shaped).
+
+\item It is a family of curves based on the concept of \textbf{degrees of freedom, (df)}, which refer to the number of values that are free to vary.  As the degrees of freedom increases, the shape of the $t$-distribution becomes similar to the normal distribution.  When dealing with the sample mean, the degrees of freedom are equal to $n-1$.
+
+\item The area under the curve is equal to \underline{~~~~~~~~~~~~}.
+
+\item The $t$-distribution is flatter and wider than the normal distribution.  This means that the critical score for the $t$-distribution is therefore higher than the critical $z$-score for the same confidence level.  This results in wider confidence intervals when using the $t$-distribution.
+
+\end{enumerate}
+
+
+\begin{statement}
+The formula for the confidence interval when $\sigma$ is unknown is.....
+
+\vspace*{.5in}
+
+How do we find the critical values, $t_{\sigma/2}$?
+
+\begin{enumerate}
+
+\item Use Table 5 in Appendix A of the book.  Note that you will locate the degrees of freedom along the left column and the confidence level across the top of the table -- the desired critical value is located where the two meet inside the table.
+
+\item Use the Excel formula T.INV.2T(alpha, degrees of freedom), where alpha $=$ the significance level and degrees of freedom $= n-1$.
+
+\end{enumerate}
+
+\end{statement}
+
+\newpage
+
+
+\begin{exercise}  (Donnelly 8.19)
+
+Construct a $90\%$ confidence interval to estimate the population mean when $\overline{x}=68$ and $s=13.9$ for the sample sizes below.
+
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item $n=18$
+
+\vfill
+
+\item $n=41$
+
+\vfill
+
+\item $n=64$
+
+\vfill
+
+\item Describe the effect on the interval by increasing the sample size.
+
+\vfill
+
+\end{enumerate}
+
+\newpage
+
+\begin{exercise}  (Donnelly 8.23)
+
+A cruise company would like to estimate the average beer consumption to plan its beer inventory levels on future seven-day cruises.  (The ship certainly doesn't want to run out of beer in the middle of the ocean!)  The average beer consumption over $18$ randomly selected seven-day cruises was $81,977$ bottles with a sample standard deviation of $4,502$ bottles.
+
+\end{exercise}
+
+\vfill
+
+\begin{enumerate}[(a)]
+
+\item Construct a $90\%$ confidence interval to estimate the average beer consumption per cruise.
+
+\vfill
+
+\item What assumptions need to be made to construct this interval?
+
+\vfill
+
+\end{enumerate}
+
+
+\begin{exercise}  (Donnelly 8.27)
+
+According to a travel website, workers in a certain country lead the world in vacation days, averaging $41$ days per year.  The data in this lesson's Excel file shows the number of paid vacation days for a random sample of $20$ workers from this country.
+
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item Construct a $95\%$ confidence interval to estimate the average number of paid vacation days for workers from this country.
+
+\vfill
+
+\item Do the results from this sample validate the website's findings?
+
+\vfill
+
+\item What assumptions need to be made about this population?
+
+\vfill
+
+\end{enumerate}
+
+
+\newpage
+
+
+\section*{Confidence Intervals for Proportions}
+
+
+\noindent We can also estimate the proportion of a population by constructing a confidence interval from a sample.  Recall that proportion data follow the binomial distribution, which can be approximated by the normal distribution under the conditions:
+\begin{itemize}
+\item $np\geq 5$ and
+\item $n(1-p)\geq 5$,
+\end{itemize}
+where $p=$ the probability of success in the population and $n=$ the sample size.
+
+
+
+\begin{defn}
+The \textbf{confidence interval for the proportion} is an interval estimate....
+\vspace*{.4in}
+
+\noindent The formula for this confidence interval is $\overline{p}\pm z_{\alpha/2}\hat{\sigma}_p$, where $\overline{p}=\frac{x}{n}$ and $\hat{\sigma}_p = \sqrt{\frac{\overline{p}(1-\overline{p})}{n}}$.  The sample proportion, $\overline{p}$, measures the fraction of ``successes" in the sample.
+\end{defn}
+
+
+\begin{exercise}  (Donnelly 8.34)
+
+The IRS reported that $85\%$ of individual tax returns were filed electronically in 2017.  A random sample of $240$ tax returns from 2018 was selected.  From this sample, $187$ were filed electronically.
+
+\end{exercise}
+
+\vfill
+
+\begin{enumerate}[(a)]
+
+\item What is the point estimate based on this sample?
+
+\vfill
+
+\item What is the margin of error for this sample?
+
+\vfill
+\vfill
+
+\item Construct a $90\%$ confidence interval to estimate the actual proportion of taxpayers who filed electronically in 2018.
+
+\vfill
+\vfill
+
+\item Is there any evidence that this proportion has changed since 2017 based on this sample?
+
+\vfill
+\vfill
+
+\end{enumerate}
+
+
+\newpage
+
+\section*{Determining the Sample Size}
+
+\noindent How large a sample is necessary to make an accurate estimate?  The answer is not simple, since it depends on three things:
+\begin{enumerate}
+\item The confidence level
+\item The standard deviation
+\item The margin of error
+\end{enumerate}
+
+
+\noindent The more confident we want to be, the wider we want our interval, but there is a tradeoff.  If an interval is too wide, it provides little information.  On the other hand, a narrow interval requires a larger sample size and sampling can be a costly procedure.  Hence, it is handy to be able to be able to calculate ahead of time the sample size required to achieve a specified margin of error.  With a bit of algebra on the appropriate margin of error from the confidence interval formula, we can determine the sample size.
+
+\begin{statement}
+\begin{itemize}
+
+\item The formula when working with a mean is $\ds n=\frac{(z_{\alpha/2})^2\sigma^2}{(ME_{\overline{x}})^2}$ where $ME_{\overline{x}}$ is the desired margin of error.
+
+\item Similarly, the formula when working with a proportion is $\ds n=\frac{(z_{\alpha/2})^2\overline{p}(1-\overline{p})}{(ME_{\overline{p}})^2}$ where $ME_{\overline{p}}$ is the desired margin of error.
+
+\end{itemize}
+
+\noindent \textbf{If necessary, round the answer up to obtain a whole number.  If you round down, then you won't achieve the desired margin of error.}
+\end{statement}
+
+\begin{exercise}  (Donnelly 8.44)
+
+Determine the sample size needed to construct a $99\%$ confidence interval to estimate the average GPA for the student population at a college with a margin of error equal to $0.5$.  Assume the standard deviation of the GPA for the student population is $2.5$.
+
+\end{exercise}
+
+\vfill
+\vfill
+
+\newpage
+
+
+\begin{exercise}  (Donnelly 8.47)
+
+A certain region would like to estimate the proportion of voters who intend to participate in upcoming elections.  A pilot sample of $50$ voters found that $39$ of them intended to vote in the election.  Determine the additional number of voters that need to be sampled to construct a $96\%$ interval with a margin of error equal to $0.08$ to estimate the proportion.
+
+\end{exercise}
+
+\vfill
+\vfill
+
+
+
+
+
+\end{document}

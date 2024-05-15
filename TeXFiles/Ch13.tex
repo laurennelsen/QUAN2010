@@ -1,0 +1,404 @@
+\documentclass[12pt, letterpaper]{article}
+%\usepackage{geometry}
+\usepackage[inner=1.75cm,outer=1.75cm,top=1.75cm, bottom=1.75cm]{geometry}
+\pagestyle{empty}
+\usepackage{graphicx,multicol}
+%\usepackage{pdfpages}
+\usepackage{fancyhdr, lastpage, bbding, pmboxdraw}
+\usepackage[usenames,dvipsnames]{color}
+\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{darkred}{rgb}{.7,0,0}
+\definecolor{darkgreen}{rgb}{0,.6,0}
+\usepackage[colorlinks,pagebackref,pdfusetitle, urlcolor=darkblue,citecolor=darkblue, linkcolor=darkred,bookmarksnumbered,plainpages=false]{hyperref}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\newcommand{\ddx}{\frac{d}{dx}}
+\newcommand{\dydx}{\frac{dy}{dx}}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\dy}{\frac{dy}{dx}}
+
+\usepackage{tikzsymbols}
+
+\usepackage{bchart}
+
+\newcommand{\headervariable}{Chapter 13}
+
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{ \fancyplain{}{QUAN 2010, UCCS} }
+%\chead{ \fancyplain{}{} }
+\rhead{ \fancyplain{}{Course Notes:  \headervariable} }
+%\rfoot{\fancyplain{}{page \thepage\ of \pageref{LastPage}}}
+\fancyfoot[RO, LE]{\textbf{Chapter 13} page \thepage }
+\thispagestyle{plain}
+
+%%%%%%%%%%%% LISTING %%%
+\usepackage{listings}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\usepackage{verbatim} % used to display code
+\usepackage{fancyvrb}
+\usepackage{acronym}
+\usepackage{amsthm}
+%\VerbatimFootnotes % Required, otherwise verbatim does not work in footnotes!
+
+\usepackage{mathrsfs}
+
+
+\usepackage{arydshln} %For dashed lines in tabular environments.
+\usepackage{amssymb} %For \square.
+\usepackage{amsmath} %For align* and other things.
+\DeclareMathOperator{\csch}{csch}
+\DeclareMathOperator{\sech}{sech}
+\usepackage{enumerate}%,enumitem}
+
+
+
+\usepackage{ulem} %For strikeout text.
+
+\usepackage[final]{pdfpages} %For including PDF pages.
+
+\usepackage{hyperref}
+
+\newcommand{\laplace}{\mathscr{L}}
+\newcommand{\su}{\mathcal{U}}
+
+
+
+%\newcounter{LO}
+%\newcounter{LOexample}
+%\newcounter{LOtemp}
+
+\newcounter{exercise}
+
+\newcounter{visualconnection}
+
+%\usepackage{tcolorbox} %For boxing the text.
+\usepackage[skins]{tcolorbox}
+\usepackage{pgf}
+
+\newtcolorbox{statement}{colback=gray!10!white,colframe=black}
+
+\newtcolorbox{exercise}{colback=white,colframe=green!50!black,fonttitle=\bfseries,colbacktitle=gray, title={\stepcounter{exercise} Exercise \theexercise}}
+
+\newtcolorbox{contd}{colback=white,colframe=green!50!black,fonttitle=\bfseries,colbacktitle=gray, title={Exercise \theexercise, cont'd}}
+
+\newtcolorbox{learninggoal}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large L}EARNING~~{\Large G}OAL}}
+
+\newtcolorbox{defn}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large D}EFINITION}}
+
+\newtcolorbox{theorem}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large T}HEOREM}}
+
+\newtcolorbox{question}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=gray!10, coltitle=green!50!black, attach boxed title to top left={xshift=-2mm,yshift=-2mm}, title={{\Large Q}UESTION}}
+
+
+\newtcolorbox{warning}{skin=enhanced, colback=gray!10!white, colframe=black, fonttitle=\bfseries, colbacktitle=white, coltitle=red!50!gray, attach boxed title to top left={xshift=3mm,yshift=-2mm}, title={\large Warning!}}
+
+\newtcolorbox{visualconnection}{skin=enhanced, colback=white, colframe=black, fonttitle=\bfseries, colbacktitle=white, coltitle=blue!50!gray, attach boxed title to top left={xshift=3mm,yshift=-2mm}, title={\large\stepcounter{visualconnection} Visual Connection \Alph{visualconnection}}}
+
+\newtcolorbox{remark}{colback=white,colframe=black}
+
+
+
+%\usepackage[latin1]{inputenc} %Needed for accented characters?
+%\usepackage{amsfonts}
+%\usepackage{latexsym}
+
+%To print solutions, use \solutionstrue; To hide solutions, use \solutionsfalse.
+%\sol takes two arguments. #1 is the vertical length. #2 is the text.
+
+
+\newif\ifsolutions
+\solutionsfalse
+
+\ifsolutions
+    \newcommand{\soln}[2]{\begin{minipage}[c][#1]{\linewidth}{\textcolor{blue}{\textbf{Solution:}}\quad \textcolor{blue}{#2}}\end{minipage}}
+    \newcommand{\opsoln}[1]{#1}
+    \newcommand{\tblsoln}[1]{\textcolor{blue}{#1}}
+\else
+    \newcommand{\soln}[2]{\begin{minipage}[c][#1]{\linewidth}{\vfill}\end{minipage}}
+    \newcommand{\opsoln}[1]{0}
+    \newcommand{\tblsoln}[1]{\textcolor{white}{#1}}
+\fi
+
+\ifsolutions
+    \newcommand{\sol}[2]{\begin{minipage}[c][#1]{\linewidth}{\textcolor{blue}{}\quad \textcolor{blue}{#2}}\end{minipage}}
+    \newcommand{\opsol}[1]{#1}
+    \newcommand{\tblsol}[1]{\textcolor{blue}{#1}}
+\else
+    \newcommand{\sol}[2]{\begin{minipage}[c][#1]{\linewidth}{\vfill}\end{minipage}}
+    \newcommand{\opsol}[1]{0}
+    \newcommand{\tblsol}[1]{\textcolor{white}{#1}}
+\fi
+
+
+\renewcommand*\contentsname{Table of Contents}
+
+
+\usepackage{tocloft}
+\setlength\cftparskip{7pt}
+
+%From IODE:
+\newcommand{\vs}{\vskip.2cm} %customizable command for inserting small vertical space.  Usually appears between paragraphs.
+\usepackage[inline,shortlabels]{enumitem} % gives ability to continue with numbering (add [resume] after \begin{enumerate}) AND to make horizontal lists by adding * to enumerate (\begin{enumerate*})
+
+%\newcommand{\ds}{\displaystyle}
+\newcommand{\vv}{\vec{v}}
+\newcommand{\uu}{\vec{u}}
+\newcommand{\yy}{\vec{y}}
+
+\newcommand{\ww}{\textbf{w}}
+\newcommand{\xx}{\textbf{x}}
+\newcommand{\bb}{\textbf{b}}
+\newcommand{\dt}{\frac{d}{dt}}
+
+\newcommand{\RR}{\mathbb{R}}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}[thm]{Example}
+
+
+\theoremstyle{definition}
+%\newtheorem{defn}[thm]{Definition}
+
+\begin{document}
+
+%\setcounter{page}{1}
+\pagenumbering{arabic}
+
+
+\begin{center}
+
+{\LARGE \textsc{Chapter 13:  Hypothesis Tests for the Population Variance}}
+\end{center}
+
+
+\noindent Thus far, our study of statistical inference has focused on the mean and proportion parameters.  In this chapter, we will focus on another parameter that is important in the business world:  the population variance, $\sigma^2$.  The variance parameter comes up in many business scenarios where keeping variability low is the goal.  For example, in pharmaceuticals, consistency in maintaining the quality of the products produced is extremely important.
+
+\vspace*{.1in}
+
+\noindent Before we dive into hypothesis testing, we need to introduce two new distributions:  the chi-square ($\chi^2$) and $F$-distributions.
+
+
+\begin{statement}
+\section*{The Chi-square Distribution}
+
+\noindent The chi-square (``ki square") distribution, $\chi^2$, is similar to the Student's $t$-distribution in that it is a family of curves based on the number of degrees of freedom.  The other key properties of the Chi-square distribution:
+
+\begin{enumerate}
+
+\item The $\chi^2$ distribution curves are not symmetric, but instead \textbf{positively skewed}.
+
+\item As the degrees of freedom increases, the skewness decreases.
+
+\item The area under the curve is equal to \underline{~~~~~~~~~~~~}.
+
+\item All $\chi^2$ values are greater than or equal to \underline{~~~~~~~~~~~~}.
+
+\end{enumerate}
+
+\end{statement}
+
+
+\noindent We can use Table 8 in Appendix A of your book to find critical $\xi^2$-values. The notation for these is $\chi_{\alpha,df}^2$.
+
+\begin{enumerate}
+\item Find the desired significance level, $\alpha$, across the \textbf{top} of the table.
+\item Locate df along the \textbf{left} of the table.
+\end{enumerate}
+
+
+\begin{exercise}  
+
+Use Table 8 to find the following critical $\chi^2$-values.  Check your answers using Excel with the command CHISQ.INV.RT.
+
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item $\ds\chi_{0.10,5}^2$
+
+\vfill
+
+\item $\ds\chi_{0.975,24}^2$
+
+\vfill
+
+\item $\ds\chi_{0.01,19}^2$
+
+\vfill
+
+\item $\ds\chi_{0.90,10}^2$
+
+\vfill
+
+\end{enumerate}
+
+\newpage
+
+\begin{statement}
+\section*{The $F$-Distribution}
+
+The $F$-Distribution is defined as the ratio of variances of two populations normally distributed.  It is unique in that it depends on two degrees of freedom:  $D_1$ and $D_2$.  The other key properties of the $F$-distribution:
+
+\begin{enumerate}
+
+\item The $F$-distribution curves are not symmetric, but instead \textbf{positively skewed}.
+
+\item As the degrees of freedom increase, the skewness of the curve decreases.
+
+\item The area under the curve is equal to \underline{~~~~~~~~~~~~}.
+
+\item All values of the $F$-distribution are greater than or equal to \underline{~~~~~~~~~~~~}.
+
+\end{enumerate}
+
+\end{statement}
+
+\noindent We can use Table 6 in Appendix A of your book to find critical $F$-values.  The notation for these is $F_{\alpha,D_1,D_2}$.
+
+\begin{enumerate}
+
+\item Find the table with the desired significance level.
+
+\item Locate $D_1$ across the \textbf{top} of the table.
+
+\item Locate $D_2$ along the \textbf{left} of the table.
+
+\end{enumerate}
+
+
+\begin{exercise}
+
+Use Table 6 to find the following critical $F$-values.  Check your answers using Excel with the command F.INV.RT.
+
+\end{exercise}
+
+\begin{enumerate}[(a)]
+
+\item $F_{0.10,12,20}$
+\vfill
+
+\item $F_{0.10,20,12}$
+\vfill
+
+\item $F_{0.05,7,5}$
+\vfill
+
+\item $F_{0.01,24,15}$
+\vfill
+
+\end{enumerate}
+
+\newpage
+
+\begin{statement}
+\section*{Hypothesis Test for a Single $\sigma^2$}
+
+\noindent We still follow the same hypothesis testing procedures from Chapter 9, but take care to use the proper probability distribution, the $\chi^2$, and the correct formula for the test statistic.  Notice that it involves the sample variance, $s^2$, a good estimate for $\sigma^2$.  The test statistic for hypothesis tests of this type are computed with the formula:
+$$ \chi^2 = \frac{(n-1)s^2}{\sigma^2}. $$
+
+\noindent Keep in mind that often variability is described by the standard deviation rather than variance.  We can still complete a hypothesis test for $\sigma^2$ by simply squaring the given standard deviation values.
+
+\vspace*{.1in}
+
+In the next example, we perform a single population hypothesis test for $\sigma^2$ using the traditional method of hypothesis testing.  Recall that this method requires the identification of critical value(s), $\chi_{\alpha}^2$.  Earlier in example $\#1$ we used Table 8 to find them; note that the following Excel functions can be used instead:
+\begin{center}
+CHISQ.INV(left tail area, degrees of freedom), CHISQ.INV.RT(right tail area, degrees of freedom)
+\end{center}
+
+\end{statement}
+
+
+\begin{exercise}  (Donnelly 13.7)
+
+The volatility of world crude oil prices is important because of its impact on global economic stability.  One measure of volatility is the standard deviation.  The data table found in this lesson's Excel file lists the monthly price of crude oil from January 2016 to April 2018.  Between 1986 and 2016 the standard deviation of crude oil prices was $\$20$ a barrel.  Assuming $\alpha = 0.10$, check if the standard deviation of crude oil prices has decreased since 2016.  Use the traditional method of hypothesis testing.
+
+\end{exercise}
+
+\vfill
+
+\newpage
+
+
+\begin{statement}
+
+In our next example, we will use the p-value method of hypothesis testing.  Once again, the tables for teh Chi-square distribution are limited in the precision they can provide for our p-values.  Therefore, we will rely on Excel to compute the p-values using the following formulas:
+\begin{center}
+CHISQ.DIST($x$, df, cumulative), CHISQ.DIST.RT($x$,df)
+\end{center}
+
+where
+
+\begin{align*}
+x &= \text{ the test statistic, }\chi^2\\
+\text{df}&= \text{ the degrees of freedom}\\
+\text{cumulative} &= \text{ TRUE (since we want the accumulated area left of our test statistic)}
+\end{align*}
+
+\end{statement}
+
+
+\begin{exercise}  (Donnelly 13.29)
+
+As smartphones have become more sophisticated, their data usage has increased and caused capacity issues with service providers.  High variability in data usage among customers can result in slow connections with the cellphone network.  Suppose a cellphone network would like to test if the standard deviation of monthly data usage for its customers has increased beyond $400$ megabytes (MB).  A random sample of $25$ customers was found to have a standard deviation of $460$ MB.  Using $\alpha = 0.05$, perform a hypothesis test to determine if the standard deviation for the monthly data usage for the cellphone network has exceeded $400$ MB.  Use the p-value method of hypothesis testing.
+
+\end{exercise}
+
+\vfill
+
+\newpage
+
+
+\begin{statement}
+\section*{Comparing Variances from Two Populations}
+
+\noindent When we want to compare the variances of two samples, we do this by conducting a test of the ratio of the variances.  If the ratio is equal to $1$, then the variances are equal, if not, then they are unequal.
+
+\vspace*{.1in}
+
+\noindent The sample variance is a good estimate of the population variance.  Not surprisingly, the ratio of the two sample variances, $\ds\frac{s_1^2}{s_2^2}$, drawn from their respective populations is a good estimate for the ratio of the two population variances, $\ds\frac{\sigma_1^2}{\sigma_2^2}$.  The sampling distribution of $\ds\frac{s_1^2}{s_2^2}$ is $F$-distributed with $D_1 = n_1 -1$ and $D_2 = n_2 -1$ degrees of freedom if we have independent samples from two normal populations.  Since we are comparing two variances, the test statistic is:
+$$ F = \frac{s_1^2}{s_2^2}. $$
+
+\noindent The formula for this test statistic is easy to compute by hand, nevertheless, we can also use Excel to do the work if we have raw data (not summary statistics).  After stating the two hypotheses, we will go to the \textbf{Data Analysis} tool and choose \textbf{``F-Test Two-Sample for Variances"} to complete the test.
+
+\end{statement}
+
+\begin{exercise}  (Donnelly 13.13)
+
+Security is investigating procedures at an airport to reduce the variability in the amount of time it takes passengers to get through airport security.  The following table summarizes sample data collected from two different terminals employing different security procedures.
+
+\begin{center}
+\begin{tabular}{c|c|c}
+
+ & \textbf{Terminal A} & \textbf{Terminal B}\\ \hline
+ 
+ \textbf{Standard deviation} & $7.6$ minutes & $8.7$ minutes \\ \hline
+ 
+ \textbf{Sample size} & $13$ & $12$ \\ \hline
+
+\end{tabular}
+\end{center}
+
+Using $\alpha = 0.05$, determine if the procedures at Terminal A more effectively reduce the variability than those at Terminal B.  Use the traditional method of hypothesis testing.
+
+\end{exercise}
+
+\vfill
+
+\newpage
+
+
+\begin{exercise}  (Donnelly 13.20)
+
+Low-profile tires are automobile tires that have a short sidewall height, which is the distance between the tire rim and the road.  These tires provide better performance at the expense of gas mileage.  A car model was chosen to measure the effect these tires have on the variability of the car's gas mileage.  Ten cars of this model were selected, and the gas mileage each obtained on one tank of gas was measured using standard tires.  Low-profile tires were installed on $10$ other cars, and the gas mileage was again recorded.  The data can be found in this week's Excel file.  Using $\alpha = 0.10$, determine if there is a difference in the variability of the mileage the two types of tires get.  Use the p-value method of hypothesis testing.
+
+\end{exercise}
+
+\vfill
+
+
+
+
+\end{document}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-Discrete-Probability-Distributions" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Discrete Probability Distributions</title>
+
+  <introduction>
+    <p> Recall that in a previous chapter, we discussed the difference between discrete and continuous data.  For example, counting the number of customers who visit a Papa Murphy's pizza shop one evening is an example of discrete data.  On the other hand, measuring the weight of mozzarella put on each pepperoni pizza made at the Papa Murphy's pizza shop is an example of continuous data.  In general, discrete data is <em>counted</em> while continuous data is <em>measured</em>.  In this chapter, we learn how to determine discrete probabilities -- that is, the likelihood that certain discrete data values will occur.
+    </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-Random-Variables.ptx" />
+  <xi:include href="sec-Desc-Stats-Discrete.ptx" />
+
+</chapter>
