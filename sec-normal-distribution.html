@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Section Title</title>
+<title>The Normal Distribution</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -137,7 +137,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="ch-Intro.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-Intro.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ch-Descriptive-Statistics.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="ch-Continuous-Probability-Distributions.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-Continuous-Probability-Distributions.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -147,9 +147,9 @@ eBookConfig.enable_chatcodes =  false;
 <div class="ptx-page">
 <div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural contains-active toc-item-list">
 <li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
-<li class="toc-item toc-chapter contains-active">
+<li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-Intro.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Business Statistics</span></a></div>
-<ul class="structural toc-item-list contains-active"><li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-Intro.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Section Title</span></a></div></li></ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Intro.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Section Title</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-Descriptive-Statistics.html" class="internal"><span class="codenumber">2</span> <span class="title">Descriptive Statistics</span></a></div>
@@ -173,18 +173,43 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Diamonds.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Diamonds Modeling</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-chapter">
+<li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-Continuous-Probability-Distributions.html" class="internal"><span class="codenumber">5</span> <span class="title">Continuous Probability Distributions</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-normal-distribution.html" class="internal"><span class="codenumber">5.1</span> <span class="title">The Normal Distribution</span></a></div></li></ul>
+<ul class="structural toc-item-list contains-active"><li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-normal-distribution.html" class="internal"><span class="codenumber">5.1</span> <span class="title">The Normal Distribution</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-Intro"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.1</span><span class="space"> </span><span class="title">Section Title</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-normal-distribution"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">5.1</span><span class="space"> </span><span class="title">The Normal Distribution</span>
 </h2>
-<div class="para" id="sec-Intro-2">Text of section.</div></section></div>
+<div class="para" id="sec-normal-distribution-2">Text of section.</div>
+<details id="matching" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">5.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Normal Distribution Matching Problem.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone matching_section"><ul data-component="dragndrop" data-question_label="" style="visibility: hidden;" id="matching">
+<span data-subcomponent="question"><div class="para" id="matching-2-1">Problem instructions.</div></span><li data-subcomponent="draggable" id="matching_drag1"><div class="para" id="matching-3-1-1-1">A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is between 120 and 180?</div></li>
+<li data-subcomponent="dropzone" for="matching_drag1"><div class="para" id="matching-3-1-2-1">NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)</div></li>
+<li data-subcomponent="draggable" id="matching_drag2"><div class="para" id="matching-3-2-1-1">A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is more than 40?</div></li>
+<li data-subcomponent="dropzone" for="matching_drag2"><div class="para" id="matching-3-2-2-1">1-NORM.DIST(40,135,22,1)</div></li>
+<li data-subcomponent="draggable" id="matching_drag3"><div class="para" id="matching-3-3-1-1">A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is less than 90?</div></li>
+<li data-subcomponent="dropzone" for="matching_drag3"><div class="para" id="matching-3-3-2-1">NORM.DIST(90,135,22,TRUE)</div></li>
+<li data-subcomponent="draggable" id="matching_drag4"><div class="para" id="matching-3-4-1-1">Find the probability for a standard normal distribution: <span class="process-math">\(P(Z \lt 2.35)\)</span>
+</div></li>
+<li data-subcomponent="dropzone" for="matching_drag4"><div class="para" id="matching-3-4-2-1">NORM.S.DIST(2.35,TRUE)</div></li>
+<li data-subcomponent="draggable" id="matching_drag5"><div class="para" id="matching-3-5-1-1">Find the probability for a standard normal distribution: <span class="process-math">\(P(Z \gt 2.35)\)</span>
+</div></li>
+<li data-subcomponent="dropzone" for="matching_drag5"><div class="para" id="matching-3-5-2-1">1-NORM.S.DIST(2.35,1)</div></li>
+<li data-subcomponent="draggable" id="matching_drag6"><div class="para" id="matching-3-6-1-1">Find the probability for a standard normal distribution: <span class="process-math">\(P(-0.86\leq Z\leq 1.76)\)</span>
+</div></li>
+<li data-subcomponent="dropzone" for="matching_drag6"><div class="para" id="matching-3-6-2-1">NORM.S.DIST(1.76,TRUE)- NORM.S.DIST(-0.86,TRUE),1)</div></li>
+<li data-subcomponent="draggable" id="matching_drag7"><div class="para" id="matching-3-7-1-1">Find the probability for a standard normal distribution: <span class="process-math">\(P(Z\leq 1.50)\)</span>
+</div></li>
+<li data-subcomponent="dropzone" for="matching_drag7"><div class="para" id="matching-3-7-2-1">NORM.S.DIST(1.5,TRUE)</div></li>
+<li data-subcomponent="draggable" id="matching_drag8"><div class="para" id="matching-3-8-1-1">Find the probability for a standard normal distribution: <span class="process-math">\(P(Z\geq 1.50)\)</span>
+</div></li>
+<li data-subcomponent="dropzone" for="matching_drag8"><div class="para" id="matching-3-8-2-1">1-NORM.S.DIST(1.5,TRUE)</div></li>
+</ul></div></div></article></details></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="ch-Intro.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-Descriptive-Statistics.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="ch-Continuous-Probability-Distributions.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

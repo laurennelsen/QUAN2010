@@ -132,8 +132,8 @@ var ptx_lunr_docs = [
   "url": "sec-correlation.html",
   "type": "Section",
   "number": "4.1",
-  "title": "Correlation",
-  "body": " Correlation  Text of section.       An independent variable.....     A dependent variable.....        "
+  "title": "Correlation Analysis",
+  "body": " Correlation Analysis  Text of section.       An independent variable explains the variation in the dependent variable    A dependent variable is explained by one or more independent variables        Correlation analysis provides a way to measure the strength and direction of the linear relationship between the two variables (the aforementioned independent and dependent variables). This is done by computing the sample correlation coefficient , .  The range of the correlation coefficient is .   A positive value indicates that as increases, also increases.    A negative value indicates that as increases, decreases.     Recall that we used the Excel formula, CORREL, to calculate this number in a previous chapter. Now we improve on that skill by learning how to use a hypothesis test to assess the strength of the linear relationship described by .  The population correlation coefficient, , refers to the correlation between all values of two variables in a population. A value of means that there is no linear relationship between and . We don't know the value of so we use the sample correlation coefficient to test whether we have enough evidence from the sample to conclude that there is a linear relationship between the variables in the population. The two hypotheses for this hypothesis test are:     The test statistic uses the Student's -distribution with formula:       text   "
 },
 {
   "id": "sec-correlation-3",
@@ -142,7 +142,16 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "4.1.1",
   "title": "",
-  "body": "     An independent variable.....     A dependent variable.....       "
+  "body": "     An independent variable explains the variation in the dependent variable    A dependent variable is explained by one or more independent variables      "
+},
+{
+  "id": "correlation",
+  "level": "2",
+  "url": "sec-correlation.html#correlation",
+  "type": "Exercise",
+  "number": "4.1.2",
+  "title": "",
+  "body": " text  "
 },
 {
   "id": "sec-Diamonds",
@@ -170,6 +179,24 @@ var ptx_lunr_docs = [
   "number": "4.2.2",
   "title": "",
   "body": " We're going to use the same file we used in the previous problem:   Now we will take into consideration the other characteristics of diamonds that determine price: carat, color, clarity, and cut. Let's redo the regression and create a model that does a better job than the one in the previous example that only included a single predictor variable.     Create the regression model with all 5 variables that are provided: color, depth (in percentage), clarity, table (in percentage), and carat.    Interpret each of the coefficients in the model.    Do all 5 of the predictor variables belong in the model? Why or why not?    Is the overall model valid? Why or why not?    What is the coefficient of determination? What does it tell you about the model?    Remove variables one by one and reassess the model. What is the best model to predict the price of a diamond? Why?     "
+},
+{
+  "id": "sec-normal-distribution",
+  "level": "1",
+  "url": "sec-normal-distribution.html",
+  "type": "Section",
+  "number": "5.1",
+  "title": "The Normal Distribution",
+  "body": " The Normal Distribution  Text of section.  Normal Distribution Matching Problem  Problem instructions.     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is between 120 and 180?    NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)      A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is more than 40?    1-NORM.DIST(40,135,22,1)      A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is less than 90?    NORM.DIST(90,135,22,TRUE)      Find the probability for a standard normal distribution:     NORM.S.DIST(2.35,TRUE)      Find the probability for a standard normal distribution:     1-NORM.S.DIST(2.35,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.76,TRUE)- NORM.S.DIST(-0.86,TRUE),1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.5,TRUE)      Find the probability for a standard normal distribution:     1-NORM.S.DIST(1.5,TRUE)     "
+},
+{
+  "id": "matching",
+  "level": "2",
+  "url": "sec-normal-distribution.html#matching",
+  "type": "Exercise",
+  "number": "5.1.1",
+  "title": "Normal Distribution Matching Problem.",
+  "body": "Normal Distribution Matching Problem  Problem instructions.     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is between 120 and 180?    NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)      A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is more than 40?    1-NORM.DIST(40,135,22,1)      A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is less than 90?    NORM.DIST(90,135,22,TRUE)      Find the probability for a standard normal distribution:     NORM.S.DIST(2.35,TRUE)      Find the probability for a standard normal distribution:     1-NORM.S.DIST(2.35,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.76,TRUE)- NORM.S.DIST(-0.86,TRUE),1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.5,TRUE)      Find the probability for a standard normal distribution:     1-NORM.S.DIST(1.5,TRUE)    "
 },
 {
   "id": "backmatter-2",
