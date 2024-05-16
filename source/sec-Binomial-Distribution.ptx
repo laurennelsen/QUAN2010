@@ -39,8 +39,8 @@
       <p>
         The probability of exactly <m>X</m> successes in <m>n</m> trials with probability of success, <m>p</m>, is
       </p>
-      <m>P(X)=\frac{n!}{X!(n-X)!}p^X(1-p)^{n-X}\text{ for }X=0,1,2,...,n
-      </m>
+      <me>P(X)=\frac{n!}{X!(n-X)!}p^X(1-p)^{n-X}\text{ for }X=0,1,2,...,n
+      </me>
     </statement>
   </definition>
 

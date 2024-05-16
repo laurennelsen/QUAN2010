@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-correlation" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Correlation</title>
+  <title>Correlation Analysis</title>
 
   <p> Text of section. </p>
 
@@ -10,15 +10,74 @@
         <p>
             <ul>
                 <li>
-                    <p> An <em>independent variable.....</em> </p>
+                    <p> An <em>independent variable</em> explains the variation in the dependent variable </p>
                 </li>
                 
                 <li> 
-                    <p> A <em>dependent variable.....</em> </p>
+                    <p> A <em>dependent variable</em> is explained by one or more independent variables </p>
                 </li>
             </ul>
         </p>
     </statement>
    </definition>
+
+   <statement>
+    <p>
+        Correlation analysis provides a way to measure the strength and direction of the linear relationship between the two variables (the aforementioned independent and dependent variables).  This is done by computing the <em>sample correlation coefficient</em>, <m>r</m>.
+    </p>
+
+    <p>
+        The range of the correlation coefficient is <m>-1\text{ to } 1</m>.
+
+        <ul>
+            <li>
+                <p>
+                    A <em>positive</em> value indicates that as <m>x</m> increases, <m>y</m> also increases.
+                </p>
+            </li>
+            <li>
+                <p>
+                    A <em>negative</em> value indicates that as <m>x</m> increases, <m>y</m> decreases.
+                </p>
+            </li>
+        </ul>
+    </p>
+
+<p>
+    Recall that we used the Excel formula, CORREL, to calculate this number in a previous chapter.  Now we improve on that skill by learning how to use a hypothesis test to assess the strength of the linear relationship described by <m>r</m>.
+</p>
+
+<p>
+    The population correlation coefficient, <m>\rho</m>, refers to the correlation between all values of two variables in a population.  A value of <m>\rho=0</m> means that there is no linear relationship between <m>x</m> and <m>y</m>.  We don't know the value of <m>\rho</m> so we use the sample correlation coefficient to test whether we have enough evidence from the sample to conclude that there is a linear relationship between the variables in the population.  The two hypotheses for this hypothesis test are:
+</p>
+    
+	<p>
+        <md>
+        <mrow>H_0 : \rho\leq 0 </mrow>
+        <mrow>H_1 : \rho>0 </mrow>
+        </md>
+    </p>
+
+    <p>
+        The test statistic uses the Student's <m>t</m>-distribution with formula:
+    </p>
+
+    <p>
+        <me>
+            t = \frac{r}{\sqrt{\frac{1-r^2}{n-2}}}
+         </me>
+    </p>
+
+
+    </statement>
+
+
+    <exercise label="correlation">
+        <statement>
+        <p>
+            text
+        </p>
+        </statement>
+</exercise>
 
 </section>

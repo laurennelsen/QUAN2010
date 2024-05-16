@@ -20,6 +20,8 @@
 
     <xi:include href="./ch-Intro-to-Regression-Modeling.ptx" />
 
+    <xi:include href="./ch-Continuous-Probability-Distributions.ptx" />
+
 
     <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />

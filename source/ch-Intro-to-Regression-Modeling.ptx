@@ -6,7 +6,6 @@
   <introduction>
     <p> 
         Recall that a scatterplot is a graph used to explore a relationship between two variables.  The two variables can be defined further as the independent and dependent variables.
-        ....insert GeoGebra scatter plot.....
     </p>
     <figure xml:id="figure-geogebra-scatter">
         <caption>Scatter Plot</caption>

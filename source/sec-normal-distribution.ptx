@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-normal-distribution" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>The Normal Distribution</title>
+
+  <p> Text of section. </p>
+
+
+  <exercise label="matching">
+    <title>Normal Distribution Matching Problem</title>
+    <statement>
+    <p>
+        Problem instructions.
+    </p>
+    </statement>
+
+    <matches>
+
+    <match>
+        <premise>
+            <p>
+            A random variable follows the normal probability distribution with a mean of
+            135 and a standard deviation of 22. What is the probability that a randomly selected value is between 120 and 180?
+            </p>
+        </premise>
+        <response>
+            <p>
+            NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)
+            </p>
+        </response>
+    </match>
+
+    <match>
+        <premise>
+            <p>
+            A random variable follows the normal probability distribution with a mean of
+            135 and a standard deviation of 22. What is the probability that a randomly selected value is more than 40?
+            </p>
+        </premise>
+        <response>
+            <p>
+            1-NORM.DIST(40,135,22,1)
+            </p>
+        </response>
+    </match>
+
+    <match>
+        <premise>
+            <p>
+            A random variable follows the normal probability distribution with a mean of
+            135 and a standard deviation of 22. What is the probability that a randomly selected value is less than 90?
+            </p>
+        </premise>
+        <response>
+            <p>
+            NORM.DIST(90,135,22,TRUE)
+            </p>
+        </response>
+    </match>
+
+    <match>
+        <premise>
+            <p>
+            Find the probability for a standard normal distribution: <m>P(Z \lt 2.35)</m>
+            </p>
+        </premise>
+        <response>
+            <p>
+            NORM.S.DIST(2.35,TRUE)
+            </p>
+        </response>
+    </match>
+
+    <match>
+        <premise>
+            <p>
+            Find the probability for a standard normal distribution: <m>P(Z \gt 2.35)</m>
+            </p>
+        </premise>
+        <response>
+            <p>
+            1-NORM.S.DIST(2.35,1)
+            </p>
+        </response>
+    </match>
+
+    <match>
+        <premise>
+            <p>
+            Find the probability for a standard normal distribution: <m>P(-0.86\leq Z\leq 1.76)</m>
+            </p>
+        </premise>
+        <response>
+            <p>
+            NORM.S.DIST(1.76,TRUE)- NORM.S.DIST(-0.86,TRUE),1)
+            </p>
+        </response>
+    </match>
+
+    <match>
+        <premise>
+            <p>
+            Find the probability for a standard normal distribution: <m>P(Z\leq 1.50)</m>
+            </p>
+        </premise>
+        <response>
+            <p>
+            NORM.S.DIST(1.5,TRUE)
+            </p>
+        </response>
+    </match>
+
+    <match>
+        <premise>
+            <p>
+            Find the probability for a standard normal distribution:
+            <m>
+                P(Z\geq 1.50)
+            </m>
+            </p>
+        </premise>
+        <response>
+            <p>
+            1-NORM.S.DIST(1.5,TRUE)
+            </p>
+        </response>
+    </match>
+
+    </matches>
+
+</exercise>
+
+
+</section>
+
+
