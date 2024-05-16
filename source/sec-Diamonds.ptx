@@ -57,6 +57,61 @@
 </statement>
 </exercise>
 
+
+
+
+
+
+
+<exercise>
+
+    <statement>
+        <p>
+            We're going to use the same file we used in the previous problem:
+            <url href="external/sheets/Diamonds.xlsx" />
+          </p>
+        <p>
+            Now we will take into consideration the other characteristics of diamonds that determine price:  carat, color, clarity, and cut.  Let's redo the regression and create a model that does a better job than the one in the previous example that only included a single predictor variable.
+        </p>
+  
+    <p>
+        <ol>
+            <li>
+                <p>
+                    Create the regression model with all 5 variables that are provided:  color, depth (in percentage), clarity, table (in percentage), and carat.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Interpret each of the coefficients in the model.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Do all 5 of the predictor variables belong in the model?  Why or why not?
+                </p>
+            </li>
+            <li>
+                <p>
+                    Is the overall model valid?  Why or why not?
+                </p>
+            </li>
+            <li>
+                <p>
+                    What is the coefficient of determination?  What does it tell you about the model?
+                </p>
+            </li>
+            <li>
+                <p>
+                    Remove variables one by one and reassess the model.  What is the best model to predict the price of a diamond?  Why?
+                </p>
+            </li>
+        </ol>
+    </p>
+
+</statement>
+</exercise>
+
   
 
 </section>
