@@ -100,6 +100,33 @@ var ptx_lunr_docs = [
   "body": " (Donnelly 5.45)  Tees R Us manufactures and sells T-shirts for sporting events, is providing shirts for an upcoming tournament. Each shirt will cost to produce and will be sold for . Any unsold shirts at the end of the tournament can be sold for a piece in the near future. Tees R Us assumes the demand for the shirts will be , , , or . They also estimate that the probabilities of each of these sales levels occurring will be , , , and , respectively. Determine the expected monetary value of the project if Tees R Us chooses to print shirts for the tournament.  "
 },
 {
+  "id": "sec-Binomial-Distribution",
+  "level": "1",
+  "url": "sec-Binomial-Distribution.html",
+  "type": "Section",
+  "number": "3.3",
+  "title": "Binomial Distribution",
+  "body": " Binomial Distribution    A binomial experiment is a probability experiment possessing the following characteristics:   It has a fixed number of trials, .    Each trial has only two possible outcomes: success or failure.    The probability of success, , and the probability of failure, , are constant.    Each trial is independent of the other trials.     The outcomes of a binomial experiment and the corresponding probabilities of these outcomes are called a binomial distribution .  The probability of exactly successes in trials with probability of success, , is      Binomial Multiple Choice Problem   Which of the following are binomial experiments?      right answer 1    answer specific feedback      right answer 2    answer specific feedback      wrong answer 1    answer specific feedback      wrong answer 2    answer specific feedback      "
+},
+{
+  "id": "def-Binomial",
+  "level": "2",
+  "url": "sec-Binomial-Distribution.html#def-Binomial",
+  "type": "Definition",
+  "number": "3.3.1",
+  "title": "",
+  "body": "  A binomial experiment is a probability experiment possessing the following characteristics:   It has a fixed number of trials, .    Each trial has only two possible outcomes: success or failure.    The probability of success, , and the probability of failure, , are constant.    Each trial is independent of the other trials.     The outcomes of a binomial experiment and the corresponding probabilities of these outcomes are called a binomial distribution .  The probability of exactly successes in trials with probability of success, , is    "
+},
+{
+  "id": "binomial-multiple-choice",
+  "level": "2",
+  "url": "sec-Binomial-Distribution.html#binomial-multiple-choice",
+  "type": "Example",
+  "number": "3.3.2",
+  "title": "Binomial Multiple Choice Problem.",
+  "body": " Binomial Multiple Choice Problem   Which of the following are binomial experiments?      right answer 1    answer specific feedback      right answer 2    answer specific feedback      wrong answer 1    answer specific feedback      wrong answer 2    answer specific feedback     "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
