@@ -71,6 +71,21 @@
         </response>
     </match>
 
+</matches>
+
+</exercise>
+
+
+<exercise label="matching">
+        <title>Normal Distribution Matching Problem</title>
+        <statement>
+        <p>
+            Problem instructions.
+        </p>
+        </statement>
+    
+     <matches>
+
     <match>
         <premise>
             <p>
