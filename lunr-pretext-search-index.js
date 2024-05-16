@@ -34,7 +34,61 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.2",
   "title": "Types of Data",
-  "body": " Types of Data  Text of section.  "
+  "body": " Types of Data  Text of section.  Qualitative vs. Quantitative Data     Discrete vs. Continuous Data     Level of Measurement     Sample and Population     Parameter vs. Statistic     Parameter vs. Statistic     "
+},
+{
+  "id": "sec-TypesOfData-3",
+  "level": "2",
+  "url": "sec-TypesOfData.html#sec-TypesOfData-3",
+  "type": "Exercise",
+  "number": "2.2.1",
+  "title": "Qualitative vs. Quantitative Data.",
+  "body": "Qualitative vs. Quantitative Data    "
+},
+{
+  "id": "sec-TypesOfData-4",
+  "level": "2",
+  "url": "sec-TypesOfData.html#sec-TypesOfData-4",
+  "type": "Exercise",
+  "number": "2.2.2",
+  "title": "Discrete vs. Continuous Data.",
+  "body": "Discrete vs. Continuous Data    "
+},
+{
+  "id": "sec-TypesOfData-5",
+  "level": "2",
+  "url": "sec-TypesOfData.html#sec-TypesOfData-5",
+  "type": "Exercise",
+  "number": "2.2.3",
+  "title": "Level of Measurement.",
+  "body": "Level of Measurement    "
+},
+{
+  "id": "sec-TypesOfData-6",
+  "level": "2",
+  "url": "sec-TypesOfData.html#sec-TypesOfData-6",
+  "type": "Exercise",
+  "number": "2.2.4",
+  "title": "Sample and Population.",
+  "body": "Sample and Population    "
+},
+{
+  "id": "sec-TypesOfData-7",
+  "level": "2",
+  "url": "sec-TypesOfData.html#sec-TypesOfData-7",
+  "type": "Exercise",
+  "number": "2.2.5",
+  "title": "Parameter vs. Statistic.",
+  "body": "Parameter vs. Statistic    "
+},
+{
+  "id": "sec-TypesOfData-8",
+  "level": "2",
+  "url": "sec-TypesOfData.html#sec-TypesOfData-8",
+  "type": "Exercise",
+  "number": "2.2.6",
+  "title": "Parameter vs. Statistic.",
+  "body": "Parameter vs. Statistic    "
 },
 {
   "id": "sec-Random-Variables",
@@ -106,7 +160,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.3",
   "title": "Binomial Distribution",
-  "body": " Binomial Distribution    A binomial experiment is a probability experiment possessing the following characteristics:   It has a fixed number of trials, .    Each trial has only two possible outcomes: success or failure.    The probability of success, , and the probability of failure, , are constant.    Each trial is independent of the other trials.     The outcomes of a binomial experiment and the corresponding probabilities of these outcomes are called a binomial distribution .  The probability of exactly successes in trials with probability of success, , is     Binomial Multiple Choice Problem  Which of the following are binomial experiments?     Taking a sample of 50 employees and counting how many of them are women.    answer specific feedback      Taking a standardized test 3 times and counting how many times I got a passing score.    answer specific feedback      Flipping a coin 100 times and counting how many times I got tails .    answer specific feedback      Taking a group of 100 students and finding their average GPA.    answer specific feedback      Tracking how long it took me to drive to work each day over a month.    (The time to drive to work is not a discrete variable.)     "
+  "body": " Binomial Distribution    A binomial experiment is a probability experiment possessing the following characteristics:   It has a fixed number of trials, .    Each trial has only two possible outcomes: success or failure.    The probability of success, , and the probability of failure, , are constant.    Each trial is independent of the other trials.     The outcomes of a binomial experiment and the corresponding probabilities of these outcomes are called a binomial distribution .  The probability of exactly successes in trials with probability of success, , is     Binomial Multiple Choice Problem  Which of the following are binomial experiments?     Taking a sample of 50 employees and counting how many of them are women.    answer specific feedback      Taking a standardized test 3 times and counting how many times I got a passing score.    answer specific feedback      Flipping a coin 100 times and counting how many times I got tails .    answer specific feedback      Taking a group of 100 students and finding their average GPA.    answer specific feedback      Tracking how long it took me to drive to work each day over a month.    (The time to drive to work is not a discrete variable.)      Suppose a bank gives out a number of loans. Each of the loans has a chance of defaulting. Suppose that whether or not each loan default is independent of the other loans.  Find the following:   What is the probability that loans default?    .   What is the probability that loans default?    .   What is the probability that less than loans default?    .   What is the probability that between and (inclusive) loans default?    .   "
 },
 {
   "id": "def-Binomial",
@@ -125,6 +179,15 @@ var ptx_lunr_docs = [
   "number": "3.3.2",
   "title": "Binomial Multiple Choice Problem.",
   "body": "Binomial Multiple Choice Problem  Which of the following are binomial experiments?     Taking a sample of 50 employees and counting how many of them are women.    answer specific feedback      Taking a standardized test 3 times and counting how many times I got a passing score.    answer specific feedback      Flipping a coin 100 times and counting how many times I got tails .    answer specific feedback      Taking a group of 100 students and finding their average GPA.    answer specific feedback      Tracking how long it took me to drive to work each day over a month.    (The time to drive to work is not a discrete variable.)    "
+},
+{
+  "id": "sec-Binomial-Distribution-4",
+  "level": "2",
+  "url": "sec-Binomial-Distribution.html#sec-Binomial-Distribution-4",
+  "type": "Exercise",
+  "number": "3.3.3",
+  "title": "",
+  "body": " Suppose a bank gives out a number of loans. Each of the loans has a chance of defaulting. Suppose that whether or not each loan default is independent of the other loans.  Find the following:   What is the probability that loans default?    .   What is the probability that loans default?    .   What is the probability that less than loans default?    .   What is the probability that between and (inclusive) loans default?    .  "
 },
 {
   "id": "sec-correlation",
@@ -187,7 +250,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.1",
   "title": "The Normal Distribution",
-  "body": " The Normal Distribution  Text of section.  Normal Distribution Matching Problem  Problem instructions.     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is between 120 and 180?    NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)      A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is more than 40?    1-NORM.DIST(40,135,22,1)      A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is less than 90?    NORM.DIST(90,135,22,TRUE)      Find the probability for a standard normal distribution:     NORM.S.DIST(2.35,TRUE)     Normal Distribution Matching Problem  Problem instructions.     Find the probability for a standard normal distribution:     1-NORM.S.DIST(2.35,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.76,TRUE)- NORM.S.DIST(-0.86,TRUE),1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.5,TRUE)      Find the probability for a standard normal distribution:     1-NORM.S.DIST(1.5,TRUE)     "
+  "body": " The Normal Distribution  Text of section.  Normal Distribution Matching Problem  Problem instructions.     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is between 120 and 180?    NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)      A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is more than 40?    1-NORM.DIST(40,135,22,1)      A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is less than 90?    NORM.DIST(90,135,22,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(2.35,TRUE)     Normal Distribution Matching Problem  Problem instructions.     Find the probability for a standard normal distribution:     1-NORM.S.DIST(2.35,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.76,1)- NORM.S.DIST(-0.86,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.5,TRUE)      Find the probability for a standard normal distribution:     1-NORM.S.DIST(1.5,TRUE)        Normal Distribution Matching Problem  Problem instructions.          NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)     image   1-NORM.DIST(40,135,22,1)     image   NORM.DIST(90,135,22,1)     image   Find the probability for a standard normal distribution:      Normal Distribution Matching Problem  Problem instructions.    image   Find the probability for a standard normal distribution:      image   Find the probability for a standard normal distribution:      image   NORM.S.DIST(1.5,TRUE)      image    1-NORM.S.DIST(1.5,TRUE)     "
 },
 {
   "id": "matching",
@@ -196,7 +259,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.1.1",
   "title": "Normal Distribution Matching Problem.",
-  "body": "Normal Distribution Matching Problem  Problem instructions.     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is between 120 and 180?    NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)      A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is more than 40?    1-NORM.DIST(40,135,22,1)      A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is less than 90?    NORM.DIST(90,135,22,TRUE)      Find the probability for a standard normal distribution:     NORM.S.DIST(2.35,TRUE)    "
+  "body": "Normal Distribution Matching Problem  Problem instructions.     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is between 120 and 180?    NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)      A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is more than 40?    1-NORM.DIST(40,135,22,1)      A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is less than 90?    NORM.DIST(90,135,22,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(2.35,TRUE)    "
 },
 {
   "id": "matching",
@@ -205,7 +268,25 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.1.2",
   "title": "Normal Distribution Matching Problem.",
-  "body": "Normal Distribution Matching Problem  Problem instructions.     Find the probability for a standard normal distribution:     1-NORM.S.DIST(2.35,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.76,TRUE)- NORM.S.DIST(-0.86,TRUE),1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.5,TRUE)      Find the probability for a standard normal distribution:     1-NORM.S.DIST(1.5,TRUE)    "
+  "body": "Normal Distribution Matching Problem  Problem instructions.     Find the probability for a standard normal distribution:     1-NORM.S.DIST(2.35,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.76,1)- NORM.S.DIST(-0.86,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.5,TRUE)      Find the probability for a standard normal distribution:     1-NORM.S.DIST(1.5,TRUE)    "
+},
+{
+  "id": "matching",
+  "level": "2",
+  "url": "sec-normal-distribution.html#matching",
+  "type": "Exercise",
+  "number": "5.1.3",
+  "title": "Normal Distribution Matching Problem.",
+  "body": "Normal Distribution Matching Problem  Problem instructions.          NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)     image   1-NORM.DIST(40,135,22,1)     image   NORM.DIST(90,135,22,1)     image   Find the probability for a standard normal distribution:     "
+},
+{
+  "id": "matching",
+  "level": "2",
+  "url": "sec-normal-distribution.html#matching",
+  "type": "Exercise",
+  "number": "5.1.4",
+  "title": "Normal Distribution Matching Problem.",
+  "body": "Normal Distribution Matching Problem  Problem instructions.    image   Find the probability for a standard normal distribution:      image   Find the probability for a standard normal distribution:      image   NORM.S.DIST(1.5,TRUE)      image    1-NORM.S.DIST(1.5,TRUE)    "
 },
 {
   "id": "backmatter-2",
