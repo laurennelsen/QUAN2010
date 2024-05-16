@@ -299,6 +299,47 @@
 
 
 
+<exercise>
+    <introduction>
+      <p> Let <m>z</m> be the standard normal variable. Find the following: </p>
+    </introduction>
+      <task>
+        <statement>
+          <p> <m>P(Z\geq -2.89)</m>. </p>
+        </statement>
+        <answer>
+          <p> <m>P(Z\geq -2.89)=0.9980737908678121</m>. </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p> <m>P(0.11\lt Z\lt 2.7)</m>. </p>
+        </statement>
+        <answer>
+          <p> <m>P(0.11\lt Z\lt 2.7)=0.45273771365464255</m>. </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p> <m>z^*</m> such that <m>P(Z\leq z^*)=0.61</m>. </p>
+        </statement>
+        <answer>
+          <p> <m>z^*=0.2793190344474541</m>. </p>
+        </answer>
+      </task>
+      <task>
+        <statement>
+          <p> <m>z^*</m> such that <m>P(-z^*\lt Z\lt z^*)=0.69</m>. </p>
+        </statement>
+        <answer>
+          <p> <m> z^*=1.015222033217028</m>. </p>
+        </answer>
+      </task>
+  </exercise>
+
+
+
+
 
 </section>
 
