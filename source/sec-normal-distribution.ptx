@@ -53,7 +53,7 @@
         </premise>
         <response>
             <p>
-            NORM.DIST(90,135,22,TRUE)
+            NORM.DIST(90,135,22,1)
             </p>
         </response>
     </match>
@@ -107,7 +107,7 @@
         </premise>
         <response>
             <p>
-            NORM.S.DIST(1.76,TRUE)- NORM.S.DIST(-0.86,TRUE),1)
+            NORM.S.DIST(1.76,1)- NORM.S.DIST(-0.86,1)
             </p>
         </response>
     </match>
@@ -144,6 +144,160 @@
     </matches>
 
 </exercise>
+
+
+<image width="50%" xml:id="poset">
+              
+    <latex-image >
+        \begin{tikzpicture}
+        \begin{axis}[every axis plot post/.append style={ mark=none,samples=50,smooth},domain=50:220]
+        
+        \addplot {\gauss{135}{22}};
+        
+        \addplot [fill=cyan!30, draw=none, domain=120:180] {\gauss{135}{22}} \closedcycle; 
+        \end{axis}
+        \end{tikzpicture}
+    </latex-image>
+
+  </image>
+
+
+<exercise label="matching">
+    <title>Normal Distribution Matching Problem</title>
+    <statement>
+    <p>
+        Problem instructions.
+    </p>
+    </statement>
+
+    <matches>
+
+    <match>
+        <premise>
+        
+            <image width="50%" xml:id="poset1">
+              
+                <latex-image >
+                    \begin{tikzpicture}
+                    \begin{axis}[every axis plot post/.append style={ mark=none,samples=50,smooth},domain=50:220]
+                    
+                    \addplot {\gauss{135}{22}};
+                    
+                    \addplot [fill=cyan!30, draw=none, domain=120:180] {\gauss{135}{22}} \closedcycle; 
+                    \end{axis}
+                    \end{tikzpicture}
+                </latex-image>
+            
+              </image>
+            
+        </premise>
+        <response>
+            <p>
+            NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)
+            </p>
+        </response>
+    </match>
+
+    <match>
+        <premise>
+            image
+        </premise>
+        <response>
+            <p>
+            1-NORM.DIST(40,135,22,1)
+            </p>
+        </response>
+    </match>
+
+    <match>
+        <premise>
+            image
+        </premise>
+        <response>
+            <p>
+            NORM.DIST(90,135,22,1)
+            </p>
+        </response>
+    </match>
+
+    <match>
+        <premise>
+            image
+        </premise>
+        <response>
+            <p>
+                Find the probability for a standard normal distribution: <m>P(Z \lt 2.35)</m>
+                </p>
+        </response>
+    </match>
+
+</matches>
+
+</exercise>
+
+
+<exercise label="matching">
+        <title>Normal Distribution Matching Problem</title>
+        <statement>
+        <p>
+            Problem instructions.
+        </p>
+        </statement>
+    
+     <matches>
+
+    <match>
+        <premise>
+            image
+        </premise>
+        <response>
+            <p>
+                Find the probability for a standard normal distribution: <m>P(Z \gt 2.35)</m>
+                </p>
+        </response>
+    </match>
+
+    <match>
+        <premise>
+            image
+        </premise>
+        <response>
+            <p>
+                Find the probability for a standard normal distribution: <m>P(-0.86\leq Z\leq 1.76)</m>
+                </p>
+        </response>
+    </match>
+
+    <match>
+        <premise>
+            image
+        </premise>
+        <response>
+            <p>
+            NORM.S.DIST(1.5,TRUE)
+            </p>
+        </response>
+    </match>
+
+    <match>
+        <premise>
+            <p>
+            image
+            </p>
+        </premise>
+        <response>
+            <p>
+            1-NORM.S.DIST(1.5,TRUE)
+            </p>
+        </response>
+    </match>
+
+    </matches>
+
+</exercise>
+
+
+
 
 
 </section>

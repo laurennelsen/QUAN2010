@@ -5,4 +5,73 @@
 
   <p> Text of section. </p>
 
+
+  <exercise>
+    <title>Qualitative vs. Quantitative Data</title>
+    <introduction>
+      <p>
+        
+      </p>
+    </introduction>
+    <myopenmath problem="6908" />
+  </exercise>
+
+
+
+  <exercise>
+    <title>Discrete vs. Continuous Data</title>
+    <introduction>
+      <p>
+        
+      </p>
+    </introduction>
+    <myopenmath problem="6911" />
+  </exercise>
+
+
+  <exercise>
+    <title>Level of Measurement</title>
+    <introduction>
+      <p>
+        
+      </p>
+    </introduction>
+    <myopenmath problem="6916" />
+  </exercise>
+
+
+  <exercise>
+    <title>Sample and Population</title>
+    <introduction>
+      <p>
+        
+      </p>
+    </introduction>
+    <myopenmath problem="6912" />
+  </exercise>
+  
+
+  <exercise>
+    <title>Parameter vs. Statistic</title>
+    <introduction>
+      <p>
+        
+      </p>
+    </introduction>
+    <myopenmath problem="6910" />
+  </exercise>
+
+
+
+  <exercise>
+    <title>Parameter vs. Statistic</title>
+    <introduction>
+      <p>
+        
+      </p>
+    </introduction>
+    <myopenmath problem="33101" />
+  </exercise>
+
+
 </section>
