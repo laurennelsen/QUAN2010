@@ -250,7 +250,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.1",
   "title": "The Normal Distribution",
-  "body": " The Normal Distribution  Text of section.  Normal Distribution Matching Problem  Problem instructions.     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is between 120 and 180?    NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)      A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is more than 40?    1-NORM.DIST(40,135,22,1)      A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is less than 90?    NORM.DIST(90,135,22,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(2.35,TRUE)     Normal Distribution Matching Problem  Problem instructions.     Find the probability for a standard normal distribution:     1-NORM.S.DIST(2.35,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.76,1)- NORM.S.DIST(-0.86,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.5,TRUE)      Find the probability for a standard normal distribution:     1-NORM.S.DIST(1.5,TRUE)        Normal Distribution Matching Problem  Problem instructions.          NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)     image   1-NORM.DIST(40,135,22,1)     image   NORM.DIST(90,135,22,1)     image   Find the probability for a standard normal distribution:      Normal Distribution Matching Problem  Problem instructions.    image   Find the probability for a standard normal distribution:      image   Find the probability for a standard normal distribution:      image   NORM.S.DIST(1.5,TRUE)      image    1-NORM.S.DIST(1.5,TRUE)     "
+  "body": " The Normal Distribution  Text of section.  Normal Distribution Matching Problem  Problem instructions.     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is between 120 and 180?    NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)      A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is more than 40?    1-NORM.DIST(40,135,22,1)      A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is less than 90?    NORM.DIST(90,135,22,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(2.35,TRUE)     Normal Distribution Matching Problem  Problem instructions.     Find the probability for a standard normal distribution:     1-NORM.S.DIST(2.35,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.76,1)- NORM.S.DIST(-0.86,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.5,TRUE)      Find the probability for a standard normal distribution:     1-NORM.S.DIST(1.5,TRUE)        Normal Distribution Matching Problem  Problem instructions.          NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)     image   1-NORM.DIST(40,135,22,1)     image   NORM.DIST(90,135,22,1)     image   Find the probability for a standard normal distribution:      Normal Distribution Matching Problem  Problem instructions.    image   Find the probability for a standard normal distribution:      image   Find the probability for a standard normal distribution:      image   NORM.S.DIST(1.5,TRUE)      image    1-NORM.S.DIST(1.5,TRUE)      Let be the standard normal variable. Find the following:    .    .    .    .    such that .    .    such that .    .   "
 },
 {
   "id": "matching",
@@ -287,6 +287,15 @@ var ptx_lunr_docs = [
   "number": "5.1.4",
   "title": "Normal Distribution Matching Problem.",
   "body": "Normal Distribution Matching Problem  Problem instructions.    image   Find the probability for a standard normal distribution:      image   Find the probability for a standard normal distribution:      image   NORM.S.DIST(1.5,TRUE)      image    1-NORM.S.DIST(1.5,TRUE)    "
+},
+{
+  "id": "sec-normal-distribution-8",
+  "level": "2",
+  "url": "sec-normal-distribution.html#sec-normal-distribution-8",
+  "type": "Exercise",
+  "number": "5.1.5",
+  "title": "",
+  "body": " Let be the standard normal variable. Find the following:    .    .    .    .    such that .    .    such that .    .  "
 },
 {
   "id": "backmatter-2",
