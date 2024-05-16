@@ -45,7 +45,7 @@
   </definition>
 
 
-  <example label="binomial-multiple-choice">
+  <exercise label="binomial-multiple-choice">
     <title>Binomial Multiple Choice Problem</title>
     <statement>
     <p>
@@ -56,7 +56,7 @@
     <choice correct="yes">
         <statement>
         <p>
-            right answer 1
+            Taking a sample of 50 employees and counting how many of them are women.
         </p>
         </statement>
         <feedback>
@@ -66,9 +66,21 @@
         </feedback>
     </choice>
     <choice correct="yes">
+      <statement>
+      <p>
+          Taking a standardized test 3 times and counting how many times I got a passing score.
+      </p>
+      </statement>
+      <feedback>
+      <p>
+          answer specific feedback
+      </p>
+      </feedback>
+  </choice>
+    <choice correct="yes">
         <statement>
         <p>
-            right answer 2
+            Flipping a coin 100 times and counting how many times I got <q>tails</q>.
         </p>
         </statement>
         <feedback>
@@ -80,7 +92,7 @@
     <choice correct="no">
         <statement>
         <p>
-            wrong answer 1
+            Taking a group of 100 students and finding their average GPA.
         </p>
         </statement>
         <feedback>
@@ -92,17 +104,17 @@
     <choice correct="no">
         <statement>
         <p>
-            wrong answer 2
+            Tracking how long it took me to drive to work each day over a month.
         </p>
         </statement>
         <feedback>
         <p>
-            answer specific feedback
+            (The time to drive to work is not a discrete variable.)
         </p>
         </feedback>
     </choice>
     </choices>
-  </example>
+  </exercise>
 
 
 </section>

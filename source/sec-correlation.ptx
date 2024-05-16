@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-correlation" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Correlation</title>
+
+  <p> Text of section. </p>
+
+  <definition>
+    <statement>   
+        <p>
+            <ul>
+                <li>
+                    <p> An <em>independent variable.....</em> </p>
+                </li>
+                
+                <li> 
+                    <p> A <em>dependent variable.....</em> </p>
+                </li>
+            </ul>
+        </p>
+    </statement>
+   </definition>
+
+</section>
