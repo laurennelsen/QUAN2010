@@ -106,7 +106,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.3",
   "title": "Binomial Distribution",
-  "body": " Binomial Distribution    A binomial experiment is a probability experiment possessing the following characteristics:   It has a fixed number of trials, .    Each trial has only two possible outcomes: success or failure.    The probability of success, , and the probability of failure, , are constant.    Each trial is independent of the other trials.     The outcomes of a binomial experiment and the corresponding probabilities of these outcomes are called a binomial distribution .  The probability of exactly successes in trials with probability of success, , is      Binomial Multiple Choice Problem   Which of the following are binomial experiments?      right answer 1    answer specific feedback      right answer 2    answer specific feedback      wrong answer 1    answer specific feedback      wrong answer 2    answer specific feedback      "
+  "body": " Binomial Distribution    A binomial experiment is a probability experiment possessing the following characteristics:   It has a fixed number of trials, .    Each trial has only two possible outcomes: success or failure.    The probability of success, , and the probability of failure, , are constant.    Each trial is independent of the other trials.     The outcomes of a binomial experiment and the corresponding probabilities of these outcomes are called a binomial distribution .  The probability of exactly successes in trials with probability of success, , is     Binomial Multiple Choice Problem  Which of the following are binomial experiments?     Taking a sample of 50 employees and counting how many of them are women.    answer specific feedback      Taking a standardized test 3 times and counting how many times I got a passing score.    answer specific feedback      Flipping a coin 100 times and counting how many times I got tails .    answer specific feedback      Taking a group of 100 students and finding their average GPA.    answer specific feedback      Tracking how long it took me to drive to work each day over a month.    (The time to drive to work is not a discrete variable.)     "
 },
 {
   "id": "def-Binomial",
@@ -121,10 +121,46 @@ var ptx_lunr_docs = [
   "id": "binomial-multiple-choice",
   "level": "2",
   "url": "sec-Binomial-Distribution.html#binomial-multiple-choice",
-  "type": "Example",
+  "type": "Checkpoint",
   "number": "3.3.2",
   "title": "Binomial Multiple Choice Problem.",
-  "body": " Binomial Multiple Choice Problem   Which of the following are binomial experiments?      right answer 1    answer specific feedback      right answer 2    answer specific feedback      wrong answer 1    answer specific feedback      wrong answer 2    answer specific feedback     "
+  "body": "Binomial Multiple Choice Problem  Which of the following are binomial experiments?     Taking a sample of 50 employees and counting how many of them are women.    answer specific feedback      Taking a standardized test 3 times and counting how many times I got a passing score.    answer specific feedback      Flipping a coin 100 times and counting how many times I got tails .    answer specific feedback      Taking a group of 100 students and finding their average GPA.    answer specific feedback      Tracking how long it took me to drive to work each day over a month.    (The time to drive to work is not a discrete variable.)    "
+},
+{
+  "id": "sec-correlation",
+  "level": "1",
+  "url": "sec-correlation.html",
+  "type": "Section",
+  "number": "4.1",
+  "title": "Correlation",
+  "body": " Correlation  Text of section.       An independent variable.....     A dependent variable.....        "
+},
+{
+  "id": "sec-correlation-3",
+  "level": "2",
+  "url": "sec-correlation.html#sec-correlation-3",
+  "type": "Definition",
+  "number": "4.1.1",
+  "title": "",
+  "body": "     An independent variable.....     A dependent variable.....       "
+},
+{
+  "id": "sec-Diamonds",
+  "level": "1",
+  "url": "sec-Diamonds.html",
+  "type": "Section",
+  "number": "4.2",
+  "title": "Diamonds Modeling",
+  "body": " Diamonds Modeling  (Background on diamonds was provided in part by research done at https:\/\/www.brilliance.com\/education\/diamonds\/depth-table)  When a gemologist determines the value of a diamond, he or she considers a number of different factors. These factors are known as the 4C's (carat, color, clarity, and cut). How large is the diamond? The size (really the weight) of the diamond is measured in carats. Is it colorless or does it have a slight hue of color? Are there any visible inclusions in the diamond (this affects the clarity)?  Was the stone cut well? This is described by both the table and the depth. They both helps to define the physical shape of a diamond and contribute to its sparkle. When these two features are proportioned just right, a diamond of any size looks spectacular.  Every diamond has a flat, square-shaped facet on its top called the table. It plays a critical role in a diamond’s appearance. The table refracts rays of light as they pass, directing them to the facets that make the diamond look so sparkly. The physical size of the table facet naturally varies depending on the overall size of the diamond. Jewelers measure the table percentage when grading a diamond’s cut. Table percentage is calculated by dividing the width of the table by the overall width of the diamond. The ideal table percentage will vary based on the shape of the diamond.  The depth of a diamond might also be called the “height”: it is the distance from the table to the culet (the pointed tip) of the diamond. Like with a diamond’s table, jewelers grade a diamond’s depth based on its depth percentage. Depth percentage is the diamond’s depth divided by the width of the diamond. This percentage dictates the overall proportions of the diamond, which in turn directly impact how light reflects off the facets in the stone.   Here is the file we are going to use for this problem:   The price of diamonds is not just determined by size, but by multiple characteristics. For simplicity, in this example we will start with size. Create the scatterplot for the two variables Price and Carat .     Determine the least squares line. Interpret the slope coefficient.    According to your least squares line, what would you expect the price to be for a 5 carat diamond?    Compute the coefficient of correlation. What does it tell you about the relationship between the size of a diamond and the price?      "
+},
+{
+  "id": "sec-Diamonds-7",
+  "level": "2",
+  "url": "sec-Diamonds.html#sec-Diamonds-7",
+  "type": "Checkpoint",
+  "number": "4.2.1",
+  "title": "",
+  "body": " Here is the file we are going to use for this problem:   The price of diamonds is not just determined by size, but by multiple characteristics. For simplicity, in this example we will start with size. Create the scatterplot for the two variables Price and Carat .     Determine the least squares line. Interpret the slope coefficient.    According to your least squares line, what would you expect the price to be for a 5 carat diamond?    Compute the coefficient of correlation. What does it tell you about the relationship between the size of a diamond and the price?     "
 },
 {
   "id": "backmatter-2",
