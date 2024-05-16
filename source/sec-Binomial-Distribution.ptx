@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Binomial-Distribution" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Binomial Distribution</title>
+
+
+  <definition xml:id="def-Binomial">
+    <statement>
+      <p>
+        A <em>binomial experiment</em> is a probability experiment possessing the following characteristics:
+        <ol>
+          <li>
+            <p>
+              It has a fixed number of trials, <m>n</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+             Each trial has only two possible outcomes:  success or failure.
+            </p>
+          </li>
+          <li>
+            <p>
+              The probability of success, <m>p</m>, and the probability of failure, <m>q</m>, are constant.
+            </p>
+          </li>
+          <li>
+            <p>
+              Each trial is independent of the other trials.
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <p>
+        The outcomes of a binomial experiment and the corresponding probabilities of these outcomes are called a <em>binomial distribution</em>.
+      </p>
+
+      <p>
+        The probability of exactly <m>X</m> successes in <m>n</m> trials with probability of success, <m>p</m>, is
+      </p>
+      <m>P(X)=\frac{n!}{X!(n-X)!}p^X(1-p)^{n-X}\text{ for }X=0,1,2,...,n
+      </m>
+    </statement>
+  </definition>
+
+
+  <example label="binomial-multiple-choice">
+    <title>Binomial Multiple Choice Problem</title>
+    <statement>
+    <p>
+        Which of the following are binomial experiments?
+    </p>
+    </statement>
+    <choices multiplecorrect="yes" randomize="yes">
+    <choice correct="yes">
+        <statement>
+        <p>
+            right answer 1
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            answer specific feedback
+        </p>
+        </feedback>
+    </choice>
+    <choice correct="yes">
+        <statement>
+        <p>
+            right answer 2
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            answer specific feedback
+        </p>
+        </feedback>
+    </choice>
+    <choice correct="no">
+        <statement>
+        <p>
+            wrong answer 1
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            answer specific feedback
+        </p>
+        </feedback>
+    </choice>
+    <choice correct="no">
+        <statement>
+        <p>
+            wrong answer 2
+        </p>
+        </statement>
+        <feedback>
+        <p>
+            answer specific feedback
+        </p>
+        </feedback>
+    </choice>
+    </choices>
+  </example>
+
+
+</section>

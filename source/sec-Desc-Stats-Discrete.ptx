@@ -15,8 +15,8 @@
       <li>
         <p>
           The mean, or <em>expected value</em> of a discrete probability distribution is the weighted average of all outcomes of the random variable.
-          <m>E(X)=\mu=\sum_{i=1}^n x_iP(x_i)</m>
         </p>
+        <m>E(X)=\mu=\sum_{i=1}^n x_iP(x_i)</m>
       </li>
       <li>
         <p>
@@ -26,14 +26,14 @@
       <li>
         <p>
           The <em>variance</em> of a discrete probability distribution measures the spread of the individual values around the mean.
+          </p>
           <m>\sigma^2=\sum_{i=1}^n (x_i-\mu)^2P(x_i)</m>
-        </p>
       </li>
       <li>
         <p>
           The <em>standard deviation</em> of a discrete probability distribution measures the dispersion of the outcome of the random variable in relation to the mean.
-          <m>\sigma=\sqrt{\sigma^2}</m>
         </p>
+        <m>\sigma=\sqrt{\sigma^2}</m>
       </li>
     </ul>
   
