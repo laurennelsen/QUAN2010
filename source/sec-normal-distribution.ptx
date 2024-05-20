@@ -106,11 +106,18 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
         </ul>
         </p>
 
+        <p>
         <exercise>
            <statement>
             A coffee shop wants to understand the distribution of amounts that their customers are spending per order.  They find that the average amount a customer spends per order is <m>\$ 7.50</m>, and the standard deviation is <m>\$1.25</m>.  If we assume that the amounts spent per order are normally distributed, and Rey comes in and spends <m>\$10.00</m>, what is the <m>z</m>-score for Rey's order?
         </statement>
+        <answer>
+            <p>
+                <me> z=\frac{10.00-7.50}{1.25} = 2 </me>
+            </p>
+        </answer>
         </exercise>
+    </p>
 
 
         <definition xml:id="def-standard-normal">
@@ -128,10 +135,19 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
           </figure>
 
           <p>
-            The standard normal distribution allows us to calculate probabilities for any normal distribution since we can standardize it with <m>z</m>-scores.   Tables ??????? provide you with the cumulative area to the LEFT of the <m>z</m>-score.  We can also use Excel to calculate the cumulative area to the left of the <m>z</m>-score by typing 
+            The standard normal distribution allows us to calculate probabilities for any normal distribution since we can standardize it with <m>z</m>-scores.   The tables at this link (<url href="https://www.math.arizona.edu/~rsims/ma464/standardnormaltable.pdf">Standard Normal Table</url>) provide you with the cumulative area to the LEFT of the <m>z</m>-score.
+            </p>
+            
+            <p>
+            We can also use Excel to calculate the cumulative area to the left of the <m>z</m>-score by typing 
             <me>=NORM.S.DIST(x,TRUE)</me>
           </p>
 
+          <p>
+(<em>Note:</em>  We can type <q>1</q> instead of <q>TRUE</q> in this formula in Excel.)
+          </p>
+
+          <p>
           <example>
             <statement>
                 <p>
@@ -145,6 +161,7 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
                 </p>
             </answer>
           </example>
+        </p>
 
           <p>
             So how do we use the table or the Excel formula to find any probability for a normal distribution?
