@@ -196,14 +196,23 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.1",
   "title": "Correlation Analysis",
-  "body": " Correlation Analysis  Text of section.       An independent variable explains the variation in the dependent variable    A dependent variable is explained by one or more independent variables        Correlation analysis provides a way to measure the strength and direction of the linear relationship between the two variables (the aforementioned independent and dependent variables). This is done by computing the sample correlation coefficient , .  The range of the correlation coefficient is .   A positive value indicates that as increases, also increases.    A negative value indicates that as increases, decreases.     Recall that we used the Excel formula, CORREL, to calculate this number in a previous chapter. Now we improve on that skill by learning how to use a hypothesis test to assess the strength of the linear relationship described by .  The population correlation coefficient, , refers to the correlation between all values of two variables in a population. A value of means that there is no linear relationship between and . We don't know the value of so we use the sample correlation coefficient to test whether we have enough evidence from the sample to conclude that there is a linear relationship between the variables in the population. The two hypotheses for this hypothesis test are:     The test statistic uses the Student's -distribution with formula:       text   "
+  "body": " Correlation Analysis  Recall that a scatterplot is a graph used to explore a relationship between two variables. The two variables can be defined further as the independent and dependent variables.   Scatter Plot (Made in GeoGebra by Mark Beckwith)         An independent variable explains the variation in the dependent variable    A dependent variable is explained by one or more independent variables        Correlation analysis provides a way to measure the strength and direction of the linear relationship between the two variables (the aforementioned independent and dependent variables). This is done by computing the sample correlation coefficient , .  The range of the correlation coefficient is .   A positive value indicates that as increases, also increases.    A negative value indicates that as increases, decreases.     Recall that we used the Excel formula, CORREL, to calculate this number in a previous chapter. Now we improve on that skill by learning how to use a hypothesis test to assess the strength of the linear relationship described by .  The population correlation coefficient, , refers to the correlation between all values of two variables in a population. A value of means that there is no linear relationship between and . We don't know the value of so we use the sample correlation coefficient to test whether we have enough evidence from the sample to conclude that there is a linear relationship between the variables in the population. The two hypotheses for this hypothesis test are:     The test statistic uses the Student's -distribution with formula:       text   "
 },
 {
-  "id": "sec-correlation-3",
+  "id": "figure-geogebra-scatter",
   "level": "2",
-  "url": "sec-correlation.html#sec-correlation-3",
-  "type": "Definition",
+  "url": "sec-correlation.html#figure-geogebra-scatter",
+  "type": "Figure",
   "number": "4.1.1",
+  "title": "",
+  "body": " Scatter Plot (Made in GeoGebra by Mark Beckwith)   "
+},
+{
+  "id": "sec-correlation-4",
+  "level": "2",
+  "url": "sec-correlation.html#sec-correlation-4",
+  "type": "Definition",
+  "number": "4.1.2",
   "title": "",
   "body": "     An independent variable explains the variation in the dependent variable    A dependent variable is explained by one or more independent variables      "
 },
@@ -212,7 +221,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-correlation.html#correlation",
   "type": "Exercise",
-  "number": "4.1.2",
+  "number": "4.1.3",
   "title": "",
   "body": " text  "
 },
