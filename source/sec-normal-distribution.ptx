@@ -3,8 +3,227 @@
 <section xml:id="sec-normal-distribution" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>The Normal Distribution</title>
 
-  <p> Text of section. </p>
+  <p> The mathematical expression that describes the shape of the normal probability distribution is called the normal probability density function:
+  <me>
+f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
+    </me>
+    Despite the complexity of this function, there are only two parameters that completely deter- mine the shape of the distribution: the mean, <m>\mu</m>, and the standard deviation, <m>\sigma</m>. Let’s take a closer look at how they impact the distribution. (Don’t worry---we won’t be using this formula to compute probabilities. We have other tools!)
+     </p>
 
+<question>
+    <statement>
+<p>
+    How does changing the standard deviation (<m>\sigma</m>) and the mean (<m>\mu</m>) change the curve?
+    <figure>
+        <caption>Graph of Normal Distribution powered by Desmos</caption>
+        <interactive xml:id="desmos-normal" desmos="jxzs8fz9qr" aspect="4:3" />
+      </figure>
+</p>
+    </statement>
+
+    <answer>
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        <m>\sigma:</m> controls the <q>spread</q> of the curve.  Larger <m>\sigma</m> results in a flatter, more spread out curve
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>\mu:</m> controls the location of the center.  Larger <m>\mu</m> shifts the <q>hill</q> of the curve to the right
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </answer>
+</question>
+
+
+    <subsection xml:id="subsection-characteristics-of-normal-distn">
+  <title>Characteristics of the Normal Probability Distribution:</title>
+        <p>
+<ol>
+    <li>
+        <p>
+            The distribution is bell-shaped and symmetric around the mean.
+        </p>
+    </li>
+    <li>
+        <p>
+            Because the shape is symmetrical, the mean and median are equal and located at the center of the distribution.
+        </p>
+    </li>
+    <li>
+        <p>
+            Random variables around the mean, where the curve is the tallest have a higher probability of occurring than values toward the end of the distribution.
+        </p>
+    </li>
+    <li>
+        <p>
+            The total area under the curve is <m>1</m>.  Since the distribution is symmetric, the area to the left of the mean equals <m>0.5</m> as does the area to the right of the mean
+        </p>
+    </li>
+    <li>
+        <p>
+            No matter how far in either direction the distribution curve extends, it never touches the horizontal axis -- but it gets increasingly closer.
+        </p>
+    </li>
+</ol>
+     </p>
+    </subsection>
+
+
+    <subsection xml:id="subsection-examples-of-normal-distn">
+        <title>Examples of Normal Probability Distributions:</title>
+              <p>
+
+              </p>
+              </subsection>
+
+
+<subsection xml:id="subsection-standard-normal-distn">
+   <title>The Standard Normal Distribution:</title>
+      <p>
+        Recall that the <m>z</m>-score of a value, <m>x</m>, describes the number of standard deviations that the value <m>x</m> is from the mean of its distribution:
+        <me>z=\frac{x-\mu}{\sigma}</me>
+        <ul>
+            <li>
+                <p>
+                    Values of <m>x</m> that are less than the mean have _______ <m>z</m>-scores
+                </p>
+            </li>
+            <li>
+                <p>
+                    Values of <m>x</m> that are more than the mean have _______ <m>z</m>-scores
+                </p>
+            </li>
+            <li>
+                <p>
+                    The <m>z</m>-score for the mean equals ________
+                </p>
+            </li>
+        </ul>
+        </p>
+
+        <exercise>
+           <statement>
+            A coffee shop wants to understand the distribution of amounts that their customers are spending per order.  They find that the average amount a customer spends per order is <m>\$ 7.50</m>, and the standard deviation is <m>\$1.25</m>.  If we assume that the amounts spent per order are normally distributed, and Rey comes in and spends <m>\$10.00</m>, what is the <m>z</m>-score for Rey's order?
+        </statement>
+        </exercise>
+
+
+        <definition xml:id="def-standard-normal">
+            <statement>
+                <p>
+                    When the original random variable, <m>x</m>, follows a normal distribution, <m>z</m>-scores also follow a normal distribution with <m>\mu=0</m>, <m>\sigma=1</m>.  It is called the <em>standard normal distribution</em>.
+                </p>
+            </statement>
+        </definition>
+
+
+        <figure>
+            <caption>Graph of Standard Normal Distribution powered by Desmos</caption>
+            <interactive xml:id="desmos-standard-normal" desmos="elacje4bcl" aspect="4:3" />
+          </figure>
+
+          <p>
+            The standard normal distribution allows us to calculate probabilities for any normal distribution since we can standardize it with <m>z</m>-scores.   Tables ??????? provide you with the cumulative area to the LEFT of the <m>z</m>-score.  We can also use Excel to calculate the cumulative area to the left of the <m>z</m>-score by typing 
+            <me>=NORM.S.DIST(x,TRUE)</me>
+          </p>
+
+          <example>
+            <statement>
+                <p>
+            Find the probability <m>P(Z\leq -1.3)</m> for a standard normal distribution
+                </p>
+            </statement>
+
+            <answer>
+                <p>
+                    In Excel:  <m>=NORM.S.DIST(-1.3,TRUE)\approx 0.0968 </m>
+                </p>
+            </answer>
+          </example>
+
+          <p>
+            So how do we use the table or the Excel formula to find any probability for a normal distribution?
+          </p>
+
+          <p>
+            There are 3 basic types of problems:
+            <ol>
+                <li>
+                    <p>
+                        To the left of any <m>z</m>-score:  Look up the <m>z</m>-score in the table (or calculate it in Excel) and use the area given.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        To the right of any <m>z</m>-score:  Look up the <m>z</m>-score in the table (or calculate it in Excel) subtract the area from 1.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Between any two <m>z</m>-scores:  Look up both <m>z</m>-scores in the table (or calculate them in Excel) and subtract the smaller area from the larger area.
+                    </p>
+                </li>
+            </ol>
+          </p>
+
+
+          <example>
+            <statement>
+                <p>
+                    Find the following probabilities for a standard normal distribution:
+                </p>
+                <task>
+                    <statement>
+                        <p>
+                            <m>P(Z\lt-0.5)</m>
+                        </p>
+                    </statement>
+                    <answer>
+                        <p> In Excel:
+                            <m>=NORM.S.DIST(-0.5,TRUE)\approx 0.3085 </m>
+                        </p>
+                    </answer>
+                </task>
+                <task>
+                    <statement>
+                        <p>
+                            <m>P(Z\gt 2.1)</m>
+                        </p>
+                    </statement>
+                    <answer>
+                        <p> In Excel:
+                            <m>=1-NORM.S.DIST(2.1,TRUE)\approx 0.0179 </m>
+                        </p>
+                    </answer>
+                </task>
+                <task>
+                    <statement>
+                        <p>
+                            <m>P(0.2\leq Z\leq 2.7)</m>
+                        </p>
+                    </statement>
+                    <answer>
+                        <p> In Excel:
+                            <m>=NORM.S.DIST(2.7,TRUE)-NORM.S.DIST(0.2,TRUE)\approx 0.4173 </m>
+                        </p>
+                    </answer>
+                </task>
+            </statement>
+          </example>
+
+
+          <figure xml:id="figure-geogebra-normal-probability">
+            <caption>Normal Distribution Probability Calculator (Made in GeoGebra by Andreas Lindner)</caption>
+            <interactive xml:id="geogebra-scatter" geogebra="KzkYq4Bt" aspect="9:5" />
+          </figure>
+        
+
+        </subsection>
 
   <exercise label="matching">
     <title>Normal Distribution Matching Problem</title>

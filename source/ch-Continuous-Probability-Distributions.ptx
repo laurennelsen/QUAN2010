@@ -14,7 +14,7 @@
           <p>
             Normal Distribution:
             <figure xml:id="figure-geogebra-normaldist">
-              <caption>Scatter Plot (Made in GeoGebra by the GeoGebra Materials Team)</caption>
+              <caption>Normal Distribution (Made in GeoGebra by the GeoGebra Materials Team)</caption>
               <interactive xml:id="geogebra-normaldist" geogebra="W9Nz53Ct" aspect="9:5" />
             </figure>
           
@@ -25,8 +25,8 @@
           <p>
             Exponential Distribution:
             <figure xml:id="figure-geogebra-expondist">
-              <caption>Scatter Plot (Made in GeoGebra by Reza Khadem)</caption>
-              <interactive xml:id="geogebra-expondist" geogebra="UKDuDBRJ" aspect="9:5" />
+              <caption>Exponential Distribution (Made in GeoGebra by DavidK)</caption>
+              <interactive xml:id="geogebra-expondist" geogebra="gjd2dmzw" aspect="9:5" />
             </figure>
           </p>
         </li>
@@ -35,7 +35,7 @@
           <p>
             Uniform Distribution:
             <figure xml:id="figure-geogebra-unifdist">
-              <caption>Scatter Plot (Made in GeoGebra by David Ramsay)</caption>
+              <caption>Uniform Distribution (Made in GeoGebra by David Ramsay)</caption>
               <interactive xml:id="geogebra-unifdist" geogebra="v2EnMNF9" aspect="9:5" />
             </figure>
           </p>
