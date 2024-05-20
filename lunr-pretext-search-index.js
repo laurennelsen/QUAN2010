@@ -259,7 +259,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.1",
   "title": "The Normal Distribution",
-  "body": " The Normal Distribution  The mathematical expression that describes the shape of the normal probability distribution is called the normal probability density function: Despite the complexity of this function, there are only two parameters that completely deter- mine the shape of the distribution: the mean, , and the standard deviation, . Let’s take a closer look at how they impact the distribution. (Don’t worry---we won’t be using this formula to compute probabilities. We have other tools!)    How does changing the standard deviation ( ) and the mean ( ) change the curve?  Graph of Normal Distribution powered by Desmos           controls the spread of the curve. Larger results in a flatter, more spread out curve     controls the location of the center. Larger shifts the hill of the curve to the right        Characteristics of the Normal Probability Distribution:     The distribution is bell-shaped and symmetric around the mean.    Because the shape is symmetrical, the mean and median are equal and located at the center of the distribution.    Random variables around the mean, where the curve is the tallest have a higher probability of occurring than values toward the end of the distribution.    The total area under the curve is . Since the distribution is symmetric, the area to the left of the mean equals as does the area to the right of the mean    No matter how far in either direction the distribution curve extends, it never touches the horizontal axis -- but it gets increasingly closer.       Examples of Normal Probability Distributions:      The Standard Normal Distribution:  Recall that the -score of a value, , describes the number of standard deviations that the value is from the mean of its distribution:    Values of that are less than the mean have _______ -scores    Values of that are more than the mean have _______ -scores    The -score for the mean equals ________     A coffee shop wants to understand the distribution of amounts that their customers are spending per order. They find that the average amount a customer spends per order is , and the standard deviation is . If we assume that the amounts spent per order are normally distributed, and Rey comes in and spends , what is the -score for Rey's order?        When the original random variable, , follows a normal distribution, -scores also follow a normal distribution with , . It is called the standard normal distribution .     Graph of Standard Normal Distribution powered by Desmos    The standard normal distribution allows us to calculate probabilities for any normal distribution since we can standardize it with -scores. The tables at this link ( Standard Normal Table ) provide you with the cumulative area to the LEFT of the -score.  We can also use Excel to calculate the cumulative area to the left of the -score by typing   ( Note: We can type 1 instead of TRUE in this formula in Excel.)     Find the probability for a standard normal distribution    In Excel:      So how do we use the table or the Excel formula to find any probability for a normal distribution?  There are 3 basic types of problems:   To the left of any -score: Look up the -score in the table (or calculate it in Excel) and use the area given.    To the right of any -score: Look up the -score in the table (or calculate it in Excel) subtract the area from 1.    Between any two -scores: Look up both -scores in the table (or calculate them in Excel) and subtract the smaller area from the larger area.       Find the following probabilities for a standard normal distribution:       In Excel:         In Excel:         In Excel:       Normal Distribution Probability Calculator (Made in GeoGebra by Andreas Lindner)     Normal Distribution Matching Problem  Problem instructions.     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is between 120 and 180?    NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)      A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is more than 40?    1-NORM.DIST(40,135,22,1)      A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is less than 90?    NORM.DIST(90,135,22,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(2.35,TRUE)     Normal Distribution Matching Problem  Problem instructions.     Find the probability for a standard normal distribution:     1-NORM.S.DIST(2.35,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.76,1)- NORM.S.DIST(-0.86,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.5,TRUE)      Find the probability for a standard normal distribution:     1-NORM.S.DIST(1.5,TRUE)        Normal Distribution Matching Problem  Problem instructions.          NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)     image   1-NORM.DIST(40,135,22,1)     image   NORM.DIST(90,135,22,1)     image   Find the probability for a standard normal distribution:      Normal Distribution Matching Problem  Problem instructions.    image   Find the probability for a standard normal distribution:      image   Find the probability for a standard normal distribution:      image   NORM.S.DIST(1.5,TRUE)      image    1-NORM.S.DIST(1.5,TRUE)      Let be the standard normal variable. Find the following:    .    .    .    .    such that .    .    such that .    .   "
+  "body": " The Normal Distribution  The mathematical expression that describes the shape of the normal probability distribution is called the normal probability density function: Despite the complexity of this function, there are only two parameters that completely deter- mine the shape of the distribution: the mean, , and the standard deviation, . Let’s take a closer look at how they impact the distribution. (Don’t worry---we won’t be using this formula to compute probabilities. We have other tools!)    How does changing the standard deviation ( ) and the mean ( ) change the curve?  Graph of Normal Distribution powered by Desmos           controls the spread of the curve. Larger results in a flatter, more spread out curve     controls the location of the center. Larger shifts the hill of the curve to the right        Characteristics of the Normal Probability Distribution:     The distribution is bell-shaped and symmetric around the mean.    Because the shape is symmetrical, the mean and median are equal and located at the center of the distribution.    Random variables around the mean, where the curve is the tallest have a higher probability of occurring than values toward the end of the distribution.    The total area under the curve is . Since the distribution is symmetric, the area to the left of the mean equals as does the area to the right of the mean    No matter how far in either direction the distribution curve extends, it never touches the horizontal axis -- but it gets increasingly closer.       Examples of Normal Probability Distributions:      The Standard Normal Distribution:  Recall that the -score of a value, , describes the number of standard deviations that the value is from the mean of its distribution:    Values of that are less than the mean have _______ -scores    Values of that are more than the mean have _______ -scores    The -score for the mean equals ________      A coffee shop wants to understand the distribution of amounts that their customers are spending per order. They find that the average amount a customer spends per order is , and the standard deviation is . If we assume that the amounts spent per order are normally distributed, and Rey comes in and spends , what is the -score for Rey's order?         When the original random variable, , follows a normal distribution, -scores also follow a normal distribution with , . It is called the standard normal distribution .     Graph of Standard Normal Distribution powered by Desmos    The standard normal distribution allows us to calculate probabilities for any normal distribution since we can standardize it with -scores. The tables at this link ( Standard Normal Table ) provide you with the cumulative area to the LEFT of the -score.  We can also use Excel to calculate the cumulative area to the left of the -score by typing   ( Note: We can type 1 instead of TRUE in this formula in Excel.)     Find the probability for a standard normal distribution    In Excel:      So how do we use the table or the Excel formula to find any probability for a normal distribution?  There are 3 basic types of problems:   To the left of any -score: Look up the -score in the table (or calculate it in Excel) and use the area given.    To the right of any -score: Look up the -score in the table (or calculate it in Excel) subtract the area from 1.    Between any two -scores: Look up both -scores in the table (or calculate them in Excel) and subtract the smaller area from the larger area.       Find the following probabilities for a standard normal distribution:       In Excel:         In Excel:         In Excel:       Normal Distribution Probability Calculator (Made in GeoGebra by Andreas Lindner)     Normal Distribution Matching Problem  Problem instructions.     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is between 120 and 180?    NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)      A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is more than 40?    1-NORM.DIST(40,135,22,1)      A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is less than 90?    NORM.DIST(90,135,22,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(2.35,TRUE)     Normal Distribution Matching Problem  Problem instructions.     Find the probability for a standard normal distribution:     1-NORM.S.DIST(2.35,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.76,1)- NORM.S.DIST(-0.86,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.5,TRUE)      Find the probability for a standard normal distribution:     1-NORM.S.DIST(1.5,TRUE)        Normal Distribution Matching Problem  Problem instructions.          NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)     image   1-NORM.DIST(40,135,22,1)     image   NORM.DIST(90,135,22,1)     image   Find the probability for a standard normal distribution:      Normal Distribution Matching Problem  Problem instructions.    image   Find the probability for a standard normal distribution:      image   Find the probability for a standard normal distribution:      image   NORM.S.DIST(1.5,TRUE)      image    1-NORM.S.DIST(1.5,TRUE)      Let be the standard normal variable. Find the following:    .    .    .    .    such that .    .    such that .    .   "
 },
 {
   "id": "sec-normal-distribution-3",
@@ -271,11 +271,11 @@ var ptx_lunr_docs = [
   "body": "  How does changing the standard deviation ( ) and the mean ( ) change the curve?  Graph of Normal Distribution powered by Desmos           controls the spread of the curve. Larger results in a flatter, more spread out curve     controls the location of the center. Larger shifts the hill of the curve to the right      "
 },
 {
-  "id": "subsection-standard-normal-distn-3",
+  "id": "subsection-standard-normal-distn-3-1",
   "level": "2",
-  "url": "sec-normal-distribution.html#subsection-standard-normal-distn-3",
+  "url": "sec-normal-distribution.html#subsection-standard-normal-distn-3-1",
   "type": "Exercise",
-  "number": "5.1.3",
+  "number": "[STRUCT].2",
   "title": "",
   "body": "A coffee shop wants to understand the distribution of amounts that their customers are spending per order. They find that the average amount a customer spends per order is , and the standard deviation is . If we assume that the amounts spent per order are normally distributed, and Rey comes in and spends , what is the -score for Rey's order?     "
 },
@@ -284,7 +284,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#def-standard-normal",
   "type": "Definition",
-  "number": "5.1.4",
+  "number": "5.1.3",
   "title": "",
   "body": "  When the original random variable, , follows a normal distribution, -scores also follow a normal distribution with , . It is called the standard normal distribution .   "
 },
@@ -293,7 +293,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#subsection-standard-normal-distn-5",
   "type": "Figure",
-  "number": "5.1.5",
+  "number": "5.1.4",
   "title": "",
   "body": " Graph of Standard Normal Distribution powered by Desmos   "
 },
@@ -302,7 +302,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#subsection-standard-normal-distn-9-1",
   "type": "Example",
-  "number": "5.1.6",
+  "number": "5.1.5",
   "title": "",
   "body": "  Find the probability for a standard normal distribution    In Excel:    "
 },
@@ -311,7 +311,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#subsection-standard-normal-distn-12",
   "type": "Example",
-  "number": "5.1.7",
+  "number": "5.1.6",
   "title": "",
   "body": "  Find the following probabilities for a standard normal distribution:       In Excel:         In Excel:         In Excel:     "
 },
@@ -320,7 +320,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#figure-geogebra-normal-probability",
   "type": "Figure",
-  "number": "5.1.8",
+  "number": "5.1.7",
   "title": "",
   "body": " Normal Distribution Probability Calculator (Made in GeoGebra by Andreas Lindner)   "
 },
@@ -329,7 +329,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#matching",
   "type": "Exercise",
-  "number": "5.1.9",
+  "number": "5.1.8",
   "title": "Normal Distribution Matching Problem.",
   "body": "Normal Distribution Matching Problem  Problem instructions.     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is between 120 and 180?    NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)      A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is more than 40?    1-NORM.DIST(40,135,22,1)      A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is less than 90?    NORM.DIST(90,135,22,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(2.35,TRUE)    "
 },
@@ -338,7 +338,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#matching",
   "type": "Exercise",
-  "number": "5.1.10",
+  "number": "5.1.9",
   "title": "Normal Distribution Matching Problem.",
   "body": "Normal Distribution Matching Problem  Problem instructions.     Find the probability for a standard normal distribution:     1-NORM.S.DIST(2.35,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.76,1)- NORM.S.DIST(-0.86,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.5,TRUE)      Find the probability for a standard normal distribution:     1-NORM.S.DIST(1.5,TRUE)    "
 },
@@ -347,7 +347,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#matching",
   "type": "Exercise",
-  "number": "5.1.11",
+  "number": "5.1.10",
   "title": "Normal Distribution Matching Problem.",
   "body": "Normal Distribution Matching Problem  Problem instructions.          NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)     image   1-NORM.DIST(40,135,22,1)     image   NORM.DIST(90,135,22,1)     image   Find the probability for a standard normal distribution:     "
 },
@@ -356,7 +356,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#matching",
   "type": "Exercise",
-  "number": "5.1.12",
+  "number": "5.1.11",
   "title": "Normal Distribution Matching Problem.",
   "body": "Normal Distribution Matching Problem  Problem instructions.    image   Find the probability for a standard normal distribution:      image   Find the probability for a standard normal distribution:      image   NORM.S.DIST(1.5,TRUE)      image    1-NORM.S.DIST(1.5,TRUE)    "
 },
@@ -365,7 +365,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#sec-normal-distribution-12",
   "type": "Exercise",
-  "number": "5.1.13",
+  "number": "5.1.12",
   "title": "",
   "body": " Let be the standard normal variable. Find the following:    .    .    .    .    such that .    .    such that .    .  "
 },
