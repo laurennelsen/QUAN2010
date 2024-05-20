@@ -5,9 +5,94 @@
 
   <introduction>
     <p> 
-        words
+      In this chapter we will study probability distributions that arise from continuous random variables, which are outcomes that take on any numerical value in an interval, including numbers with decimal points. Recall that probabilities for specific values of a discrete random variable were easy to calculate and the graph of the discrete probability distribution looks like a histogram with a countable number of bars. By contrast, only the probability of a range of values (not a specific value) can be calculated for a continuous random variable. Why?
+      Since there is an infinite number of possible values for a continuous random variable, the probability of one specific value is theoretically equal to zero!
+      We're going to study three specific continuous probability distributions and identify the types of data where they are useful.
+
+      <ul>
+        <li>
+          <p>
+            Normal Distribution:
+            <figure xml:id="figure-geogebra-normaldist">
+              <caption>Scatter Plot (Made in GeoGebra by the GeoGebra Materials Team)</caption>
+              <interactive xml:id="geogebra-normaldist" geogebra="W9Nz53Ct" aspect="9:5" />
+            </figure>
+          
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Exponential Distribution:
+            <figure xml:id="figure-geogebra-expondist">
+              <caption>Scatter Plot (Made in GeoGebra by Reza Khadem)</caption>
+              <interactive xml:id="geogebra-expondist" geogebra="UKDuDBRJ" aspect="9:5" />
+            </figure>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Uniform Distribution:
+            <figure xml:id="figure-geogebra-unifdist">
+              <caption>Scatter Plot (Made in GeoGebra by David Ramsay)</caption>
+              <interactive xml:id="geogebra-unifdist" geogebra="v2EnMNF9" aspect="9:5" />
+            </figure>
+          </p>
+        </li>
+      </ul>
+
    </p>
   </introduction>
+
+
+  <exercise label="matching">
+    <title>Normal Distribution Matching Problem</title>
+    <statement>
+    <p>
+        Match each probability distribution with the situation in which it is useful.
+    </p>
+    </statement>
+
+ <matches>
+
+<match>
+    <premise>
+        Normal Distribution
+    </premise>
+    <response>
+        <p>
+            Useful when data tends to fall in the center and extreme values are rare
+            </p>
+    </response>
+</match>
+
+<match>
+    <premise>
+        exponential distribution
+    </premise>
+    <response>
+        <p>
+            Useful when low values for data occur often and high values are rare
+            </p>
+    </response>
+</match>
+
+<match>
+  <premise>
+      uniform distribution
+  </premise>
+  <response>
+      <p>
+          Useful when data of all values have an equal chance of occurring
+          </p>
+  </response>
+</match>
+
+</matches>
+
+</exercise>
+
 
   <!-- include sections -->
   <xi:include href="sec-normal-distribution.ptx" />
