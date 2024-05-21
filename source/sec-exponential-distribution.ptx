@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-exponential-distribution" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>The Exponential Distribution</title>
+
+  <definition>
+
+    <p>
+        
+        The exponential probability distribution is a continuous distribution commonly used in business to measure the time between customer arrivals or the time between failures in a business process
+
+    </p>
+
+    <p>
+        The mathematical expression that describes the shape of the curve for the exponential probability distribution is called the exponential probability density function:
+        <me>f(x)=\lambda^{-\lambda x}\text{, where }\lambda=\text{the mean number of occurrences over an interval}</me>
+    </p>
+
+    <p>
+        Recall the we saw <m>\lambda</m> in a previous chapter when the discrete Poisson distribution was introduced.  It is not a coincidence that we are using <m>\lambda</m> in both of these distributions.  A <em>discrete</em> random variable that follows a Poisson distribution with a mean equal to <m>\lambda</m> has a counterpart <em>continuous</em> random variable that follows the exponential distribution with a mean equal to <m>\mu=\frac{1}{\lambda}</m>.
+    </p>
+
+    <p>
+        It is easy to confuse the two -- try to remember that <m>\lambda</m> is a countable (discrete) rate while <m>\mu</m> is a measurable (continuous) interval.
+    </p>
+
+    <p>
+        A small bit of good news:  the standard deviation for an exponential distribution is equal to its mean.  That is, <m>\sigma=\mu=\frac{1}{\lambda}</m>.
+    </p>
+
+    </definition>
+
+    <p>
+    The only parameter in the formula is <m>\lambda</m>.  Let's look at how it impacts the shape of the distribution.
+
+    <figure>
+        <caption>Exponential Distribution powered by Desmos</caption>
+        <interactive xml:id="desmos-expon" desmos="kq2tps7jbe" aspect="4:3" />
+      </figure>
+
+    </p>
+
+
+
+    <subsection xml:id="subsection-differences-between-expon-and-normal">
+        <title>Differences between the Exponential and Normal Distributions</title>
+
+        <p>
+            
+<ol>
+    <li>
+        <p>
+            The shape of the exponential distribution is right-skewed while the shape of the normal distribution is bell-shaped and symmetric.
+        </p>
+    </li>
+    <li>
+        <p>
+            The shape of the exponential distribution is controlled by only one parameter, <m>\mu</m>, while the shape of the normal distribution requires two parameters, <m>\mu</m> and <m>\sigma</m>.
+        </p>
+    </li>
+    <li>
+        <p>
+            The values of an exponential distribution are always positive; they can never be negative.  Values of the normal distribution can be both positive and negative.
+        </p>
+    </li>
+</ol>
+
+        </p>
+
+        </subsection>
+
+
+
+        <subsection xml:id="subsection-computing-expon-probabilities">
+            <title>Computing Probabilities for the Exponential Distributions</title>
+
+
+            <p>
+                There is no table for helping us calculate probabilities associated with an exponential distribution.  So we will rely on a formula and Excel to help with these calculations.  The formula for calculating the probability that a random variable is less than a specified value is:
+                <me>P(x\leq a)=1-e^{-a\lambda}</me>
+                where <m>\lambda=\text{the mean number of occurrences over an interval}</m>.
+            </p>
+
+            <p>
+                The Excel formula for calculating probabilities for the exponential distribution is
+                <me>EXPON.DIST(x,\lambda,\text{cumulative}),</me>
+                where cumulative=TRUE (if you want cumulative probability) or FALSE (if you do not want cumulative probability).
+            </p>
+
+
+            <exercise>
+                <p>
+                    (Donnelly 6.21,22)
+                </p>
+                <statement>
+                    <p>
+                        An exponential probability distribution has a mean equal to 5 minutes per customer.  Calculate the following probabilities for the distribution.
+                    </p>
+                </statement>
+                <task>
+                    <m>P(X\leq 10)</m>
+                    <answer>
+                        <p>
+                            <m>\mu=\frac{5\text{ min}}{1\text{ customer}}\Rightarrow \lambda=\frac{1\text{ customer}}{5\text{ min}}=0.2</m>
+                        </p>
+                        <p>
+                            <m>1-e^{-10(.2)}\approx 0.8647</m> OR <m>EXPON.DIST(10,0.2,1)</m>
+                        </p>
+                    </answer>
+                    </task>
+                    <task>
+                        <statement>
+                            <p>
+                                <m>P(X\gt 12)</m>
+                            </p>
+                        </statement>
+                        <answer>
+                            <p>
+                                <m>1-P(X\lt 12)=1-EXPON.DIST(12,.2,1)\approx 0.0907</m>
+                            </p>
+                        </answer>
+                    </task>
+                    <task>
+                        <statement>
+                            <p>
+                                <m>P(1\leq X\leq 5)</m>
+                            </p>
+                        </statement>
+                        <answer>
+                            <p>
+                                <m>P(X\leq 5)-P(X\leq 1)</m>
+                                <m>=EXPON.DIST(5,.2,1)-EXPON.DIST(1,.2,1)</m>
+                                <m>\approx 0.4509</m>
+                            </p>
+                        </answer>
+                    </task>
+            </exercise>
+
+            </subsection>
+
+
+</section>
+
+

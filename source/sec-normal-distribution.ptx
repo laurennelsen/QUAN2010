@@ -223,6 +223,12 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
             <interactive xml:id="desmos-standard-normal" desmos="elacje4bcl" aspect="4:3" />
           </figure>
 
+        </subsection>
+
+
+        <subsection xml:id="subsection-calculating-probabilities-normal">
+            <title>Calculating Probabilities for Normal Distributions:</title>
+
           <p>
             The standard normal distribution allows us to calculate probabilities for any normal distribution since we can standardize it with <m>z</m>-scores.   The tables at this link (<url href="https://www.math.arizona.edu/~rsims/ma464/standardnormaltable.pdf">Standard Normal Table</url>) provide you with the cumulative area to the LEFT of the <m>z</m>-score.
             </p>
@@ -325,11 +331,54 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
 
           <figure xml:id="figure-geogebra-normal-probability">
             <caption>Normal Distribution Probability Calculator (Made in GeoGebra by Andreas Lindner)</caption>
-            <interactive xml:id="geogebra-scatter" geogebra="KzkYq4Bt" aspect="9:5" />
+            <interactive xml:id="geogebra-normal" geogebra="KzkYq4Bt" aspect="9:5" />
           </figure>
         
 
         </subsection>
+
+
+        <p>
+            We already saw an Excel command that will allow us to find a probability associated with a standard normal distribution.  There is also an Excel command that allows us to find a probability associated with a general normal distribution, and in this case, we will need to specify the mean and standard deviation of the distribution. 
+             (These first two commands both apply to situations where the goal is to compute a probability associated with a data value.)
+            <ul>
+                <li>
+                    <p>
+                        <m>NORM.DIST(x,\text{mean},\text{standard deviation},\text{cumulative})</m>:  applies to problems involving a normal distribution with a specified mean and standard deviation
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>NORM.S.DIST(x,\text{cumulative})</m>:  applies to problems involving the standard normal distribution (<m>\mu=0\text{ and }\sigma=1</m>)
+                    </p>
+                </li>
+            </ul>
+            (As we've seen before, cumulative<m>=TRUE\text{ or }FALSE</m>.)
+          </p>
+
+          
+
+          <exercise>
+            <introduction>
+              <p> Suppose the average height of 5 year old girls is normally distributed with mean <m>108.32</m> cm and standard deviation <m>5.6</m> cm. Find the following: </p>
+            </introduction>
+              <task>
+                <statement>
+                  <p> Find the probability that a randomly selected 5 year old girl's height is is at least <m>97.66</m> cm. </p>
+                </statement>
+                <answer>
+                  <p> <m>P(X\geq 97.66)=0.9715169885897529</m>. </p>
+                </answer>
+              </task>
+              <task>
+                <statement>
+                  <p> Find the probability that a randomly selected 5 year old girl's height is between <m>107.22</m> and <m>109.94</m> cm. </p>
+                </statement>
+                <answer>
+                  <p> <m>P(107.22\lt X\lt 109.94)=0.19168126069053149</m>. </p>
+                </answer>
+              </task>
+          </exercise>
 
   <exercise label="matching">
     <title>Normal Distribution Matching Problem</title>
@@ -488,17 +537,19 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
 
 
 
+
+
 <image xml:id="fig-A-test">
               
-    <latex-image >
-        \begin{tikzpicture}
-        \begin{axis}[every axis plot post/.append style={ mark=none,samples=50,smooth},domain=50:220]
-        
-        \addplot {\gauss{135}{22}};
-        
-        \addplot [fill=cyan!30, draw=none, domain=120:180] {\gauss{135}{22}} \closedcycle; 
-        \end{axis}
-        \end{tikzpicture}
+    <latex-image>
+        \begin{tikzpicture}[scale=.6]
+\begin{axis}[every axis plot post/.append style={ mark=none,samples=50,smooth},domain=50:220]
+
+\addplot {\gauss{135}{22}};
+
+\addplot [fill=cyan!30, draw=none, domain=120:180] {\gauss{135}{22}} \closedcycle; 
+\end{axis}
+\end{tikzpicture}
     </latex-image>
 
   </image>
@@ -740,6 +791,122 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
         </answer>
       </task>
   </exercise>
+
+
+
+  <subsection xml:id="subsection-normal-inv">
+    <title>Finding <m>Z</m> or <m>X</m> if we have information about a probability:</title>
+
+    <p>
+        What if we want to know the specific <m>X</m> that satisfies a given probability?  Then we can work backward using the tables (<url href="https://www.math.arizona.edu/~rsims/ma464/standardnormaltable.pdf">Standard Normal Table</url>) and use the <m>z</m>-score formula in reverse.  If the exact probability cannot be found in the table, then we can use the closest values.
+    </p>
+
+    <p>
+        The Excel formulas that apply to this situation are similar to the ones we saw earlier, replacing .DIST with .INV:
+        <ul>
+            <li>
+                <p>
+                    NORM.INV(probability, mean, standard deviation) applies to normal distributions with a specified mean and standard deviation
+                </p>
+            </li>
+            <li>
+                <p>
+                    NORM.S.INV(probability) is used for standard normal distributions
+                </p>
+            </li>
+        </ul>
+    </p>
+
+    <exercise>
+        <statement>
+            <p>
+                A random variable follows the normal probability distribution with a mean of 50 and a standard deviation of 20.
+            </p>
+        </statement>
+            <task>
+                <statement>
+                    <p>
+                        What value of <m>X</m> represents the 75th percentile?
+                    </p>
+                </statement>
+                <answer>
+                    <p>
+                       <m> NORM.INV(0.75,50,20)\approx 63.49</m>
+                    </p>
+                </answer>
+            </task>
+            
+        <task>
+            <statement>
+                <p>
+                    Find the value of <m>X</m> so that <m>40\%</m> probability lies below it.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>NORM.INV(0.40,50,20)\approx 44.93</m>
+                </p>
+            </answer>
+        </task>
+        
+        <task>
+            <statement>
+                <p>
+                    Find the value of <m>X</m> that represents the highest <m>10\%</m> of all values
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>NORM.DIST(0.90,50,20)\approx 75.63</m>
+                </p>
+            </answer>
+        </task>
+        
+    </exercise>
+
+
+
+    <exercise>
+        <introduction>
+          <p> Suppose the retirement age of professional athletes in a certain league is normally distributed with mean <m>32.27</m> years and standard deviation <m>3.62</m> years. Find the following: </p>
+        </introduction>
+          <task>
+            <statement>
+              <p> Find the probability that a randomly selected athlete's retirement age is is at least <m>30.15</m> years. </p>
+            </statement>
+            <answer>
+              <p> <m>P(X\geq 30.15)=0.7209397092241314</m>. </p>
+            </answer>
+          </task>
+          <task>
+            <statement>
+              <p> Find the probability that a randomly selected athlete's retirement age is between <m>30.33</m> and <m>39.65</m> years. </p>
+            </statement>
+            <answer>
+              <p> <m>P(30.33\lt X\lt 39.65)=0.6832488917348373</m>. </p>
+            </answer>
+          </task>
+          <task>
+            <statement>
+              <p> Find <m>X^*</m> such that the probability that a randomly selected athlete's retirement age is is at most <m>X^*</m> years is <m>68\%</m>. </p>
+            </statement>
+            <answer>
+              <p> If <m>P(X\leq X^*)=68\%</m> then <m>X=33.96306965279452</m> years. </p>
+            </answer>
+          </task>
+          <task>
+            <statement>
+              <p> Find <m>k</m> such that the probability that a randomly selected athlete's retirement age is between <m>32.27-k</m> years and <m>32.27+k</m> years is <m>42\%</m>. </p>
+            </statement>
+            <answer>
+              <p> If <m>P(32.27-k\lt X\lt 32.27+k)=42\%</m> then <m>k=2.0032526847915357</m> years. </p>
+            </answer>
+          </task>
+      </exercise>
+
+
+    </subsection>
+
 
 
 
