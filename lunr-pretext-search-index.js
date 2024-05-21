@@ -259,7 +259,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.1",
   "title": "The Normal Distribution",
-  "body": " The Normal Distribution  The mathematical expression that describes the shape of the normal probability distribution is called the normal probability density function: Despite the complexity of this function, there are only two parameters that completely deter- mine the shape of the distribution: the mean, , and the standard deviation, . Let’s take a closer look at how they impact the distribution. (Don’t worry---we won’t be using this formula to compute probabilities. We have other tools!)    How does changing the standard deviation ( ) and the mean ( ) change the curve?  Graph of Normal Distribution powered by Desmos           controls the spread of the curve. Larger results in a flatter, more spread out curve     controls the location of the center. Larger shifts the hill of the curve to the right        Characteristics of the Normal Probability Distribution:     The distribution is bell-shaped and symmetric around the mean.    Because the shape is symmetrical, the mean and median are equal and located at the center of the distribution.    Random variables around the mean, where the curve is the tallest have a higher probability of occurring than values toward the end of the distribution.    The total area under the curve is . Since the distribution is symmetric, the area to the left of the mean equals as does the area to the right of the mean    No matter how far in either direction the distribution curve extends, it never touches the horizontal axis -- but it gets increasingly closer.       Examples of Normal Probability Distributions:      The Standard Normal Distribution:  Recall that the -score of a value, , describes the number of standard deviations that the value is from the mean of its distribution:    Values of that are less than the mean have _______ -scores     postive      negative      zero      Values of that are more than the mean have _______ -scores     positive      negative      zero      The -score for the mean equals ________                                A coffee shop wants to understand the distribution of amounts that their customers are spending per order. They find that the average amount a customer spends per order is , and the standard deviation is . If we assume that the amounts spent per order are normally distributed, and Rey comes in and spends , what is the -score for Rey's order?        When the original random variable, , follows a normal distribution, -scores also follow a normal distribution with , . It is called the standard normal distribution .     Graph of Standard Normal Distribution powered by Desmos    The standard normal distribution allows us to calculate probabilities for any normal distribution since we can standardize it with -scores. The tables at this link ( Standard Normal Table ) provide you with the cumulative area to the LEFT of the -score.  We can also use Excel to calculate the cumulative area to the left of the -score by typing   ( Note: We can type 1 instead of TRUE in this formula in Excel.)     Find the probability for a standard normal distribution    In Excel:      So how do we use the table or the Excel formula to find any probability for a normal distribution?  There are 3 basic types of problems:   To the left of any -score: Look up the -score in the table (or calculate it in Excel) and use the area given.    To the right of any -score: Look up the -score in the table (or calculate it in Excel) subtract the area from 1.    Between any two -scores: Look up both -scores in the table (or calculate them in Excel) and subtract the smaller area from the larger area.       Find the following probabilities for a standard normal distribution:       In Excel:         In Excel:         In Excel:       Normal Distribution Probability Calculator (Made in GeoGebra by Andreas Lindner)     Normal Distribution Matching Problem  Match each probability with the Excel formula we would use to calculate it.     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is between 120 and 180?    NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)      A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is more than 40?    1-NORM.DIST(40,135,22,1)     Normal Distribution Matching Problem  Match each probability with the Excel formula we would use to calculate it.     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is less than 90?    NORM.DIST(90,135,22,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(2.35,TRUE)     Normal Distribution Matching Problem  Match each probability with the Excel formula we would use to calculate it.     Find the probability for a standard normal distribution:     1-NORM.S.DIST(2.35,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.76,1)- NORM.S.DIST(-0.86,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.5,TRUE)      Find the probability for a standard normal distribution:     1-NORM.S.DIST(1.5,TRUE)         Images for Exercise ???    (A)       (B)       (C)        Normal Distribution Matching Problem  Problem instructions.          NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)     image   1-NORM.DIST(40,135,22,1)     image   NORM.DIST(90,135,22,1)     image   Find the probability for a standard normal distribution:      Normal Distribution Matching Problem  Problem instructions.    image   Find the probability for a standard normal distribution:      image   Find the probability for a standard normal distribution:      image   NORM.S.DIST(1.5,TRUE)      image    1-NORM.S.DIST(1.5,TRUE)      Let be the standard normal variable. Find the following:    .    .    .    .    such that .    .    such that .    .   "
+  "body": " The Normal Distribution  The mathematical expression that describes the shape of the normal probability distribution is called the normal probability density function: Despite the complexity of this function, there are only two parameters that completely deter- mine the shape of the distribution: the mean, , and the standard deviation, . Let’s take a closer look at how they impact the distribution. (Don’t worry---we won’t be using this formula to compute probabilities. We have other tools!)    How does changing the standard deviation ( ) and the mean ( ) change the curve?  Graph of Normal Distribution powered by Desmos           controls the spread of the curve. Larger results in a flatter, more spread out curve     controls the location of the center. Larger shifts the hill of the curve to the right        Characteristics of the Normal Probability Distribution:     The distribution is bell-shaped and symmetric around the mean.    Because the shape is symmetrical, the mean and median are equal and located at the center of the distribution.    Random variables around the mean, where the curve is the tallest have a higher probability of occurring than values toward the end of the distribution.    The total area under the curve is . Since the distribution is symmetric, the area to the left of the mean equals as does the area to the right of the mean    No matter how far in either direction the distribution curve extends, it never touches the horizontal axis -- but it gets increasingly closer.       Examples of Normal Probability Distributions:      The Standard Normal Distribution:  Recall that the -score of a value, , describes the number of standard deviations that the value is from the mean of its distribution:    Values of that are less than the mean have _______ -scores     postive      negative      zero      Values of that are more than the mean have _______ -scores     positive      negative      zero      The -score for the mean equals ________                                A coffee shop wants to understand the distribution of amounts that their customers are spending per order. They find that the average amount a customer spends per order is , and the standard deviation is . If we assume that the amounts spent per order are normally distributed, and Rey comes in and spends , what is the -score for Rey's order?        When the original random variable, , follows a normal distribution, -scores also follow a normal distribution with , . It is called the standard normal distribution .     Graph of Standard Normal Distribution powered by Desmos      Calculating Probabilities for Normal Distributions:  The standard normal distribution allows us to calculate probabilities for any normal distribution since we can standardize it with -scores. The tables at this link ( Standard Normal Table ) provide you with the cumulative area to the LEFT of the -score.  We can also use Excel to calculate the cumulative area to the left of the -score by typing   ( Note: We can type 1 instead of TRUE in this formula in Excel.)     Find the probability for a standard normal distribution    In Excel:      So how do we use the table or the Excel formula to find any probability for a normal distribution?  There are 3 basic types of problems:   To the left of any -score: Look up the -score in the table (or calculate it in Excel) and use the area given.    To the right of any -score: Look up the -score in the table (or calculate it in Excel) subtract the area from 1.    Between any two -scores: Look up both -scores in the table (or calculate them in Excel) and subtract the smaller area from the larger area.       Find the following probabilities for a standard normal distribution:       In Excel:         In Excel:         In Excel:       Normal Distribution Probability Calculator (Made in GeoGebra by Andreas Lindner)     We already saw an Excel command that will allow us to find a probability associated with a standard normal distribution. There is also an Excel command that allows us to find a probability associated with a general normal distribution, and in this case, we will need to specify the mean and standard deviation of the distribution. (These first two commands both apply to situations where the goal is to compute a probability associated with a data value.)    : applies to problems involving a normal distribution with a specified mean and standard deviation     : applies to problems involving the standard normal distribution ( )   (As we've seen before, cumulative .)   Suppose the average height of 5 year old girls is normally distributed with mean cm and standard deviation cm. Find the following:   Find the probability that a randomly selected 5 year old girl's height is is at least cm.    .   Find the probability that a randomly selected 5 year old girl's height is between and cm.    .   Normal Distribution Matching Problem  Match each probability with the Excel formula we would use to calculate it.     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is between 120 and 180?    NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)      A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is more than 40?    1-NORM.DIST(40,135,22,1)     Normal Distribution Matching Problem  Match each probability with the Excel formula we would use to calculate it.     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is less than 90?    NORM.DIST(90,135,22,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(2.35,TRUE)     Normal Distribution Matching Problem  Match each probability with the Excel formula we would use to calculate it.     Find the probability for a standard normal distribution:     1-NORM.S.DIST(2.35,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.76,1)- NORM.S.DIST(-0.86,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.5,TRUE)      Find the probability for a standard normal distribution:     1-NORM.S.DIST(1.5,TRUE)         Images for Exercise ???    (A)       (B)       (C)        Normal Distribution Matching Problem  Problem instructions.          NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)     image   1-NORM.DIST(40,135,22,1)     image   NORM.DIST(90,135,22,1)     image   Find the probability for a standard normal distribution:      Normal Distribution Matching Problem  Problem instructions.    image   Find the probability for a standard normal distribution:      image   Find the probability for a standard normal distribution:      image   NORM.S.DIST(1.5,TRUE)      image    1-NORM.S.DIST(1.5,TRUE)      Let be the standard normal variable. Find the following:    .    .    .    .    such that .    .    such that .    .    Finding or if we have information about a probability:  What if we want to know the specific that satisfies a given probability? Then we can work backward using the tables ( Standard Normal Table ) and use the -score formula in reverse. If the exact probability cannot be found in the table, then we can use the closest values.  The Excel formulas that apply to this situation are similar to the ones we saw earlier, replacing .DIST with .INV:   NORM.INV(probability, mean, standard deviation) applies to normal distributions with a specified mean and standard deviation    NORM.S.INV(probability) is used for standard normal distributions      A random variable follows the normal probability distribution with a mean of 50 and a standard deviation of 20.   What value of represents the 75th percentile?       Find the value of so that probability lies below it.       Find the value of that represents the highest of all values        Suppose the retirement age of professional athletes in a certain league is normally distributed with mean years and standard deviation years. Find the following:   Find the probability that a randomly selected athlete's retirement age is is at least years.    .   Find the probability that a randomly selected athlete's retirement age is between and years.    .   Find such that the probability that a randomly selected athlete's retirement age is is at most years is .   If then years.   Find such that the probability that a randomly selected athlete's retirement age is between years and years is .   If then years.    "
 },
 {
   "id": "sec-normal-distribution-3",
@@ -325,18 +325,18 @@ var ptx_lunr_docs = [
   "body": " Graph of Standard Normal Distribution powered by Desmos   "
 },
 {
-  "id": "subsection-standard-normal-distn-12-1",
+  "id": "subsection-calculating-probabilities-normal-5-1",
   "level": "2",
-  "url": "sec-normal-distribution.html#subsection-standard-normal-distn-12-1",
+  "url": "sec-normal-distribution.html#subsection-calculating-probabilities-normal-5-1",
   "type": "Example",
   "number": "5.1.9",
   "title": "",
   "body": "  Find the probability for a standard normal distribution    In Excel:    "
 },
 {
-  "id": "subsection-standard-normal-distn-15",
+  "id": "subsection-calculating-probabilities-normal-8",
   "level": "2",
-  "url": "sec-normal-distribution.html#subsection-standard-normal-distn-15",
+  "url": "sec-normal-distribution.html#subsection-calculating-probabilities-normal-8",
   "type": "Example",
   "number": "5.1.10",
   "title": "",
@@ -352,13 +352,13 @@ var ptx_lunr_docs = [
   "body": " Normal Distribution Probability Calculator (Made in GeoGebra by Andreas Lindner)   "
 },
 {
-  "id": "matching",
+  "id": "sec-normal-distribution-9",
   "level": "2",
-  "url": "sec-normal-distribution.html#matching",
+  "url": "sec-normal-distribution.html#sec-normal-distribution-9",
   "type": "Exercise",
   "number": "5.1.12",
-  "title": "Normal Distribution Matching Problem.",
-  "body": "Normal Distribution Matching Problem  Match each probability with the Excel formula we would use to calculate it.     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is between 120 and 180?    NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)      A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is more than 40?    1-NORM.DIST(40,135,22,1)    "
+  "title": "",
+  "body": " Suppose the average height of 5 year old girls is normally distributed with mean cm and standard deviation cm. Find the following:   Find the probability that a randomly selected 5 year old girl's height is is at least cm.    .   Find the probability that a randomly selected 5 year old girl's height is between and cm.    .  "
 },
 {
   "id": "matching",
@@ -367,7 +367,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.1.13",
   "title": "Normal Distribution Matching Problem.",
-  "body": "Normal Distribution Matching Problem  Match each probability with the Excel formula we would use to calculate it.     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is less than 90?    NORM.DIST(90,135,22,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(2.35,TRUE)    "
+  "body": "Normal Distribution Matching Problem  Match each probability with the Excel formula we would use to calculate it.     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is between 120 and 180?    NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)      A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is more than 40?    1-NORM.DIST(40,135,22,1)    "
 },
 {
   "id": "matching",
@@ -376,14 +376,23 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "5.1.14",
   "title": "Normal Distribution Matching Problem.",
+  "body": "Normal Distribution Matching Problem  Match each probability with the Excel formula we would use to calculate it.     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is less than 90?    NORM.DIST(90,135,22,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(2.35,TRUE)    "
+},
+{
+  "id": "matching",
+  "level": "2",
+  "url": "sec-normal-distribution.html#matching",
+  "type": "Exercise",
+  "number": "5.1.15",
+  "title": "Normal Distribution Matching Problem.",
   "body": "Normal Distribution Matching Problem  Match each probability with the Excel formula we would use to calculate it.     Find the probability for a standard normal distribution:     1-NORM.S.DIST(2.35,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.76,1)- NORM.S.DIST(-0.86,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.5,TRUE)      Find the probability for a standard normal distribution:     1-NORM.S.DIST(1.5,TRUE)    "
 },
 {
-  "id": "sec-normal-distribution-11",
+  "id": "sec-normal-distribution-14",
   "level": "2",
-  "url": "sec-normal-distribution.html#sec-normal-distribution-11",
+  "url": "sec-normal-distribution.html#sec-normal-distribution-14",
   "type": "Figure",
-  "number": "5.1.15",
+  "number": "5.1.16",
   "title": "",
   "body": " Images for Exercise ???    (A)       (B)       (C)       "
 },
@@ -392,7 +401,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#matching",
   "type": "Exercise",
-  "number": "5.1.16",
+  "number": "5.1.17",
   "title": "Normal Distribution Matching Problem.",
   "body": "Normal Distribution Matching Problem  Problem instructions.          NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)     image   1-NORM.DIST(40,135,22,1)     image   NORM.DIST(90,135,22,1)     image   Find the probability for a standard normal distribution:     "
 },
@@ -401,18 +410,72 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#matching",
   "type": "Exercise",
-  "number": "5.1.17",
+  "number": "5.1.18",
   "title": "Normal Distribution Matching Problem.",
   "body": "Normal Distribution Matching Problem  Problem instructions.    image   Find the probability for a standard normal distribution:      image   Find the probability for a standard normal distribution:      image   NORM.S.DIST(1.5,TRUE)      image    1-NORM.S.DIST(1.5,TRUE)    "
 },
 {
-  "id": "sec-normal-distribution-14",
+  "id": "sec-normal-distribution-17",
   "level": "2",
-  "url": "sec-normal-distribution.html#sec-normal-distribution-14",
+  "url": "sec-normal-distribution.html#sec-normal-distribution-17",
   "type": "Exercise",
-  "number": "5.1.18",
+  "number": "5.1.19",
   "title": "",
   "body": " Let be the standard normal variable. Find the following:    .    .    .    .    such that .    .    such that .    .  "
+},
+{
+  "id": "subsection-normal-inv-4",
+  "level": "2",
+  "url": "sec-normal-distribution.html#subsection-normal-inv-4",
+  "type": "Exercise",
+  "number": "5.1.20",
+  "title": "",
+  "body": " A random variable follows the normal probability distribution with a mean of 50 and a standard deviation of 20.   What value of represents the 75th percentile?       Find the value of so that probability lies below it.       Find the value of that represents the highest of all values      "
+},
+{
+  "id": "subsection-normal-inv-5",
+  "level": "2",
+  "url": "sec-normal-distribution.html#subsection-normal-inv-5",
+  "type": "Exercise",
+  "number": "5.1.21",
+  "title": "",
+  "body": " Suppose the retirement age of professional athletes in a certain league is normally distributed with mean years and standard deviation years. Find the following:   Find the probability that a randomly selected athlete's retirement age is is at least years.    .   Find the probability that a randomly selected athlete's retirement age is between and years.    .   Find such that the probability that a randomly selected athlete's retirement age is is at most years is .   If then years.   Find such that the probability that a randomly selected athlete's retirement age is between years and years is .   If then years.  "
+},
+{
+  "id": "sec-exponential-distribution",
+  "level": "1",
+  "url": "sec-exponential-distribution.html",
+  "type": "Section",
+  "number": "5.2",
+  "title": "The Exponential Distribution",
+  "body": " The Exponential Distribution   The exponential probability distribution is a continuous distribution commonly used in business to measure the time between customer arrivals or the time between failures in a business process  The mathematical expression that describes the shape of the curve for the exponential probability distribution is called the exponential probability density function:   Recall the we saw in a previous chapter when the discrete Poisson distribution was introduced. It is not a coincidence that we are using in both of these distributions. A discrete random variable that follows a Poisson distribution with a mean equal to has a counterpart continuous random variable that follows the exponential distribution with a mean equal to .  It is easy to confuse the two -- try to remember that is a countable (discrete) rate while is a measurable (continuous) interval.  A small bit of good news: the standard deviation for an exponential distribution is equal to its mean. That is, .   The only parameter in the formula is . Let's look at how it impacts the shape of the distribution.  Exponential Distribution powered by Desmos      Differences between the Exponential and Normal Distributions     The shape of the exponential distribution is right-skewed while the shape of the normal distribution is bell-shaped and symmetric.    The shape of the exponential distribution is controlled by only one parameter, , while the shape of the normal distribution requires two parameters, and .    The values of an exponential distribution are always positive; they can never be negative. Values of the normal distribution can be both positive and negative.       Computing Probabilities for the Exponential Distributions  There is no table for helping us calculate probabilities associated with an exponential distribution. So we will rely on a formula and Excel to help with these calculations. The formula for calculating the probability that a random variable is less than a specified value is: where .  The Excel formula for calculating probabilities for the exponential distribution is where cumulative=TRUE (if you want cumulative probability) or FALSE (if you do not want cumulative probability).  (Donnelly 6.21,22)  An exponential probability distribution has a mean equal to 5 minutes per customer. Calculate the following probabilities for the distribution.       OR                       "
+},
+{
+  "id": "sec-exponential-distribution-2",
+  "level": "2",
+  "url": "sec-exponential-distribution.html#sec-exponential-distribution-2",
+  "type": "Definition",
+  "number": "5.2.1",
+  "title": "",
+  "body": " The exponential probability distribution is a continuous distribution commonly used in business to measure the time between customer arrivals or the time between failures in a business process  The mathematical expression that describes the shape of the curve for the exponential probability distribution is called the exponential probability density function:   Recall the we saw in a previous chapter when the discrete Poisson distribution was introduced. It is not a coincidence that we are using in both of these distributions. A discrete random variable that follows a Poisson distribution with a mean equal to has a counterpart continuous random variable that follows the exponential distribution with a mean equal to .  It is easy to confuse the two -- try to remember that is a countable (discrete) rate while is a measurable (continuous) interval.  A small bit of good news: the standard deviation for an exponential distribution is equal to its mean. That is, .  "
+},
+{
+  "id": "sec-exponential-distribution-3-2",
+  "level": "2",
+  "url": "sec-exponential-distribution.html#sec-exponential-distribution-3-2",
+  "type": "Figure",
+  "number": "5.2.2",
+  "title": "",
+  "body": " Exponential Distribution powered by Desmos   "
+},
+{
+  "id": "subsection-computing-expon-probabilities-4",
+  "level": "2",
+  "url": "sec-exponential-distribution.html#subsection-computing-expon-probabilities-4",
+  "type": "Exercise",
+  "number": "5.2.3",
+  "title": "",
+  "body": "(Donnelly 6.21,22)  An exponential probability distribution has a mean equal to 5 minutes per customer. Calculate the following probabilities for the distribution.       OR                     "
 },
 {
   "id": "backmatter-2",
