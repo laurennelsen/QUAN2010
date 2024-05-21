@@ -137,28 +137,18 @@
             </exercise>
 
 
-            <exercise label="fillin-integer">
-                <title>Fill-In, Integer Answer</title>
+            <exercise label="fillin-exponential">
+                <title>Exponential Probability Practice</title>
             
                 <statement>
-                    <p>The game of bowling uses <var/> pins that you try to knock down.</p>
+                    <p>
+                        An exponential probability distribution has lambda equal to <m>18</m> customers per hour.  Find the probability that the next customer will arrive within the next minute.  (Round your answer to 4 decimal places.)  <var/>
+                    </p>
+                
                 </statement>
                 <setup>
                     <var>
-                        <condition number="10">
-                            <feedback>
-                                <p>Arranged in a triangle, there are <m>1+2+3+4 = 10</m> pins, a so-called <term>triangular</term> number.</p>
-                            </feedback>
-                        </condition>
-                        <condition number="16">
-                            <feedback>
-                                <p><em>Close</em>! You may have used hexadecimal notation, when you did not really mean to.</p>
-                            </feedback>
-                        </condition>
-                        <condition string=".*">
-                            <feedback>
-                                <p>Incorrect.</p>
-                            </feedback>
+                        <condition number="0.2592">
                         </condition>
                     </var>
                 </setup>
