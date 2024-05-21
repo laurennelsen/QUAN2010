@@ -3,12 +3,15 @@
 <section xml:id="sec-normal-distribution" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>The Normal Distribution</title>
 
+  <introduction>
   <p> The mathematical expression that describes the shape of the normal probability distribution is called the normal probability density function:
   <me>
 f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
     </me>
     Despite the complexity of this function, there are only two parameters that completely deter- mine the shape of the distribution: the mean, <m>\mu</m>, and the standard deviation, <m>\sigma</m>. Let’s take a closer look at how they impact the distribution. (Don’t worry---we won’t be using this formula to compute probabilities. We have other tools!)
      </p>
+
+     </introduction>
 
 <question>
     <statement>
@@ -89,7 +92,7 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
         <me>z=\frac{x-\mu}{\sigma}</me>
       </p>
 
-        <exercise label="multiple choice">
+        <exercise label="multiple choice1">
             
             <statement>
                 <p>
@@ -122,7 +125,7 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
                 </choices>
             </exercise>
 
-            <exercise label="multiple choice">
+            <exercise label="multiple choice2">
             
                 <statement>
                 <p>
@@ -156,7 +159,7 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
                 </exercise>
             
                 
-                <exercise label="multiple choice">
+                <exercise label="multiple choice3">
                     <statement>
                         <p>
                         The <m>z</m>-score for the mean equals ________ 
@@ -380,7 +383,7 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
               </task>
           </exercise>
 
-  <exercise label="matching">
+  <exercise label="matching1">
     <title>Normal Distribution Matching Problem</title>
     <statement>
     <p>
@@ -422,7 +425,7 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
     </exercise>
 
 
-    <exercise label="matching">
+    <exercise label="matching2">
         <title>Normal Distribution Matching Problem</title>
         <statement>
         <p>
@@ -464,7 +467,7 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
 </exercise>
 
 
-<exercise label="matching">
+<exercise label="matching3">
         <title>Normal Distribution Matching Problem</title>
         <statement>
         <p>
@@ -617,7 +620,7 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
 </figure>
 
 
-<exercise label="matching">
+<exercise label="matching4">
     <title>Normal Distribution Matching Problem</title>
     <statement>
     <p>
@@ -691,7 +694,7 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
 </exercise>
 
 
-<exercise label="matching">
+<exercise label="matching5">
         <title>Normal Distribution Matching Problem</title>
         <statement>
         <p>
@@ -906,8 +909,6 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
 
 
     </subsection>
-
-
 
 
 
