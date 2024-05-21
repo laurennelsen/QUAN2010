@@ -335,7 +335,7 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
     <title>Normal Distribution Matching Problem</title>
     <statement>
     <p>
-        Problem instructions.
+        Match each probability with the Excel formula we would use to calculate it.
     </p>
     </statement>
 
@@ -368,6 +368,20 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
             </p>
         </response>
     </match>
+
+    </matches>
+    </exercise>
+
+
+    <exercise label="matching">
+        <title>Normal Distribution Matching Problem</title>
+        <statement>
+        <p>
+            Match each probability with the Excel formula we would use to calculate it.
+        </p>
+        </statement>
+    
+        <matches>
 
     <match>
         <premise>
@@ -405,7 +419,7 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
         <title>Normal Distribution Matching Problem</title>
         <statement>
         <p>
-            Problem instructions.
+            Match each probability with the Excel formula we would use to calculate it.
         </p>
         </statement>
     
@@ -471,7 +485,10 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
 </exercise>
 
 
-<image width="50%" xml:id="poset">
+
+
+
+<image xml:id="fig-A-test">
               
     <latex-image >
         \begin{tikzpicture}
@@ -485,6 +502,68 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
     </latex-image>
 
   </image>
+
+
+
+
+
+
+  <figure>
+    <caption>Images for Exercise ???</caption>
+    <sidebyside>
+        <figure>
+            <caption>(A)</caption>
+            <image width="50%" xml:id="fig-A">
+              
+                <latex-image >
+                    \begin{tikzpicture}
+                    \begin{axis}[every axis plot post/.append style={ mark=none,samples=50,smooth},domain=50:220]
+                    
+                    \addplot {\gauss{135}{22}};
+                    
+                    \addplot [fill=cyan!30, draw=none, domain=120:180] {\gauss{135}{22}} \closedcycle; 
+                    \end{axis}
+                    \end{tikzpicture}
+                </latex-image>
+            
+              </image>
+        </figure>
+        <figure>
+            <caption>(B)</caption>
+            <image width="50%" xml:id="fig-B">
+              
+                <latex-image >
+                    \begin{tikzpicture}
+\begin{axis}[every axis plot post/.append style={ mark=none,samples=50,smooth},domain=35:235]
+
+\addplot {\gauss{135}{22}};
+
+\addplot [fill=cyan!30, draw=none, domain=40:220] {\gauss{135}{22}} \closedcycle; 
+\end{axis}
+\end{tikzpicture}
+                </latex-image>
+            
+              </image>
+        </figure>
+        <figure>
+            <caption>(C)</caption>
+            <image width="50%" xml:id="fig-C">
+              
+                <latex-image >
+                    \begin{tikzpicture}
+\begin{axis}[every axis plot post/.append style={ mark=none,samples=50,smooth},domain=50:220]
+
+\addplot {\gauss{135}{22}};
+
+\addplot [fill=cyan!30, draw=none, domain=50:90] {\gauss{135}{22}} \closedcycle; 
+\end{axis}
+\end{tikzpicture}
+                </latex-image>
+            
+              </image>
+        </figure>
+    </sidebyside>
+</figure>
 
 
 <exercise label="matching">
