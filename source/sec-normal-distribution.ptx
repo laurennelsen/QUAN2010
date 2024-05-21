@@ -87,26 +87,115 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
       <p>
         Recall that the <m>z</m>-score of a value, <m>x</m>, describes the number of standard deviations that the value <m>x</m> is from the mean of its distribution:
         <me>z=\frac{x-\mu}{\sigma}</me>
-        <ul>
-            <li>
+      </p>
+
+        <exercise label="multiple choice">
+            
+            <statement>
                 <p>
                     Values of <m>x</m> that are less than the mean have _______ <m>z</m>-scores
                 </p>
-            </li>
-            <li>
+                </statement>
+                <choices>
+                    <choice>
+                        <statement>
+                            <p>
+                                postive
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="yes">
+                        <statement>
+                            <p>
+                                negative
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice>
+                        <statement>
+                            <p>
+                                zero
+                            </p>
+                        </statement>
+                    </choice>
+                    
+                </choices>
+            </exercise>
+
+            <exercise label="multiple choice">
+            
+                <statement>
                 <p>
                     Values of <m>x</m> that are more than the mean have _______ <m>z</m>-scores
                 </p>
-            </li>
-            <li>
-                <p>
-                    The <m>z</m>-score for the mean equals ________
-                </p>
-            </li>
-        </ul>
-        </p>
+                </statement>
+                <choices>
+                    <choice correct="yes">
+                        <statement>
+                            <p>
+                                positive
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice>
+                        <statement>
+                            <p>
+                                negative
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice>
+                        <statement>
+                            <p>
+                                zero
+                            </p>
+                        </statement>
+                    </choice>
+                    
+                </choices>
+                </exercise>
+            
+                
+                <exercise label="multiple choice">
+                    <statement>
+                        <p>
+                        The <m>z</m>-score for the mean equals ________ 
+                        </p>
+                    </statement>
+                    <choices>
+                        <choice correct="yes">
+                            <statement>
+                                <p>
+                                    <m>0</m>
+                                </p>
+                            </statement>
+                        </choice>
+                        <choice>
+                            <statement>
+                                <p>
+                                    <m>-1</m>
+                                </p>
+                            </statement>
+                        </choice>
+                        <choice>
+                            <statement>
+                                <p>
+                                    <m>1</m>
+                                </p>
+                            </statement>
+                        </choice>
+                        <choice>
+                            <statement>
+                                <p>
+                                    <m>0.5</m>
+                                </p>
+                            </statement>
+                        </choice>
+                    </choices>
+            
+        </exercise>
 
-        <p>
+        
         <exercise>
            <statement>
             A coffee shop wants to understand the distribution of amounts that their customers are spending per order.  They find that the average amount a customer spends per order is <m>\$ 7.50</m>, and the standard deviation is <m>\$1.25</m>.  If we assume that the amounts spent per order are normally distributed, and Rey comes in and spends <m>\$10.00</m>, what is the <m>z</m>-score for Rey's order?
@@ -117,7 +206,7 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
             </p>
         </answer>
         </exercise>
-    </p>
+    
 
 
         <definition xml:id="def-standard-normal">
