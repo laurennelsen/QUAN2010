@@ -148,24 +148,18 @@
                 </statement>
                 <setup>
                     <var>
-                        <condition number="0.2592">
+                        <condition>
+                            0.2592
                         </condition>
+                        <feedback>
+                            <p>Good!</p>
+                        </feedback>
                     </var>
                 </setup>
             </exercise>
 
 
-            <exercise>
-               
-                    <statement>
-                        <p>An exponential probability distribution has lambda equal to 18 customers per hour.  Find the probability that the next customer will arrive within the next minute.  (Round your answer to 4 decimal places.)  <var name="$c" width="4" /></p>
-                    </statement>
             
-                    <solution>
-                        <p><m><var name="$a" /> + <var name="$b" /> = <var name="$c" /></m>.</p>
-                    </solution>
-            </exercise>
-
 
             </subsection>
 
