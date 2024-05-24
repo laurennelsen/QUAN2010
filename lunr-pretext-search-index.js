@@ -487,6 +487,42 @@ var ptx_lunr_docs = [
   "body": "Exponential Probability Practice  An exponential probability distribution has lambda equal to customers per hour. Find the probability that the next customer will arrive within the next minute. (Round your answer to 4 decimal places.)     0.2592   Good!    "
 },
 {
+  "id": "sec-uniform-distribution",
+  "level": "1",
+  "url": "sec-uniform-distribution.html",
+  "type": "Section",
+  "number": "5.3",
+  "title": "The Uniform Distribution",
+  "body": " The Uniform Distribution   The uniform distribution is a continuous distribution where the probability of any interval is equal to any other interval with the same width.  The mathematical expression that describes the shape of the curve for the uniform probability distribution is called the continuous uniform probability density function:   Uniform Distribution:  Uniform Distribution (Made in GeoGebra by David Ramsay)     Since this function is a constant, the shape of the uniform probability distribution is a rectangle. So computing probabilities associated with it simply involves finding areas of rectanges:    The mean and standard deviation for the uniform distribution are:              (Donnelly 6.29,30,31)  A random variable follows the continuous uniform distribution between 30 and 60. Calculate the following probabilities for the distribution.                   (Donnelly 6.34)  Assume the time required to pass through security at a particular airport follows the continuous uniform distribution with a minimum time of 8 minutes and a maximum time of 31 minutes.  Calculate the value of .     What are the mean and standard deviation for this distribution?                 What is the probability that the next passenger will require less than 25 minutes to pass through security?       What is the probability that the next passenger will require more than 23 minutes to pass through security?       What is the probability that the next passenger will require between 13 and 20 minutes to pass through security?       What time represents the 75th percentile of this distribution?    minutes   "
+},
+{
+  "id": "sec-uniform-distribution-2",
+  "level": "2",
+  "url": "sec-uniform-distribution.html#sec-uniform-distribution-2",
+  "type": "Definition",
+  "number": "5.3.1",
+  "title": "",
+  "body": " The uniform distribution is a continuous distribution where the probability of any interval is equal to any other interval with the same width.  The mathematical expression that describes the shape of the curve for the uniform probability distribution is called the continuous uniform probability density function:   Uniform Distribution:  Uniform Distribution (Made in GeoGebra by David Ramsay)     Since this function is a constant, the shape of the uniform probability distribution is a rectangle. So computing probabilities associated with it simply involves finding areas of rectanges:   "
+},
+{
+  "id": "sec-uniform-distribution-4",
+  "level": "2",
+  "url": "sec-uniform-distribution.html#sec-uniform-distribution-4",
+  "type": "Exercise",
+  "number": "5.3.3",
+  "title": "",
+  "body": "(Donnelly 6.29,30,31)  A random variable follows the continuous uniform distribution between 30 and 60. Calculate the following probabilities for the distribution.                  "
+},
+{
+  "id": "sec-uniform-distribution-5",
+  "level": "2",
+  "url": "sec-uniform-distribution.html#sec-uniform-distribution-5",
+  "type": "Exercise",
+  "number": "5.3.4",
+  "title": "",
+  "body": "(Donnelly 6.34)  Assume the time required to pass through security at a particular airport follows the continuous uniform distribution with a minimum time of 8 minutes and a maximum time of 31 minutes.  Calculate the value of .     What are the mean and standard deviation for this distribution?                 What is the probability that the next passenger will require less than 25 minutes to pass through security?       What is the probability that the next passenger will require more than 23 minutes to pass through security?       What is the probability that the next passenger will require between 13 and 20 minutes to pass through security?       What time represents the 75th percentile of this distribution?    minutes  "
+},
+{
   "id": "backmatter-2",
   "level": "1",
   "url": "backmatter-2.html",
