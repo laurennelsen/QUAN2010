@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-uniform-distribution" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>The Uniform Distribution</title>
+
+  <definition>
+
+    <p>
+        The uniform distribution is a continuous distribution where the probability of any interval is equal to any other interval with the same width.
+
+    </p>
+
+    <p>
+        The mathematical expression that describes the shape of the curve for the uniform probability distribution is called the continuous uniform probability density function:
+        <me>
+            f(x)=\begin{cases}
+            \frac{1}{b-a} \amp\text{ if } a\leq x\leq b\\
+            0 \amp\text{ otherwise}
+            \end{cases}.
+        </me>
+        
+    </p>
+
+
+    <p>
+        Uniform Distribution:
+        <figure xml:id="figure-geogebra-unifdist">
+          <caption>Uniform Distribution (Made in GeoGebra by David Ramsay)</caption>
+          <interactive xml:id="geogebra-unifdist" geogebra="v2EnMNF9" aspect="9:5" />
+        </figure>
+      </p>
+
+      <p>
+        Since this function is a constant, the shape of the uniform probability distribution is a rectangle.  So computing probabilities associated with it simply involves finding areas of rectanges:
+        <me>
+            (\text{width})\cdot(\text{height})
+        </me>
+        
+
+        </p>
+
+    </definition>
+
+
+    <p>
+        The mean and standard deviation for the uniform distribution are:
+        <ul>
+            <li>
+                <p>
+                    <m>\mu=\frac{a+b}{2}</m>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <m>\sigma=\frac{b-a}{\sqrt{12}}</m>
+                </p>
+            </li>
+        </ul>
+    </p>
+
+    <exercise>
+        <p>
+            (Donnelly 6.29,30,31)
+        </p>
+    <statement>
+        <p>
+            A random variable follows the continuous uniform distribution between 30 and 60.  Calculate the following probabilities for the distribution.
+        </p>
+    </statement>
+    <task>
+        <m> P(X\leq 45) </m>
+        <answer>
+            <p>
+                <m>\frac{1}{2}</m>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <m> P(X\gt 50) </m>
+        <answer>
+            <p>
+                <m>\frac{1}{3}</m>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <m> P(40\leq X\leq 55) </m>
+        <answer>
+            <p>
+                <m>\frac{1}{2}</m>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <m> P(X=35) </m>
+        <answer>
+            <p>
+                <m>0</m>
+            </p>
+        </answer>
+    </task>
+    </exercise>
+
+
+    <exercise>
+        <p>
+            (Donnelly 6.34)
+        </p>
+    <statement>
+        <p>
+            Assume the time required to pass through security at a particular airport follows the continuous uniform distribution with a minimum time of 8 minutes and a maximum time of 31 minutes.
+        </p>
+    </statement>
+    <task>
+        <p>Calculate the value of <m> f(x) </m>. </p>
+        <answer>
+            <p>
+                <m> \frac{1}{23} </m>
+            </p>
+        </answer>
+     </task>
+
+     <task>
+        <p>What are the mean and standard deviation for this distribution? </p>
+        <answer>
+            <p>
+                <ul>
+                    <li>
+                        <p>
+                            <m>\mu=19.5</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>\sigma\approx 6.64</m>
+                        </p>
+                    </li>
+                 </ul>
+            </p>
+        </answer>
+     </task>
+
+     <task>
+        <statement>
+            <p>
+                What is the probability that the next passenger will require less than 25 minutes to pass through security?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <m>P(X\lt 25)= \frac{17}{23}</m>
+            </p>
+        </answer>
+     </task>
+
+     <task>
+        <statement>
+            <p>
+                What is the probability that the next passenger will require more than 23 minutes to pass through security?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <m>P(X\gt 23)=\frac{8}{23}</m>
+            </p>
+        </answer>
+     </task>
+
+     <task>
+        <statement>
+            <p>
+                What is the probability that the next passenger will require between 13 and 20 minutes to pass through security?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <m>P(13\lt X\lt 20)= \frac{7}{23}</m>
+            </p>
+        </answer>
+     </task>
+
+     <task>
+        <statement>
+            <p>
+                What time represents the 75th percentile of this distribution?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <m>25.25</m> minutes
+            </p>
+        </answer>
+     </task>
+
+     </exercise>
+
+</section>
+
+

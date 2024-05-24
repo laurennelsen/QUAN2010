@@ -97,5 +97,6 @@
   <!-- include sections -->
   <xi:include href="sec-normal-distribution.ptx" />
   <xi:include href="sec-exponential-distribution.ptx" />
+  <xi:include href="sec-uniform-distribution.ptx" />
 
 </chapter>
