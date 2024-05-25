@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Intro-to-Probability" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Introduction to Probability</title>
+
+<introduction>
+    <p>
+        Decision makers, including those in the business world, are greatly influenced by uncertainty.  Probability provides a valuable tool in quantifying uncertainty, leading to greater success in decision-making.
+    </p>
+</introduction>
+
+<definition xml:id="def-probability">
+    <statement>
+        <p>
+            A <em>probability</em> is a numerical value between 0 and 1 that measures the chance, or likelihood, that a specific event will occur.
+        </p>
+    </statement>
+</definition>
+
+<p>
+    Before jumping into some examples, let's discuss some key terms for our study of probability concepts.
+</p>
+
+<definition xml:id="def-probability-terms">
+    <statement>
+        <p>
+            <ul>
+                
+                <li>
+                    <p>
+                        An <em>experiment</em> results in a specific <em>outcome</em> e.g., a coin flip (the experiment) results in a <q>heads</q> or a <q>tails</q> (the outcome).
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        An <em>event</em> is a collection of outcome(s) of an experiment, e.g., a die roll results in <q>an odd number</q>.  More specifically, a <em>simple event</em> is an event with a single outcome.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        The <em>sample space</em> for an experiment consists of all possible outcomes e.g., <m>S=\{\text{heads},\text{tails}\}</m>.
+                    </p>
+                    <ul>
+                        <li>
+                            <p>
+                                The outcomes must be <em>collectively exhaustive</em> and <em>mutually exclusive</em>.
+                            </p>
+                            <ul>
+                                <li>
+                                    <p>
+                                        <em>Collectively exhaustive</em> means every simple event is included
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <em>Mutually exclusive</em> means events that cannot occur at the same time.
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </p>
+    </statement>
+</definition>
+
+<exercise>
+<introduction>
+    <p>
+        A single die is rolled.
+    </p>
+</introduction>
+<task>
+    <statement>
+        <p>
+            Define the sample space.
+        </p>
+    </statement>
+    <answer>
+        <p>
+            <me>S=\{1,2,3,4,5,6\}</me>
+        </p>
+    </answer>
+</task>
+<task>
+    <statement>
+        <p>
+            Define the event <q>an odd number is rolled</q>.  What is the probability of this event?
+        </p>
+    </statement>
+    <answer>
+        <p>
+            <me>A=\{1,3,5\}\Rightarrow P(A)=\frac{3}{6}=0.5</me>
+        </p>
+    </answer>
+</task>
+    </exercise>
+
+
+    <exercise>
+        <introduction>
+            <p>
+                A pair of dice are rolled.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Define the sample space.  (How many total possible outcomes are there?)
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <me>S=\{(1,1),(1,2),(2,1),(2,2),(3,1),(3,2),(3,3),...\}</me>
+                    There are 36 total possible outcomes.
+                </p>
+            </answer>
+        </task>
+        
+        <task>
+            <statement>
+                <p>
+                    Define the event <q>doubles are rolled</q>.  What is the probability of this event?
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <me>B=\{(1,1),(2,2),(3,3),(4,4),(5,5),(6,6)\}</me>
+                    <me>P(B)=\frac{6}{36}=\frac{1}{6}</me>
+                </p>
+            </answer>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    Define the event <q>the sum of the dice is 10</q>.  What is the probability of this event?
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <me>C=\{(4,6),(6,4),(5,5)\}</me>
+                    <me>P(C)=\frac{3}{36}=\frac{1}{12}</me>
+                </p>
+            </answer>
+        </task>
+    </exercise>
+
+
+    <exercise>
+        <introduction>
+            <p>
+                (Donnelly 4.8)
+            </p>
+
+            <p>
+                The table below shows the frequencies of executives' salary ranges at a particular organization.
+
+                <table>
+                    <tabular>
+                        <row bottom="medium">
+                            <cell>Salary Range</cell>
+                            <cell>Frequency</cell>
+                        </row>
+                        <row>
+                            <cell>Under $60,000</cell>
+                            <cell>2</cell>
+                        </row>
+                        <row>
+                            <cell>$60,000 to under $70,000</cell>
+                            <cell>5</cell>
+                        </row>
+                        <row>
+                            <cell>$70,000 to under $80,000</cell>
+                            <cell>7</cell>
+                        </row>
+                        <row>
+                            <cell>$80,000 to under $90,000</cell>
+                            <cell>4</cell>
+                        </row>
+                        <row>
+                            <cell>$90,000 to under $100,000</cell>
+                            <cell>6</cell>
+                        </row>
+                        <row bottom="medium">
+                            <cell>$100,000 or more</cell>
+                            <cell>?</cell>
+                        </row>
+                        <row>
+                            <cell>Total:</cell>
+                            <cell>26</cell>
+                        </row>
+                    </tabular>
+                </table>
+               
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    How many executives at this organization earned $100,000 or more per year?
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>26-24=2</m>
+                </p>
+            </answer>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    What is the probability of randomly selecting an executive who earned $100,000 or more per year?
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <me>\frac{2}{26}=\frac{1}{13}</me>
+                </p>
+            </answer>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    What is the probability of randomly selecting an executive who earned $60,000 or more per year?
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <me>\frac{24}{26}=\frac{12}{13}</me>
+                </p>
+            </answer>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    What is the probability of randomly selecting an executive who earned between $70,000 and $90,000 per year?
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <me>\frac{11}{26}</me>
+                </p>
+            </answer>
+        </task>
+    </exercise>
+
+
+
+    <exercise>
+        <introduction>
+          <p>
+            
+          </p>
+        </introduction>
+        <myopenmath problem="7096" />
+      </exercise>
+
+    
+<statement>
+    <p>
+        Basic Properties of Probability:
+        <ol>
+            <li>
+                <p>
+                    If <m>P(A)=1</m>, then event <m>A</m> is certain to occur.
+                </p>
+            </li>
+            <li>
+                <p>
+                    If <m>P(A)=0</m>, then event <m>A</m> is certain to NOT occur.
+                </p>
+            </li>
+            <li>
+                <p>
+                    The probability of any event must range between 0 and 1 (inclusive).
+                </p>
+            </li>
+            <li>
+                <p>
+                    The sum of all probabilities of simple events in a sample space is equal to 1.
+                </p>
+            </li>
+        </ol>
+    </p>
+</statement>
+
+<definition xml:id="def-complement">
+    <statement>
+        <p>
+            The <em>complement</em>, <m>A'</m> (or <m>A^c</m>), is defined as all outcomes in the sample space that are not in <m>A</m>.
+        </p>
+    </statement>
+</definition>
+
+<statement>
+    <p>
+        <em>The complement rule:</em>
+        <me>P(A)+P(A')=1</me>
+    </p>
+</statement>
+
+
+<exercise>
+    <introduction>
+        <p>
+            Draw one card from a standard deck of 52 playing cards.  (Here is a link to a description of a deck of cards:  <url href="https://intranet.missouriwestern.edu/cas/wp-content/uploads/sites/17/2020/05/Standard-Deck-of-Cards.pdf" />)
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                How many total outcomes are in the sample space for this experiment?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <m>13\cdot 4=52</m>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What is the probability of drawing a <q>face card</q>?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <me>\frac{12}{52}={3}{13}</me>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What is the probability of drawing <q>a card divisible by 3</q>?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <me>\frac{12}{52}=\frac{3}{13}</me>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What is the probability of drawing <q>a card NOT divisible by 3</q>?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <me>1-\frac{12}{52}=\frac{40}{52}=\frac{10}{13}
+                </me>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What is the probability of drawing a card that is <q>a face card and a card divisible by 3</q>?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                0
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What is the probability of drawing a card that is <q>a red card or a black card</q>?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                1
+            </p>
+        </answer>
+    </task>
+</exercise>
+
+
+<definition xml:id="def-contingency-marginal-probability">
+    <statement>
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        A <em>contingency table</em> shows the number of occurrences of events that are classified by two categorical variables.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>Marginal probability</em> is a simple probability found in the margins, or row and column totals, of a contingency table.
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </statement>
+</definition>
+
+
+<exercise>
+    <introduction>
+        <p>
+            (Donnelly 4.19)
+        </p>
+
+        <p>
+            A local car dealership currently has 36 used GM, Ford, and Toyota vehicles on the lot that can be classified as either cars or trucks.  The following data are available:
+            <ul>
+                <li>
+                    <p>
+                        Twenty-six vehicles are cars
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Eleven vehicles are GMs
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Fifteen vehicles are Fords
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Three vehicles are both Toyotas and trucks
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Fourteen vehicles are both Toyotas and trucks
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                ....(Figure out how to make fillable table......)  Create a contingency table that summarizes the data.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What is the probability that a randomly selected vehicle is a Toyota?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <me>\frac{10}{36}=\approx 0.278</me>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What is the probability that a randomly selected vehicle is a truck?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <me>\frac{10}{36}\approx 0.278</me>
+            </p>
+        </answer>
+    </task>
+</exercise>
+
+
+
+<definition xml:id="def-intersection-union">
+    <statement>
+        <p>
+            The <em>intersection</em> of Events A and B represents the number of times when events A and B occur at the same time
+            <ul>
+                <li>
+                    <p>
+                        Notation: <m>A\cap B</m>
+                    </p>
+                </li>
+            </ul>
+        </p>
+        The <em>union</em> of Events A and B represents the number of times when event A or event B or both occur.
+        <ul>
+            <li>
+                <p>
+                    Notation: <m>A\cup B</m>
+                </p>
+            </li>
+        </ul>
+        <p>
+            
+        </p>
+    </statement>
+    <figure xml:id="figure-geogebra-union-intersection">
+        <caption>Union and Intersection (Made in GeoGebra by Vaibhav Zade)</caption>
+        <interactive xml:id="geogebra-union-intersection" geogebra="grxxwm4c" aspect="9:5" />
+      </figure>
+</definition>
+
+
+<definition xml:id="def-joint-probability">
+    <statement>
+        <p>
+            The <em>joint probability</em> of two events is the probability of the intersection of two events.
+                 
+        </p>
+    </statement>
+</definition>
+
+<statement>
+    <p>
+        The <em>addition rule</em> for probabilities is used to calculate the probability of the union of events.  It depends on knowing whether or not two events are mutually exclusive.
+    </p>
+
+    <p>
+        <ul>
+            <li>
+                <p>
+                    For mutually exclusive events, 
+                    <me>P(A\cup B)=P(A)+P(B)</me>
+                </p>
+            </li>
+            <li>
+                <p>
+                    For events that are <em>not</em> mutually exclusive,
+                    <me>P(A\cup B)=P(A)+P(B)-P(A\cap B)</me>
+                </p>
+            </li>
+        </ul>
+    </p>
+</statement>
+
+
+<exercise>
+    <introduction>
+        <p>
+            Use the contingency table from the previous exercise... (insert!!!!!) to answer the following questions.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                What is the probability that a randomly selected vehicle is either a Ford or a car?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <me>\frac{15}{36}+\frac{26}{36}-\frac{14}{36}=\frac{27}{36}=0.75</me>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What is the probability that a randomly selected vehicle is a GM truck?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <me>\frac{6}{36}\approx 0.167</me>
+            </p>
+        </answer>
+    </task>
+</exercise>
+
+
+<exercise>
+    <introduction>
+      <p>
+        
+      </p>
+    </introduction>
+    <myopenmath problem="7142" />
+  </exercise>
+
+
+<definition xml:id="def-condition-probability">
+    <statement>
+        <p>
+            <em>Conditional probability</em> is the probability that event A will occur given that event B has occurred.
+        </p>
+
+        <p>
+            This probability is denoted by <m>P(A|B)</m>, and is <q>the probability of A given B</q>.
+        </p>
+    </statement>
+</definition>
+
+
+<figure xml:id="figure-geogebra-conditional-prob">
+    <caption>(Made in GeoGebra by Virginia Keith)</caption>
+    <interactive xml:id="geogebra-conditional-prob" geogebra="db6dmGM9" aspect="9:5" />
+  </figure>
+
+<exercise>
+    <statement>
+        <p>
+            Which of the following is the formula used to calculate <m>P(A|B)</m>?
+        </p>
+    </statement>
+    <choices>
+        <choice correct="yes">
+            <statement>
+                <p>
+                    <m>\frac{P(A\cap B)}{P(B)}</m>
+                </p>
+            </statement>
+        </choice>
+        <choice>
+            <statement>
+                <p>
+                    <m>\frac{P(A\cap B)}{P(A)}</m>
+                </p>
+            </statement>
+        </choice>
+        <choice>
+            <statement>
+                <p>
+                    <m>\frac{P(A\cup B)}{P(A)}</m>
+                </p>
+            </statement>
+        </choice>
+        <choice>
+            <statement>
+                <p>
+                    <m>\frac{P(A\cup B)}{P(B)}</m>
+                </p>
+            </statement>
+        </choice>
+    
+    </choices>
+
+</exercise>
+
+
+<exercise>
+    <statement>
+        <p>
+            Let's look back at the contingency table from previous exercises..... (!!!insert!!!!)
+        </p>
+    </statement>
+    <task>
+        <statement>
+            <p>
+                What is the probability that a randomly selected vehicle is a Toyota, given it is a car?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <me>P(\text{Toyota}|\text{car})=\frac{P(\text{Toyota and car)}{P(\text{car})}=\frac{7/36}{26/36}=\frac{7}{26}\approx 0.269</me>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What is the probability that a randomly selected vehicle is a truck, given it is a Ford?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <me>P(\text{Truck}|\text{Ford})=\frac{P(\text{Truck and Ford)}{P(\text{Ford})}=\frac{1/36}{15/36}=\frac{1}{15}\approx 0.067</me>
+            </p>
+        </answer>
+    </task>
+</exercise>
+
+<definition xml:id="def-independent-events">
+    <statement>
+        <p>
+           <ul>
+            <li>
+                <p>
+                    Two events are <em>independent</em> if the occurrence of one event has no impact on the occurrence of the other event.  The definition for two independent events is:
+                    <me>P(A|B)=P(A)</me>
+                </p>
+            </li>
+            <li>
+                <p>
+                    Events are <em>dependent</em> if the occurrence of one event affects the occurrence of another event.
+                </p>
+            </li>
+           </ul>
+        </p>
+    </statement>
+</definition>
+
+
+<figure xml:id="figure-geogebra-independent">
+    <caption>(Made in GeoGebra by Steve Phelps)</caption>
+    <interactive xml:id="geogebra-independent" geogebra="XXKkSMA4" aspect="9:5" />
+  </figure>
+
+
+<exercise>
+        <introduction>
+          <p> A delivery service operates in a city where it snows in the winter. Suppose it is now winter. We consider the events that on a randomly selected day that they are late making deliveries, and the event that it snows that day. </p>
+          <p> Suppose that the probability that the service is late on this day is <m>0.17</m>, the probability that the service is late given that it snows on this day is <m>0.7</m>, and finally the probability that it snows on this day is <m>0.18</m>. </p>
+        </introduction>
+          <task>
+            <statement>
+              <p> Find the probability that the service is late and it snows on this day. </p>
+            </statement>
+            <answer>
+              <p> The probability that the service is late and it snows on this day is <m>0.126</m>. </p>
+            </answer>
+          </task>
+          <task>
+            <statement>
+              <p> Find the probability that it snows, given that the service is late on this day. </p>
+            </statement>
+            <answer>
+              <p> The probability that it snows, given that the service is late on this day is <m>0.7411764705882352</m>. </p>
+            </answer>
+          </task>
+          <task>
+            <statement>
+              <p> Are the events the service is late on this day, and it snows on this day independent? Explain your reasoning. </p>
+            </statement>
+            <answer>
+              <p> The events the service is late on this day, and it snows on this day are not independent. (!!!INSERT REASONING!!!!) </p>
+            </answer>
+          </task>
+  </exercise>
+
+
+  <statement>
+    <p>
+        The <em>multiplication rule</em> for probabilities is used to calculate the probability for intersection (or joint probability) of two events occurring.
+    </p>
+
+    <p>
+        It depends on knowing whether or not two events are independent or dependent.
+        <ul>
+            <li>
+                <p>
+                    For dependent events, <me>P(A\cap B)=P(B)\cdot P(A|B)</me>
+                </p>
+            </li>
+            <li>
+                <p>
+                    For independent events, <me>P(A\cap B)=P(A)\cdot P(B)</me>
+                </p>
+            </li>
+        </ul>
+    </p>
+  </statement>
+
+
+  <exercise>
+    <statement>
+        <p>
+            A company has 140 employees, of which 30 are supervisors.  Eighty of the employees are married, and 20% of the married employees are supervisors.  If a company employee is randomly selected, what is the probability that employee is married and is a supervisor?
+        </p>
+    </statement>
+    <answer>
+        <p>
+            <me>\left( \frac{80}{140} \right)\left( 0.2 \right)\approx 0.1143</me>
+        </p>
+    </answer>
+  </exercise>
+
+
+
+
+  <exercise>
+    <introduction>
+      <p>
+        
+      </p>
+    </introduction>
+    <myopenmath problem="7111" />
+  </exercise>
+  
+
+
+</section>
+
+

@@ -16,6 +16,8 @@
     
     <xi:include href="./ch-Descriptive-Statistics.ptx" />
 
+    <xi:include href="./ch-Probability.ptx" />
+
     <xi:include href="./ch-Discrete-Probability-Distributions.ptx" />
 
     <xi:include href="./ch-Intro-to-Regression-Modeling.ptx" />

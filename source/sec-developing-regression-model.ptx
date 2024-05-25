@@ -208,7 +208,7 @@ A hospital would like to develop a regression model to predict the total hospita
     </statement>
 
     <figure xml:id="figure-geogebra-SSE">
-        <caption>Scatter Plot (Made in GeoGebra by Ivan Gatewood)</caption>
+        <caption>Least Squares Visualization (Made in GeoGebra by Ivan Gatewood)</caption>
         <interactive xml:id="geogebra-SSE" geogebra="tRUGb6Hg" aspect="9:5" />
       </figure>
 
