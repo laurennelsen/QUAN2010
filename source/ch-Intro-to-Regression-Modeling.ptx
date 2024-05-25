@@ -9,6 +9,8 @@
 
   <!-- include sections -->
   <xi:include href="sec-correlation.ptx" />
+  <xi:include href="sec-developing-regression-model.ptx" />
+  <xi:include href="sec-using-regression.ptx" />
   <xi:include href="sec-Diamonds.ptx" />
 
 </chapter>

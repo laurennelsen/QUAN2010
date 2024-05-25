@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-using-regression" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Using Regression to Make a Prediction</title>
+
+  <p> 
+    We can use our regression model to make predictions based on given values of the independent variables -- just plug the given values into the respective independent variable of the regression model.  But how reliable is this prediction?  We only have sample data so the prediction isn't perfect.  Similar to what we did in a previous chapter, we will construct a confidence interval to aid in describing the accuracy of our predictions.
+
+    </p>
+
+    <p>
+
+    There are a number of confidence intervals that we can create based on our regression model that provide insight into the validity of the model.  The only one we will focus on is related to the population slopes:
+    <me> CI=b_i\pm t_{\alpha/2}s_{b_i} </me>
+
+    It turns out we will likely not need this formula, however, since the <q>Regression</q> tool in Excel will do most of the work for us.
+</p>
+
+<exercise>
+  <introduction>
+    <p>
+      Let's look back at the hospital example from earlier.
+    </p>
+
+    <p>
+      A hospital would like to develop a regression model to predict the total hospital bill for a patient based on the age of the patient (<m>x_1</m>), the patient's length of stay (<m>x_2</m>), and the number of days in the hospital's intensive care unit (ICU) (<m>x_3</m>).  Data for these variables can be found in the table in the Excel file below.
+
+<url href="external/sheets/HospitalExample.xlsx" />
+    </p>
+
+    <p>
+
+    Construct and interpret the <m>95\%</m> confidence interval for the regression coefficient for each of the independent variables in the model.
+
+    </p>
+    
+  </introduction>
+  
+</exercise>
+
+
+</section>

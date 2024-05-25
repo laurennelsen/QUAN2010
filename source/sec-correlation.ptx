@@ -74,16 +74,48 @@
          </me>
     </p>
 
+    <p>
+        Degrees of freedom here are....
+        <m>  df=..... </m>
+    </p>
+
 
     </statement>
 
 
-    <exercise label="correlation">
-        <statement>
+
+    <exercise label="housingmarket">
+        <introduction>
         <p>
-            text
+            The housing market in the United States is generally affected by economic conditions and interest rates, but also by the time of the year.  More people usually buy and sell homes in the spring summer months.  We want to see if there is a strong correlation between new home listings and temperature.  The Excel file below includes the number of new housing listings in Colorado, as well as temperature and precipitation at Denver International Airport (DEN).
+
+            <url href="external/sheets/Colorado Housing Inventory and Weather Data.xlsx" />
+           
         </p>
-        </statement>
+
+    </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    Determine the sample correlation coefficient between the number of new listings and the precipitation.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Determine the sample correlation coefficient between the number of new listings and the maximum temperature.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Using <m>\alpha=0.02</m>, test if the population correlation coefficient between the number of new listings and the maximum temperature is different from zero.  What conclusions can you draw?
+                </p>
+            </statement>
+        </task>
 </exercise>
 
 </section>

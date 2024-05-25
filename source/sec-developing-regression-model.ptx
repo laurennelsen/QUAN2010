@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-developing-regression-model" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Developing a Regression Model</title>
+
+  <p> 
+    Now we are going to learn techniques to create models that fit our data.  Regression analysis is the modeling procedure that we will study.  We will discuss how to perform the calculations in the formulas involved in creating and assessing regression models.  However, in most cases we will rely on the <q>Regression</q> tool in the Data Analysis tab of Excel.
+</p>
+
+<figure>
+    <caption>Regression Example powered by Desmos</caption>
+    <interactive xml:id="desmos-regression" desmos="punehfo8by" aspect="4:3" />
+  </figure>
+
+  <figure>
+    <caption>Regression Line with Error powered by Desmos</caption>
+    <interactive xml:id="desmos-regression-error" desmos="zgizpxbhxz" aspect="4:3" />
+  </figure>
+
+  <definition xml:id="def-regression">
+    <statement>
+        <p>
+            Regression analysis enables us to describe a straight line that best fits the data.
+            <ul>
+                <li>
+                    <p>
+                        In <em>simple</em> regression analysis, there is one independent variable.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        In <em>multiple</em> regression analysis, there is more than one independent variable.
+                    </p>
+                </li>
+            </ul>
+        </p>
+
+        <p>
+            The formula for the linear regression model created with sample data is 
+            <me>
+                \hat{y} = b_0+b_1x_1+b_2x_2 + \cdots +b_kx_k
+            </me>
+            where
+            <md>
+                <mrow> \hat{y} \amp= \text{the predicted value of $y$ given all the $x$'s in the model} </mrow>
+                <mrow> x_1,x_2,\cdots, x_k \amp= \text{ the independent variables in the model}</mrow>
+                <mrow> k \amp= \text{ the number of independent variables in the model} </mrow>
+                <mrow> b_0 \amp= \text{ the $y$-intercept of the regression line} </mrow>
+                <mrow> b_k \amp= \text{ the average change in } \hat{y} \text{ due to a one-unit change in } x_k \text{ with all }</mrow>
+                <mrow> \amp \text{ other $x$'s constant} </mrow>
+              
+            </md>
+            
+        </p>
+
+        <p>
+            The <m>b_k</m> are called <em>regression coefficients</em>.  The simple regression model is often just called the <em>regression line</em>.
+        </p>
+    </statement>
+  </definition>
+
+<exercise>
+    <introduction>
+        <p>
+            (Donnelly 14.56)
+        </p>
+        <p>
+            As a measure of productivity, Verizon Wireless records the number of customers each of its retail employees activates weekly.  An activation is defined as either a new customer signing a cell phone contract or an existing customer renewing a contract.  The data table found in this lesson's Excel file shows the number of weekly activations for eight randomly selected employees along with their job-satisfaction levels rated on a scale of <m>1-10</m> (<m>10=</m> Most satisfied).
+
+            <url href="external/sheets/VerizonExample.xlsx" />
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Construct a scatter plot for these data.  Let satisfaction be the independent variable and let activations be the dependent variable.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Determine the equation of the regression line for the data.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Interpret the value of the slope in the equation.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Predict the number of activations for an employee with a satisfaction level of 7.4.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Calculate the correlation coefficient for this sample.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Using <m>\alpha=0.10</m>, test to determine if the population correlation coefficient is not equal to zero.  What conclusions can be made based on these results?
+            </p>
+        </statement>
+    </task>
+</exercise>
+
+<exercise>
+    <introduction>
+        <p>
+            (Donnelly 15.6)
+        </p>
+
+        <p>
+
+A hospital would like to develop a regression model to predict the total hospital bill for a patient based on the age of the patient (<m>x_1</m>), the patient's length of stay (<m>x_2</m>), and the number of days in the hospital's intensive care unit (ICU) (<m>x_3</m>).  Data for these variables can be found in the table in the Excel file below.
+
+<url href="external/sheets/HospitalExample.xlsx" />
+
+
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Construct a regression model using all three independent variables.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Interpret the meaning of the regression coefficients.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Predict the average hospital bill for a 76-year-old person hospitalized for 5 days with 3 days spent in the ICU.
+            </p>
+        </statement>
+    </task>
+
+</exercise>
+
+
+<definition xml:id="def-residual">
+    <statement>
+        <p>
+            The regression line will not pass through each of the data points.  Hence, there is error between the true value of <m>y</m> from the data and the value, <m>\hat{y}</m>, predicted by the regression line.  This difference is called the <em>residual</em>, <m>e_i</m>.
+        </p>
+    </statement>
+</definition>
+
+
+<figure>
+    <caption>Regression Line with Error powered by Desmos</caption>
+    <interactive xml:id="desmos-regression-error-again" desmos="zgizpxbhxz" aspect="4:3" />
+  </figure>
+
+  <exercise>
+    <introduction>
+        <p>
+            Let's look at the regression model below and think about the actual versus the predicted <m>y</m>-values.
+        </p>
+        <figure>
+            <caption>Regression Line Error powered by Desmos</caption>
+            <interactive xml:id="desmos-regression-error-example" desmos="23aj4jd4nw" aspect="4:3" />
+          </figure>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                For <m>x=1</m>, what is the corresponding <m>y</m>-value, and what is <m>\hat{y}</m>?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                For <m>x=1</m>, what is <m>y-\hat{y}</m>?
+            </p>
+        </statement>
+    </task>
+  </exercise>
+
+
+<definition xml:id="def-least-squares">
+    <statement>
+        <p>
+            The mathematical procedure that is used to find the regression line is the <em>least squares method</em>.  The least squares method aims to minimize the total squared error between the values of <m>y</m> and <m>\hat{y}</m>.  This sum is also called the <em>sum of squares error (SSE)</em>, and is definted by the formula
+            <me>
+                SSE=\sum_{i=1}^n (y_i-\hat{y_i})^2.
+            </me>
+
+            Minimizing the SSE results in the best fitting line through the data points.
+        </p>
+    </statement>
+
+    <figure xml:id="figure-geogebra-SSE">
+        <caption>Scatter Plot (Made in GeoGebra by Ivan Gatewood)</caption>
+        <interactive xml:id="geogebra-SSE" geogebra="tRUGb6Hg" aspect="9:5" />
+      </figure>
+
+</definition>
+
+<definition xml:id="def-SST-and-SSR">
+    <statement>
+        <p>
+            There are two other <q>sum of squares</q> related to our data points:
+            <ul>
+                <li>
+                    <p>
+                        the total sum of squares (SST):
+                        <me>
+                            SST= \sum_{i=1}^n ( y-\bar{y} )^2
+                        </me>
+                        
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        the sum of squares regression (SSR):
+                        <me>
+                            SSR= \sum_{i=1}^n (\hat{y}-\bar{y} )^2
+                        </me>
+                        
+                    </p>
+                </li>
+            </ul>
+            (where <m>\bar{y}=</m> the average value of the dependent variable from the sample)
+        </p>
+    </statement>
+</definition>
+
+<definition>
+<p>
+
+    All of the sum of squares are related:
+
+    <me>
+        SST=SSR+SSE
+    </me>
+    
+    <ul>
+        <li>
+            <p>
+                The <em>total sum of squares (SST)</em>, measures the total variation in the dependent variable.
+            </p>
+        </li>
+        <li>
+            <p>
+                The <em>sum of squares regression (SSR)</em>, measures the amount of variation in the dependent variable that is explained by the independent variable(s).
+            </p>
+        </li>
+        <li>
+            <p>
+                The ratio of these two numbers, <m>R^2=\frac{SSR}{SST}</m>, is called the <em>coefficient of determination</em>.  It measures the percentage of the total variation of the dependent variable that is explained by the independent variable(s) in the model.
+            </p>
+        </li>
+    </ul>
+
+    </p>
+    </definition>
+
+    <exercise>
+        <introduction>
+            <p>
+                Let's go back to the Verizon example from earlier.
+            </p>
+
+            <p>
+                As a measure of productivity, Verizon Wireless records the number of customers each of its retail employees activates weekly.  An activation is defined as either a new customer signing a cell phone contract or an existing customer renewing a contract.  The data table found in this lesson's Excel file shows the number of weekly activations for eight randomly selected employees along with their job-satisfaction levels rated on a scale of <m>1-10</m> (<m>10=</m> Most satisfied).
+    
+                <url href="external/sheets/VerizonExample.xlsx" />
+            </p>
+
+        </introduction>
+
+        <task>
+            <statement>
+                <p>
+                    Identify the SST.  (Hint:  Use the <q>Regression</q> output from Excel.)
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Partition the SST into the SSE and the SSR.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Calculate the coefficient of determination, <m>R^2</m>.
+                </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    Interpret the coefficient of determination.
+                </p>
+            </statement>
+        </task>
+    </exercise>
+
+</section>

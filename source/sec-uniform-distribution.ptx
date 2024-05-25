@@ -58,15 +58,16 @@
         </ul>
     </p>
 
+
     <exercise>
         <p>
             (Donnelly 6.29,30,31)
         </p>
-    <statement>
+    <introduction>
         <p>
             A random variable follows the continuous uniform distribution between 30 and 60.  Calculate the following probabilities for the distribution.
         </p>
-    </statement>
+    </introduction>
     <task>
         <m> P(X\leq 45) </m>
         <answer>
@@ -103,14 +104,15 @@
 
 
     <exercise>
+     <introduction>
         <p>
             (Donnelly 6.34)
         </p>
-    <statement>
+    
         <p>
             Assume the time required to pass through security at a particular airport follows the continuous uniform distribution with a minimum time of 8 minutes and a maximum time of 31 minutes.
         </p>
-    </statement>
+    </introduction>
     <task>
         <p>Calculate the value of <m> f(x) </m>. </p>
         <answer>
