@@ -97,7 +97,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.1",
   "title": "Introduction to Probability",
-  "body": " Introduction to Probability   Decision makers, including those in the business world, are greatly influenced by uncertainty. Probability provides a valuable tool in quantifying uncertainty, leading to greater success in decision-making.     A probability is a numerical value between 0 and 1 that measures the chance, or likelihood, that a specific event will occur.    Before jumping into some examples, let's discuss some key terms for our study of probability concepts.       An experiment results in a specific outcome e.g., a coin flip (the experiment) results in a heads or a tails (the outcome).    An event is a collection of outcome(s) of an experiment, e.g., a die roll results in an odd number . More specifically, a simple event is an event with a single outcome.    The sample space for an experiment consists of all possible outcomes e.g., .    The outcomes must be collectively exhaustive and mutually exclusive .     Collectively exhaustive means every simple event is included     Mutually exclusive means events that cannot occur at the same time.            A single die is rolled.   Define the sample space.       Define the event an odd number is rolled . What is the probability of this event?        A pair of dice are rolled.   Define the sample space. (How many total possible outcomes are there?)    There are 36 total possible outcomes.   Define the event doubles are rolled . What is the probability of this event?        Define the event the sum of the dice is 10 . What is the probability of this event?         (Donnelly 4.8)  The table below shows the frequencies of executives' salary ranges at a particular organization.    Salary Range  Frequency    Under $60,000  2    $60,000 to under $70,000  5    $70,000 to under $80,000  7    $80,000 to under $90,000  4    $90,000 to under $100,000  6    $100,000 or more  ?    Total:  26       How many executives at this organization earned $100,000 or more per year?       What is the probability of randomly selecting an executive who earned $100,000 or more per year?       What is the probability of randomly selecting an executive who earned $60,000 or more per year?       What is the probability of randomly selecting an executive who earned between $70,000 and $90,000 per year?            Basic Properties of Probability:   If , then event is certain to occur.    If , then event is certain to NOT occur.    The probability of any event must range between 0 and 1 (inclusive).    The sum of all probabilities of simple events in a sample space is equal to 1.        The complement , (or ), is defined as all outcomes in the sample space that are not in .      The complement rule:      Draw one card from a standard deck of 52 playing cards. (Here is a link to a description of a deck of cards: )   How many total outcomes are in the sample space for this experiment?       What is the probability of drawing a face card ?       What is the probability of drawing a card divisible by 3 ?       What is the probability of drawing a card NOT divisible by 3 ?       What is the probability of drawing a card that is a face card and a card divisible by 3 ?   0   What is the probability of drawing a card that is a red card or a black card ?   1        A contingency table shows the number of occurrences of events that are classified by two categorical variables.     Marginal probability is a simple probability found in the margins, or row and column totals, of a contingency table.        (Donnelly 4.19)  A local car dealership currently has 36 used GM, Ford, and Toyota vehicles on the lot that can be classified as either cars or trucks. The following data are available:   Twenty-six vehicles are cars    Eleven vehicles are GMs    Fifteen vehicles are Fords    Three vehicles are both Toyotas and trucks    Fourteen vehicles are both Toyotas and trucks      ....(Figure out how to make fillable table......) Create a contingency table that summarizes the data.   What is the probability that a randomly selected vehicle is a Toyota?       What is the probability that a randomly selected vehicle is a truck?         The intersection of Events A and B represents the number of times when events A and B occur at the same time   Notation:     The union of Events A and B represents the number of times when event A or event B or both occur.   Notation:         Union and Intersection (Made in GeoGebra by Vaibhav Zade)       The joint probability of two events is the probability of the intersection of two events.     The addition rule for probabilities is used to calculate the probability of the union of events. It depends on knowing whether or not two events are mutually exclusive.     For mutually exclusive events,     For events that are not mutually exclusive,        Use the contingency table from the previous exercise... (insert!!!!!) to answer the following questions.   What is the probability that a randomly selected vehicle is either a Ford or a car?       What is the probability that a randomly selected vehicle is a GM truck?              Conditional probability is the probability that event A will occur given that event B has occurred.  This probability is denoted by , and is the probability of A given B .     (Made in GeoGebra by Virginia Keith)     Which of the following is the formula used to calculate ?                                 Let's look back at the contingency table from previous exercises..... (!!!insert!!!!)   What is the probability that a randomly selected vehicle is a Toyota, given it is a car?       What is the probability that a randomly selected vehicle is a truck, given it is a Ford?       "
+  "body": " Introduction to Probability   Decision makers, including those in the business world, are greatly influenced by uncertainty. Probability provides a valuable tool in quantifying uncertainty, leading to greater success in decision-making.     A probability is a numerical value between 0 and 1 that measures the chance, or likelihood, that a specific event will occur.    Before jumping into some examples, let's discuss some key terms for our study of probability concepts.       An experiment results in a specific outcome e.g., a coin flip (the experiment) results in a heads or a tails (the outcome).    An event is a collection of outcome(s) of an experiment, e.g., a die roll results in an odd number . More specifically, a simple event is an event with a single outcome.    The sample space for an experiment consists of all possible outcomes e.g., .    The outcomes must be collectively exhaustive and mutually exclusive .     Collectively exhaustive means every simple event is included     Mutually exclusive means events that cannot occur at the same time.            A single die is rolled.   Define the sample space.       Define the event an odd number is rolled . What is the probability of this event?        A pair of dice are rolled.   Define the sample space. (How many total possible outcomes are there?)    There are 36 total possible outcomes.   Define the event doubles are rolled . What is the probability of this event?        Define the event the sum of the dice is 10 . What is the probability of this event?         (Donnelly 4.8)  The table below shows the frequencies of executives' salary ranges at a particular organization.    Salary Range  Frequency    Under $60,000  2    $60,000 to under $70,000  5    $70,000 to under $80,000  7    $80,000 to under $90,000  4    $90,000 to under $100,000  6    $100,000 or more  ?    Total:  26       How many executives at this organization earned $100,000 or more per year?       What is the probability of randomly selecting an executive who earned $100,000 or more per year?       What is the probability of randomly selecting an executive who earned $60,000 or more per year?       What is the probability of randomly selecting an executive who earned between $70,000 and $90,000 per year?            Basic Properties of Probability:   If , then event is certain to occur.    If , then event is certain to NOT occur.    The probability of any event must range between 0 and 1 (inclusive).    The sum of all probabilities of simple events in a sample space is equal to 1.        The complement , (or ), is defined as all outcomes in the sample space that are not in .      The complement rule:      Draw one card from a standard deck of 52 playing cards. (Here is a link to a description of a deck of cards: )   How many total outcomes are in the sample space for this experiment?       What is the probability of drawing a face card ?       What is the probability of drawing a card divisible by 3 ?       What is the probability of drawing a card NOT divisible by 3 ?       What is the probability of drawing a card that is a face card and a card divisible by 3 ?   0   What is the probability of drawing a card that is a red card or a black card ?   1        A contingency table shows the number of occurrences of events that are classified by two categorical variables.     Marginal probability is a simple probability found in the margins, or row and column totals, of a contingency table.        (Donnelly 4.19)  A local car dealership currently has 36 used GM, Ford, and Toyota vehicles on the lot that can be classified as either cars or trucks. The following data are available:   Twenty-six vehicles are cars    Eleven vehicles are GMs    Fifteen vehicles are Fords    Three vehicles are both Toyotas and trucks    Fourteen vehicles are both Toyotas and trucks      ....(Figure out how to make fillable table......) Create a contingency table that summarizes the data.   What is the probability that a randomly selected vehicle is a Toyota?       What is the probability that a randomly selected vehicle is a truck?         The intersection of Events A and B represents the number of times when events A and B occur at the same time   Notation:     The union of Events A and B represents the number of times when event A or event B or both occur.   Notation:         Union and Intersection (Made in GeoGebra by Vaibhav Zade)       The joint probability of two events is the probability of the intersection of two events.     The addition rule for probabilities is used to calculate the probability of the union of events. It depends on knowing whether or not two events are mutually exclusive.     For mutually exclusive events,     For events that are not mutually exclusive,        Use the contingency table from the previous exercise... (insert!!!!!) to answer the following questions.   What is the probability that a randomly selected vehicle is either a Ford or a car?       What is the probability that a randomly selected vehicle is a GM truck?              Conditional probability is the probability that event A will occur given that event B has occurred.  This probability is denoted by , and is the probability of A given B .     (Made in GeoGebra by Virginia Keith)     Which of the following is the formula used to calculate ?                                      Prior probability: the probability that an event will occur as determined without any additional information that could affect it     Posterior probability: a revision of a prior probability using additional information        Let's look back at the contingency table from previous exercises..... (!!!insert!!!!)   What is the probability that a randomly selected vehicle is a Toyota, given it is a car?       What is the probability that a randomly selected vehicle is a truck, given it is a Ford?       "
 },
 {
   "id": "def-probability",
@@ -253,11 +253,20 @@ var ptx_lunr_docs = [
   "body": " Which of the following is the formula used to calculate ?                               "
 },
 {
-  "id": "sec-Intro-to-Probability-24",
+  "id": "def-prior-posterior-probability",
   "level": "2",
-  "url": "sec-Intro-to-Probability.html#sec-Intro-to-Probability-24",
-  "type": "Exercise",
+  "url": "sec-Intro-to-Probability.html#def-prior-posterior-probability",
+  "type": "Definition",
   "number": "3.1.20",
+  "title": "",
+  "body": "      Prior probability: the probability that an event will occur as determined without any additional information that could affect it     Posterior probability: a revision of a prior probability using additional information      "
+},
+{
+  "id": "sec-Intro-to-Probability-25",
+  "level": "2",
+  "url": "sec-Intro-to-Probability.html#sec-Intro-to-Probability-25",
+  "type": "Exercise",
+  "number": "3.1.21",
   "title": "",
   "body": " Let's look back at the contingency table from previous exercises..... (!!!insert!!!!)   What is the probability that a randomly selected vehicle is a Toyota, given it is a car?       What is the probability that a randomly selected vehicle is a truck, given it is a Ford?      "
 },
@@ -667,209 +676,11 @@ var ptx_lunr_docs = [
   "body": " Suppose a bank gives out a number of loans. Each of the loans has a chance of defaulting. Suppose that whether or not each loan default is independent of the other loans.  Find the following:   What is the probability that loans default?    .   What is the probability that loans default?    .   What is the probability that less than loans default?    .   What is the probability that between and (inclusive) loans default?    .  "
 },
 {
-  "id": "sec-correlation",
-  "level": "1",
-  "url": "sec-correlation.html",
-  "type": "Section",
-  "number": "6.1",
-  "title": "Correlation Analysis",
-  "body": " Correlation Analysis  Recall that a scatterplot is a graph used to explore a relationship between two variables. The two variables can be defined further as the independent and dependent variables.   Scatter Plot (Made in GeoGebra by Mark Beckwith)         An independent variable explains the variation in the dependent variable    A dependent variable is explained by one or more independent variables        Correlation analysis provides a way to measure the strength and direction of the linear relationship between the two variables (the aforementioned independent and dependent variables). This is done by computing the sample correlation coefficient , .  The range of the correlation coefficient is .   A positive value indicates that as increases, also increases.    A negative value indicates that as increases, decreases.     Recall that we used the Excel formula, CORREL, to calculate this number in a previous chapter. Now we improve on that skill by learning how to use a hypothesis test to assess the strength of the linear relationship described by .  The population correlation coefficient, , refers to the correlation between all values of two variables in a population. A value of means that there is no linear relationship between and . We don't know the value of so we use the sample correlation coefficient to test whether we have enough evidence from the sample to conclude that there is a linear relationship between the variables in the population. The two hypotheses for this hypothesis test are:     The test statistic uses the Student's -distribution with formula:     Degrees of freedom here are....     The housing market in the United States is generally affected by economic conditions and interest rates, but also by the time of the year. More people usually buy and sell homes in the spring summer months. We want to see if there is a strong correlation between new home listings and temperature. The Excel file below includes the number of new housing listings in Colorado, as well as temperature and precipitation at Denver International Airport (DEN).    Determine the sample correlation coefficient between the number of new listings and the precipitation.   Determine the sample correlation coefficient between the number of new listings and the maximum temperature.   Using , test if the population correlation coefficient between the number of new listings and the maximum temperature is different from zero. What conclusions can you draw?   "
-},
-{
-  "id": "figure-geogebra-scatter",
-  "level": "2",
-  "url": "sec-correlation.html#figure-geogebra-scatter",
-  "type": "Figure",
-  "number": "6.1.1",
-  "title": "",
-  "body": " Scatter Plot (Made in GeoGebra by Mark Beckwith)   "
-},
-{
-  "id": "sec-correlation-4",
-  "level": "2",
-  "url": "sec-correlation.html#sec-correlation-4",
-  "type": "Definition",
-  "number": "6.1.2",
-  "title": "",
-  "body": "     An independent variable explains the variation in the dependent variable    A dependent variable is explained by one or more independent variables      "
-},
-{
-  "id": "housingmarket",
-  "level": "2",
-  "url": "sec-correlation.html#housingmarket",
-  "type": "Exercise",
-  "number": "6.1.3",
-  "title": "",
-  "body": " The housing market in the United States is generally affected by economic conditions and interest rates, but also by the time of the year. More people usually buy and sell homes in the spring summer months. We want to see if there is a strong correlation between new home listings and temperature. The Excel file below includes the number of new housing listings in Colorado, as well as temperature and precipitation at Denver International Airport (DEN).    Determine the sample correlation coefficient between the number of new listings and the precipitation.   Determine the sample correlation coefficient between the number of new listings and the maximum temperature.   Using , test if the population correlation coefficient between the number of new listings and the maximum temperature is different from zero. What conclusions can you draw?  "
-},
-{
-  "id": "sec-developing-regression-model",
-  "level": "1",
-  "url": "sec-developing-regression-model.html",
-  "type": "Section",
-  "number": "6.2",
-  "title": "Developing a Regression Model",
-  "body": " Developing a Regression Model  Now we are going to learn techniques to create models that fit our data. Regression analysis is the modeling procedure that we will study. We will discuss how to perform the calculations in the formulas involved in creating and assessing regression models. However, in most cases we will rely on the Regression tool in the Data Analysis tab of Excel.   Regression Example powered by Desmos     Regression Line with Error powered by Desmos      Regression analysis enables us to describe a straight line that best fits the data.   In simple regression analysis, there is one independent variable.    In multiple regression analysis, there is more than one independent variable.     The formula for the linear regression model created with sample data is where   The are called regression coefficients . The simple regression model is often just called the regression line .     (Donnelly 14.56)  As a measure of productivity, Verizon Wireless records the number of customers each of its retail employees activates weekly. An activation is defined as either a new customer signing a cell phone contract or an existing customer renewing a contract. The data table found in this lesson's Excel file shows the number of weekly activations for eight randomly selected employees along with their job-satisfaction levels rated on a scale of ( Most satisfied).    Construct a scatter plot for these data. Let satisfaction be the independent variable and let activations be the dependent variable.   Determine the equation of the regression line for the data.   Interpret the value of the slope in the equation.   Predict the number of activations for an employee with a satisfaction level of 7.4.   Calculate the correlation coefficient for this sample.   Using , test to determine if the population correlation coefficient is not equal to zero. What conclusions can be made based on these results?    (Donnelly 15.6)  A hospital would like to develop a regression model to predict the total hospital bill for a patient based on the age of the patient ( ), the patient's length of stay ( ), and the number of days in the hospital's intensive care unit (ICU) ( ). Data for these variables can be found in the table in the Excel file below.    Construct a regression model using all three independent variables.   Interpret the meaning of the regression coefficients.   Predict the average hospital bill for a 76-year-old person hospitalized for 5 days with 3 days spent in the ICU.     The regression line will not pass through each of the data points. Hence, there is error between the true value of from the data and the value, , predicted by the regression line. This difference is called the residual , .     Regression Line with Error powered by Desmos     Let's look at the regression model below and think about the actual versus the predicted -values.   Regression Line Error powered by Desmos     For , what is the corresponding -value, and what is ?   For , what is ?     The mathematical procedure that is used to find the regression line is the least squares method . The least squares method aims to minimize the total squared error between the values of and . This sum is also called the sum of squares error (SSE) , and is definted by the formula Minimizing the SSE results in the best fitting line through the data points.    Least Squares Visualization (Made in GeoGebra by Ivan Gatewood)       There are two other sum of squares related to our data points:   the total sum of squares (SST):     the sum of squares regression (SSR):    (where the average value of the dependent variable from the sample)     All of the sum of squares are related:    The total sum of squares (SST) , measures the total variation in the dependent variable.    The sum of squares regression (SSR) , measures the amount of variation in the dependent variable that is explained by the independent variable(s).    The ratio of these two numbers, , is called the coefficient of determination . It measures the percentage of the total variation of the dependent variable that is explained by the independent variable(s) in the model.       Let's go back to the Verizon example from earlier.  As a measure of productivity, Verizon Wireless records the number of customers each of its retail employees activates weekly. An activation is defined as either a new customer signing a cell phone contract or an existing customer renewing a contract. The data table found in this lesson's Excel file shows the number of weekly activations for eight randomly selected employees along with their job-satisfaction levels rated on a scale of ( Most satisfied).    Identify the SST. (Hint: Use the Regression output from Excel.)   Partition the SST into the SSE and the SSR.   Calculate the coefficient of determination, .   Interpret the coefficient of determination.   "
-},
-{
-  "id": "sec-developing-regression-model-3",
-  "level": "2",
-  "url": "sec-developing-regression-model.html#sec-developing-regression-model-3",
-  "type": "Figure",
-  "number": "6.2.1",
-  "title": "",
-  "body": " Regression Example powered by Desmos   "
-},
-{
-  "id": "sec-developing-regression-model-4",
-  "level": "2",
-  "url": "sec-developing-regression-model.html#sec-developing-regression-model-4",
-  "type": "Figure",
-  "number": "6.2.2",
-  "title": "",
-  "body": " Regression Line with Error powered by Desmos   "
-},
-{
-  "id": "def-regression",
-  "level": "2",
-  "url": "sec-developing-regression-model.html#def-regression",
-  "type": "Definition",
-  "number": "6.2.3",
-  "title": "",
-  "body": "  Regression analysis enables us to describe a straight line that best fits the data.   In simple regression analysis, there is one independent variable.    In multiple regression analysis, there is more than one independent variable.     The formula for the linear regression model created with sample data is where   The are called regression coefficients . The simple regression model is often just called the regression line .   "
-},
-{
-  "id": "sec-developing-regression-model-6",
-  "level": "2",
-  "url": "sec-developing-regression-model.html#sec-developing-regression-model-6",
-  "type": "Exercise",
-  "number": "6.2.4",
-  "title": "",
-  "body": " (Donnelly 14.56)  As a measure of productivity, Verizon Wireless records the number of customers each of its retail employees activates weekly. An activation is defined as either a new customer signing a cell phone contract or an existing customer renewing a contract. The data table found in this lesson's Excel file shows the number of weekly activations for eight randomly selected employees along with their job-satisfaction levels rated on a scale of ( Most satisfied).    Construct a scatter plot for these data. Let satisfaction be the independent variable and let activations be the dependent variable.   Determine the equation of the regression line for the data.   Interpret the value of the slope in the equation.   Predict the number of activations for an employee with a satisfaction level of 7.4.   Calculate the correlation coefficient for this sample.   Using , test to determine if the population correlation coefficient is not equal to zero. What conclusions can be made based on these results?  "
-},
-{
-  "id": "sec-developing-regression-model-7",
-  "level": "2",
-  "url": "sec-developing-regression-model.html#sec-developing-regression-model-7",
-  "type": "Exercise",
-  "number": "6.2.5",
-  "title": "",
-  "body": " (Donnelly 15.6)  A hospital would like to develop a regression model to predict the total hospital bill for a patient based on the age of the patient ( ), the patient's length of stay ( ), and the number of days in the hospital's intensive care unit (ICU) ( ). Data for these variables can be found in the table in the Excel file below.    Construct a regression model using all three independent variables.   Interpret the meaning of the regression coefficients.   Predict the average hospital bill for a 76-year-old person hospitalized for 5 days with 3 days spent in the ICU.  "
-},
-{
-  "id": "def-residual",
-  "level": "2",
-  "url": "sec-developing-regression-model.html#def-residual",
-  "type": "Definition",
-  "number": "6.2.6",
-  "title": "",
-  "body": "  The regression line will not pass through each of the data points. Hence, there is error between the true value of from the data and the value, , predicted by the regression line. This difference is called the residual , .   "
-},
-{
-  "id": "sec-developing-regression-model-9",
-  "level": "2",
-  "url": "sec-developing-regression-model.html#sec-developing-regression-model-9",
-  "type": "Figure",
-  "number": "6.2.7",
-  "title": "",
-  "body": " Regression Line with Error powered by Desmos   "
-},
-{
-  "id": "sec-developing-regression-model-10",
-  "level": "2",
-  "url": "sec-developing-regression-model.html#sec-developing-regression-model-10",
-  "type": "Exercise",
-  "number": "6.2.8",
-  "title": "",
-  "body": " Let's look at the regression model below and think about the actual versus the predicted -values.   Regression Line Error powered by Desmos     For , what is the corresponding -value, and what is ?   For , what is ?  "
-},
-{
-  "id": "def-least-squares",
-  "level": "2",
-  "url": "sec-developing-regression-model.html#def-least-squares",
-  "type": "Definition",
-  "number": "6.2.10",
-  "title": "",
-  "body": "  The mathematical procedure that is used to find the regression line is the least squares method . The least squares method aims to minimize the total squared error between the values of and . This sum is also called the sum of squares error (SSE) , and is definted by the formula Minimizing the SSE results in the best fitting line through the data points.    Least Squares Visualization (Made in GeoGebra by Ivan Gatewood)    "
-},
-{
-  "id": "def-SST-and-SSR",
-  "level": "2",
-  "url": "sec-developing-regression-model.html#def-SST-and-SSR",
-  "type": "Definition",
-  "number": "6.2.12",
-  "title": "",
-  "body": "  There are two other sum of squares related to our data points:   the total sum of squares (SST):     the sum of squares regression (SSR):    (where the average value of the dependent variable from the sample)   "
-},
-{
-  "id": "sec-developing-regression-model-13",
-  "level": "2",
-  "url": "sec-developing-regression-model.html#sec-developing-regression-model-13",
-  "type": "Definition",
-  "number": "6.2.13",
-  "title": "",
-  "body": " All of the sum of squares are related:    The total sum of squares (SST) , measures the total variation in the dependent variable.    The sum of squares regression (SSR) , measures the amount of variation in the dependent variable that is explained by the independent variable(s).    The ratio of these two numbers, , is called the coefficient of determination . It measures the percentage of the total variation of the dependent variable that is explained by the independent variable(s) in the model.     "
-},
-{
-  "id": "sec-developing-regression-model-14",
-  "level": "2",
-  "url": "sec-developing-regression-model.html#sec-developing-regression-model-14",
-  "type": "Exercise",
-  "number": "6.2.14",
-  "title": "",
-  "body": " Let's go back to the Verizon example from earlier.  As a measure of productivity, Verizon Wireless records the number of customers each of its retail employees activates weekly. An activation is defined as either a new customer signing a cell phone contract or an existing customer renewing a contract. The data table found in this lesson's Excel file shows the number of weekly activations for eight randomly selected employees along with their job-satisfaction levels rated on a scale of ( Most satisfied).    Identify the SST. (Hint: Use the Regression output from Excel.)   Partition the SST into the SSE and the SSR.   Calculate the coefficient of determination, .   Interpret the coefficient of determination.  "
-},
-{
-  "id": "sec-using-regression",
-  "level": "1",
-  "url": "sec-using-regression.html",
-  "type": "Section",
-  "number": "6.3",
-  "title": "Using Regression to Make a Prediction",
-  "body": " Using Regression to Make a Prediction  We can use our regression model to make predictions based on given values of the independent variables -- just plug the given values into the respective independent variable of the regression model. But how reliable is this prediction? We only have sample data so the prediction isn't perfect. Similar to what we did in a previous chapter, we will construct a confidence interval to aid in describing the accuracy of our predictions.  There are a number of confidence intervals that we can create based on our regression model that provide insight into the validity of the model. The only one we will focus on is related to the population slopes: It turns out we will likely not need this formula, however, since the Regression tool in Excel will do most of the work for us.   Let's look back at the hospital example from earlier.  A hospital would like to develop a regression model to predict the total hospital bill for a patient based on the age of the patient ( ), the patient's length of stay ( ), and the number of days in the hospital's intensive care unit (ICU) ( ). Data for these variables can be found in the table in the Excel file below.   Construct and interpret the confidence interval for the regression coefficient for each of the independent variables in the model.   "
-},
-{
-  "id": "sec-using-regression-4",
-  "level": "2",
-  "url": "sec-using-regression.html#sec-using-regression-4",
-  "type": "Exercise",
-  "number": "6.3.1",
-  "title": "",
-  "body": " Let's look back at the hospital example from earlier.  A hospital would like to develop a regression model to predict the total hospital bill for a patient based on the age of the patient ( ), the patient's length of stay ( ), and the number of days in the hospital's intensive care unit (ICU) ( ). Data for these variables can be found in the table in the Excel file below.   Construct and interpret the confidence interval for the regression coefficient for each of the independent variables in the model.  "
-},
-{
-  "id": "sec-Diamonds",
-  "level": "1",
-  "url": "sec-Diamonds.html",
-  "type": "Section",
-  "number": "6.4",
-  "title": "Diamonds Modeling",
-  "body": " Diamonds Modeling  (Background on diamonds was provided in part by research done at https:\/\/www.brilliance.com\/education\/diamonds\/depth-table)  When a gemologist determines the value of a diamond, he or she considers a number of different factors. These factors are known as the 4C's (carat, color, clarity, and cut). How large is the diamond? The size (really the weight) of the diamond is measured in carats. Is it colorless or does it have a slight hue of color? Are there any visible inclusions in the diamond (this affects the clarity)?  Was the stone cut well? This is described by both the table and the depth. They both helps to define the physical shape of a diamond and contribute to its sparkle. When these two features are proportioned just right, a diamond of any size looks spectacular.  Every diamond has a flat, square-shaped facet on its top called the table. It plays a critical role in a diamond’s appearance. The table refracts rays of light as they pass, directing them to the facets that make the diamond look so sparkly. The physical size of the table facet naturally varies depending on the overall size of the diamond. Jewelers measure the table percentage when grading a diamond’s cut. Table percentage is calculated by dividing the width of the table by the overall width of the diamond. The ideal table percentage will vary based on the shape of the diamond.  The depth of a diamond might also be called the “height”: it is the distance from the table to the culet (the pointed tip) of the diamond. Like with a diamond’s table, jewelers grade a diamond’s depth based on its depth percentage. Depth percentage is the diamond’s depth divided by the width of the diamond. This percentage dictates the overall proportions of the diamond, which in turn directly impact how light reflects off the facets in the stone.   Here is the file we are going to use for this problem:   The price of diamonds is not just determined by size, but by multiple characteristics. For simplicity, in this example we will start with size. Create the scatterplot for the two variables Price and Carat .     Determine the least squares line. Interpret the slope coefficient.    According to your least squares line, what would you expect the price to be for a 5 carat diamond?    Compute the coefficient of correlation. What does it tell you about the relationship between the size of a diamond and the price?       We're going to use the same file we used in the previous problem:   Now we will take into consideration the other characteristics of diamonds that determine price: carat, color, clarity, and cut. Let's redo the regression and create a model that does a better job than the one in the previous example that only included a single predictor variable.     Create the regression model with all 5 variables that are provided: color, depth (in percentage), clarity, table (in percentage), and carat.    Interpret each of the coefficients in the model.    Do all 5 of the predictor variables belong in the model? Why or why not?    Is the overall model valid? Why or why not?    What is the coefficient of determination? What does it tell you about the model?    Remove variables one by one and reassess the model. What is the best model to predict the price of a diamond? Why?      "
-},
-{
-  "id": "sec-Diamonds-7",
-  "level": "2",
-  "url": "sec-Diamonds.html#sec-Diamonds-7",
-  "type": "Exercise",
-  "number": "6.4.1",
-  "title": "",
-  "body": " Here is the file we are going to use for this problem:   The price of diamonds is not just determined by size, but by multiple characteristics. For simplicity, in this example we will start with size. Create the scatterplot for the two variables Price and Carat .     Determine the least squares line. Interpret the slope coefficient.    According to your least squares line, what would you expect the price to be for a 5 carat diamond?    Compute the coefficient of correlation. What does it tell you about the relationship between the size of a diamond and the price?     "
-},
-{
-  "id": "sec-Diamonds-8",
-  "level": "2",
-  "url": "sec-Diamonds.html#sec-Diamonds-8",
-  "type": "Exercise",
-  "number": "6.4.2",
-  "title": "",
-  "body": " We're going to use the same file we used in the previous problem:   Now we will take into consideration the other characteristics of diamonds that determine price: carat, color, clarity, and cut. Let's redo the regression and create a model that does a better job than the one in the previous example that only included a single predictor variable.     Create the regression model with all 5 variables that are provided: color, depth (in percentage), clarity, table (in percentage), and carat.    Interpret each of the coefficients in the model.    Do all 5 of the predictor variables belong in the model? Why or why not?    Is the overall model valid? Why or why not?    What is the coefficient of determination? What does it tell you about the model?    Remove variables one by one and reassess the model. What is the best model to predict the price of a diamond? Why?     "
-},
-{
   "id": "sec-normal-distribution",
   "level": "1",
   "url": "sec-normal-distribution.html",
   "type": "Section",
-  "number": "7.1",
+  "number": "6.1",
   "title": "The Normal Distribution",
   "body": " The Normal Distribution   The mathematical expression that describes the shape of the normal probability distribution is called the normal probability density function: Despite the complexity of this function, there are only two parameters that completely deter- mine the shape of the distribution: the mean, , and the standard deviation, . Let’s take a closer look at how they impact the distribution. (Don’t worry---we won’t be using this formula to compute probabilities. We have other tools!)     How does changing the standard deviation ( ) and the mean ( ) change the curve?  Graph of Normal Distribution powered by Desmos           controls the spread of the curve. Larger results in a flatter, more spread out curve     controls the location of the center. Larger shifts the hill of the curve to the right        Characteristics of the Normal Probability Distribution:     The distribution is bell-shaped and symmetric around the mean.    Because the shape is symmetrical, the mean and median are equal and located at the center of the distribution.    Random variables around the mean, where the curve is the tallest have a higher probability of occurring than values toward the end of the distribution.    The total area under the curve is . Since the distribution is symmetric, the area to the left of the mean equals as does the area to the right of the mean    No matter how far in either direction the distribution curve extends, it never touches the horizontal axis -- but it gets increasingly closer.       Examples of Normal Probability Distributions:      The Standard Normal Distribution:  Recall that the -score of a value, , describes the number of standard deviations that the value is from the mean of its distribution:    Values of that are less than the mean have _______ -scores     postive      negative      zero      Values of that are more than the mean have _______ -scores     positive      negative      zero      The -score for the mean equals ________                                A coffee shop wants to understand the distribution of amounts that their customers are spending per order. They find that the average amount a customer spends per order is , and the standard deviation is . If we assume that the amounts spent per order are normally distributed, and Rey comes in and spends , what is the -score for Rey's order?        When the original random variable, , follows a normal distribution, -scores also follow a normal distribution with , . It is called the standard normal distribution .     Graph of Standard Normal Distribution powered by Desmos      Calculating Probabilities for Normal Distributions:  The standard normal distribution allows us to calculate probabilities for any normal distribution since we can standardize it with -scores. The tables at this link ( Standard Normal Table ) provide you with the cumulative area to the LEFT of the -score.  We can also use Excel to calculate the cumulative area to the left of the -score by typing   ( Note: We can type 1 instead of TRUE in this formula in Excel.)     Find the probability for a standard normal distribution    In Excel:      So how do we use the table or the Excel formula to find any probability for a normal distribution?  There are 3 basic types of problems:   To the left of any -score: Look up the -score in the table (or calculate it in Excel) and use the area given.    To the right of any -score: Look up the -score in the table (or calculate it in Excel) subtract the area from 1.    Between any two -scores: Look up both -scores in the table (or calculate them in Excel) and subtract the smaller area from the larger area.       Find the following probabilities for a standard normal distribution:       In Excel:         In Excel:         In Excel:       Normal Distribution Probability Calculator (Made in GeoGebra by Andreas Lindner)     We already saw an Excel command that will allow us to find a probability associated with a standard normal distribution. There is also an Excel command that allows us to find a probability associated with a general normal distribution, and in this case, we will need to specify the mean and standard deviation of the distribution. (These first two commands both apply to situations where the goal is to compute a probability associated with a data value.)    : applies to problems involving a normal distribution with a specified mean and standard deviation     : applies to problems involving the standard normal distribution ( )   (As we've seen before, cumulative .)   Suppose the average height of 5 year old girls is normally distributed with mean cm and standard deviation cm. Find the following:   Find the probability that a randomly selected 5 year old girl's height is is at least cm.    .   Find the probability that a randomly selected 5 year old girl's height is between and cm.    .   Normal Distribution Matching Problem  Match each probability with the Excel formula we would use to calculate it.     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is between 120 and 180?    NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)      A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is more than 40?    1-NORM.DIST(40,135,22,1)     Normal Distribution Matching Problem  Match each probability with the Excel formula we would use to calculate it.     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is less than 90?    NORM.DIST(90,135,22,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(2.35,TRUE)     Normal Distribution Matching Problem  Match each probability with the Excel formula we would use to calculate it.     Find the probability for a standard normal distribution:     1-NORM.S.DIST(2.35,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.76,1)- NORM.S.DIST(-0.86,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.5,TRUE)      Find the probability for a standard normal distribution:     1-NORM.S.DIST(1.5,TRUE)         Images for Exercise ???    (A)       (B)       (C)        Normal Distribution Matching Problem  Problem instructions.          NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)     image   1-NORM.DIST(40,135,22,1)     image   NORM.DIST(90,135,22,1)     image   Find the probability for a standard normal distribution:      Normal Distribution Matching Problem  Problem instructions.    image   Find the probability for a standard normal distribution:      image   Find the probability for a standard normal distribution:      image   NORM.S.DIST(1.5,TRUE)      image    1-NORM.S.DIST(1.5,TRUE)      Let be the standard normal variable. Find the following:    .    .    .    .    such that .    .    such that .    .    Finding or if we have information about a probability:  What if we want to know the specific that satisfies a given probability? Then we can work backward using the tables ( Standard Normal Table ) and use the -score formula in reverse. If the exact probability cannot be found in the table, then we can use the closest values.  The Excel formulas that apply to this situation are similar to the ones we saw earlier, replacing .DIST with .INV:   NORM.INV(probability, mean, standard deviation) applies to normal distributions with a specified mean and standard deviation    NORM.S.INV(probability) is used for standard normal distributions      A random variable follows the normal probability distribution with a mean of 50 and a standard deviation of 20.   What value of represents the 75th percentile?       Find the value of so that probability lies below it.       Find the value of that represents the highest of all values        Suppose the retirement age of professional athletes in a certain league is normally distributed with mean years and standard deviation years. Find the following:   Find the probability that a randomly selected athlete's retirement age is is at least years.    .   Find the probability that a randomly selected athlete's retirement age is between and years.    .   Find such that the probability that a randomly selected athlete's retirement age is is at most years is .   If then years.   Find such that the probability that a randomly selected athlete's retirement age is between years and years is .   If then years.    "
 },
@@ -878,7 +689,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#sec-normal-distribution-3",
   "type": "Question",
-  "number": "7.1.1",
+  "number": "6.1.1",
   "title": "",
   "body": "  How does changing the standard deviation ( ) and the mean ( ) change the curve?  Graph of Normal Distribution powered by Desmos           controls the spread of the curve. Larger results in a flatter, more spread out curve     controls the location of the center. Larger shifts the hill of the curve to the right      "
 },
@@ -887,7 +698,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#multiple choice1",
   "type": "Exercise",
-  "number": "7.1.3",
+  "number": "6.1.3",
   "title": "",
   "body": " Values of that are less than the mean have _______ -scores     postive      negative      zero    "
 },
@@ -896,7 +707,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#multiple choice2",
   "type": "Exercise",
-  "number": "7.1.4",
+  "number": "6.1.4",
   "title": "",
   "body": " Values of that are more than the mean have _______ -scores     positive      negative      zero    "
 },
@@ -905,7 +716,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#multiple choice3",
   "type": "Exercise",
-  "number": "7.1.5",
+  "number": "6.1.5",
   "title": "",
   "body": " The -score for the mean equals ________                               "
 },
@@ -914,7 +725,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#subsection-standard-normal-distn-6",
   "type": "Exercise",
-  "number": "7.1.6",
+  "number": "6.1.6",
   "title": "",
   "body": "A coffee shop wants to understand the distribution of amounts that their customers are spending per order. They find that the average amount a customer spends per order is , and the standard deviation is . If we assume that the amounts spent per order are normally distributed, and Rey comes in and spends , what is the -score for Rey's order?     "
 },
@@ -923,7 +734,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#def-standard-normal",
   "type": "Definition",
-  "number": "7.1.7",
+  "number": "6.1.7",
   "title": "",
   "body": "  When the original random variable, , follows a normal distribution, -scores also follow a normal distribution with , . It is called the standard normal distribution .   "
 },
@@ -932,7 +743,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#subsection-standard-normal-distn-8",
   "type": "Figure",
-  "number": "7.1.8",
+  "number": "6.1.8",
   "title": "",
   "body": " Graph of Standard Normal Distribution powered by Desmos   "
 },
@@ -941,7 +752,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#subsection-calculating-probabilities-normal-5-1",
   "type": "Example",
-  "number": "7.1.9",
+  "number": "6.1.9",
   "title": "",
   "body": "  Find the probability for a standard normal distribution    In Excel:    "
 },
@@ -950,7 +761,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#subsection-calculating-probabilities-normal-8",
   "type": "Example",
-  "number": "7.1.10",
+  "number": "6.1.10",
   "title": "",
   "body": "  Find the following probabilities for a standard normal distribution:       In Excel:         In Excel:         In Excel:     "
 },
@@ -959,7 +770,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#figure-geogebra-normal-probability",
   "type": "Figure",
-  "number": "7.1.11",
+  "number": "6.1.11",
   "title": "",
   "body": " Normal Distribution Probability Calculator (Made in GeoGebra by Andreas Lindner)   "
 },
@@ -968,7 +779,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#sec-normal-distribution-9",
   "type": "Exercise",
-  "number": "7.1.12",
+  "number": "6.1.12",
   "title": "",
   "body": " Suppose the average height of 5 year old girls is normally distributed with mean cm and standard deviation cm. Find the following:   Find the probability that a randomly selected 5 year old girl's height is is at least cm.    .   Find the probability that a randomly selected 5 year old girl's height is between and cm.    .  "
 },
@@ -977,7 +788,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#matching1",
   "type": "Exercise",
-  "number": "7.1.13",
+  "number": "6.1.13",
   "title": "Normal Distribution Matching Problem.",
   "body": "Normal Distribution Matching Problem  Match each probability with the Excel formula we would use to calculate it.     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is between 120 and 180?    NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)      A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is more than 40?    1-NORM.DIST(40,135,22,1)    "
 },
@@ -986,7 +797,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#matching2",
   "type": "Exercise",
-  "number": "7.1.14",
+  "number": "6.1.14",
   "title": "Normal Distribution Matching Problem.",
   "body": "Normal Distribution Matching Problem  Match each probability with the Excel formula we would use to calculate it.     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is less than 90?    NORM.DIST(90,135,22,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(2.35,TRUE)    "
 },
@@ -995,7 +806,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#matching3",
   "type": "Exercise",
-  "number": "7.1.15",
+  "number": "6.1.15",
   "title": "Normal Distribution Matching Problem.",
   "body": "Normal Distribution Matching Problem  Match each probability with the Excel formula we would use to calculate it.     Find the probability for a standard normal distribution:     1-NORM.S.DIST(2.35,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.76,1)- NORM.S.DIST(-0.86,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.5,TRUE)      Find the probability for a standard normal distribution:     1-NORM.S.DIST(1.5,TRUE)    "
 },
@@ -1004,7 +815,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#sec-normal-distribution-14",
   "type": "Figure",
-  "number": "7.1.16",
+  "number": "6.1.16",
   "title": "",
   "body": " Images for Exercise ???    (A)       (B)       (C)       "
 },
@@ -1013,7 +824,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#matching4",
   "type": "Exercise",
-  "number": "7.1.17",
+  "number": "6.1.17",
   "title": "Normal Distribution Matching Problem.",
   "body": "Normal Distribution Matching Problem  Problem instructions.          NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)     image   1-NORM.DIST(40,135,22,1)     image   NORM.DIST(90,135,22,1)     image   Find the probability for a standard normal distribution:     "
 },
@@ -1022,7 +833,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#matching5",
   "type": "Exercise",
-  "number": "7.1.18",
+  "number": "6.1.18",
   "title": "Normal Distribution Matching Problem.",
   "body": "Normal Distribution Matching Problem  Problem instructions.    image   Find the probability for a standard normal distribution:      image   Find the probability for a standard normal distribution:      image   NORM.S.DIST(1.5,TRUE)      image    1-NORM.S.DIST(1.5,TRUE)    "
 },
@@ -1031,7 +842,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#sec-normal-distribution-17",
   "type": "Exercise",
-  "number": "7.1.19",
+  "number": "6.1.19",
   "title": "",
   "body": " Let be the standard normal variable. Find the following:    .    .    .    .    such that .    .    such that .    .  "
 },
@@ -1040,7 +851,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#subsection-normal-inv-4",
   "type": "Exercise",
-  "number": "7.1.20",
+  "number": "6.1.20",
   "title": "",
   "body": " A random variable follows the normal probability distribution with a mean of 50 and a standard deviation of 20.   What value of represents the 75th percentile?       Find the value of so that probability lies below it.       Find the value of that represents the highest of all values      "
 },
@@ -1049,7 +860,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#subsection-normal-inv-5",
   "type": "Exercise",
-  "number": "7.1.21",
+  "number": "6.1.21",
   "title": "",
   "body": " Suppose the retirement age of professional athletes in a certain league is normally distributed with mean years and standard deviation years. Find the following:   Find the probability that a randomly selected athlete's retirement age is is at least years.    .   Find the probability that a randomly selected athlete's retirement age is between and years.    .   Find such that the probability that a randomly selected athlete's retirement age is is at most years is .   If then years.   Find such that the probability that a randomly selected athlete's retirement age is between years and years is .   If then years.  "
 },
@@ -1058,7 +869,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-exponential-distribution.html",
   "type": "Section",
-  "number": "7.2",
+  "number": "6.2",
   "title": "The Exponential Distribution",
   "body": " The Exponential Distribution   The exponential probability distribution is a continuous distribution commonly used in business to measure the time between customer arrivals or the time between failures in a business process  The mathematical expression that describes the shape of the curve for the exponential probability distribution is called the exponential probability density function:   Recall the we saw in a previous chapter when the discrete Poisson distribution was introduced. It is not a coincidence that we are using in both of these distributions. A discrete random variable that follows a Poisson distribution with a mean equal to has a counterpart continuous random variable that follows the exponential distribution with a mean equal to .  It is easy to confuse the two -- try to remember that is a countable (discrete) rate while is a measurable (continuous) interval.  A small bit of good news: the standard deviation for an exponential distribution is equal to its mean. That is, .   The only parameter in the formula is . Let's look at how it impacts the shape of the distribution.  Exponential Distribution powered by Desmos      Differences between the Exponential and Normal Distributions     The shape of the exponential distribution is right-skewed while the shape of the normal distribution is bell-shaped and symmetric.    The shape of the exponential distribution is controlled by only one parameter, , while the shape of the normal distribution requires two parameters, and .    The values of an exponential distribution are always positive; they can never be negative. Values of the normal distribution can be both positive and negative.       Computing Probabilities for the Exponential Distributions  There is no table for helping us calculate probabilities associated with an exponential distribution. So we will rely on a formula and Excel to help with these calculations. The formula for calculating the probability that a random variable is less than a specified value is: where .  The Excel formula for calculating probabilities for the exponential distribution is where cumulative=TRUE (if you want cumulative probability) or FALSE (if you do not want cumulative probability).  (Donnelly 6.21,22)  An exponential probability distribution has a mean equal to 5 minutes per customer. Calculate the following probabilities for the distribution.       OR                      Exponential Probability Practice  An exponential probability distribution has lambda equal to customers per hour. Find the probability that the next customer will arrive within the next minute. (Round your answer to 4 decimal places.)     0.2592   Good!      "
 },
@@ -1067,7 +878,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-exponential-distribution.html#sec-exponential-distribution-2",
   "type": "Definition",
-  "number": "7.2.1",
+  "number": "6.2.1",
   "title": "",
   "body": " The exponential probability distribution is a continuous distribution commonly used in business to measure the time between customer arrivals or the time between failures in a business process  The mathematical expression that describes the shape of the curve for the exponential probability distribution is called the exponential probability density function:   Recall the we saw in a previous chapter when the discrete Poisson distribution was introduced. It is not a coincidence that we are using in both of these distributions. A discrete random variable that follows a Poisson distribution with a mean equal to has a counterpart continuous random variable that follows the exponential distribution with a mean equal to .  It is easy to confuse the two -- try to remember that is a countable (discrete) rate while is a measurable (continuous) interval.  A small bit of good news: the standard deviation for an exponential distribution is equal to its mean. That is, .  "
 },
@@ -1076,7 +887,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-exponential-distribution.html#sec-exponential-distribution-3-2",
   "type": "Figure",
-  "number": "7.2.2",
+  "number": "6.2.2",
   "title": "",
   "body": " Exponential Distribution powered by Desmos   "
 },
@@ -1085,7 +896,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-exponential-distribution.html#subsection-computing-expon-probabilities-4",
   "type": "Exercise",
-  "number": "7.2.3",
+  "number": "6.2.3",
   "title": "",
   "body": "(Donnelly 6.21,22)  An exponential probability distribution has a mean equal to 5 minutes per customer. Calculate the following probabilities for the distribution.       OR                     "
 },
@@ -1094,7 +905,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-exponential-distribution.html#fillin-exponential",
   "type": "Exercise",
-  "number": "7.2.4",
+  "number": "6.2.4",
   "title": "Exponential Probability Practice.",
   "body": "Exponential Probability Practice  An exponential probability distribution has lambda equal to customers per hour. Find the probability that the next customer will arrive within the next minute. (Round your answer to 4 decimal places.)     0.2592   Good!    "
 },
@@ -1103,7 +914,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-uniform-distribution.html",
   "type": "Section",
-  "number": "7.3",
+  "number": "6.3",
   "title": "The Uniform Distribution",
   "body": " The Uniform Distribution   The uniform distribution is a continuous distribution where the probability of any interval is equal to any other interval with the same width.  The mathematical expression that describes the shape of the curve for the uniform probability distribution is called the continuous uniform probability density function:   Uniform Distribution:  Uniform Distribution (Made in GeoGebra by David Ramsay)     Since this function is a constant, the shape of the uniform probability distribution is a rectangle. So computing probabilities associated with it simply involves finding areas of rectanges:    The mean and standard deviation for the uniform distribution are:              (Donnelly 6.29,30,31)  A random variable follows the continuous uniform distribution between 30 and 60. Calculate the following probabilities for the distribution.                    (Donnelly 6.34)  Assume the time required to pass through security at a particular airport follows the continuous uniform distribution with a minimum time of 8 minutes and a maximum time of 31 minutes.  Calculate the value of .     What are the mean and standard deviation for this distribution?                 What is the probability that the next passenger will require less than 25 minutes to pass through security?       What is the probability that the next passenger will require more than 23 minutes to pass through security?       What is the probability that the next passenger will require between 13 and 20 minutes to pass through security?       What time represents the 75th percentile of this distribution?    minutes   "
 },
@@ -1112,7 +923,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-uniform-distribution.html#sec-uniform-distribution-2",
   "type": "Definition",
-  "number": "7.3.1",
+  "number": "6.3.1",
   "title": "",
   "body": " The uniform distribution is a continuous distribution where the probability of any interval is equal to any other interval with the same width.  The mathematical expression that describes the shape of the curve for the uniform probability distribution is called the continuous uniform probability density function:   Uniform Distribution:  Uniform Distribution (Made in GeoGebra by David Ramsay)     Since this function is a constant, the shape of the uniform probability distribution is a rectangle. So computing probabilities associated with it simply involves finding areas of rectanges:   "
 },
@@ -1121,7 +932,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-uniform-distribution.html#sec-uniform-distribution-4",
   "type": "Exercise",
-  "number": "7.3.3",
+  "number": "6.3.3",
   "title": "",
   "body": "(Donnelly 6.29,30,31)  A random variable follows the continuous uniform distribution between 30 and 60. Calculate the following probabilities for the distribution.                  "
 },
@@ -1130,9 +941,378 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-uniform-distribution.html#sec-uniform-distribution-5",
   "type": "Exercise",
-  "number": "7.3.4",
+  "number": "6.3.4",
   "title": "",
   "body": " (Donnelly 6.34)  Assume the time required to pass through security at a particular airport follows the continuous uniform distribution with a minimum time of 8 minutes and a maximum time of 31 minutes.  Calculate the value of .     What are the mean and standard deviation for this distribution?                 What is the probability that the next passenger will require less than 25 minutes to pass through security?       What is the probability that the next passenger will require more than 23 minutes to pass through security?       What is the probability that the next passenger will require between 13 and 20 minutes to pass through security?       What time represents the 75th percentile of this distribution?    minutes  "
+},
+{
+  "id": "sec-point-estimates",
+  "level": "1",
+  "url": "sec-point-estimates.html",
+  "type": "Section",
+  "number": "7.1",
+  "title": "Point Estimates",
+  "body": " Point Estimates    A point estimate is a single numerical value that best estimates the population parameter of interest.  The most common point estimates are the sample mean, , and the sample proportion, .    The advantage of a point estimate is that it is easy to calculate and easy to understand. The disadvantage is that it doesn't provide any information about the accuracy of the estimate. For this reason, statisticians prefer an interval estimate, a range of values used to estimate the parameter. This estimate may or may not contain the value of the parameter being estimated.  ....include an example......  "
+},
+{
+  "id": "def-point-estimate",
+  "level": "2",
+  "url": "sec-point-estimates.html#def-point-estimate",
+  "type": "Definition",
+  "number": "7.1.1",
+  "title": "",
+  "body": "  A point estimate is a single numerical value that best estimates the population parameter of interest.  The most common point estimates are the sample mean, , and the sample proportion, .   "
+},
+{
+  "id": "sec-Confidence-Interval-for-Mean-Sigma-Known",
+  "level": "1",
+  "url": "sec-Confidence-Interval-for-Mean-Sigma-Known.html",
+  "type": "Section",
+  "number": "7.2",
+  "title": "Confidence Intervals for the Mean (<span class=\"process-math\">\\(\\sigma\\)<\/span> known)",
+  "body": " Confidence Intervals for the Mean ( known)    A confidence interval for the mean is an interval estimate around a sample mean that provides a range of where the true population lies.  The formula for this confidence interval is   In other words, this is the point estimate , , plus or minus the margin of error , .     The margin of error is the width of the confidence interval between the sample mean and one of the limits.    A confidence level is the probability that the interval estimate includes the population parameter.  We decide in advance how confident we want to be that is in the interval. Typical values are usually between and , i.e., .    Similarly, the significance level , represented by , is the probability that any given confidence interval will not contain .  Typical values are between and , i.e. .     ......include example of this, maybe in Excel.......     (Donnelly 8.5)  Determine the margin of error for a confidence interval to estimate the population mean with and for the following confidence levels:                            Describe the effect on the margin of error by increasing the confidence level.     As the confidence level increases, the margin of error increases.      As the confidence level increases, the margin of error decreases.      As the confidence level increases, the margin of error could increase or decrease.      As the confidence level increases, the margin of error stays the same.       A confidence interval has two sides :   The lower confidence limit (LCL) :     The upper confidence limit (UCL) :         Confidence Interval -value (Made in GeoGebra by Terry Lee Lindenmuth)     Confidence Interval -value (Made in GeoGebra by David Gurney)     Confidence Interval -value (Made in GeoGebra by Tim Elton)     (Donnelly 8.9)  Banking fees received much attention during the Great Recession as banks looked for ways to recover from the crisis. A sample of 44 customers paid an average fee of per month on their interest-bearing checking accounts. Assume the population standard deviation is .   What is the margin of error for this interval? (Let .)     What is the point estimate for the average fee for the population?       Construct a confidence interval to estimate the average fee for the population.      We are confident that     (Donnelly 8.16)  A car company developed a certain car model to appeal to young customers. The car company claims the average age of drivers of this certain car model is 27 years old. Suppose a random sample of 18 drivers was drawn, and the average age of the drivers was found to be 28.20 years. Assume the standard deviation for the age of the car drivers to be 2.5 years.   Construct a confidence interval to estimate the average age of the car driver.   We are confident that    Does this result lend support to the car company's claims?   No, it does not support the claim that the average age is 27 because 27 is not in the interval we found.   What assumptions need to be made to construct this interval?   Since , the sample size is small, requiring the population to be normally distributed.   "
+},
+{
+  "id": "def-confidence-mean",
+  "level": "2",
+  "url": "sec-Confidence-Interval-for-Mean-Sigma-Known.html#def-confidence-mean",
+  "type": "Definition",
+  "number": "7.2.1",
+  "title": "",
+  "body": "  A confidence interval for the mean is an interval estimate around a sample mean that provides a range of where the true population lies.  The formula for this confidence interval is   In other words, this is the point estimate , , plus or minus the margin of error , .     The margin of error is the width of the confidence interval between the sample mean and one of the limits.    A confidence level is the probability that the interval estimate includes the population parameter.  We decide in advance how confident we want to be that is in the interval. Typical values are usually between and , i.e., .    Similarly, the significance level , represented by , is the probability that any given confidence interval will not contain .  Typical values are between and , i.e. .     ......include example of this, maybe in Excel.......   "
+},
+{
+  "id": "sec-Confidence-Interval-for-Mean-Sigma-Known-3",
+  "level": "2",
+  "url": "sec-Confidence-Interval-for-Mean-Sigma-Known.html#sec-Confidence-Interval-for-Mean-Sigma-Known-3",
+  "type": "Exercise",
+  "number": "7.2.2",
+  "title": "",
+  "body": " (Donnelly 8.5)  Determine the margin of error for a confidence interval to estimate the population mean with and for the following confidence levels:                          "
+},
+{
+  "id": "sec-Confidence-Interval-for-Mean-Sigma-Known-4",
+  "level": "2",
+  "url": "sec-Confidence-Interval-for-Mean-Sigma-Known.html#sec-Confidence-Interval-for-Mean-Sigma-Known-4",
+  "type": "Exercise",
+  "number": "7.2.3",
+  "title": "",
+  "body": " Describe the effect on the margin of error by increasing the confidence level.     As the confidence level increases, the margin of error increases.      As the confidence level increases, the margin of error decreases.      As the confidence level increases, the margin of error could increase or decrease.      As the confidence level increases, the margin of error stays the same.    "
+},
+{
+  "id": "def-LCL-UCL",
+  "level": "2",
+  "url": "sec-Confidence-Interval-for-Mean-Sigma-Known.html#def-LCL-UCL",
+  "type": "Definition",
+  "number": "7.2.4",
+  "title": "",
+  "body": "  A confidence interval has two sides :   The lower confidence limit (LCL) :     The upper confidence limit (UCL) :       "
+},
+{
+  "id": "figure-geogebra-confidence-z",
+  "level": "2",
+  "url": "sec-Confidence-Interval-for-Mean-Sigma-Known.html#figure-geogebra-confidence-z",
+  "type": "Figure",
+  "number": "7.2.5",
+  "title": "",
+  "body": " Confidence Interval -value (Made in GeoGebra by Terry Lee Lindenmuth)   "
+},
+{
+  "id": "figure-geogebra-confidence-tweaks",
+  "level": "2",
+  "url": "sec-Confidence-Interval-for-Mean-Sigma-Known.html#figure-geogebra-confidence-tweaks",
+  "type": "Figure",
+  "number": "7.2.6",
+  "title": "",
+  "body": " Confidence Interval -value (Made in GeoGebra by David Gurney)   "
+},
+{
+  "id": "figure-geogebra-confidence-interval",
+  "level": "2",
+  "url": "sec-Confidence-Interval-for-Mean-Sigma-Known.html#figure-geogebra-confidence-interval",
+  "type": "Figure",
+  "number": "7.2.7",
+  "title": "",
+  "body": " Confidence Interval -value (Made in GeoGebra by Tim Elton)   "
+},
+{
+  "id": "sec-Confidence-Interval-for-Mean-Sigma-Known-9",
+  "level": "2",
+  "url": "sec-Confidence-Interval-for-Mean-Sigma-Known.html#sec-Confidence-Interval-for-Mean-Sigma-Known-9",
+  "type": "Exercise",
+  "number": "7.2.8",
+  "title": "",
+  "body": " (Donnelly 8.9)  Banking fees received much attention during the Great Recession as banks looked for ways to recover from the crisis. A sample of 44 customers paid an average fee of per month on their interest-bearing checking accounts. Assume the population standard deviation is .   What is the margin of error for this interval? (Let .)     What is the point estimate for the average fee for the population?       Construct a confidence interval to estimate the average fee for the population.      We are confident that   "
+},
+{
+  "id": "sec-Confidence-Interval-for-Mean-Sigma-Known-10",
+  "level": "2",
+  "url": "sec-Confidence-Interval-for-Mean-Sigma-Known.html#sec-Confidence-Interval-for-Mean-Sigma-Known-10",
+  "type": "Exercise",
+  "number": "7.2.9",
+  "title": "",
+  "body": " (Donnelly 8.16)  A car company developed a certain car model to appeal to young customers. The car company claims the average age of drivers of this certain car model is 27 years old. Suppose a random sample of 18 drivers was drawn, and the average age of the drivers was found to be 28.20 years. Assume the standard deviation for the age of the car drivers to be 2.5 years.   Construct a confidence interval to estimate the average age of the car driver.   We are confident that    Does this result lend support to the car company's claims?   No, it does not support the claim that the average age is 27 because 27 is not in the interval we found.   What assumptions need to be made to construct this interval?   Since , the sample size is small, requiring the population to be normally distributed.  "
+},
+{
+  "id": "sec-Interpreting-Confidence-Interval",
+  "level": "1",
+  "url": "sec-Interpreting-Confidence-Interval.html",
+  "type": "Section",
+  "number": "7.3",
+  "title": "Interpreting Confidence Intervals",
+  "body": " Interpreting Confidence Intervals  When we interpret a confidence interval, we say that we are confident that the interval we calculated captures the population mean . We DO NOT say there is a chance that the population mean falls between A and B . It might sound the same, but it is not. The latter implies that the population mean is a variable that we can say something about. But it is not -- it is fixed, and we do not know what it is.  Remember that we develop our confidence interval based on the sampling distribution of the sample mean. We draw a sample and calculate an interval around the sample mean and say that we think we have captured the population mean within the interval -- we do NOT know anything about the population mean. We can only say something about our sample mean and interval.  If we were to repeatedly draw samples, each has the same margin of error (since the sample size and are constant for all samples), but each sample mean likely varies. After calculating all intervals, of them would result in intervals that include the population mean, but of them would have sample means so extreme (in the tail of the sampling distribution) that they would not include the population mean.  The figure below is about proportions instead of means, but it illustrates this idea well.   Confidence Interval Meaning -value (Made in GeoGebra by Steve Phelps)    "
+},
+{
+  "id": "figure-geogebra-confidence-meaning",
+  "level": "2",
+  "url": "sec-Interpreting-Confidence-Interval.html#figure-geogebra-confidence-meaning",
+  "type": "Figure",
+  "number": "7.3.1",
+  "title": "",
+  "body": " Confidence Interval Meaning -value (Made in GeoGebra by Steve Phelps)   "
+},
+{
+  "id": "sec-Confidence-Interval-for-Mean-Sigma-Unknown",
+  "level": "1",
+  "url": "sec-Confidence-Interval-for-Mean-Sigma-Unknown.html",
+  "type": "Section",
+  "number": "7.4",
+  "title": "Confidence Intervals for the Mean (<span class=\"process-math\">\\(\\sigma\\)<\/span> unknown)",
+  "body": " Confidence Intervals for the Mean ( unknown)  Up to this point we have assumed that the population standard deviation, , was known. This is unrealistic -- since we are creating an interval to estimate the population mean, , we likely don't know the population standard deviation either! Hence we will estimate with the value of the sample standard deviation, . But this introduces another source of unreliability, especially in small samples. To keep the confidence interval at the desired level, we make the intervals wider by replacing the critical values in our confidence interval formula, , with larger critical values, .   The Student's -Distribution  The larger critical values come from the Student's -distribution developed in 1908 by an Irish brewing employee, William S. Gosset. He was a Guinness Brewery employee researching new methods of manufacturing ale. He needed a distribution that could be used with small samples. Employees were not allowed to publish research results, so he published under the pseudonym, Student .  The key properties of the Student's -Distribution:   It is symmetric around the mean (which is 0 just like the standard normal distribution) and mound-shaped (similar to bell-shaped).    It is a family of curves based on the concept of degrees of freedom (df) , which refer to the number of values that are free to vary. As the degrees of freedom increases, the shape of the -distribution becomes similar to the normal distribution.  When dealing with the sample mean, .    The area under the curve is equal to .    The -distribution is flatter and wider than the normal distribution. This means that the critical score for the -distribution is therefore higher than the critical -score for the same confidence level. This results in wider confidence intervals when using the -distribution.       Confidence Interval When is Unknown  The formula for the confidence interval when is unknown is: where   How do we find the critical values, ?    Table: Use this link ...insert.... (or Table 5 in Appendix A of the textbook). Note that you will locate the degrees of freedom along the left column and the confidence level across the top of the table -- the desired critical value is located where the two meet inside the table.     Excel: Use the Excel formula where       (Donnelly 8.19)  Construct a confidence interval to estimate the population mean when and for the sample sizes below.       We are confident that        We are confident that        We are confident that     Describe the effect on the interval by increasing the sample size.     As the sample size increases, the width of the interval decreases.      As the sample size increases, the width of the interval increases.      As the sample size increases, the width of the interval might increase or decrease.      As the sample size increases, the width of the interval stays the same.      (Donnelly 8.23)  A cruise company would like to estimate the average beer consumption to plan its beer inventory levels on future seven-day cruises. (The ship certainly doesn't want to run out of beer in the middle of the ocean!) The average beer over 18 randomly selected seven-day cruises was bottles with a standard deviation of bottles.   Construct a confidence interval to estimate the average beer consumption per cruise.      LCL:     UCL:       What assumptions need to be made to construct this interval?   Since , the population must be normally distributed.    (Donnelly 8.27)  According to a travel website, workers in a certain country lead the world in vacation days, averaging 41 days per year. The data in the Excel file below shows the number of paid vacation days for a random sample of 20 workers from this country.  ....insert Excel file....   Construct a confidence interval to estimate the average number of paid vacation days for workers from this country.      LCL:     UCL:       Do the results from this sample validate the travel website's findings?   Since falls in this interval, the website's findings are validated.   What assumptions need to be made about this population?   Since , the population must be normally distributed.    "
+},
+{
+  "id": "subsec-Confidence-Interval-Sigma-Unknown-4",
+  "level": "2",
+  "url": "sec-Confidence-Interval-for-Mean-Sigma-Unknown.html#subsec-Confidence-Interval-Sigma-Unknown-4",
+  "type": "Exercise",
+  "number": "7.4.1",
+  "title": "",
+  "body": " (Donnelly 8.19)  Construct a confidence interval to estimate the population mean when and for the sample sizes below.       We are confident that        We are confident that        We are confident that   "
+},
+{
+  "id": "subsec-Confidence-Interval-Sigma-Unknown-5",
+  "level": "2",
+  "url": "sec-Confidence-Interval-for-Mean-Sigma-Unknown.html#subsec-Confidence-Interval-Sigma-Unknown-5",
+  "type": "Exercise",
+  "number": "7.4.2",
+  "title": "",
+  "body": " Describe the effect on the interval by increasing the sample size.     As the sample size increases, the width of the interval decreases.      As the sample size increases, the width of the interval increases.      As the sample size increases, the width of the interval might increase or decrease.      As the sample size increases, the width of the interval stays the same.    "
+},
+{
+  "id": "subsec-Confidence-Interval-Sigma-Unknown-6",
+  "level": "2",
+  "url": "sec-Confidence-Interval-for-Mean-Sigma-Unknown.html#subsec-Confidence-Interval-Sigma-Unknown-6",
+  "type": "Exercise",
+  "number": "7.4.3",
+  "title": "",
+  "body": " (Donnelly 8.23)  A cruise company would like to estimate the average beer consumption to plan its beer inventory levels on future seven-day cruises. (The ship certainly doesn't want to run out of beer in the middle of the ocean!) The average beer over 18 randomly selected seven-day cruises was bottles with a standard deviation of bottles.   Construct a confidence interval to estimate the average beer consumption per cruise.      LCL:     UCL:       What assumptions need to be made to construct this interval?   Since , the population must be normally distributed.  "
+},
+{
+  "id": "subsec-Confidence-Interval-Sigma-Unknown-7",
+  "level": "2",
+  "url": "sec-Confidence-Interval-for-Mean-Sigma-Unknown.html#subsec-Confidence-Interval-Sigma-Unknown-7",
+  "type": "Exercise",
+  "number": "7.4.4",
+  "title": "",
+  "body": " (Donnelly 8.27)  According to a travel website, workers in a certain country lead the world in vacation days, averaging 41 days per year. The data in the Excel file below shows the number of paid vacation days for a random sample of 20 workers from this country.  ....insert Excel file....   Construct a confidence interval to estimate the average number of paid vacation days for workers from this country.      LCL:     UCL:       Do the results from this sample validate the travel website's findings?   Since falls in this interval, the website's findings are validated.   What assumptions need to be made about this population?   Since , the population must be normally distributed.  "
+},
+{
+  "id": "sec-correlation",
+  "level": "1",
+  "url": "sec-correlation.html",
+  "type": "Section",
+  "number": "8.1",
+  "title": "Correlation Analysis",
+  "body": " Correlation Analysis  Recall that a scatterplot is a graph used to explore a relationship between two variables. The two variables can be defined further as the independent and dependent variables.   Scatter Plot (Made in GeoGebra by Mark Beckwith)         An independent variable explains the variation in the dependent variable    A dependent variable is explained by one or more independent variables        Correlation analysis provides a way to measure the strength and direction of the linear relationship between the two variables (the aforementioned independent and dependent variables). This is done by computing the sample correlation coefficient , .  The range of the correlation coefficient is .   A positive value indicates that as increases, also increases.    A negative value indicates that as increases, decreases.     Recall that we used the Excel formula, CORREL, to calculate this number in a previous chapter. Now we improve on that skill by learning how to use a hypothesis test to assess the strength of the linear relationship described by .  The population correlation coefficient, , refers to the correlation between all values of two variables in a population. A value of means that there is no linear relationship between and . We don't know the value of so we use the sample correlation coefficient to test whether we have enough evidence from the sample to conclude that there is a linear relationship between the variables in the population. The two hypotheses for this hypothesis test are:     The test statistic uses the Student's -distribution with formula:     Degrees of freedom here are....     The housing market in the United States is generally affected by economic conditions and interest rates, but also by the time of the year. More people usually buy and sell homes in the spring summer months. We want to see if there is a strong correlation between new home listings and temperature. The Excel file below includes the number of new housing listings in Colorado, as well as temperature and precipitation at Denver International Airport (DEN).    Determine the sample correlation coefficient between the number of new listings and the precipitation.   Determine the sample correlation coefficient between the number of new listings and the maximum temperature.   Using , test if the population correlation coefficient between the number of new listings and the maximum temperature is different from zero. What conclusions can you draw?   "
+},
+{
+  "id": "figure-geogebra-scatter",
+  "level": "2",
+  "url": "sec-correlation.html#figure-geogebra-scatter",
+  "type": "Figure",
+  "number": "8.1.1",
+  "title": "",
+  "body": " Scatter Plot (Made in GeoGebra by Mark Beckwith)   "
+},
+{
+  "id": "sec-correlation-4",
+  "level": "2",
+  "url": "sec-correlation.html#sec-correlation-4",
+  "type": "Definition",
+  "number": "8.1.2",
+  "title": "",
+  "body": "     An independent variable explains the variation in the dependent variable    A dependent variable is explained by one or more independent variables      "
+},
+{
+  "id": "housingmarket",
+  "level": "2",
+  "url": "sec-correlation.html#housingmarket",
+  "type": "Exercise",
+  "number": "8.1.3",
+  "title": "",
+  "body": " The housing market in the United States is generally affected by economic conditions and interest rates, but also by the time of the year. More people usually buy and sell homes in the spring summer months. We want to see if there is a strong correlation between new home listings and temperature. The Excel file below includes the number of new housing listings in Colorado, as well as temperature and precipitation at Denver International Airport (DEN).    Determine the sample correlation coefficient between the number of new listings and the precipitation.   Determine the sample correlation coefficient between the number of new listings and the maximum temperature.   Using , test if the population correlation coefficient between the number of new listings and the maximum temperature is different from zero. What conclusions can you draw?  "
+},
+{
+  "id": "sec-developing-regression-model",
+  "level": "1",
+  "url": "sec-developing-regression-model.html",
+  "type": "Section",
+  "number": "8.2",
+  "title": "Developing a Regression Model",
+  "body": " Developing a Regression Model  Now we are going to learn techniques to create models that fit our data. Regression analysis is the modeling procedure that we will study. We will discuss how to perform the calculations in the formulas involved in creating and assessing regression models. However, in most cases we will rely on the Regression tool in the Data Analysis tab of Excel.   Regression Example powered by Desmos     Regression Line with Error powered by Desmos      Regression analysis enables us to describe a straight line that best fits the data.   In simple regression analysis, there is one independent variable.    In multiple regression analysis, there is more than one independent variable.     The formula for the linear regression model created with sample data is where   The are called regression coefficients . The simple regression model is often just called the regression line .     (Donnelly 14.56)  As a measure of productivity, Verizon Wireless records the number of customers each of its retail employees activates weekly. An activation is defined as either a new customer signing a cell phone contract or an existing customer renewing a contract. The data table found in this lesson's Excel file shows the number of weekly activations for eight randomly selected employees along with their job-satisfaction levels rated on a scale of ( Most satisfied).    Construct a scatter plot for these data. Let satisfaction be the independent variable and let activations be the dependent variable.   Determine the equation of the regression line for the data.   Interpret the value of the slope in the equation.   Predict the number of activations for an employee with a satisfaction level of 7.4.   Calculate the correlation coefficient for this sample.   Using , test to determine if the population correlation coefficient is not equal to zero. What conclusions can be made based on these results?    (Donnelly 15.6)  A hospital would like to develop a regression model to predict the total hospital bill for a patient based on the age of the patient ( ), the patient's length of stay ( ), and the number of days in the hospital's intensive care unit (ICU) ( ). Data for these variables can be found in the table in the Excel file below.    Construct a regression model using all three independent variables.   Interpret the meaning of the regression coefficients.   Predict the average hospital bill for a 76-year-old person hospitalized for 5 days with 3 days spent in the ICU.     The regression line will not pass through each of the data points. Hence, there is error between the true value of from the data and the value, , predicted by the regression line. This difference is called the residual , .     Regression Line with Error powered by Desmos     Let's look at the regression model below and think about the actual versus the predicted -values.   Regression Line Error powered by Desmos     For , what is the corresponding -value, and what is ?   For , what is ?     The mathematical procedure that is used to find the regression line is the least squares method . The least squares method aims to minimize the total squared error between the values of and . This sum is also called the sum of squares error (SSE) , and is definted by the formula Minimizing the SSE results in the best fitting line through the data points.    Least Squares Visualization (Made in GeoGebra by Ivan Gatewood)       There are two other sum of squares related to our data points:   the total sum of squares (SST):     the sum of squares regression (SSR):    (where the average value of the dependent variable from the sample)     All of the sum of squares are related:    The total sum of squares (SST) , measures the total variation in the dependent variable.    The sum of squares regression (SSR) , measures the amount of variation in the dependent variable that is explained by the independent variable(s).    The ratio of these two numbers, , is called the coefficient of determination . It measures the percentage of the total variation of the dependent variable that is explained by the independent variable(s) in the model.       Let's go back to the Verizon example from earlier.  As a measure of productivity, Verizon Wireless records the number of customers each of its retail employees activates weekly. An activation is defined as either a new customer signing a cell phone contract or an existing customer renewing a contract. The data table found in this lesson's Excel file shows the number of weekly activations for eight randomly selected employees along with their job-satisfaction levels rated on a scale of ( Most satisfied).    Identify the SST. (Hint: Use the Regression output from Excel.)   Partition the SST into the SSE and the SSR.   Calculate the coefficient of determination, .   Interpret the coefficient of determination.   "
+},
+{
+  "id": "sec-developing-regression-model-3",
+  "level": "2",
+  "url": "sec-developing-regression-model.html#sec-developing-regression-model-3",
+  "type": "Figure",
+  "number": "8.2.1",
+  "title": "",
+  "body": " Regression Example powered by Desmos   "
+},
+{
+  "id": "sec-developing-regression-model-4",
+  "level": "2",
+  "url": "sec-developing-regression-model.html#sec-developing-regression-model-4",
+  "type": "Figure",
+  "number": "8.2.2",
+  "title": "",
+  "body": " Regression Line with Error powered by Desmos   "
+},
+{
+  "id": "def-regression",
+  "level": "2",
+  "url": "sec-developing-regression-model.html#def-regression",
+  "type": "Definition",
+  "number": "8.2.3",
+  "title": "",
+  "body": "  Regression analysis enables us to describe a straight line that best fits the data.   In simple regression analysis, there is one independent variable.    In multiple regression analysis, there is more than one independent variable.     The formula for the linear regression model created with sample data is where   The are called regression coefficients . The simple regression model is often just called the regression line .   "
+},
+{
+  "id": "sec-developing-regression-model-6",
+  "level": "2",
+  "url": "sec-developing-regression-model.html#sec-developing-regression-model-6",
+  "type": "Exercise",
+  "number": "8.2.4",
+  "title": "",
+  "body": " (Donnelly 14.56)  As a measure of productivity, Verizon Wireless records the number of customers each of its retail employees activates weekly. An activation is defined as either a new customer signing a cell phone contract or an existing customer renewing a contract. The data table found in this lesson's Excel file shows the number of weekly activations for eight randomly selected employees along with their job-satisfaction levels rated on a scale of ( Most satisfied).    Construct a scatter plot for these data. Let satisfaction be the independent variable and let activations be the dependent variable.   Determine the equation of the regression line for the data.   Interpret the value of the slope in the equation.   Predict the number of activations for an employee with a satisfaction level of 7.4.   Calculate the correlation coefficient for this sample.   Using , test to determine if the population correlation coefficient is not equal to zero. What conclusions can be made based on these results?  "
+},
+{
+  "id": "sec-developing-regression-model-7",
+  "level": "2",
+  "url": "sec-developing-regression-model.html#sec-developing-regression-model-7",
+  "type": "Exercise",
+  "number": "8.2.5",
+  "title": "",
+  "body": " (Donnelly 15.6)  A hospital would like to develop a regression model to predict the total hospital bill for a patient based on the age of the patient ( ), the patient's length of stay ( ), and the number of days in the hospital's intensive care unit (ICU) ( ). Data for these variables can be found in the table in the Excel file below.    Construct a regression model using all three independent variables.   Interpret the meaning of the regression coefficients.   Predict the average hospital bill for a 76-year-old person hospitalized for 5 days with 3 days spent in the ICU.  "
+},
+{
+  "id": "def-residual",
+  "level": "2",
+  "url": "sec-developing-regression-model.html#def-residual",
+  "type": "Definition",
+  "number": "8.2.6",
+  "title": "",
+  "body": "  The regression line will not pass through each of the data points. Hence, there is error between the true value of from the data and the value, , predicted by the regression line. This difference is called the residual , .   "
+},
+{
+  "id": "sec-developing-regression-model-9",
+  "level": "2",
+  "url": "sec-developing-regression-model.html#sec-developing-regression-model-9",
+  "type": "Figure",
+  "number": "8.2.7",
+  "title": "",
+  "body": " Regression Line with Error powered by Desmos   "
+},
+{
+  "id": "sec-developing-regression-model-10",
+  "level": "2",
+  "url": "sec-developing-regression-model.html#sec-developing-regression-model-10",
+  "type": "Exercise",
+  "number": "8.2.8",
+  "title": "",
+  "body": " Let's look at the regression model below and think about the actual versus the predicted -values.   Regression Line Error powered by Desmos     For , what is the corresponding -value, and what is ?   For , what is ?  "
+},
+{
+  "id": "def-least-squares",
+  "level": "2",
+  "url": "sec-developing-regression-model.html#def-least-squares",
+  "type": "Definition",
+  "number": "8.2.10",
+  "title": "",
+  "body": "  The mathematical procedure that is used to find the regression line is the least squares method . The least squares method aims to minimize the total squared error between the values of and . This sum is also called the sum of squares error (SSE) , and is definted by the formula Minimizing the SSE results in the best fitting line through the data points.    Least Squares Visualization (Made in GeoGebra by Ivan Gatewood)    "
+},
+{
+  "id": "def-SST-and-SSR",
+  "level": "2",
+  "url": "sec-developing-regression-model.html#def-SST-and-SSR",
+  "type": "Definition",
+  "number": "8.2.12",
+  "title": "",
+  "body": "  There are two other sum of squares related to our data points:   the total sum of squares (SST):     the sum of squares regression (SSR):    (where the average value of the dependent variable from the sample)   "
+},
+{
+  "id": "sec-developing-regression-model-13",
+  "level": "2",
+  "url": "sec-developing-regression-model.html#sec-developing-regression-model-13",
+  "type": "Definition",
+  "number": "8.2.13",
+  "title": "",
+  "body": " All of the sum of squares are related:    The total sum of squares (SST) , measures the total variation in the dependent variable.    The sum of squares regression (SSR) , measures the amount of variation in the dependent variable that is explained by the independent variable(s).    The ratio of these two numbers, , is called the coefficient of determination . It measures the percentage of the total variation of the dependent variable that is explained by the independent variable(s) in the model.     "
+},
+{
+  "id": "sec-developing-regression-model-14",
+  "level": "2",
+  "url": "sec-developing-regression-model.html#sec-developing-regression-model-14",
+  "type": "Exercise",
+  "number": "8.2.14",
+  "title": "",
+  "body": " Let's go back to the Verizon example from earlier.  As a measure of productivity, Verizon Wireless records the number of customers each of its retail employees activates weekly. An activation is defined as either a new customer signing a cell phone contract or an existing customer renewing a contract. The data table found in this lesson's Excel file shows the number of weekly activations for eight randomly selected employees along with their job-satisfaction levels rated on a scale of ( Most satisfied).    Identify the SST. (Hint: Use the Regression output from Excel.)   Partition the SST into the SSE and the SSR.   Calculate the coefficient of determination, .   Interpret the coefficient of determination.  "
+},
+{
+  "id": "sec-using-regression",
+  "level": "1",
+  "url": "sec-using-regression.html",
+  "type": "Section",
+  "number": "8.3",
+  "title": "Using Regression to Make a Prediction",
+  "body": " Using Regression to Make a Prediction  We can use our regression model to make predictions based on given values of the independent variables -- just plug the given values into the respective independent variable of the regression model. But how reliable is this prediction? We only have sample data so the prediction isn't perfect. Similar to what we did in a previous chapter, we will construct a confidence interval to aid in describing the accuracy of our predictions.  There are a number of confidence intervals that we can create based on our regression model that provide insight into the validity of the model. The only one we will focus on is related to the population slopes: It turns out we will likely not need this formula, however, since the Regression tool in Excel will do most of the work for us.   Let's look back at the hospital example from earlier.  A hospital would like to develop a regression model to predict the total hospital bill for a patient based on the age of the patient ( ), the patient's length of stay ( ), and the number of days in the hospital's intensive care unit (ICU) ( ). Data for these variables can be found in the table in the Excel file below.   Construct and interpret the confidence interval for the regression coefficient for each of the independent variables in the model.   "
+},
+{
+  "id": "sec-using-regression-4",
+  "level": "2",
+  "url": "sec-using-regression.html#sec-using-regression-4",
+  "type": "Exercise",
+  "number": "8.3.1",
+  "title": "",
+  "body": " Let's look back at the hospital example from earlier.  A hospital would like to develop a regression model to predict the total hospital bill for a patient based on the age of the patient ( ), the patient's length of stay ( ), and the number of days in the hospital's intensive care unit (ICU) ( ). Data for these variables can be found in the table in the Excel file below.   Construct and interpret the confidence interval for the regression coefficient for each of the independent variables in the model.  "
+},
+{
+  "id": "sec-Diamonds",
+  "level": "1",
+  "url": "sec-Diamonds.html",
+  "type": "Section",
+  "number": "8.4",
+  "title": "Diamonds Modeling",
+  "body": " Diamonds Modeling  (Background on diamonds was provided in part by research done at https:\/\/www.brilliance.com\/education\/diamonds\/depth-table)  When a gemologist determines the value of a diamond, he or she considers a number of different factors. These factors are known as the 4C's (carat, color, clarity, and cut). How large is the diamond? The size (really the weight) of the diamond is measured in carats. Is it colorless or does it have a slight hue of color? Are there any visible inclusions in the diamond (this affects the clarity)?  Was the stone cut well? This is described by both the table and the depth. They both helps to define the physical shape of a diamond and contribute to its sparkle. When these two features are proportioned just right, a diamond of any size looks spectacular.  Every diamond has a flat, square-shaped facet on its top called the table. It plays a critical role in a diamond’s appearance. The table refracts rays of light as they pass, directing them to the facets that make the diamond look so sparkly. The physical size of the table facet naturally varies depending on the overall size of the diamond. Jewelers measure the table percentage when grading a diamond’s cut. Table percentage is calculated by dividing the width of the table by the overall width of the diamond. The ideal table percentage will vary based on the shape of the diamond.  The depth of a diamond might also be called the “height”: it is the distance from the table to the culet (the pointed tip) of the diamond. Like with a diamond’s table, jewelers grade a diamond’s depth based on its depth percentage. Depth percentage is the diamond’s depth divided by the width of the diamond. This percentage dictates the overall proportions of the diamond, which in turn directly impact how light reflects off the facets in the stone.   Here is the file we are going to use for this problem:   The price of diamonds is not just determined by size, but by multiple characteristics. For simplicity, in this example we will start with size. Create the scatterplot for the two variables Price and Carat .     Determine the least squares line. Interpret the slope coefficient.    According to your least squares line, what would you expect the price to be for a 5 carat diamond?    Compute the coefficient of correlation. What does it tell you about the relationship between the size of a diamond and the price?       We're going to use the same file we used in the previous problem:   Now we will take into consideration the other characteristics of diamonds that determine price: carat, color, clarity, and cut. Let's redo the regression and create a model that does a better job than the one in the previous example that only included a single predictor variable.     Create the regression model with all 5 variables that are provided: color, depth (in percentage), clarity, table (in percentage), and carat.    Interpret each of the coefficients in the model.    Do all 5 of the predictor variables belong in the model? Why or why not?    Is the overall model valid? Why or why not?    What is the coefficient of determination? What does it tell you about the model?    Remove variables one by one and reassess the model. What is the best model to predict the price of a diamond? Why?      "
+},
+{
+  "id": "sec-Diamonds-7",
+  "level": "2",
+  "url": "sec-Diamonds.html#sec-Diamonds-7",
+  "type": "Exercise",
+  "number": "8.4.1",
+  "title": "",
+  "body": " Here is the file we are going to use for this problem:   The price of diamonds is not just determined by size, but by multiple characteristics. For simplicity, in this example we will start with size. Create the scatterplot for the two variables Price and Carat .     Determine the least squares line. Interpret the slope coefficient.    According to your least squares line, what would you expect the price to be for a 5 carat diamond?    Compute the coefficient of correlation. What does it tell you about the relationship between the size of a diamond and the price?     "
+},
+{
+  "id": "sec-Diamonds-8",
+  "level": "2",
+  "url": "sec-Diamonds.html#sec-Diamonds-8",
+  "type": "Exercise",
+  "number": "8.4.2",
+  "title": "",
+  "body": " We're going to use the same file we used in the previous problem:   Now we will take into consideration the other characteristics of diamonds that determine price: carat, color, clarity, and cut. Let's redo the regression and create a model that does a better job than the one in the previous example that only included a single predictor variable.     Create the regression model with all 5 variables that are provided: color, depth (in percentage), clarity, table (in percentage), and carat.    Interpret each of the coefficients in the model.    Do all 5 of the predictor variables belong in the model? Why or why not?    Is the overall model valid? Why or why not?    What is the coefficient of determination? What does it tell you about the model?    Remove variables one by one and reassess the model. What is the best model to predict the price of a diamond? Why?     "
 },
 {
   "id": "backmatter-2",
