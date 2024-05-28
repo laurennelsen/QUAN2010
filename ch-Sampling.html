@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>QUAN 2010 Using Regression to Make a Prediction</title>
+<title>QUAN 2010 Sampling</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -137,7 +137,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-developing-regression-model.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-Intro-to-Regression-Modeling.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-Diamonds.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-independence.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="QUAN_2010_Notes.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-Types-of-Sampling.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -165,11 +165,12 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-independence.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Independent and Dependent Events</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-chapter">
+<li class="toc-item toc-chapter active">
 <div class="toc-title-box"><a href="ch-Sampling.html" class="internal"><span class="codenumber">4</span> <span class="title">Sampling</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Types-of-Sampling.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Types of Sampling</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Errors-in-Sampling.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Errors in Sampling</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Sampling-Distribution-of-Mean.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Sampling Distribution of the Mean</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -180,12 +181,12 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Binomial-Distribution.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Binomial Distribution</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-chapter contains-active">
+<li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-Intro-to-Regression-Modeling.html" class="internal"><span class="codenumber">6</span> <span class="title">Introduction to Regression Modeling</span></a></div>
-<ul class="structural toc-item-list contains-active">
+<ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-correlation.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Correlation Analysis</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-developing-regression-model.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Developing a Regression Model</span></a></div></li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-using-regression.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Using Regression to Make a Prediction</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-using-regression.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Using Regression to Make a Prediction</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Diamonds.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Diamonds Modeling</span></a></div></li>
 </ul>
 </li>
@@ -214,27 +215,24 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-using-regression"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">6.3</span><span class="space"> </span><span class="title">Using Regression to Make a Prediction</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="chapter" id="ch-Sampling"><h2 class="heading">
+<span class="type">Chapter</span><span class="space"> </span><span class="codenumber">4</span><span class="space"> </span><span class="title">Sampling</span>
 </h2>
-<div class="para" id="sec-using-regression-2">We can use our regression model to make predictions based on given values of the independent variables -- just plug the given values into the respective independent variable of the regression model.  But how reliable is this prediction?  We only have sample data so the prediction isn’t perfect.  Similar to what we did in a previous chapter, we will construct a confidence interval to aid in describing the accuracy of our predictions.</div>
-<div class="para logical" id="sec-using-regression-3">
-<div class="para">There are a number of confidence intervals that we can create based on our regression model that provide insight into the validity of the model.  The only one we will focus on is related to the population slopes:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-CI=b_i\pm t_{\alpha/2}s_{b_i} 
-\end{equation*}
-</div>
-<div class="para">It turns out we will likely not need this formula, however, since the “Regression” tool in Excel will do most of the work for us.</div>
-</div>
-<details id="sec-using-regression-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">6.3.1</span><span class="period">.</span>
-</h3></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec-using-regression-4-1">
-<div class="para" id="sec-using-regression-4-1-1">Let’s look back at the hospital example from earlier.</div> <div class="para" id="sec-using-regression-4-1-2">A hospital would like to develop a regression model to predict the total hospital bill for a patient based on the age of the patient (<span class="process-math">\(x_1\)</span>), the patient’s length of stay (<span class="process-math">\(x_2\)</span>), and the number of days in the hospital’s intensive care unit (ICU) (<span class="process-math">\(x_3\)</span>).  Data for these variables can be found in the table in the Excel file below. <a class="external" href="external/sheets/HospitalExample.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/HospitalExample.xlsx</code></a>
-</div> <div class="para" id="sec-using-regression-4-1-3">Construct and interpret the <span class="process-math">\(95\%\)</span> confidence interval for the regression coefficient for each of the independent variables in the model.</div>
-</div></article></details></section></div>
+<section class="introduction" id="ch-Sampling-2"><div class="para logical" id="ch-Sampling-2-1">
+<div class="para">We’re going to talk about different ways to sample from a population, but before we do that it might be helpful to review a few terms we learned earlier in the course:</div>
+<ul class="disc">
+<li id="ch-Sampling-2-1-1-1"><div class="para" id="ch-Sampling-2-1-1-1-1">A <em class="emphasis">population</em> represents all possible subjects of interest.</div></li>
+<li id="ch-Sampling-2-1-1-2"><div class="para" id="ch-Sampling-2-1-1-2-1">A <em class="emphasis">parameter</em> is a value that describes a characteristic of a population.</div></li>
+<li id="ch-Sampling-2-1-1-3"><div class="para" id="ch-Sampling-2-1-1-3-1">A <em class="emphasis">sample</em> is a subset of a population</div></li>
+<li id="ch-Sampling-2-1-1-4"><div class="para" id="ch-Sampling-2-1-1-4-1">A <em class="emphasis">statistic</em> is a value calculated from a sample and it estimates the value of a parameter.</div></li>
+</ul>
+</div></section><nav class="summary-links"><ul>
+<li><a href="sec-Types-of-Sampling.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Types of Sampling</span></a></li>
+<li><a href="sec-Errors-in-Sampling.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Errors in Sampling</span></a></li>
+<li><a href="sec-Sampling-Distribution-of-Mean.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Sampling Distribution of the Mean</span></a></li>
+</ul></nav></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="sec-developing-regression-model.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-Diamonds.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec-independence.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-Types-of-Sampling.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
