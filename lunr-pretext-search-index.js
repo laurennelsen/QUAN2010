@@ -484,7 +484,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.4",
   "title": "The Central Limit Theorem",
-  "body": " The Central Limit Theorem    In short, the Central Limit Theorem says:  For any population distribution with a sufficiently large sample, the sample means are normally distributed.    There are basically three scenarios that come up that involve the use of the Central Limit Theorem:   If the samples are drawn from a normal population, then the sampling distribution of the sample means will also be normally distributed regardless of the size of the samples.    The sampling distribution of the sample means will not be normally distributed when samples of size are drawn from a population that is not necessarily normal.    If samples of size are drawn from a population that is not necessarily normal, then the Central Limit Theorem does not apply and we cannot draw conclusions about the sampling distribution of the sample means.      Bottom line: If the sample size is large enough, then we can use the Central Limit Theorem to answer the questions about sample means using the same techniques that we used to answer questions about individual values of a normally distributed population. All we need to do is adjust the -score calculation to account for the new standard deviation.    (Donnelly 7.8)  For a normal population with a mean equal to 87 and a standard deviation equal to 26, determine the probability of observing a sample mean of 90 or less from a sample of size 15.       "
+  "body": " The Central Limit Theorem    In short, the Central Limit Theorem says:  For any population distribution with a sufficiently large sample, the sample means are normally distributed.    There are basically three scenarios that come up that involve the use of the Central Limit Theorem:   If the samples are drawn from a normal population, then the sampling distribution of the sample means will also be normally distributed regardless of the size of the samples.    The sampling distribution of the sample means will not be normally distributed when samples of size are drawn from a population that is not necessarily normal.    If samples of size are drawn from a population that is not necessarily normal, then the Central Limit Theorem does not apply and we cannot draw conclusions about the sampling distribution of the sample means.      Bottom line: If the sample size is large enough, then we can use the Central Limit Theorem to answer the questions about sample means using the same techniques that we used to answer questions about individual values of a normally distributed population. All we need to do is adjust the -score calculation to account for the new standard deviation.    (Donnelly 7.8)  For a normal population with a mean equal to 87 and a standard deviation equal to 26, determine the probability of observing a sample mean of 90 or less from a sample of size 15.        (Donnelly 7.9)  For a population that is left-skewed with a mean of 21 and a standard deviation equal to 15, determine the probability of observing a sample mean of 18 or more from a sample of size 33.        (Donnelly 7.21)  According to the Organization for Economic Cooperation and Development (OECD), adults worked an average of 1771 hours in 2016. Assume the population standard deviation is 390 hours and that a random sample of 50 adults was selected.   Calculate the standard error of the mean.       What is the probability that the sample mean will be more than 1790 hours?       What is the probability that the sample mean will be between 1720 and 1760 hours?       Would a sample mean of 1799 hours support the claim made by the organization?    There is a chance of observing a sample mean as high as 1799, so 1799 is not unusual. Therefore, the claim is reasonable.   Identify the symmetrical interval that includes of the sample means if the true population mean is 1771 hours.       "
 },
 {
   "id": "thm-Central-Limit",
@@ -503,6 +503,69 @@ var ptx_lunr_docs = [
   "number": "4.4.2",
   "title": "",
   "body": " (Donnelly 7.8)  For a normal population with a mean equal to 87 and a standard deviation equal to 26, determine the probability of observing a sample mean of 90 or less from a sample of size 15.      "
+},
+{
+  "id": "sec-Central-Limit-Theorem-6",
+  "level": "2",
+  "url": "sec-Central-Limit-Theorem.html#sec-Central-Limit-Theorem-6",
+  "type": "Exercise",
+  "number": "4.4.3",
+  "title": "",
+  "body": " (Donnelly 7.9)  For a population that is left-skewed with a mean of 21 and a standard deviation equal to 15, determine the probability of observing a sample mean of 18 or more from a sample of size 33.      "
+},
+{
+  "id": "sec-Central-Limit-Theorem-7",
+  "level": "2",
+  "url": "sec-Central-Limit-Theorem.html#sec-Central-Limit-Theorem-7",
+  "type": "Exercise",
+  "number": "4.4.4",
+  "title": "",
+  "body": " (Donnelly 7.21)  According to the Organization for Economic Cooperation and Development (OECD), adults worked an average of 1771 hours in 2016. Assume the population standard deviation is 390 hours and that a random sample of 50 adults was selected.   Calculate the standard error of the mean.       What is the probability that the sample mean will be more than 1790 hours?       What is the probability that the sample mean will be between 1720 and 1760 hours?       Would a sample mean of 1799 hours support the claim made by the organization?    There is a chance of observing a sample mean as high as 1799, so 1799 is not unusual. Therefore, the claim is reasonable.   Identify the symmetrical interval that includes of the sample means if the true population mean is 1771 hours.      "
+},
+{
+  "id": "sec-Sampling-Distribution-Proportion",
+  "level": "1",
+  "url": "sec-Sampling-Distribution-Proportion.html",
+  "type": "Section",
+  "number": "4.5",
+  "title": "The Sampling Distribution of the Proportion",
+  "body": " The Sampling Distribution of the Proportion  So far, the focus in this chapter has been on the distribution of sample means. However, sometimes we deal with business scenarios where we are counting observations in a sample and in this case the sample proportion (or percentage), , is the statistic that is relevant rather than the sample mean, .  .....insert activity to make sense of this.....    The sampling distribution of the proportion describes the pattern that the sample proportions tend to follow when randomly drawn from a population. This distribution has a mean, , and a standard error (i.e. the standard deviation of the sample proportions), .     (Donnelly 7.25)  For a population with a proportion equal to 0.32, calculate the standard error of the proportion for the following sample sizes.                            What can you conclude about the standard error as the sample size increases?     As the sample size increases, standard error decreases      As the sample size increases, standard error increases.      As the sample size increases, standard error stays the same.      As the sample size increases, the standard error might increase, decrease, or stay the same.      (Donnelly 7.32)  A social media survey found that of parents follow their children on Instagram. A random sample of 140 parents was selected.   Calculate the standard error of the proportion.       What is the probability that 104 or more parents from this sample follow their children on Instagram?       What is the probability that between 97 and 104 parents from this sample follow their children on Instagram?       If 81 parents responded that the follow their children on Instagram, does this result support the findings of the social media survey?    Since (less than ), the sample with only 81 parents answering yes is unusual. Therefore, the survey results are questionable.   "
+},
+{
+  "id": "def-sampling-distribution-proportion",
+  "level": "2",
+  "url": "sec-Sampling-Distribution-Proportion.html#def-sampling-distribution-proportion",
+  "type": "Definition",
+  "number": "4.5.1",
+  "title": "",
+  "body": "  The sampling distribution of the proportion describes the pattern that the sample proportions tend to follow when randomly drawn from a population. This distribution has a mean, , and a standard error (i.e. the standard deviation of the sample proportions), .   "
+},
+{
+  "id": "sec-Sampling-Distribution-Proportion-5",
+  "level": "2",
+  "url": "sec-Sampling-Distribution-Proportion.html#sec-Sampling-Distribution-Proportion-5",
+  "type": "Exercise",
+  "number": "4.5.2",
+  "title": "",
+  "body": " (Donnelly 7.25)  For a population with a proportion equal to 0.32, calculate the standard error of the proportion for the following sample sizes.                          "
+},
+{
+  "id": "sec-Sampling-Distribution-Proportion-6",
+  "level": "2",
+  "url": "sec-Sampling-Distribution-Proportion.html#sec-Sampling-Distribution-Proportion-6",
+  "type": "Exercise",
+  "number": "4.5.3",
+  "title": "",
+  "body": " What can you conclude about the standard error as the sample size increases?     As the sample size increases, standard error decreases      As the sample size increases, standard error increases.      As the sample size increases, standard error stays the same.      As the sample size increases, the standard error might increase, decrease, or stay the same.    "
+},
+{
+  "id": "sec-Sampling-Distribution-Proportion-7",
+  "level": "2",
+  "url": "sec-Sampling-Distribution-Proportion.html#sec-Sampling-Distribution-Proportion-7",
+  "type": "Exercise",
+  "number": "4.5.4",
+  "title": "",
+  "body": " (Donnelly 7.32)  A social media survey found that of parents follow their children on Instagram. A random sample of 140 parents was selected.   Calculate the standard error of the proportion.       What is the probability that 104 or more parents from this sample follow their children on Instagram?       What is the probability that between 97 and 104 parents from this sample follow their children on Instagram?       If 81 parents responded that the follow their children on Instagram, does this result support the findings of the social media survey?    Since (less than ), the sample with only 81 parents answering yes is unusual. Therefore, the survey results are questionable.  "
 },
 {
   "id": "sec-Random-Variables",

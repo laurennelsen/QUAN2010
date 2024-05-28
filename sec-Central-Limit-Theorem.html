@@ -137,7 +137,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-Sampling-Distribution-of-Mean.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-Sampling.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ch-Discrete-Probability-Distributions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-Sampling-Distribution-of-Mean.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-Sampling.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-Sampling-Distribution-Proportion.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -172,6 +172,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Errors-in-Sampling.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Errors in Sampling</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Sampling-Distribution-of-Mean.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Sampling Distribution of the Mean</span></a></div></li>
 <li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-Central-Limit-Theorem.html" class="internal"><span class="codenumber">4.4</span> <span class="title">The Central Limit Theorem</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Sampling-Distribution-Proportion.html" class="internal"><span class="codenumber">4.5</span> <span class="title">The Sampling Distribution of the Proportion</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -246,9 +247,47 @@ eBookConfig.enable_chatcodes =  false;
 \begin{equation*}
 P(\overline{X}\leq 90) = P(Z\leq \frac{90-87}{(16/\sqrt{15})}\approx 0.7673
 \end{equation*}
-</div></div></div></details></div></article></details></section></div>
+</div></div></div></details></div></article></details><details id="sec-Central-Limit-Theorem-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">4.4.3</span><span class="period">.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-Central-Limit-Theorem-6-1-1">(Donnelly 7.9)</div> <div class="para" id="sec-Central-Limit-Theorem-6-1-2">For a population that is left-skewed with a mean of 21 and a standard deviation equal to 15, determine the probability of observing a sample mean of 18 or more from a sample of size 33.</div>
+<div class="solutions"><details id="sec-Central-Limit-Theorem-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-Central-Limit-Theorem-6-2-1"><div class="displaymath process-math">
+\begin{equation*}
+P(\overline{x}\geq 18)=P\left(Z\geq \frac{18-21}{15/\sqrt{33}}\right)\approx 1-P(Z\lt -1.15)=1-NORM.S.DIST(-1.15,1)\approx 0.8749
+\end{equation*}
+</div></div></div></details></div></article></details><details id="sec-Central-Limit-Theorem-7" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">4.4.4</span><span class="period">.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><article class="task exercise-like" id="sec-Central-Limit-Theorem-7-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-Central-Limit-Theorem-7-2-1-1">Calculate the standard error of the mean.</div>
+<div class="solutions"><details id="sec-Central-Limit-Theorem-7-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-Central-Limit-Theorem-7-2-2-1"><div class="displaymath process-math">
+\begin{equation*}
+\sigma_{\overline{x}}=\frac{390}{\sqrt{50}}\approx 55.1543
+\end{equation*}
+</div></div></div></details></div></article><article class="task exercise-like" id="sec-Central-Limit-Theorem-7-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-Central-Limit-Theorem-7-3-1-1">What is the probability that the sample mean will be more than 1790 hours?</div>
+<div class="solutions"><details id="sec-Central-Limit-Theorem-7-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-Central-Limit-Theorem-7-3-2-1"><div class="displaymath process-math">
+\begin{equation*}
+P(\overline{x}\gt 1790)=P\left( Z\gt \frac{1790-1771}{\sigma_{\overline{x}}}\right)\approx 1-P(Z\lt 0.34)\approx 0.3669
+\end{equation*}
+</div></div></div></details></div></article><article class="task exercise-like" id="sec-Central-Limit-Theorem-7-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="sec-Central-Limit-Theorem-7-4-1-1">What is the probability that the sample mean will be between 1720 and 1760 hours?</div>
+<div class="solutions"><details id="sec-Central-Limit-Theorem-7-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-Central-Limit-Theorem-7-4-2-1"><div class="displaymath process-math">
+\begin{equation*}
+P(1720\lt \overline{x}\lt 1760) \approx P(-0.92\lt z\lt -0.20)\approx 0.2419
+\end{equation*}
+</div></div></div></details></div></article><article class="task exercise-like" id="sec-Central-Limit-Theorem-7-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="sec-Central-Limit-Theorem-7-5-1-1">Would a sample mean of 1799 hours support the claim made by the organization?</div>
+<div class="solutions"><details id="sec-Central-Limit-Theorem-7-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-Central-Limit-Theorem-7-5-2-1">
+<div class="displaymath process-math">
+\begin{equation*}
+P(\overline{x}\gt 1799)\approx 0.3050
+\end{equation*}
+</div>
+<div class="para">There is a <span class="process-math">\(30\%\)</span> chance of observing a sample mean as high as 1799, so 1799 is not unusual.  Therefore, the claim is reasonable.</div>
+</div></div></details></div></article><article class="task exercise-like" id="sec-Central-Limit-Theorem-7-6"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="para" id="sec-Central-Limit-Theorem-7-6-1-1">Identify the symmetrical interval that includes <span class="process-math">\(95\%\)</span> of the sample means if the true population mean is 1771 hours.</div>
+<div class="solutions"><details id="sec-Central-Limit-Theorem-7-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-Central-Limit-Theorem-7-6-2-1"><span class="process-math">\(\overline{x}\pm z\cdot\sigma_{\overline{x}}\rightarrow \boxed{1663\lt \overline{x}\lt 1879}\)</span></div></div></details></div></article></article></details></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="sec-Sampling-Distribution-of-Mean.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-Discrete-Probability-Distributions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec-Sampling-Distribution-of-Mean.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-Sampling-Distribution-Proportion.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
