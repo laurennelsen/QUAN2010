@@ -37,5 +37,6 @@
   <xi:include href="sec-Errors-in-Sampling.ptx" />
   <xi:include href="sec-Sampling-Distribution-of-Mean.ptx" />
   <xi:include href="sec-Central-Limit-Theorem.ptx" />
+  <xi:include href="sec-Sampling-Distribution-Proportion.ptx" />
 
 </chapter>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Sampling-Distribution-Proportion" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>The Sampling Distribution of the Proportion</title>
+
+
+  <p>
+    So far, the focus in this chapter has been on the distribution of sample means.  However, sometimes we deal with business scenarios where we are counting observations in a sample and in this case the sample proportion (or percentage), <m>\overline{p}</m>, is the statistic that is relevant rather than the sample mean, <m>\overline{x}</m>.
+  </p>
+
+
+  <p>
+    .....insert activity to make sense of this.....
+  </p>
+
+
+  <definition xml:id="def-sampling-distribution-proportion">
+    <statement>
+      <p>
+        The <em>sampling distribution of the proportion</em> describes the pattern that the sample proportions tend to follow when randomly drawn from a population.  This distribution has a mean, <m>\overline{p}=\frac{x}{n}</m>, and a standard error (i.e. the standard deviation of the sample proportions), <m>\sigma_p=\sqrt{\frac{p(1-p)}{n}}</m>.
+      </p>
+    </statement>
+  </definition>
+
+  <exercise>
+    <introduction>
+      <p>
+        (Donnelly 7.25)
+      </p>
+      <p>
+        For a population with a proportion equal to 0.32, calculate the standard error of the proportion for the following sample sizes.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          <m>x=35</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <me>\sigma_p = \sqrt{\frac{0.32(1-0.32)}{35}}\approx 0.0788</me>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          <m>x=70</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <me>\sigma_p = \sqrt{\frac{0.32(1-0.32)}{70}}\approx 0.0558</me>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          <m>x=105</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <me>\sigma_p = \sqrt{\frac{0.32(1-0.32)}{105}}\approx 0.0455</me>
+        </p>
+      </answer>
+    </task>
+
+  </exercise>
+
+
+
+  <exercise>
+
+    <statement>
+      <p>
+        What can you conclude about the standard error as the sample size increases?
+      </p>
+    </statement>
+
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>
+            As the sample size increases, standard error decreases
+          </p>
+        </statement>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>
+            As the sample size increases, standard error increases.
+          </p>
+        </statement>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>
+            As the sample size increases, standard error stays the same.
+          </p>
+        </statement>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>
+            As the sample size increases, the standard error might increase, decrease, or stay the same.
+          </p>
+        </statement>
+      </choice>
+    
+    </choices>
+    
+  </exercise>
+
+  <exercise>
+    <introduction>
+      <p>
+        (Donnelly 7.32)
+      </p>
+      <p>
+        A social media survey found that <m>69\%</m> of parents <q>follow</q> their children on Instagram.  A random sample of 140 parents was selected.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          Calculate the standard error of the proportion.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <me>\sigma_p=\sqrt{\frac{0.69(1-0.69)}{140}}\approx 0.0391</me>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          What is the probability that 104 or more parents from this sample <q>follow</q> their children on Instagram?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <me>P\left(\overline{p}\geq \frac{104}{140}\right) = 1-P\left(\overline{p}\lt \frac{104}{140}\right)\approx 0.0869</me>
+        </p>
+      </answer>
+    </task>
+
+
+    <task>
+      <statement>
+        <p>
+          What is the probability that between 97 and 104 parents from this sample <q>follow</q> their children on Instagram?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <me>P\left(\frac{97}{140}\lt \overline{p}\lt \frac{104}{140}\right) \approx 0.3812</me>
+        </p>
+      </answer>
+    </task>
+
+
+    <task>
+      <statement>
+        <p>
+          If 81 parents responded that the <q>follow</q> their children on Instagram, does this result support the findings of the social media survey?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <me>P\left(\overline{p}\leq \frac{81}{140}\right) \approx 0.0023</me>
+          Since <m>0.0023\lt 0.05 </m> (less than <m>5\%</m>), the sample with only 81 parents answering <q>yes</q> is unusual.  Therefore, the survey results are questionable.
+        </p>
+      </answer>
+    </task>
+
+
+  </exercise>
+
+  </section>

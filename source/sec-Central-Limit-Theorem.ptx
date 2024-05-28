@@ -61,4 +61,97 @@
 
 
 
+<exercise>
+  <statement>
+    <p>
+      (Donnelly 7.9)
+    </p>
+    <p>
+      For a population that is left-skewed with a mean of 21 and a standard deviation equal to 15, determine the probability of observing a sample mean of 18 or more from a sample of size 33.
+    </p>
+  </statement>
+  <answer>
+    <p>
+      <me>P(\overline{x}\geq 18)=P\left(Z\geq \frac{18-21}{15/\sqrt{33}}\right)\approx 1-P(Z\lt -1.15)=1-NORM.S.DIST(-1.15,1)\approx 0.8749</me>
+    </p>
+  </answer>
+</exercise>
+
+
+
+<exercise>
+  <statement>
+    <p>
+      (Donnelly 7.21)
+    </p>
+    <p>
+      According to the Organization for Economic Cooperation and Development (OECD), adults worked an average of 1771 hours in 2016.  Assume the population standard deviation is 390 hours and that a random sample of 50 adults was selected.
+    </p>
+  </statement>
+  <task>
+    <statement>
+      <p>
+        Calculate the standard error of the mean.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <me>\sigma_{\overline{x}}=\frac{390}{\sqrt{50}}\approx 55.1543</me>
+      </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        What is the probability that the sample mean will be more than 1790 hours?
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <me>P(\overline{x}\gt 1790)=P\left( Z\gt \frac{1790-1771}{\sigma_{\overline{x}}}\right)\approx 1-P(Z\lt 0.34)\approx 0.3669</me>
+      </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        What is the probability that the sample mean will be between 1720 and 1760 hours?
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <me>P(1720\lt \overline{x}\lt 1760) \approx P(-0.92\lt z\lt -0.20)\approx 0.2419</me>
+      </p>
+    </answer>
+  </task>
+ 
+  <task>
+    <statement>
+      <p>
+        Would a sample mean of 1799 hours support the claim made by the organization?
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <me>P(\overline{x}\gt 1799)\approx 0.3050</me>
+        There is a <m>30\%</m> chance of observing a sample mean as high as 1799, so 1799 is not unusual.  Therefore, the claim is reasonable.
+      </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        Identify the symmetrical interval that includes <m>95\%</m> of the sample means if the true population mean is 1771 hours.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <m>\overline{x}\pm z\cdot\sigma_{\overline{x}}\rightarrow \boxed{1663\lt \overline{x}\lt 1879}</m>
+      </p>
+    </answer>
+  </task>
+</exercise>
+
+
+
   </section>
