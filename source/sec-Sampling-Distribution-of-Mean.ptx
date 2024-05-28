@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Sampling-Distribution-of-Mean" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Sampling Distribution of the Mean</title>
+
+
+  <p>
+    In addition to knowing how individual data values vary about the mean for a population, statisticians are interested in knowing how the means of samples of the same size taken from the same population vary about the population mean.  (i.e., how do groups of data compare to the overall data?)  This leads to arguably the most important topic in all of statistics.
+  </p>
+
+  <example>
+
+<introduction>
+  <p>
+    We're going to do an activity where we roll dice and think about the distributions of the averages of our rolls.
+  </p>
+
+  <p> Use the Excel file below to record your rolls for this activity.
+    <url href="external/sheets/DiceRollBlank.xlsx" />
+  </p>
+
+  <p>
+    (If you don't have dice, you can use the tool below.)
+  </p>
+
+  <figure xml:id="figure-geogebra-dice">
+    <caption>(Made in GeoGebra by Duane Habecker)</caption>
+    <interactive xml:id="geogebra-dice" geogebra="gbk7qgwb" aspect="9:5" />
+  </figure>
+
+  
+</introduction>
+
+<task>
+  <statement>
+    <p>
+      Roll a die at least 20 times.  Use the Excel file above to record what you get on each roll.  Then use the Data Analysis <q>Histogram</q> tool to visualize the distribution of rolls with the <q>Bins</q> <m>1,2,3,4,5,6</m>.  (Before visualizing the rolls, think about what you expect the distribution to look like.)
+    </p>
+  </statement>
+</task>
+
+<task>
+  <statement>
+    <p>
+      Now roll 2 dice and in the next sheet of the Excel file, record those two rolls and then find the average of those two rolls.  Repeat this at least 20 times.  Use Excel to create a histogram of the <em>averages</em>.
+    </p>
+  </statement>
+</task>
+
+<task>
+  <statement>
+    <p>
+      Now roll 3 dice and in the next sheet of the Excel file, record those three rolls and then find the average of those three rolls.  Repeat this at least 20 times.  Use Excel to create a histogram of the <em>averages</em>.
+    </p>
+  </statement>
+</task>
+
+<task>
+  <statement>
+    <p>
+      Next we want to do this for averages of a larger number of rolls.  But this is rather time-consuming, so we're going to use the link below to see how this would work if we rolled many more dice and looked at the distribution of the averages:
+
+      <url href="https://math.bu.edu/people/rmagner/CLTdemo.html" />
+    </p>
+  </statement>
+</task>
+
+  </example>
+
+  <p>
+    <figure>
+      <caption> 3Blue1Brown Video: <q>But what is the Central Limit Theorem?</q>
+      </caption>
+      <video youtube="zeJD6dqJ5lo"/>
+    </figure>  
+  
+  </p>
+
+
+  <definition xml:id="def-sampling-distn-of-mean">
+    <statement>
+      <p>
+        A <em>sampling distribution of the mean</em> is a distribution of the mean from numerous samples of the sample size.  This distribution has mean <m>\mu_{\overline{x}}</m> and a standard error (i.e. the standard deviation of the sample means) <m>\sigma_{\overline{x}}</m>.
+      </p>
+    </statement>
+  </definition>
+
+
+  <p>
+    There are three important properties that describe the distribution of sample means:
+    <ol>
+      <li>
+        <p>
+          The sampling distribution of the mean of a random variable drawn from <em>any population</em> is approximately normal for sufficiently large sample size.  The larger the sample size, the more closely the sample distribution resembles a normal distribution.
+        </p>
+      </li>
+      <li>
+        <p>
+          The mean of the sample means will be the same as the population mean; that is, <me>\mu_{\overline{x}}=\mu</me>.
+        </p>
+      </li>
+      <li>
+        <p>
+          The standard deviation of the sample means will be smaller than the standard deviation of the population; specifically, <me>\sigma_{\overline{x}}=\frac{\sigma}{\sqrt{n}}.</me>
+        </p>
+      </li>
+    </ol>
+  </p>
+
+
+  <exercise>
+    <introduction>
+      <p>
+        (Donnelly 7.7)
+      </p>
+
+      <p>
+        For a population with a mean equal to 250 and a standard deviation equal to 25, calculate the standard error of the mean for the following sample sizes.
+      </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          20
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sigma_{\overline{x}}=\frac{25}{\sqrt{20}}\approx 5.590</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          50
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\sigma_{\overline{x}}=\frac{25}{\sqrt{50}}\approx 3.536</m>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          80
+        </p>
+
+      </statement>
+      <answer>
+        <p>
+          <m>\sigma_{\overline{x}}=\frac{25}{\sqrt{80}}\approx 2.795</m>
+        </p>
+      </answer>
+    </task>
+
+  
+
+  </exercise>
+
+
+  <exercise>
+
+    <statement>
+      <p>
+        What can you conclude about the standard error as the sample size increases?
+      </p>
+    </statement>
+
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>
+            As the sample size increases, standard error decreases
+          </p>
+        </statement>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>
+            As the sample size increases, standard error increases.
+          </p>
+        </statement>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>
+            As the sample size increases, standard error stays the same.
+          </p>
+        </statement>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>
+            As the sample size increases, the standard error might increase, decrease, or stay the same.
+          </p>
+        </statement>
+      </choice>
+    
+    </choices>
+    
+  </exercise>
+
+  </section>

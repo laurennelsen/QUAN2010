@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-Sampling" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Sampling</title>
+
+  <introduction>
+    <p>
+        We're going to talk about different ways to sample from a population, but before we do that it might be helpful to review a few terms we learned earlier in the course:
+        <ul>
+            <li>
+                <p>
+                    A <em>population</em> represents all possible subjects of interest.
+                </p>
+            </li>
+            <li>
+                <p>
+                    A <em>parameter</em> is a value that describes a characteristic of a population.
+                </p>
+            </li>
+            <li>
+                <p>
+                    A <em>sample</em> is a subset of a population
+                </p>
+            </li>
+            <li>
+                <p>
+                    A <em>statistic</em> is a value calculated from a sample and it estimates the value of a parameter.
+                </p>
+            </li>
+        </ul>
+    </p>
+  </introduction>
+
+
+  <!-- include sections -->
+  <xi:include href="sec-Types-of-Sampling.ptx" />
+  <xi:include href="sec-Errors-in-Sampling.ptx" />
+  <xi:include href="sec-Sampling-Distribution-of-Mean.ptx" />
+  <xi:include href="sec-Central-Limit-Theorem.ptx" />
+
+</chapter>

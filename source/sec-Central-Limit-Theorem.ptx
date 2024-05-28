@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Central-Limit-Theorem" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>The Central Limit Theorem</title>
+
+<theorem xml:id="thm-Central-Limit">
+  <statement>
+    <p>
+      In short, the <em>Central Limit Theorem</em> says:
+    </p>
+    <p>
+      For any population distribution with a sufficiently large sample, the sample means are normally distributed.
+    </p>
+  </statement>
+</theorem>
+
+
+<p>
+  There are basically three scenarios that come up that involve the use of the Central Limit Theorem:
+  <ol>
+    <li>
+      <p>
+        If the samples are drawn from a normal population, then the sampling distribution of the sample means will also be normally distributed regardless of the size of the samples.
+      </p>
+    </li>
+    <li>
+      <p>
+        The sampling distribution of the sample means will not be normally distributed when samples of size <m>n\geq 30</m> are drawn from a population that is not necessarily normal.
+      </p>
+    </li>
+    <li>
+      <p>
+        If samples of size <m>n\lt 30</m> are drawn from a population that is not necessarily normal, then the Central Limit Theorem does not apply and we cannot draw conclusions about the sampling distribution of the sample means.
+      </p>
+    </li>
+  </ol>
+</p>
+
+
+<p>
+  <em>Bottom line:</em> If the sample size is large enough, then we can use the Central Limit Theorem to answer the questions about sample means using the same techniques that we used to answer questions about individual values of a normally distributed population.  All we need to do is adjust the <m>z</m>-score calculation to account for the new standard deviation.
+  <me>\text{Generic $z$-score formula: } Z=\frac{X-\text{mean}}{\text{standard deviation}}</me>
+</p>
+
+<exercise>
+  <statement>
+    <p>
+      (Donnelly 7.8)
+    </p>
+
+    <p>
+      For a normal population with a mean equal to 87 and a standard deviation equal to 26, determine the probability of observing a sample mean of 90 or less from a sample of size 15.
+    </p>
+  </statement>
+  <answer>
+    <p>
+      <me>P(\overline{X}\leq 90) = P(Z\leq \frac{90-87}{(16/\sqrt{15})}\approx 0.7673</me>
+    </p>
+  </answer>
+</exercise>
+
+
+
+  </section>

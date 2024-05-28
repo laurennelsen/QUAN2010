@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Types-of-Sampling" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Types of Sampling</title>
+
+<introduction>
+    <p>
+        A probability sample is a sample in which each member of the population has a known, nonzero chance of being selected for the sample.  There are five main types:
+    </p>
+</introduction>
+
+<definition xml:id="def-types-samples">
+    <statement>
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        <em>simple random sample:</em> a sample in which every member of the population has an equal chance of being chosen
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>systematic sampling:</em> every <m>k</m>th member of the population is chosen for the sample; <m>k=\frac{\text{size of population, }N}{\text{size of sample, }n}</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>stratified sampling:</em> the population is divided into mutually exclusive groups (strata) and randomly chosen members from the groups are chosen for the sample
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>cluster sampling:</em> the population is divided into mutually exclusive groups (clusters) and then one or more clusters is chosen for the sample
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>convencience sample:</em> members of a sample are chosen because they are easily accessible
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </statement>
+</definition>
+
+An issue with a convenience sample, in particular, is that not everyone in the population has an equal chance of being chosen.
+
+<definition xml:id="def-resampling">
+    <statement>
+        <p>
+            <em>resampling:</em> the statistical technique in which many samples are repeatedly drawn from a population
+        </p>
+    </statement>
+</definition>
+
+<exercise>
+    <statement>
+        <p>
+            (Donnelly, Your Turn 1)
+        </p>
+        <p>
+            Identify the type of sampling technique used below.
+        </p>
+        <p>
+            The first Monday of each month, customers who come to a store are asked to fill out a satisfaction survey.
+        </p>
+    </statement>
+    <choices>
+        <choice correct="yes">
+            <statement>
+                <p>
+                    systematic
+                </p>
+            </statement>
+        </choice>
+        <choice>
+            <statement>
+                <p>
+                    simple random
+                </p>
+            </statement>
+        </choice>
+        <choice>
+            <statement>
+                <p>
+                    stratified
+                </p>
+            </statement>
+        </choice>
+        <choice>
+            <statement>
+                <p>
+                    cluster
+                </p>
+            </statement>
+        </choice>
+        <choice>
+            <statement>
+                <p>
+                    convenience
+                </p>
+            </statement>
+        </choice>
+    
+    </choices>
+</exercise>
+
+
+
+<exercise>
+    <statement>
+        <p>
+            (Donnelly, Your Turn 1)
+        </p>
+        <p>
+            Identify the type of sampling technique used below.
+        </p>
+        <p>
+            I randomly select four stores in a mall and ask each customer in those stores about his or her opinion of the latest health care legislation.
+        </p>
+    </statement>
+    <choices>
+        <choice>
+            <statement>
+                <p>
+                    systematic
+                </p>
+            </statement>
+        </choice>
+        <choice>
+            <statement>
+                <p>
+                    simple random
+                </p>
+            </statement>
+        </choice>
+        <choice>
+            <statement>
+                <p>
+                    stratified
+                </p>
+            </statement>
+        </choice>
+        <choice correct="yes">
+            <statement>
+                <p>
+                    cluster
+                </p>
+            </statement>
+        </choice>
+        <choice>
+            <statement>
+                <p>
+                    convenience
+                </p>
+            </statement>
+        </choice>
+    
+    </choices>
+</exercise>
+
+
+<exercise>
+    <statement>
+        <p>
+            (Donnelly, Your Turn 1)
+        </p>
+        <p>
+            Identify the type of sampling technique used below.
+        </p>
+        <p>
+            I position myself on a busy intersection of a city street and ask people what their opinions are of a local sports team.
+        </p>
+    </statement>
+    <choices>
+        <choice>
+            <statement>
+                <p>
+                    systematic
+                </p>
+            </statement>
+        </choice>
+        <choice>
+            <statement>
+                <p>
+                    simple random
+                </p>
+            </statement>
+        </choice>
+        <choice>
+            <statement>
+                <p>
+                    stratified
+                </p>
+            </statement>
+        </choice>
+        <choice>
+            <statement>
+                <p>
+                    cluster
+                </p>
+            </statement>
+        </choice>
+        <choice correct="yes">
+            <statement>
+                <p>
+                    convenience
+                </p>
+            </statement>
+        </choice>
+    
+    </choices>
+</exercise>
+
+
+
+<exercise>
+    <statement>
+        <p>
+            (Donnelly, Your Turn 1)
+        </p>
+        <p>
+            Identify the type of sampling technique used below.
+        </p>
+        <p>
+            Sixty percent of students attending a certain college are women.  A random sample of college students is constructed that consists of 60% women from the student population to ask what their opinions are of the college's food service.
+        </p>
+    </statement>
+    <choices>
+        <choice>
+            <statement>
+                <p>
+                    systematic
+                </p>
+            </statement>
+        </choice>
+        <choice>
+            <statement>
+                <p>
+                    simple random
+                </p>
+            </statement>
+        </choice>
+        <choice correct="yes">
+            <statement>
+                <p>
+                    stratified
+                </p>
+            </statement>
+        </choice>
+        <choice>
+            <statement>
+                <p>
+                    cluster
+                </p>
+            </statement>
+        </choice>
+        <choice>
+            <statement>
+                <p>
+                    convenience
+                </p>
+            </statement>
+        </choice>
+    
+    </choices>
+</exercise>
+
+
+
+<exercise>
+    <statement>
+        <p>
+            (Donnelly, Your Turn 1)
+        </p>
+        <p>
+            Identify the type of sampling technique used below.
+        </p>
+        <p>
+            Using computer software, a manager randomly selects 20 employees to participate in a job satisfaction survey.
+        </p>
+    </statement>
+    <choices>
+        <choice>
+            <statement>
+                <p>
+                    systematic
+                </p>
+            </statement>
+        </choice>
+        <choice correct="yes">
+            <statement>
+                <p>
+                    simple random
+                </p>
+            </statement>
+        </choice>
+        <choice>
+            <statement>
+                <p>
+                    stratified
+                </p>
+            </statement>
+        </choice>
+        <choice>
+            <statement>
+                <p>
+                    cluster
+                </p>
+            </statement>
+        </choice>
+        <choice>
+            <statement>
+                <p>
+                    convenience
+                </p>
+            </statement>
+        </choice>
+    
+    </choices>
+</exercise>
+
+
+
+
+  </section>
