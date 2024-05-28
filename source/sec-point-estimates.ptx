@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-point-estimates" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Point Estimates</title>
+
+<definition xml:id="def-point-estimate">
+    <statement>
+        <p>
+            A <em>point estimate</em> is a single numerical value that best estimates the population parameter of interest.  
+        </p>
+        <p>
+            The most common point estimates are the sample mean, <m>\overline{x}</m>, and the sample proportion, <m>\overline{p}</m>.
+        </p>
+    </statement>
+</definition>
+
+<p>
+    The advantage of a point estimate is that it is easy to calculate and easy to understand.  The disadvantage is that it doesn't provide any information about the accuracy of the estimate.  For this reason, statisticians prefer an interval estimate, a range of values used to estimate the parameter.  This estimate <em>may</em> or <em>may not</em> contain the value of the parameter being estimated.
+</p>
+
+
+<p>
+    ....include an example......
+</p>
+
+</section>
+
+

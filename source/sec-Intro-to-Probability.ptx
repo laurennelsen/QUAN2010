@@ -643,12 +643,33 @@
 </exercise>
 
 
-<exercise>
+
+<definition xml:id="def-prior-posterior-probability">
     <statement>
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        <em>Prior probability:</em>  the probability that an event will occur as determined without any additional information that could affect it
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>Posterior probability:</em>  a revision of a prior probability using additional information
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </statement>
+</definition>
+
+
+<exercise>
+    <introduction>
         <p>
             Let's look back at the contingency table from previous exercises..... (!!!insert!!!!)
         </p>
-    </statement>
+    </introduction>
     <task>
         <statement>
             <p>
@@ -674,6 +695,9 @@
         </answer>
     </task>
 </exercise>
+
+
+
 
   
 

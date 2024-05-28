@@ -12,7 +12,7 @@
       <ul>
         <li>
           <p>
-            Normal Distribution:
+            <em>Normal Distribution:</em>
             <figure xml:id="figure-geogebra-normaldist">
               <caption>Normal Distribution (Made in GeoGebra by the GeoGebra Materials Team)</caption>
               <interactive xml:id="geogebra-normaldist" geogebra="W9Nz53Ct" aspect="9:5" />
@@ -23,7 +23,7 @@
 
         <li>
           <p>
-            Exponential Distribution:
+            <em>Exponential Distribution:</em>
             <figure xml:id="figure-geogebra-expondist">
               <caption>Exponential Distribution (Made in GeoGebra by DavidK)</caption>
               <interactive xml:id="geogebra-expondist" geogebra="gjd2dmzw" aspect="9:5" />
@@ -33,7 +33,7 @@
 
         <li>
           <p>
-            Uniform Distribution:
+            <em>Uniform Distribution:</em>
             <figure xml:id="figure-geogebra-unifdist">
               <caption>Uniform Distribution (Made in GeoGebra by David Ramsay)</caption>
               <interactive xml:id="geogebra-unifdist" geogebra="v2EnMNF9" aspect="9:5" />

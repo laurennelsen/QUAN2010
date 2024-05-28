@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Confidence-Interval-for-Mean-Sigma-Unknown" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Confidence Intervals for the Mean (<m>\sigma</m> unknown)</title>
+
+
+<p>
+  Up to this point we have assumed that the population standard deviation, <m>\sigma</m>, was known.  This is unrealistic -- since we are creating an interval to estimate the population mean, <m>\mu</m>, we likely don't know the population standard deviation either!  Hence we will estimate <m>\sigma</m> with the value of the sample standard deviation, <m>s</m>.  But this introduces another source of unreliability, especially in small samples.  To keep the confidence interval at the desired level, we make the intervals wider by replacing the critical values in our confidence interval formula, <m>z_{\alpha/2}</m>, with larger critical values, <m>t_{\alpha/2}</m>.
+</p>
+
+<subsection xml:id="subsec-Students-t">
+  <title>The Student's <m>t</m>-Distribution</title>
+
+  <p>
+    The larger critical values come from the Student's <m>t</m>-distribution developed in 1908 by an Irish brewing employee, William S. Gosset.  He was a Guinness Brewery employee researching new methods of manufacturing ale.  He needed a distribution that could be used with small samples.  Employees were not allowed to publish research results, so he published under the pseudonym, <q>Student</q>.
+  </p>
+
+  <p>
+    The key properties of the Student's <m>t</m>-Distribution:
+    <ol>
+      <li>
+        <p>
+          It is symmetric around the mean (which is 0 just like the standard normal distribution) and mound-shaped (similar to bell-shaped).
+        </p>
+      </li>
+      <li>
+        <p>
+          It is a family of curves based on the concept of <em>degrees of freedom (df)</em>, which refer to the number of values that are free to vary.  As the degrees of freedom increases, the shape of the <m>t</m>-distribution becomes similar to the normal distribution.
+        </p>
+        <p>
+          When dealing with the sample mean, <m>df=n-1</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          The area under the curve is equal to <m>1</m>.
+        </p>
+      </li>
+      <li>
+        <p>
+          The <m>t</m>-distribution is flatter and wider than the normal distribution.  This means that the critical score for the <m>t</m>-distribution is therefore higher than the critical <m>z</m>-score for the same confidence level.  This results in wider confidence intervals when using the <m>t</m>-distribution.
+        </p>
+      </li>
+    </ol>
+  </p>
+  
+</subsection>
+
+<subsection xml:id="subsec-Confidence-Interval-Sigma-Unknown">
+  <title>Confidence Interval When <m>\sigma</m> is Unknown</title>
+
+  <p>
+    The formula for the confidence interval when <m>\sigma</m> is unknown is:
+    <me>\overline{x}\pm t_{\alpha/2}\cdot\hat{\sigma}_{\overline{x}},</me>
+    where <me>\hat{\sigma}_{\overline{x}}=\frac{s}{\sqrt{n}}.</me>
+  </p>
+
+  <p>
+    How do we find the critical values, <m>t_{\alpha/2}</m>?
+    <ol>
+      <li>
+        <p>
+          <em>Table:</em> Use this link ...insert.... (or Table 5 in Appendix A of the textbook).  Note that you will locate the degrees of freedom along the left column and the confidence level across the top of the table -- the desired critical value is located where the two meet inside the table.
+        </p>
+      </li>
+      <li>
+        <p>
+          <em>Excel:</em> Use the Excel formula
+          <me>T.INV.2T(\alpha,df),</me>
+          where <m>\alpha=\text{ the significance level and }df=n-1.</m>
+        </p>
+      </li>
+    </ol>
+  </p>
+
+
+  <exercise>
+    <introduction>
+      <p>
+        (Donnelly 8.19)
+      </p>
+      <p>
+        Construct a <m>90\%</m> confidence interval to estimate the population mean when <m>\overline{x}=68</m> and <m>s=13.9</m> for the sample sizes below.
+      </p>
+    </introduction>
+    
+    <task>
+      <statement>
+        <p>
+          <m>n=18</m>
+        </p>
+      </statement>
+      <answer>
+        <p>We are <m>90\%</m> confident that 
+          <me>62.299\lt \mu\lt 73.701 </me>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          <m>n=41</m>
+        </p>
+      </statement>
+      <answer>
+        <p>We are <m>90\%</m> confident that 
+          <me>64.344\lt \mu\lt 71.656 </me>
+        </p>
+      </answer>
+    </task>
+
+    <task>
+      <statement>
+        <p>
+          <m>n=64</m>
+        </p>
+      </statement>
+      <answer>
+        <p>We are <m>90\%</m> confident that 
+          <me>65.1001\lt \mu\lt 70.8999 </me>
+        </p>
+      </answer>
+    </task>
+
+  </exercise>
+
+
+  <exercise>
+    <statement>
+      <p>
+        Describe the effect on the interval by increasing the sample size.
+      </p>
+    </statement>
+    <choices>
+
+      <choice correct="yes">
+        <statement>
+          <p>
+            As the sample size increases, the width of the interval decreases.
+          </p>
+        </statement>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>
+            As the sample size increases, the width of the interval increases.
+          </p>
+        </statement>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>
+            As the sample size increases, the width of the interval might increase or decrease.
+          </p>
+        </statement>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>
+            As the sample size increases, the width of the interval stays the same.
+          </p>
+        </statement>
+      </choice>
+    
+    </choices>
+  </exercise>
+
+
+  <exercise>
+    <introduction>
+      <p>
+        (Donnelly 8.23)
+      </p>
+      <p>
+        A cruise company would like to estimate the average beer consumption to plan its beer inventory levels on future seven-day cruises.  (The ship certainly doesn't want to run out of beer in the middle of the ocean!)  The average beer over 18 randomly selected seven-day cruises was <m>81,977</m> bottles with a standard deviation of <m>4,502</m> bottles.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Construct a <m>90\%</m> confidence interval to estimate the average beer consumption per cruise.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <ul>
+            <li>
+              <p>
+                LCL: <m>80,131</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                UCL:  <m>83,823</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          What assumptions need to be made to construct this interval?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Since <m>n\lt 30</m>, the population must be normally distributed.
+        </p>
+      </answer>
+    </task>
+  </exercise>
+
+
+  <exercise>
+    <introduction>
+      <p>
+        (Donnelly 8.27)
+      </p>
+      <p>
+        According to a travel website, workers in a certain country lead the world in vacation days, averaging 41 days per year.  The data in the Excel file below shows the number of paid vacation days for a random sample of 20 workers from this country.
+      </p>
+      <p>
+        <url href="external/sheets/PaidVacationDays.xlsx" />>
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Construct a <m>95\%</m> confidence interval to estimate the average number of paid vacation days for workers from this country.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <ul>
+            <li>
+              <p>
+                LCL: <m>32.712</m>
+              </p>
+            </li>
+            <li>
+              <p>
+                UCL:  <m>47.588</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Do the results from this sample validate the travel website's findings?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Since <m>41</m> falls in this interval, the website's findings are validated.
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          What assumptions need to be made about this population?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Since <m>n\lt 30</m>, the population must be normally distributed.
+        </p>
+      </answer>
+    </task>
+  </exercise>
+  
+</subsection>
+
+</section>

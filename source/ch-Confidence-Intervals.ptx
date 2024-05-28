@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-Confidence-Intervals" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Confidence Intervals</title>
+
+<introduction>
+    <p>
+        One of the most important skills that you will learn in business statistics is to gather information from a sample and then use it to make a statement about the population from which it was chosen. The goal is to estimate the value of a population parameter using a sample statistic. For example, we might estimate the population mean, <m>\mu</m>, with the sample mean <m>\overline{x}</m>. But just how good is the estimate for the sample? Confidence intervals help us answer the question.
+    </p>
+
+    </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-point-estimates.ptx" />
+  <xi:include href="sec-Confidence-Interval-for-Mean-Sigma-Known.ptx" />
+  <xi:include href="sec-Interpreting-Confidence-Interval.ptx" />
+  <xi:include href="sec-Confidence-Interval-for-Mean-Sigma-Unknown.ptx" />
+
+</chapter>

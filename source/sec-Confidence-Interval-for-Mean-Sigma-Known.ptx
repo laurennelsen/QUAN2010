@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Confidence-Interval-for-Mean-Sigma-Known" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Confidence Intervals for the Mean (<m>\sigma</m> known)</title>
+
+<definition xml:id="def-confidence-mean">
+    <statement>
+        <p>
+            A <em>confidence interval for the mean</em> is an interval estimate around a sample mean that provides a range of where the true population lies.
+        </p>
+
+        <p>
+            The formula for this confidence interval is
+            <me>\overline{x}\pm z_{\alpha/2}\cdot\sigma_{\overline{x}}.</me>
+        </p>
+
+        <p>
+            In other words, this is the <em>point estimate</em>, <m>\overline{x}</m>, plus or minus the <em>margin of error</em>, <m>z_{\alpha/2}\cdot\sigma_{\overline{x}}</m>.
+        </p>
+
+<p>
+    <ul>
+        <li>
+            <p>
+                The <em>margin of error</em> is the width of the confidence interval between the sample mean and one of the limits.
+            </p>
+        </li>
+        <li>
+            <p>
+                A <em>confidence level</em> is the probability that the interval estimate includes the population parameter.
+            </p>
+
+            <p>
+                We decide in advance how confident we want to be that <m>\mu</m> is in the interval.  Typical values are usually between <m>0.90</m> and <m>0.99</m>, i.e., <m>90-99\%</m>.
+            </p>
+        </li>
+        <li>
+            <p>
+                Similarly, the <em>significance level</em>, represented by <m>\alpha</m>, is the probability that any given confidence interval will not contain <m>\mu</m>.
+            </p>
+            <p>
+                Typical values are between <m>0.01</m> and <m>0.10</m>, i.e. <m>1-10\%</m>.
+            </p>
+        </li>
+    </ul>
+</p>
+
+
+<p>
+    ......include example of this, maybe in Excel.......
+</p>
+
+    </statement>
+</definition>
+
+
+
+<exercise>
+    <introduction>
+        <p>
+            (Donnelly 8.5)
+        </p>
+        <p>
+            Determine the margin of error for a confidence interval to estimate the population mean with <m>n=35</m> and <m>\sigma=40</m> for the following confidence levels:
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                <m>90\%</m>
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <me>ME_{\overline{x}}\approx 11.122</me>
+            </p>
+        </answer>
+    </task>
+
+    <task>
+        <statement>
+            <p>
+                <m>94\%</m>
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <me>ME_{\overline{x}}\approx 12.71</me>
+            </p>
+        </answer>
+    </task>
+
+
+    <task>
+        <statement>
+            <p>
+                <m>98\%</m>
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <me>ME_{\overline{x}}\approx 15.754</me>
+            </p>
+        </answer>
+    </task>
+
+</exercise>
+
+
+<exercise>
+    <statement>
+        <p>
+            Describe the effect on the margin of error by increasing the confidence level.
+        </p>
+    </statement>
+    <choices>
+        <choice correct="yes">
+            <statement>
+                <p>
+                    As the confidence level increases, the margin of error increases.
+                </p>
+            </statement>
+        </choice>
+
+        <choice>
+            <statement>
+                <p>
+                    As the confidence level increases, the margin of error decreases.
+                </p>
+            </statement>
+        </choice>
+
+        <choice>
+            <statement>
+                <p>
+                    As the confidence level increases, the margin of error could increase or decrease.
+                </p>
+            </statement>
+        </choice>
+
+        <choice>
+            <statement>
+                <p>
+                    As the confidence level increases, the margin of error stays the same.
+                </p>
+            </statement>
+        </choice>
+    
+    </choices>
+</exercise>
+
+<definition xml:id="def-LCL-UCL">
+    <statement>
+        <p>
+            A confidence interval has two <q>sides</q>:
+            <ul>
+                <li>
+                    <p>
+                        The <em>lower confidence limit (LCL)</em>:  <me>\overline{x}-z_{\alpha/2}\cdot\sigma_{\overline{x}}</me>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        The <em>upper confidence limit (UCL)</em>:
+                        <me>\overline{x}-z_{\alpha/2}\cdot\sigma_{\overline{x}}</me>
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </statement>
+</definition>
+
+
+<figure xml:id="figure-geogebra-confidence-z">
+    <caption>Confidence Interval <m>z</m>-value (Made in GeoGebra by Terry Lee Lindenmuth)</caption>
+    <interactive xml:id="geogebra-confidence-z" geogebra="FhfpDVSh" aspect="9:5" />
+  </figure>
+
+
+  <figure xml:id="figure-geogebra-confidence-tweaks">
+    <caption>Confidence Interval <m>z</m>-value (Made in GeoGebra by David Gurney)</caption>
+    <interactive xml:id="geogebra-confidence-tweaks" geogebra="Kcq3UxwZ" aspect="9:5" />
+  </figure>
+
+
+  <figure xml:id="figure-geogebra-confidence-interval">
+    <caption>Confidence Interval <m>z</m>-value (Made in GeoGebra by Tim Elton)</caption>
+    <interactive xml:id="geogebra-confidence-interval" geogebra="kyhqchxb" aspect="9:5" />
+  </figure>
+
+
+
+<exercise>
+    <introduction>
+        <p>
+            (Donnelly 8.9)
+        </p>
+        <p>
+            Banking fees received much attention during the Great Recession as banks looked for ways to recover from the crisis.  A sample of 44 customers paid an average fee of <m>\$ 12.85</m> per month on their interest-bearing checking accounts.  Assume the population standard deviation is <m>\$ 1.87</m>.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                What is the margin of error for this interval?  (Let <m>\alpha=0.01</m>.)
+            </p>
+        </statement>
+        <answer>
+            <me>ME_{\overline{x}}\approx 0.7259</me>
+            </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What is the point estimate for the average fee for the population?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <me>\overline{x}=12.85</me>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Construct a <m>99\%</m> confidence interval to estimate the average fee for the population.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <me>\overline{x}\pm ME_{\overline{x}}\approx 12.85\pm 0.7259</me>
+            </p>
+            <p>
+                We are <m>99\%</m> confident that 
+                <me>12.124\lt \mu \lt 13.576</me>
+            </p>
+        </answer>
+    </task>
+</exercise>
+
+
+<exercise>
+    <introduction>
+        <p>
+            (Donnelly 8.16)
+        </p>
+        <p>
+            A car company developed a certain car model to appeal to young customers.  The car company claims the average age of drivers of this certain car model is 27 years old.  Suppose a random sample of 18 drivers was drawn, and the average age of the drivers was found to be 28.20 years.  Assume the standard deviation for the age of the car drivers to be 2.5 years.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Construct a <m>95\%</m> confidence interval to estimate the average age of the car driver.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                We are <m>95\%</m> confident that 
+                <me>27.045\lt \mu \lt 29.355.</me>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Does this result lend support to the car company's claims?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                No, it does not support the claim that the average age is 27 because 27 is not in the interval we found.
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What assumptions need to be made to construct this interval?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                Since <m>n=18\lt 30</m>, the sample size is small, requiring the population to be normally distributed.
+            </p>
+        </answer>
+    </task>
+</exercise>
+
+
+</section>

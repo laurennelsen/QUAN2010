@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Interpreting-Confidence-Interval" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Interpreting Confidence Intervals</title>
+
+  <p>
+    When we interpret a confidence interval, we say that <q>we are <m>90\%</m> confident that the interval we calculated captures the population mean</q>.  We DO NOT say <q>there is a <m>90\%</m> chance that the population mean falls between A and B</q>.  It might sound the same, but it is not.  The latter implies that the population mean is a variable that we can say something about.  But it is not -- it is fixed, and we do not know what it is.
+  </p>
+
+  <p>
+    Remember that we develop our confidence interval based on the sampling distribution of the sample mean.  We draw a sample and calculate an interval around the sample mean and say that we think we have <q>captured</q> the population mean within the interval -- we do NOT know anything about the population mean.  We can only say something about our sample mean and interval.
+  </p>
+
+  <p>
+    If we were to repeatedly draw samples, each has the same margin of error (since the sample size and <m>\sigma</m> are constant for all samples), but each sample mean likely varies.  After calculating all intervals, <m>90\%</m> of them would result in intervals that include the population mean, but <m>10\%</m> of them would have sample means so extreme (in the tail of the sampling distribution) that they would not include the population mean.
+  </p>
+
+  <p>
+    The figure below is about proportions instead of means, but it illustrates this idea well.
+  </p>
+
+  <figure xml:id="figure-geogebra-confidence-meaning">
+    <caption>Confidence Interval Meaning <m>z</m>-value (Made in GeoGebra by Steve Phelps)</caption>
+    <interactive xml:id="geogebra-confidence-meaning" geogebra="tRAjcM2v" aspect="9:5" />
+  </figure>
+
+
+
+
+</section>
