@@ -15,5 +15,7 @@
   <xi:include href="sec-Confidence-Interval-for-Mean-Sigma-Known.ptx" />
   <xi:include href="sec-Interpreting-Confidence-Interval.ptx" />
   <xi:include href="sec-Confidence-Interval-for-Mean-Sigma-Unknown.ptx" />
+  <xi:include href="sec-Confidence-Interval-Proportions.ptx" />
+  <xi:include href="sec-Determining-Sample-Size.ptx" />
 
 </chapter>

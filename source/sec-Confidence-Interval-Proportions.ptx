@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Confidence-Interval-for-Proportion" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Confidence Intervals for Proportions</title>
+
+<p>
+    We can also estimate the proportion of a population by constructing a confidence interval from a sample.  Recall that proportion data follow the binomial distribution, which can be approximated by the normal distribution under the conditions:
+    <ul>
+        <li>
+            <p>
+                <m>np\geq 5</m> and
+            </p>
+        </li>
+        <li>
+            <p>
+                <m>n(1-p)\geq 5</m>,
+            </p>
+        </li>
+        where <m>p=</m> the probability of success and <m>n=</m> the sample size.
+    </ul>
+</p>
+
+<figure xml:id="figure-geogebra-binomial-normal">
+    <caption>Binomial and Normal Distributions <m>z</m>-value (Made in GeoGebra by Steve Phelps)</caption>
+    <interactive xml:id="geogebra-binomial-normal" geogebra="xqvcg8sm" aspect="9:5" />
+  </figure>
+
+<definition xml:id="def-confidence-interval-proportion">
+    <statement>
+        <p>
+            The <em>confidence interval for the proportion</em> is an interval estimate around a sample proportion that provides a range of where <m>p</m> lies.
+        </p>
+
+        <p>
+            The formula for this confidence interval is
+            <me>\overline{p}\pm z_{\alpha/2}\cdot\hat{\sigma}_p,</me>
+            where <m>\overline{p}=\frac{x}{n}</m> and <m>\hat{\sigma}_p=\sqrt{\frac{\overline{p}(1-\overline{p})}{n}}</m>.  
+        </p>
+
+        <p>
+            The sample proportion, <m>\overline{p}</m>, measures the fraction of <q>successes</q> in the sample.
+        </p>
+    </statement>
+</definition>
+
+
+<exercise>
+    <introduction>
+        <p>
+            (Donnelly 8.34)
+        </p>
+        <p>
+            The IRS reported that <m>85\%</m> of individual tax returns were filed electronically in 2017.  A random sample of 240 tax returns from 2018 was selected.  From this sample, 187 were filed electronically.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                What is the point estimate based on this sample?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <me>\overline{p}=\frac{187}{240}\approx 0.779</me>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                What is the margin of error for this sample?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <me>ME_{\overline{p}}\approx 0.0441</me>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Construct a <m>90\%</m> confidence interval to estimate the actual proportion of taxpayers who filed electronically in 2018?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                We are <m>90\%</m> confident that <m>0.7349\lt p \lt 0.8231</m>.  (That is, we are <m>90\%</m> confident that the proportion of taxpayers who filed electronically in 2018 is between <m>73.49\%</m> and <m>82.31\%</m>.)
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Is there any evidence that this proportion has changed since 2017 based on this sample?
+            </p>
+        </statement>
+        <answer>
+            <p>
+                Since 0.85 does not fall in the interval, there is evidence that the proportion of electronic filers has changed.
+            </p>
+        </answer>
+    </task>
+
+</exercise>
+
+
+</section>

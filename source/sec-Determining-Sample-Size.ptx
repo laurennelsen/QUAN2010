@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Determining-Sample-Size" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Determining Sample Size</title>
+
+  <p>
+    Let's say we want to construct a <m>99\%</m> confidence interval to estimate the average GPA of students at UCCS.  However, we don't want the margin of error to be too big, and we want to know how many students to survey to get the margin of error that we want.
+  </p>
+
+  <p>
+    How large a sample is necessary to make an accurate estimate?  The answer is not simple, since it depends on three things:
+    <ol>
+        <li>
+            <p>
+                The confidence level
+            </p>
+        </li>
+        <li>
+            <p>
+                The standard deviation
+            </p>
+        </li>
+        <li>
+            <p>
+                The margin of error
+            </p>
+        </li>
+    </ol>
+  </p>
+
+  <p>
+    The more confident we want to be, the wider we want our interval, but there is a tradeoff.  If an interval is too wide, it provides little information.  On the other hand, a narrow interval requires a larger sample size and sampling can be a costly procedure.  Hence it is handy to be able to be able to calculate ahead of time the sample size required to achieve a specified margin of error.  With a bit of algebra on the appropriate margin of error from the confidence interval formula, we can determine the sample size.
+    <me>ME_{\overline{x}}=z_{\alpha/2}\cdot\left(\frac{\sigma}{\sqrt{n}}\right)\text{  and  } ME_{\overline{p}}=z_{\alpha/2}\cdot\sqrt{\frac{\overline{p}(1-\overline{p})}{n}}</me>
+  </p>
+
+  <p>
+    <ul>
+        <li>
+            <p>
+                The formula when working with a mean is:
+                <me>\boxed{n=\frac{(z_{\alpha/2})^2\cdot\sigma^2}{(ME_{\overline{x}})^2}}</me>
+            </p>
+        </li>
+        <li>
+            <p>
+                The formula when working with a proportion is:
+                <me>\boxed{n=\frac{(z_{\alpha/2})^2\cdot\sigma^2}{(ME_{\overline{p}})^2}}</me>
+            </p>
+        </li>
+    </ul>
+    <em>If necessary, round the answer UP to obtain a whole number.  If you round down, then you won't achieve the desired margin of error.</em>
+  </p>
+
+  <exercise>
+    <statement>
+        <p>
+            (Donnelly 8.44)
+        </p>
+        <p>
+            Determine the sample size needed to construct a <m>99\%</m> confidence interval to estimate the average GPA for the student population at a college with a margin of error equal to <m>0.5</m>.  Assume the standard deviation of the GPA for the student population is <m>2.5</m>.
+        </p>
+    </statement>
+    <answer>
+        <p>
+            Using the formula, we'll get <m>n\approx 165.87</m>.  We always need to round up to guarantee the desired margin of error.  So here, we need a sample size of at least <m>166</m>.
+        </p>
+    </answer>
+  </exercise>
+
+
+  <exercise>
+    <statement>
+        <p>
+            (Donnelly 8.47)
+        </p>
+        <p>
+            A certain region would like to estimate the proportion of voters who intend to participate in upcoming elections.  A pilot sample of 50 voters found that 39 of them intended to vote in the election.  Determine the additional number of voters that need to be sampled to construct a <m>96\%</m> interval with a margin of error equal to <m>0.08</m> to estimate the proportion.
+        </p>
+    </statement>
+    <answer>
+        <p>
+            Using the formula (and rounding up), we'll get that <m>n</m> needs to be at least <m>114</m>.  Since the pilot sample included <m>50</m> voters, to get to <m>114</m> voters, we need to sample
+            <me>114-50=64\text{ more voters.}</me>
+        </p>
+    </answer>
+  </exercise>
+
+</section>
