@@ -1339,7 +1339,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.3",
   "title": "Type I and Type II Errors",
-  "body": " Type I and Type II Errors   Recall that the purpose of a hypothesis test is to verify the validity of a claim about a population based on a single sample. Since we are relying on a sample, there is risk that the conclusions we draw about the population will be wrong due to sampling error.          Type I error: occurs when is rejected when in reality it is true.    The probability of making this error is known as , the significance level.    A Type I error is known as the producer's risk .       Type II error: occurs when we fail to reject when it is false.    The probability of making this error is .    A Type II error is known as the consumer's risk          "
+  "body": " Type I and Type II Errors   Recall that the purpose of a hypothesis test is to verify the validity of a claim about a population based on a single sample. Since we are relying on a sample, there is risk that the conclusions we draw about the population will be wrong due to sampling error.          Type I error: occurs when is rejected when in reality it is true.    The probability of making this error is known as , the significance level.    A Type I error is known as the producer's risk .       Type II error: occurs when we fail to reject when it is false.    The probability of making this error is .    A Type II error is known as the consumer's risk .         "
 },
 {
   "id": "def-types-errors",
@@ -1348,14 +1348,122 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "8.3.1",
   "title": "",
-  "body": "      Type I error: occurs when is rejected when in reality it is true.    The probability of making this error is known as , the significance level.    A Type I error is known as the producer's risk .       Type II error: occurs when we fail to reject when it is false.    The probability of making this error is .    A Type II error is known as the consumer's risk         "
+  "body": "      Type I error: occurs when is rejected when in reality it is true.    The probability of making this error is known as , the significance level.    A Type I error is known as the producer's risk .       Type II error: occurs when we fail to reject when it is false.    The probability of making this error is .    A Type II error is known as the consumer's risk .        "
+},
+{
+  "id": "sec-hyp-testing-mean-sigma-unknown",
+  "level": "1",
+  "url": "sec-hyp-testing-mean-sigma-unknown.html",
+  "type": "Section",
+  "number": "8.4",
+  "title": "Hypothesis Testing for <span class=\"process-math\">\\(\\mu\\)<\/span> When <span class=\"process-math\">\\(\\sigma\\)<\/span> is Unknown",
+  "body": " Hypothesis Testing for When is Unknown   Up to this point, we've assumed that we know , the population mean. But as we saw in the last chapter on confidence intervals, if we don't know , it's pretty unrealistic that we would know . So just like we did when creating confidence intervals, we will estimate with the sample standard deviation, . This means that we will be dealing with the Student's -distribution in place of the normal distribution.  Hence, the test statistic for hypothesis tests of this type are computed with the formula:     (Donnelly 9.20)  In 2017, the average credit score for loans that were purchased by a government-sponsored mortgage loan company was 742. A random sample of 35 mortgages recently purchased by the company was selected, and it was found that the average credit score was 752 with a sample standard deviation of 22. Using , is there enough evidence from this sample to conclude that the average credit score for mortgages purchased by the company has increased since 2017? Use the traditional method of hypothesis testing.   In our next example, we will use the p-value method of hypothesis testing. Unfortunately, tables for the Student's -distribution are limited in the precision they can provide for our p-values. Therefore, we will rely on Excewl to compute the p-values using the following formulas: where     the test statistic,     the degrees of freedom    cumulative  TRUE (since we want the accumulated area left of our test statistic)      (Donnelly 9.19)  According to the financial reports by Snapchat, the average daily user of Snapchat created 19 messages, or snaps, per day in Q3 2017. A college student wants to find out if the number of Snapchat messages has changed since Q3 2017 and creates a random sample using information from students on her campus for the current semester. The results are found in this lesson's Excel file. Using , test the hypothesis that the number of Snapchats sent by the average Snapchat user has not changed since Q3 2017. Use the p-value method of hypothesis testing.   "
+},
+{
+  "id": "sec-hyp-testing-mean-sigma-unknown-3",
+  "level": "2",
+  "url": "sec-hyp-testing-mean-sigma-unknown.html#sec-hyp-testing-mean-sigma-unknown-3",
+  "type": "Exercise",
+  "number": "8.4.1",
+  "title": "",
+  "body": " (Donnelly 9.20)  In 2017, the average credit score for loans that were purchased by a government-sponsored mortgage loan company was 742. A random sample of 35 mortgages recently purchased by the company was selected, and it was found that the average credit score was 752 with a sample standard deviation of 22. Using , is there enough evidence from this sample to conclude that the average credit score for mortgages purchased by the company has increased since 2017? Use the traditional method of hypothesis testing.  "
+},
+{
+  "id": "sec-hyp-testing-mean-sigma-unknown-5",
+  "level": "2",
+  "url": "sec-hyp-testing-mean-sigma-unknown.html#sec-hyp-testing-mean-sigma-unknown-5",
+  "type": "Exercise",
+  "number": "8.4.2",
+  "title": "",
+  "body": " (Donnelly 9.19)  According to the financial reports by Snapchat, the average daily user of Snapchat created 19 messages, or snaps, per day in Q3 2017. A college student wants to find out if the number of Snapchat messages has changed since Q3 2017 and creates a random sample using information from students on her campus for the current semester. The results are found in this lesson's Excel file. Using , test the hypothesis that the number of Snapchats sent by the average Snapchat user has not changed since Q3 2017. Use the p-value method of hypothesis testing.  "
+},
+{
+  "id": "sec-hyp-testing-proportion",
+  "level": "1",
+  "url": "sec-hyp-testing-proportion.html",
+  "type": "Section",
+  "number": "8.5",
+  "title": "Hypothesis Testing for the Population Proportion",
+  "body": " Hypothesis Testing for the Population Proportion   The last type of hypothesis test that we will study in this chapter involves the population proportion, . This test is useful for testing claims made about the proportion of something. Recall that proportion data follow the binomial distribution, which can be approximated by the normal distribution under the conditions:     the probability of success in the population     the sample size     When these conditions are met, the test statistic for this hypothesis test is calculated with this formula:     (Donnelly 9.31)  In April 2010, of the unemployed had been out of work longer than six months. Policy makers felt that this percentage declined during 2010 as the job market improved. To test this theory, a random sample of 200 unemployed people was selected, and it was found that 80 had been out of work for more than six months. Assuming , what conclusions can be drawn about the proportion of the unemployed who have been out of work for more than six months? Use the p-value method of hypothesis testing.    (Donnelly 9.26)  An increased number of colleges have been using online resources to research applicants. According to a study from last year, of admissions officers indicated that they visited an applying student's social networking page. A random sample of 500 admissions officers was recently selected and it was found that 170 of them visit the social networking sites of students applying to their college. Assuming , does this sample provide support for the hypothesis that the proportion of admissions officers who visit an applying students' social networking page has increased in the past year? Use the traditional method of hypothesis testing.   "
+},
+{
+  "id": "sec-hyp-testing-proportion-3",
+  "level": "2",
+  "url": "sec-hyp-testing-proportion.html#sec-hyp-testing-proportion-3",
+  "type": "Exercise",
+  "number": "8.5.1",
+  "title": "",
+  "body": " (Donnelly 9.31)  In April 2010, of the unemployed had been out of work longer than six months. Policy makers felt that this percentage declined during 2010 as the job market improved. To test this theory, a random sample of 200 unemployed people was selected, and it was found that 80 had been out of work for more than six months. Assuming , what conclusions can be drawn about the proportion of the unemployed who have been out of work for more than six months? Use the p-value method of hypothesis testing.  "
+},
+{
+  "id": "sec-hyp-testing-proportion-4",
+  "level": "2",
+  "url": "sec-hyp-testing-proportion.html#sec-hyp-testing-proportion-4",
+  "type": "Exercise",
+  "number": "8.5.2",
+  "title": "",
+  "body": " (Donnelly 9.26)  An increased number of colleges have been using online resources to research applicants. According to a study from last year, of admissions officers indicated that they visited an applying student's social networking page. A random sample of 500 admissions officers was recently selected and it was found that 170 of them visit the social networking sites of students applying to their college. Assuming , does this sample provide support for the hypothesis that the proportion of admissions officers who visit an applying students' social networking page has increased in the past year? Use the traditional method of hypothesis testing.  "
+},
+{
+  "id": "sec-Overview",
+  "level": "1",
+  "url": "sec-Overview.html",
+  "type": "Section",
+  "number": "9.1",
+  "title": "Overview",
+  "body": " Overview   In this chapter, we build on the ideas from the previous two chapters and use inferential statistics to compare two populations. We will estimate the difference between two parameters using confidence intervals as well as perform hypothesis tests to compare the difference between the two parameters. In either situation, after completing the previous chapters, you should have learned that to do various inference procedures, you really only need to know the proper sampling distribution and the format of your hypothesis. All the other concepts are the same -- just apply the correct formulas.  With two populations involving means, there are two options. Data may be collected from two completely independent populations, or pairs of data points from the two populations may be collected where they are matched in some way. Let's define these two concepts carefully before moving into the specifics of inferential statistics involving the comparison of two populations.        In independent samples , the results from one population have no impact on results obtained from the other sample.  An observation from one sample is unrelated to an observation from the other sample.    In dependent samples , each observation from one sample is related to an observation from the other sample.       "
+},
+{
+  "id": "def-dependent-independent-samples",
+  "level": "2",
+  "url": "sec-Overview.html#def-dependent-independent-samples",
+  "type": "Definition",
+  "number": "9.1.1",
+  "title": "",
+  "body": "     In independent samples , the results from one population have no impact on results obtained from the other sample.  An observation from one sample is unrelated to an observation from the other sample.    In dependent samples , each observation from one sample is related to an observation from the other sample.      "
+},
+{
+  "id": "sec-two-means-independent",
+  "level": "1",
+  "url": "sec-two-means-independent.html",
+  "type": "Section",
+  "number": "9.2",
+  "title": "Comparing Two Means with Independent Samples",
+  "body": " Comparing Two Means with Independent Samples   In this section, we study two-sample hypothesis tests and confidence intervals. First, we will assume that the standard deviation, , is known. Then we will look at the more realistic case where is unknown.        The sampling distribution for the difference in means is normal given normal populations or large samples ( ). The mean of this sampling distribution is     The standard error for this sampling distribution is     The test statistic for a hypothesis test comparing the difference between two means with independent samples and known standard deviations is defined by: where    = the hypothesized difference in population means (defined by the null hypothesis)     =  the standard error for the difference between the two means     =  the difference in sample means between Populations 1 and 2          This formula is a little unwieldy so whenever we are dealing with raw data (not just summary statistics), we will use Excel to do all the time-consuming calculations.  Now let's demonstrate the two ways we can perform this type of hypothesis test. First, in we will complete the hypothesis test by hand, manually computing all of the required calculations. Then in > we will rely on Excel to do the calculations. After stating the two hypotheses, we will navigate to the Data Analysis > tool and choose z-Test Two-Sample for Means to complete the test.   (Donnelly 10.7)  Suppose the Bureau of Labor Statistics would like to investigate if the average retirement age for a worker in Japan is higher than the average retirement age for a worker in the United States. A random sample of 30 retired U.S. workers had an average retirement age of 64.6 years. A random sample of 30 retired Japanese workers had an average retirement age of 67.5 years. Assume the population standard deviation for the retirement age in the U.S. is 4.0 years and for Japan is 4.5 years. Perform a hypothesis test using to determine if the average retirement age in Japan is higher than it is in the United States.    (Donnelly Your Turn 1)  Major League Baseball officials (and many fans) have been concerned about the lengths of games, particularly playoff games. Suppose the officials would like to test the hypothesis that the mean length of a playoff game is longer than the mean length of a regular season game. The data in the Excel file below shows the length of games, in minutes, for randomly selected games from the regular season and from the playoffs. Assume the standard deviations of the playoff and regular season games are 25 and 21 minutes respectively. Using , can we conclude that playoff games are longer, on average, than regular season games? !!!!!!!!INSERT EXCEL FILE!!!!!!!!   "
+},
+{
+  "id": "def-difference-means-independent",
+  "level": "2",
+  "url": "sec-two-means-independent.html#def-difference-means-independent",
+  "type": "Definition",
+  "number": "9.2.1",
+  "title": "",
+  "body": "     The sampling distribution for the difference in means is normal given normal populations or large samples ( ). The mean of this sampling distribution is     The standard error for this sampling distribution is     The test statistic for a hypothesis test comparing the difference between two means with independent samples and known standard deviations is defined by: where    = the hypothesized difference in population means (defined by the null hypothesis)     =  the standard error for the difference between the two means     =  the difference in sample means between Populations 1 and 2         "
+},
+{
+  "id": "ex-two-means-hand",
+  "level": "2",
+  "url": "sec-two-means-independent.html#ex-two-means-hand",
+  "type": "Exercise",
+  "number": "9.2.2",
+  "title": "",
+  "body": " (Donnelly 10.7)  Suppose the Bureau of Labor Statistics would like to investigate if the average retirement age for a worker in Japan is higher than the average retirement age for a worker in the United States. A random sample of 30 retired U.S. workers had an average retirement age of 64.6 years. A random sample of 30 retired Japanese workers had an average retirement age of 67.5 years. Assume the population standard deviation for the retirement age in the U.S. is 4.0 years and for Japan is 4.5 years. Perform a hypothesis test using to determine if the average retirement age in Japan is higher than it is in the United States.  "
+},
+{
+  "id": "ex-two-means-Excel",
+  "level": "2",
+  "url": "sec-two-means-independent.html#ex-two-means-Excel",
+  "type": "Exercise",
+  "number": "9.2.3",
+  "title": "",
+  "body": " (Donnelly Your Turn 1)  Major League Baseball officials (and many fans) have been concerned about the lengths of games, particularly playoff games. Suppose the officials would like to test the hypothesis that the mean length of a playoff game is longer than the mean length of a regular season game. The data in the Excel file below shows the length of games, in minutes, for randomly selected games from the regular season and from the playoffs. Assume the standard deviations of the playoff and regular season games are 25 and 21 minutes respectively. Using , can we conclude that playoff games are longer, on average, than regular season games? !!!!!!!!INSERT EXCEL FILE!!!!!!!!  "
 },
 {
   "id": "sec-correlation",
   "level": "1",
   "url": "sec-correlation.html",
   "type": "Section",
-  "number": "9.1",
+  "number": "10.1",
   "title": "Correlation Analysis",
   "body": " Correlation Analysis  Recall that a scatterplot is a graph used to explore a relationship between two variables. The two variables can be defined further as the independent and dependent variables.   Scatter Plot (Made in GeoGebra by Mark Beckwith)         An independent variable explains the variation in the dependent variable    A dependent variable is explained by one or more independent variables        Correlation analysis provides a way to measure the strength and direction of the linear relationship between the two variables (the aforementioned independent and dependent variables). This is done by computing the sample correlation coefficient , .  The range of the correlation coefficient is .   A positive value indicates that as increases, also increases.    A negative value indicates that as increases, decreases.     Recall that we used the Excel formula, CORREL, to calculate this number in a previous chapter. Now we improve on that skill by learning how to use a hypothesis test to assess the strength of the linear relationship described by .  The population correlation coefficient, , refers to the correlation between all values of two variables in a population. A value of means that there is no linear relationship between and . We don't know the value of so we use the sample correlation coefficient to test whether we have enough evidence from the sample to conclude that there is a linear relationship between the variables in the population. The two hypotheses for this hypothesis test are:     The test statistic uses the Student's -distribution with formula:     Degrees of freedom here are....     The housing market in the United States is generally affected by economic conditions and interest rates, but also by the time of the year. More people usually buy and sell homes in the spring summer months. We want to see if there is a strong correlation between new home listings and temperature. The Excel file below includes the number of new housing listings in Colorado, as well as temperature and precipitation at Denver International Airport (DEN).    Determine the sample correlation coefficient between the number of new listings and the precipitation.   Determine the sample correlation coefficient between the number of new listings and the maximum temperature.   Using , test if the population correlation coefficient between the number of new listings and the maximum temperature is different from zero. What conclusions can you draw?   "
 },
@@ -1364,7 +1472,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-correlation.html#figure-geogebra-scatter",
   "type": "Figure",
-  "number": "9.1.1",
+  "number": "10.1.1",
   "title": "",
   "body": " Scatter Plot (Made in GeoGebra by Mark Beckwith)   "
 },
@@ -1373,7 +1481,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-correlation.html#sec-correlation-4",
   "type": "Definition",
-  "number": "9.1.2",
+  "number": "10.1.2",
   "title": "",
   "body": "     An independent variable explains the variation in the dependent variable    A dependent variable is explained by one or more independent variables      "
 },
@@ -1382,7 +1490,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-correlation.html#housingmarket",
   "type": "Exercise",
-  "number": "9.1.3",
+  "number": "10.1.3",
   "title": "",
   "body": " The housing market in the United States is generally affected by economic conditions and interest rates, but also by the time of the year. More people usually buy and sell homes in the spring summer months. We want to see if there is a strong correlation between new home listings and temperature. The Excel file below includes the number of new housing listings in Colorado, as well as temperature and precipitation at Denver International Airport (DEN).    Determine the sample correlation coefficient between the number of new listings and the precipitation.   Determine the sample correlation coefficient between the number of new listings and the maximum temperature.   Using , test if the population correlation coefficient between the number of new listings and the maximum temperature is different from zero. What conclusions can you draw?  "
 },
@@ -1391,7 +1499,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-developing-regression-model.html",
   "type": "Section",
-  "number": "9.2",
+  "number": "10.2",
   "title": "Developing a Regression Model",
   "body": " Developing a Regression Model  Now we are going to learn techniques to create models that fit our data. Regression analysis is the modeling procedure that we will study. We will discuss how to perform the calculations in the formulas involved in creating and assessing regression models. However, in most cases we will rely on the Regression tool in the Data Analysis tab of Excel.   Regression Example powered by Desmos     Regression Line with Error powered by Desmos      Regression analysis enables us to describe a straight line that best fits the data.   In simple regression analysis, there is one independent variable.    In multiple regression analysis, there is more than one independent variable.     The formula for the linear regression model created with sample data is where   The are called regression coefficients . The simple regression model is often just called the regression line .     (Donnelly 14.56)  As a measure of productivity, Verizon Wireless records the number of customers each of its retail employees activates weekly. An activation is defined as either a new customer signing a cell phone contract or an existing customer renewing a contract. The data table found in this lesson's Excel file shows the number of weekly activations for eight randomly selected employees along with their job-satisfaction levels rated on a scale of ( Most satisfied).    Construct a scatter plot for these data. Let satisfaction be the independent variable and let activations be the dependent variable.   Determine the equation of the regression line for the data.   Interpret the value of the slope in the equation.   Predict the number of activations for an employee with a satisfaction level of 7.4.   Calculate the correlation coefficient for this sample.   Using , test to determine if the population correlation coefficient is not equal to zero. What conclusions can be made based on these results?    (Donnelly 15.6)  A hospital would like to develop a regression model to predict the total hospital bill for a patient based on the age of the patient ( ), the patient's length of stay ( ), and the number of days in the hospital's intensive care unit (ICU) ( ). Data for these variables can be found in the table in the Excel file below.    Construct a regression model using all three independent variables.   Interpret the meaning of the regression coefficients.   Predict the average hospital bill for a 76-year-old person hospitalized for 5 days with 3 days spent in the ICU.     The regression line will not pass through each of the data points. Hence, there is error between the true value of from the data and the value, , predicted by the regression line. This difference is called the residual , .     Regression Line with Error powered by Desmos     Let's look at the regression model below and think about the actual versus the predicted -values.   Regression Line Error powered by Desmos     For , what is the corresponding -value, and what is ?   For , what is ?     The mathematical procedure that is used to find the regression line is the least squares method . The least squares method aims to minimize the total squared error between the values of and . This sum is also called the sum of squares error (SSE) , and is definted by the formula Minimizing the SSE results in the best fitting line through the data points.    Least Squares Visualization (Made in GeoGebra by Ivan Gatewood)       There are two other sum of squares related to our data points:   the total sum of squares (SST):     the sum of squares regression (SSR):    (where the average value of the dependent variable from the sample)     All of the sum of squares are related:    The total sum of squares (SST) , measures the total variation in the dependent variable.    The sum of squares regression (SSR) , measures the amount of variation in the dependent variable that is explained by the independent variable(s).    The ratio of these two numbers, , is called the coefficient of determination . It measures the percentage of the total variation of the dependent variable that is explained by the independent variable(s) in the model.       Let's go back to the Verizon example from earlier.  As a measure of productivity, Verizon Wireless records the number of customers each of its retail employees activates weekly. An activation is defined as either a new customer signing a cell phone contract or an existing customer renewing a contract. The data table found in this lesson's Excel file shows the number of weekly activations for eight randomly selected employees along with their job-satisfaction levels rated on a scale of ( Most satisfied).    Identify the SST. (Hint: Use the Regression output from Excel.)   Partition the SST into the SSE and the SSR.   Calculate the coefficient of determination, .   Interpret the coefficient of determination.   "
 },
@@ -1400,7 +1508,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-developing-regression-model.html#sec-developing-regression-model-3",
   "type": "Figure",
-  "number": "9.2.1",
+  "number": "10.2.1",
   "title": "",
   "body": " Regression Example powered by Desmos   "
 },
@@ -1409,7 +1517,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-developing-regression-model.html#sec-developing-regression-model-4",
   "type": "Figure",
-  "number": "9.2.2",
+  "number": "10.2.2",
   "title": "",
   "body": " Regression Line with Error powered by Desmos   "
 },
@@ -1418,7 +1526,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-developing-regression-model.html#def-regression",
   "type": "Definition",
-  "number": "9.2.3",
+  "number": "10.2.3",
   "title": "",
   "body": "  Regression analysis enables us to describe a straight line that best fits the data.   In simple regression analysis, there is one independent variable.    In multiple regression analysis, there is more than one independent variable.     The formula for the linear regression model created with sample data is where   The are called regression coefficients . The simple regression model is often just called the regression line .   "
 },
@@ -1427,7 +1535,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-developing-regression-model.html#sec-developing-regression-model-6",
   "type": "Exercise",
-  "number": "9.2.4",
+  "number": "10.2.4",
   "title": "",
   "body": " (Donnelly 14.56)  As a measure of productivity, Verizon Wireless records the number of customers each of its retail employees activates weekly. An activation is defined as either a new customer signing a cell phone contract or an existing customer renewing a contract. The data table found in this lesson's Excel file shows the number of weekly activations for eight randomly selected employees along with their job-satisfaction levels rated on a scale of ( Most satisfied).    Construct a scatter plot for these data. Let satisfaction be the independent variable and let activations be the dependent variable.   Determine the equation of the regression line for the data.   Interpret the value of the slope in the equation.   Predict the number of activations for an employee with a satisfaction level of 7.4.   Calculate the correlation coefficient for this sample.   Using , test to determine if the population correlation coefficient is not equal to zero. What conclusions can be made based on these results?  "
 },
@@ -1436,7 +1544,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-developing-regression-model.html#sec-developing-regression-model-7",
   "type": "Exercise",
-  "number": "9.2.5",
+  "number": "10.2.5",
   "title": "",
   "body": " (Donnelly 15.6)  A hospital would like to develop a regression model to predict the total hospital bill for a patient based on the age of the patient ( ), the patient's length of stay ( ), and the number of days in the hospital's intensive care unit (ICU) ( ). Data for these variables can be found in the table in the Excel file below.    Construct a regression model using all three independent variables.   Interpret the meaning of the regression coefficients.   Predict the average hospital bill for a 76-year-old person hospitalized for 5 days with 3 days spent in the ICU.  "
 },
@@ -1445,7 +1553,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-developing-regression-model.html#def-residual",
   "type": "Definition",
-  "number": "9.2.6",
+  "number": "10.2.6",
   "title": "",
   "body": "  The regression line will not pass through each of the data points. Hence, there is error between the true value of from the data and the value, , predicted by the regression line. This difference is called the residual , .   "
 },
@@ -1454,7 +1562,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-developing-regression-model.html#sec-developing-regression-model-9",
   "type": "Figure",
-  "number": "9.2.7",
+  "number": "10.2.7",
   "title": "",
   "body": " Regression Line with Error powered by Desmos   "
 },
@@ -1463,7 +1571,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-developing-regression-model.html#sec-developing-regression-model-10",
   "type": "Exercise",
-  "number": "9.2.8",
+  "number": "10.2.8",
   "title": "",
   "body": " Let's look at the regression model below and think about the actual versus the predicted -values.   Regression Line Error powered by Desmos     For , what is the corresponding -value, and what is ?   For , what is ?  "
 },
@@ -1472,7 +1580,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-developing-regression-model.html#def-least-squares",
   "type": "Definition",
-  "number": "9.2.10",
+  "number": "10.2.10",
   "title": "",
   "body": "  The mathematical procedure that is used to find the regression line is the least squares method . The least squares method aims to minimize the total squared error between the values of and . This sum is also called the sum of squares error (SSE) , and is definted by the formula Minimizing the SSE results in the best fitting line through the data points.    Least Squares Visualization (Made in GeoGebra by Ivan Gatewood)    "
 },
@@ -1481,7 +1589,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-developing-regression-model.html#def-SST-and-SSR",
   "type": "Definition",
-  "number": "9.2.12",
+  "number": "10.2.12",
   "title": "",
   "body": "  There are two other sum of squares related to our data points:   the total sum of squares (SST):     the sum of squares regression (SSR):    (where the average value of the dependent variable from the sample)   "
 },
@@ -1490,7 +1598,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-developing-regression-model.html#sec-developing-regression-model-13",
   "type": "Definition",
-  "number": "9.2.13",
+  "number": "10.2.13",
   "title": "",
   "body": " All of the sum of squares are related:    The total sum of squares (SST) , measures the total variation in the dependent variable.    The sum of squares regression (SSR) , measures the amount of variation in the dependent variable that is explained by the independent variable(s).    The ratio of these two numbers, , is called the coefficient of determination . It measures the percentage of the total variation of the dependent variable that is explained by the independent variable(s) in the model.     "
 },
@@ -1499,7 +1607,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-developing-regression-model.html#sec-developing-regression-model-14",
   "type": "Exercise",
-  "number": "9.2.14",
+  "number": "10.2.14",
   "title": "",
   "body": " Let's go back to the Verizon example from earlier.  As a measure of productivity, Verizon Wireless records the number of customers each of its retail employees activates weekly. An activation is defined as either a new customer signing a cell phone contract or an existing customer renewing a contract. The data table found in this lesson's Excel file shows the number of weekly activations for eight randomly selected employees along with their job-satisfaction levels rated on a scale of ( Most satisfied).    Identify the SST. (Hint: Use the Regression output from Excel.)   Partition the SST into the SSE and the SSR.   Calculate the coefficient of determination, .   Interpret the coefficient of determination.  "
 },
@@ -1508,7 +1616,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-using-regression.html",
   "type": "Section",
-  "number": "9.3",
+  "number": "10.3",
   "title": "Using Regression to Make a Prediction",
   "body": " Using Regression to Make a Prediction  We can use our regression model to make predictions based on given values of the independent variables -- just plug the given values into the respective independent variable of the regression model. But how reliable is this prediction? We only have sample data so the prediction isn't perfect. Similar to what we did in a previous chapter, we will construct a confidence interval to aid in describing the accuracy of our predictions.  There are a number of confidence intervals that we can create based on our regression model that provide insight into the validity of the model. The only one we will focus on is related to the population slopes: It turns out we will likely not need this formula, however, since the Regression tool in Excel will do most of the work for us.   Let's look back at the hospital example from earlier.  A hospital would like to develop a regression model to predict the total hospital bill for a patient based on the age of the patient ( ), the patient's length of stay ( ), and the number of days in the hospital's intensive care unit (ICU) ( ). Data for these variables can be found in the table in the Excel file below.   Construct and interpret the confidence interval for the regression coefficient for each of the independent variables in the model.   "
 },
@@ -1517,7 +1625,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-using-regression.html#sec-using-regression-4",
   "type": "Exercise",
-  "number": "9.3.1",
+  "number": "10.3.1",
   "title": "",
   "body": " Let's look back at the hospital example from earlier.  A hospital would like to develop a regression model to predict the total hospital bill for a patient based on the age of the patient ( ), the patient's length of stay ( ), and the number of days in the hospital's intensive care unit (ICU) ( ). Data for these variables can be found in the table in the Excel file below.   Construct and interpret the confidence interval for the regression coefficient for each of the independent variables in the model.  "
 },
@@ -1526,7 +1634,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "sec-Diamonds.html",
   "type": "Section",
-  "number": "9.4",
+  "number": "10.4",
   "title": "Diamonds Modeling",
   "body": " Diamonds Modeling  (Background on diamonds was provided in part by research done at https:\/\/www.brilliance.com\/education\/diamonds\/depth-table)  When a gemologist determines the value of a diamond, he or she considers a number of different factors. These factors are known as the 4C's (carat, color, clarity, and cut). How large is the diamond? The size (really the weight) of the diamond is measured in carats. Is it colorless or does it have a slight hue of color? Are there any visible inclusions in the diamond (this affects the clarity)?  Was the stone cut well? This is described by both the table and the depth. They both helps to define the physical shape of a diamond and contribute to its sparkle. When these two features are proportioned just right, a diamond of any size looks spectacular.  Every diamond has a flat, square-shaped facet on its top called the table. It plays a critical role in a diamond’s appearance. The table refracts rays of light as they pass, directing them to the facets that make the diamond look so sparkly. The physical size of the table facet naturally varies depending on the overall size of the diamond. Jewelers measure the table percentage when grading a diamond’s cut. Table percentage is calculated by dividing the width of the table by the overall width of the diamond. The ideal table percentage will vary based on the shape of the diamond.  The depth of a diamond might also be called the “height”: it is the distance from the table to the culet (the pointed tip) of the diamond. Like with a diamond’s table, jewelers grade a diamond’s depth based on its depth percentage. Depth percentage is the diamond’s depth divided by the width of the diamond. This percentage dictates the overall proportions of the diamond, which in turn directly impact how light reflects off the facets in the stone.   Here is the file we are going to use for this problem:   The price of diamonds is not just determined by size, but by multiple characteristics. For simplicity, in this example we will start with size. Create the scatterplot for the two variables Price and Carat .     Determine the least squares line. Interpret the slope coefficient.    According to your least squares line, what would you expect the price to be for a 5 carat diamond?    Compute the coefficient of correlation. What does it tell you about the relationship between the size of a diamond and the price?       We're going to use the same file we used in the previous problem:   Now we will take into consideration the other characteristics of diamonds that determine price: carat, color, clarity, and cut. Let's redo the regression and create a model that does a better job than the one in the previous example that only included a single predictor variable.     Create the regression model with all 5 variables that are provided: color, depth (in percentage), clarity, table (in percentage), and carat.    Interpret each of the coefficients in the model.    Do all 5 of the predictor variables belong in the model? Why or why not?    Is the overall model valid? Why or why not?    What is the coefficient of determination? What does it tell you about the model?    Remove variables one by one and reassess the model. What is the best model to predict the price of a diamond? Why?      "
 },
@@ -1535,7 +1643,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Diamonds.html#sec-Diamonds-7",
   "type": "Exercise",
-  "number": "9.4.1",
+  "number": "10.4.1",
   "title": "",
   "body": " Here is the file we are going to use for this problem:   The price of diamonds is not just determined by size, but by multiple characteristics. For simplicity, in this example we will start with size. Create the scatterplot for the two variables Price and Carat .     Determine the least squares line. Interpret the slope coefficient.    According to your least squares line, what would you expect the price to be for a 5 carat diamond?    Compute the coefficient of correlation. What does it tell you about the relationship between the size of a diamond and the price?     "
 },
@@ -1544,7 +1652,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Diamonds.html#sec-Diamonds-8",
   "type": "Exercise",
-  "number": "9.4.2",
+  "number": "10.4.2",
   "title": "",
   "body": " We're going to use the same file we used in the previous problem:   Now we will take into consideration the other characteristics of diamonds that determine price: carat, color, clarity, and cut. Let's redo the regression and create a model that does a better job than the one in the previous example that only included a single predictor variable.     Create the regression model with all 5 variables that are provided: color, depth (in percentage), clarity, table (in percentage), and carat.    Interpret each of the coefficients in the model.    Do all 5 of the predictor variables belong in the model? Why or why not?    Is the overall model valid? Why or why not?    What is the coefficient of determination? What does it tell you about the model?    Remove variables one by one and reassess the model. What is the best model to predict the price of a diamond? Why?     "
 },

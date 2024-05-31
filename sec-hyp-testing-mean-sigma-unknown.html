@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>QUAN 2010 Interpreting Confidence Intervals</title>
+<title>QUAN 2010 Hypothesis Testing for \mu When \sigma is Unknown</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -137,7 +137,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-Confidence-Interval-for-Mean-Sigma-Known.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-Confidence-Intervals.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-Confidence-Interval-for-Mean-Sigma-Unknown.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-types-of-errors.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-Hypothesis-Testing-Single-Pop.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-hyp-testing-proportion.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -206,12 +206,12 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-uniform-distribution.html" class="internal"><span class="codenumber">6.3</span> <span class="title">The Uniform Distribution</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-chapter contains-active">
+<li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-Confidence-Intervals.html" class="internal"><span class="codenumber">7</span> <span class="title">Confidence Intervals</span></a></div>
-<ul class="structural toc-item-list contains-active">
+<ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-point-estimates.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Point Estimates</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Confidence-Interval-for-Mean-Sigma-Known.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Confidence Intervals for the Mean (<span class="process-math">\(\sigma\)</span> known)</span></a></div></li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-Interpreting-Confidence-Interval.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Interpreting Confidence Intervals</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Interpreting-Confidence-Interval.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Interpreting Confidence Intervals</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-Confidence-Interval-for-Mean-Sigma-Unknown.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Confidence Intervals for the Mean (<span class="process-math">\(\sigma\)</span> unknown)</span></a></div>
 <ul class="structural toc-item-list">
@@ -223,9 +223,9 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Determining-Sample-Size.html" class="internal"><span class="codenumber">7.6</span> <span class="title">Determining Sample Size</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-chapter">
+<li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-Hypothesis-Testing-Single-Pop.html" class="internal"><span class="codenumber">8</span> <span class="title">Confidence Intervals</span></a></div>
-<ul class="structural toc-item-list">
+<ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Hypothesis-Intro.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Introduction to Hypothesis Testing</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-nuts-bolts-hyp-testing.html" class="internal"><span class="codenumber">8.2</span> <span class="title">The Nuts and Bolts of Hypothesis Testing</span></a></div>
@@ -235,7 +235,7 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-types-of-errors.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Type I and Type II Errors</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hyp-testing-mean-sigma-unknown.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Hypothesis Testing for <span class="process-math">\(\mu\)</span> When <span class="process-math">\(\sigma\)</span> is Unknown</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-hyp-testing-mean-sigma-unknown.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Hypothesis Testing for <span class="process-math">\(\mu\)</span> When <span class="process-math">\(\sigma\)</span> is Unknown</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hyp-testing-proportion.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Hypothesis Testing for the Population Proportion</span></a></div></li>
 </ul>
 </li>
@@ -254,16 +254,48 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-Interpreting-Confidence-Interval"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">7.3</span><span class="space"> </span><span class="title">Interpreting Confidence Intervals</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-hyp-testing-mean-sigma-unknown"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">8.4</span><span class="space"> </span><span class="title">Hypothesis Testing for <span class="process-math">\(\mu\)</span> When <span class="process-math">\(\sigma\)</span> is Unknown</span>
 </h2>
-<div class="para" id="sec-Interpreting-Confidence-Interval-2">When we interpret a confidence interval, we say that “we are <span class="process-math">\(90\%\)</span> confident that the interval we calculated captures the population mean”.  We DO NOT say “there is a <span class="process-math">\(90\%\)</span> chance that the population mean falls between A and B”.  It might sound the same, but it is not.  The latter implies that the population mean is a variable that we can say something about.  But it is not -- it is fixed, and we do not know what it is.</div>
-<div class="para" id="sec-Interpreting-Confidence-Interval-3">Remember that we develop our confidence interval based on the sampling distribution of the sample mean.  We draw a sample and calculate an interval around the sample mean and say that we think we have “captured” the population mean within the interval -- we do NOT know anything about the population mean.  We can only say something about our sample mean and interval.</div>
-<div class="para" id="sec-Interpreting-Confidence-Interval-4">If we were to repeatedly draw samples, each has the same margin of error (since the sample size and <span class="process-math">\(\sigma\)</span> are constant for all samples), but each sample mean likely varies.  After calculating all intervals, <span class="process-math">\(90\%\)</span> of them would result in intervals that include the population mean, but <span class="process-math">\(10\%\)</span> of them would have sample means so extreme (in the tail of the sampling distribution) that they would not include the population mean.</div>
-<div class="para" id="sec-Interpreting-Confidence-Interval-5">The figure below is about proportions instead of means, but it illustrates this idea well.</div>
-<figure class="figure figure-like" id="figure-geogebra-confidence-meaning"><iframe src="https://www.geogebra.org/material/iframe/id/tRAjcM2v/width/800/height/444/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="geogebra-confidence-meaning" width="600" height="333"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.3.1<span class="period">.</span></span><span class="space"> </span>Confidence Interval Meaning <span class="process-math">\(z\)</span>-value (Made in GeoGebra by Steve Phelps)</figcaption></figure></section></div>
+<section class="introduction" id="sec-hyp-testing-mean-sigma-unknown-2"><div class="para" id="sec-hyp-testing-mean-sigma-unknown-2-1">Up to this point, we’ve assumed that we know <span class="process-math">\(\sigma\text{,}\)</span> the population mean.  But as we saw in the last chapter on confidence intervals, if we don’t know <span class="process-math">\(\mu\text{,}\)</span> it’s pretty unrealistic that we would know <span class="process-math">\(\sigma\text{.}\)</span>  So just like we did when creating confidence intervals, we will estimate <span class="process-math">\(\sigma\)</span> with the sample standard deviation, <span class="process-math">\(s\text{.}\)</span>  This means that we will be dealing with the Student’s <span class="process-math">\(t\)</span>-distribution in place of the normal distribution.</div> <div class="para logical" id="sec-hyp-testing-mean-sigma-unknown-2-2">
+<div class="para">Hence, the test statistic for hypothesis tests of this type are computed with the formula:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+t_{\overline{x}}=\frac{\overline{x}-\mu}{s/\sqrt{n}}
+\end{equation*}
+</div>
+</div></section><details id="sec-hyp-testing-mean-sigma-unknown-3" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">8.4.1</span><span class="period">.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-hyp-testing-mean-sigma-unknown-3-1-1">(Donnelly 9.20)</div> <div class="para" id="sec-hyp-testing-mean-sigma-unknown-3-1-2">In 2017, the average credit score for loans that were purchased by a government-sponsored mortgage loan company was 742.  A random sample of 35 mortgages recently purchased by the company was selected, and it was found that the average credit score was 752 with a sample standard deviation of 22.  Using <span class="process-math">\(\alpha = 0.05\text{,}\)</span> is there enough evidence from this sample to conclude that the average credit score for mortgages purchased by the company has increased since 2017?  Use the traditional method of hypothesis testing.</div></article></details><div class="para logical" id="sec-hyp-testing-mean-sigma-unknown-4">
+<div class="para">In our next example, we will use the p-value method of hypothesis testing.  Unfortunately, tables for the Student’s <span class="process-math">\(t\)</span>-distribution are limited in the precision they can provide for our p-values.  Therefore,  we will rely on Excewl to compute the p-values using the following formulas:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\boxed{T.DIST(x, df, cumulative)}\;\;\;\; \boxed{T.DIST.RT(x, df)}\;\;\;\; \boxed{T.DIST.2T(x, df)}
+\end{equation*}
+</div>
+<div class="para">where <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(x=\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">the test statistic, <span class="process-math">\(t_{\overline{x}}\)</span>
+</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(df=\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">the degrees of freedom</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">cumulative <span class="process-math">\(=\)</span>
+</td>
+<td class="l m b0 r0 l0 t0 lines">TRUE (since we want the accumulated area left of our test statistic)</td>
+</tr>
+</table></div>
+</div>
+</div>
+<details id="sec-hyp-testing-mean-sigma-unknown-5" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">8.4.2</span><span class="period">.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-hyp-testing-mean-sigma-unknown-5-1-1">(Donnelly 9.19)</div> <div class="para" id="sec-hyp-testing-mean-sigma-unknown-5-1-2">According to the financial reports by Snapchat, the average daily user of Snapchat created 19 messages, or “snaps,” per day in Q3 2017.  A college student wants to find out if the number of Snapchat messages has changed since Q3 2017 and creates a random sample using information from students on her campus for the current semester.  The results are found in this lesson’s Excel file.  Using <span class="process-math">\(\alpha = 0.01\text{,}\)</span> test the hypothesis that the number of Snapchats sent by the average Snapchat user has not changed since Q3 2017.  Use the p-value method of hypothesis testing.</div></article></details></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="sec-Confidence-Interval-for-Mean-Sigma-Known.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-Confidence-Interval-for-Mean-Sigma-Unknown.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec-types-of-errors.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-hyp-testing-proportion.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
