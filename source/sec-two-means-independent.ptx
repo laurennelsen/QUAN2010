@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-two-means-independent" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Comparing Two Means with Independent Samples</title>
+
+<introduction>
+    <p>
+        In this section, we study two-sample hypothesis tests and confidence intervals.  First, we will assume that the standard deviation, <m>\sigma</m>, is known.  Then we will look at the more realistic case where <m>\sigma</m> is unknown.
+    </p>
+</introduction>
+
+
+<definition xml:id="def-difference-means-independent">
+    <statement>
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        The <em>sampling distribution for the difference in means</em> is normal given normal populations or large samples (<m>n\geq 30</m>).  The mean of this sampling distribution is
+                        <me>\mu_{\overline{x}_1-\overline{x}_2}=\mu_{\overline{x}_1}-\mu_{\overline{x}_2}.</me>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        The <em>standard error</em> for this sampling distribution is
+                        <me>\sigma_{\overline{x}_1-\overline{x}_2}=\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}.</me>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        The <em>test statistic</em> for a hypothesis test comparing the difference between two means with independent samples and known standard deviations is defined by:
+                        <me>z_{\overline{x}} = \frac{(\overline{x}_1 - \overline{x}_2)-(\mu_1-\mu_2)_{H_0}}{\sigma_{\overline{x}_1 - \overline{x}_2}},</me>
+                    
+                    where 
+
+                    <tabular>
+                        <row>
+                            <cell><m>(\mu_1-\mu_2)_{H_0}</m></cell> <cell>=</cell><cell>the hypothesized difference in population means (defined by the null hypothesis)</cell>
+                        </row>
+                        <row>
+                            <cell><m>\sigma_{\overline{x}_1-\overline{x}_2}</m></cell> <cell>=</cell> <cell>the standard error for the difference between the two means</cell>
+                        </row>
+                        <row>
+                            <cell><m>\overline{x}_1-\overline{x}_2</m></cell> <cell>=</cell> <cell>the difference in sample means between Populations 1 and 2</cell>
+                        </row>
+                    </tabular>
+                </p>
+                </li>
+            </ul>
+        </p>
+    </statement>
+</definition>
+
+
+
+<p>
+    This formula is a little unwieldy so whenever we are dealing with raw data (not just summary statistics), we will use Excel to do all the time-consuming calculations.
+</p>
+
+<p> Now let's demonstrate the two ways we can perform this type of hypothesis test.  First, in <xref ref="ex-two-means-hand"/> we will complete the hypothesis test by hand, manually computing all of the required calculations.  Then in <xref ref="ex-two-means-Excel"/>> we will rely on Excel to do the calculations.  After stating the two hypotheses, we will navigate to the <em>Data Analysis</em>> tool and choose <q>z-Test Two-Sample for Means</q> to complete the test.
+</p>
+
+
+<exercise xml:id="ex-two-means-hand">
+    <statement>
+        <p>
+            (Donnelly 10.7)
+        </p>
+        <p>
+            Suppose the Bureau of Labor Statistics would like to investigate if the average retirement age for a worker in Japan is higher than the average retirement age for a worker in the United States.  A random sample of 30 retired U.S. workers had an average retirement age of 64.6 years.  A random sample of 30 retired Japanese workers had an average retirement age of 67.5 years.  Assume the population standard deviation for the retirement age in the U.S. is 4.0 years and for Japan is 4.5 years.  Perform a hypothesis test using <m>\alpha=0.05</m> to determine if the average retirement age in Japan is higher than it is in the United States.
+
+        </p>
+    </statement>
+</exercise>
+
+<exercise xml:id="ex-two-means-Excel">
+
+    <statement>
+        <p>
+            (Donnelly Your Turn 1)
+        </p>
+        <p>
+            Major League Baseball officials (and many fans) have been concerned about the lengths of games, particularly playoff games.  Suppose the officials would like to test the hypothesis that the mean length of a playoff game is longer than the mean length of a regular season game.  The data in the Excel file below shows the length of games, in minutes, for randomly selected games from the regular season and from the playoffs.  Assume the standard deviations of the playoff and regular season games are 25 and 21 minutes respectively.  Using <m>\alpha = 0.02</m>, can we conclude that playoff games are longer, on average, than regular season games?
+
+!!!!!!!!INSERT EXCEL FILE!!!!!!!!
+
+        </p>
+    </statement>
+    
+</exercise>
+
+
+  </section>

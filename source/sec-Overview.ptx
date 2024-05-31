@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Overview" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Overview</title>
+
+<introduction>
+    <p>
+        In this chapter, we build on the ideas from the previous two chapters and use inferential statistics to compare two populations.  We will estimate the difference between two parameters using confidence intervals as well as perform hypothesis tests to compare the difference between the two parameters.  In either situation, after completing the previous chapters, you should have learned that to do various inference procedures, you really only need to know the proper sampling distribution and the format of your hypothesis.  All the other concepts are the same -- just apply the correct formulas.
+    </p>
+
+    <p>
+With two populations involving means, there are two options.  Data may be collected from two completely independent populations, or pairs of data points from the two populations may be collected where they are matched in some way.  Let's define these two concepts carefully before moving into the specifics of inferential statistics involving the comparison of two populations.
+    </p>
+</introduction>
+
+<definition xml:id="def-dependent-independent-samples">
+    <statement>
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        In <em>independent samples</em>, the results from one population have no impact on results obtained from the other sample.
+                    </p>
+                    <p>
+                        An observation from one sample is unrelated to an observation from the other sample.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        In <em>dependent samples</em>, each observation from one sample is related to an observation from the other sample.
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </statement>
+</definition>
+
+
+
+  </section>

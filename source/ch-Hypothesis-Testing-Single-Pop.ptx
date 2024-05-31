@@ -9,5 +9,7 @@
   <xi:include href="sec-Hypothesis-Intro.ptx" />
   <xi:include href="sec-nuts-bolts-hyp-testing.ptx" />
   <xi:include href="sec-types-of-errors.ptx" />
+  <xi:include href="sec-hyp-testing-mean-sigma-unknown.ptx" />
+  <xi:include href="sec-hyp-testing-proportion.ptx" />
 
 </chapter>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-hyp-testing-mean-sigma-unknown" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Hypothesis Testing for <m>\mu</m> When <m>\sigma</m> is Unknown</title>
+
+
+  <introduction>
+    <p>
+        Up to this point, we've assumed that we know <m>\sigma</m>, the population mean.  But as we saw in the last chapter on confidence intervals, if we don't know <m>\mu</m>, it's pretty unrealistic that we would know <m>\sigma</m>.  So just like we did when creating confidence intervals, we will estimate <m>\sigma</m> with the sample standard deviation, <m>s</m>.  This means that we will be dealing with the Student's <m>t</m>-distribution in place of the normal distribution.
+    </p>
+    <p>
+        Hence, the test statistic for hypothesis tests of this type are computed with the formula:
+        <me>t_{\overline{x}}=\frac{\overline{x}-\mu}{s/\sqrt{n}}</me>
+    </p>
+  </introduction>
+
+
+  <exercise>
+    <statement>
+        <p>
+            (Donnelly 9.20)
+        </p>
+        <p>
+            In 2017, the average credit score for loans that were purchased by a government-sponsored mortgage loan company was 742.  A random sample of 35 mortgages recently purchased by the company was selected, and it was found that the average credit score was 752 with a sample standard deviation of 22.  Using <m>\alpha = 0.05</m>, is there enough evidence from this sample to conclude that the average credit score for mortgages purchased by the company has increased since 2017?  Use the traditional method of hypothesis testing.
+
+        </p>
+    </statement>
+  </exercise>
+
+
+  <p>
+    In our next example, we will use the p-value method of hypothesis testing.  Unfortunately, tables for the Student's <m>t</m>-distribution are limited in the precision they can provide for our p-values.  Therefore,  we will rely on Excewl to compute the p-values using the following formulas:
+    <me>\boxed{T.DIST(x, df, cumulative)}\;\;\;\; \boxed{T.DIST.RT(x, df)}\;\;\;\; \boxed{T.DIST.2T(x, df)}
+    </me>
+    where
+        <tabular>
+            <row>
+                <cell> <m>x=</m></cell> <cell>the test statistic, <m>t_{\overline{x}}</m></cell>
+            </row>
+            <row>
+                <cell><m>df=</m></cell> <cell>the degrees of freedom</cell>
+            </row>
+            <row>
+                <cell>cumulative <m>=</m></cell> <cell>TRUE (since we want the accumulated area left of our test statistic)</cell>
+            </row>
+        </tabular>
+  </p>
+
+
+
+  <exercise>
+    <statement>
+        <p>
+            (Donnelly 9.19)
+        </p>
+        <p>
+            According to the financial reports by Snapchat, the average daily user of Snapchat created 19 messages, or <q>snaps,</q> per day in Q3 2017.  A college student wants to find out if the number of Snapchat messages has changed since Q3 2017 and creates a random sample using information from students on her campus for the current semester.  The results are found in this lesson's Excel file.  Using <m>\alpha = 0.01</m>, test the hypothesis that the number of Snapchats sent by the average Snapchat user has not changed since Q3 2017.  Use the p-value method of hypothesis testing.
+
+        </p>
+    </statement>
+  </exercise>
+
+
+
+  </section>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-hyp-testing-proportion" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Hypothesis Testing for the Population Proportion</title>
+
+
+  <introduction>
+    <p>
+        The last type of hypothesis test that we will study in this chapter involves the population proportion, <m>p</m>.  This test is useful for testing claims made about the proportion of something.  Recall that proportion data follow the binomial distribution, which can be approximated by the normal distribution under the conditions:
+        <me>np\geq 5 \text{ and } n(1-p)\geq 5,\text{ where}</me>
+        <tabular>
+            <row>
+                <cell><m>p=</m></cell>  <cell>the probability of success in the population</cell>
+            </row>
+            <row>
+                <cell><m>n=</m></cell> <cell>the sample size</cell>
+            </row>
+        </tabular>
+    </p>
+    <p>
+        When these conditions are met, the test statistic for this hypothesis test is calculated with this formula:
+        <me>z_p = \frac{\overline{p}-p}{\sqrt{\frac{p(1-p)}{n}}}</me>
+    </p>
+  </introduction>
+
+
+  <exercise>
+    <statement>
+        <p>
+            (Donnelly 9.31)
+        </p>
+        <p>
+            In April 2010, <m>45\%</m> of the unemployed had been out of work longer than six months.  Policy makers felt that this percentage declined during 2010 as the job market improved.  To test this theory, a random sample of 200 unemployed people was selected, and it was found that 80 had been out of work for more than six months.  Assuming <m>\alpha = 0.10</m>, what conclusions can be drawn about the proportion of the unemployed who have been out of work for more than six months?  Use the p-value method of hypothesis testing.
+
+        </p>
+    </statement>
+  </exercise>
+
+
+  <exercise>
+    <statement>
+        <p>
+            (Donnelly 9.26)
+        </p>
+        <p>
+            An increased number of colleges have been using online resources to research applicants.  According to a study from last year, <m>33\%</m> of admissions officers indicated that they visited an applying student's social networking page.  A random sample of 500 admissions officers was recently selected and it was found that 170 of them visit the social networking sites of students applying to their college.  Assuming <m>\alpha = 0.05</m>, does this sample provide support for the hypothesis that the proportion of admissions officers who visit an applying students' social networking page has increased in the past year?  Use the traditional method of hypothesis testing.
+
+        </p>
+    </statement>
+  </exercise>
+
+  </section>

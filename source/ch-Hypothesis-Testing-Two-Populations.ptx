@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-Hypothesis-Testing-Two-Populations" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Hypothesis Tests Comparing Two Populations</title>
+
+
+
+  <!-- include sections -->
+  <xi:include href="sec-Overview.ptx" />
+  <xi:include href="sec-two-means-independent.ptx" />
+
+</chapter>
