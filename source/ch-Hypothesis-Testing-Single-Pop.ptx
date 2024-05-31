@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-Hypothesis-Testing-Single-Pop" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Confidence Intervals</title>
+
+
+
+  <!-- include sections -->
+  <xi:include href="sec-Hypothesis-Intro.ptx" />
+  <xi:include href="sec-nuts-bolts-hyp-testing.ptx" />
+  <xi:include href="sec-types-of-errors.ptx" />
+
+</chapter>

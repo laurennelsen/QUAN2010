@@ -27,6 +27,8 @@
 
     <xi:include href="./ch-Confidence-Intervals.ptx" />
 
+    <xi:include href="./ch-Hypothesis-Testing-Single-Pop.ptx" />
+
 
 
     <xi:include href="./ch-Intro-to-Regression-Modeling.ptx" />

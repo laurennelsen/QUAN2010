@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-types-of-errors" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Type I and Type II Errors</title>
+
+  <introduction>
+    <p>
+        Recall that the purpose of a hypothesis test is to verify the validity of a claim about a population based on a single sample.  Since we are relying on a sample, there is risk that the conclusions we draw about the population will be wrong due to sampling error.
+    </p>
+  </introduction>
+
+  <video youtube="hYWQT5nt6DU"/>
+
+
+  <definition xml:id="def-types-errors">
+    <statement>
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        <em>Type I error:</em> occurs when <m>H_0</m> is rejected when in reality it is true.
+                    </p>
+                    <ul>
+                        <li>
+                            <p>
+                                The probability of making this error is known as <m>\alpha</m>, the significance level.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                A Type I error is known as the <em>producer's risk</em>.
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>
+                        <em>Type II error:</em> occurs when we fail to reject <m>H_0</m> when it is false.
+                    </p>
+                    <ul>
+                        <li>
+                            <p>
+                                The probability of making this error is <m>\beta</m>.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                A Type II error is known as the <em>consumer's risk</em>.
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </p>
+    </statement>
+  </definition>
+    
+
+  </section>

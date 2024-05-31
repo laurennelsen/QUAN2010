@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-nuts-bolts-hyp-testing" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>The Nuts and Bolts of Hypothesis Testing</title>
+
+<introduction>
+    <p>
+        We will learn two different procedures for completing a hypothesis test, but before we describe each, let's do an example of how one of these procedures would work.
+    </p>
+</introduction>
+
+
+<exercise>
+    <introduction>
+    <p>
+        Let's say a group on campus is claiming that the average number of hours worked per week by students on campus is <m>13.5</m>.
+    </p>
+    <p>
+        We want to see if this claim is reasonable, so we are going to go out and survey students and find the average number of hours worked per week for students in our sample.
+    </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                We survey <m>200</m> students, and the sample average is <m>15</m> hours per week.  If the population mean really is <m>\mu=13.5</m>, what is the probability of getting a sample mean this extreme?
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                We survey <m>15</m> students, and the sample average is <m>14</m> hours per week.  If the population mean really is <m>\mu=13.5</m>, what is the probability of getting a sample mean this extreme?
+            </p>
+        </statement>
+    </task>
+</exercise>
+
+
+<definition xml:id="def-hyp-definitions">
+    <statement>
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        The <em>rejection region</em> is the range of values for a test statistic that cause us to reject <m>H_0</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        A <em>critical value</em> is the boundary that separates the rejection region from the rest.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        A <em>p-value</em> is the probability of observing a sample statistic at least as extreme as the one selected, assuming <m>H_0</m> is true.
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </statement>
+</definition>
+
+
+<p>
+    !!!!!!INSERT Exercises 4 and 5 from the notes!!!!!!
+</p>
+
+
+<subsection xml:id="subsec-logic-hyp-testing">
+    <title>The Logic of Hypothesis Testing</title>
+
+    <p>
+        The hypothesis test begins with the assumption that the null hypothesis, <m>H_0</m>, is true.  The goal of the process is to determine if there is enough evidence provided by the sample to infer that the alternative hypothesis, <m>H_1</m>, might be true instead.
+    </p>
+    <p>
+        The null hypothesis can never be accepted.  The most we can say is that we do not have enough evidence to reject the null.  The only two options are to:
+        <ol>
+            <li>
+                <p>
+                    reject the null hypothesis;
+                </p>
+            </li>
+            <li>
+                <p>
+                    fail to reject the null hypothesis.
+                </p>
+            </li>
+        </ol>
+    </p>
+
+    <p>
+        So how is the decision made to <q>reject</q> or <q>fail to reject</q> within each of our two hypothesis testing methods?
+    </p>
+
+
+
+
+    <p>
+        <ul>
+            <li>
+                <p>
+                    <em>Traditional (Critical Value) Method:</em>
+                </p>
+                <p>
+                    In the traditional method, the decision is made by comparing the test statistic to the critical value(s).  When the test statistic falls in the rejection region, the decision is <q>reject the null hypothesis</q>.  When the test statistic does not fall in the rejection region, the decision is <q>fail to reject the null hypothesis</q>.
+                </p>
+            </li>
+            <li>
+                <p>
+                    <em>p-value Method:</em>
+                </p>
+                <p>
+                    In the p-value method, the decision is made by comparing the p-value to the significance level.  When the p-value is smaller than the significance level, the decision is <q>reject the null hypothesis</q>.  When the p-value is greater than or equal to the significance level, the decision is <q>fail to reject the null hypothesis</q>.
+                </p>
+            </li>
+        </ul>
+      
+
+    </p>
+
+
+
+<p>
+    Now we
+</p>
+
+</subsection>
+
+<subsection xml:id="subsec-approaches-hyp-testing">
+    <title>Two approaches to Hypothesis Testing</title>
+    
+<p>
+    Now we are finally ready to describe in depth two hypothesis testing procedures and work through some examples.  First, let's summarize the steps for the traditional method (aka the critical value method).
+</p>
+
+
+<definition xml:id="def-critical-value-method">
+    <statement>
+        <p>
+            <em>The Traditional (Critical Value) Method of Hypothesis Testing:</em>
+        </p>
+        <p>
+            <ol>
+                <li>
+                    <p>
+                        Identify the two hypotheses using appropriate notation.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Draw the appropriate curve, identify the significance level, and label critical value(s).
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Calculate the appropriate test statistic.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Compare the critical value(s) to the test statistic and make the decision.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        State the conclusion.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </statement>
+</definition>
+
+
+<p>
+    Let's work through an example using the traditional method.  In this example, the appropriate test statistic formula is:
+    <me>z_{\overline{x}}=\frac{\overline{x}-\mu}{\sigma/\sqrt{n}}</me>
+</p>
+
+
+<exercise>
+    <introduction>
+        <p>
+            (Donnelly 9.7)
+        </p>
+        <p>
+            A pizza place recently hired additional drivers and as a result now claims that its average delivery time for orders is under 46 minutes.  A sample of 41 customer deliveries was examined, and the average delivery time was found to be 41.5 minutes.  Historically, the standard deviation for delivery time is 11.8 minutes.  Assuming that <m>\alpha = 0.01</m>, does this sample provide enough evidence to support the delivery time claim made by the pizza place?
+
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Step 1:  Identify the two hypotheses using appropriate notation.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <ul>
+                    <li>
+                        <p>
+                            <m>H_0</m>:  <m>\mu\geq 46</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>H_1</m>:  <m>\mu\lt 46</m>  (<m>\leftarrow </m> left-tail test)
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Step 2:  Draw the appropriate curve, identify the significance level, and label critical value(s).
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Step 3:  Calculate the appropriate test statistic.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <me>z_{\overline{x}}=\frac{51.5-46}{11.8/\sqrt{41}}\approx -2.98</me>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Step 4:  Compare the critical value(s) to the test statistic and make the decision.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                Test statistic is left of the critical value so it lands in the rejection region, and we <em>reject</em> <m>H_0</m>.
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Step 5:  State the conclusion.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                There is enough evidence to support the claim that the average delivery time for orders is under 46 minutes.
+            </p>
+        </answer>
+    </task>
+</exercise>
+
+
+
+
+<exercise>
+    <introduction>
+        <p>
+            (Donnelly 9.10)
+        </p>
+        <p>
+            A grocery store claims that customers spend an average of 5 minutes waiting for service at the store's deli counter.  A random sample of 40 customers was timed at the deli counter, and the average service time was found to be 5.5 minutes.  Assume the standard deviation is 1.7 minutes per customer.  Assuming that <m>\alpha = 0.05</m>, does this sample provide enough evidence to counter the claim made by the store's management?
+
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Step 1:  Identify the two hypotheses using appropriate notation.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <ul>
+                    <li>
+                        <p>
+                            <m>H_0</m>:  <m>\mu=5</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>H_1</m>:  <m>\mu\neq</m>  (<m>\leftarrow </m> two-tail test)
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Step 2:  Draw the appropriate curve, identify the significance level, and label critical value(s).
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Step 3:  Calculate the appropriate test statistic.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <me>z_{\overline{x}}=\frac{5.5-5}{1.7/\sqrt{40}}\approx 1.86</me>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Step 4:  Compare the critical value(s) to the test statistic and make the decision.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                The test statistic is between the two critical values so it doesn't land in the rejection region, and we <em>fail to reject</em> <m>H_0</m>.
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Step 5:  State the conclusion.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                The sample does not provide enough evidence to counter the claim that customers spend an average of 5 minutes waiting for service.
+            </p>
+        </answer>
+    </task>
+</exercise>
+
+
+
+
+
+<definition xml:id="def-p-value-method">
+    <statement>
+        <p>
+            <em>The p- Method of Hypothesis Testing:</em>
+        </p>
+        <p>
+            <ol>
+                <li>
+                    <p>
+                        Identify the two hypotheses using appropriate notation.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Draw the appropriate curve, identify the significance level.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Calculate the appropriate test statistic and the associated p-value.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Compare the p-value and the significance level and make the decision.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        State the conclusion.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </statement>
+</definition>
+
+
+
+
+<exercise>
+    <introduction>
+        <p>
+            (Donnelly 9.8)
+        </p>
+        <p>
+            A sporting goods store believes the average age of its customers is 38 or less.  A random sample of 40 customers was surveyed, and the average customer age was found to be 41.2 years.  Assume the standard deviation for customer age is 9.0 years.  Assuming that <m>\alpha = 0.01</m>, does the sample provide enough evidence to refute the age claim made by the sporting goods store?
+
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Step 1:  Identify the two hypotheses using appropriate notation.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <ul>
+                    <li>
+                        <p>
+                            <m>H_0</m>:  <m>\mu\leq 38</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>H_1</m>:  <m>\mu\gt 38</m>  (<m>\leftarrow </m> right-tail test)
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Step 2:  Draw the appropriate curve, identify the significance level.
+            </p>
+        </statement>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Step 3:  Calculate the appropriate test statistic and the associated p-value.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <me>z_{\overline{x}}=\frac{41.2-38}{9/\sqrt{40}}\approx 2.25</me>
+                <me>\text{p-value}=1-NORM.S.DIST(2.25,1)\approx 0.0122</me>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Step 4:  Compare the p-value and the significance level and make the decision.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                The p-value<m>\approx 0.0122\gt 0.01=\alpha</m>.
+            </p>
+            <p>
+                Therefore we <em>fail to reject</em> <m>H_0</m>.
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Step 5:  State the conclusion.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                The sample does not provide enough evidence to refute the claim that the average age of customers is less than or equal to 38.
+            </p>
+        </answer>
+    </task>
+</exercise>
+
+
+</subsection>
+
+
+
+    
+
+  </section>
