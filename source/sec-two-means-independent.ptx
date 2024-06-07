@@ -57,7 +57,7 @@
     This formula is a little unwieldy so whenever we are dealing with raw data (not just summary statistics), we will use Excel to do all the time-consuming calculations.
 </p>
 
-<p> Now let's demonstrate the two ways we can perform this type of hypothesis test.  First, in <xref ref="ex-two-means-hand"/> we will complete the hypothesis test by hand, manually computing all of the required calculations.  Then in <xref ref="ex-two-means-Excel"/>> we will rely on Excel to do the calculations.  After stating the two hypotheses, we will navigate to the <em>Data Analysis</em>> tool and choose <q>z-Test Two-Sample for Means</q> to complete the test.
+<p> Now let's demonstrate the two ways we can perform this type of hypothesis test.  First, in <xref ref="ex-two-means-hand"/> we will complete the hypothesis test by hand, manually computing all of the required calculations.  Then in <xref ref="ex-two-means-Excel"/>> we will rely on Excel to do the calculations.  After stating the two hypotheses, we will navigate to the <em>Data Analysis</em> tool and choose <em>z-Test Two-Sample for Means</em> to complete the test.
 </p>
 
 
