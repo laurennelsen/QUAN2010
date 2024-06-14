@@ -19,20 +19,254 @@ var ptx_lunr_docs = [
   "body": " Section Title  Text of section.  "
 },
 {
-  "id": "sec-section-name",
+  "id": "sec-measures-central-tendency",
   "level": "1",
-  "url": "sec-section-name.html",
+  "url": "sec-measures-central-tendency.html",
   "type": "Section",
   "number": "2.1",
-  "title": "Section Title",
-  "body": " Section Title  Text of section.  "
+  "title": "Measures of Central Tendency",
+  "body": " Measures of Central Tendency  In statistics, average or typical values are known as measures of central tendency .    The mean ( or ) is the most common measure of central tendency and is calculated by summing all the data points and dividing by the size of the data set.     The mean is the sum of the data items divided by the number of items: where represents the sum of all the data items and represents the numbef of items.     The mean of a sample is symbolized by .    The mean of an entire population is symbolized by .        The Excel file below has the earnings for the top 10 highest paid actors in 2023. (The data is taken from Yahoo .)     Find the mean earnings, in millions of dollars, for the ten highest-earning actors.    million dollars     The median is the value in the data set for which half of the observations are higher and half are lower.       To find the median of a group of data items,   Arrange the data items in order, from smallest to largest.    If the number of data items is odd, the median is the data item in the middle of the list.    If the number of data items is even, the median is the mean of the two middle data items.      Find the median for each of the following groups of data:       data items in order:   median:    data items in order:       median:     The Excel file below has the earnings for the top 10 highest paid actors in 2023. (The data is taken from Yahoo .)     Find the median earnings, in millions of dollars, for the ten highest-earning actors.  Is the median different thant the mean you found in , and if so, why?    The median is less than the mean that we found in .    Skewed Distribution, Mean, and Median (Made in GeoGebra by Casper Buisman)     Right-skewed       Symmetric       Left-skewed       How are the mean and median related to each other in each of the following frequency distribution shapes?   symmetric   the mean and median are approximately equal   left-skewed   the median is greater than the mean; potential low outliers pull the mean left   right-skewed   the median is less than the mean; potential high outliers pull the mean right   Statisticians generally use the median instead of the mean when reporting income. Why do you think this is?   Five employees in the assembly section of a television manufacturing company earn salaries of and annually. The section manager has an annual salary of .   Find the median annual salary for the six people.       Find the mean annual salary for the six people.         An outlier is a value that is much higher or lower than most of the data.      The mode is the data value that occurs most often in a data set. If more than one data value has the highest frequency, then each of these data values is a mode. If there is no data value that occurs most often, then the data set has no mode.      If a dataset is bimodal if it has two modes.     Find the mode for each of the following groups of data:   7, 2, 4, 7, 8, 10   mode: 7   2, 1, 4, 5, 3   There is no mode since no number occurs more than once.   3, 3, 4, 5, 6, 6   The modes are 3 and 6. (The data set is bimodal .)    Consider the following data values: Calculate the mean, median, and mode, and then describe the shape of the distribution.      data items in order:      modes:   The distribution is left-skewed.    The data in the Excel file below lists daily Dow Jones Industrial Average values from June 2019 through May 2024.      Calculate the mean, median, and mode(s) (using Excel).      mean:     median:     modes:       Describe the shape of the distribution.   The distribution is left-skewed.   "
+},
+{
+  "id": "def-mean",
+  "level": "2",
+  "url": "sec-measures-central-tendency.html#def-mean",
+  "type": "Definition",
+  "number": "2.1.1",
+  "title": "",
+  "body": "  The mean ( or ) is the most common measure of central tendency and is calculated by summing all the data points and dividing by the size of the data set.     The mean is the sum of the data items divided by the number of items: where represents the sum of all the data items and represents the numbef of items.     The mean of a sample is symbolized by .    The mean of an entire population is symbolized by .      "
+},
+{
+  "id": "ex-actors-mean",
+  "level": "2",
+  "url": "sec-measures-central-tendency.html#ex-actors-mean",
+  "type": "Exercise",
+  "number": "2.1.2",
+  "title": "",
+  "body": " The Excel file below has the earnings for the top 10 highest paid actors in 2023. (The data is taken from Yahoo .)     Find the mean earnings, in millions of dollars, for the ten highest-earning actors.    million dollars  "
+},
+{
+  "id": "def-median",
+  "level": "2",
+  "url": "sec-measures-central-tendency.html#def-median",
+  "type": "Definition",
+  "number": "2.1.3",
+  "title": "",
+  "body": "  The median is the value in the data set for which half of the observations are higher and half are lower.      "
+},
+{
+  "id": "sec-measures-central-tendency-7",
+  "level": "2",
+  "url": "sec-measures-central-tendency.html#sec-measures-central-tendency-7",
+  "type": "Exercise",
+  "number": "2.1.4",
+  "title": "",
+  "body": " Find the median for each of the following groups of data:       data items in order:   median:    data items in order:       median:   "
+},
+{
+  "id": "sec-measures-central-tendency-8",
+  "level": "2",
+  "url": "sec-measures-central-tendency.html#sec-measures-central-tendency-8",
+  "type": "Exercise",
+  "number": "2.1.5",
+  "title": "",
+  "body": " The Excel file below has the earnings for the top 10 highest paid actors in 2023. (The data is taken from Yahoo .)     Find the median earnings, in millions of dollars, for the ten highest-earning actors.  Is the median different thant the mean you found in , and if so, why?    The median is less than the mean that we found in .  "
+},
+{
+  "id": "figure-geogebra-skew",
+  "level": "2",
+  "url": "sec-measures-central-tendency.html#figure-geogebra-skew",
+  "type": "Figure",
+  "number": "2.1.6",
+  "title": "",
+  "body": " Skewed Distribution, Mean, and Median (Made in GeoGebra by Casper Buisman)   "
+},
+{
+  "id": "fig-right-skew",
+  "level": "2",
+  "url": "sec-measures-central-tendency.html#fig-right-skew",
+  "type": "Figure",
+  "number": "2.1.7",
+  "title": "",
+  "body": " Right-skewed     "
+},
+{
+  "id": "fig-symmetric",
+  "level": "2",
+  "url": "sec-measures-central-tendency.html#fig-symmetric",
+  "type": "Figure",
+  "number": "2.1.8",
+  "title": "",
+  "body": " Symmetric     "
+},
+{
+  "id": "fig-left-skew",
+  "level": "2",
+  "url": "sec-measures-central-tendency.html#fig-left-skew",
+  "type": "Figure",
+  "number": "2.1.9",
+  "title": "",
+  "body": " Left-skewed     "
+},
+{
+  "id": "ex-skew",
+  "level": "2",
+  "url": "sec-measures-central-tendency.html#ex-skew",
+  "type": "Exercise",
+  "number": "2.1.10",
+  "title": "",
+  "body": " How are the mean and median related to each other in each of the following frequency distribution shapes?   symmetric   the mean and median are approximately equal   left-skewed   the median is greater than the mean; potential low outliers pull the mean left   right-skewed   the median is less than the mean; potential high outliers pull the mean right  "
+},
+{
+  "id": "sec-measures-central-tendency-14",
+  "level": "2",
+  "url": "sec-measures-central-tendency.html#sec-measures-central-tendency-14",
+  "type": "Question",
+  "number": "2.1.11",
+  "title": "",
+  "body": "Statisticians generally use the median instead of the mean when reporting income. Why do you think this is? "
+},
+{
+  "id": "sec-measures-central-tendency-15",
+  "level": "2",
+  "url": "sec-measures-central-tendency.html#sec-measures-central-tendency-15",
+  "type": "Exercise",
+  "number": "2.1.12",
+  "title": "",
+  "body": " Five employees in the assembly section of a television manufacturing company earn salaries of and annually. The section manager has an annual salary of .   Find the median annual salary for the six people.       Find the mean annual salary for the six people.      "
+},
+{
+  "id": "def-outlier",
+  "level": "2",
+  "url": "sec-measures-central-tendency.html#def-outlier",
+  "type": "Definition",
+  "number": "2.1.13",
+  "title": "",
+  "body": "  An outlier is a value that is much higher or lower than most of the data.   "
+},
+{
+  "id": "def-mode",
+  "level": "2",
+  "url": "sec-measures-central-tendency.html#def-mode",
+  "type": "Definition",
+  "number": "2.1.14",
+  "title": "",
+  "body": "  The mode is the data value that occurs most often in a data set. If more than one data value has the highest frequency, then each of these data values is a mode. If there is no data value that occurs most often, then the data set has no mode.   "
+},
+{
+  "id": "def-bimodal",
+  "level": "2",
+  "url": "sec-measures-central-tendency.html#def-bimodal",
+  "type": "Definition",
+  "number": "2.1.15",
+  "title": "",
+  "body": "  If a dataset is bimodal if it has two modes.   "
+},
+{
+  "id": "sec-measures-central-tendency-19",
+  "level": "2",
+  "url": "sec-measures-central-tendency.html#sec-measures-central-tendency-19",
+  "type": "Exercise",
+  "number": "2.1.16",
+  "title": "",
+  "body": " Find the mode for each of the following groups of data:   7, 2, 4, 7, 8, 10   mode: 7   2, 1, 4, 5, 3   There is no mode since no number occurs more than once.   3, 3, 4, 5, 6, 6   The modes are 3 and 6. (The data set is bimodal .)  "
+},
+{
+  "id": "sec-measures-central-tendency-20",
+  "level": "2",
+  "url": "sec-measures-central-tendency.html#sec-measures-central-tendency-20",
+  "type": "Exercise",
+  "number": "2.1.17",
+  "title": "",
+  "body": " Consider the following data values: Calculate the mean, median, and mode, and then describe the shape of the distribution.      data items in order:      modes:   The distribution is left-skewed.  "
+},
+{
+  "id": "sec-measures-central-tendency-21",
+  "level": "2",
+  "url": "sec-measures-central-tendency.html#sec-measures-central-tendency-21",
+  "type": "Exercise",
+  "number": "2.1.18",
+  "title": "",
+  "body": " The data in the Excel file below lists daily Dow Jones Industrial Average values from June 2019 through May 2024.      Calculate the mean, median, and mode(s) (using Excel).      mean:     median:     modes:       Describe the shape of the distribution.   The distribution is left-skewed.  "
+},
+{
+  "id": "sec-measures-variability",
+  "level": "1",
+  "url": "sec-measures-variability.html",
+  "type": "Section",
+  "number": "2.2",
+  "title": "Measures of Variability",
+  "body": " Measures of Variability   Measures of variability (or dispersion ) describe the spread of a data set. We will define the most common ones.    The range is the difference between the highest and lowest data values in a data set.      The Excel file below shows the effective property tax rate for states in the United States in 2023. (This data is from the Tax Foundation )     Find the range of property tax rates in the United States in 2023.          Standard deviation is another measure of variability, and standard deviation is found by determining how much each data item differs from the mean.  Computing the Standard Deviation for a Data Set:   Find the mean of the data items    Find the deviation of each data item from the mean:     Square each deviation:     Sum the squared deviations:     Divide the sum in step 4 by , where represents the number of data items:     Take the square root of the quotient in step 5. This value is the standard deviation for the data set. or      We can also find the standard deviation more easily in Excel:        Low standard deviation means values tend to be close to the mean    High standard deviation means values are more spread out.     The formulas above are for finding the sample standard deviation, which we denote by .  The population standard deviation requires us to have information about the entire population, and we would use a different formula to find it. We denote the population standard deviation by .   Find the standard deviation for the effective tax rates in the file from            Shown below are the means and standard deviations of the yearly returns on two investments from 1926 through 2004.  ....insert table.....   Use the means to determine which investment provided the greater yearly return.    , so small-company stocks provided the greater yearly return   Use the standard deviations to determine which investment had the greater risk. (Explain your answer.)    , so small-company stocks had greater risk     The variance ( or ) measures the variability, or spread, of the data points in a set around the set's mean.           (Donnelly, Your Turn 4)  The data in the file below lists the number of books that seven adults have read during the last 12 months. ...insert file...  Calculate the variance and standard deviation.   "
+},
+{
+  "id": "def-range",
+  "level": "2",
+  "url": "sec-measures-variability.html#def-range",
+  "type": "Definition",
+  "number": "2.2.1",
+  "title": "",
+  "body": "  The range is the difference between the highest and lowest data values in a data set.    "
+},
+{
+  "id": "ex-propertytax",
+  "level": "2",
+  "url": "sec-measures-variability.html#ex-propertytax",
+  "type": "Exercise",
+  "number": "2.2.2",
+  "title": "",
+  "body": " The Excel file below shows the effective property tax rate for states in the United States in 2023. (This data is from the Tax Foundation )     Find the range of property tax rates in the United States in 2023.      "
+},
+{
+  "id": "def-stdev",
+  "level": "2",
+  "url": "sec-measures-variability.html#def-stdev",
+  "type": "Definition",
+  "number": "2.2.3",
+  "title": "",
+  "body": "   Standard deviation is another measure of variability, and standard deviation is found by determining how much each data item differs from the mean.  Computing the Standard Deviation for a Data Set:   Find the mean of the data items    Find the deviation of each data item from the mean:     Square each deviation:     Sum the squared deviations:     Divide the sum in step 4 by , where represents the number of data items:     Take the square root of the quotient in step 5. This value is the standard deviation for the data set. or      We can also find the standard deviation more easily in Excel:    "
+},
+{
+  "id": "sec-measures-variability-9",
+  "level": "2",
+  "url": "sec-measures-variability.html#sec-measures-variability-9",
+  "type": "Exercise",
+  "number": "2.2.4",
+  "title": "",
+  "body": " Find the standard deviation for the effective tax rates in the file from          "
+},
+{
+  "id": "sec-measures-variability-10",
+  "level": "2",
+  "url": "sec-measures-variability.html#sec-measures-variability-10",
+  "type": "Exercise",
+  "number": "2.2.5",
+  "title": "",
+  "body": " Shown below are the means and standard deviations of the yearly returns on two investments from 1926 through 2004.  ....insert table.....   Use the means to determine which investment provided the greater yearly return.    , so small-company stocks provided the greater yearly return   Use the standard deviations to determine which investment had the greater risk. (Explain your answer.)    , so small-company stocks had greater risk  "
+},
+{
+  "id": "def-variance",
+  "level": "2",
+  "url": "sec-measures-variability.html#def-variance",
+  "type": "Definition",
+  "number": "2.2.6",
+  "title": "",
+  "body": "  The variance ( or ) measures the variability, or spread, of the data points in a set around the set's mean.         "
+},
+{
+  "id": "sec-measures-variability-12",
+  "level": "2",
+  "url": "sec-measures-variability.html#sec-measures-variability-12",
+  "type": "Exercise",
+  "number": "2.2.7",
+  "title": "",
+  "body": " (Donnelly, Your Turn 4)  The data in the file below lists the number of books that seven adults have read during the last 12 months. ...insert file...  Calculate the variance and standard deviation.  "
 },
 {
   "id": "sec-TypesOfData",
   "level": "1",
   "url": "sec-TypesOfData.html",
   "type": "Section",
-  "number": "2.2",
+  "number": "2.3",
   "title": "Types of Data",
   "body": " Types of Data  Text of section.  Qualitative vs. Quantitative Data     Discrete vs. Continuous Data     Level of Measurement     Sample and Population     Parameter vs. Statistic     Parameter vs. Statistic     "
 },
@@ -41,7 +275,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-TypesOfData.html#sec-TypesOfData-3",
   "type": "Exercise",
-  "number": "2.2.1",
+  "number": "2.3.1",
   "title": "Qualitative vs. Quantitative Data.",
   "body": "Qualitative vs. Quantitative Data    "
 },
@@ -50,7 +284,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-TypesOfData.html#sec-TypesOfData-4",
   "type": "Exercise",
-  "number": "2.2.2",
+  "number": "2.3.2",
   "title": "Discrete vs. Continuous Data.",
   "body": "Discrete vs. Continuous Data    "
 },
@@ -59,7 +293,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-TypesOfData.html#sec-TypesOfData-5",
   "type": "Exercise",
-  "number": "2.2.3",
+  "number": "2.3.3",
   "title": "Level of Measurement.",
   "body": "Level of Measurement    "
 },
@@ -68,7 +302,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-TypesOfData.html#sec-TypesOfData-6",
   "type": "Exercise",
-  "number": "2.2.4",
+  "number": "2.3.4",
   "title": "Sample and Population.",
   "body": "Sample and Population    "
 },
@@ -77,7 +311,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-TypesOfData.html#sec-TypesOfData-7",
   "type": "Exercise",
-  "number": "2.2.5",
+  "number": "2.3.5",
   "title": "Parameter vs. Statistic.",
   "body": "Parameter vs. Statistic    "
 },
@@ -86,7 +320,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-TypesOfData.html#sec-TypesOfData-8",
   "type": "Exercise",
-  "number": "2.2.6",
+  "number": "2.3.6",
   "title": "Parameter vs. Statistic.",
   "body": "Parameter vs. Statistic    "
 },

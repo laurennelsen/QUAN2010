@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>QUAN 2010 Using Regression to Make a Prediction</title>
+<title>QUAN 2010 Measures of Variability</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -137,7 +137,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-developing-regression-model.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-Intro-to-Regression-Modeling.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-Diamonds.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-measures-central-tendency.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-Descriptive-Statistics.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-TypesOfData.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -151,11 +151,12 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="ch-Intro.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Business Statistics</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Intro.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Section Title</span></a></div></li></ul>
 </li>
-<li class="toc-item toc-chapter">
+<li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-Descriptive-Statistics.html" class="internal"><span class="codenumber">2</span> <span class="title">Descriptive Statistics</span></a></div>
-<ul class="structural toc-item-list">
+<ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-measures-central-tendency.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Measures of Central Tendency</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-TypesOfData.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Types of Data</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-measures-variability.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Measures of Variability</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-TypesOfData.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Types of Data</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -246,38 +247,141 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-two-means-independent.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Comparing Two Means with Independent Samples</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-chapter contains-active">
+<li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-Intro-to-Regression-Modeling.html" class="internal"><span class="codenumber">10</span> <span class="title">Introduction to Regression Modeling</span></a></div>
-<ul class="structural toc-item-list contains-active">
+<ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-correlation.html" class="internal"><span class="codenumber">10.1</span> <span class="title">Correlation Analysis</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-developing-regression-model.html" class="internal"><span class="codenumber">10.2</span> <span class="title">Developing a Regression Model</span></a></div></li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-using-regression.html" class="internal"><span class="codenumber">10.3</span> <span class="title">Using Regression to Make a Prediction</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-using-regression.html" class="internal"><span class="codenumber">10.3</span> <span class="title">Using Regression to Make a Prediction</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Diamonds.html" class="internal"><span class="codenumber">10.4</span> <span class="title">Diamonds Modeling</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-using-regression"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">10.3</span><span class="space"> </span><span class="title">Using Regression to Make a Prediction</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-measures-variability"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.2</span><span class="space"> </span><span class="title">Measures of Variability</span>
 </h2>
-<div class="para" id="sec-using-regression-2">We can use our regression model to make predictions based on given values of the independent variables -- just plug the given values into the respective independent variable of the regression model.  But how reliable is this prediction?  We only have sample data so the prediction isn’t perfect.  Similar to what we did in a previous chapter, we will construct a confidence interval to aid in describing the accuracy of our predictions.</div>
-<div class="para logical" id="sec-using-regression-3">
-<div class="para">There are a number of confidence intervals that we can create based on our regression model that provide insight into the validity of the model.  The only one we will focus on is related to the population slopes:</div>
+<div class="para" id="sec-measures-variability-2">
+<em class="emphasis">Measures of variability</em> (or <em class="emphasis">dispersion</em>) describe the spread of a data set.  We will define the most common ones.</div>
+<article class="definition definition-like" id="def-range"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.1</span><span class="period">.</span>
+</h3>
+<div class="para logical" id="def-range-1-1">
+<div class="para">The <em class="emphasis">range</em> is the difference between the highest and lowest data values in a data set.</div>
 <div class="displaymath process-math">
 \begin{equation*}
-CI=b_i\pm t_{\alpha/2}s_{b_i} 
+\text{Range} = \text{highest data value} - \text{lowest data value}
 \end{equation*}
 </div>
-<div class="para">It turns out we will likely not need this formula, however, since the “Regression” tool in Excel will do most of the work for us.</div>
+</div></article><details id="ex-propertytax" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.2.2</span><span class="period">.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="ex-propertytax-1-1">The Excel file below shows the effective property tax rate for states in the United States in 2023.  (This data is from the <a class="external" href="https://taxfoundation.org/data/all/state/property-taxes-by-state-county-2023/#:~:text=Median%20property%20taxes%20paid%20vary,the%20United%20States%20was%20%241%2C682." target="_blank">Tax Foundation</a><details class="ptx-footnote" aria-live="polite" id="ex-propertytax-1-1-2"><summary class="ptx-footnote__number" title="Footnote 2.2.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="ex-propertytax-1-1-2"><code class="code-inline tex2jax_ignore">taxfoundation.org/data/all/state/property-taxes-by-state-county-2023/#:~:text=Median%20property%20taxes%20paid%20vary,the%20United%20States%20was%20%241%2C682.</code></div></details>)</div> <div class="para" id="ex-propertytax-1-2"><a class="external" href="external/sheets/PropertyTaxesUS2023.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/PropertyTaxesUS2023.xlsx</code></a></div> <div class="para" id="ex-propertytax-1-3">Find the range of property tax rates in the United States in 2023.</div>
+<div class="solutions"><details id="ex-propertytax-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="ex-propertytax-2-1"><div class="displaymath process-math">
+\begin{equation*}
+\text{range}=1.92\%
+\end{equation*}
+</div></div></div></details></div></article></details><article class="definition definition-like" id="def-stdev"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.3</span><span class="period">.</span>
+</h3>
+<div class="para" id="def-stdev-1-1">
+<em class="emphasis">Standard deviation</em> is another measure of variability, and standard deviation is found by determining how much each data item differs from the mean.</div> <div class="para logical" id="def-stdev-1-2">
+<div class="para">Computing the Standard Deviation for a Data Set:</div>
+<ol class="decimal">
+<li id="def-stdev-1-2-1-1"><div class="para" id="def-stdev-1-2-1-1-1">Find the mean of the data items</div></li>
+<li id="def-stdev-1-2-1-2"><div class="para logical" id="def-stdev-1-2-1-2-1">
+<div class="para">Find the deviation of each data item from the mean:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{data item} - \text{mean}
+\end{equation*}
 </div>
-<details id="sec-using-regression-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">10.3.1</span><span class="period">.</span>
-</h3></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec-using-regression-4-1">
-<div class="para" id="sec-using-regression-4-1-1">Let’s look back at the hospital example from earlier.</div> <div class="para" id="sec-using-regression-4-1-2">A hospital would like to develop a regression model to predict the total hospital bill for a patient based on the age of the patient (<span class="process-math">\(x_1\)</span>), the patient’s length of stay (<span class="process-math">\(x_2\)</span>), and the number of days in the hospital’s intensive care unit (ICU) (<span class="process-math">\(x_3\)</span>).  Data for these variables can be found in the table in the Excel file below. <a class="external" href="external/sheets/HospitalExample.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/HospitalExample.xlsx</code></a>
-</div> <div class="para" id="sec-using-regression-4-1-3">Construct and interpret the <span class="process-math">\(95\%\)</span> confidence interval for the regression coefficient for each of the independent variables in the model.</div>
-</div></article></details></section></div>
+</div></li>
+<li id="def-stdev-1-2-1-3"><div class="para logical" id="def-stdev-1-2-1-3-1">
+<div class="para">Square each deviation:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(\text{data item} - \text{mean})^2
+\end{equation*}
+</div>
+</div></li>
+<li id="def-stdev-1-2-1-4"><div class="para logical" id="def-stdev-1-2-1-4-1">
+<div class="para">Sum the squared deviations:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sum(\text{data item} - \text{mean})^2
+\end{equation*}
+</div>
+</div></li>
+<li id="def-stdev-1-2-1-5"><div class="para logical" id="def-stdev-1-2-1-5-1">
+<div class="para">Divide the sum in step 4 by <span class="process-math">\(n-1\text{,}\)</span> where <span class="process-math">\(n\)</span> represents the number of data items:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\sum(\text{data item} - \text{mean})^2}{n-1}
+\end{equation*}
+</div>
+</div></li>
+<li id="def-stdev-1-2-1-6"><div class="para logical" id="def-stdev-1-2-1-6-1">
+<div class="para">Take the square root of the quotient in step 5.  This value is the standard deviation for the data set.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Standard deviation}=\sqrt{\frac{\sum(\text{data item} - \text{mean})^2}{n-1}}
+\end{equation*}
+</div>
+<div class="para">or</div>
+<div class="displaymath process-math">
+\begin{equation*}
+s=\sqrt{\frac{\sum(\text{data item} - \text{mean})^2}{n-1}}
+\end{equation*}
+</div>
+</div></li>
+</ol>
+</div> <div class="para logical" id="def-stdev-1-3">
+<div class="para">We can also find the standard deviation more easily in Excel:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\boxed{ \text{Excel formula:}  \text{   STDEV.S} }
+\end{equation*}
+</div>
+</div></article><div class="para logical" id="sec-measures-variability-6"><ul class="disc">
+<li id="sec-measures-variability-6-1-1"><div class="para" id="sec-measures-variability-6-1-1-1">Low standard deviation means values tend to be close to the mean</div></li>
+<li id="sec-measures-variability-6-1-2"><div class="para" id="sec-measures-variability-6-1-2-1">High standard deviation means values are more spread out.</div></li>
+</ul></div>
+<div class="para" id="sec-measures-variability-7">The formulas above are for finding the <em class="emphasis">sample</em> standard deviation, which we denote by <span class="process-math">\(s\text{.}\)</span>
+</div>
+<div class="para" id="sec-measures-variability-8">The <em class="emphasis">population standard deviation</em> requires us to have information about the entire population, and we would use a different formula to find it.  We denote the population standard deviation by <span class="process-math">\(\sigma\text{.}\)</span>
+</div>
+<details id="sec-measures-variability-9" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.2.4</span><span class="period">.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-measures-variability-9-1-1">Find the standard deviation for the effective tax rates in the file from <a href="sec-measures-variability.html#ex-propertytax" class="xref" data-knowl="./knowl/xref/ex-propertytax.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 2.2.2">Exercise 2.2.2</a>
+</div> <div class="para" id="sec-measures-variability-9-1-2"><a class="external" href="external/sheets/PropertyTaxesUS2023.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/PropertyTaxesUS2023.xlsx</code></a></div>
+<div class="solutions"><details id="sec-measures-variability-9-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-measures-variability-9-2-1"><div class="displaymath process-math">
+\begin{equation*}
+0.47
+\end{equation*}
+</div></div></div></details></div></article></details><details id="sec-measures-variability-10" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.2.5</span><span class="period">.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><article class="task exercise-like" id="sec-measures-variability-10-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-measures-variability-10-2-1-1">Use the means to determine which investment provided the greater yearly return.</div>
+<div class="solutions"><details id="sec-measures-variability-10-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-measures-variability-10-2-2-1">
+<span class="process-math">\(17.5\gt 12.4\text{,}\)</span> so small-company stocks provided the greater yearly return</div></div></details></div></article><article class="task exercise-like" id="sec-measures-variability-10-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-measures-variability-10-3-1-1">Use the standard deviations to determine which investment had the greater risk.  (Explain your answer.)</div>
+<div class="solutions"><details id="sec-measures-variability-10-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-measures-variability-10-3-2-1">
+<span class="process-math">\(33.3\gt 20.4\text{,}\)</span> so small-company stocks had greater risk</div></div></details></div></article></article></details><article class="definition definition-like" id="def-variance"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.6</span><span class="period">.</span>
+</h3>
+<div class="para" id="def-variance-1-1">The <em class="emphasis">variance</em> (<span class="process-math">\(\sigma^2\)</span> or <span class="process-math">\(s^2\)</span>) measures the variability, or spread, of the data points in a set around the set’s mean.</div> <div class="para logical" id="def-variance-1-2"><div class="displaymath process-math">
+\begin{equation*}
+s^2=\frac{\sum (x_i-\overline{x})^2}{n-1}
+\end{equation*}
+</div></div> <div class="para logical" id="def-variance-1-3"><div class="displaymath process-math">
+\begin{equation*}
+\boxed{\text{In Excel:}  \text{   VAR.S}}
+\end{equation*}
+</div></div></article><details id="sec-measures-variability-12" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.2.7</span><span class="period">.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-measures-variability-12-1-1">(Donnelly, Your Turn 4)</div> <div class="para" id="sec-measures-variability-12-1-2">The data in the file below lists the number of books that seven adults have read during the last 12 months. ...insert file...</div> <div class="para" id="sec-measures-variability-12-1-3">Calculate the variance and standard deviation.</div></article></details></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="sec-developing-regression-model.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-Diamonds.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec-measures-central-tendency.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-TypesOfData.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
