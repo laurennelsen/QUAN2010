@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-measures-variability" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Measures of Variability</title>
+
+  <p>
+    <em>Measures of variability</em> (or <em>dispersion</em>) describe the spread of a data set.  We will define the most common ones.
+  </p>
+
+
+  <definition xml:id="def-range">
+    <statement>
+        <p>
+            The <em>range</em> is the difference between the highest and lowest data values in a data set.
+            <me>
+                \text{Range} = \text{highest data value} - \text{lowest data value}
+            </me>
+            
+        </p>
+    </statement>
+  </definition>
+
+  <exercise xml:id="ex-propertytax">
+    <statement>
+        <p>
+            The Excel file below shows the effective property tax rate for states in the United States in 2023.  (This data is from the <url href="https://taxfoundation.org/data/all/state/property-taxes-by-state-county-2023/#:~:text=Median%20property%20taxes%20paid%20vary,the%20United%20States%20was%20%241%2C682.">Tax Foundation</url>)
+        </p>
+        <p>
+            <url href="external/sheets/PropertyTaxesUS2023.xlsx" />
+
+        </p>
+        <p>
+            Find the range of property tax rates in the United States in 2023.
+        </p>
+    </statement>
+    <answer>
+        <p>
+            <me>\text{range}=1.92\%</me>
+        </p>
+    </answer>
+  </exercise>
+
+
+
+  <definition xml:id="def-stdev">
+    <statement>
+        <p>
+            <em>Standard deviation</em> is another measure of variability, and standard deviation is found by determining how much each data item differs from the mean.
+        </p>
+        <p>
+            Computing the Standard Deviation for a Data Set:
+            <ol>
+                <li>
+                    <p>
+                        Find the mean of the data items
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Find the deviation of each data item from the mean: 
+                        <me>
+                            \text{data item} - \text{mean}
+                        </me>
+                        
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Square each deviation:
+                        <me>
+                            (\text{data item} - \text{mean})^2
+                        </me>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Sum the squared deviations:
+                        <me>
+                            \sum(\text{data item} - \text{mean})^2
+                        </me>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Divide the sum in step 4 by <m>n-1</m>, where <m>n</m> represents the number of data items:
+                        <me>
+                            \frac{\sum(\text{data item} - \text{mean})^2}{n-1}
+                        </me>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Take the square root of the quotient in step 5.  This value is the standard deviation for the data set.
+                        <me>
+                            \text{Standard deviation}=\sqrt{\frac{\sum(\text{data item} - \text{mean})^2}{n-1}}
+                        </me>
+                        or
+                        <me>
+                            s=\sqrt{\frac{\sum(\text{data item} - \text{mean})^2}{n-1}}
+                        </me>
+                        
+                        
+                    </p>
+                </li>
+            </ol>
+        </p>
+        <p>
+            We can also find the standard deviation more easily in Excel:
+            <me>
+               \boxed{ \text{Excel formula:}  \text{   STDEV.S} }
+            </me>
+            
+        </p>
+    </statement>
+  </definition>
+
+  <p>
+    <ul>
+        <li>
+            <p>
+                Low standard deviation means values tend to be close to the mean
+            </p>
+        </li>
+        <li>
+            <p>
+                High standard deviation means values are more spread out.
+            </p>
+        </li>
+    </ul>
+  </p>
+
+  <p>
+    The formulas above are for finding the <em>sample</em> standard deviation, which we denote by <m>s</m>.
+  </p>
+
+  <p>
+    The <em>population standard deviation</em> requires us to have information about the entire population, and we would use a different formula to find it.  We denote the population standard deviation by <m>\sigma</m>.
+  </p>
+
+<exercise>
+    <statement>
+        <p>
+            Find the standard deviation for the effective tax rates in the file from <xref ref="ex-propertytax"/>
+        </p>
+        <p>
+            <url href="external/sheets/PropertyTaxesUS2023.xlsx" />
+        </p>
+    </statement>
+    <answer>
+        <p>
+            <me>0.47</me>
+        </p>
+    </answer>
+</exercise>
+
+<exercise>
+    <statement>
+        <p>
+            Shown below are the means and standard deviations of the yearly returns on two investments from 1926 through 2004.
+        </p>
+        <p>
+            ....insert table.....
+        </p>
+    </statement>
+    <task>
+        <statement>
+            <p>
+                Use the means to determine which investment provided the greater yearly return.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <m>17.5\gt 12.4</m>, so small-company stocks provided the greater yearly return
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Use the standard deviations to determine which investment had the greater risk.  (Explain your answer.)
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <m>33.3\gt 20.4</m>, so small-company stocks had greater risk
+            </p>
+        </answer>
+    </task>
+</exercise>
+
+
+<definition xml:id="def-variance">
+    <statement>
+        <p>
+            The <em>variance</em> (<m>\sigma^2</m> or <m>s^2</m>) measures the variability, or spread, of the data points in a set around the set's mean.
+        </p>
+        <p>
+            <me>s^2=\frac{\sum (x_i-\overline{x})^2}{n-1}</me>
+        </p>
+        <p>
+            <me>\boxed{\text{In Excel:}  \text{   VAR.S}}</me>
+        </p>
+    </statement>
+</definition>
+
+
+<exercise>
+    <statement>
+        <p>
+            (Donnelly, Your Turn 4)
+        </p>
+        <p>
+            The data in the file below lists the number of books that seven adults have read during the last 12 months.
+
+            ...insert file...
+        </p>
+        <p>
+            Calculate the variance and standard deviation.
+        </p>
+    </statement>
+</exercise>
+
+</section>

@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-measures-central-tendency" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Measures of Central Tendency</title>
+
+  <p> In statistics, <q>average</q> or <q>typical</q> values are known as <em>measures of central tendency</em>. </p>
+
+  <definition xml:id="def-mean">
+    <statement>
+      <p>
+        The <em>mean</em> (<m>\mu</m> or <m>\overline{x}</m>) is the most common measure of central tendency and is calculated by summing all the data points and dividing by the size of the data set.
+      </p>
+      <p>
+        <me>\boxed{ \text{Excel formula:  AVERAGE} }</me>
+      </p>
+      <p>
+        The mean is the sum of the data items divided by the number of items:
+        <me>\text{Mean}=\frac{\sum x}{n},</me>
+        where <m>\sum x</m> represents the sum of all the data items and <m>n</m> represents the numbef of items.
+      </p>
+
+      <p>
+        <ul>
+          <li>
+            <p>
+              The mean of a sample is symbolized by <m>\overline{x}</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              The mean of an entire population is symbolized by <m>\mu</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </statement>
+  </definition>
+
+  <exercise xml:id="ex-actors-mean">
+    <statement>
+    <p>
+      The Excel file below has the earnings for the top 10 highest paid actors in 2023.  (The data is taken from <url href="https://finance.yahoo.com/news/10-highest-paid-actors-2023-185921075.html">Yahoo</url>.)
+    </p>
+
+    <p>
+    <url href="external/sheets/Actors.xlsx" />
+    </p>
+
+    <p>
+      Find the mean earnings, in millions of dollars, for the ten highest-earning actors.
+    </p>
+
+  </statement>
+
+  <answer>
+    <p>
+      <m>=AVERAGE(B2:B11)=44.9</m> million dollars
+    </p>
+  </answer>
+    
+  </exercise>
+
+
+  <definition xml:id="def-median">
+    <statement>
+      <p>
+        The <em>median</em> is the value in the data set for which half of the observations are higher and half are lower.
+      </p>
+      <p>
+        <me>\boxed{ \text{Excel formula:  MEDIAN} }</me>
+      </p>
+    </statement>
+  </definition>
+
+  <p>
+    To find the median of a group of data items,
+    <ol>
+      <li>
+        <p>
+          Arrange the data items in order, from smallest to largest.
+        </p>
+      </li>
+      <li>
+        <p>
+          If the number of data items is odd, the median is the data item in the middle of the list.
+        </p>
+      </li>
+      <li>
+        <p>
+          If the number of data items is even, the median is the mean of the two middle data items.
+        </p>
+      </li>
+    </ol>
+  </p>
+
+  <exercise>
+    <statement>
+      <p>
+        Find the median for each of the following groups of data:
+      </p>
+    </statement>
+    <task>
+      <statement>
+        <p>
+          <m>84,90,98,95,88</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          data items in order:  <m>84,88,90,95,95</m>
+        </p>
+        <p>
+          median: <m>90</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          data items in order:  <m>7,13,15,25,28,34,47,59,68,74</m>
+        </p>
+        <p>
+          <m>68,74,7,13,15,25,28,59,34,47</m>
+        </p>
+      </statement>
+      <answer>
+        <p>
+          median: <m>\frac{28+34}{2}=\frac{62}{2}=31</m>
+        </p>
+      </answer>
+    </task>
+  </exercise>
+
+
+
+  <exercise>
+    exercise>
+    <statement>
+    <p>
+      The Excel file below has the earnings for the top 10 highest paid actors in 2023.  (The data is taken from <url href="https://finance.yahoo.com/news/10-highest-paid-actors-2023-185921075.html">Yahoo</url>.)
+    </p>
+
+    <p>
+    <url href="external/sheets/Actors.xlsx" />
+    </p>
+
+    <p>
+      Find the median earnings, in millions of dollars, for the ten highest-earning actors.
+    </p>
+
+    <p>
+      Is the median different thant the mean you found in <xref ref="ex-actors-mean"/>, and if so, why?
+    </p>
+
+  </statement>
+  <answer>
+    <p>
+      <me>\text{median}=MEDIAN(B2:B11)=42.5.</me>
+      The median is less than the mean that we found in <xref ref="ex-actors-mean"/>.
+    </p>
+  </answer>
+  </exercise>
+
+  <figure xml:id="figure-geogebra-skew">
+    <caption>Skewed Distribution, Mean, and Median (Made in GeoGebra by Casper Buisman)</caption>
+    <interactive xml:id="geogebra-skew" geogebra="Z9rKvgj6" aspect="9:5" />
+  </figure>
+
+  <figure xml:id="fig-right-skew">
+    <caption>Right-skewed</caption>
+  <image xml:id="tikz-right-skew">
+    <latex-image>
+      \begin{tikzpicture}
+      \begin{axis}[axis lines=left, ticks=none,xmax=0.5,ymax=0.5]
+      \addplot[thick,black, no markers, samples=200, domain=-5:0] {-x*exp(x)};
+      \draw[dashed] (axis cs:-1.68,0) -- (axis cs:-1.68,0.31) node [above, anchor=south east] {Median};
+      \draw[dashed] (axis cs:-2,0) -- (axis cs:-2,0.27) node [above, anchor=east] {Mean};
+      \draw[dashed] (axis cs:-1,0) -- (axis cs:-1,0.37) node [above] {Mode};
+      \end{axis}
+      \end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+
+  <figure xml:id="fig-symmetric">
+    <caption>Symmetric</caption>
+  <image xml:id="tikz-symmetric">
+    <latex-image>
+        \begin{tikzpicture}
+        \begin{axis}[axis lines=left, ticks=none,xmax=3, xmin=-3,ymax=1.5]
+        \addplot[thick,black, no markers,samples=200] {exp(-x^2)};
+        \draw[dashed] (axis cs:0,0) -- (axis cs:0,1) node [above] {Mean, Median, Mode};;
+        \end{axis}
+\end{tikzpicture}
+    </latex-image>
+  </image>
+</figure>
+
+<figure xml:id="fig-left-skew">
+  <caption>Left-skewed</caption>
+<image xml:id="tikz-left-skew">
+  <latex-image>
+    \begin{tikzpicture}
+\begin{axis}[axis lines=left, ticks=none,xmin=0,ymax=0.5]
+\addplot[thick,black, no markers, samples=200, domain=0:5] {abs(x)*exp(-x)};
+\draw[dashed] (axis cs:1.68,0) -- (axis cs:1.68,0.31) node [above, anchor=south west] {Median};
+\draw[dashed] (axis cs:2,0) -- (axis cs:2,0.27) node [above, anchor=west] {Mean};
+\draw[dashed] (axis cs:1,0) -- (axis cs:1,0.37) node [above] {Mode};
+\end{axis}
+\end{tikzpicture}
+  </latex-image>
+</image>
+</figure>
+
+
+  <exercise xml:id="ex-skew">
+    <statement>
+      <p>
+      How are the mean and median related to each other in each of the following frequency distribution shapes?
+      </p>
+    </statement>
+    <task>
+      <statement>
+        <p>
+          symmetric
+        </p>
+      </statement>
+      <answer>
+        <p>
+          the mean and median are approximately equal
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          left-skewed
+        </p>
+      </statement>
+      <answer>
+        <p>
+          the median is greater than the mean; potential low outliers pull the mean left
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          right-skewed
+        </p>
+      </statement>
+      <answer>
+        <p>
+          the median is less than the mean; potential high outliers pull the mean right
+        </p>
+      </answer>
+    </task>
+  </exercise>
+
+  <question>
+    Statisticians generally use the median instead of the mean when reporting income.  Why do you think this is?
+  </question>
+
+
+  <exercise>
+    <statement>
+      <p>
+        Five employees in the assembly section of a television manufacturing company earn salaries of <m>\$ 19,700, \$ 20,400, \$ 21,500, \$ 22,600,</m> and <m>\$ 23,000</m> annually.  The section manager has an annual salary of <m>\$ 95,000</m>.
+      </p>
+    </statement>
+    <task>
+      <statement>
+        <p>
+          Find the median annual salary for the six people.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\text{median}=\frac{21500+22600}{2}=\$ 22,050</m>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Find the mean annual salary for the six people.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\text{mean}=\frac{19700+20400+21500+22600+23000+95000}{6}=\$33,700</m>
+        </p>
+      </answer>
+    </task>
+  </exercise>
+
+
+  <definition xml:id="def-outlier">
+    <statement>
+      <p>
+        An <em>outlier</em> is a value that is much higher or lower than most of the data.
+      </p>
+    </statement>
+  </definition>
+
+
+  <definition xml:id="def-mode">
+    <statement>
+      <p>
+        The <em>mode</em> is the data value that occurs most often in a data set.  If more than one data value has the highest frequency, then each of these data values is a mode.  If there is no data value that occurs most often, then the data set has no mode.
+      </p>
+    </statement>
+  </definition>
+
+  <definition xml:id="def-bimodal">
+    <statement>
+      <p>
+        If a dataset is <em>bimodal</em> if it has two modes.
+      </p>
+    </statement>
+  </definition>
+
+  <exercise>
+<statement>
+  <p>
+    Find the mode for each of the following groups of data:
+  </p>
+</statement>
+<task>
+  <statement>
+    <p>
+      7, 2, 4, 7, 8, 10
+    </p>
+  </statement>
+  <answer>
+    <p>
+      mode:  7
+    </p>
+  </answer>
+</task>
+<task>
+  <statement>
+    <p>
+      2, 1, 4, 5, 3
+    </p>
+  </statement>
+  <answer>
+    <p>
+      There is no mode since no number occurs more than once.
+    </p>
+  </answer>
+</task>
+<task>
+  <statement>
+    <p>
+      3, 3, 4, 5, 6, 6
+    </p>
+  </statement>
+  <answer>
+    <p>
+      The modes are 3 and 6.  (The data set is <em>bimodal</em>.)
+    </p>
+  </answer>
+</task>
+    </exercise>
+
+
+    <exercise>
+      <statement>
+        <p>
+          Consider the following data values:
+          <me>
+            5, 13, 18, 2, 16, 18, 5, 20
+          </me>
+          Calculate the mean, median, and mode, and then describe the shape of the distribution.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <m>\text{mean}=\frac{5+13+18+2+16+18+5+20}{8}=\frac{97}{8}=12.125</m>
+        </p>
+        <p>
+          data items in order:  <m>2,5,5,13,16,18,18,20</m>
+        </p>
+        <p>
+          <m>\text{median}=\frac{13+16}{2}=14.5</m>
+        </p>
+        <p>
+          modes: <m>5,18</m>
+        </p>
+        <p>
+          The distribution is left-skewed.
+        </p>
+      </answer>
+    </exercise>
+
+
+    <exercise>
+      <statement>
+        <p>
+        The data in the Excel file below lists daily Dow Jones Industrial Average values from June 2019 through May 2024.
+        </p>
+        <p>
+          <url href="external/sheets/DJIA.xls" />
+        </p>
+        </statement>
+        <task>
+          <statement>
+            <p>
+              Calculate the mean, median, and mode(s) (using Excel).
+            </p>
+          </statement>
+          <answer>
+            <p>
+              <ul>
+                <li>
+                  <p>
+                    mean:  <m>=AVERAGE(B12:B1270)\approx 31946.76</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    median:  <m>=MEDIAN(B12:B1270)\approx 33072.88</m>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    modes:  <m>27691.49, 34798, 32798.4, 33309.51</m>
+                  </p>
+                </li>
+              </ul>
+            </p>
+          </answer>
+        </task>
+        <task>
+          <statement>
+            <p>
+              Describe the shape of the distribution.
+            </p>
+          </statement>
+          <answer>
+            <p>
+              The distribution is left-skewed.
+            </p>
+          </answer>
+        </task>
+    </exercise>
+
+</section>

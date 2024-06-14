@@ -4,11 +4,13 @@
   <title>Descriptive Statistics</title>
 
   <introduction>
-    <p> Text before the first section. </p>
+    <p> In this chapter, we'll learn how to compute descriptive statistics such as the <em>mean</em> and <em>standard deviation</em> both by hand and with Excel. </p>
   </introduction>
 
   <!-- include sections -->
-  <xi:include href="sec-section-name.ptx" />
+  <xi:include href="sec-measures-central-tendency.ptx" />
+
+  <xi:include href="sec-measures-variability.ptx" />
 
   <xi:include href="sec-TypesOfData.ptx" />
 
