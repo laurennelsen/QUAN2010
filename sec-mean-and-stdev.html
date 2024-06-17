@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>QUAN 2010 Measures of Variability</title>
+<title>QUAN 2010 Using the Mean and Standard Deviation Together</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -137,7 +137,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-measures-central-tendency.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-Descriptive-Statistics.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-mean-and-stdev.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-measures-variability.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-Descriptive-Statistics.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-measures-relative-position.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -155,8 +155,8 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="ch-Descriptive-Statistics.html" class="internal"><span class="codenumber">2</span> <span class="title">Descriptive Statistics</span></a></div>
 <ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-measures-central-tendency.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Measures of Central Tendency</span></a></div></li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-measures-variability.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Measures of Variability</span></a></div></li>
-<li class="toc-item toc-section">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-measures-variability.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Measures of Variability</span></a></div></li>
+<li class="toc-item toc-section active">
 <div class="toc-title-box"><a href="sec-mean-and-stdev.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Using the Mean and Standard Deviation Together</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-mean-and-stdev.html#subsec-empirical-rule" class="internal"><span class="codenumber">2.3.1</span> <span class="title">The Empirical Rule</span></a></div></li></ul>
 </li>
@@ -264,135 +264,165 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-measures-variability"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.2</span><span class="space"> </span><span class="title">Measures of Variability</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-mean-and-stdev"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.3</span><span class="space"> </span><span class="title">Using the Mean and Standard Deviation Together</span>
 </h2>
-<div class="para" id="sec-measures-variability-2">
-<em class="emphasis">Measures of variability</em> (or <em class="emphasis">dispersion</em>) describe the spread of a data set.  We will define the most common ones.</div>
-<article class="definition definition-like" id="def-range"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.1</span><span class="period">.</span>
+<div class="para" id="sec-mean-and-stdev-2">There are a few important concepts that use the mean and standard deviation together to describe data sets.</div>
+<article class="definition definition-like" id="def-cv"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.3.1</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="def-range-1-1">
-<div class="para">The <em class="emphasis">range</em> is the difference between the highest and lowest data values in a data set.</div>
-<div class="displaymath process-math">
+<div class="para" id="def-cv-1-1">The <em class="emphasis">coefficient of variation (cv)</em> measures the standard deviation in terms of its percentage of the mean.</div> <div class="para logical" id="def-cv-1-2"><div class="displaymath process-math">
 \begin{equation*}
-\text{Range} = \text{highest data value} - \text{lowest data value}
+\text{formula:} \text{  cv}=\frac{\sigma}{\mu}\cdot 100\text{  or  } \frac{s}{\overline{x}}\cdot 100
 \end{equation*}
-</div>
-</div></article><details id="ex-propertytax" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.2.2</span><span class="period">.</span>
-</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="ex-propertytax-1-1">The Excel file below shows the effective property tax rate for states in the United States in 2023.  (This data is from the <a class="external" href="https://taxfoundation.org/data/all/state/property-taxes-by-state-county-2023/#:~:text=Median%20property%20taxes%20paid%20vary,the%20United%20States%20was%20%241%2C682." target="_blank">Tax Foundation</a><details class="ptx-footnote" aria-live="polite" id="ex-propertytax-1-1-2"><summary class="ptx-footnote__number" title="Footnote 2.2.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="ex-propertytax-1-1-2"><code class="code-inline tex2jax_ignore">taxfoundation.org/data/all/state/property-taxes-by-state-county-2023/#:~:text=Median%20property%20taxes%20paid%20vary,the%20United%20States%20was%20%241%2C682.</code></div></details>)</div> <div class="para" id="ex-propertytax-1-2"><a class="external" href="external/sheets/PropertyTaxesUS2023.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/PropertyTaxesUS2023.xlsx</code></a></div> <div class="para" id="ex-propertytax-1-3">Find the range of property tax rates in the United States in 2023.</div>
-<div class="solutions"><details id="ex-propertytax-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="ex-propertytax-2-1"><div class="displaymath process-math">
-\begin{equation*}
-\text{range}=1.92\%
-\end{equation*}
-</div></div></div></details></div></article></details><article class="definition definition-like" id="def-stdev"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.3</span><span class="period">.</span>
+</div></div></article><article class="definition definition-like" id="def-z-score"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.3.2</span><span class="period">.</span>
 </h3>
-<div class="para" id="def-stdev-1-1">
-<em class="emphasis">Standard deviation</em> is another measure of variability, and standard deviation is found by determining how much each data item differs from the mean.</div> <div class="para logical" id="def-stdev-1-2">
-<div class="para">Computing the Standard Deviation for a Data Set:</div>
-<ol class="decimal">
-<li id="def-stdev-1-2-1-1"><div class="para" id="def-stdev-1-2-1-1-1">Find the mean of the data items</div></li>
-<li id="def-stdev-1-2-1-2"><div class="para logical" id="def-stdev-1-2-1-2-1">
-<div class="para">Find the deviation of each data item from the mean:</div>
-<div class="displaymath process-math">
+<div class="para" id="def-z-score-1-1">The <em class="emphasis"><span class="process-math">\(z\)</span>-score</em> identifies the number of standard deviations a particular value is from the mean of its distribution.</div> <div class="para logical" id="def-z-score-1-2"><div class="displaymath process-math">
 \begin{equation*}
-\text{data item} - \text{mean}
+\text{formula:  } z=\frac{x-\mu}{\sigma}\text{  or  } \frac{x-\overline{x}}{s}\cdot 100
 \end{equation*}
-</div>
-</div></li>
-<li id="def-stdev-1-2-1-3"><div class="para logical" id="def-stdev-1-2-1-3-1">
-<div class="para">Square each deviation:</div>
-<div class="displaymath process-math">
+</div></div> <div class="para logical" id="def-z-score-1-3"><div class="displaymath process-math">
 \begin{equation*}
-(\text{data item} - \text{mean})^2
+\text{Excel formula:  STANDARDIZE}
 \end{equation*}
+</div></div></article><details id="ex-weights-z" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.3.3</span><span class="period">.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="ex-weights-z-1">
+<div class="para" id="ex-weights-z-1-1">The mean weight of newborn infants is 7 pounds, and the standard deviation is 0.8 pound.  The weights of newborn infants are <em class="emphasis">normally distributed</em>.  (This is a symmetric distribution that we’ll talk more about in a later chapter.)</div> <div class="para" id="ex-weights-z-1-2">Find the <span class="process-math">\(z\)</span>-scores for the following weights.</div>
 </div>
-</div></li>
-<li id="def-stdev-1-2-1-4"><div class="para logical" id="def-stdev-1-2-1-4-1">
-<div class="para">Sum the squared deviations:</div>
-<div class="displaymath process-math">
+<article class="task exercise-like" id="ex-weights-z-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="ex-weights-z-2-1-1">9 pounds</div>
+<div class="solutions"><details id="ex-weights-z-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="ex-weights-z-2-2-1"><div class="displaymath process-math">
 \begin{equation*}
-\sum(\text{data item} - \text{mean})^2
+z_9=\frac{9-7}{0.8}=2.5
 \end{equation*}
-</div>
-</div></li>
-<li id="def-stdev-1-2-1-5"><div class="para logical" id="def-stdev-1-2-1-5-1">
-<div class="para">Divide the sum in step 4 by <span class="process-math">\(n-1\text{,}\)</span> where <span class="process-math">\(n\)</span> represents the number of data items:</div>
-<div class="displaymath process-math">
+</div></div></div></details></div></article><article class="task exercise-like" id="ex-weights-z-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="ex-weights-z-3-1-1">7 pounds</div>
+<div class="solutions"><details id="ex-weights-z-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="ex-weights-z-3-2-1"><div class="displaymath process-math">
 \begin{equation*}
-\frac{\sum(\text{data item} - \text{mean})^2}{n-1}
+z_7=\frac{7-7}{0.8}=0
 \end{equation*}
-</div>
-</div></li>
-<li id="def-stdev-1-2-1-6"><div class="para logical" id="def-stdev-1-2-1-6-1">
-<div class="para">Take the square root of the quotient in step 5.  This value is the standard deviation for the data set.</div>
-<div class="displaymath process-math">
+</div></div></div></details></div></article><article class="task exercise-like" id="ex-weights-z-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="ex-weights-z-4-1-1">6 pounds</div>
+<div class="solutions"><details id="ex-weights-z-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="ex-weights-z-4-2-1"><div class="displaymath process-math">
 \begin{equation*}
-\text{Standard deviation}=\sqrt{\frac{\sum(\text{data item} - \text{mean})^2}{n-1}}
+z_6=\frac{6-7}{0.8}=-1.25
 \end{equation*}
-</div>
-<div class="para">or</div>
-<div class="displaymath process-math">
+</div></div></div></details></div></article></article></details><details id="sec-mean-and-stdev-6" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">2.3.4</span><span class="period">.</span>
+</h3></summary><article class="question example-like knowl__content"><div class="para" id="sec-mean-and-stdev-6-1-1">What do the <span class="process-math">\(z\)</span>-scores in <a href="sec-mean-and-stdev.html#ex-weights-z" class="xref" data-knowl="./knowl/xref/ex-weights-z.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 2.3.3">Exercise 2.3.3</a> mean about how the weights compare to the average weight of newborn infants?</div></article></details><details id="sec-mean-and-stdev-7" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.3.5</span><span class="period">.</span>
+</h3></summary><article class="exercise exercise-like knowl__content">Intelligence quotients (IQs) on the Stanford-Binet intelligence test are normally distributed with a mean of 100 and a standard deviation of 16.  What is the IQ corresponding to a <span class="process-math">\(z\)</span>-score of <span class="process-math">\(-1.5\text{?}\)</span><div class="solutions"><details id="sec-mean-and-stdev-7-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-mean-and-stdev-7-2-1"><div class="displaymath process-math">
 \begin{equation*}
-s=\sqrt{\frac{\sum(\text{data item} - \text{mean})^2}{n-1}}
+IQ=\text{mean}-1.5(\text{standard deviation})=100-1.5(16)=100-24=76
 \end{equation*}
-</div>
-</div></li>
-</ol>
-</div> <div class="para logical" id="def-stdev-1-3">
-<div class="para">We can also find the standard deviation more easily in Excel:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\boxed{ \text{Excel formula:}  \text{   STDEV.S} }
-\end{equation*}
-</div>
-</div></article><div class="para logical" id="sec-measures-variability-6"><ul class="disc">
-<li id="sec-measures-variability-6-1-1"><div class="para" id="sec-measures-variability-6-1-1-1">Low standard deviation means values tend to be close to the mean</div></li>
-<li id="sec-measures-variability-6-1-2"><div class="para" id="sec-measures-variability-6-1-2-1">High standard deviation means values are more spread out.</div></li>
-</ul></div>
-<div class="para" id="sec-measures-variability-7">The formulas above are for finding the <em class="emphasis">sample</em> standard deviation, which we denote by <span class="process-math">\(s\text{.}\)</span>
-</div>
-<div class="para" id="sec-measures-variability-8">The <em class="emphasis">population standard deviation</em> requires us to have information about the entire population, and we would use a different formula to find it.  We denote the population standard deviation by <span class="process-math">\(\sigma\text{.}\)</span>
-</div>
-<details id="sec-measures-variability-9" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.2.4</span><span class="period">.</span>
-</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-measures-variability-9-1-1">Find the standard deviation for the effective tax rates in the file from <a href="sec-measures-variability.html#ex-propertytax" class="xref" data-knowl="./knowl/xref/ex-propertytax.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 2.2.2">Exercise 2.2.2</a>
-</div> <div class="para" id="sec-measures-variability-9-1-2"><a class="external" href="external/sheets/PropertyTaxesUS2023.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/PropertyTaxesUS2023.xlsx</code></a></div>
-<div class="solutions"><details id="sec-measures-variability-9-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-measures-variability-9-2-1"><div class="displaymath process-math">
-\begin{equation*}
-0.47
-\end{equation*}
-</div></div></div></details></div></article></details><details id="sec-measures-variability-10" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.2.5</span><span class="period">.</span>
-</h3></summary><article class="exercise exercise-like knowl__content"><article class="task exercise-like" id="sec-measures-variability-10-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="sec-measures-variability-10-2-1-1">Use the means to determine which investment provided the greater yearly return.</div>
-<div class="solutions"><details id="sec-measures-variability-10-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-measures-variability-10-2-2-1">
-<span class="process-math">\(17.5\gt 12.4\text{,}\)</span> so small-company stocks provided the greater yearly return</div></div></details></div></article><article class="task exercise-like" id="sec-measures-variability-10-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="sec-measures-variability-10-3-1-1">Use the standard deviations to determine which investment had the greater risk.  (Explain your answer.)</div>
-<div class="solutions"><details id="sec-measures-variability-10-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-measures-variability-10-3-2-1">
-<span class="process-math">\(33.3\gt 20.4\text{,}\)</span> so small-company stocks had greater risk</div></div></details></div></article></article></details><article class="definition definition-like" id="def-variance"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.6</span><span class="period">.</span>
+</div></div></div></details></div></article></details><section class="subsection" id="subsec-empirical-rule"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.3.1</span><span class="space"> </span><span class="title">The Empirical Rule</span>
 </h3>
-<div class="para" id="def-variance-1-1">The <em class="emphasis">variance</em> (<span class="process-math">\(\sigma^2\)</span> or <span class="process-math">\(s^2\)</span>) measures the variability, or spread, of the data points in a set around the set’s mean.</div> <div class="para logical" id="def-variance-1-2"><div class="displaymath process-math">
+<div class="para logical" id="subsec-empirical-rule-2">
+<div class="para">The <em class="emphasis">Empirical Rule</em> says that if a distribution follows a bell-shaped, symmetric curve centered around the mean, then we should expect:</div>
+<ul class="disc">
+<li id="subsec-empirical-rule-2-2-1"><div class="para" id="subsec-empirical-rule-2-2-1-1">approximately <span class="process-math">\(68\%\)</span> of the data to fall within <em class="emphasis">one</em> standard deviation of the mean,</div></li>
+<li id="subsec-empirical-rule-2-2-2"><div class="para" id="subsec-empirical-rule-2-2-2-1">approximately <span class="process-math">\(95\%\)</span> of the data to fall within <em class="emphasis">two</em> standard deviations of the mean, and</div></li>
+<li id="subsec-empirical-rule-2-2-3"><div class="para" id="subsec-empirical-rule-2-2-3-1">approximately <span class="process-math">\(99.7\%\)</span> of the data to fall within <em class="emphasis">three</em> standard deviations of the mean.</div></li>
+</ul>
+</div>
+<figure class="figure figure-like" id="figure-geogebra-empirical"><iframe src="https://www.geogebra.org/material/iframe/id/vsznbtjh/width/800/height/444/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="geogebra-empirical" width="600" height="333"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.3.6<span class="period">.</span></span><span class="space"> </span>The Empirical Rule (Made in GeoGebra by Kady Schneiter)</figcaption></figure><details id="subsec-empirical-rule-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.3.7</span><span class="period">.</span><span class="space"> </span><span class="title">Empirical Rule.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="subsec-empirical-rule-4-2"><div class="para" id="subsec-empirical-rule-4-2-1"></div></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=7056&amp;resizer=true"></iframe></div></article></details><details id="subsec-empirical-rule-5" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.3.8</span><span class="period">.</span><span class="space"> </span><span class="title">Empirical Rule.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="subsec-empirical-rule-5-2"><div class="para" id="subsec-empirical-rule-5-2-1"></div></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=25941&amp;resizer=true"></iframe></div></article></details><details id="subsec-empirical-rule-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.3.9</span><span class="period">.</span><span class="space"> </span><span class="title">Empirical Rule.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="subsec-empirical-rule-6-2"><div class="para" id="subsec-empirical-rule-6-2-1"></div></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=25942&amp;resizer=true"></iframe></div></article></details><article class="theorem theorem-like" id="thm-chebyshev-theorem"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.10</span><span class="period">.</span>
+</h4>
+<div class="para" id="thm-chebyshev-theorem-1-1"><em class="emphasis">Chebyshev’s Theorem:</em></div> <div class="para" id="thm-chebyshev-theorem-1-2">For any number <span class="process-math">\(z\)</span> greater than 1, the percent of data points that fall within <span class="process-math">\(z\)</span> standard deviations from the mean is at least <span class="process-math">\(\left( 1-\frac{1}{z^2}\right)\cdot 100\)</span> for <em class="emphasis">any distribution</em>, regardless of its shape.</div></article><details id="subsec-empirical-rule-8" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.3.11</span><span class="period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="subsec-empirical-rule-8-1"><div class="para" id="subsec-empirical-rule-8-1-1">Assume the average selling price for houses in a certain county is <span class="process-math">\(\$ 348,000\)</span> with a standard deviation of <span class="process-math">\(\$ 30,000\text{.}\)</span>
+</div></div>
+<article class="task exercise-like" id="subsec-empirical-rule-8-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="subsec-empirical-rule-8-2-1-1">Determine the coefficient of variation.</div>
+<div class="solutions"><details id="subsec-empirical-rule-8-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="subsec-empirical-rule-8-2-2-1"><div class="displaymath process-math">
 \begin{equation*}
-s^2=\frac{\sum (x_i-\overline{x})^2}{n-1}
+CV = \frac{\sigma}{\mu}\cdot 100=\frac{30000}{348000}\cdot 100 = 8.62\%
 \end{equation*}
-</div></div> <div class="para logical" id="def-variance-1-3"><div class="displaymath process-math">
+</div></div></div></details></div></article><article class="task exercise-like" id="subsec-empirical-rule-8-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="subsec-empirical-rule-8-3-1-1">Calculate the <span class="process-math">\(z\)</span>-score for a house that sells for <span class="process-math">\(\$ 379,000\text{.}\)</span>
+</div>
+<div class="solutions"><details id="subsec-empirical-rule-8-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="subsec-empirical-rule-8-3-2-1"><div class="displaymath process-math">
 \begin{equation*}
-\boxed{\text{In Excel:}  \text{   VAR.S}}
+z=\frac{x-\mu}{\sigma}=\frac{379000-348000}{30000}=1.03
 \end{equation*}
-</div></div></article><details id="sec-measures-variability-12" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.2.7</span><span class="period">.</span>
-</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-measures-variability-12-1-1">(Donnelly, Your Turn 4)</div> <div class="para" id="sec-measures-variability-12-1-2">The data in the file below lists the number of books that seven adults have read during the last 12 months. <a class="external" href="external/sheets/BooksRead.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/BooksRead.xlsx</code></a>
-</div> <div class="para" id="sec-measures-variability-12-1-3">Calculate the variance and standard deviation.</div>
-<div class="solutions"><details id="sec-measures-variability-12-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-measures-variability-12-2-1"><ul class="disc">
-<li id="sec-measures-variability-12-2-1-1-1"><div class="para" id="sec-measures-variability-12-2-1-1-1-1"><span class="process-math">\(\displaystyle \text{variance}=VAR.S(A2:A15)\approx 13.67\)</span></div></li>
-<li id="sec-measures-variability-12-2-1-1-2"><div class="para" id="sec-measures-variability-12-2-1-1-2-1"><span class="process-math">\(\displaystyle \text{standard deviation}=STDEV.S(A2:A15)\approx 3.7\)</span></div></li>
-</ul></div></div></details></div></article></details></section></div>
+</div></div></div></details></div></article><article class="task exercise-like" id="subsec-empirical-rule-8-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="subsec-empirical-rule-8-4-1-1">Using the Empirical Rule, determine the range of prices that includes <span class="process-math">\(68\%\)</span> of the homes around the mean.  (To do this, we need to assume that the selling prices of homes is bell-shaped and symmetric.)</div>
+<div class="solutions"><details id="subsec-empirical-rule-8-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="subsec-empirical-rule-8-4-2-1">
+<span class="process-math">\(68\%\)</span> of prices are within 1 standard deviation of the mean.  That is, <span class="process-math">\(68\%\)</span> of prices are between the numbers <span class="process-math">\(\mu\pm\sigma\)</span> (assuming the distribution of prices is bell-shaped and symmetric).</div> <div class="para logical" id="subsec-empirical-rule-8-4-2-2"><div class="displaymath process-math">
+\begin{equation*}
+348000\pm 30000\rightarrow \boxed{\$ 318,000 \text{ to } \$378,000}
+\end{equation*}
+</div></div>
+</div></details></div></article><article class="task exercise-like" id="subsec-empirical-rule-8-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="subsec-empirical-rule-8-5-1-1">Using Chebyshev’s Theorem, determine the range of prices that includes at least <span class="process-math">\(91\%\)</span> of the homes around the mean.  (Using Chebyshev’s Theorem, we don’t need to assume anything about how the prices are distributed.)</div>
+<div class="solutions"><details id="subsec-empirical-rule-8-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para logical" id="subsec-empirical-rule-8-5-2-1">
+<div class="displaymath process-math">
+\begin{equation*}
+1-\frac{1}{z^2}=0.91
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+1-0.91=\frac{1}{z^2}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+0.09 = \frac{1}{z^2}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+0.09z^2 = 1
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+z^2=\frac{1}{0.09}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+z=\sqrt{\frac{1}{0.09}}
+\end{equation*}
+</div>
+</div> <div class="para" id="subsec-empirical-rule-8-5-2-2">So the range of prices including values within <span class="process-math">\(\sqrt{\frac{1}{0.09}}\)</span> of the mean will include at least <span class="process-math">\(91\%\)</span> of the homes.</div> <div class="para logical" id="subsec-empirical-rule-8-5-2-3">
+<div class="displaymath process-math">
+\begin{equation*}
+\mu\pm \sqrt{\frac{1}{0.09}}\sigma
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+348,000\pm \sqrt{\frac{1}{0.09}}\cdot 30,000
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\boxed{\$248,000\text{ to }\$ 448,000}
+\end{equation*}
+</div>
+</div>
+</div></details></div></article></article></details><details id="subsec-empirical-rule-9" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.3.12</span><span class="period">.</span><span class="space"> </span><span class="title">Chebyshev’s Theorem.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="subsec-empirical-rule-9-2"><div class="para" id="subsec-empirical-rule-9-2-1"></div></div>
+<div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=7069&amp;resizer=true"></iframe></div></article></details></section></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="sec-measures-central-tendency.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-mean-and-stdev.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec-measures-variability.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-measures-relative-position.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

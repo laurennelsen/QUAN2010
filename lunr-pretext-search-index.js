@@ -196,7 +196,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.2",
   "title": "Measures of Variability",
-  "body": " Measures of Variability   Measures of variability (or dispersion ) describe the spread of a data set. We will define the most common ones.    The range is the difference between the highest and lowest data values in a data set.      The Excel file below shows the effective property tax rate for states in the United States in 2023. (This data is from the Tax Foundation )     Find the range of property tax rates in the United States in 2023.          Standard deviation is another measure of variability, and standard deviation is found by determining how much each data item differs from the mean.  Computing the Standard Deviation for a Data Set:   Find the mean of the data items    Find the deviation of each data item from the mean:     Square each deviation:     Sum the squared deviations:     Divide the sum in step 4 by , where represents the number of data items:     Take the square root of the quotient in step 5. This value is the standard deviation for the data set. or      We can also find the standard deviation more easily in Excel:        Low standard deviation means values tend to be close to the mean    High standard deviation means values are more spread out.     The formulas above are for finding the sample standard deviation, which we denote by .  The population standard deviation requires us to have information about the entire population, and we would use a different formula to find it. We denote the population standard deviation by .   Find the standard deviation for the effective tax rates in the file from            Shown below are the means and standard deviations of the yearly returns on two investments from 1926 through 2004.  ....insert table.....   Use the means to determine which investment provided the greater yearly return.    , so small-company stocks provided the greater yearly return   Use the standard deviations to determine which investment had the greater risk. (Explain your answer.)    , so small-company stocks had greater risk     The variance ( or ) measures the variability, or spread, of the data points in a set around the set's mean.           (Donnelly, Your Turn 4)  The data in the file below lists the number of books that seven adults have read during the last 12 months. ...insert file...  Calculate the variance and standard deviation.   "
+  "body": " Measures of Variability   Measures of variability (or dispersion ) describe the spread of a data set. We will define the most common ones.    The range is the difference between the highest and lowest data values in a data set.      The Excel file below shows the effective property tax rate for states in the United States in 2023. (This data is from the Tax Foundation )     Find the range of property tax rates in the United States in 2023.          Standard deviation is another measure of variability, and standard deviation is found by determining how much each data item differs from the mean.  Computing the Standard Deviation for a Data Set:   Find the mean of the data items    Find the deviation of each data item from the mean:     Square each deviation:     Sum the squared deviations:     Divide the sum in step 4 by , where represents the number of data items:     Take the square root of the quotient in step 5. This value is the standard deviation for the data set. or      We can also find the standard deviation more easily in Excel:        Low standard deviation means values tend to be close to the mean    High standard deviation means values are more spread out.     The formulas above are for finding the sample standard deviation, which we denote by .  The population standard deviation requires us to have information about the entire population, and we would use a different formula to find it. We denote the population standard deviation by .   Find the standard deviation for the effective tax rates in the file from            Shown below are the means and standard deviations of the yearly returns on two investments from 1926 through 2004.  ....insert table.....   Use the means to determine which investment provided the greater yearly return.    , so small-company stocks provided the greater yearly return   Use the standard deviations to determine which investment had the greater risk. (Explain your answer.)    , so small-company stocks had greater risk     The variance ( or ) measures the variability, or spread, of the data points in a set around the set's mean.           (Donnelly, Your Turn 4)  The data in the file below lists the number of books that seven adults have read during the last 12 months.   Calculate the variance and standard deviation.                  "
 },
 {
   "id": "def-range",
@@ -259,14 +259,266 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "2.2.7",
   "title": "",
-  "body": " (Donnelly, Your Turn 4)  The data in the file below lists the number of books that seven adults have read during the last 12 months. ...insert file...  Calculate the variance and standard deviation.  "
+  "body": " (Donnelly, Your Turn 4)  The data in the file below lists the number of books that seven adults have read during the last 12 months.   Calculate the variance and standard deviation.                 "
+},
+{
+  "id": "sec-mean-and-stdev",
+  "level": "1",
+  "url": "sec-mean-and-stdev.html",
+  "type": "Section",
+  "number": "2.3",
+  "title": "Using the Mean and Standard Deviation Together",
+  "body": " Using the Mean and Standard Deviation Together  There are a few important concepts that use the mean and standard deviation together to describe data sets.    The coefficient of variation (cv) measures the standard deviation in terms of its percentage of the mean.         The -score identifies the number of standard deviations a particular value is from the mean of its distribution.           The mean weight of newborn infants is 7 pounds, and the standard deviation is 0.8 pound. The weights of newborn infants are normally distributed . (This is a symmetric distribution that we'll talk more about in a later chapter.)  Find the -scores for the following weights.   9 pounds       7 pounds       6 pounds         What do the -scores in mean about how the weights compare to the average weight of newborn infants?    Intelligence quotients (IQs) on the Stanford-Binet intelligence test are normally distributed with a mean of 100 and a standard deviation of 16. What is the IQ corresponding to a -score of ?       The Empirical Rule  The Empirical Rule says that if a distribution follows a bell-shaped, symmetric curve centered around the mean, then we should expect:   approximately of the data to fall within one standard deviation of the mean,    approximately of the data to fall within two standard deviations of the mean, and    approximately of the data to fall within three standard deviations of the mean.      The Empirical Rule (Made in GeoGebra by Kady Schneiter)    Empirical Rule     Empirical Rule     Empirical Rule        Chebyshev's Theorem:   For any number greater than 1, the percent of data points that fall within standard deviations from the mean is at least for any distribution , regardless of its shape.     Assume the average selling price for houses in a certain county is with a standard deviation of .   Determine the coefficient of variation.       Calculate the -score for a house that sells for .       Using the Empirical Rule, determine the range of prices that includes of the homes around the mean. (To do this, we need to assume that the selling prices of homes is bell-shaped and symmetric.)    of prices are within 1 standard deviation of the mean. That is, of prices are between the numbers (assuming the distribution of prices is bell-shaped and symmetric).      Using Chebyshev's Theorem, determine the range of prices that includes at least of the homes around the mean. (Using Chebyshev's Theorem, we don't need to assume anything about how the prices are distributed.)           So the range of prices including values within of the mean will include at least of the homes.        Chebyshev's Theorem      "
+},
+{
+  "id": "def-cv",
+  "level": "2",
+  "url": "sec-mean-and-stdev.html#def-cv",
+  "type": "Definition",
+  "number": "2.3.1",
+  "title": "",
+  "body": "  The coefficient of variation (cv) measures the standard deviation in terms of its percentage of the mean.      "
+},
+{
+  "id": "def-z-score",
+  "level": "2",
+  "url": "sec-mean-and-stdev.html#def-z-score",
+  "type": "Definition",
+  "number": "2.3.2",
+  "title": "",
+  "body": "  The -score identifies the number of standard deviations a particular value is from the mean of its distribution.         "
+},
+{
+  "id": "ex-weights-z",
+  "level": "2",
+  "url": "sec-mean-and-stdev.html#ex-weights-z",
+  "type": "Exercise",
+  "number": "2.3.3",
+  "title": "",
+  "body": " The mean weight of newborn infants is 7 pounds, and the standard deviation is 0.8 pound. The weights of newborn infants are normally distributed . (This is a symmetric distribution that we'll talk more about in a later chapter.)  Find the -scores for the following weights.   9 pounds       7 pounds       6 pounds      "
+},
+{
+  "id": "sec-mean-and-stdev-6",
+  "level": "2",
+  "url": "sec-mean-and-stdev.html#sec-mean-and-stdev-6",
+  "type": "Question",
+  "number": "2.3.4",
+  "title": "",
+  "body": "  What do the -scores in mean about how the weights compare to the average weight of newborn infants?   "
+},
+{
+  "id": "sec-mean-and-stdev-7",
+  "level": "2",
+  "url": "sec-mean-and-stdev.html#sec-mean-and-stdev-7",
+  "type": "Exercise",
+  "number": "2.3.5",
+  "title": "",
+  "body": "Intelligence quotients (IQs) on the Stanford-Binet intelligence test are normally distributed with a mean of 100 and a standard deviation of 16. What is the IQ corresponding to a -score of ?     "
+},
+{
+  "id": "figure-geogebra-empirical",
+  "level": "2",
+  "url": "sec-mean-and-stdev.html#figure-geogebra-empirical",
+  "type": "Figure",
+  "number": "2.3.6",
+  "title": "",
+  "body": " The Empirical Rule (Made in GeoGebra by Kady Schneiter)   "
+},
+{
+  "id": "subsec-empirical-rule-4",
+  "level": "2",
+  "url": "sec-mean-and-stdev.html#subsec-empirical-rule-4",
+  "type": "Exercise",
+  "number": "2.3.7",
+  "title": "Empirical Rule.",
+  "body": "Empirical Rule    "
+},
+{
+  "id": "subsec-empirical-rule-5",
+  "level": "2",
+  "url": "sec-mean-and-stdev.html#subsec-empirical-rule-5",
+  "type": "Exercise",
+  "number": "2.3.8",
+  "title": "Empirical Rule.",
+  "body": "Empirical Rule    "
+},
+{
+  "id": "subsec-empirical-rule-6",
+  "level": "2",
+  "url": "sec-mean-and-stdev.html#subsec-empirical-rule-6",
+  "type": "Exercise",
+  "number": "2.3.9",
+  "title": "Empirical Rule.",
+  "body": "Empirical Rule    "
+},
+{
+  "id": "thm-chebyshev-theorem",
+  "level": "2",
+  "url": "sec-mean-and-stdev.html#thm-chebyshev-theorem",
+  "type": "Theorem",
+  "number": "2.3.10",
+  "title": "",
+  "body": "   Chebyshev's Theorem:   For any number greater than 1, the percent of data points that fall within standard deviations from the mean is at least for any distribution , regardless of its shape.   "
+},
+{
+  "id": "subsec-empirical-rule-8",
+  "level": "2",
+  "url": "sec-mean-and-stdev.html#subsec-empirical-rule-8",
+  "type": "Exercise",
+  "number": "2.3.11",
+  "title": "",
+  "body": " Assume the average selling price for houses in a certain county is with a standard deviation of .   Determine the coefficient of variation.       Calculate the -score for a house that sells for .       Using the Empirical Rule, determine the range of prices that includes of the homes around the mean. (To do this, we need to assume that the selling prices of homes is bell-shaped and symmetric.)    of prices are within 1 standard deviation of the mean. That is, of prices are between the numbers (assuming the distribution of prices is bell-shaped and symmetric).      Using Chebyshev's Theorem, determine the range of prices that includes at least of the homes around the mean. (Using Chebyshev's Theorem, we don't need to assume anything about how the prices are distributed.)           So the range of prices including values within of the mean will include at least of the homes.       "
+},
+{
+  "id": "subsec-empirical-rule-9",
+  "level": "2",
+  "url": "sec-mean-and-stdev.html#subsec-empirical-rule-9",
+  "type": "Exercise",
+  "number": "2.3.12",
+  "title": "Chebyshev’s Theorem.",
+  "body": "Chebyshev's Theorem    "
+},
+{
+  "id": "sec-measures-relative-position",
+  "level": "1",
+  "url": "sec-measures-relative-position.html",
+  "type": "Section",
+  "number": "2.4",
+  "title": "Measures of Relative Position",
+  "body": " Measures of Relative Position  Measures of relative position compare the position of one value in relation to other values in the data set.    If of the items in a distribution are less than a particular data item, we say that the data item is in the th percentile of the distribution.  In Excel: PERCENTILE.EXC      The percentile rank identifies the percentile of a particular value within a data set.  In Excel: PERCENTRANK.EXC     A new baby is in the th percentile for weight. What does that mean?    of babies (at that age) weigh less than this baby.      Quartiles are commonly encountered percentiles. Quartiles divide data sets into four equal parts.    Quartiles Example powered by Desmos    The first, second, and third quartiles in a data set are the values for the th, th, and th percentiles, respectively. They are denoted by , , and .        The interquartile range (IQR) describes the range of the middle of a data set.      (Donnelly, Your Turn 8)  The data in the Excel file below lists the U.S. and Canadian box-office revenues for the highest grossing films of all time (in millions of dollars). Use Excel formulas to calculate the following:      The three quartiles and the IQR   The th percentile       The percentile rank for the film Avatar .                                     The list consisting of the minimum, , , , and maximum values of a data set is called the 5-number summary .    The graphical display for this list is called the box-and-whisker plot and also includes any outliers.        (Donnelly 3.76)  The data in the Excel file below indicates the battery life, in minutes, on a single charge, for 25 iPads.      Construct a box-and-whisker plot for the data.       Compute the 5-number summary for the data.      Minimum:      :      :      :     Maximum:         Outliers are any data points less than or greater than .    The Excel file below includes average rent prices in a number of places in Colorado in quarter 3 of 2015. Create a box-and-whisker plot for the average rent prices and identify any outliers.         The only outlier is the value , which is the average rent for Boulder\/Broomfield.   "
+},
+{
+  "id": "def-percentiles",
+  "level": "2",
+  "url": "sec-measures-relative-position.html#def-percentiles",
+  "type": "Definition",
+  "number": "2.4.1",
+  "title": "",
+  "body": "  If of the items in a distribution are less than a particular data item, we say that the data item is in the th percentile of the distribution.  In Excel: PERCENTILE.EXC   "
+},
+{
+  "id": "def-percentile-rank",
+  "level": "2",
+  "url": "sec-measures-relative-position.html#def-percentile-rank",
+  "type": "Definition",
+  "number": "2.4.2",
+  "title": "",
+  "body": "  The percentile rank identifies the percentile of a particular value within a data set.  In Excel: PERCENTRANK.EXC   "
+},
+{
+  "id": "sec-measures-relative-position-5",
+  "level": "2",
+  "url": "sec-measures-relative-position.html#sec-measures-relative-position-5",
+  "type": "Exercise",
+  "number": "2.4.3",
+  "title": "",
+  "body": " A new baby is in the th percentile for weight. What does that mean?    of babies (at that age) weigh less than this baby.  "
+},
+{
+  "id": "def-quartiles",
+  "level": "2",
+  "url": "sec-measures-relative-position.html#def-quartiles",
+  "type": "Definition",
+  "number": "2.4.4",
+  "title": "",
+  "body": "   Quartiles are commonly encountered percentiles. Quartiles divide data sets into four equal parts.    Quartiles Example powered by Desmos    The first, second, and third quartiles in a data set are the values for the th, th, and th percentiles, respectively. They are denoted by , , and .     "
+},
+{
+  "id": "def-IQR",
+  "level": "2",
+  "url": "sec-measures-relative-position.html#def-IQR",
+  "type": "Definition",
+  "number": "2.4.6",
+  "title": "",
+  "body": "  The interquartile range (IQR) describes the range of the middle of a data set.    "
+},
+{
+  "id": "sec-measures-relative-position-8",
+  "level": "2",
+  "url": "sec-measures-relative-position.html#sec-measures-relative-position-8",
+  "type": "Exercise",
+  "number": "2.4.7",
+  "title": "",
+  "body": " (Donnelly, Your Turn 8)  The data in the Excel file below lists the U.S. and Canadian box-office revenues for the highest grossing films of all time (in millions of dollars). Use Excel formulas to calculate the following:      The three quartiles and the IQR   The th percentile       The percentile rank for the film Avatar .                               "
+},
+{
+  "id": "def-5-number",
+  "level": "2",
+  "url": "sec-measures-relative-position.html#def-5-number",
+  "type": "Definition",
+  "number": "2.4.8",
+  "title": "",
+  "body": "     The list consisting of the minimum, , , , and maximum values of a data set is called the 5-number summary .    The graphical display for this list is called the box-and-whisker plot and also includes any outliers.      "
+},
+{
+  "id": "sec-measures-relative-position-10",
+  "level": "2",
+  "url": "sec-measures-relative-position.html#sec-measures-relative-position-10",
+  "type": "Exercise",
+  "number": "2.4.9",
+  "title": "",
+  "body": " (Donnelly 3.76)  The data in the Excel file below indicates the battery life, in minutes, on a single charge, for 25 iPads.      Construct a box-and-whisker plot for the data.       Compute the 5-number summary for the data.      Minimum:      :      :      :     Maximum:      "
+},
+{
+  "id": "sec-measures-relative-position-11",
+  "level": "2",
+  "url": "sec-measures-relative-position.html#sec-measures-relative-position-11",
+  "type": "Note",
+  "number": "2.4.10",
+  "title": "",
+  "body": "  Outliers are any data points less than or greater than .  "
+},
+{
+  "id": "sec-measures-relative-position-12",
+  "level": "2",
+  "url": "sec-measures-relative-position.html#sec-measures-relative-position-12",
+  "type": "Exercise",
+  "number": "2.4.11",
+  "title": "",
+  "body": " The Excel file below includes average rent prices in a number of places in Colorado in quarter 3 of 2015. Create a box-and-whisker plot for the average rent prices and identify any outliers.         The only outlier is the value , which is the average rent for Boulder\/Broomfield.  "
+},
+{
+  "id": "sec-measures-association",
+  "level": "1",
+  "url": "sec-measures-association.html",
+  "type": "Section",
+  "number": "2.5",
+  "title": "Measures of Association Between Two Variables",
+  "body": " Measures of Association Between Two Variables   So far, the statistics we've studied have all dealt with describing one variable at a time. Measures of association describe the relationship between two variables.         sample covariance: measures the direction of the linear relationship between two variables      sample correlation coefficient: measures both the strength and direction of the linear relationship between two variables       Geogebra:  Correlation (Made in GeoGebra by Zbynek Konecny)     (Donnelly 3.50)  A regional manager at Acme markets would like to develop a model to predict weekly sales of pet food based on the shelf space. The data in the Excel file below shows the results collected from nine randomly selected stores.      Calculate the sample covariance.       Calculate the sample correlation coefficient.       Describe the relationship between and .   Since r is almost exactly in the middle of 0 and 1, there is a moderate positive relationship between shelf space and sales.   "
+},
+{
+  "id": "def-cov-correl",
+  "level": "2",
+  "url": "sec-measures-association.html#def-cov-correl",
+  "type": "Definition",
+  "number": "2.5.1",
+  "title": "",
+  "body": "      sample covariance: measures the direction of the linear relationship between two variables      sample correlation coefficient: measures both the strength and direction of the linear relationship between two variables       "
+},
+{
+  "id": "figure-geogebra-expondist",
+  "level": "2",
+  "url": "sec-measures-association.html#figure-geogebra-expondist",
+  "type": "Figure",
+  "number": "2.5.2",
+  "title": "",
+  "body": " Correlation (Made in GeoGebra by Zbynek Konecny)   "
+},
+{
+  "id": "sec-measures-association-5",
+  "level": "2",
+  "url": "sec-measures-association.html#sec-measures-association-5",
+  "type": "Exercise",
+  "number": "2.5.3",
+  "title": "",
+  "body": " (Donnelly 3.50)  A regional manager at Acme markets would like to develop a model to predict weekly sales of pet food based on the shelf space. The data in the Excel file below shows the results collected from nine randomly selected stores.      Calculate the sample covariance.       Calculate the sample correlation coefficient.       Describe the relationship between and .   Since r is almost exactly in the middle of 0 and 1, there is a moderate positive relationship between shelf space and sales.  "
 },
 {
   "id": "sec-TypesOfData",
   "level": "1",
   "url": "sec-TypesOfData.html",
   "type": "Section",
-  "number": "2.3",
+  "number": "2.6",
   "title": "Types of Data",
   "body": " Types of Data  Text of section.  Qualitative vs. Quantitative Data     Discrete vs. Continuous Data     Level of Measurement     Sample and Population     Parameter vs. Statistic     Parameter vs. Statistic     "
 },
@@ -275,7 +527,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-TypesOfData.html#sec-TypesOfData-3",
   "type": "Exercise",
-  "number": "2.3.1",
+  "number": "2.6.1",
   "title": "Qualitative vs. Quantitative Data.",
   "body": "Qualitative vs. Quantitative Data    "
 },
@@ -284,7 +536,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-TypesOfData.html#sec-TypesOfData-4",
   "type": "Exercise",
-  "number": "2.3.2",
+  "number": "2.6.2",
   "title": "Discrete vs. Continuous Data.",
   "body": "Discrete vs. Continuous Data    "
 },
@@ -293,7 +545,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-TypesOfData.html#sec-TypesOfData-5",
   "type": "Exercise",
-  "number": "2.3.3",
+  "number": "2.6.3",
   "title": "Level of Measurement.",
   "body": "Level of Measurement    "
 },
@@ -302,7 +554,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-TypesOfData.html#sec-TypesOfData-6",
   "type": "Exercise",
-  "number": "2.3.4",
+  "number": "2.6.4",
   "title": "Sample and Population.",
   "body": "Sample and Population    "
 },
@@ -311,7 +563,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-TypesOfData.html#sec-TypesOfData-7",
   "type": "Exercise",
-  "number": "2.3.5",
+  "number": "2.6.5",
   "title": "Parameter vs. Statistic.",
   "body": "Parameter vs. Statistic    "
 },
@@ -320,7 +572,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-TypesOfData.html#sec-TypesOfData-8",
   "type": "Exercise",
-  "number": "2.3.6",
+  "number": "2.6.6",
   "title": "Parameter vs. Statistic.",
   "body": "Parameter vs. Statistic    "
 },

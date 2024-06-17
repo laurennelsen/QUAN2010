@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>QUAN 2010 Measures of Variability</title>
+<title>QUAN 2010 Measures of Association Between Two Variables</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -137,7 +137,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-measures-central-tendency.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-Descriptive-Statistics.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-mean-and-stdev.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-measures-relative-position.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-Descriptive-Statistics.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-TypesOfData.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -155,13 +155,13 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="ch-Descriptive-Statistics.html" class="internal"><span class="codenumber">2</span> <span class="title">Descriptive Statistics</span></a></div>
 <ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-measures-central-tendency.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Measures of Central Tendency</span></a></div></li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-measures-variability.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Measures of Variability</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-measures-variability.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Measures of Variability</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-mean-and-stdev.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Using the Mean and Standard Deviation Together</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-mean-and-stdev.html#subsec-empirical-rule" class="internal"><span class="codenumber">2.3.1</span> <span class="title">The Empirical Rule</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-measures-relative-position.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Measures of Relative Position</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-measures-association.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Measures of Association Between Two Variables</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-measures-association.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Measures of Association Between Two Variables</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-TypesOfData.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Types of Data</span></a></div></li>
 </ul>
 </li>
@@ -264,135 +264,54 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-measures-variability"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.2</span><span class="space"> </span><span class="title">Measures of Variability</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-measures-association"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.5</span><span class="space"> </span><span class="title">Measures of Association Between Two Variables</span>
 </h2>
-<div class="para" id="sec-measures-variability-2">
-<em class="emphasis">Measures of variability</em> (or <em class="emphasis">dispersion</em>) describe the spread of a data set.  We will define the most common ones.</div>
-<article class="definition definition-like" id="def-range"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.1</span><span class="period">.</span>
+<section class="introduction" id="sec-measures-association-2"><div class="para" id="sec-measures-association-2-1">So far, the statistics we’ve studied have all dealt with describing one variable at a time.  Measures of association describe the relationship between two variables.</div></section><article class="definition definition-like" id="def-cov-correl"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.5.1</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="def-range-1-1">
-<div class="para">The <em class="emphasis">range</em> is the difference between the highest and lowest data values in a data set.</div>
+<div class="para logical" id="def-cov-correl-1-1"><ul class="disc">
+<li id="def-cov-correl-1-1-1-1"><div class="para logical" id="def-cov-correl-1-1-1-1-1">
+<div class="para">
+<em class="emphasis">sample covariance:</em>  measures the direction of the linear relationship between two variables</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\text{Range} = \text{highest data value} - \text{lowest data value}
-\end{equation*}
-</div>
-</div></article><details id="ex-propertytax" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.2.2</span><span class="period">.</span>
-</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="ex-propertytax-1-1">The Excel file below shows the effective property tax rate for states in the United States in 2023.  (This data is from the <a class="external" href="https://taxfoundation.org/data/all/state/property-taxes-by-state-county-2023/#:~:text=Median%20property%20taxes%20paid%20vary,the%20United%20States%20was%20%241%2C682." target="_blank">Tax Foundation</a><details class="ptx-footnote" aria-live="polite" id="ex-propertytax-1-1-2"><summary class="ptx-footnote__number" title="Footnote 2.2.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="ex-propertytax-1-1-2"><code class="code-inline tex2jax_ignore">taxfoundation.org/data/all/state/property-taxes-by-state-county-2023/#:~:text=Median%20property%20taxes%20paid%20vary,the%20United%20States%20was%20%241%2C682.</code></div></details>)</div> <div class="para" id="ex-propertytax-1-2"><a class="external" href="external/sheets/PropertyTaxesUS2023.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/PropertyTaxesUS2023.xlsx</code></a></div> <div class="para" id="ex-propertytax-1-3">Find the range of property tax rates in the United States in 2023.</div>
-<div class="solutions"><details id="ex-propertytax-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="ex-propertytax-2-1"><div class="displaymath process-math">
-\begin{equation*}
-\text{range}=1.92\%
-\end{equation*}
-</div></div></div></details></div></article></details><article class="definition definition-like" id="def-stdev"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.3</span><span class="period">.</span>
-</h3>
-<div class="para" id="def-stdev-1-1">
-<em class="emphasis">Standard deviation</em> is another measure of variability, and standard deviation is found by determining how much each data item differs from the mean.</div> <div class="para logical" id="def-stdev-1-2">
-<div class="para">Computing the Standard Deviation for a Data Set:</div>
-<ol class="decimal">
-<li id="def-stdev-1-2-1-1"><div class="para" id="def-stdev-1-2-1-1-1">Find the mean of the data items</div></li>
-<li id="def-stdev-1-2-1-2"><div class="para logical" id="def-stdev-1-2-1-2-1">
-<div class="para">Find the deviation of each data item from the mean:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\text{data item} - \text{mean}
+\text{In Excel:  COVARIANCE.S}
 \end{equation*}
 </div>
 </div></li>
-<li id="def-stdev-1-2-1-3"><div class="para logical" id="def-stdev-1-2-1-3-1">
-<div class="para">Square each deviation:</div>
+<li id="def-cov-correl-1-1-1-2"><div class="para logical" id="def-cov-correl-1-1-1-2-1">
+<div class="para">
+<em class="emphasis">sample correlation coefficient:</em>  measures <em class="emphasis">both</em> the strength and direction of the linear relationship between two variables</div>
 <div class="displaymath process-math">
 \begin{equation*}
-(\text{data item} - \text{mean})^2
+\text{In Excel:  CORREL}
 \end{equation*}
 </div>
 </div></li>
-<li id="def-stdev-1-2-1-4"><div class="para logical" id="def-stdev-1-2-1-4-1">
-<div class="para">Sum the squared deviations:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\sum(\text{data item} - \text{mean})^2
-\end{equation*}
+</ul></div></article><figure class="figure figure-like" id="figure-geogebra-expondist"><iframe src="https://www.geogebra.org/material/iframe/id/ypfbzjec/width/800/height/444/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="geogebra-expondist" width="600" height="333"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.5.2<span class="period">.</span></span><span class="space"> </span>Correlation (Made in GeoGebra by Zbynek Konecny)</figcaption></figure><details id="sec-measures-association-5" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.5.3</span><span class="period">.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec-measures-association-5-1">
+<div class="para" id="sec-measures-association-5-1-1">(Donnelly 3.50)</div> <div class="para" id="sec-measures-association-5-1-2">A regional manager at Acme markets would like to develop a model to predict weekly sales of pet food based on the shelf space.  The data in the Excel file below shows the results collected from nine randomly selected stores.</div> <div class="para" id="sec-measures-association-5-1-3"><a class="external" href="external/sheets/PetFoodSales.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/PetFoodSales.xlsx</code></a></div>
 </div>
-</div></li>
-<li id="def-stdev-1-2-1-5"><div class="para logical" id="def-stdev-1-2-1-5-1">
-<div class="para">Divide the sum in step 4 by <span class="process-math">\(n-1\text{,}\)</span> where <span class="process-math">\(n\)</span> represents the number of data items:</div>
-<div class="displaymath process-math">
+<article class="task exercise-like" id="sec-measures-association-5-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-measures-association-5-2-1-1">Calculate the sample covariance.</div>
+<div class="solutions"><details id="sec-measures-association-5-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-measures-association-5-2-2-1"><div class="displaymath process-math">
 \begin{equation*}
-\frac{\sum(\text{data item} - \text{mean})^2}{n-1}
+=COVARIANCE.S(A2:A10,B2:B10)=3.75
 \end{equation*}
+</div></div></div></details></div></article><article class="task exercise-like" id="sec-measures-association-5-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-measures-association-5-3-1-1">Calculate the sample correlation coefficient.</div>
+<div class="solutions"><details id="sec-measures-association-5-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-measures-association-5-3-2-1"><div class="displaymath process-math">
+\begin{equation*}
+=CORREL(A2:A10,B2:B10)\approx 0.54
+\end{equation*}
+</div></div></div></details></div></article><article class="task exercise-like" id="sec-measures-association-5-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="sec-measures-association-5-4-1-1">Describe the relationship between <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span>
 </div>
-</div></li>
-<li id="def-stdev-1-2-1-6"><div class="para logical" id="def-stdev-1-2-1-6-1">
-<div class="para">Take the square root of the quotient in step 5.  This value is the standard deviation for the data set.</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\text{Standard deviation}=\sqrt{\frac{\sum(\text{data item} - \text{mean})^2}{n-1}}
-\end{equation*}
-</div>
-<div class="para">or</div>
-<div class="displaymath process-math">
-\begin{equation*}
-s=\sqrt{\frac{\sum(\text{data item} - \text{mean})^2}{n-1}}
-\end{equation*}
-</div>
-</div></li>
-</ol>
-</div> <div class="para logical" id="def-stdev-1-3">
-<div class="para">We can also find the standard deviation more easily in Excel:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\boxed{ \text{Excel formula:}  \text{   STDEV.S} }
-\end{equation*}
-</div>
-</div></article><div class="para logical" id="sec-measures-variability-6"><ul class="disc">
-<li id="sec-measures-variability-6-1-1"><div class="para" id="sec-measures-variability-6-1-1-1">Low standard deviation means values tend to be close to the mean</div></li>
-<li id="sec-measures-variability-6-1-2"><div class="para" id="sec-measures-variability-6-1-2-1">High standard deviation means values are more spread out.</div></li>
-</ul></div>
-<div class="para" id="sec-measures-variability-7">The formulas above are for finding the <em class="emphasis">sample</em> standard deviation, which we denote by <span class="process-math">\(s\text{.}\)</span>
-</div>
-<div class="para" id="sec-measures-variability-8">The <em class="emphasis">population standard deviation</em> requires us to have information about the entire population, and we would use a different formula to find it.  We denote the population standard deviation by <span class="process-math">\(\sigma\text{.}\)</span>
-</div>
-<details id="sec-measures-variability-9" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.2.4</span><span class="period">.</span>
-</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-measures-variability-9-1-1">Find the standard deviation for the effective tax rates in the file from <a href="sec-measures-variability.html#ex-propertytax" class="xref" data-knowl="./knowl/xref/ex-propertytax.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 2.2.2">Exercise 2.2.2</a>
-</div> <div class="para" id="sec-measures-variability-9-1-2"><a class="external" href="external/sheets/PropertyTaxesUS2023.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/PropertyTaxesUS2023.xlsx</code></a></div>
-<div class="solutions"><details id="sec-measures-variability-9-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-measures-variability-9-2-1"><div class="displaymath process-math">
-\begin{equation*}
-0.47
-\end{equation*}
-</div></div></div></details></div></article></details><details id="sec-measures-variability-10" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.2.5</span><span class="period">.</span>
-</h3></summary><article class="exercise exercise-like knowl__content"><article class="task exercise-like" id="sec-measures-variability-10-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="sec-measures-variability-10-2-1-1">Use the means to determine which investment provided the greater yearly return.</div>
-<div class="solutions"><details id="sec-measures-variability-10-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-measures-variability-10-2-2-1">
-<span class="process-math">\(17.5\gt 12.4\text{,}\)</span> so small-company stocks provided the greater yearly return</div></div></details></div></article><article class="task exercise-like" id="sec-measures-variability-10-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="sec-measures-variability-10-3-1-1">Use the standard deviations to determine which investment had the greater risk.  (Explain your answer.)</div>
-<div class="solutions"><details id="sec-measures-variability-10-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-measures-variability-10-3-2-1">
-<span class="process-math">\(33.3\gt 20.4\text{,}\)</span> so small-company stocks had greater risk</div></div></details></div></article></article></details><article class="definition definition-like" id="def-variance"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.6</span><span class="period">.</span>
-</h3>
-<div class="para" id="def-variance-1-1">The <em class="emphasis">variance</em> (<span class="process-math">\(\sigma^2\)</span> or <span class="process-math">\(s^2\)</span>) measures the variability, or spread, of the data points in a set around the set’s mean.</div> <div class="para logical" id="def-variance-1-2"><div class="displaymath process-math">
-\begin{equation*}
-s^2=\frac{\sum (x_i-\overline{x})^2}{n-1}
-\end{equation*}
-</div></div> <div class="para logical" id="def-variance-1-3"><div class="displaymath process-math">
-\begin{equation*}
-\boxed{\text{In Excel:}  \text{   VAR.S}}
-\end{equation*}
-</div></div></article><details id="sec-measures-variability-12" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.2.7</span><span class="period">.</span>
-</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-measures-variability-12-1-1">(Donnelly, Your Turn 4)</div> <div class="para" id="sec-measures-variability-12-1-2">The data in the file below lists the number of books that seven adults have read during the last 12 months. <a class="external" href="external/sheets/BooksRead.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/BooksRead.xlsx</code></a>
-</div> <div class="para" id="sec-measures-variability-12-1-3">Calculate the variance and standard deviation.</div>
-<div class="solutions"><details id="sec-measures-variability-12-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-measures-variability-12-2-1"><ul class="disc">
-<li id="sec-measures-variability-12-2-1-1-1"><div class="para" id="sec-measures-variability-12-2-1-1-1-1"><span class="process-math">\(\displaystyle \text{variance}=VAR.S(A2:A15)\approx 13.67\)</span></div></li>
-<li id="sec-measures-variability-12-2-1-1-2"><div class="para" id="sec-measures-variability-12-2-1-1-2-1"><span class="process-math">\(\displaystyle \text{standard deviation}=STDEV.S(A2:A15)\approx 3.7\)</span></div></li>
-</ul></div></div></details></div></article></details></section></div>
+<div class="solutions"><details id="sec-measures-association-5-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-measures-association-5-4-2-1">Since r is almost exactly in the middle of 0 and 1, there is a moderate positive relationship between shelf space and sales.</div></div></details></div></article></article></details></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="sec-measures-central-tendency.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-mean-and-stdev.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec-measures-relative-position.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-TypesOfData.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
