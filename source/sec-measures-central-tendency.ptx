@@ -214,11 +214,11 @@
 
 
   <exercise xml:id="ex-skew">
-    <statement>
+    <introduction>
       <p>
       How are the mean and median related to each other in each of the following frequency distribution shapes?
       </p>
-    </statement>
+    </introduction>
     <task>
       <statement>
         <p>
@@ -263,11 +263,11 @@
 
 
   <exercise>
-    <statement>
+    <introduction>
       <p>
         Five employees in the assembly section of a television manufacturing company earn salaries of <m>\$ 19,700, \$ 20,400, \$ 21,500, \$ 22,600,</m> and <m>\$ 23,000</m> annually.  The section manager has an annual salary of <m>\$ 95,000</m>.
       </p>
-    </statement>
+    </introduction>
     <task>
       <statement>
         <p>
@@ -321,11 +321,11 @@
   </definition>
 
   <exercise>
-<statement>
+<introduction>
   <p>
     Find the mode for each of the following groups of data:
   </p>
-</statement>
+</introduction>
 <task>
   <statement>
     <p>
@@ -396,14 +396,14 @@
 
 
     <exercise>
-      <statement>
+      <introduction>
         <p>
         The data in the Excel file below lists daily Dow Jones Industrial Average values from June 2019 through May 2024.
         </p>
         <p>
           <url href="external/sheets/DJIA.xls" />
         </p>
-        </statement>
+      </introduction>
         <task>
           <statement>
             <p>

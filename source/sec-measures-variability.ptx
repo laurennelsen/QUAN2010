@@ -212,12 +212,29 @@
         <p>
             The data in the file below lists the number of books that seven adults have read during the last 12 months.
 
-            ...insert file...
+            <url href="external/sheets/BooksRead.xlsx" />
+
         </p>
         <p>
             Calculate the variance and standard deviation.
         </p>
     </statement>
+    <answer>
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        <m>\text{variance}=VAR.S(A2:A15)\approx 13.67</m>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>\text{standard deviation}=STDEV.S(A2:A15)\approx 3.7</m>
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </answer>
 </exercise>
 
 </section>

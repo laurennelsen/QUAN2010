@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-mean-and-stdev" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Using the Mean and Standard Deviation Together</title>
+
+<p>
+    There are a few important concepts that use the mean and standard deviation together to describe data sets.
+</p>
+
+<definition xml:id="def-cv">
+    <statement>
+        <p>
+            The <em>coefficient of variation (cv)</em> measures the standard deviation in terms of its percentage of the mean.
+        </p>
+        <p>
+            <me>\text{formula:} \text{  cv}=\frac{\sigma}{\mu}\cdot 100\text{  or  } \frac{s}{\overline{x}}\cdot 100</me>
+        </p>
+    </statement>
+</definition>
+
+
+<definition xml:id="def-z-score">
+    <statement>
+        <p>
+            The <em><m>z</m>-score</em> identifies the number of standard deviations a particular value is from the mean of its distribution.
+        </p>
+        <p>
+            <me>\text{formula:  } z=\frac{x-\mu}{\sigma}\text{  or  } \frac{x-\overline{x}}{s}\cdot 100</me>
+        </p>
+        <p>
+            <me>\text{Excel formula:  STANDARDIZE}</me>
+        </p>
+    </statement>
+</definition>
+
+<exercise xml:id="ex-weights-z">
+    <introduction>
+        <p>
+            The mean weight of newborn infants is 7 pounds, and the standard deviation is 0.8 pound.  The weights of newborn infants are <em>normally distributed</em>.  (This is a symmetric distribution that we'll talk more about in a later chapter.)
+        </p>
+        <p>
+            Find the <m>z</m>-scores for the following weights.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                9 pounds
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <me>z_9=\frac{9-7}{0.8}=2.5</me>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                7 pounds
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <me>z_7=\frac{7-7}{0.8}=0</me>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                6 pounds
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <me>z_6=\frac{6-7}{0.8}=-1.25</me>
+            </p>
+        </answer>
+    </task>
+</exercise>
+
+<question>
+    <statement>
+        <p>
+            What do the <m>z</m>-scores in <xref ref="ex-weights-z"/> mean about how the weights compare to the average weight of newborn infants?
+        </p>
+    </statement>
+</question>
+
+
+<exercise>
+    <statement>
+    Intelligence quotients (IQs) on the Stanford-Binet intelligence test are normally distributed with a mean of 100 and a standard deviation of 16.  What is the IQ corresponding to a <m>z</m>-score of <m>-1.5</m>?
+    </statement>
+    <answer>
+        <p>
+            <me>IQ=\text{mean}-1.5(\text{standard deviation})=100-1.5(16)=100-24=76</me>
+        </p>
+    </answer>
+</exercise>
+
+<subsection xml:id="subsec-empirical-rule">
+    <title>The Empirical Rule</title>
+
+    <p>
+        The <em>Empirical Rule</em> says that if a distribution follows a bell-shaped, symmetric curve centered around the mean, then we should expect:
+        <ul>
+            <li>
+                <p>
+                    approximately <m>68\%</m> of the data to fall within <em>one</em> standard deviation of the mean,
+                </p>
+            </li>
+            <li>
+                <p>
+                    approximately <m>95\%</m> of the data to fall within <em>two</em> standard deviations of the mean, and
+                </p>
+            </li>
+            <li>
+                <p>
+                    approximately <m>99.7\%</m> of the data to fall within <em>three</em> standard deviations of the mean.
+                </p>
+            </li>
+        </ul>
+    </p>
+    
+<figure xml:id="figure-geogebra-empirical">
+    <caption>The Empirical Rule (Made in GeoGebra by Kady Schneiter)</caption>
+    <interactive xml:id="geogebra-empirical" geogebra="vsznbtjh" aspect="9:5" />
+  </figure>
+
+
+  <exercise>
+    <title>Empirical Rule</title>
+    <introduction>
+      <p>
+        
+      </p>
+    </introduction>
+    <myopenmath problem="7056" />
+  </exercise>
+
+
+  <exercise>
+    <title>Empirical Rule</title>
+    <introduction>
+      <p>
+        
+      </p>
+    </introduction>
+    <myopenmath problem="25941" />
+  </exercise>
+
+
+  <exercise>
+    <title>Empirical Rule</title>
+    <introduction>
+      <p>
+        
+      </p>
+    </introduction>
+    <myopenmath problem="25942" />
+  </exercise>
+
+
+  
+
+
+  <theorem xml:id="thm-chebyshev-theorem">
+    <statement>
+        <p>
+            <em>Chebyshev's Theorem:</em>
+        </p>
+        <p>
+            For any number <m>z</m> greater than 1, the percent of data points that fall within <m>z</m> standard deviations from the mean is at least <m>\left( 1-\frac{1}{z^2}\right)\cdot 100</m> for <em>any distribution</em>, regardless of its shape.
+        </p>
+    </statement>
+  </theorem>
+
+
+  <exercise>
+    <introduction>
+        <p>
+            Assume the average selling price for houses in a certain county is <m>\$ 348,000</m> with a standard deviation of <m>\$ 30,000</m>.
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Determine the coefficient of variation.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <me>CV = \frac{\sigma}{\mu}\cdot 100=\frac{30000}{348000}\cdot 100 = 8.62\%</me>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Calculate the <m>z</m>-score for a house that sells for <m>\$ 379,000</m>.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <me>z=\frac{x-\mu}{\sigma}=\frac{379000-348000}{30000}=1.03</me>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Using the Empirical Rule, determine the range of prices that includes <m>68\%</m> of the homes around the mean.  (To do this, we need to assume that the selling prices of homes is bell-shaped and symmetric.)
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <m>68\%</m> of prices are within 1 standard deviation of the mean.  That is, <m>68\%</m> of prices are between the numbers <m>\mu\pm\sigma</m> (assuming the distribution of prices is bell-shaped and symmetric).
+            </p>
+            <p>
+                <me>348000\pm 30000\rightarrow \boxed{\$ 318,000 \text{ to } \$378,000}</me>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Using Chebyshev's Theorem, determine the range of prices that includes at least <m>91\%</m> of the homes around the mean.  (Using Chebyshev's Theorem, we don't need to assume anything about how the prices are distributed.)
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <me>1-\frac{1}{z^2}=0.91</me>
+                <me>1-0.91=\frac{1}{z^2}</me>
+                <me>0.09 = \frac{1}{z^2}</me>
+                <me>0.09z^2 = 1</me>
+                <me>z^2=\frac{1}{0.09}</me>
+                <me>z=\sqrt{\frac{1}{0.09}}</me>
+            </p>
+            <p>
+                So the range of prices including values within <m>\sqrt{\frac{1}{0.09}}</m> of the mean will include at least <m>91\%</m> of the homes.
+            </p>
+            <p>
+                <me>\mu\pm \sqrt{\frac{1}{0.09}}\sigma</me>
+                <me>348,000\pm \sqrt{\frac{1}{0.09}}\cdot 30,000</me>
+                <me>\boxed{\$248,000\text{ to }\$ 448,000}</me>
+            </p>
+        </answer>
+    </task>
+  </exercise>
+
+  <exercise>
+    <title>Chebyshev's Theorem</title>
+    <introduction>
+      <p>
+        
+      </p>
+    </introduction>
+    <myopenmath problem="7069" />
+  </exercise>
+
+  
+  
+
+
+</subsection>
+
+
+</section>

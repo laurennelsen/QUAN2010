@@ -12,6 +12,12 @@
 
   <xi:include href="sec-measures-variability.ptx" />
 
+  <xi:include href="sec-mean-and-stdev.ptx" />
+
+  <xi:include href="sec-measures-relative-position.ptx" />
+
+  <xi:include href="sec-measures-association.ptx" />
+
   <xi:include href="sec-TypesOfData.ptx" />
 
 </chapter>

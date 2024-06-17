@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-measures-relative-position" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Measures of Relative Position</title>
+
+<p>
+    Measures of relative position compare the position of one value in relation to other values in the data set.
+</p>
+
+
+<definition xml:id="def-percentiles">
+    <statement>
+        <p>
+            If <m>n\%</m> of the items in a distribution are less than a particular data item, we say that the data item is in the <em><m>n</m>th percentile</em> of the distribution.
+        </p>
+        <p>
+            In Excel:  PERCENTILE.EXC
+        </p>
+    </statement>
+</definition>
+
+<definition xml:id="def-percentile-rank">
+    <statement>
+        <p>
+            The <em>percentile rank</em> identifies the percentile of a particular value within a data set.
+        </p>
+        <p>
+            In Excel:  PERCENTRANK.EXC
+        </p>
+    </statement>
+</definition>
+
+
+<exercise>
+    <statement>
+        <p>
+            A new baby is in the <m>50</m>th percentile for weight.  What does that mean?
+        </p>
+    </statement>
+    <answer>
+        <p>
+            <m>50\%</m> of babies (at that age) weigh less than this baby.
+        </p>
+    </answer>
+</exercise>
+
+<definition xml:id="def-quartiles">
+    <statement>
+        <p>
+            <em>Quartiles</em> are commonly encountered percentiles.  Quartiles divide data sets into four equal parts.
+        </p>
+    </statement>
+
+    <figure>
+        <caption>Quartiles Example powered by Desmos</caption>
+        <interactive xml:id="desmos-quartiles" desmos="vvwn57gsoa" aspect="4:3" />
+      </figure>
+
+      <p>
+        The first, second, and third quartiles in a data set are the values for the <m>25</m>th, <m>50</m>th, and <m>75</m>th percentiles, respectively.  They are denoted by <m>Q_1</m>, <m>Q_2</m>, and <m>Q_3</m>.
+      </p>
+
+      <p>
+        <me>\text{In Excel:  QUARTILE.EXC}</me>
+      </p>
+    
+</definition>
+
+
+
+<definition xml:id="def-IQR">
+    <statement>
+        <p>
+            The <em>interquartile range (IQR)</em> describes the range of the middle <m>50\%</m> of a data set.
+            <me>\text{Formula:  } IQR = Q_3-Q_1</me>
+        </p>
+    </statement>
+</definition>
+
+
+<exercise>
+    <introduction>
+        <p>
+            (Donnelly, Your Turn 8)
+        </p>
+        <p>
+            The data in the Excel file below lists the U.S. and Canadian box-office revenues for the highest grossing films of all time (in millions of dollars).  Use Excel formulas to calculate the following:
+            
+        </p>
+        <p>
+            <url href="external/sheets/MovieAdjustedRevenues.xlsx" />
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                The three quartiles and the IQR
+            </p>
+        </statement>
+    </task>
+    <answer>
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        <m>Q_1:\;\;  =QUARTILE.EXC(B2:B23,1)\approx 840.149\text{ millions of dollars} </m>  
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>Q_2:\;\;  =QUARTILE.EXC(B2:B23,2)\approx 954.869 \text{ millions of dollars} </m>  
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>Q_3:\;\;  =QUARTILE.EXC(B2:B23,3)\approx 1213.022 \text{ millions of dollars} </m>  
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>IQR=Q_3-Q1\approx 372.873\text{ millions of dollars}</m>
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </answer>
+    <task>
+        <statement>
+            <p>
+                The <m>65</m>th percentile
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <m>=PERCENTILE.EXC(B2:B23,0.65)\approx 1133.350\text{ millions of dollars}</m>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                The percentile rank for the film <em>Avatar</em>.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <m>=PERCENTRANK.EXC(B2:B23,B16) = 0.347=34.7\%</m>
+            </p>
+        </answer>
+    </task>
+</exercise>
+
+
+<definition xml:id="def-5-number">
+    <statement>
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        The list consisting of the minimum, <m>Q_1</m>, <m>Q_2</m>, <m>Q_3</m>, and maximum values of a data set is called the <em>5-number summary</em>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        The graphical display for this list is called the <em>box-and-whisker plot</em> and also includes any outliers.
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </statement>
+</definition>
+
+<exercise>
+    <introduction>
+        <p>
+            (Donnelly 3.76)
+        </p>
+        <p>
+            The data in the Excel file below indicates the battery life, in minutes, on a single charge, for 25 iPads.
+        </p>
+        <p>
+            <url href="external/sheets/BatteryLife.xlsx" />
+
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Construct a box-and-whisker plot for the data.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <url href="external/sheets/BatteryLifeBoxPlot.png" />
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Compute the 5-number summary for the data.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <ul>
+                    <li>
+                        <p>
+                            Minimum:  <m>=MIN(A2:A26)=215</m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>Q_1</m>:  <m>=QUARTILE.EXC(A2:A26,1)= 239.5 </m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>Q_2</m>:  <m>=QUARTILE.EXC(A2:A26,2)= 271 </m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>Q_3</m>:  <m>=QUARTILE.EXC(A2:A26,3)= 293 </m>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Maximum:  <m>=MAX(A2:A26)=330</m>
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </answer>
+    </task>
+</exercise>
+
+<note>
+    <p>
+        <em>Outliers</em> are any data points less than <m>Q_1-(1.5)\cdot (IQR)</m> or greater than <m>Q_3+(1.5)\cdot (IQR)</m>.
+    </p>
+</note>
+
+<exercise>
+    <statement>
+        <p>
+            The Excel file below includes average rent prices in a number of places in Colorado in quarter 3 of 2015.  Create a box-and-whisker plot for the average rent prices and identify any outliers.
+        </p>
+        <p>
+            <url href="external/sheets/AverageRentsQ32015.xlsx" />
+        </p>
+    </statement>
+    <answer>
+        <p>
+            <url href="external/sheets/AverageRentsQ32015.png" />
+        </p>
+        <p>
+            The only outlier is the value <m>\$ 2008.62</m>, which is the average rent for Boulder/Broomfield.
+        </p>
+    </answer>
+</exercise>
+
+</section>

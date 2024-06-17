@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-measures-association" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Measures of Association Between Two Variables</title>
+
+
+  <introduction>
+    <p>
+        So far, the statistics we've studied have all dealt with describing one variable at a time.  Measures of association describe the relationship between two variables.
+    </p>
+  </introduction>
+
+  <definition xml:id="def-cov-correl">
+    <statement>
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        <em>sample covariance:</em>  measures the direction of the linear relationship between two variables
+                        <me>\text{In Excel:  COVARIANCE.S}</me>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>sample correlation coefficient:</em>  measures <em>both</em> the strength and direction of the linear relationship between two variables
+                        <me>\text{In Excel:  CORREL}</me>
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </statement>
+  </definition>
+
+
+  Geogebra:
+
+<figure xml:id="figure-geogebra-expondist">
+              <caption>Correlation (Made in GeoGebra by Zbynek Konecny)</caption>
+              <interactive xml:id="geogebra-expondist" geogebra="ypfbzjec" aspect="9:5" />
+            </figure>
+
+
+<exercise>
+    <introduction>
+        <p>
+            (Donnelly 3.50)
+        </p>
+        <p>
+            A regional manager at Acme markets would like to develop a model to predict weekly sales of pet food based on the shelf space.  The data in the Excel file below shows the results collected from nine randomly selected stores.
+        </p>
+        <p>
+            <url href="external/sheets/PetFoodSales.xlsx" />
+
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Calculate the sample covariance.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <me>=COVARIANCE.S(A2:A10,B2:B10)=3.75</me>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Calculate the sample correlation coefficient.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <me>=CORREL(A2:A10,B2:B10)\approx 0.54</me>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Describe the relationship between <m>x</m> and <m>y</m>.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                Since r is almost exactly in the middle of 0 and 1, there is a moderate positive relationship between shelf space and sales.
+            </p>
+        </answer>
+    </task>
+</exercise>
+
+</section>
