@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-two-proportions-indep-samples" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Two Proportions with Independent Samples</title>
+
+
+  <p>
+    We are <em>finally</em> done discussing inference for differences between population means.  So now it's time to look at the difference between two population proportions.  There are many interesting business applications for this scenario.  For example, perhaps USAA would like to know if the proportion of young male drivers who have car accidents differs from the proportion of young female drivers who have car accidents.
+  </p>
+
+  <p>
+    The <em>sampling distribution for the difference in proportions</em> is <em>approximately normal</em> as long as we have relatively large (<m>n\geq 30</m>) sample sizes.  The mean of this sampling distribution is <m>p_1-p_2=\overline{p}_1-\overline{p}_2</m>.
+  </p>
+
+  <p>
+    The standard error for this distribution is
+    <me>
+        \boxed{  \sigma_{p_1-p_2} = \sqrt{\frac{p_1(1-p_1)}{n_1}+\frac{p_2(1-p_2)}{n_2}}  }.
+    </me>
+  </p>
+
+  <p>
+    However, <m>p_1</m> and <m>p_2</m> are unknown and so the sample proportions, <m>\overline{p}_1</m> and <m>\overline{p}_2</m>, computed from the sample data, are used as estimates.  This allows us to approximate the standard error for the difference in population proportions with:
+    <me>
+        \boxed{  \hat{\sigma}_{p_1-p_2} = \sqrt{\frac{\overline{p}_1(1-\overline{p}_1)}{n_1}+\frac{\overline{p}_2(1-\overline{p}_2)}{n_2}}  }.
+    </me>
+  </p>
+
+  <p>
+    So the confidence interval for the difference between the two proportions is found using the formula:
+    <me>
+       \boxed{ (\overline{p}_1-\overline{p}_2)\pm z_{\alpha/2}\cdot\hat{\sigma}_{p_1-p_2}}
+    </me>
+    
+  </p>
+
+  <p>
+    And the test statistic for the hypothesis test for the difference between two proportions is defined by the formula:
+    <me>
+        \boxed{z_p = \frac{(\overline{p}_1-\overline{p}_2)-(p_1-p_2)_{H_0}}{\hat{\sigma}_{p_1-p_2}}}
+    </me>
+    
+  </p>
+
+
+  <p>
+    However, if we assume that <m>p_1=p_2</m> in the null hypothesis (i.e. there is no difference in the population proportions, <m>p_1-p_2=0</m>, which is very common), the sample data can be pooled.  That is, we define the weighted average of the two sample proportions by:
+    <me>
+        \hat{p}=\frac{x_1+x_2}{n_1+n_2}.
+    </me>
+    
+  </p>
+
+  <p>
+    This simplifies the test statistic formula to:
+    <me>
+        z_p = \frac{(\overline{p}_1-\overline{p}_2)-0}{\sqrt{\hat{p}(1-\hat{p})\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}}
+    </me>
+    
+  </p>
+
+  <note>
+    Unfortunately, the <em>Data Analysis</em> tool in Excel does not perform the calculations for this scenario, so we will do all of these problems <q>by hand</q>.
+  </note>
+
+
+  <exercise>
+    <statement>
+        <p>
+            (Donnelly 10.37)
+        </p>
+        <p>
+            Economists theorize that the 2007-2008 recession affected men more than women because men are typically employed in industries that have been hit hardest by the recession.  Women, on the other hand, are typically employed in services which are considered more recession resistant.  A sample of 170 men and a sample of 150 women were drawn.  In those samples, 21 men were unemployed, and 11 of the women were unemployed.  Perform a hypothesis test using <m>\alpha=0.05</m> to determine if the unemployment rate for men is higher than the rate for women.
+        </p>
+    </statement>
+  </exercise>
+
+
+
+</section>

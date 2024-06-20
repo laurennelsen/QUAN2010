@@ -3,8 +3,30 @@
 <section xml:id="sec-TypesOfData" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Types of Data</title>
 
-  <p> Text of section. </p>
+  <p> The purpose of descriptive statistics is to summarize or display data so that the audience can quickly obtain an overview of the information.  There are two main types of data:  <em>quantitative data</em> and <em>qualitative data</em>. </p>
 
+  <p>
+    Let's define those and other types of data we will work with in this course.  Then we will move on to review how Excel is used to create meaningful tables, charts, and graphs that summarize our data.
+  </p>
+
+  <definition xml:id="def-quantitative-qualitative">
+    <statement>
+      <p>
+        <ul>
+          <li>
+            <p>
+              <em>Quantitative data</em> uses numbers to describe data.
+            </p>
+          </li>
+          <li>
+            <p>
+              <em>Qualitative data</em> uses descriptive terms, i.e. categories, to describe data.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </statement>
+  </definition>
 
   <exercise>
     <title>Qualitative vs. Quantitative Data</title>
@@ -15,6 +37,137 @@
     </introduction>
     <myopenmath problem="6908" />
   </exercise>
+
+  <definition xml:id="def-discrete-continuous">
+    <statement>
+      <p>
+        <ul>
+          <li>
+            <p>
+              <em>Discrete values</em> are based on observations that can be counted and are typically represented by whole numbers.
+            </p>
+          </li>
+          <li>
+            <p>
+              <em>Continuous values</em> are based on measured observations and can take on any real number.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </statement>
+  </definition>
+
+  <exercise>
+    <statement>
+      <p>
+        Which of the following are <em>discrete</em> values?
+      </p>
+    </statement>
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement>
+          <p>
+            number of iPads sold
+          </p>
+        </statement>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>
+            number of light bulbs that burned for more than 1000 hours in a quality control program
+          </p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>
+            weight
+          </p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>
+            time
+          </p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>
+            distance
+          </p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>
+            number of hours a light bulb burned before going out
+          </p>
+        </statement>
+      </choice>
+    
+    </choices>
+  </exercise>
+
+
+
+
+  <exercise>
+    <statement>
+      <p>
+        Which of the following are <em>continuous</em> values?
+      </p>
+    </statement>
+    <choices randomize="yes">
+      <choice>
+        <statement>
+          <p>
+            number of iPads sold
+          </p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>
+            number of light bulbs that burned for more than 1000 hours in a quality control program
+          </p>
+        </statement>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>
+            weight
+          </p>
+        </statement>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>
+            time
+          </p>
+        </statement>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>
+            distance
+          </p>
+        </statement>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>
+            number of hours a light bulb burned before going out
+          </p>
+        </statement>
+      </choice>
+    
+    </choices>
+  </exercise>
+
+
+  
 
 
 
@@ -29,6 +182,53 @@
   </exercise>
 
 
+  <subsection xml:id="subsec-levels-measurement">
+    <title>Levels of Measurement</title>
+
+    <definition xml:id="def-levels-measurement">
+      <statement>
+        <p>
+          <ul>
+            <li>
+              <p>
+                A <em>nominal</em> level of measurement deals strictly with qualitative data assigned to predetermined categories.
+              </p>
+              <p>
+                Examples:  marital status, gender, political affiliation
+              </p>
+            </li>
+            <li>
+              <p>
+                An <em>ordinal</em> level of measurement has all the properties of nominal data but with the added feature that we can rank order values from highest to lowest.
+              </p>
+              <p>
+                Examples:  college class level, course letter grade
+              </p>
+            </li>
+            <li>
+              <p>
+                An <em>interval</em> level of measurement deals strictly with quantitative data allowing the measurement of difference between categories with actual numbers in a meaningful way.
+              </p>
+              <p>
+                Examples: temperature (in degrees Celsius or Fahrenheit), SAT score, birth year of baseball players
+              </p>
+            </li>
+            <li>
+              <p>
+                A <em>ratio</em> level of measurement has all the features of interval data but with the added benefit of having a true zero point.
+              </p>
+              <p>
+                Examples:  age, height, weight, number of home runs
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </definition>
+    
+  </subsection>
+
+
   <exercise>
     <title>Level of Measurement</title>
     <introduction>
@@ -40,38 +240,87 @@
   </exercise>
 
 
-  <exercise>
-    <title>Sample and Population</title>
-    <introduction>
-      <p>
-        
-      </p>
-    </introduction>
-    <myopenmath problem="6912" />
-  </exercise>
   
-
-  <exercise>
-    <title>Parameter vs. Statistic</title>
-    <introduction>
+<exercise>
+  <introduction>
+    <p>
+      Identify the type of data (qualitative, quantitative-discrete, quantitative-continuous) and the level of measurement for each data source.
+    </p>
+  </introduction>
+  <task>
+    <statement>
       <p>
-        
+        the temperature outside (in degrees Fahrenheit)
       </p>
-    </introduction>
-    <myopenmath problem="6910" />
-  </exercise>
-
-
-
-  <exercise>
-    <title>Parameter vs. Statistic</title>
-    <introduction>
+    </statement>
+    <answer>
       <p>
-        
+        quantitative-continuous, interval
       </p>
-    </introduction>
-    <myopenmath problem="33101" />
-  </exercise>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        the price for one gallon of gasoline
+      </p>
+    </statement>
+    <answer>
+      <p>
+        quantitative-continuous, ratio
+      </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        the letter grade earned in your statistics class
+      </p>
+    </statement>
+    <answer>
+      <p>
+        qualitative, ordinal
+      </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        the number of boxes of Cheerios on the shelf of a grocery store
+      </p>
+    </statement>
+    <answer>
+      <p>
+        quantitative-discrete, ratio
+      </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        the types of cars driven by students in your class
+      </p>
+    </statement>
+    <answer>
+      <p>
+        qualitative, nominal
+      </p>
+    </answer>
+  </task>
+  <task>
+    <statement>
+      <p>
+        the number of times a person goes to the gym in a week
+      </p>
+    </statement>
+    <answer>
+      <p>
+        quantitative-discrete, ratio
+      </p>
+    </answer>
+  </task>
+</exercise>
+
 
 
 </section>

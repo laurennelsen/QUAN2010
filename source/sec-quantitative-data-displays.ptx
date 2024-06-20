@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-quantitative-data-displays" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Quantitative Data Displays</title>
+
+
+<definition xml:id="def-distributions">
+    <statement>
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        <em>frequency distribution</em>:  a table that shows the number of data observations that fall into specific intervals or categories
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>class</em>: a category in a frequency distribution
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>relative frequency distribution</em>:  displays the proportion of observations of each class relative to the total number of observations
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>cumulative frequency distribution</em>:  totals the proportion of observations that are less than or equal to the class at which you are looking
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </statement>
+</definition>
+
+Let's discuss these definitions in the example below:
+
+<exercise>
+    <p>
+        The Excel file below contains a frequency distribution for the number of hours that a sample of students worked in a certain week.  Let's use this frequency distribution to create relative and cumulative frequency distributions.
+    </p>
+    <p>
+        <url href="external/sheets/WorkHoursFrequency.xlsx" />
+    </p>
+    <answer>
+        <p>
+            <url href="external/sheets/WorkHoursFrequencySolutions.xlsx" />
+        </p>
+    </answer>
+</exercise>
+
+
+<definition xml:id="def-histogram-ogive">
+    <statement>
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        <em>histogram</em>: a  graph showing the number of observations in each class of a frequency distribution
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>ogive</em>:  a line graph that plots the cumulative relative frequency distribution
+                    </p>
+                </li>
+            </ul>
+        </p>
+    <p>
+        Let's look at both tabs at the link below to see an examples of these types of graphs/charts:  <url href="https://bit.ly/3XxmsVN"> UCCS Student Age Example</url>
+    </p>
+
+</statement>
+</definition>
+
+
+<exploration xml:id="ex-iPadSales">
+<p>
+    Let's look at the file below, which has the number of iPads sold at a particular store over a certain number of days.  We're going to make a frequency distribution for this data.
+    <url href="external/sheets/iPadSales.xlsx" />
+    </p>
+
+    <p>
+        (The manager might want to know, for example, the percentage of days that 3 or fewer iPads were sold.)
+    </p>
+
+    <p>
+        <ul>
+            <li>
+                <p>
+                    Highlight D2:D7
+                </p>
+                <p>
+                    (Note:  the <q>Bins</q> are the classes in our distribution.)
+                </p>
+            </li>
+            <li>
+                <p>
+                    type <em>=FREQUENCY(A2:A51,C2:C7)</em>
+                </p>
+            </li>
+            <li>
+                <p>
+                    Hit <m>\text{Control}+\text{Shift}+\text{Enter}</m> together
+                </p>
+            </li>
+        </ul>
+    </p>
+<p>
+    Here is the frequency distribution we should get when we do this:
+    <url href="external/sheets/iPadFrequency.png" />
+</p>
+</exploration>
+
+
+
+<subsection xml:id="subsec-Histograms-Excel">
+    <title>Creating Histograms in Excel</title>
+
+    <p>
+    Next we want to create histograms in Excel, but before doing that, we're going to download the <em>Data Analysis</em> tool in Excel that we will use to create histograms.  (Later in the course we will use this tool for many more things!)
+    </p>
+
+    <note xml:id="DataAnalysisExcel">
+        <p>
+        Go to the link below to download the <em>Data Analysis</em> tool in Excel:
+        </p>
+        <p>
+        <url href="https://support.microsoft.com/en-us/office/load-the-analysis-toolpak-in-excel-6a63e598-cd6d-42e3-9317-6b40ba1a66b4#OfficeVersion=Windows"> Analysis ToolPak in Excel</url>
+        </p>
+        <p>
+            (Note that there are different tabs with instructions for Windows and macOS.)
+        </p>
+    </note>
+
+
+    <exploration>
+        <p>
+            Let's go back to the iPad sales example from <xref ref="ex-iPadSales"/>.
+        </p>
+        <p>
+            <url href="external/sheets/iPadSales.xlsx" />
+        </p>
+        <p>
+            We're going to create a histogram for this data in two different ways.  First we're going to create a histogram using the <em>Data Analysis</em> tool that we just downloaded.
+        </p>
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        In the Excel file, go to the <em>Data</em> tab, and then on the right click on <q>Data Analysis</q>.  (If <q>Data Analysis</q> is not showing up, then the add-in has not been installed yet.)
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Choose the <q>Histogram</q> option.
+                        <image source="external/sheets/DataAnalysisHistogram.png"></image>
+                        <url href="external/sheets/DataAnalysisHistogram.png" />
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Choose the data as the <q>Input range</q>, specify the bins, choose <q>Chart Output</q>, and specify the output range.
+                        <url href="external/sheets/DataAnalysisHistogramExample.png" />
+                    </p>
+                </li>
+            </ul>
+        </p>
+        <p>
+            Here is the histogram and frequency distribution that we get by following these instructions:
+            <url href="external/sheets/DataAnalysisHistogramExampleOutput.png" />
+        </p>
+        <p>
+            Does the frequency distribution that we got using the Data Analysis tool match the frequency distribution we got in <xref ref="ex-iPadSales"/>?
+        </p>
+    </exploration>
+
+
+    <exploration>
+        <p>
+            Now let's create a histogram using Excel Charts instead of the Data Analysis tool.
+        </p>
+        <p>
+            Go back to the iPad sales example from <xref ref="ex-iPadSales"/>.
+        </p>
+        <p>
+            <url href="external/sheets/iPadSales.xlsx" />
+        </p>
+        <p>
+           <ul>
+            <li>
+                <p>
+                    Select the data (A1:A51) and then go to <q>Insert</q> and choose the Histogram option:
+            <url href="external/sheets/HistogramExcelCharts1.png" />
+                </p>
+            </li>
+            <li>
+                <p>
+                    Here is what we should get when we do this:
+            <url href="external/sheets/HistogramExcelCharts2.png" />
+                </p>
+            </li>
+           </ul> 
+        </p>
+        <p>
+            Does the chart we got here look as good as the one we got using the Data Analysis add-in?
+        </p>
+        <p>
+            There are some tweaks that we will make to the chart we got here to make it looks better, but the chart we created using the Data Analysis tool looked much better without having to do extra work tweaking it.
+        </p>
+        <p>
+            (There are more details in the textbook about the steps we'll work through in class.)
+        </p>
+    </exploration>
+    
+</subsection>
+
+
+
+
+</section>

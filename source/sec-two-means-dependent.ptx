@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-two-means-dependent" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Two Dependent Samples</title>
+
+<definition xml:id="def-matched-pair">
+    <statement>
+        <p>
+            Recall that samples are dependent if there is some relationship whereby each value in one sample is paired with a corresponding value in the other sample.  Therefore, a hypothesis test that uses dependent samples is sometimes called a <em>matched pair test</em>.  We need to know the <em>matched-pair difference</em> for each pair, defined as
+            <me>d = x_1-x_2,</me>
+            where <m>x_1</m> and <m>x_2</m> are the matched-pair values from Populations 1 and 2, respectively.
+        </p>
+        <p>
+            The <em>mean</em>, <m>\overline{d}</m>, and <em>standard deviation</em>, <m>s_d</m>, of these differences are defined by the formulas:
+            <me>\overline{d}=\frac{\sum_{i=1}^n d_i}{n}\;\;\;\;\;\;\;\;\; s_d=\sqrt{\frac{\sum_{i=1}^n d_i^2 - \frac{\left( \sum_{i=1}^n d_i \right)^2}{n}}{n-1}}</me>
+            where
+            <tabular>
+                <row>
+                    <cell><m>d_i</m></cell>
+                    <cell><m>=</m></cell>
+                    <cell>the <m>i</m>th matched-pair difference</cell>
+                </row>
+                <row>
+                    <cell><m>n</m></cell>
+                    <cell><m>=</m></cell>
+                    <cell>the number of matched-pairs</cell>
+                </row>
+            </tabular>
+        </p>
+
+        <p>
+            Recall that we can also use the AVERAGE and STDEV.S Excel formulas to compute the mean and standard deviation when we have all of the matched-pair differences.
+        </p>
+        <p>
+            Next, we define the test statistic and confidence interval formulas for dependent (matched-pair) samples:
+            <me>t_{\overline{x}}=\frac{\overline{d}-(\mu_d)_{H_0}}{\frac{s_d}{\sqrt{n}}}\;\;\;\;\;\;\; \overline{d}\pm t_{\alpha/2}\cdot\frac{s_d}{\sqrt{n}},</me>
+            where <m>(\mu_d)_{H_0}=\text{ the population mean matched-pair difference from the null hypothesis}.</m>
+        </p>
+    </statement>
+</definition>
+
+<p>
+Again, we rely on Excel to do the computations whenever we have raw data.  After stating the two hypotheses, go to the <em>Data Analysis</em> tool and choose <q><em>t-Test Paired Two-Sample for Means</em></q>.
+</p>
+
+
+
+<exercise>
+    <introduction>
+        <p>
+            (Donnelly 10.50)
+        </p>
+        <p>
+            Pfizer would like to test the effectiveness of a new cholesterol medication it has developed.  To test the effectiveness, the LDL cholesterol level of 12 randomly selected individuals was measured before and after they took medication.  The data in the Excel file below shows the LDL measurement levels.
+        </p>
+        <p>
+            <url href="external/sheets/LDL.xlsx" />
+
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Perform a hypothesis test using <m>\alpha=0.01</m> to determine if the average LDL level is more than 50 points lower for patients who have taken the new medication.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <url href="external/sheets/LDLSolution.xlsx" />
+            </p>
+            <p>
+                There is enough evidence to conclude that the LDL level is more than 50 points lower after taking the medication.
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Construct a <m>90\%</m> confidence interval to estimate the average difference in LDL levels for people before and after they take the medication.
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <url href="external/sheets/LDLSolution.xlsx" />
+            </p>
+            <p>
+                The <m>90\%</m> confidence interval is <m>(62.39, 77.44)</m>. 
+            </p>
+        </answer>
+    </task>
+</exercise>
+
+
+
+  </section>

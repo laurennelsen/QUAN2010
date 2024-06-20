@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-intro-to-stats" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Introduction to Statistics</title>
+
+ 
+  <question>
+    <p>
+        What is statistics?
+    </p>
+    <answer>
+        <p>
+            the mathematical science that deals with the collection, analysis, and presentation of data, that is then used for inference and induction
+        </p>
+    </answer>
+  </question>
+
+
+  <question>
+    <p>
+        What is data?
+    </p>
+    <answer>
+        <p>
+            the values assigned to observations or measurements
+        </p>
+    </answer>
+  </question>
+
+
+  <subsection xml:id="subsec-branches">
+    <title>Branches of Statistics:</title>
+
+    <p>
+        The three main branches of statistics are:
+        <ul>
+            <li>
+                <p>
+                    descriptive
+                </p>
+            </li>
+            <li>
+                <p>
+                    inferential
+                </p>
+            </li>
+            <li>
+                <p>
+                    predictive
+                </p>
+            </li>
+        </ul>
+    </p>
+
+    <p>
+        <ul>
+            <li>
+                <p>
+                    Goal of <em>descriptive statistics</em>:  to summarize data quickly to get an overview of the information
+                </p>
+            </li>
+            <li>
+                <p>
+                    <em>predictive statistics</em> analyzes past data to predict future values and aid in making well-informed decisions
+                </p>
+            </li>
+            <li>
+                <p>
+                    During our study of <em>inferential statistics</em>, we will learn a variety of techniques that allow us to draw conclusions about a population based on a sample of data.
+                </p>
+            </li>
+        </ul>
+    </p>
+
+    <question>
+        <p>
+        In our study of inferential statistics, we might want to ask a question such as the following:
+        </p>
+        <p>
+        <em>What is the average number of hours per week worked by students at UCCCS?</em>
+        </p>
+        <p>
+        How would you answer this question?
+        </p>
+    </question>
+
+
+    </subsection>
+
+    <subsection xml:id="subsec-stats-definitions">
+        <title>Definitions and Terms</title>
+
+
+    <definition xml:id="def-pop-sample">
+        <statement>
+            <p>
+                <ul>
+                    <li>
+                        <p>
+                            <em>population</em>:  set containing all the people or objects whose properties are to be described and analyzed by the data collector
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <em>sample</em>:  a subset or subgroup of the population
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </statement>
+    </definition>
+
+    <exercise>
+        <title>Sample and Population</title>
+        <introduction>
+          <p>
+            
+          </p>
+        </introduction>
+        <myopenmath problem="6912" />
+      </exercise>
+      
+
+
+    <definition xml:id="def-parameter-statistic">
+        <statement>
+            <p>
+                <ul>
+                    <li>
+                        <p>
+                            <em>parameter</em>:  number that describes a characteristic of a population
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <em>statistic</em>:  a number that describes a characteristic of a sample
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </statement>
+    </definition>
+
+
+    <exercise xml:id="ex-hotelquestion">
+        <introduction>
+            <p>
+                A group of hotel owners in a large city decide to conduct a survey among citizens of the city to discover their opinions about casino gambling.
+            </p>
+        </introduction>
+        <task>
+            <statement>
+                <p>
+                    Describe the population
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    The population is the set containing all citizens of the city.
+                </p>
+            </answer>
+        </task>
+        <task>
+            <statement>
+                <p>
+                    One of the hotel owners suggests obtaining a sample by surveying all the people at size of the largest nightclubs in the city on a Saturday night.  The people surveyed will be asked to express their opinion on casino gambling.  Does this seem like a good idea?
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    No, it does not!  The people at the nightclub might not have the same attitude toward casino gambling as the population of all the city's citizens.
+                </p>
+            </answer>
+        </task>
+    </exercise>
+
+
+    <exercise>
+        <title>Parameter vs. Statistic</title>
+        <introduction>
+          <p>
+            
+          </p>
+        </introduction>
+        <myopenmath problem="6910" />
+      </exercise>
+    
+    
+    
+      <exercise>
+        <title>Parameter vs. Statistic</title>
+        <introduction>
+          <p>
+            
+          </p>
+        </introduction>
+        <myopenmath problem="33101" />
+      </exercise>
+
+
+    <definition xml:id="def-random-sample">
+        <statement>
+            <p>
+                A <em>random sample</em> is a sample obtained in such a way that every element in the population has an equal chance of being selected for the sample.
+            </p>
+        </statement>
+    </definition>
+
+
+    <exercise>
+        <statement>
+            <p>
+                Think again about the group of hotel owners from <xref ref="ex-hotelquestion"/> who are in a large city and are interested in how the city's citizen's feel about casino gambling.  Which of the following would be the most appropriate way to select a random sample?
+            </p>
+        </statement>
+        <choices>
+            <choice>
+                <statement>
+                    <p>
+                        Randomly survey people who live in the oceanfront condominiums in the city.
+                    </p>
+                </statement>
+            </choice>
+            <choice>
+                <statement>
+                    <p>
+                        Survey the first 200 people whose names appear in the city's telephone directory.
+                    </p>
+                </statement>
+            </choice>
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        Randomly select neighborhoods of the city and then randomly survey people within the selected neighborhoods.
+                    </p>
+                </statement>
+            </choice>
+        
+        </choices>
+    </exercise>
+
+
+    <definition xml:id="def-representative-sample">
+        <statement>
+            <p>
+                Regardless of the sampling technique used, the sample should exhibit characteristics typical of those possessed by the target population.
+            </p>
+            <p>
+                This type of sample is called a <em>representative sample</em>.
+            </p>
+        </statement>
+    </definition>
+    
+  </subsection>
+
+
+
+
+
+</section>

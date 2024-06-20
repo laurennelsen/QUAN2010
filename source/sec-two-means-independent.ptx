@@ -83,11 +83,349 @@
         <p>
             Major League Baseball officials (and many fans) have been concerned about the lengths of games, particularly playoff games.  Suppose the officials would like to test the hypothesis that the mean length of a playoff game is longer than the mean length of a regular season game.  The data in the Excel file below shows the length of games, in minutes, for randomly selected games from the regular season and from the playoffs.  Assume the standard deviations of the playoff and regular season games are 25 and 21 minutes respectively.  Using <m>\alpha = 0.02</m>, can we conclude that playoff games are longer, on average, than regular season games?
 
-!!!!!!!!INSERT EXCEL FILE!!!!!!!!
+
+        </p>
+        <p>
+            <url href="external/sheets/MLBGames.xlsx" />
 
         </p>
     </statement>
-    
+    <answer>
+        <p>
+            <url href="external/sheets/MLBGamesSolution.xlsx" />
+        </p>
+        <p>
+            The sample provides enough evidence to conclude that the average length of playoff games is longer than the average length of regular season games.
+        </p>
+    </answer>
+</exercise>
+
+
+<definition xml:id="def-confidence-two-means-known-sd">
+    <statement>
+        <p>
+            The formula for the <em>confidence interval</em> for the difference between two means given known standard deviations is
+            <me>(\overline{x}_1-\overline{x}_2)\pm z_{\alpha/2}\cdot \sigma_{\overline{x}_1-\overline{x}_2}</me>
+            where again
+            <tabular>
+                <row>
+                    <cell><m>\sigma_{\overline{x}_1-\overline{x}_2}</m></cell>
+                    <cell><m>=</m></cell>
+                    <cell>the standard error for the difference between two means</cell>
+                </row>
+                <row>
+                    <cell><m>\overline{x}_1-\overline{x}_2</m></cell>
+                    <cell><m>=</m></cell>
+                    <cell>the difference in sample means between Populations 1 and 2</cell>
+                </row>
+            </tabular>
+        </p>
+        <p>
+            Remember that the book likes to identify the two sides of the interval as LCL (lower confidence limit) and UCL (upper confidence limit).
+        </p>
+    </statement>
+</definition>
+
+
+<exercise>
+    <statement>
+        <p>
+            (Donnelly 10.9)
+        </p>
+        <p>
+            Expedia.com would like to estimate the difference between the average rental price of a car with automatic transmission versus the average rental price of a car with manual transmission at a certain airport.  The table below shows the average one-week rental prices for two random samples, as well as the population standard deviations and sample sizes for each type of car.
+        </p>
+        <p>
+            <tabular>
+                <row header="yes">
+                    <cell> </cell>
+                    <cell>Sample mean</cell>
+                    <cell>Sample size</cell>
+                    <cell>Population standard deviation</cell>
+                </row>
+                <row header="yes">
+                    <cell>Automatic</cell>
+                    <cell><me>\$411.30</me></cell>
+                    <cell><me>52</me></cell>
+                    <cell><me>\$ 23</me></cell>
+                </row>
+                <row header="yes">
+                    <cell>Manual</cell>
+                    <cell><me>\$372.80</me></cell>
+                    <cell><me>36</me></cell>
+                    <cell><me>\$ 27</me></cell>
+                </row>
+            </tabular>
+        </p>
+        <p>
+            Construct a <m>90\%</m> confidence interval to estimate the difference in the average cost of a one-week rental between these two types of cars at the airport.  Can you conclude that a difference exists in the average rental price of the two types of cars?
+        </p>
+    </statement>
+    <answer>
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        Population 1:  automatic
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Population 2:  manual
+                    </p>
+                </li>
+            </ul>
+            Formula:  <m>(\overline{x}_1-\overline{x}_2)\pm z_{\alpha/2}\cdot \sigma_{\overline{x}_1-\overline{x}_2}</m>
+        </p>
+        <p>
+            Standard error:  <m>\sigma_{\overline{x}_1-\overline{x}_2}=\sqrt{\frac{23^2}{52}+\frac{27^2}{36}}\approx 5.5157</m>
+        </p>
+        <p>
+            <m>z_{\alpha/2}=NORM.S.INV(0.95)\approx 1.645</m>
+        </p>
+        <p>
+            MOE:  <m>\approx 1.645(5.5157)\approx 9.0733</m>
+        </p>
+        <p>
+            LCL: <m>\approx (411.30-372.80)-9.0733=29.4267</m>
+        </p>
+        <p>
+            UCL: <m>\approx (411.30-372.80)+9.0733=47.5733</m>
+        </p>
+        <p>
+            We are <m>90%</m> confident that
+            <me>29.43\lt \mu_1-\mu_2\lt 47.57.</me>
+        </p>
+        <p>
+            Since the interval does not contain 0, we can conclude that there is a difference in the average cost of a rental with different transmissions.
+        </p>
+    </answer>
+</exercise>
+
+
+<p>
+    When we don't knkow the population standard deviations, we substitute the sample standard deviations in their place.  Recall from <xref ref="sec-Confidence-Interval-for-Mean-Sigma-Unknown"/>  that this means the proper sampling distribution is the Student's <m>t</m>-distribution instead of the normal distribution (as long as the sample sizes are large and/or the samples are drawn from normal populations).
+</p>
+
+<p>
+    In addition, we also need to determine whether or not to assume that the unknown variances are equal or unequal.  We could use the <m>F</m>-test from Chapter !!!!INSERT!!!!! to draw this conclusion -- but most of the time (in this class) you will be told which situation applies.  Let's examine the formulas associated with each of these two cases.
+</p>
+
+
+<p>
+    <ul>
+        <li>
+            <p>
+                <em>Case 1:  The population variances are not equal</em>, i.e., <m>\sigma_1^2\neq \sigma_2^2</m>
+            </p>
+            <p>
+                The test statistic and confidence interval formulas are
+                <me>t_{\overline{x}}=\frac{(\overline{x}_1-\overline{x}_2)-(\mu_1-\mu_2)_{H_0}}{\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}}\;\;\;\;\;\;\; (\overline{x}_1-\overline{x}_2)\pm t_{\alpha/2}\cdot\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}</me>
+                where
+            </p>
+            <p>
+                <tabular>
+                    <row>
+                        <cell><m>(\mu_1-\mu_2)_{H_0}</m></cell>
+                        <cell><m>=</m></cell>
+                        <cell>the hypothesized difference in population means (defined by the null hypothesis)</cell>
+                    </row>
+                    <row>
+                        <cell><m>\overline{x}_1-\overline{x}_2</m></cell>
+                        <cell><m>=</m></cell>
+                        <cell>the difference in sample means between Populations 1 and 2</cell>
+                    </row>
+                    <row>
+                        <cell><m>s_1^2, n_1</m></cell>
+                        <cell><m>=</m></cell>
+                        <cell>the variance and size, respectively, of the sample from Population 1</cell>
+                    </row>
+                    <row>
+                        <cell><m>s_2^2, n_2</m></cell>
+                        <cell><m>=</m></cell>
+                        <cell>the variance and size, respectively, of the sample from Population 2</cell>
+                    </row>
+                </tabular>
+            </p>
+            <p>
+                The test statistic, <m>t_{\overline{x}}</m>, has degrees of freedom, <m>df</m>, defined by the following formula:
+                <me>df = \frac{\left( \frac{s_1^2}{n_1}+\frac{s_2^2}{n_2} \right)^2}{\frac{\left(\frac{s_1^2}{n_1}\right)^2}{n_1-1}+\frac{\left(\frac{s_2^2}{n_2}\right)^2}{n_2-1}}</me>
+            </p>
+            <p>
+                This looks messy, but note that you've already computed <m>\frac{s_1^2}{n_1}</m> and <m>\frac{s_2^2}{n_2}</m> during the test statistic calculation!
+            </p>
+        </li>
+        <li>
+            <p>
+                <em>Case 2:  The population variances are equal</em>, i.e. <m>\sigma_1^2=\sigma_2^2</m>
+            </p>
+            <p>
+                In this scenario, the denominator of the test statistic (which recall from Case 1 includes the sample variances) gets simplified because we can pool the two sample variances.
+            </p>
+            <p>
+                The test statistic and confidence interval formulas are:
+                <me>t_{\overline{x}}=\frac{(\overline{x}_1-\overline{x}_2)-(\mu_1-\mu_2)_{H_0}}{\sqrt{s_p^2\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}}\;\;\;\;\;\;\; (\overline{x}_1-\overline{x}_2)\pm t_{\alpha/2}\cdot\sqrt{s_p^2\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}</me>
+            </p>
+            <p>
+                The <em>pooled variance</em>, <m>s_p^2</m>, is the weighted average of 2 sample variances drawn from 2 populations.
+            </p>
+            <p>
+                This formula is actually quite easy to use:
+                <me>s_p^2 = \frac{(n_1-1)s_1^2+(n_2-1)s_2^2}{(n_1-1)+(n_2-1)}</me>
+            </p>
+            <p>
+                The test statistic, <m>t_{\overline{x}}</m>, has degrees of freedom, <m>df=n_1+n_2-2</m>.
+            </p>
+        </li>
+    </ul>
+</p>
+
+
+<p>
+    Once again, we will rely on Excel to do these computations for us whenever we have raw data.  After stating the two hypotheses, go to the <em>Data Analysis</em> tool and choose <q><em>t-Test Two-Sample Assuming Equal Variances</em></q> or <q><em>t-Test Two-Sample Assuming Unequal Variances</em></q> to complete the test.
+</p>
+
+
+
+<exercise>
+    <statement>
+        <p>
+            (Donnelly 10.52)
+        </p>
+        <p>
+            The airline industry measures fuel efficiency by calculating how many miles one seat can travel, whether occupied or not, on one gallon of jet fuel.  The data in the Excel file below shows the fuel economy, in miles per seat, for 15 randomly selected flights on Delta and US Airways.  Perform a hypothesis test using <m>\alpha=0.05</m> to determine if the average fuel efficiency differs between the two airlines.  Assume the population variances for the fuel efficiency for these two airlines are not equal.
+        </p>
+        <p>
+            <url href="external/sheets/FuelEfficiency.xlsx" />
+
+        </p>
+    </statement>
+    <answer>
+        <p>
+            <url href="external/sheets/FuelEfficiencySolution.xlsx" />
+        </p>
+    </answer>
+</exercise>
+
+
+
+<exercise>
+    <introduction>
+        <p>
+            (Donnelly 10.45)
+        </p>
+        <p>
+            During a decline in the housing market in the 2010s, it appeared that the average size of a newly-constructed house fell.  To investigate this trend, the square footages of a random sample of houses built in 2008 were compared to houses in 2018.  The following table summarizes the sample means and standard deviations for the two samples drawn in 2008 and 2018.  Assume that the population variances for the square footages of houses built in these two years are equal.
+        </p>
+        <p>
+            <tabular>
+                <row header="yes">
+                    <cell></cell>
+                    <cell>2008</cell>
+                    <cell>2018</cell>
+                </row>
+                <row header="no">
+                    <cell>Sample mean</cell>
+                    <cell>2,462.3</cell>
+                    <cell>2,257.0</cell>
+                </row>
+                <row header="no">
+                    <cell>Sample standard deviation</cell>
+                    <cell>760.8</cell>
+                    <cell>730.2</cell>
+                </row>
+                <row header="no">
+                    <cell>Sample size</cell>
+                    <cell>45</cell>
+                    <cell>40</cell>
+                </row>
+            </tabular>
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Using <m>\alpha=0.05</m>, perform a hypothesis test to determine if the average home constructed in 2008 was larger than a home built in 2018.
+            </p>
+        </statement>
+        <answer>
+            <statement>
+                <p>
+                    <ul>
+                        <li>
+                            <p>
+                                Population 1:  2008
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Population 2:  2018
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    <tabular>
+                        <row>
+                            <cell><m>H_0:</m></cell>
+                            <cell><m>\mu_1-\mu_2=0</m></cell>
+                        </row>
+                        <row>
+                            <cell><m>H_1:</m></cell>
+                            <cell><m>\mu_1-\mu_2\gt 0</m></cell>
+                        </row>
+                    </tabular>
+                </p>
+                <p>
+                    <m>\alpha=0.05,\;\;\; df=45+40-2=83</m>
+                </p>
+                <p>
+                    <me>s_p^2 = \frac{(44)(578,816.64)+(39)(533,192.04)}{44+39}\approx 557,378.5749</me>
+                </p>
+                <p>
+                    test statistic: <m>t_{\overline{x}}=\frac{2462.3-2257-0}{\sqrt{557,378.5749\left( \frac{1}{45}+\frac{1}{40} \right)}}\approx 1.2654</m>
+                </p>
+                <p>
+                    <me>\text{p-value}=T.DIST.RT(1.2654,83)\approx 0.1046</me>
+                </p>
+                <p>
+                    Since the p-value is bigger than <m>\alpha</m> (and <m>t_{\overline{x}}</m> is not in the rejection region), we fail to reject <m>H_0</m>.
+                </p>
+                <p>
+                    There is not enough evidence to conclude that the average size of a newly constructed house fell in 2018 compared to 2008.
+                </p>
+            </statement>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Construct a <m>95\%</m> confidence interval to estimate the average difference in the square footages of new homes constructed in these two years. 
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <m>T.INV.2T(0.05,83)\approx 1.9889</m>, so the critical values are approximately <m>-1.9889</m> and <m>1.9889</m>.
+            </p>
+            <p>
+                Formula for confidence interval:
+                <me>(\overline{x}_1-\overline{x}_2)\pm t_{\alpha/2}\cdot\sqrt{s_p^2\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}</me>
+            </p>
+            <p>
+                Margin of error:  <m>\approx 1.9899\sqrt{557,378.5749\left(\frac{1}{45}+\frac{1}{40}\right)\approx 322.8</m>
+            </p>
+            <p>
+                LCL: <m>\approx (2462.3-2257)-322.8=-117.5</m>
+            </p>
+            <p>
+                UCL: <m>\approx (2462.3-2257)+322.8=528.1</m>
+            </p>
+            <p>
+                We are <m>95\%</m> confident that 
+                <me>-117.5\lt \mu_1-\mu_2\lt 528.1</me>
+            </p>
+        </answer>
+    </task>
 </exercise>
 
 

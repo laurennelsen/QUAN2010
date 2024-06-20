@@ -18,6 +18,5 @@
 
   <xi:include href="sec-measures-association.ptx" />
 
-  <xi:include href="sec-TypesOfData.ptx" />
 
 </chapter>

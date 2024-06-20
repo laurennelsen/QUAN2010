@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-Displaying-Data" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Displaying Data</title>
+
+  
+
+  <!-- include sections -->
+  
+  <xi:include href="sec-quantitative-data-displays.ptx" />
+
+</chapter>
