@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-misleading-displays" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Misleading Visual Displays of Data</title>
+
+<introduction>
+    <p>
+        Graphs can be used to distort the underlying data, making it difficult for the viewer to learn the truth.  The problem is not that statistics lie, but rather that lars use statistics.  
+    </p>
+    <p>
+        We will likely not talk about these ways that visual displays of data can be misleading in class, but I encourage you to watch/read about the things to watch for in visual displays of data mentioned below if you're interested!
+    </p>
+</introduction>
+
+<video youtube="E91bGT9BjYk"/>
+
+<subsection xml:id="subsec-watch-for">
+    <title>Things to watch for in visual displays of data</title>
+    
+<p>
+    <ol>
+        <li>
+            <p>
+                Is there a title that explains what is being displayed?
+            </p>
+        </li>
+        <li>
+            <p>
+                Are numbers lined up with tick marks on the vertical axis that clearly indicate the scale?  Has the scale been varied to create a more or less dramatic impression than shown by the actual data?
+            </p>
+        </li>
+        <li>
+            <p>
+                Do too many design and cosmetic effects draw attention from or distort the data?
+            </p>
+        </li>
+        <li>
+            <p>
+                Has the wrong impression been created about how the data are changing because equally spaced time intervals are not used on the horizontal axis?  Furthermore, has a time interval been chosen that allows the data to be interpreted in various ways?
+            </p>
+        </li>
+        <li>
+            <p>
+                Are bar sizes scaled proportionately in terms of the data they represent?
+            </p>
+        </li>
+        <li>
+            <p>
+                Is there a source that indicates where the data in the display came from?  Do the data come from an entire population or a sample?  Was a random sample used and, if so, are there possible differences between what is displayed in the graph and what is occurring in the entire population?  Who is presenting the visual display and does that person have a special case to make for or against the trend shown by the graph?
+            </p>
+        </li>
+    </ol>
+</p>
+
+
+
+</subsection>
+
+
+</section>

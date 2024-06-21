@@ -154,21 +154,23 @@ Let's discuss these definitions in the example below:
                 <li>
                     <p>
                         Choose the <q>Histogram</q> option.
-                        <image source="external/sheets/DataAnalysisHistogram.png"></image>
-                        <url href="external/sheets/DataAnalysisHistogram.png" />
+                        <image source="sheets/DataAnalysisHistogram.png">
+                        </image>
                     </p>
                 </li>
                 <li>
                     <p>
                         Choose the data as the <q>Input range</q>, specify the bins, choose <q>Chart Output</q>, and specify the output range.
-                        <url href="external/sheets/DataAnalysisHistogramExample.png" />
+                        <image source="sheets/DataAnalysisHistogramExample.png">
+                        </image>
                     </p>
                 </li>
             </ul>
         </p>
         <p>
             Here is the histogram and frequency distribution that we get by following these instructions:
-            <url href="external/sheets/DataAnalysisHistogramExampleOutput.png" />
+            <image source="sheets/DataAnalysisHistogramExampleOutput.png">
+            </image>
         </p>
         <p>
             Does the frequency distribution that we got using the Data Analysis tool match the frequency distribution we got in <xref ref="ex-iPadSales"/>?
@@ -191,13 +193,15 @@ Let's discuss these definitions in the example below:
             <li>
                 <p>
                     Select the data (A1:A51) and then go to <q>Insert</q> and choose the Histogram option:
-            <url href="external/sheets/HistogramExcelCharts1.png" />
+                    <image source="sheets/HistogramExcelCharts1.png">
+                    </image>
                 </p>
             </li>
             <li>
                 <p>
                     Here is what we should get when we do this:
-            <url href="external/sheets/HistogramExcelCharts2.png" />
+                    <image source="sheets/HistogramExcelCharts2.png">
+                    </image>
                 </p>
             </li>
            </ul> 
@@ -212,9 +216,337 @@ Let's discuss these definitions in the example below:
             (There are more details in the textbook about the steps we'll work through in class.)
         </p>
     </exploration>
+
+    <activity>
+        <p>
+            (Optional)
+        </p>
+
+    <figure xml:id="figure-geogebra-frequency">
+        <caption>Frequency and Relative Frequency Distributions (Made in GeoGebra by David Gurney)</caption>
+        <interactive xml:id="geogebra-frequency" geogebra="xxn8ctfz" aspect="9:5" />
+      </figure>
+
+
+    </activity>
+
     
 </subsection>
 
+
+
+<subsection xml:id="subsec-grouped-quantitative-data">
+    <title>Grouped Quantitative Data</title>
+
+    Some data sets (particularly those with continuous data) require several values to be grouped into a single class.  This grouping prevents having too many classes in the frequency distribution, which would make it difficult to detect patterns in the data.  Ideally, the number of classes in a frequency distribution should be between 4 and 20.
+
+    One method for determining the number of classes is the <q><m>2^k\geq n</m> Rule:</q>
+
+    <definition xml:id="def-2k-n-rule">
+        <statement>
+            <p>
+                <em><m>2^k\geq n</m> Rule:</em>
+            </p>
+            <p>  If we want to decide how many classes to use in a frequency distribution or histogram, we can let
+                <tabular>
+                    <row>
+                        <cell><m>k</m></cell>
+                        <cell><m>=</m></cell>
+                        <cell>number of classes</cell>
+                    </row>
+                    <row>
+                        <cell><m>n</m></cell>
+                        <cell><m>=</m></cell>
+                        <cell>number of data points</cell>
+                    </row>
+                </tabular>
+            </p>
+            <p>
+                The goal is to find the lowest value of <m>k</m> that satisfies the inequality <m>2^k\geq n</m>.
+            </p>
+        </statement>
+    </definition>
+
+<example xml:id="ex-DellHold">
+    <p>
+        Let's look at the Excel file below and find the number of classes, <m>k</m>, that we should use to create a frequency distribution.
+    </p>
+    <p>
+        <url href="external/sheets/DellHoldTimes.xlsx" />
+    </p>
+    <answer>
+        <p>
+            <m>n=50</m>, so we want <m>k</m> so that <m>2^k\geq 50</m>.
+            <ul>
+                <li>
+                    <p>
+                        <m>2^5=32\lt 50</m>, so <m>5</m> is too small
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>2^6=64\geq 50</m>, so <m>k=6</m> is a good choice.
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </answer>
+</example>
+
+<p>
+    Once the number of classes, <m>k</m>, is decided, we must determine the width of each class.  The width is the range of the numbers that are put into each class.  The following formula calculates a good width:
+    <me>\boxed{\text{Estimated class width:    } \frac{\text{Maximum}-\text{Minimum}}{k}}</me>
+</p>
+
+<exercise>
+    <p>
+    Let's look back at the file from <xref ref="ex-DellHold"/>.  
+    </p>
+
+    <p>
+        <url href="external/sheets/DellHoldTimes.xlsx" />
+    </p>
+    
+    <p>
+        We found that <m>k=6</m> is a good choice for the number of classes, and let's use that the find a good width to use for each class.
+    </p>
+
+    <answer>
+        <p>
+            Estimated class width:
+            <me>\frac{17.4-0.6}{6}=\frac{16.8}{6}=2.8</me>
+        </p>
+        <p>
+            Let's round up to a useful whole number that makes the distribution more readable:  
+            <me>\text{Class width}=3</me>
+        </p>
+    </answer>
+</exercise>
+
+
+<exercise xml:id="ex-DellHoldFrequency">
+    <p>
+        Let's look back at the file from <xref ref="ex-DellHold"/>.  
+        </p>
+    
+        <p>
+            <url href="external/sheets/DellHoldTimes.xlsx" />
+            </p>
+
+            <p>
+                We found that a good class width would be 3, so let's make a frequency distribution with 6 classes, each with a width of 3.
+            </p>
+            <p>
+                (I recommend first sorting the data to make your distribution.)
+            </p>
+</exercise>
+
+<exercise>
+    <p>
+        In <xref ref="ex-DellHoldFrequency"/> you created a frequency distribution for the data in the Dell Hold Times file.
+    </p>
+    <p>
+        Let's use Excel to create a frequency distribution without having to count the number of items in each class ourselves.
+    </p>
+    <p>
+    In the file below, we're going to create a <q>Bins</q> column that has an upper bound for each class, and then we're going to use the bins to create the frequency distribution.
+
+    <url href="external/sheets/DellHoldTimesFrequencyBins.xlsx" />
+        
+    </p>
+    <p>
+        <ul>
+            <li>
+                <p>
+                    In the <q>Bins</q> column, enter an upper bound for each class.  (For example, in <em>E9</em>, we could enter <m>2.9</m>.)
+                </p>
+            </li>
+            <li>
+                <p>
+                    Our Bins are in Column E in the file above.  Now highlight <em>F9:F14</em> and type <em>=FREQUENCY(A2:A51, E9:E14)</em>.  Then hit enter.
+                </p>
+            </li>
+        </ul>
+    </p>
+    <answer>
+        <p>
+            We should get the frequency distribution below when doing this.
+            <image source="sheets/DellFrequency.png">
+            </image>
+        </p>
+    </answer>
+</exercise>
+
+
+<exercise>
+    <p>
+        (Donnelly 2.9)
+    </p>
+    <p>
+        The table in the Excel file below lists the receipt total for 350 randomly selected customers for the home improvement store Lowe's.
+    </p>
+    <p>
+        <url href="external/sheets/Receipts.xlsx" />
+    </p>
+    <p>
+        <ol>
+            <li>
+                <p>
+                    Using Excel and the <m>2^k\geq n</m> rule, construct a frequency distribution for the data.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Using the <m>k</m> found above, calculate the relative frequencies for each class.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Using the results from above, calculate the cumulative relative frequencies for each class.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Construct a histogram.
+                </p>
+            </li>
+        </ol>
+    </p>
+    <answer>
+        <p>
+            <url href="external/sheets/ReceiptsSolutions.xlsx" />
+        </p>
+    </answer>
+</exercise>
+
+
+</subsection>
+
+
+<subsection xml:id="subsec-shapes-histograms">
+    <title>Shapes of Histograms</title>
+
+    <definition xml:id="def-symmetric-skewed">
+        <statement>
+            <p>
+                <ul>
+                    <li>
+                        <p>
+                            A distribution of data is <em>symmetric</em> if the right and left sides of the distribution are mirror images
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            A distribution of data is <em>skewed</em> if a large number of data items are piled up at one end or the other, with a <q>tail</q> at the opposite end.
+                        </p>
+                        <p>
+                            <ul>
+                                <li>
+                                    <p>
+                                        <em>skewed to the right</em>:  the <q>tail</q> is to the right
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <em>skewed to the left</em>:  the <q>tail</q> is to the left
+                                    </p>
+                                </li>
+                            </ul>
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </statement>
+    </definition>
+
+    <exercise>
+        <figure xml:id="figure-geogebra-shape">
+            <caption>Shapes of Distributions (Made in GeoGebra by Samantha Garcia and Lauren Nelsen)</caption>
+            <interactive xml:id="geogebra-shape" geogebra="jy6kxa3k" aspect="12:5" />
+          </figure>
+
+    </exercise>
+
+
+    
+</subsection>
+
+
+<subsection xml:id="subsec-Scatter-Plots">
+    <title>Scatter Plots</title>
+
+
+    <definition xml:id="def-scatter-plots">
+        <statement>
+            <p>
+                <em>Scatter plots</em> provide a visual of the relationship between two quantitative variables -- the <em>independent</em> and <em>dependent</em> variables.
+            </p>
+            <p>
+                <ul>
+                    <li>
+                        <p>
+                            The <em>dependent</em> variable is placed on the vertical axis of the scatter plot and is influenced by changes in the <em>independent</em> variable, which is placed on the horizontal axis.
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </statement>
+    </definition>
+
+<exercise>
+    <p>
+        Let's look at the example below with home prices and square footage:
+        <figure>
+            <caption>Scatter Plot powered by Desmos</caption>
+            <interactive xml:id="desmos-scatter" desmos="peb1jntxox" aspect="4:3" />
+          </figure>
+    </p>
+    <p>
+        What is the independent variable and what is the dependent variable?
+    </p>
+    <answer>
+        <p>
+            The independent variable is the square footage, and the dependent variable is home price.  (The home price <em>depends</em> on the square footage.)
+        </p>
+    </answer>
+</exercise>
+
+
+<exercise>
+    <p>
+        (Donnelly 2.58)
+    </p>
+    <p>
+        A marketing research firm would like to display the relationship between a family's monthly food costs and the number of family members living in a househould.  The data in the Excel file below contains the monthly food costs and the number of family members for 16 families.  Construct a scatter plot and describe the relationship between the number of household members and the family's monthly food costs.
+    </p>
+    <p>
+        <url href="external/sheets/FoodCosts.xlsx" />
+    </p>
+    <answer>
+        <p>
+            <image source="sheets/FoodCostsScatter.png">
+            </image>
+        </p>
+    </answer>
+</exercise>
+
+
+<definition xml:id="def-line-chart">
+    <statement>
+        <p>
+            A <em>line chart</em> is a special type of scatterplot in which the data points in the scatter plot are connected with a line.
+        </p>
+        <p>
+            Below is an example of a line chart.  (Check the box to see the line chart.)
+            <figure xml:id="figure-geogebra-line-chart">
+                <caption>Line Chart Examples (Made in GeoGebra by David Gurney)</caption>
+                <interactive xml:id="geogebra-line-chart" geogebra="gfghJvap" aspect="9:5" />
+              </figure>
+        </p>
+    </statement>
+</definition>
+    
+</subsection>
 
 
 

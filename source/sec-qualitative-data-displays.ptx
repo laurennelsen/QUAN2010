@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-qualitative-data-displays" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Qualitative Data Displays</title>
+
+
+<introduction>
+    <p>
+        Qualitative data is handled differently when displayed, but you are already familiar with many of these different types of charts.  We quickly summarize them below.
+    </p>
+</introduction>
+
+
+<definition xml:id="def-qualitative-displays">
+    <statement>
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        <em>bar chart</em>:  useful for displaying qualitative data that is organized in categories
+                    </p>
+                    <p>
+                        <url href="https://bit.ly/3PhqoWl">Dashboard with an example</url>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>horizontal bar chart</em>:  has bars displayed in a horizontal direction
+                    </p>
+                    <p>
+                        <url href="https://bit.ly/445JMtQ">Dashboard with an example</url>                    
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </statement>
+</definition>
+
+<definition xml:id="def-types-bar-charts">
+    <statement>
+        <p>
+            There are two types of bar charts with bars in a vertical direction:
+            <ul>
+                <li>
+                    <p>
+                        <em>clustered chart</em>:  displays groups of <em>several values</em> side-by-side
+                    </p>
+                    <p>
+                    <url href="bit.ly/3p6Xvl0">Example</url> 
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>stacked chart</em>:  displays groups of <em>several values in a single column within the same category</em>
+                    </p>
+                    <p>
+                        <url href="bit.ly/3JkCGcJ">Example</url>
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </statement>
+</definition>
+
+
+<definition xml:id="def-pareto-pie">
+    <statement>
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        <em>Pareto chart</em>:  a special type of bar chart used in quality control programs by businesses
+                        <ul>
+                            <li>
+                                <p>
+                                    a distinguishing feature is that they show the categories in decreasing order
+                                </p>
+                            </li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <em>Pie chart</em>:  a useful display when comparing proportions of categorical data.  Each segment represents the relative frequency of that category.
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </statement>
+</definition>
+
+
+<exercise>
+    <p>
+        (Donnelly Your Turn 7)
+    </p>
+    <p>
+        The table in the Excel file below shows an airline company's flight delay data.  The table shows the reasons for the delays and the relative frequency of each type of delay.  Construct a Pareto chart for the data.
+    </p>
+    <p>
+        <url href="external/sheets/Delays.xlsx" />
+
+    </p>
+    <answer>
+        <p>
+            <image source="sheets/DelaysPareto.png">
+            </image>
+        </p>
+    </answer>
+</exercise>
+
+
+<subsection xml:id="subsec-pivot-tables">
+    <title>Contingency (Pivot) Tables</title>
+    
+<definition xml:id="def-pivot-tables">
+    <statement>
+        <p>
+            <em>Contingency tables</em> (known as <em>pivot tables</em> in Excel) provide a format to display the frequencies of two qualitative variables.  Contingency tables allow one to identify relationships bewteen two or more variables.
+        </p>
+    </statement>
+</definition>
+
+
+<exercise>
+    <p>
+        (Donnelly 2.22)
+    </p>
+    <p>
+        A regional manager at Macy's compares customer satisfaction ratings (1,2,3, or 4 starts) at the company's Medford, Iowa, store (M); Eden, Iowa, store (E); and Darby, Iowa, store (D).  The table in the Excel file below shows data from 50 customers.  Use Excel to construct a contingency table.  What conclusions can be drawn about store location and customer satisfaction?
+    </p>
+    <p>
+        <url href="external/sheets/StoreRatings.xlsx" />
+    </p>
+    <answer>
+        <p>
+            <url href="external/sheets/StoreRatingsSolutions.xlsx" />
+        </p>
+    </answer>
+</exercise>
+
+</subsection>
+
+
+</section>
