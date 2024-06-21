@@ -108,7 +108,8 @@ Let's discuss these definitions in the example below:
     </p>
 <p>
     Here is the frequency distribution we should get when we do this:
-    <url href="external/sheets/iPadFrequency.png" />
+    <image source="sheets/iPadFrequency.png" width="50%">
+    </image>
 </p>
 </exploration>
 
