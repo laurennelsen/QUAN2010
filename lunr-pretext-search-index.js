@@ -223,7 +223,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.1",
   "title": "Quantitative Data Displays",
-  "body": " Quantitative Data Displays        frequency distribution : a table that shows the number of data observations that fall into specific intervals or categories     class : a category in a frequency distribution     relative frequency distribution : displays the proportion of observations of each class relative to the total number of observations     cumulative frequency distribution : totals the proportion of observations that are less than or equal to the class at which you are looking      Let's discuss these definitions in the example below: The Excel file below contains a frequency distribution for the number of hours that a sample of students worked in a certain week. Let's use this frequency distribution to create relative and cumulative frequency distributions.              histogram : a graph showing the number of observations in each class of a frequency distribution     ogive : a line graph that plots the cumulative relative frequency distribution     Let's look at both tabs at the link below to see an examples of these types of graphs\/charts: UCCS Student Age Example      Let's look at the file below, which has the number of iPads sold at a particular store over a certain number of days. We're going to make a frequency distribution for this data.   (The manager might want to know, for example, the percentage of days that 3 or fewer iPads were sold.)     Highlight D2:D7  (Note: the Bins are the classes in our distribution.)    type =FREQUENCY(A2:A51,C2:C7)     Hit together     Here is the frequency distribution we should get when we do this:     Creating Histograms in Excel  Next we want to create histograms in Excel, but before doing that, we're going to download the Data Analysis tool in Excel that we will use to create histograms. (Later in the course we will use this tool for many more things!)   Go to the link below to download the Data Analysis tool in Excel:   Analysis ToolPak in Excel   (Note that there are different tabs with instructions for Windows and macOS.)    Let's go back to the iPad sales example from .     We're going to create a histogram for this data in two different ways. First we're going to create a histogram using the Data Analysis tool that we just downloaded.     In the Excel file, go to the Data tab, and then on the right click on Data Analysis . (If Data Analysis is not showing up, then the add-in has not been installed yet.)    Choose the Histogram option.      Choose the data as the Input range , specify the bins, choose Chart Output , and specify the output range.      Here is the histogram and frequency distribution that we get by following these instructions:   Does the frequency distribution that we got using the Data Analysis tool match the frequency distribution we got in ?    Now let's create a histogram using Excel Charts instead of the Data Analysis tool.  Go back to the iPad sales example from .        Select the data (A1:A51) and then go to Insert and choose the Histogram option:     Here is what we should get when we do this:      Does the chart we got here look as good as the one we got using the Data Analysis add-in?  There are some tweaks that we will make to the chart we got here to make it looks better, but the chart we created using the Data Analysis tool looked much better without having to do extra work tweaking it.  (There are more details in the textbook about the steps we'll work through in class.)    "
+  "body": " Quantitative Data Displays        frequency distribution : a table that shows the number of data observations that fall into specific intervals or categories     class : a category in a frequency distribution     relative frequency distribution : displays the proportion of observations of each class relative to the total number of observations     cumulative frequency distribution : totals the proportion of observations that are less than or equal to the class at which you are looking      Let's discuss these definitions in the example below: The Excel file below contains a frequency distribution for the number of hours that a sample of students worked in a certain week. Let's use this frequency distribution to create relative and cumulative frequency distributions.              histogram : a graph showing the number of observations in each class of a frequency distribution     ogive : a line graph that plots the cumulative relative frequency distribution     Let's look at both tabs at the link below to see an examples of these types of graphs\/charts: UCCS Student Age Example      Let's look at the file below, which has the number of iPads sold at a particular store over a certain number of days. We're going to make a frequency distribution for this data.   (The manager might want to know, for example, the percentage of days that 3 or fewer iPads were sold.)     Highlight D2:D7  (Note: the Bins are the classes in our distribution.)    type =FREQUENCY(A2:A51,C2:C7)     Hit together     Here is the frequency distribution we should get when we do this:     Creating Histograms in Excel  Next we want to create histograms in Excel, but before doing that, we're going to download the Data Analysis tool in Excel that we will use to create histograms. (Later in the course we will use this tool for many more things!)   Go to the link below to download the Data Analysis tool in Excel:   Analysis ToolPak in Excel   (Note that there are different tabs with instructions for Windows and macOS.)    Let's go back to the iPad sales example from .     We're going to create a histogram for this data in two different ways. First we're going to create a histogram using the Data Analysis tool that we just downloaded.     In the Excel file, go to the Data tab, and then on the right click on Data Analysis . (If Data Analysis is not showing up, then the add-in has not been installed yet.)    Choose the Histogram option.      Choose the data as the Input range , specify the bins, choose Chart Output , and specify the output range.       Here is the histogram and frequency distribution that we get by following these instructions:    Does the frequency distribution that we got using the Data Analysis tool match the frequency distribution we got in ?    Now let's create a histogram using Excel Charts instead of the Data Analysis tool.  Go back to the iPad sales example from .        Select the data (A1:A51) and then go to Insert and choose the Histogram option:      Here is what we should get when we do this:       Does the chart we got here look as good as the one we got using the Data Analysis add-in?  There are some tweaks that we will make to the chart we got here to make it looks better, but the chart we created using the Data Analysis tool looked much better without having to do extra work tweaking it.  (There are more details in the textbook about the steps we'll work through in class.)    (Optional)   Frequency and Relative Frequency Distributions (Made in GeoGebra by David Gurney)       Grouped Quantitative Data Some data sets (particularly those with continuous data) require several values to be grouped into a single class. This grouping prevents having too many classes in the frequency distribution, which would make it difficult to detect patterns in the data. Ideally, the number of classes in a frequency distribution should be between 4 and 20. One method for determining the number of classes is the Rule:     Rule:   If we want to decide how many classes to use in a frequency distribution or histogram, we can let     number of classes      number of data points     The goal is to find the lowest value of that satisfies the inequality .     Let's look at the Excel file below and find the number of classes, , that we should use to create a frequency distribution.       , so we want so that .    , so is too small     , so is a good choice.       Once the number of classes, , is decided, we must determine the width of each class. The width is the range of the numbers that are put into each class. The following formula calculates a good width:   Let's look back at the file from .   We found that is a good choice for the number of classes, and let's use that the find a good width to use for each class.  Estimated class width:   Let's round up to a useful whole number that makes the distribution more readable:    Let's look back at the file from .   We found that a good class width would be 3, so let's make a frequency distribution with 6 classes, each with a width of 3. (I recommend first sorting the data to make your distribution.)  In you created a frequency distribution for the data in the Dell Hold Times file. Let's use Excel to create a frequency distribution without having to count the number of items in each class ourselves. In the file below, we're going to create a Bins column that has an upper bound for each class, and then we're going to use the bins to create the frequency distribution.     In the Bins column, enter an upper bound for each class. (For example, in E9 , we could enter .)    Our Bins are in Column E in the file above. Now highlight F9:F14 and type =FREQUENCY(A2:A51, E9:E14) . Then hit enter.     We should get the frequency distribution below when doing this.     (Donnelly 2.9) The table in the Excel file below lists the receipt total for 350 randomly selected customers for the home improvement store Lowe's.      Using Excel and the rule, construct a frequency distribution for the data.    Using the found above, calculate the relative frequencies for each class.    Using the results from above, calculate the cumulative relative frequencies for each class.    Construct a histogram.           Shapes of Histograms       A distribution of data is symmetric if the right and left sides of the distribution are mirror images    A distribution of data is skewed if a large number of data items are piled up at one end or the other, with a tail at the opposite end.      skewed to the right : the tail is to the right     skewed to the left : the tail is to the left           Shapes of Distributions (Made in GeoGebra by Samantha Garcia and Lauren Nelsen)      Scatter Plots     Scatter plots provide a visual of the relationship between two quantitative variables -- the independent and dependent variables.     The dependent variable is placed on the vertical axis of the scatter plot and is influenced by changes in the independent variable, which is placed on the horizontal axis.       Let's look at the example below with home prices and square footage:  Scatter Plot powered by Desmos    What is the independent variable and what is the dependent variable?  The independent variable is the square footage, and the dependent variable is home price. (The home price depends on the square footage.)   (Donnelly 2.58) A marketing research firm would like to display the relationship between a family's monthly food costs and the number of family members living in a househould. The data in the Excel file below contains the monthly food costs and the number of family members for 16 families. Construct a scatter plot and describe the relationship between the number of household members and the family's monthly food costs.           A line chart is a special type of scatterplot in which the data points in the scatter plot are connected with a line.  Below is an example of a line chart. (Check the box to see the line chart.)  Line Chart Examples (Made in GeoGebra by David Gurney)        "
 },
 {
   "id": "def-distributions",
@@ -277,7 +277,7 @@ var ptx_lunr_docs = [
   "type": "Exploration",
   "number": "2.1.2",
   "title": "",
-  "body": " Let's go back to the iPad sales example from .     We're going to create a histogram for this data in two different ways. First we're going to create a histogram using the Data Analysis tool that we just downloaded.     In the Excel file, go to the Data tab, and then on the right click on Data Analysis . (If Data Analysis is not showing up, then the add-in has not been installed yet.)    Choose the Histogram option.      Choose the data as the Input range , specify the bins, choose Chart Output , and specify the output range.      Here is the histogram and frequency distribution that we get by following these instructions:   Does the frequency distribution that we got using the Data Analysis tool match the frequency distribution we got in ?  "
+  "body": " Let's go back to the iPad sales example from .     We're going to create a histogram for this data in two different ways. First we're going to create a histogram using the Data Analysis tool that we just downloaded.     In the Excel file, go to the Data tab, and then on the right click on Data Analysis . (If Data Analysis is not showing up, then the add-in has not been installed yet.)    Choose the Histogram option.      Choose the data as the Input range , specify the bins, choose Chart Output , and specify the output range.       Here is the histogram and frequency distribution that we get by following these instructions:    Does the frequency distribution that we got using the Data Analysis tool match the frequency distribution we got in ?  "
 },
 {
   "id": "subsec-Histograms-Excel-5",
@@ -286,7 +286,196 @@ var ptx_lunr_docs = [
   "type": "Exploration",
   "number": "2.1.3",
   "title": "",
-  "body": " Now let's create a histogram using Excel Charts instead of the Data Analysis tool.  Go back to the iPad sales example from .        Select the data (A1:A51) and then go to Insert and choose the Histogram option:     Here is what we should get when we do this:      Does the chart we got here look as good as the one we got using the Data Analysis add-in?  There are some tweaks that we will make to the chart we got here to make it looks better, but the chart we created using the Data Analysis tool looked much better without having to do extra work tweaking it.  (There are more details in the textbook about the steps we'll work through in class.)  "
+  "body": " Now let's create a histogram using Excel Charts instead of the Data Analysis tool.  Go back to the iPad sales example from .        Select the data (A1:A51) and then go to Insert and choose the Histogram option:      Here is what we should get when we do this:       Does the chart we got here look as good as the one we got using the Data Analysis add-in?  There are some tweaks that we will make to the chart we got here to make it looks better, but the chart we created using the Data Analysis tool looked much better without having to do extra work tweaking it.  (There are more details in the textbook about the steps we'll work through in class.)  "
+},
+{
+  "id": "subsec-Histograms-Excel-6",
+  "level": "2",
+  "url": "sec-quantitative-data-displays.html#subsec-Histograms-Excel-6",
+  "type": "Activity",
+  "number": "2.1.4",
+  "title": "",
+  "body": " (Optional)   Frequency and Relative Frequency Distributions (Made in GeoGebra by David Gurney)    "
+},
+{
+  "id": "def-2k-n-rule",
+  "level": "2",
+  "url": "sec-quantitative-data-displays.html#def-2k-n-rule",
+  "type": "Definition",
+  "number": "2.1.6",
+  "title": "",
+  "body": "   Rule:   If we want to decide how many classes to use in a frequency distribution or histogram, we can let     number of classes      number of data points     The goal is to find the lowest value of that satisfies the inequality .   "
+},
+{
+  "id": "ex-DellHold",
+  "level": "2",
+  "url": "sec-quantitative-data-displays.html#ex-DellHold",
+  "type": "Example",
+  "number": "2.1.7",
+  "title": "",
+  "body": " Let's look at the Excel file below and find the number of classes, , that we should use to create a frequency distribution.       , so we want so that .    , so is too small     , so is a good choice.      "
+},
+{
+  "id": "subsec-grouped-quantitative-data-6",
+  "level": "2",
+  "url": "sec-quantitative-data-displays.html#subsec-grouped-quantitative-data-6",
+  "type": "Exercise",
+  "number": "2.1.8",
+  "title": "",
+  "body": "Let's look back at the file from .   We found that is a good choice for the number of classes, and let's use that the find a good width to use for each class.  Estimated class width:   Let's round up to a useful whole number that makes the distribution more readable:   "
+},
+{
+  "id": "ex-DellHoldFrequency",
+  "level": "2",
+  "url": "sec-quantitative-data-displays.html#ex-DellHoldFrequency",
+  "type": "Exercise",
+  "number": "2.1.9",
+  "title": "",
+  "body": "Let's look back at the file from .   We found that a good class width would be 3, so let's make a frequency distribution with 6 classes, each with a width of 3. (I recommend first sorting the data to make your distribution.) "
+},
+{
+  "id": "subsec-grouped-quantitative-data-8",
+  "level": "2",
+  "url": "sec-quantitative-data-displays.html#subsec-grouped-quantitative-data-8",
+  "type": "Exercise",
+  "number": "2.1.10",
+  "title": "",
+  "body": "In you created a frequency distribution for the data in the Dell Hold Times file. Let's use Excel to create a frequency distribution without having to count the number of items in each class ourselves. In the file below, we're going to create a Bins column that has an upper bound for each class, and then we're going to use the bins to create the frequency distribution.     In the Bins column, enter an upper bound for each class. (For example, in E9 , we could enter .)    Our Bins are in Column E in the file above. Now highlight F9:F14 and type =FREQUENCY(A2:A51, E9:E14) . Then hit enter.     We should get the frequency distribution below when doing this.    "
+},
+{
+  "id": "subsec-grouped-quantitative-data-9",
+  "level": "2",
+  "url": "sec-quantitative-data-displays.html#subsec-grouped-quantitative-data-9",
+  "type": "Exercise",
+  "number": "2.1.11",
+  "title": "",
+  "body": "(Donnelly 2.9) The table in the Excel file below lists the receipt total for 350 randomly selected customers for the home improvement store Lowe's.      Using Excel and the rule, construct a frequency distribution for the data.    Using the found above, calculate the relative frequencies for each class.    Using the results from above, calculate the cumulative relative frequencies for each class.    Construct a histogram.        "
+},
+{
+  "id": "def-symmetric-skewed",
+  "level": "2",
+  "url": "sec-quantitative-data-displays.html#def-symmetric-skewed",
+  "type": "Definition",
+  "number": "2.1.12",
+  "title": "",
+  "body": "     A distribution of data is symmetric if the right and left sides of the distribution are mirror images    A distribution of data is skewed if a large number of data items are piled up at one end or the other, with a tail at the opposite end.      skewed to the right : the tail is to the right     skewed to the left : the tail is to the left         "
+},
+{
+  "id": "subsec-shapes-histograms-3",
+  "level": "2",
+  "url": "sec-quantitative-data-displays.html#subsec-shapes-histograms-3",
+  "type": "Exercise",
+  "number": "2.1.13",
+  "title": "",
+  "body": " Shapes of Distributions (Made in GeoGebra by Samantha Garcia and Lauren Nelsen)   "
+},
+{
+  "id": "def-scatter-plots",
+  "level": "2",
+  "url": "sec-quantitative-data-displays.html#def-scatter-plots",
+  "type": "Definition",
+  "number": "2.1.15",
+  "title": "",
+  "body": "   Scatter plots provide a visual of the relationship between two quantitative variables -- the independent and dependent variables.     The dependent variable is placed on the vertical axis of the scatter plot and is influenced by changes in the independent variable, which is placed on the horizontal axis.      "
+},
+{
+  "id": "subsec-Scatter-Plots-3",
+  "level": "2",
+  "url": "sec-quantitative-data-displays.html#subsec-Scatter-Plots-3",
+  "type": "Exercise",
+  "number": "2.1.16",
+  "title": "",
+  "body": "Let's look at the example below with home prices and square footage:  Scatter Plot powered by Desmos    What is the independent variable and what is the dependent variable?  The independent variable is the square footage, and the dependent variable is home price. (The home price depends on the square footage.)  "
+},
+{
+  "id": "subsec-Scatter-Plots-4",
+  "level": "2",
+  "url": "sec-quantitative-data-displays.html#subsec-Scatter-Plots-4",
+  "type": "Exercise",
+  "number": "2.1.18",
+  "title": "",
+  "body": "(Donnelly 2.58) A marketing research firm would like to display the relationship between a family's monthly food costs and the number of family members living in a househould. The data in the Excel file below contains the monthly food costs and the number of family members for 16 families. Construct a scatter plot and describe the relationship between the number of household members and the family's monthly food costs.        "
+},
+{
+  "id": "def-line-chart",
+  "level": "2",
+  "url": "sec-quantitative-data-displays.html#def-line-chart",
+  "type": "Definition",
+  "number": "2.1.19",
+  "title": "",
+  "body": "  A line chart is a special type of scatterplot in which the data points in the scatter plot are connected with a line.  Below is an example of a line chart. (Check the box to see the line chart.)  Line Chart Examples (Made in GeoGebra by David Gurney)      "
+},
+{
+  "id": "sec-qualitative-data-displays",
+  "level": "1",
+  "url": "sec-qualitative-data-displays.html",
+  "type": "Section",
+  "number": "2.2",
+  "title": "Qualitative Data Displays",
+  "body": " Qualitative Data Displays   Qualitative data is handled differently when displayed, but you are already familiar with many of these different types of charts. We quickly summarize them below.         bar chart : useful for displaying qualitative data that is organized in categories   Dashboard with an example      horizontal bar chart : has bars displayed in a horizontal direction   Dashboard with an example          There are two types of bar charts with bars in a vertical direction:    clustered chart : displays groups of several values side-by-side   Example      stacked chart : displays groups of several values in a single column within the same category    Example              Pareto chart : a special type of bar chart used in quality control programs by businesses   a distinguishing feature is that they show the categories in decreasing order        Pie chart : a useful display when comparing proportions of categorical data. Each segment represents the relative frequency of that category.       (Donnelly Your Turn 7) The table in the Excel file below shows an airline company's flight delay data. The table shows the reasons for the delays and the relative frequency of each type of delay. Construct a Pareto chart for the data.          Contingency (Pivot) Tables     Contingency tables (known as pivot tables in Excel) provide a format to display the frequencies of two qualitative variables. Contingency tables allow one to identify relationships bewteen two or more variables.    (Donnelly 2.22) A regional manager at Macy's compares customer satisfaction ratings (1,2,3, or 4 starts) at the company's Medford, Iowa, store (M); Eden, Iowa, store (E); and Darby, Iowa, store (D). The table in the Excel file below shows data from 50 customers. Use Excel to construct a contingency table. What conclusions can be drawn about store location and customer satisfaction?         "
+},
+{
+  "id": "def-qualitative-displays",
+  "level": "2",
+  "url": "sec-qualitative-data-displays.html#def-qualitative-displays",
+  "type": "Definition",
+  "number": "2.2.1",
+  "title": "",
+  "body": "      bar chart : useful for displaying qualitative data that is organized in categories   Dashboard with an example      horizontal bar chart : has bars displayed in a horizontal direction   Dashboard with an example       "
+},
+{
+  "id": "def-types-bar-charts",
+  "level": "2",
+  "url": "sec-qualitative-data-displays.html#def-types-bar-charts",
+  "type": "Definition",
+  "number": "2.2.2",
+  "title": "",
+  "body": "  There are two types of bar charts with bars in a vertical direction:    clustered chart : displays groups of several values side-by-side   Example      stacked chart : displays groups of several values in a single column within the same category    Example       "
+},
+{
+  "id": "def-pareto-pie",
+  "level": "2",
+  "url": "sec-qualitative-data-displays.html#def-pareto-pie",
+  "type": "Definition",
+  "number": "2.2.3",
+  "title": "",
+  "body": "      Pareto chart : a special type of bar chart used in quality control programs by businesses   a distinguishing feature is that they show the categories in decreasing order        Pie chart : a useful display when comparing proportions of categorical data. Each segment represents the relative frequency of that category.      "
+},
+{
+  "id": "sec-qualitative-data-displays-6",
+  "level": "2",
+  "url": "sec-qualitative-data-displays.html#sec-qualitative-data-displays-6",
+  "type": "Exercise",
+  "number": "2.2.4",
+  "title": "",
+  "body": "(Donnelly Your Turn 7) The table in the Excel file below shows an airline company's flight delay data. The table shows the reasons for the delays and the relative frequency of each type of delay. Construct a Pareto chart for the data.        "
+},
+{
+  "id": "def-pivot-tables",
+  "level": "2",
+  "url": "sec-qualitative-data-displays.html#def-pivot-tables",
+  "type": "Definition",
+  "number": "2.2.5",
+  "title": "",
+  "body": "   Contingency tables (known as pivot tables in Excel) provide a format to display the frequencies of two qualitative variables. Contingency tables allow one to identify relationships bewteen two or more variables.   "
+},
+{
+  "id": "subsec-pivot-tables-3",
+  "level": "2",
+  "url": "sec-qualitative-data-displays.html#subsec-pivot-tables-3",
+  "type": "Exercise",
+  "number": "2.2.6",
+  "title": "",
+  "body": "(Donnelly 2.22) A regional manager at Macy's compares customer satisfaction ratings (1,2,3, or 4 starts) at the company's Medford, Iowa, store (M); Eden, Iowa, store (E); and Darby, Iowa, store (D). The table in the Excel file below shows data from 50 customers. Use Excel to construct a contingency table. What conclusions can be drawn about store location and customer satisfaction?       "
+},
+{
+  "id": "sec-misleading-displays",
+  "level": "1",
+  "url": "sec-misleading-displays.html",
+  "type": "Section",
+  "number": "2.3",
+  "title": "Misleading Visual Displays of Data",
+  "body": " Misleading Visual Displays of Data   Graphs can be used to distort the underlying data, making it difficult for the viewer to learn the truth. The problem is not that statistics lie, but rather that lars use statistics.  We will likely not talk about these ways that visual displays of data can be misleading in class, but I encourage you to watch\/read about the things to watch for in visual displays of data mentioned below if you're interested!     Things to watch for in visual displays of data     Is there a title that explains what is being displayed?    Are numbers lined up with tick marks on the vertical axis that clearly indicate the scale? Has the scale been varied to create a more or less dramatic impression than shown by the actual data?    Do too many design and cosmetic effects draw attention from or distort the data?    Has the wrong impression been created about how the data are changing because equally spaced time intervals are not used on the horizontal axis? Furthermore, has a time interval been chosen that allows the data to be interpreted in various ways?    Are bar sizes scaled proportionately in terms of the data they represent?    Is there a source that indicates where the data in the display came from? Do the data come from an entire population or a sample? Was a random sample used and, if so, are there possible differences between what is displayed in the graph and what is occurring in the entire population? Who is presenting the visual display and does that person have a special case to make for or against the trend shown by the graph?      "
 },
 {
   "id": "sec-measures-central-tendency",

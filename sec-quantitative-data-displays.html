@@ -137,7 +137,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="ch-Displaying-Data.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-Displaying-Data.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ch-Descriptive-Statistics.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="ch-Displaying-Data.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-Displaying-Data.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-qualitative-data-displays.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -165,10 +165,22 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-Displaying-Data.html" class="internal"><span class="codenumber">2</span> <span class="title">Displaying Data</span></a></div>
-<ul class="structural toc-item-list contains-active"><li class="toc-item toc-section active">
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section active">
 <div class="toc-title-box"><a href="sec-quantitative-data-displays.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Quantitative Data Displays</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-quantitative-data-displays.html#subsec-Histograms-Excel" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Creating Histograms in Excel</span></a></div></li></ul>
-</li></ul>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-quantitative-data-displays.html#subsec-Histograms-Excel" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Creating Histograms in Excel</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-quantitative-data-displays.html#subsec-grouped-quantitative-data" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Grouped Quantitative Data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-quantitative-data-displays.html#subsec-shapes-histograms" class="internal"><span class="codenumber">2.1.3</span> <span class="title">Shapes of Histograms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-quantitative-data-displays.html#subsec-Scatter-Plots" class="internal"><span class="codenumber">2.1.4</span> <span class="title">Scatter Plots</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-qualitative-data-displays.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Qualitative Data Displays</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-qualitative-data-displays.html#subsec-pivot-tables" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Contingency (Pivot) Tables</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-misleading-displays.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Misleading Visual Displays of Data</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-Descriptive-Statistics.html" class="internal"><span class="codenumber">3</span> <span class="title">Descriptive Statistics</span></a></div>
@@ -339,22 +351,151 @@ eBookConfig.enable_chatcodes =  false;
 </h4>
 <div class="para" id="subsec-Histograms-Excel-4-1">Let’s go back to the iPad sales example from <a href="sec-quantitative-data-displays.html#ex-iPadSales" class="xref" data-knowl="./knowl/xref/ex-iPadSales.html" data-reveal-label="Reveal" data-close-label="Close" title="Exploration 2.1.1">Exploration 2.1.1</a>.</div> <div class="para" id="subsec-Histograms-Excel-4-2"><a class="external" href="external/sheets/iPadSales.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/iPadSales.xlsx</code></a></div> <div class="para" id="subsec-Histograms-Excel-4-3">We’re going to create a histogram for this data in two different ways.  First we’re going to create a histogram using the <em class="emphasis">Data Analysis</em> tool that we just downloaded.</div> <div class="para logical" id="subsec-Histograms-Excel-4-4"><ul class="disc">
 <li id="subsec-Histograms-Excel-4-4-1-1"><div class="para" id="subsec-Histograms-Excel-4-4-1-1-1">In the Excel file, go to the <em class="emphasis">Data</em> tab, and then on the right click on “Data Analysis”.  (If “Data Analysis” is not showing up, then the add-in has not been installed yet.)</div></li>
-<li id="subsec-Histograms-Excel-4-4-1-2"><div class="para" id="subsec-Histograms-Excel-4-4-1-2-1">Choose the “Histogram” option. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/external/sheets/DataAnalysisHistogram.png" class="contained"></div> <a class="external" href="external/sheets/DataAnalysisHistogram.png" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/DataAnalysisHistogram.png</code></a>
+<li id="subsec-Histograms-Excel-4-4-1-2"><div class="para" id="subsec-Histograms-Excel-4-4-1-2-1">Choose the “Histogram” option. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/sheets/DataAnalysisHistogram.png" class="contained"></div>
 </div></li>
-<li id="subsec-Histograms-Excel-4-4-1-3"><div class="para" id="subsec-Histograms-Excel-4-4-1-3-1">Choose the data as the “Input range”, specify the bins, choose “Chart Output”, and specify the output range. <a class="external" href="external/sheets/DataAnalysisHistogramExample.png" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/DataAnalysisHistogramExample.png</code></a>
+<li id="subsec-Histograms-Excel-4-4-1-3"><div class="para" id="subsec-Histograms-Excel-4-4-1-3-1">Choose the data as the “Input range”, specify the bins, choose “Chart Output”, and specify the output range. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/sheets/DataAnalysisHistogramExample.png" class="contained"></div>
 </div></li>
-</ul></div> <div class="para" id="subsec-Histograms-Excel-4-5">Here is the histogram and frequency distribution that we get by following these instructions: <a class="external" href="external/sheets/DataAnalysisHistogramExampleOutput.png" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/DataAnalysisHistogramExampleOutput.png</code></a>
+</ul></div> <div class="para" id="subsec-Histograms-Excel-4-5">Here is the histogram and frequency distribution that we get by following these instructions: <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/sheets/DataAnalysisHistogramExampleOutput.png" class="contained"></div>
 </div> <div class="para" id="subsec-Histograms-Excel-4-6">Does the frequency distribution that we got using the Data Analysis tool match the frequency distribution we got in <a href="sec-quantitative-data-displays.html#ex-iPadSales" class="xref" data-knowl="./knowl/xref/ex-iPadSales.html" data-reveal-label="Reveal" data-close-label="Close" title="Exploration 2.1.1">Exploration 2.1.1</a>?</div></article><article class="exploration project-like" id="subsec-Histograms-Excel-5"><h4 class="heading">
 <span class="type">Exploration</span><span class="space"> </span><span class="codenumber">2.1.3</span><span class="period">.</span>
 </h4>
 <div class="para" id="subsec-Histograms-Excel-5-1">Now let’s create a histogram using Excel Charts instead of the Data Analysis tool.</div> <div class="para" id="subsec-Histograms-Excel-5-2">Go back to the iPad sales example from <a href="sec-quantitative-data-displays.html#ex-iPadSales" class="xref" data-knowl="./knowl/xref/ex-iPadSales.html" data-reveal-label="Reveal" data-close-label="Close" title="Exploration 2.1.1">Exploration 2.1.1</a>.</div> <div class="para" id="subsec-Histograms-Excel-5-3"><a class="external" href="external/sheets/iPadSales.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/iPadSales.xlsx</code></a></div> <div class="para logical" id="subsec-Histograms-Excel-5-4"><ul class="disc">
-<li id="subsec-Histograms-Excel-5-4-1-1"><div class="para" id="subsec-Histograms-Excel-5-4-1-1-1">Select the data (A1:A51) and then go to “Insert” and choose the Histogram option: <a class="external" href="external/sheets/HistogramExcelCharts1.png" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/HistogramExcelCharts1.png</code></a>
+<li id="subsec-Histograms-Excel-5-4-1-1"><div class="para" id="subsec-Histograms-Excel-5-4-1-1-1">Select the data (A1:A51) and then go to “Insert” and choose the Histogram option: <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/sheets/HistogramExcelCharts1.png" class="contained"></div>
 </div></li>
-<li id="subsec-Histograms-Excel-5-4-1-2"><div class="para" id="subsec-Histograms-Excel-5-4-1-2-1">Here is what we should get when we do this: <a class="external" href="external/sheets/HistogramExcelCharts2.png" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/HistogramExcelCharts2.png</code></a>
+<li id="subsec-Histograms-Excel-5-4-1-2"><div class="para" id="subsec-Histograms-Excel-5-4-1-2-1">Here is what we should get when we do this: <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/sheets/HistogramExcelCharts2.png" class="contained"></div>
 </div></li>
-</ul></div> <div class="para" id="subsec-Histograms-Excel-5-5">Does the chart we got here look as good as the one we got using the Data Analysis add-in?</div> <div class="para" id="subsec-Histograms-Excel-5-6">There are some tweaks that we will make to the chart we got here to make it looks better, but the chart we created using the Data Analysis tool looked much better without having to do extra work tweaking it.</div> <div class="para" id="subsec-Histograms-Excel-5-7">(There are more details in the textbook about the steps we’ll work through in class.)</div></article></section></section></div>
+</ul></div> <div class="para" id="subsec-Histograms-Excel-5-5">Does the chart we got here look as good as the one we got using the Data Analysis add-in?</div> <div class="para" id="subsec-Histograms-Excel-5-6">There are some tweaks that we will make to the chart we got here to make it looks better, but the chart we created using the Data Analysis tool looked much better without having to do extra work tweaking it.</div> <div class="para" id="subsec-Histograms-Excel-5-7">(There are more details in the textbook about the steps we’ll work through in class.)</div></article><article class="activity project-like" id="subsec-Histograms-Excel-6"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.4</span><span class="period">.</span>
+</h4>
+<div class="para" id="subsec-Histograms-Excel-6-1">(Optional)</div> <figure class="figure figure-like" id="figure-geogebra-frequency"><iframe src="https://www.geogebra.org/material/iframe/id/xxn8ctfz/width/800/height/444/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="geogebra-frequency" width="600" height="333"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.1.5<span class="period">.</span></span><span class="space"> </span>Frequency and Relative Frequency Distributions (Made in GeoGebra by David Gurney)</figcaption></figure></article></section><section class="subsection" id="subsec-grouped-quantitative-data"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.1.2</span><span class="space"> </span><span class="title">Grouped Quantitative Data</span>
+</h3>“<span class="process-math">\(2^k\geq n\)</span> Rule:”<article class="definition definition-like" id="def-2k-n-rule"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.6</span><span class="period">.</span>
+</h4>
+<div class="para" id="def-2k-n-rule-1-1"><em class="emphasis"><span class="process-math">\(2^k\geq n\)</span> Rule:</em></div> <div class="para" id="def-2k-n-rule-1-2">If we want to decide how many classes to use in a frequency distribution or histogram, we can let <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(k\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(=\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">number of classes</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(n\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(=\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">number of data points</td>
+</tr>
+</table></div>
+</div> <div class="para" id="def-2k-n-rule-1-3">The goal is to find the lowest value of <span class="process-math">\(k\)</span> that satisfies the inequality <span class="process-math">\(2^k\geq n\text{.}\)</span>
+</div></article><details id="ex-DellHold" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.7</span><span class="period">.</span>
+</h4></summary><article class="example example-like knowl__content"><div class="para" id="ex-DellHold-1">Let’s look at the Excel file below and find the number of classes, <span class="process-math">\(k\text{,}\)</span> that we should use to create a frequency distribution.</div> <div class="para" id="ex-DellHold-2"><a class="external" href="external/sheets/DellHoldTimes.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/DellHoldTimes.xlsx</code></a></div> <details id="ex-DellHold-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="ex-DellHold-3-1">
+<div class="para">
+<span class="process-math">\(n=50\text{,}\)</span> so we want <span class="process-math">\(k\)</span> so that <span class="process-math">\(2^k\geq 50\text{.}\)</span>
+</div>
+<ul class="disc">
+<li id="ex-DellHold-3-1-4-1"><div class="para" id="ex-DellHold-3-1-4-1-1">
+<span class="process-math">\(2^5=32\lt 50\text{,}\)</span> so <span class="process-math">\(5\)</span> is too small</div></li>
+<li id="ex-DellHold-3-1-4-2"><div class="para" id="ex-DellHold-3-1-4-2-1">
+<span class="process-math">\(2^6=64\geq 50\text{,}\)</span> so <span class="process-math">\(k=6\)</span> is a good choice.</div></li>
+</ul>
+</div></div></details></article></details><div class="para logical" id="subsec-grouped-quantitative-data-5">
+<div class="para">Once the number of classes, <span class="process-math">\(k\text{,}\)</span> is decided, we must determine the width of each class.  The width is the range of the numbers that are put into each class.  The following formula calculates a good width:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\boxed{\text{Estimated class width:    } \frac{\text{Maximum}-\text{Minimum}}{k}}
+\end{equation*}
+</div>
+</div>
+<details id="subsec-grouped-quantitative-data-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.1.8</span><span class="period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="para" id="subsec-grouped-quantitative-data-6-1">Let’s look back at the file from <a href="sec-quantitative-data-displays.html#ex-DellHold" class="xref" data-knowl="./knowl/xref/ex-DellHold.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.1.7">Example 2.1.7</a>.</div>
+<div class="para" id="subsec-grouped-quantitative-data-6-2"><a class="external" href="external/sheets/DellHoldTimes.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/DellHoldTimes.xlsx</code></a></div>
+<div class="para" id="subsec-grouped-quantitative-data-6-3">We found that <span class="process-math">\(k=6\)</span> is a good choice for the number of classes, and let’s use that the find a good width to use for each class.</div>
+<details id="subsec-grouped-quantitative-data-6-4" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para logical" id="subsec-grouped-quantitative-data-6-4-1">
+<div class="para">Estimated class width:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{17.4-0.6}{6}=\frac{16.8}{6}=2.8
+\end{equation*}
+</div>
+</div> <div class="para logical" id="subsec-grouped-quantitative-data-6-4-2">
+<div class="para">Let’s round up to a useful whole number that makes the distribution more readable:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{Class width}=3
+\end{equation*}
+</div>
+</div>
+</div></details></article></details><details id="ex-DellHoldFrequency" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.1.9</span><span class="period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="para" id="ex-DellHoldFrequency-1">Let’s look back at the file from <a href="sec-quantitative-data-displays.html#ex-DellHold" class="xref" data-knowl="./knowl/xref/ex-DellHold.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.1.7">Example 2.1.7</a>.</div>
+<div class="para" id="ex-DellHoldFrequency-2"><a class="external" href="external/sheets/DellHoldTimes.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/DellHoldTimes.xlsx</code></a></div>
+<div class="para" id="ex-DellHoldFrequency-3">We found that a good class width would be 3, so let’s make a frequency distribution with 6 classes, each with a width of 3.</div>
+<div class="para" id="ex-DellHoldFrequency-4">(I recommend first sorting the data to make your distribution.)</div></article></details><details id="subsec-grouped-quantitative-data-8" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.1.10</span><span class="period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="para" id="subsec-grouped-quantitative-data-8-1">In <a href="sec-quantitative-data-displays.html#ex-DellHoldFrequency" class="xref" data-knowl="./knowl/xref/ex-DellHoldFrequency.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 2.1.9">Exercise 2.1.9</a> you created a frequency distribution for the data in the Dell Hold Times file.</div>
+<div class="para" id="subsec-grouped-quantitative-data-8-2">Let’s use Excel to create a frequency distribution without having to count the number of items in each class ourselves.</div>
+<div class="para" id="subsec-grouped-quantitative-data-8-3">In the file below, we’re going to create a “Bins” column that has an upper bound for each class, and then we’re going to use the bins to create the frequency distribution. <a class="external" href="external/sheets/DellHoldTimesFrequencyBins.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/DellHoldTimesFrequencyBins.xlsx</code></a>
+</div>
+<div class="para logical" id="subsec-grouped-quantitative-data-8-4"><ul class="disc">
+<li id="subsec-grouped-quantitative-data-8-4-1-1"><div class="para" id="subsec-grouped-quantitative-data-8-4-1-1-1">In the “Bins” column, enter an upper bound for each class.  (For example, in <em class="emphasis">E9</em>, we could enter <span class="process-math">\(2.9\text{.}\)</span>)</div></li>
+<li id="subsec-grouped-quantitative-data-8-4-1-2"><div class="para" id="subsec-grouped-quantitative-data-8-4-1-2-1">Our Bins are in Column E in the file above.  Now highlight <em class="emphasis">F9:F14</em> and type <em class="emphasis">=FREQUENCY(A2:A51, E9:E14)</em>.  Then hit enter.</div></li>
+</ul></div>
+<details id="subsec-grouped-quantitative-data-8-5" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="subsec-grouped-quantitative-data-8-5-1">We should get the frequency distribution below when doing this. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/sheets/DellFrequency.png" class="contained"></div>
+</div></div></details></article></details><details id="subsec-grouped-quantitative-data-9" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.1.11</span><span class="period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="para" id="subsec-grouped-quantitative-data-9-1">(Donnelly 2.9)</div>
+<div class="para" id="subsec-grouped-quantitative-data-9-2">The table in the Excel file below lists the receipt total for 350 randomly selected customers for the home improvement store Lowe’s.</div>
+<div class="para" id="subsec-grouped-quantitative-data-9-3"><a class="external" href="external/sheets/Receipts.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/Receipts.xlsx</code></a></div>
+<div class="para logical" id="subsec-grouped-quantitative-data-9-4"><ol class="decimal">
+<li id="subsec-grouped-quantitative-data-9-4-1-1"><div class="para" id="subsec-grouped-quantitative-data-9-4-1-1-1">Using Excel and the <span class="process-math">\(2^k\geq n\)</span> rule, construct a frequency distribution for the data.</div></li>
+<li id="subsec-grouped-quantitative-data-9-4-1-2"><div class="para" id="subsec-grouped-quantitative-data-9-4-1-2-1">Using the <span class="process-math">\(k\)</span> found above, calculate the relative frequencies for each class.</div></li>
+<li id="subsec-grouped-quantitative-data-9-4-1-3"><div class="para" id="subsec-grouped-quantitative-data-9-4-1-3-1">Using the results from above, calculate the cumulative relative frequencies for each class.</div></li>
+<li id="subsec-grouped-quantitative-data-9-4-1-4"><div class="para" id="subsec-grouped-quantitative-data-9-4-1-4-1">Construct a histogram.</div></li>
+</ol></div>
+<details id="subsec-grouped-quantitative-data-9-5" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="subsec-grouped-quantitative-data-9-5-1"><a class="external" href="external/sheets/ReceiptsSolutions.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/ReceiptsSolutions.xlsx</code></a></div></div></details></article></details></section><section class="subsection" id="subsec-shapes-histograms"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.1.3</span><span class="space"> </span><span class="title">Shapes of Histograms</span>
+</h3>
+<article class="definition definition-like" id="def-symmetric-skewed"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.12</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="def-symmetric-skewed-1-1"><ul class="disc">
+<li id="def-symmetric-skewed-1-1-1-1"><div class="para" id="def-symmetric-skewed-1-1-1-1-1">A distribution of data is <em class="emphasis">symmetric</em> if the right and left sides of the distribution are mirror images</div></li>
+<li id="def-symmetric-skewed-1-1-1-2">
+<div class="para" id="def-symmetric-skewed-1-1-1-2-1">A distribution of data is <em class="emphasis">skewed</em> if a large number of data items are piled up at one end or the other, with a “tail” at the opposite end.</div>
+<div class="para logical" id="def-symmetric-skewed-1-1-1-2-2"><ul class="circle">
+<li id="def-symmetric-skewed-1-1-1-2-2-1-1"><div class="para" id="def-symmetric-skewed-1-1-1-2-2-1-1-1">
+<em class="emphasis">skewed to the right</em>:  the “tail” is to the right</div></li>
+<li id="def-symmetric-skewed-1-1-1-2-2-1-2"><div class="para" id="def-symmetric-skewed-1-1-1-2-2-1-2-1">
+<em class="emphasis">skewed to the left</em>:  the “tail” is to the left</div></li>
+</ul></div>
+</li>
+</ul></div></article><details id="subsec-shapes-histograms-3" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.1.13</span><span class="period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><figure class="figure figure-like" id="figure-geogebra-shape"><iframe src="https://www.geogebra.org/material/iframe/id/jy6kxa3k/width/800/height/333/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="geogebra-shape" width="600" height="250"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.1.14<span class="period">.</span></span><span class="space"> </span>Shapes of Distributions (Made in GeoGebra by Samantha Garcia and Lauren Nelsen)</figcaption></figure></article></details></section><section class="subsection" id="subsec-Scatter-Plots"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.1.4</span><span class="space"> </span><span class="title">Scatter Plots</span>
+</h3>
+<article class="definition definition-like" id="def-scatter-plots"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.15</span><span class="period">.</span>
+</h4>
+<div class="para" id="def-scatter-plots-1-1">
+<em class="emphasis">Scatter plots</em> provide a visual of the relationship between two quantitative variables -- the <em class="emphasis">independent</em> and <em class="emphasis">dependent</em> variables.</div> <div class="para logical" id="def-scatter-plots-1-2"><ul class="disc"><li id="def-scatter-plots-1-2-1-1"><div class="para" id="def-scatter-plots-1-2-1-1-1">The <em class="emphasis">dependent</em> variable is placed on the vertical axis of the scatter plot and is influenced by changes in the <em class="emphasis">independent</em> variable, which is placed on the horizontal axis.</div></li></ul></div></article><details id="subsec-Scatter-Plots-3" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.1.16</span><span class="period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="para" id="subsec-Scatter-Plots-3-1">Let’s look at the example below with home prices and square footage: <figure class="figure figure-like" id="subsec-Scatter-Plots-3-1-1"><iframe src="https://www.desmos.com/calculator/peb1jntxox" id="desmos-scatter" width="600" height="450"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.1.17<span class="period">.</span></span><span class="space"> </span>Scatter Plot powered by Desmos</figcaption></figure>
+</div>
+<div class="para" id="subsec-Scatter-Plots-3-2">What is the independent variable and what is the dependent variable?</div>
+<details id="subsec-Scatter-Plots-3-3" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="subsec-Scatter-Plots-3-3-1">The independent variable is the square footage, and the dependent variable is home price.  (The home price <em class="emphasis">depends</em> on the square footage.)</div></div></details></article></details><details id="subsec-Scatter-Plots-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.1.18</span><span class="period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="para" id="subsec-Scatter-Plots-4-1">(Donnelly 2.58)</div>
+<div class="para" id="subsec-Scatter-Plots-4-2">A marketing research firm would like to display the relationship between a family’s monthly food costs and the number of family members living in a househould.  The data in the Excel file below contains the monthly food costs and the number of family members for 16 families.  Construct a scatter plot and describe the relationship between the number of household members and the family’s monthly food costs.</div>
+<div class="para" id="subsec-Scatter-Plots-4-3"><a class="external" href="external/sheets/FoodCosts.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/FoodCosts.xlsx</code></a></div>
+<details id="subsec-Scatter-Plots-4-4" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="subsec-Scatter-Plots-4-4-1"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/sheets/FoodCostsScatter.png" class="contained"></div></div></div></details></article></details><article class="definition definition-like" id="def-line-chart"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.19</span><span class="period">.</span>
+</h4>
+<div class="para" id="def-line-chart-1-1">A <em class="emphasis">line chart</em> is a special type of scatterplot in which the data points in the scatter plot are connected with a line.</div> <div class="para" id="def-line-chart-1-2">Below is an example of a line chart.  (Check the box to see the line chart.) <figure class="figure figure-like" id="figure-geogebra-line-chart"><iframe src="https://www.geogebra.org/material/iframe/id/gfghJvap/width/800/height/444/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="geogebra-line-chart" width="600" height="333"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.1.20<span class="period">.</span></span><span class="space"> </span>Line Chart Examples (Made in GeoGebra by David Gurney)</figcaption></figure>
+</div></article></section></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="ch-Displaying-Data.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-Descriptive-Statistics.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="ch-Displaying-Data.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-qualitative-data-displays.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
