@@ -9,9 +9,35 @@
   </p>
 
 
-  <p>
-    .....insert activity to make sense of this.....
-  </p>
+<activity>
+  <introduction>
+    <p>
+      We're going to get in groups, and in each group, you'll roll a die <m>30</m> times.  (Use this Excel document to keep track of your rolls:  <url href="external/sheets/DiceSamplingProportion.xlsx" />
+      )  Count how many times you roll a <q>1</q> and use that to calculate the <em>proportion</em> of the 30 rolls for which the result was a <q>1</q>.  After the whole class finishes finding this proportion, we're going to draw a histogram of all the sample proportions. Before doing this, though, think about the following questions:
+    </p>
+  </introduction>
+  <task>
+    <statement>
+      <p>
+        What should the distribution of your individual rolls look like (approximately)?
+      </p>
+    </statement>
+  </task>
+  <task>
+    <statement>
+      <p>
+        What do you think the approximate shape of the histogram of all sample proportions will be?  (Will it be skewed left, uniform, normal/bell-shaped, or skewed right?)
+      </p>
+    </statement>
+  </task>
+  <task>
+    <statement>
+      <p>
+        What do you expect the approximate mean of the distribution of sample proportions to be?  (Will it be <m>1/100</m>, <m>1/6</m>, <m>6/100</m>, or <m>6</m>?)
+      </p>
+    </statement>
+  </task>
+</activity>
 
 
   <definition xml:id="def-sampling-distribution-proportion">
