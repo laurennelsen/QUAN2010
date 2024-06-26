@@ -73,6 +73,86 @@
             Economists theorize that the 2007-2008 recession affected men more than women because men are typically employed in industries that have been hit hardest by the recession.  Women, on the other hand, are typically employed in services which are considered more recession resistant.  A sample of 170 men and a sample of 150 women were drawn.  In those samples, 21 men were unemployed, and 11 of the women were unemployed.  Perform a hypothesis test using <m>\alpha=0.05</m> to determine if the unemployment rate for men is higher than the rate for women.
         </p>
     </statement>
+    <answer>
+      <p>
+        critical value:  <m>NORM.S.INV(0.95)\approx 1.645</m>
+      </p>
+      <p>
+        population 1 = men
+      </p>
+      <p>
+        population 2 = women
+      </p>
+      <p>
+        <me>n_1=170,\; x_1=21,\; \overline{p}_1=\frac{21}{170}\approx 0.124</me>
+        <me>n_2=150,\; x_2=11,\; \overline{p}_2=\frac{11}{150}\approx 0.073</me>
+        <me>\hat{p}=\frac{21+11}{170+150}=0.1</me>
+      </p>
+      <p>
+        test statistic:  <me>z_p\approx\frac{(0.124-0.073)-0}{0.1(0.9)\left(\frac{1}{170}+\frac{1}{150}\right)}\approx 1.52</me>
+      </p>
+      <p>
+        <m>\text{test statistic}\lt \text{ critical value}</m>, so fail to reject <m>H_0</m>
+      </p>
+      <p>
+        There is not enough evidence to conclude that the unemployment rate is higher for men than women.
+      </p>
+    </answer>
+  </exercise>
+
+
+  <exercise>
+    <introduction>
+      <p>
+        (Donnelly 10.61)
+      </p>
+      <p>
+        Negative equity (also known as being <q>underwater</q>) refers to a scenario where the market value of a residence is worth less than the outstanding balance on the mortgage for that home.  Suppose the Federal Housing Administration (FHA), which is the government agency charged with supporting the home financing market would like to test the hypothesis that the proportion of home mortgages with negative equity in Florida is more than <m>7\%</m> higher than the national proportion.  A random sample of <m>180</m> mortgages from Florida found that 67 were underwater.  A random sample of 190 mortgages across the United States found that 42 were underwater.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          Using <m>\alpha=0.05</m>, perform this hypothesis test for the FHA.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          population 1:  Florida, population 2: US
+        </p>
+        <p>
+          <me>n_1=180,\; x_1=67,\; p_1=\frac{67}{180}\approx 0.372</me>
+          <me>n_2=190,\; x_2=42,\; p_2=\frac{42}{190}\approx 0.221</me>
+        </p>
+        <p>
+          <me>H_0: p_1-p_2\leq 0.07</me>
+          <me>H_1: p_1-p_2\gt 0.07</me>
+        </p>
+        <p>
+          Critical value:  <m>NORM.S.INV(0.95)\approx 1.645</m>
+        </p>
+        <p>
+          <me>\sigma_{p_1-p_2}\approx \sqrt{\frac{0.372(0.628)}{180}+\frac{0.221(0.779)}{190}}\approx 0.0469</me>
+        </p>
+        <p>
+          Test statistic:
+          <me>z_p\approx \frac{(0.372-0.221)-0.7}{0.0469}\approx 1.73</me>
+        </p>
+        <p>
+          Since the test statistic is bigger than the critical value, and this is a right-tailed test, we reject <m>H_0</m>.
+        </p>
+        <p>
+          There is enough evidence to conclude that the proportion of underwater mortgages in FL is more than <m>7\%</m> higher than nationwide.
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Construct a <m>95\%</m> confidence interval to estimate the difference in the proportion of underwater mortgages for these two populations.  Interpret the results.
+        </p>
+      </statement>
+    </task>
   </exercise>
 
 
