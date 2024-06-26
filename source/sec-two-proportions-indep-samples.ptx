@@ -152,6 +152,34 @@
           Construct a <m>95\%</m> confidence interval to estimate the difference in the proportion of underwater mortgages for these two populations.  Interpret the results.
         </p>
       </statement>
+      <answer>
+        <p>
+          Formula: <m>(\overline{p}_1-\overline{p}_2)\pm z_{\alpha/2}\cdot\sigma_{p_1-p_2}</m>
+        </p>
+        <p>
+          <me>\overline{p}_1-\overline{p}_2\approx 0.372-0.221=0.151</me>
+        </p>
+        <p>
+          <me>z_{\alpha/2}=NORM.S.INV(0.975)\approx 1.96</me>
+          <me>\sigma_{p_1-p_2}\approx 0.0469</me>
+        </p>
+        <p>
+          Margin of error: <m>1.96(0.0469)\approx 0.0919</m>
+        </p>
+        <p>
+          LCL: <m>0.151-0.0919\approx 0.0591</m>
+        </p>
+        <p>
+          UCL: <m>0.151+0.0919\approx 0.2429</m>
+        </p>
+        <p>
+          Interval: We are <m>95\%</m> confident that
+          <me>0.0591\lt p_1-p_2\lt 0.2429.</me>
+        </p>
+        <p>
+          Since <m>.07</m> is in the interval, we cannot conclude that the difference between <m>p_1</m> and <m>p_2</m> is more than <m>7\%</m>.
+        </p>
+      </answer>
     </task>
   </exercise>
 
