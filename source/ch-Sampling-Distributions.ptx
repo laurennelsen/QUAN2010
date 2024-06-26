@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-Sampling-Distributions" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Sampling Distributions</title>
+
+
+
+  <!-- include sections -->
+  <xi:include href="sec-Sampling-Distribution-of-Mean.ptx" />
+  <xi:include href="sec-Central-Limit-Theorem.ptx" />
+  <xi:include href="sec-Sampling-Distribution-Proportion.ptx" />
+
+</chapter>

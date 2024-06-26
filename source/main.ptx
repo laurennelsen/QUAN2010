@@ -20,12 +20,16 @@
 
     <xi:include href="./ch-Probability.ptx" />
 
-    <xi:include href="./ch-Sampling.ptx" />
 
     <xi:include href="./ch-Discrete-Probability-Distributions.ptx" />
 
 
+    <xi:include href="./ch-Intro-Sampling.ptx" />
+
+
     <xi:include href="./ch-Continuous-Probability-Distributions.ptx" />
+
+    <xi:include href="./ch-Sampling-Distributions.ptx" />
 
     <xi:include href="./ch-Confidence-Intervals.ptx" />
 
