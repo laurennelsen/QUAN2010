@@ -2419,7 +2419,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "11.4",
   "title": "Comparing Variances from Two Populations",
-  "body": " Comparing Variances from Two Populations  When we want to compare the variances of two samples, we do this by conducting a test of the ratio of the variances. If the ratio is equal to , then the variances are equal; if not, then they are unequal.  The sample variances is a good estimate of the population variance. Not surprisingly, the ratio of the two sample variances, , drawn from their respective populations is a good estimate for the ratio of the two population variances, . The sampling distribution of is -distributed with and degrees of freedom if we have independent samples from two normal populations. Since we are comparing two variances, the test statistic is:   The formula for this test statistic is easy to compute by hand, nevertheless, we can also use Excel to do the work if we have raw data (not summary statistics). After stating the two hypotheses, we will go to the Data Analysis tool and choose F-Test Two-Sample for Variances to complete the test.     "
+  "body": " Comparing Variances from Two Populations  When we want to compare the variances of two samples, we do this by conducting a test of the ratio of the variances. If the ratio is equal to , then the variances are equal; if not, then they are unequal.  The sample variances is a good estimate of the population variance. Not surprisingly, the ratio of the two sample variances, , drawn from their respective populations is a good estimate for the ratio of the two population variances, . The sampling distribution of is -distributed with and degrees of freedom if we have independent samples from two normal populations. Since we are comparing two variances, the test statistic is:   The formula for this test statistic is easy to compute by hand, nevertheless, we can also use Excel to do the work if we have raw data (not summary statistics). After stating the two hypotheses, we will go to the Data Analysis tool and choose F-Test Two-Sample for Variances to complete the test.      "
 },
 {
   "id": "sec-hyp-test-two-variances-5",
@@ -2445,6 +2445,15 @@ var ptx_lunr_docs = [
   "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-7",
   "type": "Exercise",
   "number": "11.4.3",
+  "title": "",
+  "body": ""
+},
+{
+  "id": "sec-hyp-test-two-variances-8",
+  "level": "2",
+  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-8",
+  "type": "Exercise",
+  "number": "11.4.4",
   "title": "",
   "body": ""
 },
