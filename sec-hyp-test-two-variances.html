@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>QUAN 2010 Correlation Analysis</title>
+<title>QUAN 2010 Comparing Variances from Two Populations</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -137,7 +137,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="ch-Hypothesis-Variance.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-Hypothesis-Variance.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ch-Hypothesis-Testing-Two-Populations.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-F-dist.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-Hypothesis-Variance.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ch-Hypothesis-Testing-Two-Populations.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -286,7 +286,12 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-Hypothesis-Variance.html" class="internal"><span class="codenumber">11</span> <span class="title">Hypothesis Tests for the Population Variance</span></a></div>
-<ul class="structural toc-item-list contains-active"><li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-correlation.html" class="internal"><span class="codenumber">11.1</span> <span class="title">Correlation Analysis</span></a></div></li></ul>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-chi-squared.html" class="internal"><span class="codenumber">11.1</span> <span class="title">The Chi-square Distribution</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hyp-test-single-variance.html" class="internal"><span class="codenumber">11.2</span> <span class="title">Hypothesis Test for a Single <span class="process-math">\(\sigma^2\)</span></span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-F-dist.html" class="internal"><span class="codenumber">11.3</span> <span class="title">The <span class="process-math">\(F\)</span>-Distribution</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-hyp-test-two-variances.html" class="internal"><span class="codenumber">11.4</span> <span class="title">Comparing Variances from Two Populations</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-Hypothesis-Testing-Two-Populations.html" class="internal"><span class="codenumber">12</span> <span class="title">Hypothesis Tests Comparing Two Populations</span></a></div>
@@ -308,46 +313,28 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-correlation"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">11.1</span><span class="space"> </span><span class="title">Correlation Analysis</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-hyp-test-two-variances"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">11.4</span><span class="space"> </span><span class="title">Comparing Variances from Two Populations</span>
 </h2>
-<div class="para" id="sec-correlation-2">Recall that a scatterplot is a graph used to explore a relationship between two variables.  The two variables can be defined further as the independent and dependent variables.</div>
-<figure class="figure figure-like" id="figure-geogebra-scatter"><iframe src="https://www.geogebra.org/material/iframe/id/CzmFv2EP/width/800/height/444/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="geogebra-scatter" width="600" height="333"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">11.1.1<span class="period">.</span></span><span class="space"> </span>Scatter Plot (Made in GeoGebra by Mark Beckwith)</figcaption></figure><article class="definition definition-like" id="sec-correlation-4"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">11.1.2</span><span class="period">.</span>
-</h3>
-<div class="para logical" id="sec-correlation-4-1-1"><ul class="disc">
-<li id="sec-correlation-4-1-1-1-1"><div class="para" id="sec-correlation-4-1-1-1-1-1">An <em class="emphasis">independent variable</em> explains the variation in the dependent variable</div></li>
-<li id="sec-correlation-4-1-1-1-2"><div class="para" id="sec-correlation-4-1-1-1-2-1">A <em class="emphasis">dependent variable</em> is explained by one or more independent variables</div></li>
-</ul></div></article><div class="para" id="sec-correlation-5-1">Correlation analysis provides a way to measure the strength and direction of the linear relationship between the two variables (the aforementioned independent and dependent variables).  This is done by computing the <em class="emphasis">sample correlation coefficient</em>, <span class="process-math">\(r\text{.}\)</span>
-</div> <div class="para logical" id="sec-correlation-5-2">
-<div class="para">The range of the correlation coefficient is <span class="process-math">\(-1\text{ to } 1\text{.}\)</span>
-</div>
-<ul class="disc">
-<li id="sec-correlation-5-2-2-1"><div class="para" id="sec-correlation-5-2-2-1-1">A <em class="emphasis">positive</em> value indicates that as <span class="process-math">\(x\)</span> increases, <span class="process-math">\(y\)</span> also increases.</div></li>
-<li id="sec-correlation-5-2-2-2"><div class="para" id="sec-correlation-5-2-2-2-1">A <em class="emphasis">negative</em> value indicates that as <span class="process-math">\(x\)</span> increases, <span class="process-math">\(y\)</span> decreases.</div></li>
-</ul>
-</div> <div class="para" id="sec-correlation-5-3">Recall that we used the Excel formula, CORREL, to calculate this number in a previous chapter.  Now we improve on that skill by learning how to use a hypothesis test to assess the strength of the linear relationship described by <span class="process-math">\(r\text{.}\)</span>
-</div> <div class="para" id="sec-correlation-5-4">The population correlation coefficient, <span class="process-math">\(\rho\text{,}\)</span> refers to the correlation between all values of two variables in a population.  A value of <span class="process-math">\(\rho=0\)</span> means that there is no linear relationship between <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span>  We don’t know the value of <span class="process-math">\(\rho\)</span> so we use the sample correlation coefficient to test whether we have enough evidence from the sample to conclude that there is a linear relationship between the variables in the population.  The two hypotheses for this hypothesis test are:</div> <div class="para logical" id="sec-correlation-5-5"><div class="displaymath process-math" id="sec-correlation-5-5-1">
-\begin{gather*}
-H_0 : \rho\leq 0 \\
-H_1 : \rho&gt;0 
-\end{gather*}
-</div></div> <div class="para" id="sec-correlation-5-6">The test statistic uses the Student’s <span class="process-math">\(t\)</span>-distribution with formula:</div> <div class="para logical" id="sec-correlation-5-7"><div class="displaymath process-math">
+<div class="para" id="sec-hyp-test-two-variances-2">When we want to compare the variances of two samples, we do this by conducting a test of the ratio of the variances.  If the ratio is equal to <span class="process-math">\(1\text{,}\)</span> then the variances are equal; if not, then they are unequal.</div>
+<div class="para logical" id="sec-hyp-test-two-variances-3">
+<div class="para">The sample variances is a good estimate of the population variance.  Not surprisingly, the ratio of the two sample variances, <span class="process-math">\(\frac{s_1^2}{s_2^2}\text{,}\)</span> drawn from their respective populations is a good estimate for the ratio of the two population variances, <span class="process-math">\(\frac{\sigma_1^2}{\sigma_2^2}\text{.}\)</span>  The sampling distribution of <span class="process-math">\(\frac{s_1^2}{s_2^2}\)</span> is <span class="process-math">\(F\)</span>-distributed with <span class="process-math">\(D_1=n_1-1\)</span> and <span class="process-math">\(D_2=n_2-1\)</span> degrees of freedom if we have independent samples from two normal populations.  Since we are comparing two variances, the test statistic is:</div>
+<div class="displaymath process-math">
 \begin{equation*}
-t = \frac{r}{\sqrt{\frac{1-r^2}{n-2}}}
+F=\frac{s_1^2}{s_2^2}.
 \end{equation*}
-</div></div> <div class="para" id="sec-correlation-5-8">Degrees of freedom here are.... <span class="process-math">\(df=..... \)</span>
 </div>
-<details id="housingmarket" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">11.1.3</span><span class="period">.</span>
-</h3></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="housingmarket-1"><div class="para" id="housingmarket-1-1">The housing market in the United States is generally affected by economic conditions and interest rates, but also by the time of the year.  More people usually buy and sell homes in the spring summer months.  We want to see if there is a strong correlation between new home listings and temperature.  The Excel file below includes the number of new housing listings in Colorado, as well as temperature and precipitation at Denver International Airport (DEN). <a class="external" href="external/sheets/Colorado%20Housing%20Inventory%20and%20Weather%20Data.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/Colorado Housing Inventory and Weather Data.xlsx</code></a>
-</div></div>
-<article class="task exercise-like" id="housingmarket-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="housingmarket-2-1-1">Determine the sample correlation coefficient between the number of new listings and the precipitation.</div></article><article class="task exercise-like" id="housingmarket-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="housingmarket-3-1-1">Determine the sample correlation coefficient between the number of new listings and the maximum temperature.</div></article><article class="task exercise-like" id="housingmarket-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="housingmarket-4-1-1">Using <span class="process-math">\(\alpha=0.02\text{,}\)</span> test if the population correlation coefficient between the number of new listings and the maximum temperature is different from zero.  What conclusions can you draw?</div></article></article></details></section></div>
+</div>
+<div class="para" id="sec-hyp-test-two-variances-4">The formula for this test statistic is easy to compute by hand, nevertheless, we can also use Excel to do the work if we have raw data (not summary statistics).  After stating the two hypotheses, we will go to the <em class="emphasis">Data Analysis</em> tool and choose “F-Test Two-Sample for Variances” to complete the test.</div>
+<details id="sec-hyp-test-two-variances-5" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">11.4.1</span><span class="period">.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=123043&amp;resizer=true"></iframe></div></article></details><details id="sec-hyp-test-two-variances-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">11.4.2</span><span class="period">.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=414124&amp;resizer=true"></iframe></div></article></details><details id="sec-hyp-test-two-variances-7" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">11.4.3</span><span class="period">.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div style="width:100%;"><iframe style="object-fit: contain; width: 100%;" src="https://www.myopenmath.com/embedq.php?id=571234&amp;resizer=true"></iframe></div></article></details></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="ch-Hypothesis-Variance.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-Hypothesis-Testing-Two-Populations.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec-F-dist.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-Hypothesis-Testing-Two-Populations.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
