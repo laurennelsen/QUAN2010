@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-chi-squared" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>The Chi-square Distribution</title>
+
+  <figure xml:id="figure-geogebra-chi-square">
+    <caption>Chi-square Distribution (Made in GeoGebra by Chris Rosenthal)</caption>
+    <interactive xml:id="geogebra-chi-square" geogebra="UJZMCJXA" aspect="9:5" />
+  </figure>
+
+  <p>
+    !!!!!!!!!!Make bullets below multiple choice!!!!!!!!!
+  </p>
+
+  <definition xml:id="def-chi-square">
+    <statement>
+      <p>
+        The chi-square (<q>ki square</q>) distribution, <m>\chi^2</m>, is similar to the Student's <m>t</m>-distribution in that it is a family of curves based on the number of degrees of freedom.  The other key properties of the Chi-square distribution:
+      </p>
+      <p>
+        <ul>
+          <li>
+            <p>
+              The <m>\chi^2</m> distribution curves are not symmetric, but instead are ____________
+            </p>
+          </li>
+          <li>
+            <p>
+              As the degrees of freedom increases, the skewness ___________
+            </p>
+          </li>
+          <li>
+            <p>
+              The area under the curve is equal to __________
+            </p>
+          </li>
+          <li>
+            <p>
+              All <m>\chi^2</m> values are greater than or equal to ____________
+            </p>
+          </li>
+        </ul>
+      </p>
+    </statement>
+  </definition>
+
+
+  <p>
+    We can use Table 8 in Appendix A of your book to find critical <m>\chi^2</m> values.  The notation for these is <m>\chi^2_{\alpha,df}</m>.
+    <ol>
+      <li>
+        <p>
+          Find the desired significance level, <m>\alpha</m>, across the <em>top</em> of the table.
+        </p>
+      </li>
+      <li>
+        <p>
+          Locate <m>df</m> along the <em>left</em> of the table.
+        </p>
+      </li>
+    </ol>
+  </p>
+
+  <p>
+    We can also find critical <m>\chi^2</m>-values using the Excel command
+    <me>CHISQ.INV.RT</me>
+  </p>
+
+  <exercise>
+    <introduction>
+      <p>
+    Find the following critical <m>\chi^2</m>-values:
+  </p>
+</introduction>
+<task>
+  <statement>
+    <p>
+      <m>\chi^2_{0.10,5}</m>
+    </p>
+  </statement>
+  <answer>
+    <p>
+      <m>\approx 9.236</m>
+    </p>
+  </answer>
+</task>
+<task>
+  <statement>
+    <p>
+      <m>\chi^2_{0.975,24}</m>
+    </p>
+  </statement>
+  <answer>
+    <p>
+      <m>\approx 12.401</m>
+    </p>
+  </answer>
+</task>
+<task>
+  <statement>
+    <p>
+      <m>\chi^2_{0.01,19}</m>
+    </p>
+  </statement>
+  <answer>
+    <p>
+      <m>\approx 36.191</m>
+    </p>
+  </answer>
+</task>
+<task>
+  <statement>
+    <p>
+      <m>\chi^2_{0.90,10}</m>
+    </p>
+  </statement>
+  <answer>
+    <p>
+      <m>\approx 4.865</m>
+    </p>
+  </answer>
+</task>
+  </exercise>
+
+</section>

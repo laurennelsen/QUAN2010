@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-hyp-test-two-variances" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Comparing Variances from Two Populations</title>
+
+<p>
+    When we want to compare the variances of two samples, we do this by conducting a test of the ratio of the variances.  If the ratio is equal to <m>1</m>, then the variances are equal; if not, then they are unequal.
+</p>
+
+<p>
+    The sample variances is a good estimate of the population variance.  Not surprisingly, the ratio of the two sample variances, <m>\frac{s_1^2}{s_2^2}</m>, drawn from their respective populations is a good estimate for the ratio of the two population variances, <m>\frac{\sigma_1^2}{\sigma_2^2}</m>.  The sampling distribution of <m>\frac{s_1^2}{s_2^2}</m> is <m>F</m>-distributed with <m>D_1=n_1-1</m> and <m>D_2=n_2-1</m> degrees of freedom if we have independent samples from two normal populations.  Since we are comparing two variances, the test statistic is:
+    <me>F=\frac{s_1^2}{s_2^2}.</me>
+</p>
+
+
+<p>
+    The formula for this test statistic is easy to compute by hand, nevertheless, we can also use Excel to do the work if we have raw data (not summary statistics).  After stating the two hypotheses, we will go to the <em>Data Analysis</em> tool and choose <q>F-Test Two-Sample for Variances</q> to complete the test.
+</p>
+
+
+<exercise>
+    <myopenmath problem="123043" />
+  </exercise>
+
+
+<exercise>
+    <myopenmath problem="414124" />
+  </exercise>
+
+
+
+  <exercise>
+    <myopenmath problem="571234" />
+  </exercise>
+
+  
+
+
+
+</section>

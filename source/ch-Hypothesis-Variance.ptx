@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-Hypothesis-Variance" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Hypothesis Tests for the Population Variance</title>
+
+<introduction>
+    <p>
+        Thus far, our study of statistical inference has focused on the mean and proportion parameters. In this chapter, we will focus on another parameter that is important in the business world: the population variance, <m>\sigma^2</m>. The variance parameter comes up in many business scenarios where keeping variability low is the goal. For example, in pharmaceuticals, consistency in maintaining the quality of the products produced is extremely important.
+        </p>
+        <p>
+Before we dive into hypothesis testing, we need to introduce two new distributions: the chi-square (<m>\chi^2</m>) and <m>F</m>-distributions.
+    </p>
+</introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-chi-squared.ptx" />
+  <xi:include href="sec-hyp-test-single-variance.ptx" />
+  <xi:include href="sec-F-dist.ptx" />
+  <xi:include href="sec-hyp-test-two-variances.ptx" />
+
+</chapter>

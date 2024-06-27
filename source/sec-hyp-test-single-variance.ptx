@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-hyp-test-single-variance" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Hypothesis Test for a Single <m>\sigma^2</m></title>
+
+<p>
+ We will still follow the same hypothesis testing procedures from <xref ref="ch-Hypothesis-Testing-Single-Pop"/>, but take care to use the proper probability distribution, the <m>\chi^2</m>, and the correct formula for the test statistic.  Notice that it involves the sample variance, <m>s^2</m>, a good estimate for <m>\sigma^2</m>.  The test statistic for hypothesis tests of this type are computed with the formula:
+ <me>\boxed{ \chi^2 = \frac{(n-1)s^2}{\sigma^2} }</me>
+
+</p>
+
+<p>
+  Keep in mind that often variability is described by the standard deviation rather than variance.  We can still complete a hypothesis test for <m>\sigma^2</m> by simply squaring the given standard deviation values.
+</p>
+
+<p>
+  In the next example, we perform a single population hypothesis test for <m>\sigma^2</m> using the traditional method of hypothesis testing.  Recall that this method requires the identification of critical value(s), <m>\chi^2_{\alph}</m>, which we can find using a table or using the below Excel commands:
+  <me>CHISQ.INV(\text{left tail area, degrees of freedom}),\;\;\; CHISQ.INV.RT(\text{right tail area, degrees of freedom})</me>
+</p>
+
+
+<exercise>
+  <statement>  
+    <p>
+    (Similar to Donnelly 13.7)
+  </p>
+  <p>
+    The volatility of world crude oil prices is important because of its impact on global economic stability.  One measure of volatility is the standard deviation.  The data table in the Excel file below lists the monthly price of crude oil from January 1974 to March 2024.
+  </p>
+  <p>
+    The standard deviation of crude oil prices between January 1974 and December 2021 was about <m>\$ 27.4</m> a barrel
+  </p>
+      <p>
+        Assuming <m>\alpha=0.10</m>, check to see if the standard deviation of crude oil prices between January 2022 and March 2024 has decreased from what it was prior to this time period.  (Use the traditional method of hypothesis testing.)
+      </p>
+      <p>
+        <url href="external/sheets/OilPrices.xlsx" />
+
+      </p>
+    </statement>
+</exercise>
+
+
+<p>
+  In our next example, we will use the p-value method of hypothesis testing.  Once again, the tables for the Chi-square distribution are limited in the precision they can provide for our p-values.  Therefore, we will rely on Excel to compute the p-values using the following formulas:
+  <me>CHISQ.DIST(x,df,\text{cumulative}),\;\;\; CHISQ.DIST.RT(x,df)</me>
+  where
+  <tabular>
+    <row>
+      <cell><m>x</m></cell>
+      <cell><m>=</m></cell>
+      <cell>the test statistic, <m>\chi^2</m></cell>
+    </row>
+    <row>
+      <cell><m>df</m></cell>
+      <cell><m>=</m></cell>
+      <cell>the degrees of freedom</cell>
+    </row>
+    <row>
+      <cell>cumulative</cell>
+      <cell><m>=</m></cell>
+      <cell>TRUE (since we want the accumulated area left of our test statistic)</cell>
+    </row>
+  </tabular>
+</p>
+
+
+<exercise>
+  <statement>
+    <p>
+      (Donnelly 13.29)
+    </p>
+    <p>
+      As smartphones have become more sophisticated, their data usage has increased and caused capacity issues with service providers.  High variability in data usage among customers can result in slow connections with the cellphone network.  Suppose a cellphone network would like to test if the standard deviation of monthly data usage for its customers has increased beyond 400 megabytes (MB).  A random sample of 25 customers was found to have a standard deviation of 460 MB.  Using <m>\alpha=0.05</m>, perform a hypothesis test to determine if the standard deviation for the monthly data usage for the cellphone network has exceeded 400 MB.  Use the p-value method of hypothesis testing.
+    </p>
+  </statement>
+  <answer>
+    <p>
+      <m>n=25</m>
+    </p>
+    <p>
+      <m>s=460\Rightarrow s^2=211,600</m>
+    </p>
+    <p>
+      <m>\alpha=0.05</m>
+    </p>
+    <p>
+      <m>H_0:  \sigma^2\leq 160,000</m>
+    </p>
+    <p>
+      <m>H_1:  \sigma^2\gt 400^2 = 160,000\leftarrow \text{ right-tail test}</m>
+    </p>
+    <p>
+      <me>\chi^2=\frac{(25-1)(211,600)}{160,000}\approx 31.74</me>
+    </p>
+    <p>
+      <me>\text{p-value}\approx CHISQ.DIST.RT(31.74, 24)\approx 0.1336</me>
+    </p>
+    <p>
+      Since p-value <m>\gt \alpha</m>, we fail to reject <m>H_0</m>.
+    </p>
+    <p>
+      There is not enough evidence to conclude that the standard deviation for monthly data usage for the cell phone network has exceeded 400 MB.
+    </p>
+  </answer>
+</exercise>
+
+
+<exercise>
+  
+  <myopenmath problem="337353" />
+</exercise>
+
+
+</section>

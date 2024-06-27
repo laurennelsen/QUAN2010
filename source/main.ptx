@@ -35,6 +35,8 @@
 
     <xi:include href="./ch-Hypothesis-Testing-Single-Pop.ptx" />
 
+    <xi:include href="./ch-Hypothesis-Variance.ptx" />
+
     <xi:include href="./ch-Hypothesis-Testing-Two-Populations.ptx" />
 
 

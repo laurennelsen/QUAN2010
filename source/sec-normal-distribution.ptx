@@ -383,6 +383,15 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
               </task>
           </exercise>
 
+
+          <activity>
+            <p>
+                We're going to do a matching activity in class to practice working with these formulas to calculate probabilities for normal distributions.  (The next few exercises include online versions of this activity.)
+            </p>
+          </activity>
+
+
+
   <exercise label="matching1">
     <title>Normal Distribution Matching Problem</title>
     <statement>
