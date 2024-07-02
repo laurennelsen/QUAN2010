@@ -66,6 +66,42 @@
 </p>
 
 
+<exercise>
+    <statement>
+        <p>
+            Match each situation with the correct critical value(s).  (I recommend drawing a picture of the rejection region to help with this.)
+        </p>
+    </statement>
+    <matches>
+
+        <match>
+            <premise>
+                <p>
+                    A left-tailed test with <m>\alpha=0.01</m>
+                </p>
+            </premise>
+            <response> 
+                <p>
+                <m>NORM.S.INV(0.01)\approx </m>
+            </p> 
+        </response>
+        </match>
+
+        <match>
+            <premise>
+                <p>
+                    A right-tailed test with <m>\alpha=0.10</m></p>
+                </premise>
+                <response> 
+                    <p>
+                        <m>NORM.S.INV(0.9)\approx </m></p> 
+                    </response>
+        </match>
+        
+    </matches>
+</exercise>
+
+
 <subsection xml:id="subsec-logic-hyp-testing">
     <title>The Logic of Hypothesis Testing</title>
 
