@@ -345,30 +345,25 @@ eBookConfig.enable_chatcodes =  false;
 </ul></div></div></article></details><section class="subsection" id="subsec-logic-hyp-testing"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">10.2.1</span><span class="space"> </span><span class="title">The Logic of Hypothesis Testing</span>
 </h3>
-<div class="para" id="subsec-logic-hyp-testing-2">The hypothesis test begins with the assumption that the null hypothesis, <span class="process-math">\(H_0\text{,}\)</span> is true.  The goal of the process is to determine if there is enough evidence provided by the sample to infer that the alternative hypothesis, <span class="process-math">\(H_1\text{,}\)</span> might be true instead.</div>
-<div class="para logical" id="subsec-logic-hyp-testing-3">
+<section class="introduction" id="subsec-logic-hyp-testing-2"><div class="para" id="subsec-logic-hyp-testing-2-1">The hypothesis test begins with the assumption that the null hypothesis, <span class="process-math">\(H_0\text{,}\)</span> is true.  The goal of the process is to determine if there is enough evidence provided by the sample to infer that the alternative hypothesis, <span class="process-math">\(H_1\text{,}\)</span> might be true instead.</div> <div class="para logical" id="subsec-logic-hyp-testing-2-2">
 <div class="para">The null hypothesis can never be accepted.  The most we can say is that we do not have enough evidence to reject the null.  The only two options are to:</div>
 <ol class="decimal">
-<li id="subsec-logic-hyp-testing-3-1-1"><div class="para" id="subsec-logic-hyp-testing-3-1-1-1">reject the null hypothesis;</div></li>
-<li id="subsec-logic-hyp-testing-3-1-2"><div class="para" id="subsec-logic-hyp-testing-3-1-2-1">fail to reject the null hypothesis.</div></li>
+<li id="subsec-logic-hyp-testing-2-2-1-1"><div class="para" id="subsec-logic-hyp-testing-2-2-1-1-1">reject the null hypothesis;</div></li>
+<li id="subsec-logic-hyp-testing-2-2-1-2"><div class="para" id="subsec-logic-hyp-testing-2-2-1-2-1">fail to reject the null hypothesis.</div></li>
 </ol>
-</div>
-<div class="para" id="subsec-logic-hyp-testing-4">So how is the decision made to “reject” or “fail to reject” within each of our two hypothesis testing methods?</div>
-<div class="para logical" id="subsec-logic-hyp-testing-5"><ul class="disc">
-<li id="subsec-logic-hyp-testing-5-1-1">
-<div class="para" id="subsec-logic-hyp-testing-5-1-1-1"><em class="emphasis">Traditional (Critical Value) Method:</em></div>
-<div class="para" id="subsec-logic-hyp-testing-5-1-1-2">In the traditional method, the decision is made by comparing the test statistic to the critical value(s).  When the test statistic falls in the rejection region, the decision is “reject the null hypothesis”.  When the test statistic does not fall in the rejection region, the decision is “fail to reject the null hypothesis”.</div>
+</div> <div class="para" id="subsec-logic-hyp-testing-2-3">So how is the decision made to “reject” or “fail to reject” within each of our two hypothesis testing methods?</div> <div class="para logical" id="subsec-logic-hyp-testing-2-4"><ul class="disc">
+<li id="subsec-logic-hyp-testing-2-4-1-1">
+<div class="para" id="subsec-logic-hyp-testing-2-4-1-1-1"><em class="emphasis">Traditional (Critical Value) Method:</em></div>
+<div class="para" id="subsec-logic-hyp-testing-2-4-1-1-2">In the traditional method, the decision is made by comparing the test statistic to the critical value(s).  When the test statistic falls in the rejection region, the decision is “reject the null hypothesis”.  When the test statistic does not fall in the rejection region, the decision is “fail to reject the null hypothesis”.</div>
 </li>
-<li id="subsec-logic-hyp-testing-5-1-2">
-<div class="para" id="subsec-logic-hyp-testing-5-1-2-1"><em class="emphasis">p-value Method:</em></div>
-<div class="para" id="subsec-logic-hyp-testing-5-1-2-2">In the p-value method, the decision is made by comparing the p-value to the significance level.  When the p-value is smaller than the significance level, the decision is “reject the null hypothesis”.  When the p-value is greater than or equal to the significance level, the decision is “fail to reject the null hypothesis”.</div>
+<li id="subsec-logic-hyp-testing-2-4-1-2">
+<div class="para" id="subsec-logic-hyp-testing-2-4-1-2-1"><em class="emphasis">p-value Method:</em></div>
+<div class="para" id="subsec-logic-hyp-testing-2-4-1-2-2">In the p-value method, the decision is made by comparing the p-value to the significance level.  When the p-value is smaller than the significance level, the decision is “reject the null hypothesis”.  When the p-value is greater than or equal to the significance level, the decision is “fail to reject the null hypothesis”.</div>
 </li>
-</ul></div>
-<div class="para" id="subsec-logic-hyp-testing-6">Now we</div></section><section class="subsection" id="subsec-approaches-hyp-testing"><h3 class="heading hide-type">
+</ul></div></section><div class="para" id="subsec-logic-hyp-testing-3">Now we</div></section><section class="subsection" id="subsec-approaches-hyp-testing"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">10.2.2</span><span class="space"> </span><span class="title">Two approaches to Hypothesis Testing</span>
 </h3>
-<div class="para" id="subsec-approaches-hyp-testing-2">Now we are finally ready to describe in depth two hypothesis testing procedures and work through some examples.  First, let’s summarize the steps for the traditional method (aka the critical value method).</div>
-<article class="definition definition-like" id="def-critical-value-method"><h4 class="heading">
+<section class="introduction" id="subsec-approaches-hyp-testing-2"><div class="para" id="subsec-approaches-hyp-testing-2-1">Now we are finally ready to describe in depth two hypothesis testing procedures and work through some examples.  First, let’s summarize the steps for the traditional method (aka the critical value method).</div></section><article class="definition definition-like" id="def-critical-value-method"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">10.2.4</span><span class="period">.</span>
 </h4>
 <div class="para" id="def-critical-value-method-1-1"><em class="emphasis">The Traditional (Critical Value) Method of Hypothesis Testing:</em></div> <div class="para logical" id="def-critical-value-method-1-2"><ol class="decimal">
