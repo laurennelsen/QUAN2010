@@ -114,15 +114,10 @@
         </statement>
     </definition>
 
-    <exercise>
+  <!--  <exercise>
         <title>Sample and Population</title>
-        <introduction>
-          <p>
-            
-          </p>
-        </introduction>
         <myopenmath problem="6912" />
-      </exercise>
+      </exercise>-->
       
 
 
@@ -179,27 +174,17 @@
     </exercise>
 
 
-    <exercise>
+<!--    <exercise>
         <title>Parameter vs. Statistic</title>
-        <introduction>
-          <p>
-            
-          </p>
-        </introduction>
         <myopenmath problem="6910" />
-      </exercise>
+      </exercise>-->
     
     
     
-      <exercise>
+ <!--     <exercise>
         <title>Parameter vs. Statistic</title>
-        <introduction>
-          <p>
-            
-          </p>
-        </introduction>
         <myopenmath problem="33101" />
-      </exercise>
+      </exercise>-->
 
 
     <definition xml:id="def-random-sample">

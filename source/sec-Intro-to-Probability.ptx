@@ -249,14 +249,9 @@
 
 
 
-    <exercise>
-        <introduction>
-          <p>
-            
-          </p>
-        </introduction>
+<!--    <exercise>
         <myopenmath problem="7096" />
-      </exercise>
+      </exercise>-->
 
     
 <statement>
@@ -574,14 +569,9 @@
 </exercise>
 
 
-<exercise>
-    <introduction>
-      <p>
-        
-      </p>
-    </introduction>
+<!--<exercise>
     <myopenmath problem="7142" />
-  </exercise>
+  </exercise>-->
 
 
 <definition xml:id="def-condition-probability">
