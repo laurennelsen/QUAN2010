@@ -3,6 +3,9 @@
 <section xml:id="sec-Confidence-Interval-for-Mean-Sigma-Known" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Confidence Intervals for the Mean (<m>\sigma</m> known)</title>
 
+
+  <introduction>
+
 <definition xml:id="def-confidence-mean">
     <statement>
         <p>
@@ -52,6 +55,9 @@
 
     </statement>
 </definition>
+
+
+</introduction>
 
 
 

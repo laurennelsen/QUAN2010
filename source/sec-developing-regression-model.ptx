@@ -3,9 +3,11 @@
 <section xml:id="sec-developing-regression-model" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Developing a Regression Model</title>
 
-  <p> 
+  <introduction>
+    <p>
     Now we are going to learn techniques to create models that fit our data.  Regression analysis is the modeling procedure that we will study.  We will discuss how to perform the calculations in the formulas involved in creating and assessing regression models.  However, in most cases we will rely on the <q>Regression</q> tool in the Data Analysis tab of Excel.
 </p>
+</introduction>
 
 <figure>
     <caption>Regression Example powered by Desmos</caption>

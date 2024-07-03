@@ -3,10 +3,14 @@
 <section xml:id="sec-Desc-Stats-Discrete" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Descriptive Statistics for a Discrete Probability Distribution</title>
 
+  <introduction>
 
   <p>
     ....insert stuff about things we might want to ask about a distribution....  what average value would we expect rolling a die or playing a gambling game?  how spread out are the values...?
   </p>
+
+
+</introduction>
 
   <definition>
   <p> 
@@ -77,6 +81,8 @@
 
 </p>
   <table>
+    <title>Calculation of Standard Deviation</title>
+    
     <caption></caption>
     <tabular>
     <row header="yes">

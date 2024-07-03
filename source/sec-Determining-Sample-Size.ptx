@@ -3,6 +3,7 @@
 <section xml:id="sec-Determining-Sample-Size" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Determining Sample Size</title>
 
+  <introduction>
   <p>
     Let's say we want to construct a <m>99\%</m> confidence interval to estimate the average GPA of students at UCCS.  However, we don't want the margin of error to be too big, and we want to know how many students to survey to get the margin of error that we want.
   </p>
@@ -50,6 +51,10 @@
     </ul>
     <em>If necessary, round the answer UP to obtain a whole number.  If you round down, then you won't achieve the desired margin of error.</em>
   </p>
+
+
+</introduction>
+
 
   <exercise>
     <statement>

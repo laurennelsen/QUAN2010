@@ -3,7 +3,11 @@
 <section xml:id="sec-measures-central-tendency" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Measures of Central Tendency</title>
 
-  <p> In statistics, <q>average</q> or <q>typical</q> values are known as <em>measures of central tendency</em>. </p>
+  <introduction>
+    <p> In statistics, <q>average</q> or <q>typical</q> values are known as <em>measures of central tendency</em>. </p>
+</introduction>
+
+  
 
   <definition xml:id="def-mean">
     <statement>

@@ -3,7 +3,9 @@
 <section xml:id="sec-Random-Variables" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Random Variables</title>
 
+  <introduction>
   <p> Say some stuff about random variables in general.... </p>
+</introduction>
 
 
   <definition xml:id="def-RandomVariables">

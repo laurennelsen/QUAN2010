@@ -3,6 +3,8 @@
 <section xml:id="sec-Confidence-Interval-for-Proportion" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Confidence Intervals for Proportions</title>
 
+  <introduction>
+
 <p>
     We can also estimate the proportion of a population by constructing a confidence interval from a sample.  Recall that proportion data follow the binomial distribution, which can be approximated by the normal distribution under the conditions:
     <ul>
@@ -19,6 +21,9 @@
         where <m>p=</m> the probability of success and <m>n=</m> the sample size.
     </ul>
 </p>
+
+
+</introduction>
 
 <figure xml:id="figure-geogebra-binomial-normal">
     <caption>Binomial and Normal Distributions <m>z</m>-value (Made in GeoGebra by Steve Phelps)</caption>

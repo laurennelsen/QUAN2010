@@ -3,6 +3,8 @@
 <section xml:id="sec-hyp-test-single-variance" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Hypothesis Test for a Single <m>\sigma^2</m></title>
 
+  <introduction>
+
 <p>
  We will still follow the same hypothesis testing procedures from <xref ref="ch-Hypothesis-Testing-Single-Pop"/>, but take care to use the proper probability distribution, the <m>\chi^2</m>, and the correct formula for the test statistic.  Notice that it involves the sample variance, <m>s^2</m>, a good estimate for <m>\sigma^2</m>.  The test statistic for hypothesis tests of this type are computed with the formula:
  <me>\boxed{ \chi^2 = \frac{(n-1)s^2}{\sigma^2} }</me>
@@ -12,6 +14,9 @@
 <p>
   Keep in mind that often variability is described by the standard deviation rather than variance.  We can still complete a hypothesis test for <m>\sigma^2</m> by simply squaring the given standard deviation values.
 </p>
+
+
+</introduction>
 
 <p>
   In the next example, we perform a single population hypothesis test for <m>\sigma^2</m> using the traditional method of hypothesis testing.  Recall that this method requires the identification of critical value(s), <m>\chi^2_{\alph}</m>, which we can find using a table or using the below Excel commands:

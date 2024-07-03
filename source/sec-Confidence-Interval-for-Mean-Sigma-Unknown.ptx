@@ -3,10 +3,14 @@
 <section xml:id="sec-Confidence-Interval-for-Mean-Sigma-Unknown" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Confidence Intervals for the Mean (<m>\sigma</m> unknown)</title>
 
+  <introduction>
 
 <p>
   Up to this point we have assumed that the population standard deviation, <m>\sigma</m>, was known.  This is unrealistic -- since we are creating an interval to estimate the population mean, <m>\mu</m>, we likely don't know the population standard deviation either!  Hence we will estimate <m>\sigma</m> with the value of the sample standard deviation, <m>s</m>.  But this introduces another source of unreliability, especially in small samples.  To keep the confidence interval at the desired level, we make the intervals wider by replacing the critical values in our confidence interval formula, <m>z_{\alpha/2}</m>, with larger critical values, <m>t_{\alpha/2}</m>.
 </p>
+
+
+</introduction>
 
 <subsection xml:id="subsec-Students-t">
   <title>The Student's <m>t</m>-Distribution</title>

@@ -3,9 +3,14 @@
 <section xml:id="sec-mean-and-stdev" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Using the Mean and Standard Deviation Together</title>
 
+  <introduction>
+
 <p>
     There are a few important concepts that use the mean and standard deviation together to describe data sets.
 </p>
+
+
+</introduction>
 
 <definition xml:id="def-cv">
     <statement>

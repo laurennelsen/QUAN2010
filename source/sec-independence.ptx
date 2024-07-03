@@ -3,7 +3,7 @@
 <section xml:id="sec-independence" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Independent and Dependent Events</title>
 
-
+  <introduction>
 
 <definition xml:id="def-independent-events">
     <statement>
@@ -24,6 +24,9 @@
         </p>
     </statement>
 </definition>
+
+
+</introduction>
 
 
 <figure xml:id="figure-geogebra-independent">

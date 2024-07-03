@@ -2,7 +2,8 @@
 
 <section xml:id="sec-Diamonds" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Diamonds Modeling</title>
-
+<introduction>
+    
   <p> (Background on diamonds was provided in part by research done at https://www.brilliance.com/education/diamonds/depth-table) </p>
 
   <p>
@@ -21,6 +22,7 @@
     The depth of a diamond might also be called the “height”: it is the distance from the table to the culet (the pointed tip) of the diamond. Like with a diamond’s table, jewelers grade a diamond’s depth based on its depth percentage. Depth percentage is the diamond’s depth divided by the width of the diamond. This percentage dictates the overall proportions of the diamond, which in turn directly impact how light reflects off the facets in the stone.
   </p>
 
+</introduction>
   
 
   <exercise>

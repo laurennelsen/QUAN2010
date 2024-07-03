@@ -3,6 +3,8 @@
 <section xml:id="sec-two-means-dependent" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Two Dependent Samples</title>
 
+  <introduction>
+
 <definition xml:id="def-matched-pair">
     <statement>
         <p>
@@ -43,6 +45,7 @@
 Again, we rely on Excel to do the computations whenever we have raw data.  After stating the two hypotheses, go to the <em>Data Analysis</em> tool and choose <q><em>t-Test Paired Two-Sample for Means</em></q>.
 </p>
 
+</introduction>
 
 
 <exercise>

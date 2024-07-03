@@ -3,6 +3,8 @@
 <section xml:id="sec-Errors-in-Sampling" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Errors in Sampling</title>
 
+  <introduction>
+
 <definition xml:id="def-sampling-error">
   <statement>
     <p>
@@ -24,6 +26,8 @@
     </p>
   </statement>
 </definition>
+
+</introduction>
 
 
 <exercise>

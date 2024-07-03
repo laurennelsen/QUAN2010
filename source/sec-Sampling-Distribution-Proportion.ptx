@@ -4,9 +4,14 @@
   <title>The Sampling Distribution of the Proportion</title>
 
 
+<introduction>
+
   <p>
     So far, the focus in this chapter has been on the distribution of sample means.  However, sometimes we deal with business scenarios where we are counting observations in a sample and in this case the sample proportion (or percentage), <m>\overline{p}</m>, is the statistic that is relevant rather than the sample mean, <m>\overline{x}</m>.
   </p>
+
+
+</introduction>
 
 
 <activity>

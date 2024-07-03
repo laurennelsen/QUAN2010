@@ -3,9 +3,14 @@
 <section xml:id="sec-F-dist" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>The <m>F</m>-Distribution</title>
 
+  <introduction>
+
   <p>
     !!!!!!!!!!make bullets below multiple choice!!!!!!!!!!
   </p>
+
+
+</introduction>
 
 <definition xml:id="def-F-dist">
     <statement>

@@ -3,10 +3,12 @@
 <section xml:id="sec-using-regression" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Using Regression to Make a Prediction</title>
 
+  <introduction>
   <p> 
     We can use our regression model to make predictions based on given values of the independent variables -- just plug the given values into the respective independent variable of the regression model.  But how reliable is this prediction?  We only have sample data so the prediction isn't perfect.  Similar to what we did in a previous chapter, we will construct a confidence interval to aid in describing the accuracy of our predictions.
 
     </p>
+  </introduction>
 
     <p>
 

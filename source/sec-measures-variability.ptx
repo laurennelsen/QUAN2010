@@ -3,9 +3,13 @@
 <section xml:id="sec-measures-variability" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Measures of Variability</title>
 
+  <introduction>
+    
   <p>
     <em>Measures of variability</em> (or <em>dispersion</em>) describe the spread of a data set.  We will define the most common ones.
   </p>
+  
+</introduction>
 
 
   <definition xml:id="def-range">

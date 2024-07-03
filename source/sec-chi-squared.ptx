@@ -3,6 +3,9 @@
 <section xml:id="sec-chi-squared" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>The Chi-square Distribution</title>
 
+
+  <introduction>
+
   <figure xml:id="figure-geogebra-chi-square">
     <caption>Chi-square Distribution (Made in GeoGebra by Chris Rosenthal)</caption>
     <interactive xml:id="geogebra-chi-square" geogebra="UJZMCJXA" aspect="9:5" />
@@ -43,6 +46,9 @@
       </p>
     </statement>
   </definition>
+
+
+</introduction>
 
 
   <p>

@@ -572,7 +572,7 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
 
 
   <figure>
-    <caption>Images for Exercise ???</caption>
+    <caption>Images for <xref ref="ex-NormalImageMatching"/></caption>
     <sidebyside>
         <figure>
             <caption>(A)</caption>
@@ -629,7 +629,7 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
 </figure>
 
 
-<exercise label="matching4">
+<exercise xml:id="ex-NormalImageMatching">
     <title>Normal Distribution Matching Problem</title>
     <statement>
     <p>
@@ -642,20 +642,7 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
     <match>
         <premise>
         
-            <image width="50%" xml:id="poset1">
-              
-                <latex-image >
-                    \begin{tikzpicture}
-                    \begin{axis}[every axis plot post/.append style={ mark=none,samples=50,smooth},domain=50:220]
-                    
-                    \addplot {\gauss{135}{22}};
-                    
-                    \addplot [fill=cyan!30, draw=none, domain=120:180] {\gauss{135}{22}} \closedcycle; 
-                    \end{axis}
-                    \end{tikzpicture}
-                </latex-image>
-            
-              </image>
+            image
             
         </premise>
         <response>
@@ -809,9 +796,12 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
   <subsection xml:id="subsection-normal-inv">
     <title>Finding <m>Z</m> or <m>X</m> if we have information about a probability:</title>
 
+    <introduction>
     <p>
         What if we want to know the specific <m>X</m> that satisfies a given probability?  Then we can work backward using the tables (<url href="https://www.math.arizona.edu/~rsims/ma464/standardnormaltable.pdf">Standard Normal Table</url>) and use the <m>z</m>-score formula in reverse.  If the exact probability cannot be found in the table, then we can use the closest values.
     </p>
+
+</introduction>
 
     <p>
         The Excel formulas that apply to this situation are similar to the ones we saw earlier, replacing .DIST with .INV:

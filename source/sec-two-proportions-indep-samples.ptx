@@ -3,10 +3,11 @@
 <section xml:id="sec-two-proportions-indep-samples" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Two Proportions with Independent Samples</title>
 
-
+<introduction>
   <p>
     We are <em>finally</em> done discussing inference for differences between population means.  So now it's time to look at the difference between two population proportions.  There are many interesting business applications for this scenario.  For example, perhaps USAA would like to know if the proportion of young male drivers who have car accidents differs from the proportion of young female drivers who have car accidents.
   </p>
+</introduction>
 
   <p>
     The <em>sampling distribution for the difference in proportions</em> is <em>approximately normal</em> as long as we have relatively large (<m>n\geq 30</m>) sample sizes.  The mean of this sampling distribution is <m>p_1-p_2=\overline{p}_1-\overline{p}_2</m>.

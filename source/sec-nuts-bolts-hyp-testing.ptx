@@ -105,9 +105,11 @@
 <subsection xml:id="subsec-logic-hyp-testing">
     <title>The Logic of Hypothesis Testing</title>
 
+    <introduction>
     <p>
         The hypothesis test begins with the assumption that the null hypothesis, <m>H_0</m>, is true.  The goal of the process is to determine if there is enough evidence provided by the sample to infer that the alternative hypothesis, <m>H_1</m>, might be true instead.
     </p>
+
     <p>
         The null hypothesis can never be accepted.  The most we can say is that we do not have enough evidence to reject the null.  The only two options are to:
         <ol>
@@ -154,6 +156,7 @@
 
     </p>
 
+</introduction>
 
 
 <p>
@@ -165,9 +168,11 @@
 <subsection xml:id="subsec-approaches-hyp-testing">
     <title>Two approaches to Hypothesis Testing</title>
     
+    <introduction>
 <p>
     Now we are finally ready to describe in depth two hypothesis testing procedures and work through some examples.  First, let's summarize the steps for the traditional method (aka the critical value method).
 </p>
+</introduction>
 
 
 <definition xml:id="def-critical-value-method">

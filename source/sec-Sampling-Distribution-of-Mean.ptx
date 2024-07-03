@@ -3,10 +3,13 @@
 <section xml:id="sec-Sampling-Distribution-of-Mean" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Sampling Distribution of the Mean</title>
 
-
+<introduction>
+  
   <p>
     In addition to knowing how individual data values vary about the mean for a population, statisticians are interested in knowing how the means of samples of the same size taken from the same population vary about the population mean.  (i.e., how do groups of data compare to the overall data?)  This leads to arguably the most important topic in all of statistics.
   </p>
+
+</introduction>
 
   <example>
 

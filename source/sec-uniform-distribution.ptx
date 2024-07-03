@@ -3,6 +3,8 @@
 <section xml:id="sec-uniform-distribution" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>The Uniform Distribution</title>
 
+  <introduction>
+
   <definition>
 
     <p>
@@ -24,9 +26,9 @@
 
     <p>
         Uniform Distribution:
-        <figure xml:id="figure-geogebra-unifdist">
+        <figure xml:id="figure-geogebra-unifdist1">
           <caption>Uniform Distribution (Made in GeoGebra by David Ramsay)</caption>
-          <interactive xml:id="geogebra-unifdist" geogebra="v2EnMNF9" aspect="9:5" />
+          <interactive xml:id="geogebra-unifdist1" geogebra="v2EnMNF9" aspect="9:5" />
         </figure>
       </p>
 
@@ -40,6 +42,9 @@
         </p>
 
     </definition>
+
+
+  </introduction>
 
 
     <p>

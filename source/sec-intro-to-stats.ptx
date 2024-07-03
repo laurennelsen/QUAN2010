@@ -3,6 +3,7 @@
 <section xml:id="sec-intro-to-stats" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Introduction to Statistics</title>
 
+  <introduction>
  
   <question>
     <p>
@@ -26,6 +27,9 @@
         </p>
     </answer>
   </question>
+
+
+</introduction>
 
 
   <subsection xml:id="subsec-branches">

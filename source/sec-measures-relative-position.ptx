@@ -3,9 +3,12 @@
 <section xml:id="sec-measures-relative-position" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Measures of Relative Position</title>
 
+  <introduction>
 <p>
     Measures of relative position compare the position of one value in relation to other values in the data set.
 </p>
+
+</introduction>
 
 
 <definition xml:id="def-percentiles">

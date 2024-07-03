@@ -3,6 +3,8 @@
 <section xml:id="sec-exponential-distribution" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>The Exponential Distribution</title>
 
+<introduction>
+
   <definition>
 
     <p>
@@ -29,6 +31,9 @@
     </p>
 
     </definition>
+
+
+</introduction>
 
     <p>
     The only parameter in the formula is <m>\lambda</m>.  Let's look at how it impacts the shape of the distribution.

@@ -3,6 +3,7 @@
 <section xml:id="sec-quantitative-data-displays" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Quantitative Data Displays</title>
 
+  <introduction>
 
 <definition xml:id="def-distributions">
     <statement>
@@ -32,6 +33,9 @@
         </p>
     </statement>
 </definition>
+
+
+</introduction>
 
 Let's discuss these definitions in the example below:
 

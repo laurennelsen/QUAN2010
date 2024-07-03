@@ -3,6 +3,9 @@
 <section xml:id="sec-Central-Limit-Theorem" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>The Central Limit Theorem</title>
 
+
+  <introduction>
+
 <theorem xml:id="thm-Central-Limit">
   <statement>
     <p>
@@ -14,6 +17,8 @@
   </statement>
 </theorem>
 
+
+</introduction>
 
 <p>
   There are basically three scenarios that come up that involve the use of the Central Limit Theorem:
