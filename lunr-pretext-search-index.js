@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Introduction to Statistics",
-  "body": " Introduction to Statistics    What is statistics?   the mathematical science that deals with the collection, analysis, and presentation of data, that is then used for inference and induction     What is data?   the values assigned to observations or measurements      Branches of Statistics:  The three main branches of statistics are:   descriptive    inferential    predictive        Goal of descriptive statistics : to summarize data quickly to get an overview of the information     predictive statistics analyzes past data to predict future values and aid in making well-informed decisions    During our study of inferential statistics , we will learn a variety of techniques that allow us to draw conclusions about a population based on a sample of data.      In our study of inferential statistics, we might want to ask a question such as the following:   What is the average number of hours per week worked by students at UCCCS?   How would you answer this question?     Definitions and Terms        population : set containing all the people or objects whose properties are to be described and analyzed by the data collector     sample : a subset or subgroup of the population       Sample and Population           parameter : number that describes a characteristic of a population     statistic : a number that describes a characteristic of a sample        A group of hotel owners in a large city decide to conduct a survey among citizens of the city to discover their opinions about casino gambling.   Describe the population   The population is the set containing all citizens of the city.   One of the hotel owners suggests obtaining a sample by surveying all the people at size of the largest nightclubs in the city on a Saturday night. The people surveyed will be asked to express their opinion on casino gambling. Does this seem like a good idea?   No, it does not! The people at the nightclub might not have the same attitude toward casino gambling as the population of all the city's citizens.   Parameter vs. Statistic     Parameter vs. Statistic       A random sample is a sample obtained in such a way that every element in the population has an equal chance of being selected for the sample.     Think again about the group of hotel owners from who are in a large city and are interested in how the city's citizen's feel about casino gambling. Which of the following would be the most appropriate way to select a random sample?     Randomly survey people who live in the oceanfront condominiums in the city.      Survey the first 200 people whose names appear in the city's telephone directory.      Randomly select neighborhoods of the city and then randomly survey people within the selected neighborhoods.       Regardless of the sampling technique used, the sample should exhibit characteristics typical of those possessed by the target population.  This type of sample is called a representative sample .     "
+  "body": " Introduction to Statistics    What is statistics?   the mathematical science that deals with the collection, analysis, and presentation of data, that is then used for inference and induction     What is data?   the values assigned to observations or measurements      Branches of Statistics:  The three main branches of statistics are:   descriptive    inferential    predictive        Goal of descriptive statistics : to summarize data quickly to get an overview of the information     predictive statistics analyzes past data to predict future values and aid in making well-informed decisions    During our study of inferential statistics , we will learn a variety of techniques that allow us to draw conclusions about a population based on a sample of data.      In our study of inferential statistics, we might want to ask a question such as the following:   What is the average number of hours per week worked by students at UCCCS?   How would you answer this question?     Definitions and Terms        population : set containing all the people or objects whose properties are to be described and analyzed by the data collector     sample : a subset or subgroup of the population              parameter : number that describes a characteristic of a population     statistic : a number that describes a characteristic of a sample        A group of hotel owners in a large city decide to conduct a survey among citizens of the city to discover their opinions about casino gambling.   Describe the population   The population is the set containing all citizens of the city.   One of the hotel owners suggests obtaining a sample by surveying all the people at size of the largest nightclubs in the city on a Saturday night. The people surveyed will be asked to express their opinion on casino gambling. Does this seem like a good idea?   No, it does not! The people at the nightclub might not have the same attitude toward casino gambling as the population of all the city's citizens.       A random sample is a sample obtained in such a way that every element in the population has an equal chance of being selected for the sample.     Think again about the group of hotel owners from who are in a large city and are interested in how the city's citizen's feel about casino gambling. Which of the following would be the most appropriate way to select a random sample?     Randomly survey people who live in the oceanfront condominiums in the city.      Survey the first 200 people whose names appear in the city's telephone directory.      Randomly select neighborhoods of the city and then randomly survey people within the selected neighborhoods.       Regardless of the sampling technique used, the sample should exhibit characteristics typical of those possessed by the target population.  This type of sample is called a representative sample .     "
 },
 {
   "id": "sec-intro-to-stats-2-1",
@@ -55,20 +55,11 @@ var ptx_lunr_docs = [
   "body": "      population : set containing all the people or objects whose properties are to be described and analyzed by the data collector     sample : a subset or subgroup of the population      "
 },
 {
-  "id": "subsec-stats-definitions-3",
-  "level": "2",
-  "url": "sec-intro-to-stats.html#subsec-stats-definitions-3",
-  "type": "Exercise",
-  "number": "1.1.5",
-  "title": "Sample and Population.",
-  "body": "Sample and Population    "
-},
-{
   "id": "def-parameter-statistic",
   "level": "2",
   "url": "sec-intro-to-stats.html#def-parameter-statistic",
   "type": "Definition",
-  "number": "1.1.6",
+  "number": "1.1.5",
   "title": "",
   "body": "      parameter : number that describes a characteristic of a population     statistic : a number that describes a characteristic of a sample      "
 },
@@ -77,9 +68,18 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-intro-to-stats.html#ex-hotelquestion",
   "type": "Exercise",
-  "number": "1.1.7",
+  "number": "1.1.6",
   "title": "",
   "body": " A group of hotel owners in a large city decide to conduct a survey among citizens of the city to discover their opinions about casino gambling.   Describe the population   The population is the set containing all citizens of the city.   One of the hotel owners suggests obtaining a sample by surveying all the people at size of the largest nightclubs in the city on a Saturday night. The people surveyed will be asked to express their opinion on casino gambling. Does this seem like a good idea?   No, it does not! The people at the nightclub might not have the same attitude toward casino gambling as the population of all the city's citizens.  "
+},
+{
+  "id": "def-random-sample",
+  "level": "2",
+  "url": "sec-intro-to-stats.html#def-random-sample",
+  "type": "Definition",
+  "number": "1.1.7",
+  "title": "",
+  "body": "  A random sample is a sample obtained in such a way that every element in the population has an equal chance of being selected for the sample.   "
 },
 {
   "id": "subsec-stats-definitions-6",
@@ -87,33 +87,6 @@ var ptx_lunr_docs = [
   "url": "sec-intro-to-stats.html#subsec-stats-definitions-6",
   "type": "Exercise",
   "number": "1.1.8",
-  "title": "Parameter vs. Statistic.",
-  "body": "Parameter vs. Statistic    "
-},
-{
-  "id": "subsec-stats-definitions-7",
-  "level": "2",
-  "url": "sec-intro-to-stats.html#subsec-stats-definitions-7",
-  "type": "Exercise",
-  "number": "1.1.9",
-  "title": "Parameter vs. Statistic.",
-  "body": "Parameter vs. Statistic    "
-},
-{
-  "id": "def-random-sample",
-  "level": "2",
-  "url": "sec-intro-to-stats.html#def-random-sample",
-  "type": "Definition",
-  "number": "1.1.10",
-  "title": "",
-  "body": "  A random sample is a sample obtained in such a way that every element in the population has an equal chance of being selected for the sample.   "
-},
-{
-  "id": "subsec-stats-definitions-9",
-  "level": "2",
-  "url": "sec-intro-to-stats.html#subsec-stats-definitions-9",
-  "type": "Exercise",
-  "number": "1.1.11",
   "title": "",
   "body": " Think again about the group of hotel owners from who are in a large city and are interested in how the city's citizen's feel about casino gambling. Which of the following would be the most appropriate way to select a random sample?     Randomly survey people who live in the oceanfront condominiums in the city.      Survey the first 200 people whose names appear in the city's telephone directory.      Randomly select neighborhoods of the city and then randomly survey people within the selected neighborhoods.    "
 },
@@ -122,7 +95,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-intro-to-stats.html#def-representative-sample",
   "type": "Definition",
-  "number": "1.1.12",
+  "number": "1.1.9",
   "title": "",
   "body": "  Regardless of the sampling technique used, the sample should exhibit characteristics typical of those possessed by the target population.  This type of sample is called a representative sample .   "
 },
@@ -133,7 +106,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "Types of Data",
-  "body": " Types of Data   The purpose of descriptive statistics is to summarize or display data so that the audience can quickly obtain an overview of the information. There are two main types of data: quantitative data and qualitative data .  Let's define those and other types of data we will work with in this course. Then we will move on to review how Excel is used to create meaningful tables, charts, and graphs that summarize our data.         Quantitative data uses numbers to describe data.     Qualitative data uses descriptive terms, i.e. categories, to describe data.       Qualitative vs. Quantitative Data           Discrete values are based on observations that can be counted and are typically represented by whole numbers.     Continuous values are based on measured observations and can take on any real number.        Which of the following are discrete values?     number of iPads sold      number of light bulbs that burned for more than 1000 hours in a quality control program      weight      time      distance      number of hours a light bulb burned before going out      Which of the following are continuous values?     number of iPads sold      number of light bulbs that burned for more than 1000 hours in a quality control program      weight      time      distance      number of hours a light bulb burned before going out     Discrete vs. Continuous Data      Levels of Measurement       A nominal level of measurement deals strictly with qualitative data assigned to predetermined categories.  Examples: marital status, gender, political affiliation    An ordinal level of measurement has all the properties of nominal data but with the added feature that we can rank order values from highest to lowest.  Examples: college class level, course letter grade    An interval level of measurement deals strictly with quantitative data allowing the measurement of difference between categories with actual numbers in a meaningful way.  Examples: temperature (in degrees Celsius or Fahrenheit), SAT score, birth year of baseball players    A ratio level of measurement has all the features of interval data but with the added benefit of having a true zero point.  Examples: age, height, weight, number of home runs        Level of Measurement      Identify the type of data (qualitative, quantitative-discrete, quantitative-continuous) and the level of measurement for each data source.   the temperature outside (in degrees Fahrenheit)   quantitative-continuous, interval   the price for one gallon of gasoline   quantitative-continuous, ratio   the letter grade earned in your statistics class   qualitative, ordinal   the number of boxes of Cheerios on the shelf of a grocery store   quantitative-discrete, ratio   the types of cars driven by students in your class   qualitative, nominal   the number of times a person goes to the gym in a week   quantitative-discrete, ratio   "
+  "body": " Types of Data   The purpose of descriptive statistics is to summarize or display data so that the audience can quickly obtain an overview of the information. There are two main types of data: quantitative data and qualitative data .  Let's define those and other types of data we will work with in this course. Then we will move on to review how Excel is used to create meaningful tables, charts, and graphs that summarize our data.         Quantitative data uses numbers to describe data.     Qualitative data uses descriptive terms, i.e. categories, to describe data.              Discrete values are based on observations that can be counted and are typically represented by whole numbers.     Continuous values are based on measured observations and can take on any real number.        Which of the following are discrete values?     number of iPads sold      number of light bulbs that burned for more than 1000 hours in a quality control program      weight      time      distance      number of hours a light bulb burned before going out      Which of the following are continuous values?     number of iPads sold      number of light bulbs that burned for more than 1000 hours in a quality control program      weight      time      distance      number of hours a light bulb burned before going out       Levels of Measurement       A nominal level of measurement deals strictly with qualitative data assigned to predetermined categories.  Examples: marital status, gender, political affiliation    An ordinal level of measurement has all the properties of nominal data but with the added feature that we can rank order values from highest to lowest.  Examples: college class level, course letter grade    An interval level of measurement deals strictly with quantitative data allowing the measurement of difference between categories with actual numbers in a meaningful way.  Examples: temperature (in degrees Celsius or Fahrenheit), SAT score, birth year of baseball players    A ratio level of measurement has all the features of interval data but with the added benefit of having a true zero point.  Examples: age, height, weight, number of home runs          Identify the type of data (qualitative, quantitative-discrete, quantitative-continuous) and the level of measurement for each data source.   the temperature outside (in degrees Fahrenheit)   quantitative-continuous, interval   the price for one gallon of gasoline   quantitative-continuous, ratio   the letter grade earned in your statistics class   qualitative, ordinal   the number of boxes of Cheerios on the shelf of a grocery store   quantitative-discrete, ratio   the types of cars driven by students in your class   qualitative, nominal   the number of times a person goes to the gym in a week   quantitative-discrete, ratio   "
 },
 {
   "id": "def-quantitative-qualitative",
@@ -145,22 +118,22 @@ var ptx_lunr_docs = [
   "body": "      Quantitative data uses numbers to describe data.     Qualitative data uses descriptive terms, i.e. categories, to describe data.      "
 },
 {
-  "id": "sec-TypesOfData-4",
-  "level": "2",
-  "url": "sec-TypesOfData.html#sec-TypesOfData-4",
-  "type": "Exercise",
-  "number": "1.2.2",
-  "title": "Qualitative vs. Quantitative Data.",
-  "body": "Qualitative vs. Quantitative Data    "
-},
-{
   "id": "def-discrete-continuous",
   "level": "2",
   "url": "sec-TypesOfData.html#def-discrete-continuous",
   "type": "Definition",
-  "number": "1.2.3",
+  "number": "1.2.2",
   "title": "",
   "body": "      Discrete values are based on observations that can be counted and are typically represented by whole numbers.     Continuous values are based on measured observations and can take on any real number.      "
+},
+{
+  "id": "sec-TypesOfData-5",
+  "level": "2",
+  "url": "sec-TypesOfData.html#sec-TypesOfData-5",
+  "type": "Exercise",
+  "number": "1.2.3",
+  "title": "",
+  "body": " Which of the following are discrete values?     number of iPads sold      number of light bulbs that burned for more than 1000 hours in a quality control program      weight      time      distance      number of hours a light bulb burned before going out    "
 },
 {
   "id": "sec-TypesOfData-6",
@@ -169,16 +142,16 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.2.4",
   "title": "",
-  "body": " Which of the following are discrete values?     number of iPads sold      number of light bulbs that burned for more than 1000 hours in a quality control program      weight      time      distance      number of hours a light bulb burned before going out    "
+  "body": " Which of the following are continuous values?     number of iPads sold      number of light bulbs that burned for more than 1000 hours in a quality control program      weight      time      distance      number of hours a light bulb burned before going out    "
 },
 {
-  "id": "sec-TypesOfData-7",
+  "id": "def-levels-measurement",
   "level": "2",
-  "url": "sec-TypesOfData.html#sec-TypesOfData-7",
-  "type": "Exercise",
+  "url": "sec-TypesOfData.html#def-levels-measurement",
+  "type": "Definition",
   "number": "1.2.5",
   "title": "",
-  "body": " Which of the following are continuous values?     number of iPads sold      number of light bulbs that burned for more than 1000 hours in a quality control program      weight      time      distance      number of hours a light bulb burned before going out    "
+  "body": "     A nominal level of measurement deals strictly with qualitative data assigned to predetermined categories.  Examples: marital status, gender, political affiliation    An ordinal level of measurement has all the properties of nominal data but with the added feature that we can rank order values from highest to lowest.  Examples: college class level, course letter grade    An interval level of measurement deals strictly with quantitative data allowing the measurement of difference between categories with actual numbers in a meaningful way.  Examples: temperature (in degrees Celsius or Fahrenheit), SAT score, birth year of baseball players    A ratio level of measurement has all the features of interval data but with the added benefit of having a true zero point.  Examples: age, height, weight, number of home runs      "
 },
 {
   "id": "sec-TypesOfData-8",
@@ -186,33 +159,6 @@ var ptx_lunr_docs = [
   "url": "sec-TypesOfData.html#sec-TypesOfData-8",
   "type": "Exercise",
   "number": "1.2.6",
-  "title": "Discrete vs. Continuous Data.",
-  "body": "Discrete vs. Continuous Data    "
-},
-{
-  "id": "def-levels-measurement",
-  "level": "2",
-  "url": "sec-TypesOfData.html#def-levels-measurement",
-  "type": "Definition",
-  "number": "1.2.7",
-  "title": "",
-  "body": "     A nominal level of measurement deals strictly with qualitative data assigned to predetermined categories.  Examples: marital status, gender, political affiliation    An ordinal level of measurement has all the properties of nominal data but with the added feature that we can rank order values from highest to lowest.  Examples: college class level, course letter grade    An interval level of measurement deals strictly with quantitative data allowing the measurement of difference between categories with actual numbers in a meaningful way.  Examples: temperature (in degrees Celsius or Fahrenheit), SAT score, birth year of baseball players    A ratio level of measurement has all the features of interval data but with the added benefit of having a true zero point.  Examples: age, height, weight, number of home runs      "
-},
-{
-  "id": "sec-TypesOfData-10",
-  "level": "2",
-  "url": "sec-TypesOfData.html#sec-TypesOfData-10",
-  "type": "Exercise",
-  "number": "1.2.8",
-  "title": "Level of Measurement.",
-  "body": "Level of Measurement    "
-},
-{
-  "id": "sec-TypesOfData-11",
-  "level": "2",
-  "url": "sec-TypesOfData.html#sec-TypesOfData-11",
-  "type": "Exercise",
-  "number": "1.2.9",
   "title": "",
   "body": " Identify the type of data (qualitative, quantitative-discrete, quantitative-continuous) and the level of measurement for each data source.   the temperature outside (in degrees Fahrenheit)   quantitative-continuous, interval   the price for one gallon of gasoline   quantitative-continuous, ratio   the letter grade earned in your statistics class   qualitative, ordinal   the number of boxes of Cheerios on the shelf of a grocery store   quantitative-discrete, ratio   the types of cars driven by students in your class   qualitative, nominal   the number of times a person goes to the gym in a week   quantitative-discrete, ratio  "
 },
@@ -727,7 +673,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.3",
   "title": "Using the Mean and Standard Deviation Together",
-  "body": " Using the Mean and Standard Deviation Together   There are a few important concepts that use the mean and standard deviation together to describe data sets.     The coefficient of variation (cv) measures the standard deviation in terms of its percentage of the mean.         The -score identifies the number of standard deviations a particular value is from the mean of its distribution.           The mean weight of newborn infants is 7 pounds, and the standard deviation is 0.8 pound. The weights of newborn infants are normally distributed . (This is a symmetric distribution that we'll talk more about in a later chapter.)  Find the -scores for the following weights.   9 pounds       7 pounds       6 pounds         What do the -scores in mean about how the weights compare to the average weight of newborn infants?    Intelligence quotients (IQs) on the Stanford-Binet intelligence test are normally distributed with a mean of 100 and a standard deviation of 16. What is the IQ corresponding to a -score of ?       The Empirical Rule  The Empirical Rule says that if a distribution follows a bell-shaped, symmetric curve centered around the mean, then we should expect:   approximately of the data to fall within one standard deviation of the mean,    approximately of the data to fall within two standard deviations of the mean, and    approximately of the data to fall within three standard deviations of the mean.      The Empirical Rule (Made in GeoGebra by Kady Schneiter)    Empirical Rule     Empirical Rule     Empirical Rule        Chebyshev's Theorem:   For any number greater than 1, the percent of data points that fall within standard deviations from the mean is at least for any distribution , regardless of its shape.     Assume the average selling price for houses in a certain county is with a standard deviation of .   Determine the coefficient of variation.       Calculate the -score for a house that sells for .       Using the Empirical Rule, determine the range of prices that includes of the homes around the mean. (To do this, we need to assume that the selling prices of homes is bell-shaped and symmetric.)    of prices are within 1 standard deviation of the mean. That is, of prices are between the numbers (assuming the distribution of prices is bell-shaped and symmetric).      Using Chebyshev's Theorem, determine the range of prices that includes at least of the homes around the mean. (Using Chebyshev's Theorem, we don't need to assume anything about how the prices are distributed.)           So the range of prices including values within of the mean will include at least of the homes.        Chebyshev's Theorem      "
+  "body": " Using the Mean and Standard Deviation Together   There are a few important concepts that use the mean and standard deviation together to describe data sets.     The coefficient of variation (cv) measures the standard deviation in terms of its percentage of the mean.         The -score identifies the number of standard deviations a particular value is from the mean of its distribution.           The mean weight of newborn infants is 7 pounds, and the standard deviation is 0.8 pound. The weights of newborn infants are normally distributed . (This is a symmetric distribution that we'll talk more about in a later chapter.)  Find the -scores for the following weights.   9 pounds       7 pounds       6 pounds         What do the -scores in mean about how the weights compare to the average weight of newborn infants?    Intelligence quotients (IQs) on the Stanford-Binet intelligence test are normally distributed with a mean of 100 and a standard deviation of 16. What is the IQ corresponding to a -score of ?       The Empirical Rule  The Empirical Rule says that if a distribution follows a bell-shaped, symmetric curve centered around the mean, then we should expect:   approximately of the data to fall within one standard deviation of the mean,    approximately of the data to fall within two standard deviations of the mean, and    approximately of the data to fall within three standard deviations of the mean.      The Empirical Rule (Made in GeoGebra by Kady Schneiter)          Chebyshev's Theorem:   For any number greater than 1, the percent of data points that fall within standard deviations from the mean is at least for any distribution , regardless of its shape.     Assume the average selling price for houses in a certain county is with a standard deviation of .   Determine the coefficient of variation.       Calculate the -score for a house that sells for .       Using the Empirical Rule, determine the range of prices that includes of the homes around the mean. (To do this, we need to assume that the selling prices of homes is bell-shaped and symmetric.)    of prices are within 1 standard deviation of the mean. That is, of prices are between the numbers (assuming the distribution of prices is bell-shaped and symmetric).      Using Chebyshev's Theorem, determine the range of prices that includes at least of the homes around the mean. (Using Chebyshev's Theorem, we don't need to assume anything about how the prices are distributed.)           So the range of prices including values within of the mean will include at least of the homes.          "
 },
 {
   "id": "def-cv",
@@ -784,13 +730,13 @@ var ptx_lunr_docs = [
   "body": " The Empirical Rule (Made in GeoGebra by Kady Schneiter)   "
 },
 {
-  "id": "subsec-empirical-rule-4",
+  "id": "thm-chebyshev-theorem",
   "level": "2",
-  "url": "sec-mean-and-stdev.html#subsec-empirical-rule-4",
-  "type": "Exercise",
+  "url": "sec-mean-and-stdev.html#thm-chebyshev-theorem",
+  "type": "Theorem",
   "number": "3.3.7",
-  "title": "Empirical Rule.",
-  "body": "Empirical Rule    "
+  "title": "",
+  "body": "   Chebyshev's Theorem:   For any number greater than 1, the percent of data points that fall within standard deviations from the mean is at least for any distribution , regardless of its shape.   "
 },
 {
   "id": "subsec-empirical-rule-5",
@@ -798,44 +744,8 @@ var ptx_lunr_docs = [
   "url": "sec-mean-and-stdev.html#subsec-empirical-rule-5",
   "type": "Exercise",
   "number": "3.3.8",
-  "title": "Empirical Rule.",
-  "body": "Empirical Rule    "
-},
-{
-  "id": "subsec-empirical-rule-6",
-  "level": "2",
-  "url": "sec-mean-and-stdev.html#subsec-empirical-rule-6",
-  "type": "Exercise",
-  "number": "3.3.9",
-  "title": "Empirical Rule.",
-  "body": "Empirical Rule    "
-},
-{
-  "id": "thm-chebyshev-theorem",
-  "level": "2",
-  "url": "sec-mean-and-stdev.html#thm-chebyshev-theorem",
-  "type": "Theorem",
-  "number": "3.3.10",
-  "title": "",
-  "body": "   Chebyshev's Theorem:   For any number greater than 1, the percent of data points that fall within standard deviations from the mean is at least for any distribution , regardless of its shape.   "
-},
-{
-  "id": "subsec-empirical-rule-8",
-  "level": "2",
-  "url": "sec-mean-and-stdev.html#subsec-empirical-rule-8",
-  "type": "Exercise",
-  "number": "3.3.11",
   "title": "",
   "body": " Assume the average selling price for houses in a certain county is with a standard deviation of .   Determine the coefficient of variation.       Calculate the -score for a house that sells for .       Using the Empirical Rule, determine the range of prices that includes of the homes around the mean. (To do this, we need to assume that the selling prices of homes is bell-shaped and symmetric.)    of prices are within 1 standard deviation of the mean. That is, of prices are between the numbers (assuming the distribution of prices is bell-shaped and symmetric).      Using Chebyshev's Theorem, determine the range of prices that includes at least of the homes around the mean. (Using Chebyshev's Theorem, we don't need to assume anything about how the prices are distributed.)           So the range of prices including values within of the mean will include at least of the homes.       "
-},
-{
-  "id": "subsec-empirical-rule-9",
-  "level": "2",
-  "url": "sec-mean-and-stdev.html#subsec-empirical-rule-9",
-  "type": "Exercise",
-  "number": "3.3.12",
-  "title": "Chebyshev’s Theorem.",
-  "body": "Chebyshev's Theorem    "
 },
 {
   "id": "sec-measures-relative-position",
@@ -979,7 +889,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.1",
   "title": "Introduction to Probability",
-  "body": " Introduction to Probability   Decision makers, including those in the business world, are greatly influenced by uncertainty. Probability provides a valuable tool in quantifying uncertainty, leading to greater success in decision-making.     A probability is a numerical value between 0 and 1 that measures the chance, or likelihood, that a specific event will occur.    Before jumping into some examples, let's discuss some key terms for our study of probability concepts.       An experiment results in a specific outcome e.g., a coin flip (the experiment) results in a heads or a tails (the outcome).    An event is a collection of outcome(s) of an experiment, e.g., a die roll results in an odd number . More specifically, a simple event is an event with a single outcome.    The sample space for an experiment consists of all possible outcomes e.g., .    The outcomes must be collectively exhaustive and mutually exclusive .     Collectively exhaustive means every simple event is included     Mutually exclusive means events that cannot occur at the same time.            A single die is rolled.   Define the sample space.       Define the event an odd number is rolled . What is the probability of this event?        A pair of dice are rolled.   Define the sample space. (How many total possible outcomes are there?)    There are 36 total possible outcomes.   Define the event doubles are rolled . What is the probability of this event?        Define the event the sum of the dice is 10 . What is the probability of this event?         (Donnelly 4.8)  The table below shows the frequencies of executives' salary ranges at a particular organization.    Salary Range  Frequency    Under $60,000  2    $60,000 to under $70,000  5    $70,000 to under $80,000  7    $80,000 to under $90,000  4    $90,000 to under $100,000  6    $100,000 or more  ?    Total:  26       How many executives at this organization earned $100,000 or more per year?       What is the probability of randomly selecting an executive who earned $100,000 or more per year?       What is the probability of randomly selecting an executive who earned $60,000 or more per year?       What is the probability of randomly selecting an executive who earned between $70,000 and $90,000 per year?            Basic Properties of Probability:   If , then event is certain to occur.    If , then event is certain to NOT occur.    The probability of any event must range between 0 and 1 (inclusive).    The sum of all probabilities of simple events in a sample space is equal to 1.        The complement , (or ), is defined as all outcomes in the sample space that are not in .      The complement rule:      Draw one card from a standard deck of 52 playing cards. (Here is a link to a description of a deck of cards: )   How many total outcomes are in the sample space for this experiment?       What is the probability of drawing a face card ?       What is the probability of drawing a card divisible by 3 ?       What is the probability of drawing a card NOT divisible by 3 ?       What is the probability of drawing a card that is a face card and a card divisible by 3 ?   0   What is the probability of drawing a card that is a red card or a black card ?   1        A contingency table shows the number of occurrences of events that are classified by two categorical variables.     Marginal probability is a simple probability found in the margins, or row and column totals, of a contingency table.        (Donnelly 4.19)  A local car dealership currently has 36 used GM, Ford, and Toyota vehicles on the lot that can be classified as either cars or trucks. The following data are available:   Twenty-six vehicles are cars    Eleven vehicles are GMs    Fifteen vehicles are Fords    Three vehicles are both Toyotas and trucks    Fourteen vehicles are both Toyotas and trucks      ....(Figure out how to make fillable table......) Create a contingency table that summarizes the data.   What is the probability that a randomly selected vehicle is a Toyota?       What is the probability that a randomly selected vehicle is a truck?         The intersection of Events A and B represents the number of times when events A and B occur at the same time   Notation:     The union of Events A and B represents the number of times when event A or event B or both occur.   Notation:         Union and Intersection (Made in GeoGebra by Vaibhav Zade)       The joint probability of two events is the probability of the intersection of two events.     The addition rule for probabilities is used to calculate the probability of the union of events. It depends on knowing whether or not two events are mutually exclusive.     For mutually exclusive events,     For events that are not mutually exclusive,        Use the contingency table from the previous exercise... (insert!!!!!) to answer the following questions.   What is the probability that a randomly selected vehicle is either a Ford or a car?       What is the probability that a randomly selected vehicle is a GM truck?              Conditional probability is the probability that event A will occur given that event B has occurred.  This probability is denoted by , and is the probability of A given B .     (Made in GeoGebra by Virginia Keith)     Which of the following is the formula used to calculate ?                                      Prior probability: the probability that an event will occur as determined without any additional information that could affect it     Posterior probability: a revision of a prior probability using additional information        Let's look back at the contingency table from previous exercises..... (!!!insert!!!!)   What is the probability that a randomly selected vehicle is a Toyota, given it is a car?       What is the probability that a randomly selected vehicle is a truck, given it is a Ford?       "
+  "body": " Introduction to Probability   Decision makers, including those in the business world, are greatly influenced by uncertainty. Probability provides a valuable tool in quantifying uncertainty, leading to greater success in decision-making.     A probability is a numerical value between 0 and 1 that measures the chance, or likelihood, that a specific event will occur.    Before jumping into some examples, let's discuss some key terms for our study of probability concepts.       An experiment results in a specific outcome e.g., a coin flip (the experiment) results in a heads or a tails (the outcome).    An event is a collection of outcome(s) of an experiment, e.g., a die roll results in an odd number . More specifically, a simple event is an event with a single outcome.    The sample space for an experiment consists of all possible outcomes e.g., .    The outcomes must be collectively exhaustive and mutually exclusive .     Collectively exhaustive means every simple event is included     Mutually exclusive means events that cannot occur at the same time.            A single die is rolled.   Define the sample space.       Define the event an odd number is rolled . What is the probability of this event?        A pair of dice are rolled.   Define the sample space. (How many total possible outcomes are there?)    There are 36 total possible outcomes.   Define the event doubles are rolled . What is the probability of this event?        Define the event the sum of the dice is 10 . What is the probability of this event?         (Donnelly 4.8)  The table below shows the frequencies of executives' salary ranges at a particular organization.    Salary Range  Frequency    Under $60,000  2    $60,000 to under $70,000  5    $70,000 to under $80,000  7    $80,000 to under $90,000  4    $90,000 to under $100,000  6    $100,000 or more  ?    Total:  26       How many executives at this organization earned $100,000 or more per year?       What is the probability of randomly selecting an executive who earned $100,000 or more per year?       What is the probability of randomly selecting an executive who earned $60,000 or more per year?       What is the probability of randomly selecting an executive who earned between $70,000 and $90,000 per year?         Basic Properties of Probability:   If , then event is certain to occur.    If , then event is certain to NOT occur.    The probability of any event must range between 0 and 1 (inclusive).    The sum of all probabilities of simple events in a sample space is equal to 1.        The complement , (or ), is defined as all outcomes in the sample space that are not in .      The complement rule:      Draw one card from a standard deck of 52 playing cards. (Here is a link to a description of a deck of cards: )   How many total outcomes are in the sample space for this experiment?       What is the probability of drawing a face card ?       What is the probability of drawing a card divisible by 3 ?       What is the probability of drawing a card NOT divisible by 3 ?       What is the probability of drawing a card that is a face card and a card divisible by 3 ?   0   What is the probability of drawing a card that is a red card or a black card ?   1        A contingency table shows the number of occurrences of events that are classified by two categorical variables.     Marginal probability is a simple probability found in the margins, or row and column totals, of a contingency table.        (Donnelly 4.19)  A local car dealership currently has 36 used GM, Ford, and Toyota vehicles on the lot that can be classified as either cars or trucks. The following data are available:   Twenty-six vehicles are cars    Eleven vehicles are GMs    Fifteen vehicles are Fords    Three vehicles are both Toyotas and trucks    Fourteen vehicles are both Toyotas and trucks      ....(Figure out how to make fillable table......) Create a contingency table that summarizes the data.   What is the probability that a randomly selected vehicle is a Toyota?       What is the probability that a randomly selected vehicle is a truck?         The intersection of Events A and B represents the number of times when events A and B occur at the same time   Notation:     The union of Events A and B represents the number of times when event A or event B or both occur.   Notation:         Union and Intersection (Made in GeoGebra by Vaibhav Zade)       The joint probability of two events is the probability of the intersection of two events.     The addition rule for probabilities is used to calculate the probability of the union of events. It depends on knowing whether or not two events are mutually exclusive.     For mutually exclusive events,     For events that are not mutually exclusive,        Use the contingency table from the previous exercise... (insert!!!!!) to answer the following questions.   What is the probability that a randomly selected vehicle is either a Ford or a car?       What is the probability that a randomly selected vehicle is a GM truck?           Conditional probability is the probability that event A will occur given that event B has occurred.  This probability is denoted by , and is the probability of A given B .     (Made in GeoGebra by Virginia Keith)     Which of the following is the formula used to calculate ?                                      Prior probability: the probability that an event will occur as determined without any additional information that could affect it     Posterior probability: a revision of a prior probability using additional information        Let's look back at the contingency table from previous exercises..... (!!!insert!!!!)   What is the probability that a randomly selected vehicle is a Toyota, given it is a car?       What is the probability that a randomly selected vehicle is a truck, given it is a Ford?       "
 },
 {
   "id": "def-probability",
@@ -1027,29 +937,20 @@ var ptx_lunr_docs = [
   "body": " (Donnelly 4.8)  The table below shows the frequencies of executives' salary ranges at a particular organization.    Salary Range  Frequency    Under $60,000  2    $60,000 to under $70,000  5    $70,000 to under $80,000  7    $80,000 to under $90,000  4    $90,000 to under $100,000  6    $100,000 or more  ?    Total:  26       How many executives at this organization earned $100,000 or more per year?       What is the probability of randomly selecting an executive who earned $100,000 or more per year?       What is the probability of randomly selecting an executive who earned $60,000 or more per year?       What is the probability of randomly selecting an executive who earned between $70,000 and $90,000 per year?      "
 },
 {
-  "id": "sec-Intro-to-Probability-9",
-  "level": "2",
-  "url": "sec-Intro-to-Probability.html#sec-Intro-to-Probability-9",
-  "type": "Exercise",
-  "number": "4.1.7",
-  "title": "",
-  "body": "   "
-},
-{
   "id": "def-complement",
   "level": "2",
   "url": "sec-Intro-to-Probability.html#def-complement",
   "type": "Definition",
-  "number": "4.1.8",
+  "number": "4.1.7",
   "title": "",
   "body": "  The complement , (or ), is defined as all outcomes in the sample space that are not in .   "
 },
 {
-  "id": "sec-Intro-to-Probability-13",
+  "id": "sec-Intro-to-Probability-12",
   "level": "2",
-  "url": "sec-Intro-to-Probability.html#sec-Intro-to-Probability-13",
+  "url": "sec-Intro-to-Probability.html#sec-Intro-to-Probability-12",
   "type": "Exercise",
-  "number": "4.1.9",
+  "number": "4.1.8",
   "title": "",
   "body": " Draw one card from a standard deck of 52 playing cards. (Here is a link to a description of a deck of cards: )   How many total outcomes are in the sample space for this experiment?       What is the probability of drawing a face card ?       What is the probability of drawing a card divisible by 3 ?       What is the probability of drawing a card NOT divisible by 3 ?       What is the probability of drawing a card that is a face card and a card divisible by 3 ?   0   What is the probability of drawing a card that is a red card or a black card ?   1  "
 },
@@ -1058,16 +959,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Intro-to-Probability.html#def-contingency-marginal-probability",
   "type": "Definition",
-  "number": "4.1.10",
+  "number": "4.1.9",
   "title": "",
   "body": "     A contingency table shows the number of occurrences of events that are classified by two categorical variables.     Marginal probability is a simple probability found in the margins, or row and column totals, of a contingency table.      "
 },
 {
-  "id": "sec-Intro-to-Probability-15",
+  "id": "sec-Intro-to-Probability-14",
   "level": "2",
-  "url": "sec-Intro-to-Probability.html#sec-Intro-to-Probability-15",
+  "url": "sec-Intro-to-Probability.html#sec-Intro-to-Probability-14",
   "type": "Exercise",
-  "number": "4.1.11",
+  "number": "4.1.10",
   "title": "",
   "body": " (Donnelly 4.19)  A local car dealership currently has 36 used GM, Ford, and Toyota vehicles on the lot that can be classified as either cars or trucks. The following data are available:   Twenty-six vehicles are cars    Eleven vehicles are GMs    Fifteen vehicles are Fords    Three vehicles are both Toyotas and trucks    Fourteen vehicles are both Toyotas and trucks      ....(Figure out how to make fillable table......) Create a contingency table that summarizes the data.   What is the probability that a randomly selected vehicle is a Toyota?       What is the probability that a randomly selected vehicle is a truck?      "
 },
@@ -1076,7 +977,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Intro-to-Probability.html#def-intersection-union",
   "type": "Definition",
-  "number": "4.1.12",
+  "number": "4.1.11",
   "title": "",
   "body": "  The intersection of Events A and B represents the number of times when events A and B occur at the same time   Notation:     The union of Events A and B represents the number of times when event A or event B or both occur.   Notation:         Union and Intersection (Made in GeoGebra by Vaibhav Zade)    "
 },
@@ -1085,34 +986,25 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Intro-to-Probability.html#def-joint-probability",
   "type": "Definition",
-  "number": "4.1.14",
+  "number": "4.1.13",
   "title": "",
   "body": "  The joint probability of two events is the probability of the intersection of two events.   "
 },
 {
-  "id": "sec-Intro-to-Probability-19",
+  "id": "sec-Intro-to-Probability-18",
   "level": "2",
-  "url": "sec-Intro-to-Probability.html#sec-Intro-to-Probability-19",
+  "url": "sec-Intro-to-Probability.html#sec-Intro-to-Probability-18",
   "type": "Exercise",
-  "number": "4.1.15",
+  "number": "4.1.14",
   "title": "",
   "body": " Use the contingency table from the previous exercise... (insert!!!!!) to answer the following questions.   What is the probability that a randomly selected vehicle is either a Ford or a car?       What is the probability that a randomly selected vehicle is a GM truck?      "
-},
-{
-  "id": "sec-Intro-to-Probability-20",
-  "level": "2",
-  "url": "sec-Intro-to-Probability.html#sec-Intro-to-Probability-20",
-  "type": "Exercise",
-  "number": "4.1.16",
-  "title": "",
-  "body": "   "
 },
 {
   "id": "def-condition-probability",
   "level": "2",
   "url": "sec-Intro-to-Probability.html#def-condition-probability",
   "type": "Definition",
-  "number": "4.1.17",
+  "number": "4.1.15",
   "title": "",
   "body": "   Conditional probability is the probability that event A will occur given that event B has occurred.  This probability is denoted by , and is the probability of A given B .   "
 },
@@ -1121,16 +1013,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Intro-to-Probability.html#figure-geogebra-conditional-prob",
   "type": "Figure",
-  "number": "4.1.18",
+  "number": "4.1.16",
   "title": "",
   "body": " (Made in GeoGebra by Virginia Keith)   "
 },
 {
-  "id": "sec-Intro-to-Probability-23",
+  "id": "sec-Intro-to-Probability-21",
   "level": "2",
-  "url": "sec-Intro-to-Probability.html#sec-Intro-to-Probability-23",
+  "url": "sec-Intro-to-Probability.html#sec-Intro-to-Probability-21",
   "type": "Exercise",
-  "number": "4.1.19",
+  "number": "4.1.17",
   "title": "",
   "body": " Which of the following is the formula used to calculate ?                               "
 },
@@ -1139,16 +1031,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Intro-to-Probability.html#def-prior-posterior-probability",
   "type": "Definition",
-  "number": "4.1.20",
+  "number": "4.1.18",
   "title": "",
   "body": "      Prior probability: the probability that an event will occur as determined without any additional information that could affect it     Posterior probability: a revision of a prior probability using additional information      "
 },
 {
-  "id": "sec-Intro-to-Probability-25",
+  "id": "sec-Intro-to-Probability-23",
   "level": "2",
-  "url": "sec-Intro-to-Probability.html#sec-Intro-to-Probability-25",
+  "url": "sec-Intro-to-Probability.html#sec-Intro-to-Probability-23",
   "type": "Exercise",
-  "number": "4.1.21",
+  "number": "4.1.19",
   "title": "",
   "body": " Let's look back at the contingency table from previous exercises..... (!!!insert!!!!)   What is the probability that a randomly selected vehicle is a Toyota, given it is a car?       What is the probability that a randomly selected vehicle is a truck, given it is a Ford?      "
 },
@@ -1159,7 +1051,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.2",
   "title": "Independent and Dependent Events",
-  "body": " Independent and Dependent Events        Two events are independent if the occurrence of one event has no impact on the occurrence of the other event. The definition for two independent events is:     Events are dependent if the occurrence of one event affects the occurrence of another event.         (Made in GeoGebra by Steve Phelps)     A delivery service operates in a city where it snows in the winter. Suppose it is now winter. We consider the events that on a randomly selected day that they are late making deliveries, and the event that it snows that day.  Suppose that the probability that the service is late on this day is , the probability that the service is late given that it snows on this day is , and finally the probability that it snows on this day is .   Find the probability that the service is late and it snows on this day.   The probability that the service is late and it snows on this day is .   Find the probability that it snows, given that the service is late on this day.   The probability that it snows, given that the service is late on this day is .   Are the events the service is late on this day, and it snows on this day independent? Explain your reasoning.   The events the service is late on this day, and it snows on this day are not independent. (!!!INSERT REASONING!!!!)    The multiplication rule for probabilities is used to calculate the probability for intersection (or joint probability) of two events occurring.  It depends on knowing whether or not two events are independent or dependent.   For dependent events,     For independent events,        A company has 140 employees, of which 30 are supervisors. Eighty of the employees are married, and 20% of the married employees are supervisors. If a company employee is randomly selected, what is the probability that employee is married and is a supervisor?           "
+  "body": " Independent and Dependent Events        Two events are independent if the occurrence of one event has no impact on the occurrence of the other event. The definition for two independent events is:     Events are dependent if the occurrence of one event affects the occurrence of another event.         (Made in GeoGebra by Steve Phelps)     A delivery service operates in a city where it snows in the winter. Suppose it is now winter. We consider the events that on a randomly selected day that they are late making deliveries, and the event that it snows that day.  Suppose that the probability that the service is late on this day is , the probability that the service is late given that it snows on this day is , and finally the probability that it snows on this day is .   Find the probability that the service is late and it snows on this day.   The probability that the service is late and it snows on this day is .   Find the probability that it snows, given that the service is late on this day.   The probability that it snows, given that the service is late on this day is .   Are the events the service is late on this day, and it snows on this day independent? Explain your reasoning.   The events the service is late on this day, and it snows on this day are not independent. (!!!INSERT REASONING!!!!)    The multiplication rule for probabilities is used to calculate the probability for intersection (or joint probability) of two events occurring.  It depends on knowing whether or not two events are independent or dependent.   For dependent events,     For independent events,        A company has 140 employees, of which 30 are supervisors. Eighty of the employees are married, and 20% of the married employees are supervisors. If a company employee is randomly selected, what is the probability that employee is married and is a supervisor?        "
 },
 {
   "id": "def-independent-events",
@@ -1196,15 +1088,6 @@ var ptx_lunr_docs = [
   "number": "4.2.4",
   "title": "",
   "body": " A company has 140 employees, of which 30 are supervisors. Eighty of the employees are married, and 20% of the married employees are supervisors. If a company employee is randomly selected, what is the probability that employee is married and is a supervisor?      "
-},
-{
-  "id": "sec-independence-7",
-  "level": "2",
-  "url": "sec-independence.html#sec-independence-7",
-  "type": "Exercise",
-  "number": "4.2.5",
-  "title": "",
-  "body": "   "
 },
 {
   "id": "sec-Random-Variables",
@@ -1663,30 +1546,30 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.3",
   "title": "The Uniform Distribution",
-  "body": " The Uniform Distribution     The uniform distribution is a continuous distribution where the probability of any interval is equal to any other interval with the same width.  The mathematical expression that describes the shape of the curve for the uniform probability distribution is called the continuous uniform probability density function:   Uniform Distribution:  Uniform Distribution (Made in GeoGebra by David Ramsay)     Since this function is a constant, the shape of the uniform probability distribution is a rectangle. So computing probabilities associated with it simply involves finding areas of rectanges:    The mean and standard deviation for the uniform distribution are:              (Donnelly 6.29,30,31)  A random variable follows the continuous uniform distribution between 30 and 60. Calculate the following probabilities for the distribution.                    (Donnelly 6.34)  Assume the time required to pass through security at a particular airport follows the continuous uniform distribution with a minimum time of 8 minutes and a maximum time of 31 minutes.  Calculate the value of .     What are the mean and standard deviation for this distribution?                 What is the probability that the next passenger will require less than 25 minutes to pass through security?       What is the probability that the next passenger will require more than 23 minutes to pass through security?       What is the probability that the next passenger will require between 13 and 20 minutes to pass through security?       What time represents the 75th percentile of this distribution?    minutes   "
+  "body": " The Uniform Distribution    The uniform distribution is a continuous distribution where the probability of any interval is equal to any other interval with the same width.  The mathematical expression that describes the shape of the curve for the uniform probability distribution is called the continuous uniform probability density function:   Uniform Distribution:  Uniform Distribution (Made in GeoGebra by David Ramsay)     Since this function is a constant, the shape of the uniform probability distribution is a rectangle. So computing probabilities associated with it simply involves finding areas of rectanges:     The mean and standard deviation for the uniform distribution are:              (Donnelly 6.29,30,31)  A random variable follows the continuous uniform distribution between 30 and 60. Calculate the following probabilities for the distribution.                    (Donnelly 6.34)  Assume the time required to pass through security at a particular airport follows the continuous uniform distribution with a minimum time of 8 minutes and a maximum time of 31 minutes.  Calculate the value of .     What are the mean and standard deviation for this distribution?                 What is the probability that the next passenger will require less than 25 minutes to pass through security?       What is the probability that the next passenger will require more than 23 minutes to pass through security?       What is the probability that the next passenger will require between 13 and 20 minutes to pass through security?       What time represents the 75th percentile of this distribution?    minutes   "
 },
 {
-  "id": "sec-uniform-distribution-3",
+  "id": "sec-uniform-distribution-2-1",
   "level": "2",
-  "url": "sec-uniform-distribution.html#sec-uniform-distribution-3",
+  "url": "sec-uniform-distribution.html#sec-uniform-distribution-2-1",
   "type": "Definition",
   "number": "7.3.1",
   "title": "",
   "body": " The uniform distribution is a continuous distribution where the probability of any interval is equal to any other interval with the same width.  The mathematical expression that describes the shape of the curve for the uniform probability distribution is called the continuous uniform probability density function:   Uniform Distribution:  Uniform Distribution (Made in GeoGebra by David Ramsay)     Since this function is a constant, the shape of the uniform probability distribution is a rectangle. So computing probabilities associated with it simply involves finding areas of rectanges:   "
 },
 {
-  "id": "sec-uniform-distribution-5",
+  "id": "sec-uniform-distribution-4",
   "level": "2",
-  "url": "sec-uniform-distribution.html#sec-uniform-distribution-5",
+  "url": "sec-uniform-distribution.html#sec-uniform-distribution-4",
   "type": "Exercise",
   "number": "7.3.3",
   "title": "",
   "body": "(Donnelly 6.29,30,31)  A random variable follows the continuous uniform distribution between 30 and 60. Calculate the following probabilities for the distribution.                  "
 },
 {
-  "id": "sec-uniform-distribution-6",
+  "id": "sec-uniform-distribution-5",
   "level": "2",
-  "url": "sec-uniform-distribution.html#sec-uniform-distribution-6",
+  "url": "sec-uniform-distribution.html#sec-uniform-distribution-5",
   "type": "Exercise",
   "number": "7.3.4",
   "title": "",
@@ -2377,15 +2260,6 @@ var ptx_lunr_docs = [
   "body": " (Donnelly 13.29)  As smartphones have become more sophisticated, their data usage has increased and caused capacity issues with service providers. High variability in data usage among customers can result in slow connections with the cellphone network. Suppose a cellphone network would like to test if the standard deviation of monthly data usage for its customers has increased beyond 400 megabytes (MB). A random sample of 25 customers was found to have a standard deviation of 460 MB. Using , perform a hypothesis test to determine if the standard deviation for the monthly data usage for the cellphone network has exceeded 400 MB. Use the p-value method of hypothesis testing.                        Since p-value , we fail to reject .  There is not enough evidence to conclude that the standard deviation for monthly data usage for the cell phone network has exceeded 400 MB.  "
 },
 {
-  "id": "sec-hyp-test-single-variance-7",
-  "level": "2",
-  "url": "sec-hyp-test-single-variance.html#sec-hyp-test-single-variance-7",
-  "type": "Exercise",
-  "number": "11.2.3",
-  "title": "",
-  "body": ""
-},
-{
   "id": "sec-F-dist",
   "level": "1",
   "url": "sec-F-dist.html",
@@ -2428,43 +2302,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "11.4",
   "title": "Comparing Variances from Two Populations",
-  "body": " Comparing Variances from Two Populations   When we want to compare the variances of two samples, we do this by conducting a test of the ratio of the variances. If the ratio is equal to , then the variances are equal; if not, then they are unequal.  The sample variances is a good estimate of the population variance. Not surprisingly, the ratio of the two sample variances, , drawn from their respective populations is a good estimate for the ratio of the two population variances, . The sampling distribution of is -distributed with and degrees of freedom if we have independent samples from two normal populations. Since we are comparing two variances, the test statistic is:   The formula for this test statistic is easy to compute by hand, nevertheless, we can also use Excel to do the work if we have raw data (not summary statistics). After stating the two hypotheses, we will go to the Data Analysis tool and choose F-Test Two-Sample for Variances to complete the test.       "
-},
-{
-  "id": "sec-hyp-test-two-variances-3",
-  "level": "2",
-  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-3",
-  "type": "Exercise",
-  "number": "11.4.1",
-  "title": "",
-  "body": ""
-},
-{
-  "id": "sec-hyp-test-two-variances-4",
-  "level": "2",
-  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-4",
-  "type": "Exercise",
-  "number": "11.4.2",
-  "title": "",
-  "body": ""
-},
-{
-  "id": "sec-hyp-test-two-variances-5",
-  "level": "2",
-  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-5",
-  "type": "Exercise",
-  "number": "11.4.3",
-  "title": "",
-  "body": ""
-},
-{
-  "id": "sec-hyp-test-two-variances-6",
-  "level": "2",
-  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-6",
-  "type": "Exercise",
-  "number": "11.4.4",
-  "title": "",
-  "body": ""
+  "body": " Comparing Variances from Two Populations   When we want to compare the variances of two samples, we do this by conducting a test of the ratio of the variances. If the ratio is equal to , then the variances are equal; if not, then they are unequal.  The sample variances is a good estimate of the population variance. Not surprisingly, the ratio of the two sample variances, , drawn from their respective populations is a good estimate for the ratio of the two population variances, . The sampling distribution of is -distributed with and degrees of freedom if we have independent samples from two normal populations. Since we are comparing two variances, the test statistic is:   The formula for this test statistic is easy to compute by hand, nevertheless, we can also use Excel to do the work if we have raw data (not summary statistics). After stating the two hypotheses, we will go to the Data Analysis tool and choose F-Test Two-Sample for Variances to complete the test.          "
 },
 {
   "id": "sec-Overview",
