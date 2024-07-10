@@ -668,7 +668,7 @@
         </statement>
         <answer>
             <p>
-                <me>P(\text{Toyota}|\text{car})=\frac{P(\text{Toyota and car)}{P(\text{car})}=\frac{7/36}{26/36}=\frac{7}{26}\approx 0.269</me>
+                <me>P(\text{Toyota}|\text{car})=\frac{P(\text{Toyota and car})}{P(\text{car})}=\frac{7/36}{26/36}=\frac{7}{26}\approx 0.269</me>
             </p>
         </answer>
     </task>
@@ -680,7 +680,7 @@
         </statement>
         <answer>
             <p>
-                <me>P(\text{Truck}|\text{Ford})=\frac{P(\text{Truck and Ford)}{P(\text{Ford})}=\frac{1/36}{15/36}=\frac{1}{15}\approx 0.067</me>
+                <me>P(\text{Truck}|\text{Ford})=\frac{P(\text{Truck and Ford})}{P(\text{Ford})}=\frac{1/36}{15/36}=\frac{1}{15}\approx 0.067</me>
             </p>
         </answer>
     </task>

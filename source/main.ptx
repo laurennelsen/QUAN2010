@@ -9,8 +9,8 @@
     <subtitle>Introduction to Business Statistics</subtitle>
 
     <!-- Include frontmatter -->
-    <xi:include href="./frontmatter.ptx" />
-
+<!--    <xi:include href="./frontmatter.ptx" />
+-->
     <!-- Include chapters -->
     <xi:include href="./ch-Intro-to-Bus-Stats.ptx" />
 
@@ -37,13 +37,13 @@
 
     <xi:include href="./ch-Hypothesis-Variance.ptx" />
 
-    <xi:include href="./ch-Hypothesis-Testing-Two-Populations.ptx" />
+    <!--<xi:include href="./ch-Hypothesis-Testing-Two-Populations.ptx" />
 
 
 
     <xi:include href="./ch-Intro-to-Regression-Modeling.ptx" />
 
-
+-->
     <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />
 
