@@ -9,8 +9,8 @@
     <subtitle>Introduction to Business Statistics</subtitle>
 
     <!-- Include frontmatter -->
-<!--<xi:include href="./frontmatter.ptx" />
--->
+    <xi:include href="./frontmatter.ptx" />
+
     <!-- Include chapters -->
     <xi:include href="./ch-Intro-to-Bus-Stats.ptx" />
 
