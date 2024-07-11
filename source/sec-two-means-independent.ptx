@@ -35,13 +35,28 @@
 
                     <tabular>
                         <row>
-                            <cell><m>(\mu_1-\mu_2)_{H_0}</m></cell> <cell>=</cell><cell>the hypothesized difference in population means (defined by the null hypothesis)</cell>
+                            <cell><m>(\mu_1-\mu_2)_{H_0}</m></cell> <cell>=</cell><cell>the hypothesized difference in population means</cell>
                         </row>
                         <row>
-                            <cell><m>\sigma_{\overline{x}_1-\overline{x}_2}</m></cell> <cell>=</cell> <cell>the standard error for the difference between the two means</cell>
+                            <cell></cell>
+                            <cell></cell>
+                            <cell> (defined by the null hypothesis)</cell>
                         </row>
                         <row>
-                            <cell><m>\overline{x}_1-\overline{x}_2</m></cell> <cell>=</cell> <cell>the difference in sample means between Populations 1 and 2</cell>
+                            <cell><m>\sigma_{\overline{x}_1-\overline{x}_2}</m></cell> <cell>=</cell> <cell>the standard error for the difference between the</cell>
+                        </row>
+                        <row>
+                            <cell></cell>
+                            <cell></cell>
+                            <cell>  two means</cell>
+                        </row>
+                        <row>
+                            <cell><m>\overline{x}_1-\overline{x}_2</m></cell> <cell>=</cell> <cell>the difference in sample means between</cell>
+                        </row>
+                        <row>
+                            <cell></cell>
+                            <cell></cell>
+                            <cell> Populations 1 and 2</cell>
                         </row>
                     </tabular>
                 </p>
@@ -105,7 +120,7 @@
     <statement>
         <p>
             The formula for the <em>confidence interval</em> for the difference between two means given known standard deviations is
-            <me>(\overline{x}_1-\overline{x}_2)\pm z_{\alpha/2}\cdot \sigma_{\overline{x}_1-\overline{x}_2}</me>
+            <me> ( \overline{x}_1-\overline{x}_2 ) \pm z_{\alpha/2}\cdot \sigma_{\overline{x}_1-\overline{x}_2}</me>
             where again
             <tabular>
                 <row>
@@ -145,20 +160,20 @@
                 </row>
                 <row header="yes">
                     <cell>Automatic</cell>
-                    <cell><me>\$411.30</me></cell>
-                    <cell><me>52</me></cell>
-                    <cell><me>\$ 23</me></cell>
+                    <cell><m>\$ 411.30</m></cell>
+                    <cell><m>52</m></cell>
+                    <cell><m>\$ 23</m></cell>
                 </row>
                 <row header="yes">
                     <cell>Manual</cell>
-                    <cell><me>\$372.80</me></cell>
-                    <cell><me>36</me></cell>
-                    <cell><me>\$ 27</me></cell>
+                    <cell><m>\$ 372.80</m></cell>
+                    <cell><m>36</m></cell>
+                    <cell><m>\$ 27</m></cell>
                 </row>
             </tabular>
         </p>
         <p>
-            Construct a <m>90\%</m> confidence interval to estimate the difference in the average cost of a one-week rental between these two types of cars at the airport.  Can you conclude that a difference exists in the average rental price of the two types of cars?
+            Construct a <m>90 \%</m> confidence interval to estimate the difference in the average cost of a one-week rental between these two types of cars at the airport.  Can you conclude that a difference exists in the average rental price of the two types of cars?
         </p>
     </statement>
     <answer>
@@ -175,25 +190,25 @@
                     </p>
                 </li>
             </ul>
-            Formula:  <m>(\overline{x}_1-\overline{x}_2)\pm z_{\alpha/2}\cdot \sigma_{\overline{x}_1-\overline{x}_2}</m>
+            Formula:  <me>(\overline{x}_1-\overline{x}_2)\pm z_{\alpha/2}\cdot \sigma_{\overline{x}_1-\overline{x}_2}</me>
         </p>
         <p>
-            Standard error:  <m>\sigma_{\overline{x}_1-\overline{x}_2}=\sqrt{\frac{23^2}{52}+\frac{27^2}{36}}\approx 5.5157</m>
+            Standard error:  <me>\sigma_{\overline{x}_1-\overline{x}_2}=\sqrt{\frac{23^2}{52}+\frac{27^2}{36}}\approx 5.5157</me>
         </p>
         <p>
-            <m>z_{\alpha/2}=NORM.S.INV(0.95)\approx 1.645</m>
+            <me>z_{\alpha/2}=NORM.S.INV(0.95)\approx 1.645</me>
         </p>
         <p>
-            MOE:  <m>\approx 1.645(5.5157)\approx 9.0733</m>
+            MOE:  <me>\approx 1.645(5.5157)\approx 9.0733</me>
         </p>
         <p>
-            LCL: <m>\approx (411.30-372.80)-9.0733=29.4267</m>
+            LCL: <me>\approx (411.30-372.80)-9.0733=29.4267</me>
         </p>
         <p>
-            UCL: <m>\approx (411.30-372.80)+9.0733=47.5733</m>
+            UCL: <me>\approx (411.30-372.80)+9.0733=47.5733</me>
         </p>
         <p>
-            We are <m>90%</m> confident that
+            We are <m>90\%</m> confident that
             <me>29.43\lt \mu_1-\mu_2\lt 47.57.</me>
         </p>
         <p>
@@ -204,7 +219,7 @@
 
 
 <p>
-    When we don't knkow the population standard deviations, we substitute the sample standard deviations in their place.  Recall from <xref ref="sec-Confidence-Interval-for-Mean-Sigma-Unknown"/>  that this means the proper sampling distribution is the Student's <m>t</m>-distribution instead of the normal distribution (as long as the sample sizes are large and/or the samples are drawn from normal populations).
+    When we don't know the population standard deviations, we substitute the sample standard deviations in their place.  Recall from <xref ref="sec-Confidence-Interval-for-Mean-Sigma-Unknown"/> that this means the proper sampling distribution is the Student's <m>t</m>-distribution instead of the normal distribution (as long as the sample sizes are large and/or the samples are drawn from normal populations).
 </p>
 
 <p>
@@ -405,20 +420,21 @@
         </statement>
         <answer>
             <p>
-                <m>T.INV.2T(0.05,83)\approx 1.9889</m>, so the critical values are approximately <m>-1.9889</m> and <m>1.9889</m>.
+                <me>T.INV.2T(0.05,83)\approx 1.9889,</me> 
+                so the critical values are approximately <m>-1.9889</m> and <m>1.9889</m>.
             </p>
             <p>
                 Formula for confidence interval:
                 <me>(\overline{x}_1-\overline{x}_2)\pm t_{\alpha/2}\cdot\sqrt{s_p^2\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}</me>
             </p>
             <p>
-                Margin of error:  <m>\approx 1.9899\sqrt{557,378.5749\left(\frac{1}{45}+\frac{1}{40}\right)\approx 322.8</m>
+                Margin of error:  <me>\approx 1.9899\sqrt{557,378.5749\left(\frac{1}{45}+\frac{1}{40}\right)}\approx 322.8</me>
             </p>
             <p>
-                LCL: <m>\approx (2462.3-2257)-322.8=-117.5</m>
+                LCL: <me>\approx (2462.3-2257)-322.8=-117.5</me>
             </p>
             <p>
-                UCL: <m>\approx (2462.3-2257)+322.8=528.1</m>
+                UCL: <me>\approx (2462.3-2257)+322.8=528.1</me>
             </p>
             <p>
                 We are <m>95\%</m> confident that 

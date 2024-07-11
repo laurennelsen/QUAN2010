@@ -19,7 +19,7 @@
 </introduction>
 
 <p>
-  In the next example, we perform a single population hypothesis test for <m>\sigma^2</m> using the traditional method of hypothesis testing.  Recall that this method requires the identification of critical value(s), <m>\chi^2_{\alph}</m>, which we can find using a table or using the below Excel commands:
+  In the next example, we perform a single population hypothesis test for <m>\sigma^2</m> using the traditional method of hypothesis testing.  Recall that this method requires the identification of critical value(s), <m>\chi^2_{\alpha}</m>, which we can find using a table or using the below Excel commands:
   <me>CHISQ.INV(\text{left tail area, degrees of freedom}),\;\;\; CHISQ.INV.RT(\text{right tail area, degrees of freedom})</me>
 </p>
 

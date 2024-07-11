@@ -76,7 +76,7 @@
     </statement>
     <answer>
       <p>
-        critical value:  <m>NORM.S.INV(0.95)\approx 1.645</m>
+        critical value:  <me>NORM.S.INV(0.95)\approx 1.645</me>
       </p>
       <p>
         population 1 = men
@@ -93,7 +93,7 @@
         test statistic:  <me>z_p\approx\frac{(0.124-0.073)-0}{0.1(0.9)\left(\frac{1}{170}+\frac{1}{150}\right)}\approx 1.52</me>
       </p>
       <p>
-        <m>\text{test statistic}\lt \text{ critical value}</m>, so fail to reject <m>H_0</m>
+        <me>\text{test statistic}\lt \text{ critical value}</me>, so fail to reject <m>H_0</m>
       </p>
       <p>
         There is not enough evidence to conclude that the unemployment rate is higher for men than women.
@@ -155,7 +155,7 @@
       </statement>
       <answer>
         <p>
-          Formula: <m>(\overline{p}_1-\overline{p}_2)\pm z_{\alpha/2}\cdot\sigma_{p_1-p_2}</m>
+          Formula: <me>(\overline{p}_1-\overline{p}_2)\pm z_{\alpha/2}\cdot\sigma_{p_1-p_2}</me>
         </p>
         <p>
           <me>\overline{p}_1-\overline{p}_2\approx 0.372-0.221=0.151</me>
@@ -168,10 +168,10 @@
           Margin of error: <m>1.96(0.0469)\approx 0.0919</m>
         </p>
         <p>
-          LCL: <m>0.151-0.0919\approx 0.0591</m>
+          LCL: <me>0.151-0.0919\approx 0.0591</me>
         </p>
         <p>
-          UCL: <m>0.151+0.0919\approx 0.2429</m>
+          UCL: <me>0.151+0.0919\approx 0.2429</me>
         </p>
         <p>
           Interval: We are <m>95\%</m> confident that
