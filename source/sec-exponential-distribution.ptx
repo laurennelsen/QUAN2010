@@ -142,27 +142,36 @@
             </exercise>
 
 
-            <exercise label="fillin-exponential">
-                <title>Exponential Probability Practice</title>
-            
+
+            <exercise>
                 <statement>
                     <p>
-                        An exponential probability distribution has lambda equal to <m>18</m> customers per hour.  Find the probability that the next customer will arrive within the next minute.  (Round your answer to 4 decimal places.)  <var/>
-                    </p>
-                
+                    An exponential probability distribution has lambda equal to <m>18</m> customers per hour.  Find the probability that the next customer will arrive within the next minute.  (Round your answer to 4 decimal places.)  <var/>
+                  </p>
                 </statement>
                 <setup>
-                    <var>
-                        <condition>
-                            0.2592
-                        </condition>
-                        <feedback>
-                            <p>Good!</p>
-                        </feedback>
-                    </var>
+                  <var>
+              
+                  <condition number="0.2592" tolerance="0.0001">
+                  <feedback>
+                    <p>
+                      Any value in the interval <m>0.2592\pm 0.0001</m> is marked as correct for this problem.
+                    </p>
+                  </feedback>
+                  </condition>
+                  <condition string=".*">
+                  <feedback>
+                    <p>
+                      Incorrect.
+                      Did you round to four decimal places?
+                    </p>
+                  </feedback>
+                  </condition>
+                  </var>
                 </setup>
-            </exercise>
+              </exercise> 
 
+            
 
             
 

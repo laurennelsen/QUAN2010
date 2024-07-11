@@ -370,7 +370,7 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
                   <p> Find the probability that a randomly selected 5 year old girl's height is is at least <m>97.66</m> cm. </p>
                 </statement>
                 <answer>
-                  <p> <m>P(X\geq 97.66)=0.9715169885897529</m>. </p>
+                  <p> <m>P(X\geq 97.66)\approx 0.9715169885897529</m>. </p>
                 </answer>
               </task>
               <task>
@@ -378,7 +378,7 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
                   <p> Find the probability that a randomly selected 5 year old girl's height is between <m>107.22</m> and <m>109.94</m> cm. </p>
                 </statement>
                 <answer>
-                  <p> <m>P(107.22\lt X\lt 109.94)=0.19168126069053149</m>. </p>
+                  <p> <m>P(107.22\lt X\lt 109.94)\approx 0.19168126069053149</m>. </p>
                 </answer>
               </task>
           </exercise>
@@ -551,27 +551,13 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
 
 
 
-<image xml:id="fig-A-test">
-              
-    <latex-image>
-        \begin{tikzpicture}[scale=.6]
-\begin{axis}[every axis plot post/.append style={ mark=none,samples=50,smooth},domain=50:220]
-
-\addplot {\gauss{135}{22}};
-
-\addplot [fill=cyan!30, draw=none, domain=120:180] {\gauss{135}{22}} \closedcycle; 
-\end{axis}
-\end{tikzpicture}
-    </latex-image>
-
-  </image>
 
 
 
 
 
 
-  <figure>
+  <figure xml:id="image-normal-matching">
     <caption>Images for <xref ref="ex-NormalImageMatching"/></caption>
     <sidebyside>
         <figure>
@@ -633,7 +619,7 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
     <title>Normal Distribution Matching Problem</title>
     <statement>
     <p>
-        Problem instructions.
+        Match the images in <xref ref="image-normal-matching"/> with the probability that is shown in the image
     </p>
     </statement>
 
@@ -642,7 +628,7 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
     <match>
         <premise>
         
-            image
+            (a)???
             
         </premise>
         <response>
@@ -654,7 +640,7 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
 
     <match>
         <premise>
-            image
+            (b)???
         </premise>
         <response>
             <p>
@@ -665,7 +651,7 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
 
     <match>
         <premise>
-            image
+            ???
         </premise>
         <response>
             <p>
@@ -676,7 +662,7 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
 
     <match>
         <premise>
-            image
+            ???
         </premise>
         <response>
             <p>
@@ -753,43 +739,79 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
 
 
 
-<exercise>
-    <introduction>
-      <p> Let <m>z</m> be the standard normal variable. Find the following: </p>
-    </introduction>
-      <task>
-        <statement>
-          <p> <m>P(Z\geq -2.89)</m>. </p>
-        </statement>
-        <answer>
-          <p> <m>P(Z\geq -2.89)=0.9980737908678121</m>. </p>
-        </answer>
-      </task>
-      <task>
-        <statement>
-          <p> <m>P(0.11\lt Z\lt 2.7)</m>. </p>
-        </statement>
-        <answer>
-          <p> <m>P(0.11\lt Z\lt 2.7)=0.45273771365464255</m>. </p>
-        </answer>
-      </task>
-      <task>
-        <statement>
-          <p> <m>z^*</m> such that <m>P(Z\leq z^*)=0.61</m>. </p>
-        </statement>
-        <answer>
-          <p> <m>z^*=0.2793190344474541</m>. </p>
-        </answer>
-      </task>
-      <task>
-        <statement>
-          <p> <m>z^*</m> such that <m>P(-z^*\lt Z\lt z^*)=0.69</m>. </p>
-        </statement>
-        <answer>
-          <p> <m> z^*=1.015222033217028</m>. </p>
-        </answer>
-      </task>
-  </exercise>
+
+        <exercise>
+            <statement>
+                <p> Let <m>z</m> be the standard normal variable. </p>
+              <p> Find <m>P(Z\geq -2.89)</m>.  Round your answer to four decimal places: </p>
+              <p>
+                <var />
+              </p>
+            </statement>
+            <setup>
+              <var>
+          
+              <condition number="0.9981" tolerance="0.0001">
+              <feedback>
+                <p>
+                  Any value in the interval <m>0.9981\pm 0.0001</m> is marked as correct for this problem.
+                </p>
+              </feedback>
+              </condition>
+              <condition string=".*">
+              <feedback>
+                <p>
+                  Incorrect.
+                  Did you round to four decimal places?
+                </p>
+              </feedback>
+              </condition>
+              </var>
+            </setup>
+          </exercise> 
+
+
+
+          <exercise>
+            <statement>
+                <p> Let <m>z</m> be the standard normal variable. </p>
+              <p> Find <m>P(0.11\lt Z\lt 2.7)</m>.  Round your answer to four decimal places: </p>
+              <p>
+                <var />
+              </p>
+            </statement>
+            <setup>
+              <var>
+          
+              <condition number="0.4527" tolerance="0.0001">
+              <feedback>
+                <p>
+                  Any value in the interval <m>0.4527\pm 0.0001</m> is marked as correct for this problem.
+                </p>
+              </feedback>
+              </condition>
+              <condition string=".*">
+              <feedback>
+                <p>
+                  Incorrect.
+                  Did you round to four decimal places?
+                </p>
+              </feedback>
+              </condition>
+              </var>
+            </setup>
+          </exercise> 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -818,6 +840,75 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
             </li>
         </ul>
     </p>
+
+
+
+
+
+    <exercise>
+        <statement>
+            <p> Let <m>z</m> be the standard normal variable. </p>
+          <p> Find <m>z^*</m> such that <m>P(Z\leq z^*)=0.61</m>.  Round your answer to four decimal places: </p>
+          <p>
+            <var />
+          </p>
+        </statement>
+        <setup>
+          <var>
+      
+          <condition number="0.2793" tolerance="0.0001">
+          <feedback>
+            <p>
+              Any value in the interval <m>0.2793\pm 0.0001</m> is marked as correct for this problem.
+            </p>
+          </feedback>
+          </condition>
+          <condition string=".*">
+          <feedback>
+            <p>
+              Incorrect.
+              Did you round to four decimal places?
+            </p>
+          </feedback>
+          </condition>
+          </var>
+        </setup>
+      </exercise> 
+
+
+
+
+      <exercise>
+        <statement>
+            <p> Let <m>z</m> be the standard normal variable. </p>
+          <p> Find <m>z^*</m> such that <m>P(-z^*\lt Z\lt z^*)=0.69</m>.  Round your answer to four decimal places: </p>
+          <p>
+            <var />
+          </p>
+        </statement>
+        <setup>
+          <var>
+      
+          <condition number="0.2793" tolerance="0.0001">
+          <feedback>
+            <p>
+              Any value in the interval <m>1.0152\pm 0.0001</m> is marked as correct for this problem.
+            </p>
+          </feedback>
+          </condition>
+          <condition string=".*">
+          <feedback>
+            <p>
+              Incorrect.
+              Did you round to four decimal places?
+            </p>
+          </feedback>
+          </condition>
+          </var>
+        </setup>
+      </exercise> 
+
+      
 
     <exercise>
         <statement>
@@ -868,6 +959,10 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
 
 
 
+
+
+
+
     <exercise>
         <introduction>
           <p> Suppose the retirement age of professional athletes in a certain league is normally distributed with mean <m>32.27</m> years and standard deviation <m>3.62</m> years. Find the following: </p>
@@ -877,7 +972,7 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
               <p> Find the probability that a randomly selected athlete's retirement age is is at least <m>30.15</m> years. </p>
             </statement>
             <answer>
-              <p> <m>P(X\geq 30.15)=0.7209397092241314</m>. </p>
+              <p> <m>P(X\geq 30.15)\approx 0.7209397092241314</m>. </p>
             </answer>
           </task>
           <task>
@@ -885,7 +980,7 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
               <p> Find the probability that a randomly selected athlete's retirement age is between <m>30.33</m> and <m>39.65</m> years. </p>
             </statement>
             <answer>
-              <p> <m>P(30.33\lt X\lt 39.65)=0.6832488917348373</m>. </p>
+              <p> <m>P(30.33\lt X\lt 39.65)\approx 0.6832488917348373</m>. </p>
             </answer>
           </task>
           <task>
@@ -893,7 +988,7 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
               <p> Find <m>X^*</m> such that the probability that a randomly selected athlete's retirement age is is at most <m>X^*</m> years is <m>68\%</m>. </p>
             </statement>
             <answer>
-              <p> If <m>P(X\leq X^*)=68\%</m> then <m>X=33.96306965279452</m> years. </p>
+              <p> If <m>P(X\leq X^*)=68\%</m> then <m>X\approx 33.96306965279452</m> years. </p>
             </answer>
           </task>
           <task>
@@ -901,7 +996,7 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
               <p> Find <m>k</m> such that the probability that a randomly selected athlete's retirement age is between <m>32.27-k</m> years and <m>32.27+k</m> years is <m>42\%</m>. </p>
             </statement>
             <answer>
-              <p> If <m>P(32.27-k\lt X\lt 32.27+k)=42\%</m> then <m>k=2.0032526847915357</m> years. </p>
+              <p> If <m>P(32.27-k\lt X\lt 32.27+k)=42\%</m> then <m>k\approx 2.0032526847915357</m> years. </p>
             </answer>
           </task>
       </exercise>

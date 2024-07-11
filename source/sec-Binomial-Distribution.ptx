@@ -47,6 +47,11 @@
   </definition>
 
 
+  <p>
+    !!!!!!!!INSERT MORE INCLUDING EXCEL COMMANDS!!!!!!!!!!!
+  </p>
+
+
 
 </introduction>
 
@@ -125,48 +130,133 @@
   </exercise>
 
 
-
+  <exercise>
+    <statement>
+        <p> Suppose a bank gives out a number of loans. Each of the <m>6</m> loans has a <m>0.19</m> chance of defaulting. Suppose that whether or not each loan default is independent of the other loans. </p>
+      <p> What is the probability that <m>3</m> loans default? Round your answer to four decimal places: </p>  
+      <p>
+        <var />
+      </p>
+    </statement>
+    <setup>
+      <var>
+  
+      <condition number="0.0729" tolerance="0.0001">
+      <feedback>
+        <p>
+          Any value in the interval <m>0.0729\pm 0.0001</m> is marked as correct for this problem.
+        </p>
+      </feedback>
+      </condition>
+      <condition string=".*">
+      <feedback>
+        <p>
+          Incorrect.
+          Did you round to four decimal places?
+        </p>
+      </feedback>
+      </condition>
+      </var>
+    </setup>
+  </exercise>
 
 
   <exercise>
-    <introduction>
-      <p> Suppose a bank gives out a number of loans. Each of the <m>6</m> loans has a <m>0.19</m> chance of defaulting. Suppose that whether or not each loan default is independent of the other loans. </p>
-      <p> Find the following: </p>
-    </introduction>
-      <task>
-        <statement>
-          <p> What is the probability that <m>3</m> loans default? </p>
-        </statement>
-        <answer>
-          <p> <m>0.07290307638000003</m>. </p>
-        </answer>
-      </task>
-      <task>
-        <statement>
-          <p> What is the probability that <m>4</m> loans default? </p>
-        </statement>
-        <answer>
-          <p> <m>0.012825541215000003</m>. </p>
-        </answer>
-      </task>
-      <task>
-        <statement>
-          <p> What is the probability that less than <m>3</m> loans default? </p>
-        </statement>
-        <answer>
-          <p> <m>0.9130209524100005</m>. </p>
-        </answer>
-      </task>
-      <task>
-        <statement>
-          <p> What is the probability that between <m>2</m> and <m>4</m> (inclusive) loans default? </p>
-        </statement>
-        <answer>
-          <p> <m>0.3188266118100001</m>. </p>
-        </answer>
-      </task>
+    <statement>
+        <p> Suppose a bank gives out a number of loans. Each of the <m>6</m> loans has a <m>0.19</m> chance of defaulting. Suppose that whether or not each loan default is independent of the other loans. </p>
+      <p> What is the probability that <m>4</m> loans default? Round your answer to four decimal places: </p>
+      <p>
+        <var />
+      </p>
+    </statement>
+    <setup>
+      <var>
+  
+      <condition number="0.0128" tolerance="0.0001">
+      <feedback>
+        <p>
+          Any value in the interval <m>0.0128\pm 0.0001</m> is marked as correct for this problem.
+        </p>
+      </feedback>
+      </condition>
+      <condition string=".*">
+      <feedback>
+        <p>
+          Incorrect.
+          Did you round to four decimal places?
+        </p>
+      </feedback>
+      </condition>
+      </var>
+    </setup>
   </exercise>
 
+  <exercise>
+    <statement>
+        <p> Suppose a bank gives out a number of loans. Each of the <m>6</m> loans has a <m>0.19</m> chance of defaulting. Suppose that whether or not each loan default is independent of the other loans. </p>
+      <p> What is the probability that less than <m>3</m> loans default? Round your answer to four decimal places: </p>
+      <p>
+        <var />
+      </p>
+    </statement>
+    <setup>
+      <var>
+  
+      <condition number="0.9130" tolerance="0.0001">
+      <feedback>
+        <p>
+          Any value in the interval <m>0.9130\pm 0.0001</m> is marked as correct for this problem.
+        </p>
+      </feedback>
+      </condition>
+      <condition string=".*">
+      <feedback>
+        <p>
+          Incorrect.
+          Did you round to four decimal places?
+        </p>
+      </feedback>
+      </condition>
+      </var>
+    </setup>
+  </exercise>
+
+
+  <exercise>
+    <statement>
+        <p> Suppose a bank gives out a number of loans. Each of the <m>6</m> loans has a <m>0.19</m> chance of defaulting. Suppose that whether or not each loan default is independent of the other loans. </p>
+      <p> What is the probability that between <m>2</m> and <m>4</m> (inclusive) loans default? Round your answer to four decimal places: </p>
+      <p>
+        <var />
+      </p>
+    </statement>
+    <setup>
+      <var>
+  
+      <condition number="0.3188" tolerance="0.0001">
+      <feedback>
+        <p>
+          Any value in the interval <m>0.3188\pm 0.0001</m> is marked as correct for this problem.
+        </p>
+      </feedback>
+      </condition>
+      <condition string=".*">
+      <feedback>
+        <p>
+          Incorrect.
+          Did you round to four decimal places?
+        </p>
+      </feedback>
+      </condition>
+      </var>
+    </setup>
+  </exercise>
+
+
+
+
+
+  
 
 
 

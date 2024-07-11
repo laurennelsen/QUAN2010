@@ -324,7 +324,7 @@
         </statement>
         <answer>
             <p>
-                <me>\frac{12}{52}={3}{13}</me>
+                <me>\frac{12}{52}=\frac{3}{13}</me>
             </p>
         </answer>
     </task>
@@ -452,7 +452,7 @@
         </statement>
         <answer>
             <p>
-                <me>\frac{10}{36}=\approx 0.278</me>
+                <me>\frac{10}{36}\approx 0.278</me>
             </p>
         </answer>
     </task>
