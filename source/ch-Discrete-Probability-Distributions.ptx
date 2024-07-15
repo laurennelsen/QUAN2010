@@ -12,5 +12,6 @@
   <xi:include href="sec-Random-Variables.ptx" />
   <xi:include href="sec-Desc-Stats-Discrete.ptx" />
   <xi:include href="sec-Binomial-Distribution.ptx" />
+  <xi:include href="sec-Poisson-Distribution.ptx" />
 
 </chapter>

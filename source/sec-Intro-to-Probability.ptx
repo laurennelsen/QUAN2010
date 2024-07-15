@@ -400,7 +400,7 @@
 </definition>
 
 
-<exercise>
+<exercise xml:id="ex-vehicles">
     <introduction>
         <p>
             (Donnelly 4.19)
@@ -440,9 +440,75 @@
     <task>
         <statement>
             <p>
-                ....(Figure out how to make fillable table......)  Create a contingency table that summarizes the data.
+                Create a contingency table that summarizes the data.
+            </p>
+            <p>
+                <tabular>
+                    <row header="yes" bottom="medium">
+                        <cell  right="medium"></cell>
+                        <cell right="minor">GM</cell>
+                        <cell right="minor">Ford</cell>
+                        <cell right="medium">Toyota</cell>
+                        <cell>Total</cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell right="medium"> Car</cell>
+                        <cell right="minor"></cell>
+                        <cell right="minor"></cell>
+                        <cell right="medium"></cell>
+                        <cell></cell>
+                    </row>
+                    <row bottom="medium">
+                        <cell right="medium"> Truck</cell>
+                        <cell right="minor"></cell>
+                        <cell right="minor"></cell>
+                        <cell right="medium"></cell>
+                        <cell></cell>
+                    </row>
+                    <row right="medium">
+                        <cell right="medium"> Total</cell>
+                        <cell right="minor"></cell>
+                        <cell right="minor"></cell>
+                        <cell right="medium"></cell>
+                        <cell></cell>
+                    </row>
+                </tabular>
             </p>
         </statement>
+        <answer>
+            <p>
+                <tabular>
+                    <row header="yes" bottom="medium">
+                        <cell  right="medium"></cell>
+                        <cell right="minor">GM</cell>
+                        <cell right="minor">Ford</cell>
+                        <cell right="medium">Toyota</cell>
+                        <cell>Total</cell>
+                    </row>
+                    <row bottom="minor">
+                        <cell right="medium"> Car</cell>
+                        <cell right="minor">5</cell>
+                        <cell right="minor">14</cell>
+                        <cell right="medium">7</cell>
+                        <cell>26</cell>
+                    </row>
+                    <row bottom="medium">
+                        <cell right="medium"> Truck</cell>
+                        <cell right="minor">6</cell>
+                        <cell right="minor">1</cell>
+                        <cell right="medium">3</cell>
+                        <cell>10</cell>
+                    </row>
+                    <row right="medium">
+                        <cell right="medium"> Total</cell>
+                        <cell right="minor">11</cell>
+                        <cell right="minor">15</cell>
+                        <cell right="medium">10</cell>
+                        <cell>36</cell>
+                    </row>
+                </tabular>
+            </p>
+        </answer>
     </task>
     <task>
         <statement>
@@ -539,7 +605,39 @@
 <exercise>
     <introduction>
         <p>
-            Use the contingency table from the previous exercise... (insert!!!!!) to answer the following questions.
+            Use the contingency table from <xref ref="ex-vehicles"/> to answer the following questions.
+        </p>
+        <p>
+            <tabular>
+                <row header="yes" bottom="medium">
+                    <cell  right="medium"></cell>
+                    <cell right="minor">GM</cell>
+                    <cell right="minor">Ford</cell>
+                    <cell right="medium">Toyota</cell>
+                    <cell>Total</cell>
+                </row>
+                <row bottom="minor">
+                    <cell right="medium"> Car</cell>
+                    <cell right="minor">5</cell>
+                    <cell right="minor">14</cell>
+                    <cell right="medium">7</cell>
+                    <cell>26</cell>
+                </row>
+                <row bottom="medium">
+                    <cell right="medium"> Truck</cell>
+                    <cell right="minor">6</cell>
+                    <cell right="minor">1</cell>
+                    <cell right="medium">3</cell>
+                    <cell>10</cell>
+                </row>
+                <row right="medium">
+                    <cell right="medium"> Total</cell>
+                    <cell right="minor">11</cell>
+                    <cell right="minor">15</cell>
+                    <cell right="medium">10</cell>
+                    <cell>36</cell>
+                </row>
+            </tabular>
         </p>
     </introduction>
     <task>
@@ -654,10 +752,42 @@
 </definition>
 
 
-<exercise>
+<exercise xml:id="ex-vehicles-marginal">
     <introduction>
         <p>
-            Let's look back at the contingency table from previous exercises..... (!!!insert!!!!)
+            Use the contingency table from <xref ref="ex-vehicles"/> to answer the following questions.
+        </p>
+        <p>
+            <tabular>
+                <row header="yes" bottom="medium">
+                    <cell  right="medium"></cell>
+                    <cell right="minor">GM</cell>
+                    <cell right="minor">Ford</cell>
+                    <cell right="medium">Toyota</cell>
+                    <cell>Total</cell>
+                </row>
+                <row bottom="minor">
+                    <cell right="medium"> Car</cell>
+                    <cell right="minor">5</cell>
+                    <cell right="minor">14</cell>
+                    <cell right="medium">7</cell>
+                    <cell>26</cell>
+                </row>
+                <row bottom="medium">
+                    <cell right="medium"> Truck</cell>
+                    <cell right="minor">6</cell>
+                    <cell right="minor">1</cell>
+                    <cell right="medium">3</cell>
+                    <cell>10</cell>
+                </row>
+                <row right="medium">
+                    <cell right="medium"> Total</cell>
+                    <cell right="minor">11</cell>
+                    <cell right="minor">15</cell>
+                    <cell right="medium">10</cell>
+                    <cell>36</cell>
+                </row>
+            </tabular>
         </p>
     </introduction>
     <task>
@@ -685,6 +815,7 @@
         </answer>
     </task>
 </exercise>
+
 
 
 

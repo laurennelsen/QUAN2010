@@ -37,12 +37,12 @@
 <exercise>
     <statement>
         <p>
-            A new baby is in the <m>50</m>th percentile for weight.  What does that mean?
+            A new baby is in the <m>30</m>th percentile for weight.  What does that mean?
         </p>
     </statement>
     <answer>
         <p>
-            <m>50\%</m> of babies (at that age) weigh less than this baby.
+            <m>30\%</m> of babies (at that age) weigh less than this baby.
         </p>
     </answer>
 </exercise>
@@ -100,33 +100,34 @@
                 The three quartiles and the IQR
             </p>
         </statement>
+        <answer>
+            <p>
+                <ul>
+                    <li>
+                        <p>
+                            <m>Q_1:\;\;  =QUARTILE.EXC(B2:B23,1)\approx 840.149\text{ millions of dollars} </m>  
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>Q_2:\;\;  =QUARTILE.EXC(B2:B23,2)\approx 954.869 \text{ millions of dollars} </m>  
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>Q_3:\;\;  =QUARTILE.EXC(B2:B23,3)\approx 1213.022 \text{ millions of dollars} </m>  
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <m>IQR=Q_3-Q1\approx 372.873\text{ millions of dollars}</m>
+                        </p>
+                    </li>
+                </ul>
+            </p>
+        </answer>
     </task>
-    <answer>
-        <p>
-            <ul>
-                <li>
-                    <p>
-                        <m>Q_1:\;\;  =QUARTILE.EXC(B2:B23,1)\approx 840.149\text{ millions of dollars} </m>  
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <m>Q_2:\;\;  =QUARTILE.EXC(B2:B23,2)\approx 954.869 \text{ millions of dollars} </m>  
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <m>Q_3:\;\;  =QUARTILE.EXC(B2:B23,3)\approx 1213.022 \text{ millions of dollars} </m>  
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <m>IQR=Q_3-Q1\approx 372.873\text{ millions of dollars}</m>
-                    </p>
-                </li>
-            </ul>
-        </p>
-    </answer>
+    
     <task>
         <statement>
             <p>
@@ -194,7 +195,8 @@
         </statement>
         <answer>
             <p>
-                <url href="external/sheets/BatteryLifeBoxPlot.png" />
+                <image source="sheets/BatteryLifeBoxPlot.png">
+                </image>
             </p>
         </answer>
     </task>
@@ -255,7 +257,8 @@
     </statement>
     <answer>
         <p>
-            <url href="external/sheets/AverageRentsQ32015.png" />
+            <image source="sheets/AverageRentsQ32015.png">
+            </image>
         </p>
         <p>
             The only outlier is the value <m>\$ 2008.62</m>, which is the average rent for Boulder/Broomfield.

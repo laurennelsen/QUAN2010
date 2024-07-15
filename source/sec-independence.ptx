@@ -61,7 +61,10 @@
               <p> Are the events the service is late on this day, and it snows on this day independent? Explain your reasoning. </p>
             </statement>
             <answer>
-              <p> The events the service is late on this day, and it snows on this day are not independent. (!!!INSERT REASONING!!!!) </p>
+              <p> The events the service is late on this day, and it snows on this day are <em>not independent</em> because the probability that it snows, given that service is late is <em>not equal</em> to the probability that it snows. </p>
+              <p>
+                (The events are <em>dependent</em>.)
+              </p>
             </answer>
           </task>
   </exercise>

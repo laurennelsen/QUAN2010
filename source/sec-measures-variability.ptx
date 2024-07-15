@@ -163,7 +163,23 @@
             Shown below are the means and standard deviations of the yearly returns on two investments from 1926 through 2004.
         </p>
         <p>
-            ....insert table.....
+            <tabular>
+                <row header="yes">
+                    <cell>Investment</cell>
+                    <cell>Mean Yearly Return</cell>
+                    <cell>Standard Deviation</cell>
+                </row>
+                <row>
+                    <cell>Small-Company Stocks</cell>
+                    <cell><m>17.5\%</m></cell>
+                    <cell><m>33.3\%</m></cell>
+                </row>
+                <row>
+                    <cell>Large-Company Stocks</cell>
+                    <cell><m>12.4\%</m></cell>
+                    <cell><m>20.4\%</m></cell>
+                </row>
+            </tabular>
         </p>
     </introduction>
     <task>
@@ -203,6 +219,9 @@
         </p>
         <p>
             <me>\boxed{\text{In Excel:}  \text{   VAR.S}}</me>
+        </p>
+        <p>
+            (The formulas above are for the <em>sample variance</em>, not the <em>population variance</em>.)
         </p>
     </statement>
 </definition>

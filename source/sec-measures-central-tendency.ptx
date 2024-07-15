@@ -269,7 +269,7 @@
   <exercise>
     <introduction>
       <p>
-        Five employees in the assembly section of a television manufacturing company earn salaries of <m>\$ 19,700, \$ 20,400, \$ 21,500, \$ 22,600,</m> and <m>\$ 23,000</m> annually.  The section manager has an annual salary of <m>\$ 95,000</m>.
+        Five employees in the assembly section of a television manufacturing company earn salaries of <m>\$ 19700, \$ 20400, \$ 21500, \$ 22600,</m> and <m>\$ 23000</m> annually.  The section manager has an annual salary of <m>\$ 95000</m>.
       </p>
     </introduction>
     <task>
@@ -303,6 +303,9 @@
     <statement>
       <p>
         An <em>outlier</em> is a value that is much higher or lower than most of the data.
+      </p>
+      <p>
+        (We'll have a more formal/specific definition of an outlier later.)
       </p>
     </statement>
   </definition>

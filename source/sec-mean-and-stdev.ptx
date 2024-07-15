@@ -96,6 +96,20 @@
 
 <exercise>
     <statement>
+        <p>
+            An employee satisfaction survey was given to employees, and they were asked to rate their overall satisfaction with their job from 0 to 10 (inclusive).  The average rating was 5.5, and the standard deviation was 1.2.  What is the satisfaction rating corresponding to a <m>z</m>-score of <m>-1.5</m>?
+        </p>
+    </statement>
+    <answer>
+        <p>
+            <me>\text{satisfaction rating}=\text{mean}-1.5(\text{standard deviation})=5.5-1.5(1.2)=5.5-1.8=3.7</me>
+        </p>
+    </answer>
+</exercise>
+
+
+<!--<exercise>
+    <statement>
     Intelligence quotients (IQs) on the Stanford-Binet intelligence test are normally distributed with a mean of 100 and a standard deviation of 16.  What is the IQ corresponding to a <m>z</m>-score of <m>-1.5</m>?
     </statement>
     <answer>
@@ -103,7 +117,7 @@
             <me>IQ=\text{mean}-1.5(\text{standard deviation})=100-1.5(16)=100-24=76</me>
         </p>
     </answer>
-</exercise>
+</exercise>-->
 
 <subsection xml:id="subsec-empirical-rule">
     <title>The Empirical Rule</title>

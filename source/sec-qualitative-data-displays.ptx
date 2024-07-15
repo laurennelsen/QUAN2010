@@ -46,7 +46,7 @@
                         <em>clustered chart</em>:  displays groups of <em>several values</em> side-by-side
                     </p>
                     <p>
-                    <url href="bit.ly/3p6Xvl0">Example</url> 
+                    <url href="https://public.tableau.com/app/profile/mohit.kumar.malviya/viz/ClusteredBarChart_16609263465460/ClusteredBarChart">Clustered Bar Chart Example</url> 
                     </p>
                 </li>
                 <li>
@@ -54,13 +54,35 @@
                         <em>stacked chart</em>:  displays groups of <em>several values in a single column within the same category</em>
                     </p>
                     <p>
-                        <url href="bit.ly/3JkCGcJ">Example</url>
+                        <url href="https://public.tableau.com/app/profile/anurag.mishra1745/viz/STACKEDchart/stackedchart">Stacked Chart Example</url>
                     </p>
                 </li>
             </ul>
         </p>
     </statement>
 </definition>
+
+<exercise>
+<statement>
+<p>
+    The Excel file below contains data for the 20 top albums on the Billbard 200 from the week of July 13th, 2024.  Create a bar chart for <em>Genre</em> in Excel.
+</p>
+<p>
+    <url href="external/sheets/BillboardAlbums.xlsx" />
+</p>
+<p>
+    (Hint:  First make a frequency distribution using <q>COUNTIF</q> in Excel.)
+</p>
+    </statement>
+    <answer>
+        <p>
+            <image source="sheets/MusicFrequency.png" width="70%"/>
+        </p>
+        <p>
+            <image source="sheets/MusicBarChart.png"/>
+            </p>
+    </answer>
+</exercise>
 
 
 <definition xml:id="def-pareto-pie">

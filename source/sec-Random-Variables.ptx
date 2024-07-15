@@ -4,7 +4,45 @@
   <title>Random Variables</title>
 
   <introduction>
-  <p> Say some stuff about random variables in general.... </p>
+    <p>
+      Many things in our world involve some level of uncertainty.  We want to use tools from probability to make decisions and see what we can confidently say about whatever it is we're investigating.
+    </p>
+
+  <p> A <em>random variable</em> is a variable whose possible values are the result of some random process, or experiment. </p>
+
+
+<p>
+  Examples of Random Variables:
+  <ul>
+    <li>
+      <p>
+        Coin toss: The number of heads from tossing two coins
+      </p>
+    </li>
+    <li>
+      <p>
+        Dice: The outcome of rolling a die
+      </p>
+    </li>
+    <li>
+      <p>
+        Stock dividend: The expected dividend payment on a stock
+      </p>
+    </li>
+    <li>
+      <p>
+        Investment returns: The expected standard deviation of investment returns
+      </p>
+    </li>
+    <li>
+      <p>
+        Cars passing a road: The number of cars that drive through a certain intersection in a given time period
+      </p>
+    </li>
+  </ul>
+</p>
+
+
 </introduction>
 
 
@@ -19,10 +57,123 @@
     </statement>
   </definition>
 
+
+  <exercise>
+    <statement>
+      <p>
+        Which of the following are discrete random variables?
+      </p>
+    </statement>
+    <choices multiplecorrect="yes" randomize="yes">
+      <choice correct="yes">
+        <statement>
+          <p>
+            The number of heads from tossing two coins
+          </p>
+        </statement>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>
+            The outcome of rolling a die
+          </p>
+        </statement>
+      </choice>
+      <choice correct="no">
+        <statement>
+          <p>
+            The expected divident payment on a stock
+          </p>
+        </statement>
+      </choice>
+      <choice correct="no">
+        <statement>
+          <p>
+            The expected standard deviation of investment returns
+          </p>
+        </statement>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>
+            The number of cars that drive through a certain intersection in a given time period
+          </p>
+        </statement>
+      </choice>
+      <choice correct="no">
+        <statement>
+          <p>
+            The height of a random student at UCCS
+          </p>
+        </statement>
+      </choice>
+    </choices>
+  </exercise>
+
+
+  <exercise>
+    <statement>
+      <p>
+        Which of the following are continuous random variables?
+      </p>
+    </statement>
+    <choices multiplecorrect="yes" randomize="yes">
+      <choice correct="no">
+        <statement>
+          <p>
+            The number of heads from tossing two coins
+          </p>
+        </statement>
+      </choice>
+      <choice correct="no">
+        <statement>
+          <p>
+            The outcome of rolling a die
+          </p>
+        </statement>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>
+            The expected divident payment on a stock
+          </p>
+        </statement>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>
+            The expected standard deviation of investment returns
+          </p>
+        </statement>
+      </choice>
+      <choice correct="no">
+        <statement>
+          <p>
+            The number of cars that drive through a certain intersection in a given time period
+          </p>
+        </statement>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>
+            The height of a random student at UCCS
+          </p>
+        </statement>
+      </choice>
+    </choices>
+  </exercise>
+
+
+
   <p>
-    ...insert examples of these types of random variables.....
-    ....Random variables can be <q>distributed</q> differently....
+    Random variables can be <q>distributed</q> differently.  For example, think about how rolls of a die would be distributed versus how the heights of UCCS students would be distributed.
   </p>
+
+  <p>
+    We're going to start by discussing distributions of <em>discrete</em> random variables, and then in <xref ref="ch-Continuous-Probability-Distributions"/> we will discuss distributions of <em>continuous</em> random variables.
+  </p>
+
+
 
 <definition xml:id="def-discrete-probability-distribution">
   <statement>
