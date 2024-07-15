@@ -316,7 +316,16 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-Random-Variables"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">5.1</span><span class="space"> </span><span class="title">Random Variables</span>
 </h2>
-<section class="introduction" id="sec-Random-Variables-2"><div class="para" id="sec-Random-Variables-2-1">Say some stuff about random variables in general....</div></section><article class="definition definition-like" id="def-RandomVariables"><h3 class="heading">
+<section class="introduction" id="sec-Random-Variables-2"><div class="para" id="sec-Random-Variables-2-1">Many things in our world involve some level of uncertainty.  We want to use tools from probability to make decisions and see what we can confidently say about whatever it is we’re investigating.</div> <div class="para" id="sec-Random-Variables-2-2">A <em class="emphasis">random variable</em> is a variable whose possible values are the result of some random process, or experiment.</div> <div class="para logical" id="sec-Random-Variables-2-3">
+<div class="para">Examples of Random Variables:</div>
+<ul class="disc">
+<li id="sec-Random-Variables-2-3-1-1"><div class="para" id="sec-Random-Variables-2-3-1-1-1">Coin toss: The number of heads from tossing two coins</div></li>
+<li id="sec-Random-Variables-2-3-1-2"><div class="para" id="sec-Random-Variables-2-3-1-2-1">Dice: The outcome of rolling a die</div></li>
+<li id="sec-Random-Variables-2-3-1-3"><div class="para" id="sec-Random-Variables-2-3-1-3-1">Stock dividend: The expected dividend payment on a stock</div></li>
+<li id="sec-Random-Variables-2-3-1-4"><div class="para" id="sec-Random-Variables-2-3-1-4-1">Investment returns: The expected standard deviation of investment returns</div></li>
+<li id="sec-Random-Variables-2-3-1-5"><div class="para" id="sec-Random-Variables-2-3-1-5-1">Cars passing a road: The number of cars that drive through a certain intersection in a given time period</div></li>
+</ul>
+</div></section><article class="definition definition-like" id="def-RandomVariables"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.1.1</span><span class="period">.</span>
 </h3>
 <div class="para logical" id="def-RandomVariables-1-1">
@@ -325,9 +334,42 @@ eBookConfig.enable_chatcodes =  false;
 <li id="def-RandomVariables-1-1-1-1"><div class="para" id="p-derived-def-RandomVariables-1-1-1-1">discrete random variable:  outcomes are whole numbers after performing an experiment</div></li>
 <li id="def-RandomVariables-1-1-1-2"><div class="para" id="p-derived-def-RandomVariables-1-1-1-2">continuous random variable:  outcomes are any numerical value (including decimals or fractions) after performing an experiment</div></li>
 </ul>
-</div></article><div class="para" id="sec-Random-Variables-4">...insert examples of these types of random variables..... ....Random variables can be “distributed” differently....</div>
+</div></article><details id="sec-Random-Variables-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">5.1.2</span><span class="period">.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="" data-multipleanswers="true" data-random="">
+<div class="para" id="sec-Random-Variables-4-1-1">Which of the following are discrete random variables?</div>
+<li data-component="answer" id="_opt_a" data-correct=""><div class="para" id="sec-Random-Variables-4-2-1-1-1">The number of heads from tossing two coins</div></li>
+<li data-component="feedback" id="_opt_a">
+<li data-component="answer" id="_opt_b" data-correct=""><div class="para" id="sec-Random-Variables-4-2-2-1-1">The outcome of rolling a die</div></li>
+<li data-component="feedback" id="_opt_b">
+<li data-component="answer" id="_opt_c"><div class="para" id="sec-Random-Variables-4-2-3-1-1">The expected divident payment on a stock</div></li>
+<li data-component="feedback" id="_opt_c">
+<li data-component="answer" id="_opt_d"><div class="para" id="sec-Random-Variables-4-2-4-1-1">The expected standard deviation of investment returns</div></li>
+<li data-component="feedback" id="_opt_d">
+<li data-component="answer" id="_opt_e" data-correct=""><div class="para" id="sec-Random-Variables-4-2-5-1-1">The number of cars that drive through a certain intersection in a given time period</div></li>
+<li data-component="feedback" id="_opt_e">
+<li data-component="answer" id="_opt_f"><div class="para" id="sec-Random-Variables-4-2-6-1-1">The height of a random student at UCCS</div></li>
+<li data-component="feedback" id="_opt_f">
+</ul></div></div></article></details><details id="sec-Random-Variables-5" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">5.1.3</span><span class="period">.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="" data-multipleanswers="true" data-random="">
+<div class="para" id="sec-Random-Variables-5-1-1">Which of the following are continuous random variables?</div>
+<li data-component="answer" id="_opt_a"><div class="para" id="sec-Random-Variables-5-2-1-1-1">The number of heads from tossing two coins</div></li>
+<li data-component="feedback" id="_opt_a">
+<li data-component="answer" id="_opt_b"><div class="para" id="sec-Random-Variables-5-2-2-1-1">The outcome of rolling a die</div></li>
+<li data-component="feedback" id="_opt_b">
+<li data-component="answer" id="_opt_c" data-correct=""><div class="para" id="sec-Random-Variables-5-2-3-1-1">The expected divident payment on a stock</div></li>
+<li data-component="feedback" id="_opt_c">
+<li data-component="answer" id="_opt_d" data-correct=""><div class="para" id="sec-Random-Variables-5-2-4-1-1">The expected standard deviation of investment returns</div></li>
+<li data-component="feedback" id="_opt_d">
+<li data-component="answer" id="_opt_e"><div class="para" id="sec-Random-Variables-5-2-5-1-1">The number of cars that drive through a certain intersection in a given time period</div></li>
+<li data-component="feedback" id="_opt_e">
+<li data-component="answer" id="_opt_f" data-correct=""><div class="para" id="sec-Random-Variables-5-2-6-1-1">The height of a random student at UCCS</div></li>
+<li data-component="feedback" id="_opt_f">
+</ul></div></div></article></details><div class="para" id="sec-Random-Variables-6">Random variables can be “distributed” differently.  For example, think about how rolls of a die would be distributed versus how the heights of UCCS students would be distributed.</div>
+<div class="para" id="sec-Random-Variables-7">We’re going to start by discussing distributions of <em class="emphasis">discrete</em> random variables, and then in <a href="ch-Continuous-Probability-Distributions.html" class="internal" title="Chapter 7: Continuous Probability Distributions">Chapter 7</a> we will discuss distributions of <em class="emphasis">continuous</em> random variables.</div>
 <article class="definition definition-like" id="def-discrete-probability-distribution"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.1.2</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.1.4</span><span class="period">.</span>
 </h3>
 <div class="para logical" id="def-discrete-probability-distribution-1-1">
 <div class="para">A <em class="emphasis">discrete probability distribution</em> is a listing of all possible outcomes of an experiment for a discrete random variable along with the relative frequency of each outcome</div>
