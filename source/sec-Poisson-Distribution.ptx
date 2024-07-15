@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Poisson-Distribution" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Poisson Distribution</title>
+
+  <introduction>
+    <question>
+      <p>
+        We might want to understand how busy traffic is near campus.  Let's say that we stand at the intersection of Clyde Way and Austin Bluffs Parkway and count how many cars drive by on Austin Bluffs from noon-1pm on a particular day.  Is this a binomial experiment?
+      </p>
+    </question>
+    </introduction>
+
+
+  <definition xml:id="def-Poisson">
+    <statement>
+      <p>
+A <em>Poisson process</em> is a probability experiment possessing the following characteristics:
+        </p>
+        <p>
+          <ol>
+            <li>
+              <p>
+                It counts the number of occurrences of an event over a period of time, area, distance, or some other measurement.
+              </p>
+            </li>
+            <li>
+              <p>
+                The mean is the same for each equal interval of measurement.
+              </p>
+            </li>
+            <li>
+              <p>
+                The number of occurences in distinct intervals is indpendent.
+              </p>
+            </li>
+            <li>
+              <p>
+                The intervals defined in the Poisson process cannot overlap.
+              </p>
+            </li>
+          </ol>
+        </p>
+        </statement>
+        </definition>
+
+
+        <exercise>
+          <statement>
+            <p>
+              (From <url href="https://openstax.org/books/introductory-statistics/pages/4-6-poisson-distribution" />)
+              </p>
+              <p>
+A bank expects to receive six bad checks per day, on average. What is the probability of the bank getting fewer than five bad checks on any given day? Of interest is the number of checks the bank receives in one day, so the time interval of interest is one day. Let <m>X=</m> the number of bad checks the bank receives in one day. If the bank expects to receive six bad checks per day then the average is six checks per day. Which of the following is a mathematical statement for the probability question.
+            </p>
+          </statement>
+          <choices randomize="yes">
+            <choice correct="yes">
+              <statement>
+                <p>
+                  <m>P(X\lt 5)</m>
+                </p>
+              </statement>
+            </choice>
+
+            <choice correct="no">
+              <statement>
+                <p>
+                  <m>P(X\gt 5)</m>
+                </p>
+              </statement>
+            </choice>
+
+            <choice correct="no">
+              <statement>
+                <p>
+                  <m>P(X= 5)</m>
+                </p>
+              </statement>
+            </choice>
+
+            <choice correct="no">
+              <statement>
+                <p>
+                  <m>P(X\gt 6)</m>
+                </p>
+              </statement>
+            </choice>
+
+            <choice correct="no">
+              <statement>
+                <p>
+                  <m>P(X\lt 6)</m>
+                </p>
+              </statement>
+            </choice>
+
+            <choice correct="no">
+              <statement>
+                <p>
+                  <m>P(X= 6)</m>
+                </p>
+              </statement>
+            </choice>
+          
+          </choices>
+        </exercise>
+  
+
+        <p>
+          The outcome for the random variable for a <em>Poisson distribution</em> is the actual number of occurrences of an event over a period of time, area, distance, or any other type of measurement.
+        </p>
+
+        <p>
+          The probability of exactly <m>X</m> occurrences over a given interval is:
+          <me>P(X)=\frac{\lambda^Xe^{-\lambda}}{X!}\text{, where <m>\lambda=</m>the mean number of occurrences over the interval.}</me>
+        </p>
+
+        <p>
+          The mean and standard deviation of a Poisson distribution are even simpler than what we saw for a binomial distribution:
+          <me>\boxed{ \mu=\lambda }\text{   and   }\boxed{\sigma=\sqrt{\lambda}}</me>
+        </p>
+        <p>
+          Once again, we will usually use Excel or tables to compute probabilities associated with Poisson distributions.
+        </p>
+
+        <p>
+          The appropriate table from your book is Table 2 (in Appendix A), and here is a link to a table that you can use as well: <url href="https://ux1.eiu.edu/~aalvarado2/levine-smume6_topic_POIS.pdf" />.  (Make sure to pay attention to if the table you're using is giving you a cumulative probability or not.)
+        </p>
+        <p>
+          In Excel, we'll use the formula:
+          <me>\boxed{POISSON.DIST(x,\lambda,\text{cumulative})}</me>
+          where cumulative=TRUE (<m>x</m> or fewer occurrences) or FALSE (exactly <m>x</m> occurrences).
+        </p>
+
+
+        <exercise>
+          <statement>
+            <p>
+              (Donnelly 5.23)
+            </p>
+            <p>
+              Consider a Poisson probability distribution with <m>\lambda=5.6</m>.  Calculate the probability of exactly 5 occurrences.  (Round your answer to 4 decimal places.)
+            </p>
+            <p>
+              <m>P(X=5)=</m> <var />
+            </p>
+          </statement>
+          <setup>
+            <var>
+        
+            <condition number="0.1697" tolerance="0.0001">
+            <feedback>
+              <p>
+                Any value in the interval <m>0.1697\pm 0.0001</m> is marked as correct for this problem.
+              </p>
+            </feedback>
+            </condition>
+            <condition string=".*">
+            <feedback>
+              <p>
+                Incorrect.
+                Did you round to four decimal places?
+              </p>
+            </feedback>
+            </condition>
+            </var>
+          </setup>
+        </exercise>
+
+
+
+        <exercise>
+          <statement>
+            <p>
+              (Donnelly 5.23)
+            </p>
+            <p>
+              Consider a Poisson probability distribution with <m>\lambda=5.6</m>.  Calculate the probability of more than 6 occurrences.  (Round your answer to 4 decimal places.)
+            </p>
+            <p>
+              <m>P(X\gt 6)=</m> <var />
+            </p>
+          </statement>
+          <setup>
+            <var>
+        
+            <condition number="0.3298" tolerance="0.0001">
+            <feedback>
+              <p>
+                Any value in the interval <m>0.3298\pm 0.0001</m> is marked as correct for this problem.
+              </p>
+            </feedback>
+            </condition>
+            <condition string=".*">
+            <feedback>
+              <p>
+                Incorrect.
+                Did you round to four decimal places?
+              </p>
+            </feedback>
+            </condition>
+            </var>
+          </setup>
+        </exercise>
+
+
+        <exercise>
+          <statement>
+            <p>
+              (Donnelly 5.23)
+            </p>
+            <p>
+              Consider a Poisson probability distribution with <m>\lambda=5.6</m>.  Calculate the probability of 3 or fewer occurrences.  (Round your answer to 4 decimal places.)
+            </p>
+            <p>
+              <m>P(X\leq 3)=</m> <var />
+            </p>
+          </statement>
+          <setup>
+            <var>
+        
+            <condition number="0.1906" tolerance="0.0001">
+            <feedback>
+              <p>
+                Any value in the interval <m>0.1906\pm 0.0001</m> is marked as correct for this problem.
+              </p>
+            </feedback>
+            </condition>
+            <condition string=".*">
+            <feedback>
+              <p>
+                Incorrect.
+                Did you round to four decimal places?
+              </p>
+            </feedback>
+            </condition>
+            </var>
+          </setup>
+        </exercise>
+
+
+
+        <exercise>
+          <introduction>
+            <p>
+              (Donnelly 5.29)
+            </p>
+            <p>
+              A customer support center for a computer manufacturer receives an average of 2.9 phone calls every five minutes.  Assume the number of calls received follows the Poisson distribution.  Use Excel to answer the following questions.
+            </p>
+          </introduction>
+          <task>
+            <statement>
+              <p>
+                What is the probability that no calls will arrive during the next five minutes?
+              </p>
+            </statement>
+            <answer>
+              <p>
+                <me>P(X=0)=POISSON.DIST(0,2.9,FALSE)\approx 0.0550</me>
+              </p>
+            </answer>
+          </task>
+          <task>
+            <statement>
+              <p>
+                What is the probability that 3 or more calls will arrive during the next five minutes?
+              </p>
+            </statement>
+            <answer>
+              <p>
+                <me>P(X\geq 3)=1-P(X\leq 2)=1-POISSON.DIST(2,2.9,TRUE)\approx 0.5540</me>
+              </p>
+            </answer>
+          </task>
+          <task>
+            <statement>
+              <p>
+                What is the probability that 3 calls will arrive during the next ten minutes?
+              </p>
+            </statement>
+            <answer>
+              <p>
+                <m>\lambda=5.8</m>
+              </p>
+              <p>
+                <me>P(X=3)=POISSON.DIST(3,5.8,FALSE)\approx 0.0985</me>
+              </p>
+            </answer>
+          </task>
+          <task>
+            <statement>
+              <p>
+                What is the probability that no more than 2 calls will arrive during the next ten minutes?
+              </p>
+            </statement>
+            <answer>
+              <p>
+                <m>\lambda=5.8</m>
+              </p>
+              <p>
+                <me>P(X\leq 2)=POISSON.DIST(2,5.8,TRUE)\approx 0.0715</me>
+              </p>
+            </answer>
+          </task>
+        </exercise>
+
+</section>
