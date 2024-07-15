@@ -1306,6 +1306,78 @@ var ptx_lunr_docs = [
   "body": " (Donnelly 5.20)  An e-commerce website claims that of people who visit the site make a purchase. Use Excel to answer the question below based on a random sample of 15 people who visited the website.  Suppose that out of the 15 customers, 5 made a purchase. What conclusions can be drawn about the sample?      Assuming of customers make a purchase, the probability that 5 out of 15 make a purchase is very low ( , so very unlikely).  It is doubtful that the true percentage of customers who make a purchase is .  "
 },
 {
+  "id": "sec-Poisson-Distribution",
+  "level": "1",
+  "url": "sec-Poisson-Distribution.html",
+  "type": "Section",
+  "number": "5.4",
+  "title": "Poisson Distribution",
+  "body": " Poisson Distribution    We might want to understand how busy traffic is near campus. Let's say that we stand at the intersection of Clyde Way and Austin Bluffs Parkway and count how many cars drive by on Austin Bluffs from noon-1pm on a particular day. Is this a binomial experiment?      A Poisson process is a probability experiment possessing the following characteristics:     It counts the number of occurrences of an event over a period of time, area, distance, or some other measurement.    The mean is the same for each equal interval of measurement.    The number of occurences in distinct intervals is indpendent.    The intervals defined in the Poisson process cannot overlap.        (From )  A bank expects to receive six bad checks per day, on average. What is the probability of the bank getting fewer than five bad checks on any given day? Of interest is the number of checks the bank receives in one day, so the time interval of interest is one day. Let the number of bad checks the bank receives in one day. If the bank expects to receive six bad checks per day then the average is six checks per day. Which of the following is a mathematical statement for the probability question.                                              The outcome for the random variable for a Poisson distribution is the actual number of occurrences of an event over a period of time, area, distance, or any other type of measurement.  The probability of exactly occurrences over a given interval is:   The mean and standard deviation of a Poisson distribution are even simpler than what we saw for a binomial distribution:   Once again, we will usually use Excel or tables to compute probabilities associated with Poisson distributions.  The appropriate table from your book is Table 2 (in Appendix A), and here is a link to a table that you can use as well: . (Make sure to pay attention to if the table you're using is giving you a cumulative probability or not.)  In Excel, we'll use the formula: where cumulative=TRUE ( or fewer occurrences) or FALSE (exactly occurrences).   (Donnelly 5.23)  Consider a Poisson probability distribution with . Calculate the probability of exactly 5 occurrences. (Round your answer to 4 decimal places.)          Any value in the interval is marked as correct for this problem.      Incorrect. Did you round to four decimal places?       (Donnelly 5.23)  Consider a Poisson probability distribution with . Calculate the probability of more than 6 occurrences. (Round your answer to 4 decimal places.)          Any value in the interval is marked as correct for this problem.      Incorrect. Did you round to four decimal places?       (Donnelly 5.23)  Consider a Poisson probability distribution with . Calculate the probability of 3 or fewer occurrences. (Round your answer to 4 decimal places.)          Any value in the interval is marked as correct for this problem.      Incorrect. Did you round to four decimal places?       (Donnelly 5.29)  A customer support center for a computer manufacturer receives an average of 2.9 phone calls every five minutes. Assume the number of calls received follows the Poisson distribution. Use Excel to answer the following questions.   What is the probability that no calls will arrive during the next five minutes?       What is the probability that 3 or more calls will arrive during the next five minutes?       What is the probability that 3 calls will arrive during the next ten minutes?          What is the probability that no more than 2 calls will arrive during the next ten minutes?          "
+},
+{
+  "id": "sec-Poisson-Distribution-2-1",
+  "level": "2",
+  "url": "sec-Poisson-Distribution.html#sec-Poisson-Distribution-2-1",
+  "type": "Question",
+  "number": "5.4.1",
+  "title": "",
+  "body": " We might want to understand how busy traffic is near campus. Let's say that we stand at the intersection of Clyde Way and Austin Bluffs Parkway and count how many cars drive by on Austin Bluffs from noon-1pm on a particular day. Is this a binomial experiment?  "
+},
+{
+  "id": "def-Poisson",
+  "level": "2",
+  "url": "sec-Poisson-Distribution.html#def-Poisson",
+  "type": "Definition",
+  "number": "5.4.2",
+  "title": "",
+  "body": "  A Poisson process is a probability experiment possessing the following characteristics:     It counts the number of occurrences of an event over a period of time, area, distance, or some other measurement.    The mean is the same for each equal interval of measurement.    The number of occurences in distinct intervals is indpendent.    The intervals defined in the Poisson process cannot overlap.      "
+},
+{
+  "id": "sec-Poisson-Distribution-4",
+  "level": "2",
+  "url": "sec-Poisson-Distribution.html#sec-Poisson-Distribution-4",
+  "type": "Exercise",
+  "number": "5.4.3",
+  "title": "",
+  "body": " (From )  A bank expects to receive six bad checks per day, on average. What is the probability of the bank getting fewer than five bad checks on any given day? Of interest is the number of checks the bank receives in one day, so the time interval of interest is one day. Let the number of bad checks the bank receives in one day. If the bank expects to receive six bad checks per day then the average is six checks per day. Which of the following is a mathematical statement for the probability question.                                             "
+},
+{
+  "id": "sec-Poisson-Distribution-11",
+  "level": "2",
+  "url": "sec-Poisson-Distribution.html#sec-Poisson-Distribution-11",
+  "type": "Exercise",
+  "number": "5.4.4",
+  "title": "",
+  "body": " (Donnelly 5.23)  Consider a Poisson probability distribution with . Calculate the probability of exactly 5 occurrences. (Round your answer to 4 decimal places.)          Any value in the interval is marked as correct for this problem.      Incorrect. Did you round to four decimal places?     "
+},
+{
+  "id": "sec-Poisson-Distribution-12",
+  "level": "2",
+  "url": "sec-Poisson-Distribution.html#sec-Poisson-Distribution-12",
+  "type": "Exercise",
+  "number": "5.4.5",
+  "title": "",
+  "body": " (Donnelly 5.23)  Consider a Poisson probability distribution with . Calculate the probability of more than 6 occurrences. (Round your answer to 4 decimal places.)          Any value in the interval is marked as correct for this problem.      Incorrect. Did you round to four decimal places?     "
+},
+{
+  "id": "sec-Poisson-Distribution-13",
+  "level": "2",
+  "url": "sec-Poisson-Distribution.html#sec-Poisson-Distribution-13",
+  "type": "Exercise",
+  "number": "5.4.6",
+  "title": "",
+  "body": " (Donnelly 5.23)  Consider a Poisson probability distribution with . Calculate the probability of 3 or fewer occurrences. (Round your answer to 4 decimal places.)          Any value in the interval is marked as correct for this problem.      Incorrect. Did you round to four decimal places?     "
+},
+{
+  "id": "sec-Poisson-Distribution-14",
+  "level": "2",
+  "url": "sec-Poisson-Distribution.html#sec-Poisson-Distribution-14",
+  "type": "Exercise",
+  "number": "5.4.7",
+  "title": "",
+  "body": " (Donnelly 5.29)  A customer support center for a computer manufacturer receives an average of 2.9 phone calls every five minutes. Assume the number of calls received follows the Poisson distribution. Use Excel to answer the following questions.   What is the probability that no calls will arrive during the next five minutes?       What is the probability that 3 or more calls will arrive during the next five minutes?       What is the probability that 3 calls will arrive during the next ten minutes?          What is the probability that no more than 2 calls will arrive during the next ten minutes?         "
+},
+{
   "id": "sec-Types-of-Sampling",
   "level": "1",
   "url": "sec-Types-of-Sampling.html",

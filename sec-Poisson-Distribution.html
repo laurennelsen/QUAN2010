@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>QUAN 2010 Sampling Distribution of the Mean</title>
+<title>QUAN 2010 Poisson Distribution</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -137,7 +137,7 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="ch-Sampling-Distributions.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-Sampling-Distributions.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-Central-Limit-Theorem.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-Binomial-Distribution.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-Discrete-Probability-Distributions.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ch-Intro-Sampling.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -205,13 +205,13 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-independence.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Independent and Dependent Events</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-chapter">
+<li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-Discrete-Probability-Distributions.html" class="internal"><span class="codenumber">5</span> <span class="title">Discrete Probability Distributions</span></a></div>
-<ul class="structural toc-item-list">
+<ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Random-Variables.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Random Variables</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Desc-Stats-Discrete.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Descriptive Statistics for a Discrete Probability Distribution</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Binomial-Distribution.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Binomial Distribution</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Poisson-Distribution.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Poisson Distribution</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-Poisson-Distribution.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Poisson Distribution</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -244,10 +244,10 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-uniform-distribution.html" class="internal"><span class="codenumber">7.3</span> <span class="title">The Uniform Distribution</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-chapter contains-active">
+<li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-Sampling-Distributions.html" class="internal"><span class="codenumber">8</span> <span class="title">Sampling Distributions</span></a></div>
-<ul class="structural toc-item-list contains-active">
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-Sampling-Distribution-of-Mean.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Sampling Distribution of the Mean</span></a></div></li>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Sampling-Distribution-of-Mean.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Sampling Distribution of the Mean</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Central-Limit-Theorem.html" class="internal"><span class="codenumber">8.2</span> <span class="title">The Central Limit Theorem</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Sampling-Distribution-Proportion.html" class="internal"><span class="codenumber">8.3</span> <span class="title">The Sampling Distribution of the Proportion</span></a></div></li>
 </ul>
@@ -314,74 +314,120 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-Sampling-Distribution-of-Mean"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">8.1</span><span class="space"> </span><span class="title">Sampling Distribution of the Mean</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-Poisson-Distribution"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">5.4</span><span class="space"> </span><span class="title">Poisson Distribution</span>
 </h2>
-<section class="introduction" id="sec-Sampling-Distribution-of-Mean-2"><div class="para" id="sec-Sampling-Distribution-of-Mean-2-1">In addition to knowing how individual data values vary about the mean for a population, statisticians are interested in knowing how the means of samples of the same size taken from the same population vary about the population mean.  (i.e., how do groups of data compare to the overall data?)  This leads to arguably the most important topic in all of statistics.</div></section><details id="sec-Sampling-Distribution-of-Mean-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">8.1.1</span><span class="period">.</span>
-</h3></summary><article class="example example-like knowl__content"><div class="introduction" id="sec-Sampling-Distribution-of-Mean-3-1">
-<div class="para" id="sec-Sampling-Distribution-of-Mean-3-1-1">We’re going to do an activity where we roll dice and think about the distributions of the averages of our rolls.</div> <div class="para" id="sec-Sampling-Distribution-of-Mean-3-1-2">Use the Excel file below to record your rolls for this activity. <a class="external" href="external/sheets/DiceRollBlank.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/DiceRollBlank.xlsx</code></a>
-</div> <div class="para" id="sec-Sampling-Distribution-of-Mean-3-1-3">(If you don’t have dice, you can use the tool below.)</div> <figure class="figure figure-like" id="figure-geogebra-dice"><iframe src="https://www.geogebra.org/material/iframe/id/gbk7qgwb/width/800/height/444/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="geogebra-dice" width="600" height="333"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.1.2<span class="period">.</span></span><span class="space"> </span>(Made in GeoGebra by Duane Habecker)</figcaption></figure>
-</div>
-<article class="task exercise-like" id="sec-Sampling-Distribution-of-Mean-3-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="sec-Sampling-Distribution-of-Mean-3-2-1-1">Roll a die at least 20 times.  Use the Excel file above to record what you get on each roll.  Then use the Data Analysis “Histogram” tool to visualize the distribution of rolls with the “Bins” <span class="process-math">\(1,2,3,4,5,6\text{.}\)</span>  (Before visualizing the rolls, think about what you expect the distribution to look like.)</div></article><article class="task exercise-like" id="sec-Sampling-Distribution-of-Mean-3-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="sec-Sampling-Distribution-of-Mean-3-3-1-1">Now roll 2 dice and in the next sheet of the Excel file, record those two rolls and then find the average of those two rolls.  Repeat this at least 20 times.  Use Excel to create a histogram of the <em class="emphasis">averages</em>.</div></article><article class="task exercise-like" id="sec-Sampling-Distribution-of-Mean-3-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="sec-Sampling-Distribution-of-Mean-3-4-1-1">Now roll 3 dice and in the next sheet of the Excel file, record those three rolls and then find the average of those three rolls.  Repeat this at least 20 times.  Use Excel to create a histogram of the <em class="emphasis">averages</em>.</div></article><article class="task exercise-like" id="sec-Sampling-Distribution-of-Mean-3-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para" id="sec-Sampling-Distribution-of-Mean-3-5-1-1">Next we want to do this for averages of a larger number of rolls.  But this is rather time-consuming, so we’re going to use the link below to see how this would work if we rolled many more dice and looked at the distribution of the averages: <a class="external" href="https://math.bu.edu/people/rmagner/CLTdemo.html" target="_blank"><code class="code-inline tex2jax_ignore">https://math.bu.edu/people/rmagner/CLTdemo.html</code></a>
-</div></article></article></details><div class="para" id="sec-Sampling-Distribution-of-Mean-4"><figure class="figure figure-like" id="sec-Sampling-Distribution-of-Mean-4-1"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/zeJD6dqJ5lo?&amp;modestbranding=1&amp;rel=0" id="sec-Sampling-Distribution-of-Mean-4-1-2"></iframe></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.1.3<span class="period">.</span></span><span class="space"> </span>3Blue1Brown Video: “But what is the Central Limit Theorem?”</figcaption></figure></div>
-<article class="definition definition-like" id="def-sampling-distn-of-mean"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">8.1.4</span><span class="period">.</span>
+<section class="introduction" id="sec-Poisson-Distribution-2"><details id="sec-Poisson-Distribution-2-1" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">5.4.1</span><span class="period">.</span>
+</h3></summary><article class="question example-like knowl__content"><div class="para" id="sec-Poisson-Distribution-2-1-1">We might want to understand how busy traffic is near campus.  Let’s say that we stand at the intersection of Clyde Way and Austin Bluffs Parkway and count how many cars drive by on Austin Bluffs from noon-1pm on a particular day.  Is this a binomial experiment?</div></article></details></section><article class="definition definition-like" id="def-Poisson"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.4.2</span><span class="period">.</span>
 </h3>
-<div class="para" id="def-sampling-distn-of-mean-1-1">A <em class="emphasis">sampling distribution of the mean</em> is a distribution of the mean from numerous samples of the sample size.  This distribution has mean <span class="process-math">\(\mu_{\overline{x}}\)</span> and a standard error (i.e. the standard deviation of the sample means) <span class="process-math">\(\sigma_{\overline{x}}\text{.}\)</span>
-</div></article><div class="para logical" id="sec-Sampling-Distribution-of-Mean-6">
-<div class="para">There are three important properties that describe the distribution of sample means:</div>
-<ol class="decimal">
-<li id="sec-Sampling-Distribution-of-Mean-6-1-1"><div class="para" id="sec-Sampling-Distribution-of-Mean-6-1-1-1">The sampling distribution of the mean of a random variable drawn from <em class="emphasis">any population</em> is approximately normal for sufficiently large sample size.  The larger the sample size, the more closely the sample distribution resembles a normal distribution.</div></li>
-<li id="sec-Sampling-Distribution-of-Mean-6-1-2"><div class="para logical" id="sec-Sampling-Distribution-of-Mean-6-1-2-1">
-<div class="para">The mean of the sample means will be the same as the population mean; that is,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\mu_{\overline{x}}=\mu\text{.}
-\end{equation*}
-</div>
-</div></li>
-<li id="sec-Sampling-Distribution-of-Mean-6-1-3"><div class="para logical" id="sec-Sampling-Distribution-of-Mean-6-1-3-1">
-<div class="para">The standard deviation of the sample means will be smaller than the standard deviation of the population; specifically,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\sigma_{\overline{x}}=\frac{\sigma}{\sqrt{n}}.
-\end{equation*}
-</div>
-</div></li>
-</ol>
-</div>
-<details id="sec-Sampling-Distribution-of-Mean-7" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">8.1.5</span><span class="period">.</span>
-</h3></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec-Sampling-Distribution-of-Mean-7-1">
-<div class="para" id="sec-Sampling-Distribution-of-Mean-7-1-1">(Donnelly 7.7)</div> <div class="para" id="sec-Sampling-Distribution-of-Mean-7-1-2">For a population with a mean equal to 250 and a standard deviation equal to 25, calculate the standard error of the mean for the following sample sizes.</div>
-</div>
-<article class="task exercise-like" id="sec-Sampling-Distribution-of-Mean-7-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="sec-Sampling-Distribution-of-Mean-7-2-1-1">20</div>
-<div class="solutions"><details id="sec-Sampling-Distribution-of-Mean-7-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-Sampling-Distribution-of-Mean-7-2-2-1"><span class="process-math">\(\sigma_{\overline{x}}=\frac{25}{\sqrt{20}}\approx 5.590\)</span></div></div></details></div></article><article class="task exercise-like" id="sec-Sampling-Distribution-of-Mean-7-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="sec-Sampling-Distribution-of-Mean-7-3-1-1">50</div>
-<div class="solutions"><details id="sec-Sampling-Distribution-of-Mean-7-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-Sampling-Distribution-of-Mean-7-3-2-1"><span class="process-math">\(\sigma_{\overline{x}}=\frac{25}{\sqrt{50}}\approx 3.536\)</span></div></div></details></div></article><article class="task exercise-like" id="sec-Sampling-Distribution-of-Mean-7-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="sec-Sampling-Distribution-of-Mean-7-4-1-1">80</div>
-<div class="solutions"><details id="sec-Sampling-Distribution-of-Mean-7-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-Sampling-Distribution-of-Mean-7-4-2-1"><span class="process-math">\(\sigma_{\overline{x}}=\frac{25}{\sqrt{80}}\approx 2.795\)</span></div></div></details></div></article></article></details><details id="sec-Sampling-Distribution-of-Mean-8" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">8.1.6</span><span class="period">.</span>
-</h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="" data-multipleanswers="false">
-<div class="para" id="sec-Sampling-Distribution-of-Mean-8-1-1">What can you conclude about the standard error as the sample size increases?</div>
-<li data-component="answer" id="_opt_a" data-correct=""><div class="para" id="sec-Sampling-Distribution-of-Mean-8-2-1-1-1">As the sample size increases, standard error decreases</div></li>
+<div class="para" id="def-Poisson-1-1">A <em class="emphasis">Poisson process</em> is a probability experiment possessing the following characteristics:</div> <div class="para logical" id="def-Poisson-1-2"><ol class="decimal">
+<li id="def-Poisson-1-2-1-1"><div class="para" id="def-Poisson-1-2-1-1-1">It counts the number of occurrences of an event over a period of time, area, distance, or some other measurement.</div></li>
+<li id="def-Poisson-1-2-1-2"><div class="para" id="def-Poisson-1-2-1-2-1">The mean is the same for each equal interval of measurement.</div></li>
+<li id="def-Poisson-1-2-1-3"><div class="para" id="def-Poisson-1-2-1-3-1">The number of occurences in distinct intervals is indpendent.</div></li>
+<li id="def-Poisson-1-2-1-4"><div class="para" id="def-Poisson-1-2-1-4-1">The intervals defined in the Poisson process cannot overlap.</div></li>
+</ol></div></article><details id="sec-Poisson-Distribution-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">5.4.3</span><span class="period">.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="" data-multipleanswers="false" data-random="">
+<div class="para" id="sec-Poisson-Distribution-4-1-1">(From <a class="external" href="https://openstax.org/books/introductory-statistics/pages/4-6-poisson-distribution" target="_blank"><code class="code-inline tex2jax_ignore">https://openstax.org/books/introductory-statistics/pages/4-6-poisson-distribution</code></a>)</div> <div class="para" id="sec-Poisson-Distribution-4-1-2">A bank expects to receive six bad checks per day, on average. What is the probability of the bank getting fewer than five bad checks on any given day? Of interest is the number of checks the bank receives in one day, so the time interval of interest is one day. Let <span class="process-math">\(X=\)</span> the number of bad checks the bank receives in one day. If the bank expects to receive six bad checks per day then the average is six checks per day. Which of the following is a mathematical statement for the probability question.</div>
+<li data-component="answer" id="_opt_a" data-correct=""><div class="para" id="sec-Poisson-Distribution-4-2-1-1-1"><span class="process-math">\(P(X\lt 5)\)</span></div></li>
 <li data-component="feedback" id="_opt_a">
-<li data-component="answer" id="_opt_b"><div class="para" id="sec-Sampling-Distribution-of-Mean-8-2-2-1-1">As the sample size increases, standard error increases.</div></li>
+<li data-component="answer" id="_opt_b"><div class="para" id="sec-Poisson-Distribution-4-2-2-1-1"><span class="process-math">\(P(X\gt 5)\)</span></div></li>
 <li data-component="feedback" id="_opt_b">
-<li data-component="answer" id="_opt_c"><div class="para" id="sec-Sampling-Distribution-of-Mean-8-2-3-1-1">As the sample size increases, standard error stays the same.</div></li>
+<li data-component="answer" id="_opt_c"><div class="para" id="sec-Poisson-Distribution-4-2-3-1-1"><span class="process-math">\(P(X= 5)\)</span></div></li>
 <li data-component="feedback" id="_opt_c">
-<li data-component="answer" id="_opt_d"><div class="para" id="sec-Sampling-Distribution-of-Mean-8-2-4-1-1">As the sample size increases, the standard error might increase, decrease, or stay the same.</div></li>
+<li data-component="answer" id="_opt_d"><div class="para" id="sec-Poisson-Distribution-4-2-4-1-1"><span class="process-math">\(P(X\gt 6)\)</span></div></li>
 <li data-component="feedback" id="_opt_d">
-</ul></div></div></article></details></section></div>
+<li data-component="answer" id="_opt_e"><div class="para" id="sec-Poisson-Distribution-4-2-5-1-1"><span class="process-math">\(P(X\lt 6)\)</span></div></li>
+<li data-component="feedback" id="_opt_e">
+<li data-component="answer" id="_opt_f"><div class="para" id="sec-Poisson-Distribution-4-2-6-1-1"><span class="process-math">\(P(X= 6)\)</span></div></li>
+<li data-component="feedback" id="_opt_f">
+</ul></div></div></article></details><div class="para" id="sec-Poisson-Distribution-5">The outcome for the random variable for a <em class="emphasis">Poisson distribution</em> is the actual number of occurrences of an event over a period of time, area, distance, or any other type of measurement.</div>
+<div class="para logical" id="sec-Poisson-Distribution-6">
+<div class="para">The probability of exactly <span class="process-math">\(X\)</span> occurrences over a given interval is:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P(X)=\frac{\lambda^Xe^{-\lambda}}{X!}\text{, where the mean number of occurrences over the interval.}
+\end{equation*}
+</div>
+</div>
+<div class="para logical" id="sec-Poisson-Distribution-7">
+<div class="para">The mean and standard deviation of a Poisson distribution are even simpler than what we saw for a binomial distribution:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\boxed{ \mu=\lambda }\text{   and   }\boxed{\sigma=\sqrt{\lambda}}
+\end{equation*}
+</div>
+</div>
+<div class="para" id="sec-Poisson-Distribution-8">Once again, we will usually use Excel or tables to compute probabilities associated with Poisson distributions.</div>
+<div class="para" id="sec-Poisson-Distribution-9">The appropriate table from your book is Table 2 (in Appendix A), and here is a link to a table that you can use as well: <a class="external" href="https://ux1.eiu.edu/~aalvarado2/levine-smume6_topic_POIS.pdf" target="_blank"><code class="code-inline tex2jax_ignore">https://ux1.eiu.edu/~aalvarado2/levine-smume6_topic_POIS.pdf</code></a>.  (Make sure to pay attention to if the table you’re using is giving you a cumulative probability or not.)</div>
+<div class="para logical" id="sec-Poisson-Distribution-10">
+<div class="para">In Excel, we’ll use the formula:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\boxed{POISSON.DIST(x,\lambda,\text{cumulative})}
+\end{equation*}
+</div>
+<div class="para">where cumulative=TRUE (<span class="process-math">\(x\)</span> or fewer occurrences) or FALSE (exactly <span class="process-math">\(x\)</span> occurrences).</div>
+</div>
+<details id="sec-Poisson-Distribution-11" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">5.4.4</span><span class="period">.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone fillintheblank_section"><div data-component="fillintheblank" data-question_label="" id="">
+<div class="para" id="sec-Poisson-Distribution-11-1-1">(Donnelly 5.23)</div> <div class="para" id="sec-Poisson-Distribution-11-1-2">Consider a Poisson probability distribution with <span class="process-math">\(\lambda=5.6\text{.}\)</span>  Calculate the probability of exactly 5 occurrences.  (Round your answer to 4 decimal places.)</div> <div class="para" id="sec-Poisson-Distribution-11-1-3">
+<span class="process-math">\(P(X=5)=\)</span> <input type="text" placeholder="Number">
+</div>
+<script type="application/json">[[{"number": [0.1696,0.1698], "feedback": "<div class=\"para\" id=\"sec-Poisson-Distribution-11-2-1-1-1-1\">Any value in the interval <span class=\"process-math\">\\(0.1697\\pm 0.0001\\)<\/span> is marked as correct for this problem.<\/div>"}, {"regex": "^\\s*.*\\s*$", "regexFlags": "", "feedback": "<div class=\"para\" id=\"sec-Poisson-Distribution-11-2-1-2-1-1\">Incorrect. Did you round to four decimal places?<\/div>"}]]</script>
+</div></div></div></article></details><details id="sec-Poisson-Distribution-12" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">5.4.5</span><span class="period">.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone fillintheblank_section"><div data-component="fillintheblank" data-question_label="" id="">
+<div class="para" id="sec-Poisson-Distribution-12-1-1">(Donnelly 5.23)</div> <div class="para" id="sec-Poisson-Distribution-12-1-2">Consider a Poisson probability distribution with <span class="process-math">\(\lambda=5.6\text{.}\)</span>  Calculate the probability of more than 6 occurrences.  (Round your answer to 4 decimal places.)</div> <div class="para" id="sec-Poisson-Distribution-12-1-3">
+<span class="process-math">\(P(X\gt 6)=\)</span> <input type="text" placeholder="Number">
+</div>
+<script type="application/json">[[{"number": [0.3297,0.3299], "feedback": "<div class=\"para\" id=\"sec-Poisson-Distribution-12-2-1-1-1-1\">Any value in the interval <span class=\"process-math\">\\(0.3298\\pm 0.0001\\)<\/span> is marked as correct for this problem.<\/div>"}, {"regex": "^\\s*.*\\s*$", "regexFlags": "", "feedback": "<div class=\"para\" id=\"sec-Poisson-Distribution-12-2-1-2-1-1\">Incorrect. Did you round to four decimal places?<\/div>"}]]</script>
+</div></div></div></article></details><details id="sec-Poisson-Distribution-13" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">5.4.6</span><span class="period">.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone fillintheblank_section"><div data-component="fillintheblank" data-question_label="" id="">
+<div class="para" id="sec-Poisson-Distribution-13-1-1">(Donnelly 5.23)</div> <div class="para" id="sec-Poisson-Distribution-13-1-2">Consider a Poisson probability distribution with <span class="process-math">\(\lambda=5.6\text{.}\)</span>  Calculate the probability of 3 or fewer occurrences.  (Round your answer to 4 decimal places.)</div> <div class="para" id="sec-Poisson-Distribution-13-1-3">
+<span class="process-math">\(P(X\leq 3)=\)</span> <input type="text" placeholder="Number">
+</div>
+<script type="application/json">[[{"number": [0.1905,0.1907], "feedback": "<div class=\"para\" id=\"sec-Poisson-Distribution-13-2-1-1-1-1\">Any value in the interval <span class=\"process-math\">\\(0.1906\\pm 0.0001\\)<\/span> is marked as correct for this problem.<\/div>"}, {"regex": "^\\s*.*\\s*$", "regexFlags": "", "feedback": "<div class=\"para\" id=\"sec-Poisson-Distribution-13-2-1-2-1-1\">Incorrect. Did you round to four decimal places?<\/div>"}]]</script>
+</div></div></div></article></details><details id="sec-Poisson-Distribution-14" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">5.4.7</span><span class="period">.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec-Poisson-Distribution-14-1">
+<div class="para" id="sec-Poisson-Distribution-14-1-1">(Donnelly 5.29)</div> <div class="para" id="sec-Poisson-Distribution-14-1-2">A customer support center for a computer manufacturer receives an average of 2.9 phone calls every five minutes.  Assume the number of calls received follows the Poisson distribution.  Use Excel to answer the following questions.</div>
+</div>
+<article class="task exercise-like" id="sec-Poisson-Distribution-14-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-Poisson-Distribution-14-2-1-1">What is the probability that no calls will arrive during the next five minutes?</div>
+<div class="solutions"><details id="sec-Poisson-Distribution-14-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-Poisson-Distribution-14-2-2-1"><div class="displaymath process-math">
+\begin{equation*}
+P(X=0)=POISSON.DIST(0,2.9,FALSE)\approx 0.0550
+\end{equation*}
+</div></div></div></details></div></article><article class="task exercise-like" id="sec-Poisson-Distribution-14-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-Poisson-Distribution-14-3-1-1">What is the probability that 3 or more calls will arrive during the next five minutes?</div>
+<div class="solutions"><details id="sec-Poisson-Distribution-14-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-Poisson-Distribution-14-3-2-1"><div class="displaymath process-math">
+\begin{equation*}
+P(X\geq 3)=1-P(X\leq 2)=1-POISSON.DIST(2,2.9,TRUE)\approx 0.5540
+\end{equation*}
+</div></div></div></details></div></article><article class="task exercise-like" id="sec-Poisson-Distribution-14-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="sec-Poisson-Distribution-14-4-1-1">What is the probability that 3 calls will arrive during the next ten minutes?</div>
+<div class="solutions"><details id="sec-Poisson-Distribution-14-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-Poisson-Distribution-14-4-2-1"><span class="process-math">\(\lambda=5.8\)</span></div> <div class="para logical" id="sec-Poisson-Distribution-14-4-2-2"><div class="displaymath process-math">
+\begin{equation*}
+P(X=3)=POISSON.DIST(3,5.8,FALSE)\approx 0.0985
+\end{equation*}
+</div></div>
+</div></details></div></article><article class="task exercise-like" id="sec-Poisson-Distribution-14-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="sec-Poisson-Distribution-14-5-1-1">What is the probability that no more than 2 calls will arrive during the next ten minutes?</div>
+<div class="solutions"><details id="sec-Poisson-Distribution-14-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-Poisson-Distribution-14-5-2-1"><span class="process-math">\(\lambda=5.8\)</span></div> <div class="para logical" id="sec-Poisson-Distribution-14-5-2-2"><div class="displaymath process-math">
+\begin{equation*}
+P(X\leq 2)=POISSON.DIST(2,5.8,TRUE)\approx 0.0715
+\end{equation*}
+</div></div>
+</div></details></div></article></article></details></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="ch-Sampling-Distributions.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-Central-Limit-Theorem.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec-Binomial-Distribution.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-Intro-Sampling.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
