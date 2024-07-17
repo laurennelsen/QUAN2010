@@ -249,13 +249,14 @@
 
 
 
-<!--    <exercise>
-        <myopenmath problem="7096" />
-      </exercise>-->
+<exercise>
+    <myopenmath problem="7096" />
+ </exercise>
+
 
     
-<statement>
-    <p>
+
+ <p>
         Basic Properties of Probability:
         <ol>
             <li>
@@ -279,8 +280,8 @@
                 </p>
             </li>
         </ol>
-    </p>
-</statement>
+</p>
+
 
 <definition xml:id="def-complement">
     <statement>
@@ -667,9 +668,9 @@
 </exercise>
 
 
-<!--<exercise>
+<exercise>
     <myopenmath problem="7142" />
-  </exercise>-->
+  </exercise>
 
 
 <definition xml:id="def-condition-probability">

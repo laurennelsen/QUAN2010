@@ -22,40 +22,283 @@
 </introduction>
 
 
-<!--<exercise>
-    <myopenmath problem="123043" />
-  </exercise>-->
 
 
-<!--<exercise>
-    <myopenmath problem="414124" />
-  </exercise>-->
-
-
-<!--  <exercise>
-    <myopenmath problem="571248" />
-  </exercise>-->
-  
-
-<!--
   <exercise>
-    <myopenmath problem="571234" />
-  </exercise>-->
+    <statement>
+      <p>
+        A company is doing a hypothesis test on the variation in quality from two suppliers. Both distributions are normal, and the populations are independent. Use <m>\alpha=0.05</m>. A sample of 29 products were selected from Supplier 1 and a standard deviation of quality was found to be 5.8426. A sample of 30 products were selected from Supplier 2 and a standard deviation of quality was found to be 3.2156. Test to see if the variance in quality for Supplier 1 is larger than Supplier 2.
+      </p>
+    </statement>
+    <task>
+      <statement>
+        <p>
+          What are the correct hypotheses?
+        </p>
+      </statement>
+      <choices>
+        <choice>
+          <statement>
+            <p>
+              <m>H_0: \sigma_1^2 \leq  \sigma_2^2</m>
+            </p>
+            <p>
+              <m>H_1: \sigma_1^2 \gt  \sigma_2^2</m>
+            </p>
+          </statement>
+        </choice>
+      <choice>
+        <statement>
+            <p>
+              <m>H_0: \sigma_1^2 \geq  \sigma_2^2</m>
+            </p>
+            <p>
+              <m>H_1: \sigma_1^2 \lt  \sigma_2^2</m>
+            </p>
+        </statement>
+      </choice>
+      <choice>
+        <statement>
+          <p>
+            <m>H_0: \sigma_1^2 =  \sigma_2^2</m>
+          </p>
+          <p>
+            <m>H_1: \sigma_1^2 \neq  \sigma_2^2</m>
+          </p>
+        </statement>
+      </choice>
+      
+      </choices>
+    </task>
+    <task>
+      <statement>
+        <p>
+          What test statistic should we use for this problem?
+        </p>
+      </statement>
+      <choices>
+        <choice correct="no">
+          <statement>
+            <p>
+              <m>z</m>
+            </p>
+          </statement>
+        </choice>
+        <choice correct="no">
+          <statement>
+            <p>
+              <m>t</m>
+            </p>
+          </statement>
+        </choice>
+        <choice correct="yes">
+          <statement>
+            <p>
+              <m>F</m>
+            </p>
+          </statement>
+        </choice>
+        <choice correct="no">
+          <statement>
+            <p>
+              <m>\chi^2</m>
+            </p>
+          </statement>
+        </choice>
+      </choices>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Find the test statistic.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <me>F=\frac{s_1^2}{s_2^2}=\frac{(4.147)^2}{(2.7311)^2}\approx 2.305647</me>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          What is the p-value?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <me>\text{p-value}\approx F.DIST.RT(2.305647,33-1,17-1)\approx 0.396</me>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          The decision is to...
+        </p>
+      </statement>
+      <choices>
+        <choice correct="yes">
+          <statement>
+            <p>
+              Reject the null hypothesis.
+            </p>
+          </statement>
+        </choice>
+      <choice correct="no">
+        <statement>
+          <p>
+            Fail to reject the null hypothesis.
+          </p>
+        </statement>
+      </choice>
+      </choices>
+    </task>
+    <task>
+      <statement>
+        <p>
+          The correct summary would be:  
+        </p>
+      </statement>
+      <choices>
+        <choice correct="yes">
+          <statement>
+            <p>
+              There is enough evidence to support the claim that the variance in quality for Supplier 1 is larger than Supplier 2.
+            </p>
+          </statement>
+        </choice>
+        <choice correct="no">
+          <statement>
+            <p>
+              There is not enough evidence to support the claim that the variance in quality for Supplier 1 is larger than Supplier 2.
+            </p>
+          </statement>
+        </choice>
+        <choice correct="no">
+          <statement>
+            <p>
+              There is enough evidence to reject the claim that the variance in quality for Supplier 1 is larger than Supplier 2.
+            </p>
+          </statement>
+        </choice>
+        <choice correct="no">
+          <statement>
+            <p>
+              There is enough evidence to reject the claim that the variance in quality for Supplier 1 is larger than Supplier 2.
+            </p>
+          </statement>
+        </choice>
+      </choices>
+    </task>
+  </exercise>
 
-<!--  <exercise>
-    <myopenmath problem="634787"/>
-  </exercise>-->
 
-<!--  <exercise>
-    <myopenmath problem="710429"/>
-  </exercise>-->
+  <exercise>
+    <introduction>
+    <p>
+    A statistics student wants to investigate salaries of men and women in a certain Fortune 500 company. Two samples of salaries of men and women employees were obtained independently and analyzed.  The sample data is in the Excel file below.  (Assume that the samples are from normal populations.)
+    </p>
 
-<!--  <exercise>
-    <myopenmath problem="337361"/>
-  </exercise>-->
+    <p>
+    <url href="external/sheets/CompanySalaries.xlsx" />
+    </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          Which of the samples has a larger sample standard deviation?
+        </p>
+      </statement>
+      <answer>
+        <p>
+          Use STDEV.S in Excel to find the sample standard deviations.
+        </p>
+        <p>
+          <me>s_{\text{men}}=s_1\approx 15.0973</me>
+        </p>
+        <p>
+          <me>s_{\text{women}}=s_2\approx 13.9944</me>
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Use a <m>10\%</m> level of significance to decide whether there is sufficient evidence that in the Fortune 500 company, the standard deviation of the salary of men is greater than the standard deviation of the salary of women.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          <me>H_0: \sigma_1^2 \leq \sigma_2^2</me>
+        </p>
+        <p>
+          <me>H_1: \sigma_1^2 \gt \sigma_2^2</me>
+        </p>
+        <p>
+          Since we have the raw data from the samples, we can use <q>F-Test Two-Sample for Variances</q> in the Data Analysis tool in Excel.
+        </p>
+        <p>
+          <url href="external/sheets/CompanySalariesSolution.xlsx" />
+
+        </p>
+        <p>
+          From this, we'll get a p-value of approximately 0.4182, which is bigger than <m>\alpha=0.10</m>.  So we fail to reject the null hypothesis and do not have enough evidence to conclude that <m>\sigma_1^2 \gt \sigma_2^2</m>.
+        </p>
+      </answer>
+    </task>
+
+    
+
+  </exercise>
+
+
+
+
+  
+  
+
 
   
 
+  
+<exercises>
+
+  <exercise>
+    <myopenmath problem="123043" />
+  </exercise>
+
+
+
+<exercise>
+  <myopenmath problem="414124" />
+</exercise>
+
+
+<exercise>
+  <myopenmath problem="571248" />
+</exercise>
+
+
+<exercise>
+    <myopenmath problem="571234" />
+  </exercise>
+
+ <exercise>
+    <myopenmath problem="634787"/>
+  </exercise>
+
+ <exercise>
+    <myopenmath problem="710429"/>
+  </exercise>
+
+ <exercise>
+    <myopenmath problem="337361"/>
+  </exercise>
+
+
+</exercises>
 
 
 </section>

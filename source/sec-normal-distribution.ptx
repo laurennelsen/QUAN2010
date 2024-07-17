@@ -80,8 +80,43 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
     <subsection xml:id="subsection-examples-of-normal-distn">
         <title>Examples of Normal Probability Distributions:</title>
               <p>
-
+There are many examples of random variables that are normally distributed in many different real-world settings!  Here are a few examples of random variables that are normally distributed or that could be in certain situations:
+<ul>
+    <li>
+        <p>
+            Shoe sizes
+        </p>
+    </li>
+    <li>
+        <p>
+            blood pressure
+        </p>
+    </li>
+    <li>
+        <p>
+            ACT scores
+        </p>
+    </li>
+    <li>
+        <p>
+            birth weight of babies
+        </p>
+    </li>
+    <li>
+        <p>
+            salaries at a particular workplace
+        </p>
+    </li>
+    <li>
+        <p>
+            length of movies
+        </p>
+    </li>
+</ul>
               </p>
+
+
+             
               </subsection>
 
 

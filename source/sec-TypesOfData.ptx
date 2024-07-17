@@ -31,10 +31,10 @@
     </statement>
   </definition>
 
- <!-- <exercise>
+  <exercise>
     <title>Qualitative vs. Quantitative Data</title>
     <myopenmath problem="6908" />
-  </exercise>-->
+  </exercise>
 
   <definition xml:id="def-discrete-continuous">
     <statement>
@@ -169,10 +169,10 @@
 
 
 
-<!--  <exercise>
+  <exercise>
     <title>Discrete vs. Continuous Data</title>
     <myopenmath problem="6911" />
-  </exercise>-->
+  </exercise>
 
 
   <subsection xml:id="subsec-levels-measurement">
@@ -222,10 +222,10 @@
   </subsection>
 
 
-<!--  <exercise>
+  <exercise>
     <title>Level of Measurement</title>
     <myopenmath problem="6916" />
-  </exercise>-->
+  </exercise>
 
 
   
