@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="6911">
+<statement>
+<p>
+Is this value from a discrete or continuous data set.</p>
+<p>
+From a sample of 500 students, 70<percent/> feel stressed</p>
+<p><ol style="list-style-type:upper-alpha"><li>Continuous</li> 
+<li>Discrete</li> 
+</ol></p>
+
+
+</statement>
+<solution>
+<p><ul><li>B: Discrete</li></ul></p>
+</solution>
+</myopenmath>
+

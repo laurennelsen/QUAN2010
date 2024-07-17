@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="710429">
+<statement>
+<p>Arthur Dent suspects that there is a difference in the variation in the number of daily customers at two restaurants, the Big Bang Burger Bar and Milliways. Both distributions are normal, and the populations are independent. Use α = 0.1. A sample of 36 randomly selected days from Big Bang Burger Bar found a standard deviation of 66.841 customers. A sample of 26 randomly selected days from Milliways found a standard deviation of 38.8526. Test to see if there is a difference in the variance in the number of daily customers at the Big Bang Burger Bar compared to Milliways.</p>
+<p>What are the correct hypotheses? Note this may view better in full screen mode. Select the correct symbols in the order they appear in the problem. </p>
+<p><m>{H}_{0}</m>: </p>
+<p><ol style="list-style-type:upper-alpha"><li>μ<ampersand />;<hash/>8321</li> 
+<li>σ<ampersand />;<hash/>8321</li> 
+<li>μd</li> 
+<li>x̅<ampersand />;<hash/>8321</li> 
+<li>s<ampersand />;<hash/>8321</li> 
+<li>σ<ampersand />;<hash/>8321<ampersand />;sup2</li> 
+<li>p<ampersand />;<hash/>8321</li> 
+</ol></p>
+ <p><ol style="list-style-type:upper-alpha"><li>≤</li> 
+<li>≠</li> 
+<li>=</li> 
+<li><less/><less/>/label<greater/></li> 
+<li><greater/></li> 
+<li>≥</li> 
+</ol></p>
+ <p><ol style="list-style-type:upper-alpha"><li>s<ampersand />;<hash/>8322</li> 
+<li>μ<ampersand />;<hash/>8322</li> 
+<li>0</li> 
+<li>x̅<ampersand />;<hash/>8322</li> 
+<li>σ<ampersand />;<hash/>8322<ampersand />;sup2</li> 
+<li>σ<ampersand />;<hash/>8322</li> 
+<li>p<ampersand />;<hash/>8322</li> 
+</ol></p>
+ <p><m>{H}_{1}</m>: </p>
+<p><ol style="list-style-type:upper-alpha"><li>μd</li> 
+<li>μ<ampersand />;<hash/>8321</li> 
+<li>σ<ampersand />;<hash/>8321</li> 
+<li>s<ampersand />;<hash/>8321</li> 
+<li>p<ampersand />;<hash/>8321</li> 
+<li>σ<ampersand />;<hash/>8321<ampersand />;sup2</li> 
+<li>x̅<ampersand />;<hash/>8321</li> 
+</ol></p>
+ <p><ol style="list-style-type:upper-alpha"><li><greater/></li> 
+<li><less/><less/>/label<greater/></li> 
+<li>≤</li> 
+<li>=</li> 
+<li>≠</li> 
+<li>≥</li> 
+</ol></p>
+ <p><ol style="list-style-type:upper-alpha"><li>σ<ampersand />;<hash/>8322<ampersand />;sup2</li> 
+<li>μ<ampersand />;<hash/>8322</li> 
+<li>s<ampersand />;<hash/>8322</li> 
+<li>σ<ampersand />;<hash/>8322</li> 
+<li>p<ampersand />;<hash/>8322</li> 
+<li>x̅<ampersand />;<hash/>8322</li> 
+<li>0</li> 
+</ol></p>
+ <p>Based on the hypotheses, compute the following:</p>
+<p>Round answers to at least 4 decimal places.</p>
+<p>The test statistic is = <fillin characters="10" /></p>
+<p>The p-value is = <fillin characters="10" /></p>
+<p>The decision is to </p>
+<p><ol style="list-style-type:upper-alpha"><li>Reject the claim</li> 
+<li>Accept the alternative hypothesis</li> 
+<li>Fail to reject the null hypothesis</li> 
+<li>Reject the null hypothesis</li> 
+</ol></p>
+.
+<p>The correct summary would be: </p>
+<p><ol style="list-style-type:upper-alpha"><li>There is enough evidence to reject the claim</li> 
+<li>There is not enough evidence to reject the claim</li> 
+<li>There is enough evidence to support the claim</li> 
+<li>There is not enough evidence to support the claim</li> 
+</ol></p>
+ that the variance in the number of daily customers at the Big Bang Burger Bar compared to Milliways.
+
+
+</statement>
+<solution>
+<p><ul><li>F: σ<ampersand />;<hash/>8321<ampersand />;sup2</li><li>C: =</li><li>E: σ<ampersand />;<hash/>8322<ampersand />;sup2</li><li>F: σ<ampersand />;<hash/>8321<ampersand />;sup2</li><li>E: ≠</li><li>A: σ<ampersand />;<hash/>8322<ampersand />;sup2</li><li>2.9597</li><li>0.0031</li><li>D: Reject the null hypothesis</li><li>C: There is enough evidence to support the claim</li></ul></p>
+</solution>
+</myopenmath>
+

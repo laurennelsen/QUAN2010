@@ -69,7 +69,7 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
 <script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -110,15 +110,86 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.3.2';
+eBookConfig.runestone_version = '7.3.3';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.3.2/prefix-runtime.740db250e511e1cc.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.3.2/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.3.2/prefix-runestone.9813637ef2f0e0ee.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.3.2/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.3.2/prefix-runestone.f64dcc3632d7a0c3.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.3.3/prefix-runtime.740db250e511e1cc.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.3.3/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.3.3/prefix-runestone.9813637ef2f0e0ee.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.3.3/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.3.3/prefix-runestone.f64dcc3632d7a0c3.css">
+<style>
+#subsec-grouped-quantitative-data-9-4-1 { counter-set: subsec-grouped-quantitative-data-9-4-1 0; }
+#subsec-grouped-quantitative-data-9-4-1 > li::marker { content: ""counter(subsec-grouped-quantitative-data-9-4-1,decimal)"."; }
+#subsec-grouped-quantitative-data-9-4-1 > li { counter-increment: subsec-grouped-quantitative-data-9-4-1; }
+#subsec-watch-for-2-1 { counter-set: subsec-watch-for-2-1 0; }
+#subsec-watch-for-2-1 > li::marker { content: ""counter(subsec-watch-for-2-1,decimal)"."; }
+#subsec-watch-for-2-1 > li { counter-increment: subsec-watch-for-2-1; }
+#sec-measures-central-tendency-6-1 { counter-set: sec-measures-central-tendency-6-1 0; }
+#sec-measures-central-tendency-6-1 > li::marker { content: ""counter(sec-measures-central-tendency-6-1,decimal)"."; }
+#sec-measures-central-tendency-6-1 > li { counter-increment: sec-measures-central-tendency-6-1; }
+#def-stdev-1-2-1 { counter-set: def-stdev-1-2-1 0; }
+#def-stdev-1-2-1 > li::marker { content: ""counter(def-stdev-1-2-1,decimal)"."; }
+#def-stdev-1-2-1 > li { counter-increment: def-stdev-1-2-1; }
+#sec-Intro-to-Probability-10-1 { counter-set: sec-Intro-to-Probability-10-1 0; }
+#sec-Intro-to-Probability-10-1 > li::marker { content: ""counter(sec-Intro-to-Probability-10-1,decimal)"."; }
+#sec-Intro-to-Probability-10-1 > li { counter-increment: sec-Intro-to-Probability-10-1; }
+#def-discrete-probability-distribution-1-1-2 { counter-set: def-discrete-probability-distribution-1-1-2 0; }
+#def-discrete-probability-distribution-1-1-2 > li::marker { content: ""counter(def-discrete-probability-distribution-1-1-2,decimal)"."; }
+#def-discrete-probability-distribution-1-1-2 > li { counter-increment: def-discrete-probability-distribution-1-1-2; }
+#def-Binomial-1-1-2 { counter-set: def-Binomial-1-1-2 0; }
+#def-Binomial-1-1-2 > li::marker { content: ""counter(def-Binomial-1-1-2,decimal)"."; }
+#def-Binomial-1-1-2 > li { counter-increment: def-Binomial-1-1-2; }
+#def-Poisson-1-2-1 { counter-set: def-Poisson-1-2-1 0; }
+#def-Poisson-1-2-1 > li::marker { content: ""counter(def-Poisson-1-2-1,decimal)"."; }
+#def-Poisson-1-2-1 > li { counter-increment: def-Poisson-1-2-1; }
+#subsection-characteristics-of-normal-distn-2-1 { counter-set: subsection-characteristics-of-normal-distn-2-1 0; }
+#subsection-characteristics-of-normal-distn-2-1 > li::marker { content: ""counter(subsection-characteristics-of-normal-distn-2-1,decimal)"."; }
+#subsection-characteristics-of-normal-distn-2-1 > li { counter-increment: subsection-characteristics-of-normal-distn-2-1; }
+#subsection-calculating-probabilities-normal-7-1 { counter-set: subsection-calculating-probabilities-normal-7-1 0; }
+#subsection-calculating-probabilities-normal-7-1 > li::marker { content: ""counter(subsection-calculating-probabilities-normal-7-1,decimal)"."; }
+#subsection-calculating-probabilities-normal-7-1 > li { counter-increment: subsection-calculating-probabilities-normal-7-1; }
+#subsection-differences-between-expon-and-normal-2-1 { counter-set: subsection-differences-between-expon-and-normal-2-1 0; }
+#subsection-differences-between-expon-and-normal-2-1 > li::marker { content: ""counter(subsection-differences-between-expon-and-normal-2-1,decimal)"."; }
+#subsection-differences-between-expon-and-normal-2-1 > li { counter-increment: subsection-differences-between-expon-and-normal-2-1; }
+#sec-Sampling-Distribution-of-Mean-6-1 { counter-set: sec-Sampling-Distribution-of-Mean-6-1 0; }
+#sec-Sampling-Distribution-of-Mean-6-1 > li::marker { content: ""counter(sec-Sampling-Distribution-of-Mean-6-1,decimal)"."; }
+#sec-Sampling-Distribution-of-Mean-6-1 > li { counter-increment: sec-Sampling-Distribution-of-Mean-6-1; }
+#sec-Central-Limit-Theorem-3-1 { counter-set: sec-Central-Limit-Theorem-3-1 0; }
+#sec-Central-Limit-Theorem-3-1 > li::marker { content: ""counter(sec-Central-Limit-Theorem-3-1,decimal)"."; }
+#sec-Central-Limit-Theorem-3-1 > li { counter-increment: sec-Central-Limit-Theorem-3-1; }
+#subsec-Students-t-3-2 { counter-set: subsec-Students-t-3-2 0; }
+#subsec-Students-t-3-2 > li::marker { content: ""counter(subsec-Students-t-3-2,decimal)"."; }
+#subsec-Students-t-3-2 > li { counter-increment: subsec-Students-t-3-2; }
+#subsec-Confidence-Interval-Sigma-Unknown-3-2 { counter-set: subsec-Confidence-Interval-Sigma-Unknown-3-2 0; }
+#subsec-Confidence-Interval-Sigma-Unknown-3-2 > li::marker { content: ""counter(subsec-Confidence-Interval-Sigma-Unknown-3-2,decimal)"."; }
+#subsec-Confidence-Interval-Sigma-Unknown-3-2 > li { counter-increment: subsec-Confidence-Interval-Sigma-Unknown-3-2; }
+#sec-Determining-Sample-Size-2-2-1 { counter-set: sec-Determining-Sample-Size-2-2-1 0; }
+#sec-Determining-Sample-Size-2-2-1 > li::marker { content: ""counter(sec-Determining-Sample-Size-2-2-1,decimal)"."; }
+#sec-Determining-Sample-Size-2-2-1 > li { counter-increment: sec-Determining-Sample-Size-2-2-1; }
+#subsec-logic-hyp-testing-2-2-1 { counter-set: subsec-logic-hyp-testing-2-2-1 0; }
+#subsec-logic-hyp-testing-2-2-1 > li::marker { content: ""counter(subsec-logic-hyp-testing-2-2-1,decimal)"."; }
+#subsec-logic-hyp-testing-2-2-1 > li { counter-increment: subsec-logic-hyp-testing-2-2-1; }
+#def-critical-value-method-1-2-1 { counter-set: def-critical-value-method-1-2-1 0; }
+#def-critical-value-method-1-2-1 > li::marker { content: ""counter(def-critical-value-method-1-2-1,decimal)"."; }
+#def-critical-value-method-1-2-1 > li { counter-increment: def-critical-value-method-1-2-1; }
+#def-p-value-method-1-2-1 { counter-set: def-p-value-method-1-2-1 0; }
+#def-p-value-method-1-2-1 > li::marker { content: ""counter(def-p-value-method-1-2-1,decimal)"."; }
+#def-p-value-method-1-2-1 > li { counter-increment: def-p-value-method-1-2-1; }
+#sec-chi-squared-3-3 { counter-set: sec-chi-squared-3-3 0; }
+#sec-chi-squared-3-3 > li::marker { content: ""counter(sec-chi-squared-3-3,decimal)"."; }
+#sec-chi-squared-3-3 > li { counter-increment: sec-chi-squared-3-3; }
+#sec-F-dist-5-3 { counter-set: sec-F-dist-5-3 0; }
+#sec-F-dist-5-3 > li::marker { content: ""counter(sec-F-dist-5-3,decimal)"."; }
+#sec-F-dist-5-3 > li { counter-increment: sec-F-dist-5-3; }
+#sec-Diamonds-3-1-3-1 { counter-set: sec-Diamonds-3-1-3-1 0; }
+#sec-Diamonds-3-1-3-1 > li::marker { content: ""counter(sec-Diamonds-3-1-3-1,decimal)"."; }
+#sec-Diamonds-3-1-3-1 > li { counter-increment: sec-Diamonds-3-1-3-1; }
+#sec-Diamonds-4-1-3-1 { counter-set: sec-Diamonds-4-1-3-1 0; }
+#sec-Diamonds-4-1-3-1 > li::marker { content: ""counter(sec-Diamonds-4-1-3-1,decimal)"."; }
+#sec-Diamonds-4-1-3-1 > li { counter-increment: sec-Diamonds-4-1-3-1; }
+</style>
 </head>
 <body id="changeme" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -145,7 +216,7 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural contains-active toc-item-list">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth0"><ul class="structural contains-active toc-item-list">
 <li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-Intro-to-Bus-Stats.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Business Statistics</span></a></div>
@@ -289,9 +360,15 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="ch-Hypothesis-Variance.html" class="internal"><span class="codenumber">11</span> <span class="title">Hypothesis Tests for the Population Variance</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-chi-squared.html" class="internal"><span class="codenumber">11.1</span> <span class="title">The Chi-square Distribution</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hyp-test-single-variance.html" class="internal"><span class="codenumber">11.2</span> <span class="title">Hypothesis Test for a Single <span class="process-math">\(\sigma^2\)</span></span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-hyp-test-single-variance.html" class="internal"><span class="codenumber">11.2</span> <span class="title">Hypothesis Test for a Single <span class="process-math">\(\sigma^2\)</span></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-hyp-test-single-variance.html#sec-hyp-test-single-variance-7" class="internal"><span class="codenumber">11.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-F-dist.html" class="internal"><span class="codenumber">11.3</span> <span class="title">The <span class="process-math">\(F\)</span>-Distribution</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hyp-test-two-variances.html" class="internal"><span class="codenumber">11.4</span> <span class="title">Comparing Variances from Two Populations</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-hyp-test-two-variances.html" class="internal"><span class="codenumber">11.4</span> <span class="title">Comparing Variances from Two Populations</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-5" class="internal"><span class="codenumber">11.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -322,7 +399,7 @@ eBookConfig.enable_chatcodes =  false;
 </h3>
 <div class="para logical" id="def-Binomial-1-1">
 <div class="para">A <em class="emphasis">binomial experiment</em> is a probability experiment possessing the following characteristics:</div>
-<ol class="decimal">
+<ol class="decimal" id="def-Binomial-1-1-2">
 <li id="def-Binomial-1-1-2-1"><div class="para" id="def-Binomial-1-1-2-1-1">It has a fixed number of trials, <span class="process-math">\(n\text{.}\)</span>
 </div></li>
 <li id="def-Binomial-1-1-2-2"><div class="para" id="def-Binomial-1-1-2-2-1">Each trial has only two possible outcomes:  success or failure.</div></li>
@@ -465,7 +542,7 @@ P(X=1)=BINOM.DIST(1,12,0.05,FALSE)\approx 0.3413
 \end{equation*}
 </div></div></div></details></div></article><article class="task exercise-like" id="sec-Binomial-Distribution-19-6"><h4 class="heading"><span class="codenumber">(e)</span></h4>
 <div class="para" id="sec-Binomial-Distribution-19-6-1-1">What are the mean and standard deviation number of women CEOs?</div>
-<div class="solutions"><details id="sec-Binomial-Distribution-19-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-Binomial-Distribution-19-6-2-1"><ul class="disc">
+<div class="solutions"><details id="sec-Binomial-Distribution-19-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-Binomial-Distribution-19-6-2-1"><ul class="disc" id="sec-Binomial-Distribution-19-6-2-1-1">
 <li id="sec-Binomial-Distribution-19-6-2-1-1-1"><div class="para" id="sec-Binomial-Distribution-19-6-2-1-1-1-1"><span class="process-math">\(\displaystyle \mu=np=(12)(0.05)=0.6\)</span></div></li>
 <li id="sec-Binomial-Distribution-19-6-2-1-1-2"><div class="para" id="sec-Binomial-Distribution-19-6-2-1-1-2-1"><span class="process-math">\(\displaystyle \sigma=\sqrt{npq}=\sqrt{(12)(0.05)(1-0.05)}\approx 0.755\)</span></div></li>
 </ul></div></div></details></div></article></article></details><details id="sec-Binomial-Distribution-20" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">

@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Introduction to Statistics",
-  "body": " Introduction to Statistics    What is statistics?   the mathematical science that deals with the collection, analysis, and presentation of data, that is then used for inference and induction     What is data?   the values assigned to observations or measurements      Branches of Statistics:  The three main branches of statistics are:   descriptive    inferential    predictive        Goal of descriptive statistics : to summarize data quickly to get an overview of the information     predictive statistics analyzes past data to predict future values and aid in making well-informed decisions    During our study of inferential statistics , we will learn a variety of techniques that allow us to draw conclusions about a population based on a sample of data.      In our study of inferential statistics, we might want to ask a question such as the following:   What is the average number of hours per week worked by students at UCCCS?   How would you answer this question?     Definitions and Terms        population : set containing all the people or objects whose properties are to be described and analyzed by the data collector     sample : a subset or subgroup of the population              parameter : number that describes a characteristic of a population     statistic : a number that describes a characteristic of a sample        A group of hotel owners in a large city decide to conduct a survey among citizens of the city to discover their opinions about casino gambling.   Describe the population   The population is the set containing all citizens of the city.   One of the hotel owners suggests obtaining a sample by surveying all the people at size of the largest nightclubs in the city on a Saturday night. The people surveyed will be asked to express their opinion on casino gambling. Does this seem like a good idea?   No, it does not! The people at the nightclub might not have the same attitude toward casino gambling as the population of all the city's citizens.       A random sample is a sample obtained in such a way that every element in the population has an equal chance of being selected for the sample.     Think again about the group of hotel owners from who are in a large city and are interested in how the city's citizen's feel about casino gambling. Which of the following would be the most appropriate way to select a random sample?     Randomly survey people who live in the oceanfront condominiums in the city.      Survey the first 200 people whose names appear in the city's telephone directory.      Randomly select neighborhoods of the city and then randomly survey people within the selected neighborhoods.       Regardless of the sampling technique used, the sample should exhibit characteristics typical of those possessed by the target population.  This type of sample is called a representative sample .     "
+  "body": " Introduction to Statistics    What is statistics?   the mathematical science that deals with the collection, analysis, and presentation of data, that is then used for inference and induction     What is data?   the values assigned to observations or measurements      Branches of Statistics:  The three main branches of statistics are:   descriptive    inferential    predictive        Goal of descriptive statistics : to summarize data quickly to get an overview of the information     predictive statistics analyzes past data to predict future values and aid in making well-informed decisions    During our study of inferential statistics , we will learn a variety of techniques that allow us to draw conclusions about a population based on a sample of data.      In our study of inferential statistics, we might want to ask a question such as the following:   What is the average number of hours per week worked by students at UCCCS?   How would you answer this question?     Definitions and Terms        population : set containing all the people or objects whose properties are to be described and analyzed by the data collector     sample : a subset or subgroup of the population              parameter : number that describes a characteristic of a population     statistic : a number that describes a characteristic of a sample        A group of hotel owners in a large city decide to conduct a survey among citizens of the city to discover their opinions about casino gambling.   Describe the population   The population is the set containing all citizens of the city.   One of the hotel owners suggests obtaining a sample by surveying all the people at size of the largest nightclubs in the city on a Saturday night. The people surveyed will be asked to express their opinion on casino gambling. Does this seem like a good idea?   No, it does not! The people at the nightclub might not have the same attitude toward casino gambling as the population of all the city's citizens.   Parameter vs. Statistic     A random sample is a sample obtained in such a way that every element in the population has an equal chance of being selected for the sample.     Think again about the group of hotel owners from who are in a large city and are interested in how the city's citizen's feel about casino gambling. Which of the following would be the most appropriate way to select a random sample?     Randomly survey people who live in the oceanfront condominiums in the city.      Survey the first 200 people whose names appear in the city's telephone directory.      Randomly select neighborhoods of the city and then randomly survey people within the selected neighborhoods.       Regardless of the sampling technique used, the sample should exhibit characteristics typical of those possessed by the target population.  This type of sample is called a representative sample .     "
 },
 {
   "id": "sec-intro-to-stats-2-1",
@@ -73,20 +73,29 @@ var ptx_lunr_docs = [
   "body": " A group of hotel owners in a large city decide to conduct a survey among citizens of the city to discover their opinions about casino gambling.   Describe the population   The population is the set containing all citizens of the city.   One of the hotel owners suggests obtaining a sample by surveying all the people at size of the largest nightclubs in the city on a Saturday night. The people surveyed will be asked to express their opinion on casino gambling. Does this seem like a good idea?   No, it does not! The people at the nightclub might not have the same attitude toward casino gambling as the population of all the city's citizens.  "
 },
 {
+  "id": "subsec-stats-definitions-5",
+  "level": "2",
+  "url": "sec-intro-to-stats.html#subsec-stats-definitions-5",
+  "type": "Exercise",
+  "number": "1.1.7",
+  "title": "Parameter vs. Statistic.",
+  "body": "Parameter vs. Statistic "
+},
+{
   "id": "def-random-sample",
   "level": "2",
   "url": "sec-intro-to-stats.html#def-random-sample",
   "type": "Definition",
-  "number": "1.1.7",
+  "number": "1.1.8",
   "title": "",
   "body": "  A random sample is a sample obtained in such a way that every element in the population has an equal chance of being selected for the sample.   "
 },
 {
-  "id": "subsec-stats-definitions-6",
+  "id": "subsec-stats-definitions-7",
   "level": "2",
-  "url": "sec-intro-to-stats.html#subsec-stats-definitions-6",
+  "url": "sec-intro-to-stats.html#subsec-stats-definitions-7",
   "type": "Exercise",
-  "number": "1.1.8",
+  "number": "1.1.9",
   "title": "",
   "body": " Think again about the group of hotel owners from who are in a large city and are interested in how the city's citizen's feel about casino gambling. Which of the following would be the most appropriate way to select a random sample?     Randomly survey people who live in the oceanfront condominiums in the city.      Survey the first 200 people whose names appear in the city's telephone directory.      Randomly select neighborhoods of the city and then randomly survey people within the selected neighborhoods.    "
 },
@@ -95,7 +104,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-intro-to-stats.html#def-representative-sample",
   "type": "Definition",
-  "number": "1.1.9",
+  "number": "1.1.10",
   "title": "",
   "body": "  Regardless of the sampling technique used, the sample should exhibit characteristics typical of those possessed by the target population.  This type of sample is called a representative sample .   "
 },
@@ -106,7 +115,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "Types of Data",
-  "body": " Types of Data   The purpose of descriptive statistics is to summarize or display data so that the audience can quickly obtain an overview of the information. There are two main types of data: quantitative data and qualitative data .  Let's define those and other types of data we will work with in this course. Then we will move on to review how Excel is used to create meaningful tables, charts, and graphs that summarize our data.         Quantitative data uses numbers to describe data.     Qualitative data uses descriptive terms, i.e. categories, to describe data.              Discrete values are based on observations that can be counted and are typically represented by whole numbers.     Continuous values are based on measured observations and can take on any real number.        Which of the following are discrete values?     number of iPads sold      number of light bulbs that burned for more than 1000 hours in a quality control program      weight      time      distance      number of hours a light bulb burned before going out      Which of the following are continuous values?     number of iPads sold      number of light bulbs that burned for more than 1000 hours in a quality control program      weight      time      distance      number of hours a light bulb burned before going out       Levels of Measurement       A nominal level of measurement deals strictly with qualitative data assigned to predetermined categories.  Examples: marital status, gender, political affiliation    An ordinal level of measurement has all the properties of nominal data but with the added feature that we can rank order values from highest to lowest.  Examples: college class level, course letter grade    An interval level of measurement deals strictly with quantitative data allowing the measurement of difference between categories with actual numbers in a meaningful way.  Examples: temperature (in degrees Celsius or Fahrenheit), SAT score, birth year of baseball players    A ratio level of measurement has all the features of interval data but with the added benefit of having a true zero point.  Examples: age, height, weight, number of home runs          Identify the type of data (qualitative, quantitative-discrete, quantitative-continuous) and the level of measurement for each data source.   the temperature outside (in degrees Fahrenheit)   quantitative-continuous, interval   the price for one gallon of gasoline   quantitative-continuous, ratio   the letter grade earned in your statistics class   qualitative, ordinal   the number of boxes of Cheerios on the shelf of a grocery store   quantitative-discrete, ratio   the types of cars driven by students in your class   qualitative, nominal   the number of times a person goes to the gym in a week   quantitative-discrete, ratio   "
+  "body": " Types of Data   The purpose of descriptive statistics is to summarize or display data so that the audience can quickly obtain an overview of the information. There are two main types of data: quantitative data and qualitative data .  Let's define those and other types of data we will work with in this course. Then we will move on to review how Excel is used to create meaningful tables, charts, and graphs that summarize our data.         Quantitative data uses numbers to describe data.     Qualitative data uses descriptive terms, i.e. categories, to describe data.       Qualitative vs. Quantitative Data        Discrete values are based on observations that can be counted and are typically represented by whole numbers.     Continuous values are based on measured observations and can take on any real number.        Which of the following are discrete values?     number of iPads sold      number of light bulbs that burned for more than 1000 hours in a quality control program      weight      time      distance      number of hours a light bulb burned before going out      Which of the following are continuous values?     number of iPads sold      number of light bulbs that burned for more than 1000 hours in a quality control program      weight      time      distance      number of hours a light bulb burned before going out     Discrete vs. Continuous Data   Levels of Measurement       A nominal level of measurement deals strictly with qualitative data assigned to predetermined categories.  Examples: marital status, gender, political affiliation    An ordinal level of measurement has all the properties of nominal data but with the added feature that we can rank order values from highest to lowest.  Examples: college class level, course letter grade    An interval level of measurement deals strictly with quantitative data allowing the measurement of difference between categories with actual numbers in a meaningful way.  Examples: temperature (in degrees Celsius or Fahrenheit), SAT score, birth year of baseball players    A ratio level of measurement has all the features of interval data but with the added benefit of having a true zero point.  Examples: age, height, weight, number of home runs        Level of Measurement   Identify the type of data (qualitative, quantitative-discrete, quantitative-continuous) and the level of measurement for each data source.   the temperature outside (in degrees Fahrenheit)   quantitative-continuous, interval   the price for one gallon of gasoline   quantitative-continuous, ratio   the letter grade earned in your statistics class   qualitative, ordinal   the number of boxes of Cheerios on the shelf of a grocery store   quantitative-discrete, ratio   the types of cars driven by students in your class   qualitative, nominal   the number of times a person goes to the gym in a week   quantitative-discrete, ratio   "
 },
 {
   "id": "def-quantitative-qualitative",
@@ -118,22 +127,22 @@ var ptx_lunr_docs = [
   "body": "      Quantitative data uses numbers to describe data.     Qualitative data uses descriptive terms, i.e. categories, to describe data.      "
 },
 {
+  "id": "sec-TypesOfData-4",
+  "level": "2",
+  "url": "sec-TypesOfData.html#sec-TypesOfData-4",
+  "type": "Exercise",
+  "number": "1.2.2",
+  "title": "Qualitative vs. Quantitative Data.",
+  "body": "Qualitative vs. Quantitative Data "
+},
+{
   "id": "def-discrete-continuous",
   "level": "2",
   "url": "sec-TypesOfData.html#def-discrete-continuous",
   "type": "Definition",
-  "number": "1.2.2",
-  "title": "",
-  "body": "      Discrete values are based on observations that can be counted and are typically represented by whole numbers.     Continuous values are based on measured observations and can take on any real number.      "
-},
-{
-  "id": "sec-TypesOfData-5",
-  "level": "2",
-  "url": "sec-TypesOfData.html#sec-TypesOfData-5",
-  "type": "Exercise",
   "number": "1.2.3",
   "title": "",
-  "body": " Which of the following are discrete values?     number of iPads sold      number of light bulbs that burned for more than 1000 hours in a quality control program      weight      time      distance      number of hours a light bulb burned before going out    "
+  "body": "      Discrete values are based on observations that can be counted and are typically represented by whole numbers.     Continuous values are based on measured observations and can take on any real number.      "
 },
 {
   "id": "sec-TypesOfData-6",
@@ -142,16 +151,16 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.2.4",
   "title": "",
-  "body": " Which of the following are continuous values?     number of iPads sold      number of light bulbs that burned for more than 1000 hours in a quality control program      weight      time      distance      number of hours a light bulb burned before going out    "
+  "body": " Which of the following are discrete values?     number of iPads sold      number of light bulbs that burned for more than 1000 hours in a quality control program      weight      time      distance      number of hours a light bulb burned before going out    "
 },
 {
-  "id": "def-levels-measurement",
+  "id": "sec-TypesOfData-7",
   "level": "2",
-  "url": "sec-TypesOfData.html#def-levels-measurement",
-  "type": "Definition",
+  "url": "sec-TypesOfData.html#sec-TypesOfData-7",
+  "type": "Exercise",
   "number": "1.2.5",
   "title": "",
-  "body": "     A nominal level of measurement deals strictly with qualitative data assigned to predetermined categories.  Examples: marital status, gender, political affiliation    An ordinal level of measurement has all the properties of nominal data but with the added feature that we can rank order values from highest to lowest.  Examples: college class level, course letter grade    An interval level of measurement deals strictly with quantitative data allowing the measurement of difference between categories with actual numbers in a meaningful way.  Examples: temperature (in degrees Celsius or Fahrenheit), SAT score, birth year of baseball players    A ratio level of measurement has all the features of interval data but with the added benefit of having a true zero point.  Examples: age, height, weight, number of home runs      "
+  "body": " Which of the following are continuous values?     number of iPads sold      number of light bulbs that burned for more than 1000 hours in a quality control program      weight      time      distance      number of hours a light bulb burned before going out    "
 },
 {
   "id": "sec-TypesOfData-8",
@@ -159,6 +168,33 @@ var ptx_lunr_docs = [
   "url": "sec-TypesOfData.html#sec-TypesOfData-8",
   "type": "Exercise",
   "number": "1.2.6",
+  "title": "Discrete vs. Continuous Data.",
+  "body": "Discrete vs. Continuous Data "
+},
+{
+  "id": "def-levels-measurement",
+  "level": "2",
+  "url": "sec-TypesOfData.html#def-levels-measurement",
+  "type": "Definition",
+  "number": "1.2.7",
+  "title": "",
+  "body": "     A nominal level of measurement deals strictly with qualitative data assigned to predetermined categories.  Examples: marital status, gender, political affiliation    An ordinal level of measurement has all the properties of nominal data but with the added feature that we can rank order values from highest to lowest.  Examples: college class level, course letter grade    An interval level of measurement deals strictly with quantitative data allowing the measurement of difference between categories with actual numbers in a meaningful way.  Examples: temperature (in degrees Celsius or Fahrenheit), SAT score, birth year of baseball players    A ratio level of measurement has all the features of interval data but with the added benefit of having a true zero point.  Examples: age, height, weight, number of home runs      "
+},
+{
+  "id": "sec-TypesOfData-10",
+  "level": "2",
+  "url": "sec-TypesOfData.html#sec-TypesOfData-10",
+  "type": "Exercise",
+  "number": "1.2.8",
+  "title": "Level of Measurement.",
+  "body": "Level of Measurement "
+},
+{
+  "id": "sec-TypesOfData-11",
+  "level": "2",
+  "url": "sec-TypesOfData.html#sec-TypesOfData-11",
+  "type": "Exercise",
+  "number": "1.2.9",
   "title": "",
   "body": " Identify the type of data (qualitative, quantitative-discrete, quantitative-continuous) and the level of measurement for each data source.   the temperature outside (in degrees Fahrenheit)   quantitative-continuous, interval   the price for one gallon of gasoline   quantitative-continuous, ratio   the letter grade earned in your statistics class   qualitative, ordinal   the number of boxes of Cheerios on the shelf of a grocery store   quantitative-discrete, ratio   the types of cars driven by students in your class   qualitative, nominal   the number of times a person goes to the gym in a week   quantitative-discrete, ratio  "
 },
@@ -682,7 +718,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.3",
   "title": "Using the Mean and Standard Deviation Together",
-  "body": " Using the Mean and Standard Deviation Together   There are a few important concepts that use the mean and standard deviation together to describe data sets.     The coefficient of variation (cv) measures the standard deviation in terms of its percentage of the mean.         The -score identifies the number of standard deviations a particular value is from the mean of its distribution.           The mean weight of newborn infants is 7 pounds, and the standard deviation is 0.8 pound. The weights of newborn infants are normally distributed . (This is a symmetric distribution that we'll talk more about in a later chapter.)  Find the -scores for the following weights.   9 pounds       7 pounds       6 pounds         What do the -scores in mean about how the weights compare to the average weight of newborn infants?     An employee satisfaction survey was given to employees, and they were asked to rate their overall satisfaction with their job from 0 to 10 (inclusive). The average rating was 5.5, and the standard deviation was 1.2. What is the satisfaction rating corresponding to a -score of ?         The Empirical Rule  The Empirical Rule says that if a distribution follows a bell-shaped, symmetric curve centered around the mean, then we should expect:   approximately of the data to fall within one standard deviation of the mean,    approximately of the data to fall within two standard deviations of the mean, and    approximately of the data to fall within three standard deviations of the mean.      The Empirical Rule (Made in GeoGebra by Kady Schneiter)          Chebyshev's Theorem:   For any number greater than 1, the percent of data points that fall within standard deviations from the mean is at least for any distribution , regardless of its shape.     Assume the average selling price for houses in a certain county is with a standard deviation of .   Determine the coefficient of variation.       Calculate the -score for a house that sells for .       Using the Empirical Rule, determine the range of prices that includes of the homes around the mean. (To do this, we need to assume that the selling prices of homes is bell-shaped and symmetric.)    of prices are within 1 standard deviation of the mean. That is, of prices are between the numbers (assuming the distribution of prices is bell-shaped and symmetric).      Using Chebyshev's Theorem, determine the range of prices that includes at least of the homes around the mean. (Using Chebyshev's Theorem, we don't need to assume anything about how the prices are distributed.)           So the range of prices including values within of the mean will include at least of the homes.          "
+  "body": " Using the Mean and Standard Deviation Together   There are a few important concepts that use the mean and standard deviation together to describe data sets.     The coefficient of variation (cv) measures the standard deviation in terms of its percentage of the mean.         The -score identifies the number of standard deviations a particular value is from the mean of its distribution.           The mean weight of newborn infants is 7 pounds, and the standard deviation is 0.8 pound. The weights of newborn infants are normally distributed . (This is a symmetric distribution that we'll talk more about in a later chapter.)  Find the -scores for the following weights.   9 pounds       7 pounds       6 pounds         What do the -scores in mean about how the weights compare to the average weight of newborn infants?     An employee satisfaction survey was given to employees, and they were asked to rate their overall satisfaction with their job from 0 to 10 (inclusive). The average rating was 5.5, and the standard deviation was 1.2. What is the satisfaction rating corresponding to a -score of ?         The Empirical Rule  The Empirical Rule says that if a distribution follows a bell-shaped, symmetric curve centered around the mean, then we should expect:   approximately of the data to fall within one standard deviation of the mean,    approximately of the data to fall within two standard deviations of the mean, and    approximately of the data to fall within three standard deviations of the mean.      The Empirical Rule (Made in GeoGebra by Kady Schneiter)    Empirical Rule  Empirical Rule  Empirical Rule     Chebyshev's Theorem:   For any number greater than 1, the percent of data points that fall within standard deviations from the mean is at least for any distribution , regardless of its shape.     Assume the average selling price for houses in a certain county is with a standard deviation of .   Determine the coefficient of variation.       Calculate the -score for a house that sells for .       Using the Empirical Rule, determine the range of prices that includes of the homes around the mean. (To do this, we need to assume that the selling prices of homes is bell-shaped and symmetric.)    of prices are within 1 standard deviation of the mean. That is, of prices are between the numbers (assuming the distribution of prices is bell-shaped and symmetric).      Using Chebyshev's Theorem, determine the range of prices that includes at least of the homes around the mean. (Using Chebyshev's Theorem, we don't need to assume anything about how the prices are distributed.)           So the range of prices including values within of the mean will include at least of the homes.        Chebyshev's Theorem   "
 },
 {
   "id": "def-cv",
@@ -739,13 +775,13 @@ var ptx_lunr_docs = [
   "body": " The Empirical Rule (Made in GeoGebra by Kady Schneiter)   "
 },
 {
-  "id": "thm-chebyshev-theorem",
+  "id": "subsec-empirical-rule-4",
   "level": "2",
-  "url": "sec-mean-and-stdev.html#thm-chebyshev-theorem",
-  "type": "Theorem",
+  "url": "sec-mean-and-stdev.html#subsec-empirical-rule-4",
+  "type": "Exercise",
   "number": "3.3.7",
-  "title": "",
-  "body": "   Chebyshev's Theorem:   For any number greater than 1, the percent of data points that fall within standard deviations from the mean is at least for any distribution , regardless of its shape.   "
+  "title": "Empirical Rule.",
+  "body": "Empirical Rule "
 },
 {
   "id": "subsec-empirical-rule-5",
@@ -753,8 +789,44 @@ var ptx_lunr_docs = [
   "url": "sec-mean-and-stdev.html#subsec-empirical-rule-5",
   "type": "Exercise",
   "number": "3.3.8",
+  "title": "Empirical Rule.",
+  "body": "Empirical Rule "
+},
+{
+  "id": "subsec-empirical-rule-6",
+  "level": "2",
+  "url": "sec-mean-and-stdev.html#subsec-empirical-rule-6",
+  "type": "Exercise",
+  "number": "3.3.9",
+  "title": "Empirical Rule.",
+  "body": "Empirical Rule "
+},
+{
+  "id": "thm-chebyshev-theorem",
+  "level": "2",
+  "url": "sec-mean-and-stdev.html#thm-chebyshev-theorem",
+  "type": "Theorem",
+  "number": "3.3.10",
+  "title": "",
+  "body": "   Chebyshev's Theorem:   For any number greater than 1, the percent of data points that fall within standard deviations from the mean is at least for any distribution , regardless of its shape.   "
+},
+{
+  "id": "subsec-empirical-rule-8",
+  "level": "2",
+  "url": "sec-mean-and-stdev.html#subsec-empirical-rule-8",
+  "type": "Exercise",
+  "number": "3.3.11",
   "title": "",
   "body": " Assume the average selling price for houses in a certain county is with a standard deviation of .   Determine the coefficient of variation.       Calculate the -score for a house that sells for .       Using the Empirical Rule, determine the range of prices that includes of the homes around the mean. (To do this, we need to assume that the selling prices of homes is bell-shaped and symmetric.)    of prices are within 1 standard deviation of the mean. That is, of prices are between the numbers (assuming the distribution of prices is bell-shaped and symmetric).      Using Chebyshev's Theorem, determine the range of prices that includes at least of the homes around the mean. (Using Chebyshev's Theorem, we don't need to assume anything about how the prices are distributed.)           So the range of prices including values within of the mean will include at least of the homes.       "
+},
+{
+  "id": "subsec-empirical-rule-9",
+  "level": "2",
+  "url": "sec-mean-and-stdev.html#subsec-empirical-rule-9",
+  "type": "Exercise",
+  "number": "3.3.12",
+  "title": "Chebyshev’s Theorem.",
+  "body": "Chebyshev's Theorem "
 },
 {
   "id": "sec-measures-relative-position",
@@ -898,7 +970,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.1",
   "title": "Introduction to Probability",
-  "body": " Introduction to Probability   Decision makers, including those in the business world, are greatly influenced by uncertainty. Probability provides a valuable tool in quantifying uncertainty, leading to greater success in decision-making.     A probability is a numerical value between 0 and 1 that measures the chance, or likelihood, that a specific event will occur.    Before jumping into some examples, let's discuss some key terms for our study of probability concepts.       An experiment results in a specific outcome e.g., a coin flip (the experiment) results in a heads or a tails (the outcome).    An event is a collection of outcome(s) of an experiment, e.g., a die roll results in an odd number . More specifically, a simple event is an event with a single outcome.    The sample space for an experiment consists of all possible outcomes e.g., .    The outcomes must be collectively exhaustive and mutually exclusive .     Collectively exhaustive means every simple event is included     Mutually exclusive means events that cannot occur at the same time.            A single die is rolled.   Define the sample space.       Define the event an odd number is rolled . What is the probability of this event?        A pair of dice are rolled.   Define the sample space. (How many total possible outcomes are there?)    There are 36 total possible outcomes.   Define the event doubles are rolled . What is the probability of this event?        Define the event the sum of the dice is 10 . What is the probability of this event?         (Donnelly 4.8)  The table below shows the frequencies of executives' salary ranges at a particular organization.    Salary Range  Frequency    Under $60,000  2    $60,000 to under $70,000  5    $70,000 to under $80,000  7    $80,000 to under $90,000  4    $90,000 to under $100,000  6    $100,000 or more  ?    Total:  26       How many executives at this organization earned $100,000 or more per year?       What is the probability of randomly selecting an executive who earned $100,000 or more per year?       What is the probability of randomly selecting an executive who earned $60,000 or more per year?       What is the probability of randomly selecting an executive who earned between $70,000 and $90,000 per year?         Basic Properties of Probability:   If , then event is certain to occur.    If , then event is certain to NOT occur.    The probability of any event must range between 0 and 1 (inclusive).    The sum of all probabilities of simple events in a sample space is equal to 1.        The complement , (or ), is defined as all outcomes in the sample space that are not in .      The complement rule:      Draw one card from a standard deck of 52 playing cards. (Here is a link to a description of a deck of cards: )   How many total outcomes are in the sample space for this experiment?       What is the probability of drawing a face card ?       What is the probability of drawing a card divisible by 3 ?       What is the probability of drawing a card NOT divisible by 3 ?       What is the probability of drawing a card that is a face card and a card divisible by 3 ?   0   What is the probability of drawing a card that is a red card or a black card ?   1        A contingency table shows the number of occurrences of events that are classified by two categorical variables.     Marginal probability is a simple probability found in the margins, or row and column totals, of a contingency table.        (Donnelly 4.19)  A local car dealership currently has 36 used GM, Ford, and Toyota vehicles on the lot that can be classified as either cars or trucks. The following data are available:   Twenty-six vehicles are cars    Eleven vehicles are GMs    Fifteen vehicles are Fords    Three vehicles are both Toyotas and trucks    Fourteen vehicles are both Toyotas and trucks      Create a contingency table that summarizes the data.      GM  Ford  Toyota  Total    Car        Truck        Total              GM  Ford  Toyota  Total    Car  5  14  7  26    Truck  6  1  3  10    Total  11  15  10  36      What is the probability that a randomly selected vehicle is a Toyota?       What is the probability that a randomly selected vehicle is a truck?         The intersection of Events A and B represents the number of times when events A and B occur at the same time   Notation:     The union of Events A and B represents the number of times when event A or event B or both occur.   Notation:         Union and Intersection (Made in GeoGebra by Vaibhav Zade)       The joint probability of two events is the probability of the intersection of two events.     The addition rule for probabilities is used to calculate the probability of the union of events. It depends on knowing whether or not two events are mutually exclusive.     For mutually exclusive events,     For events that are not mutually exclusive,        Use the contingency table from to answer the following questions.      GM  Ford  Toyota  Total    Car  5  14  7  26    Truck  6  1  3  10    Total  11  15  10  36      What is the probability that a randomly selected vehicle is either a Ford or a car?       What is the probability that a randomly selected vehicle is a GM truck?           Conditional probability is the probability that event A will occur given that event B has occurred.  This probability is denoted by , and is the probability of A given B .     (Made in GeoGebra by Virginia Keith)     Which of the following is the formula used to calculate ?                                      Prior probability: the probability that an event will occur as determined without any additional information that could affect it     Posterior probability: a revision of a prior probability using additional information        Use the contingency table from to answer the following questions.      GM  Ford  Toyota  Total    Car  5  14  7  26    Truck  6  1  3  10    Total  11  15  10  36      What is the probability that a randomly selected vehicle is a Toyota, given it is a car?       What is the probability that a randomly selected vehicle is a truck, given it is a Ford?       "
+  "body": " Introduction to Probability   Decision makers, including those in the business world, are greatly influenced by uncertainty. Probability provides a valuable tool in quantifying uncertainty, leading to greater success in decision-making.     A probability is a numerical value between 0 and 1 that measures the chance, or likelihood, that a specific event will occur.    Before jumping into some examples, let's discuss some key terms for our study of probability concepts.       An experiment results in a specific outcome e.g., a coin flip (the experiment) results in a heads or a tails (the outcome).    An event is a collection of outcome(s) of an experiment, e.g., a die roll results in an odd number . More specifically, a simple event is an event with a single outcome.    The sample space for an experiment consists of all possible outcomes e.g., .    The outcomes must be collectively exhaustive and mutually exclusive .     Collectively exhaustive means every simple event is included     Mutually exclusive means events that cannot occur at the same time.            A single die is rolled.   Define the sample space.       Define the event an odd number is rolled . What is the probability of this event?        A pair of dice are rolled.   Define the sample space. (How many total possible outcomes are there?)    There are 36 total possible outcomes.   Define the event doubles are rolled . What is the probability of this event?        Define the event the sum of the dice is 10 . What is the probability of this event?         (Donnelly 4.8)  The table below shows the frequencies of executives' salary ranges at a particular organization.    Salary Range  Frequency    Under $60,000  2    $60,000 to under $70,000  5    $70,000 to under $80,000  7    $80,000 to under $90,000  4    $90,000 to under $100,000  6    $100,000 or more  ?    Total:  26       How many executives at this organization earned $100,000 or more per year?       What is the probability of randomly selecting an executive who earned $100,000 or more per year?       What is the probability of randomly selecting an executive who earned $60,000 or more per year?       What is the probability of randomly selecting an executive who earned between $70,000 and $90,000 per year?        Basic Properties of Probability:   If , then event is certain to occur.    If , then event is certain to NOT occur.    The probability of any event must range between 0 and 1 (inclusive).    The sum of all probabilities of simple events in a sample space is equal to 1.       The complement , (or ), is defined as all outcomes in the sample space that are not in .      The complement rule:      Draw one card from a standard deck of 52 playing cards. (Here is a link to a description of a deck of cards: )   How many total outcomes are in the sample space for this experiment?       What is the probability of drawing a face card ?       What is the probability of drawing a card divisible by 3 ?       What is the probability of drawing a card NOT divisible by 3 ?       What is the probability of drawing a card that is a face card and a card divisible by 3 ?   0   What is the probability of drawing a card that is a red card or a black card ?   1        A contingency table shows the number of occurrences of events that are classified by two categorical variables.     Marginal probability is a simple probability found in the margins, or row and column totals, of a contingency table.        (Donnelly 4.19)  A local car dealership currently has 36 used GM, Ford, and Toyota vehicles on the lot that can be classified as either cars or trucks. The following data are available:   Twenty-six vehicles are cars    Eleven vehicles are GMs    Fifteen vehicles are Fords    Three vehicles are both Toyotas and trucks    Fourteen vehicles are both Toyotas and trucks      Create a contingency table that summarizes the data.      GM  Ford  Toyota  Total    Car        Truck        Total              GM  Ford  Toyota  Total    Car  5  14  7  26    Truck  6  1  3  10    Total  11  15  10  36      What is the probability that a randomly selected vehicle is a Toyota?       What is the probability that a randomly selected vehicle is a truck?         The intersection of Events A and B represents the number of times when events A and B occur at the same time   Notation:     The union of Events A and B represents the number of times when event A or event B or both occur.   Notation:         Union and Intersection (Made in GeoGebra by Vaibhav Zade)       The joint probability of two events is the probability of the intersection of two events.     The addition rule for probabilities is used to calculate the probability of the union of events. It depends on knowing whether or not two events are mutually exclusive.     For mutually exclusive events,     For events that are not mutually exclusive,        Use the contingency table from to answer the following questions.      GM  Ford  Toyota  Total    Car  5  14  7  26    Truck  6  1  3  10    Total  11  15  10  36      What is the probability that a randomly selected vehicle is either a Ford or a car?       What is the probability that a randomly selected vehicle is a GM truck?           Conditional probability is the probability that event A will occur given that event B has occurred.  This probability is denoted by , and is the probability of A given B .     (Made in GeoGebra by Virginia Keith)     Which of the following is the formula used to calculate ?                                      Prior probability: the probability that an event will occur as determined without any additional information that could affect it     Posterior probability: a revision of a prior probability using additional information        Use the contingency table from to answer the following questions.      GM  Ford  Toyota  Total    Car  5  14  7  26    Truck  6  1  3  10    Total  11  15  10  36      What is the probability that a randomly selected vehicle is a Toyota, given it is a car?       What is the probability that a randomly selected vehicle is a truck, given it is a Ford?       "
 },
 {
   "id": "def-probability",
@@ -946,20 +1018,29 @@ var ptx_lunr_docs = [
   "body": " (Donnelly 4.8)  The table below shows the frequencies of executives' salary ranges at a particular organization.    Salary Range  Frequency    Under $60,000  2    $60,000 to under $70,000  5    $70,000 to under $80,000  7    $80,000 to under $90,000  4    $90,000 to under $100,000  6    $100,000 or more  ?    Total:  26       How many executives at this organization earned $100,000 or more per year?       What is the probability of randomly selecting an executive who earned $100,000 or more per year?       What is the probability of randomly selecting an executive who earned $60,000 or more per year?       What is the probability of randomly selecting an executive who earned between $70,000 and $90,000 per year?      "
 },
 {
+  "id": "sec-Intro-to-Probability-9",
+  "level": "2",
+  "url": "sec-Intro-to-Probability.html#sec-Intro-to-Probability-9",
+  "type": "Exercise",
+  "number": "4.1.7",
+  "title": "",
+  "body": ""
+},
+{
   "id": "def-complement",
   "level": "2",
   "url": "sec-Intro-to-Probability.html#def-complement",
   "type": "Definition",
-  "number": "4.1.7",
+  "number": "4.1.8",
   "title": "",
   "body": "  The complement , (or ), is defined as all outcomes in the sample space that are not in .   "
 },
 {
-  "id": "sec-Intro-to-Probability-12",
+  "id": "sec-Intro-to-Probability-13",
   "level": "2",
-  "url": "sec-Intro-to-Probability.html#sec-Intro-to-Probability-12",
+  "url": "sec-Intro-to-Probability.html#sec-Intro-to-Probability-13",
   "type": "Exercise",
-  "number": "4.1.8",
+  "number": "4.1.9",
   "title": "",
   "body": " Draw one card from a standard deck of 52 playing cards. (Here is a link to a description of a deck of cards: )   How many total outcomes are in the sample space for this experiment?       What is the probability of drawing a face card ?       What is the probability of drawing a card divisible by 3 ?       What is the probability of drawing a card NOT divisible by 3 ?       What is the probability of drawing a card that is a face card and a card divisible by 3 ?   0   What is the probability of drawing a card that is a red card or a black card ?   1  "
 },
@@ -968,7 +1049,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Intro-to-Probability.html#def-contingency-marginal-probability",
   "type": "Definition",
-  "number": "4.1.9",
+  "number": "4.1.10",
   "title": "",
   "body": "     A contingency table shows the number of occurrences of events that are classified by two categorical variables.     Marginal probability is a simple probability found in the margins, or row and column totals, of a contingency table.      "
 },
@@ -977,7 +1058,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Intro-to-Probability.html#ex-vehicles",
   "type": "Exercise",
-  "number": "4.1.10",
+  "number": "4.1.11",
   "title": "",
   "body": " (Donnelly 4.19)  A local car dealership currently has 36 used GM, Ford, and Toyota vehicles on the lot that can be classified as either cars or trucks. The following data are available:   Twenty-six vehicles are cars    Eleven vehicles are GMs    Fifteen vehicles are Fords    Three vehicles are both Toyotas and trucks    Fourteen vehicles are both Toyotas and trucks      Create a contingency table that summarizes the data.      GM  Ford  Toyota  Total    Car        Truck        Total              GM  Ford  Toyota  Total    Car  5  14  7  26    Truck  6  1  3  10    Total  11  15  10  36      What is the probability that a randomly selected vehicle is a Toyota?       What is the probability that a randomly selected vehicle is a truck?      "
 },
@@ -986,7 +1067,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Intro-to-Probability.html#def-intersection-union",
   "type": "Definition",
-  "number": "4.1.11",
+  "number": "4.1.12",
   "title": "",
   "body": "  The intersection of Events A and B represents the number of times when events A and B occur at the same time   Notation:     The union of Events A and B represents the number of times when event A or event B or both occur.   Notation:         Union and Intersection (Made in GeoGebra by Vaibhav Zade)    "
 },
@@ -995,25 +1076,34 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Intro-to-Probability.html#def-joint-probability",
   "type": "Definition",
-  "number": "4.1.13",
+  "number": "4.1.14",
   "title": "",
   "body": "  The joint probability of two events is the probability of the intersection of two events.   "
 },
 {
-  "id": "sec-Intro-to-Probability-18",
+  "id": "sec-Intro-to-Probability-19",
   "level": "2",
-  "url": "sec-Intro-to-Probability.html#sec-Intro-to-Probability-18",
+  "url": "sec-Intro-to-Probability.html#sec-Intro-to-Probability-19",
   "type": "Exercise",
-  "number": "4.1.14",
+  "number": "4.1.15",
   "title": "",
   "body": " Use the contingency table from to answer the following questions.      GM  Ford  Toyota  Total    Car  5  14  7  26    Truck  6  1  3  10    Total  11  15  10  36      What is the probability that a randomly selected vehicle is either a Ford or a car?       What is the probability that a randomly selected vehicle is a GM truck?      "
+},
+{
+  "id": "sec-Intro-to-Probability-20",
+  "level": "2",
+  "url": "sec-Intro-to-Probability.html#sec-Intro-to-Probability-20",
+  "type": "Exercise",
+  "number": "4.1.16",
+  "title": "",
+  "body": ""
 },
 {
   "id": "def-condition-probability",
   "level": "2",
   "url": "sec-Intro-to-Probability.html#def-condition-probability",
   "type": "Definition",
-  "number": "4.1.15",
+  "number": "4.1.17",
   "title": "",
   "body": "   Conditional probability is the probability that event A will occur given that event B has occurred.  This probability is denoted by , and is the probability of A given B .   "
 },
@@ -1022,16 +1112,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Intro-to-Probability.html#figure-geogebra-conditional-prob",
   "type": "Figure",
-  "number": "4.1.16",
+  "number": "4.1.18",
   "title": "",
   "body": " (Made in GeoGebra by Virginia Keith)   "
 },
 {
-  "id": "sec-Intro-to-Probability-21",
+  "id": "sec-Intro-to-Probability-23",
   "level": "2",
-  "url": "sec-Intro-to-Probability.html#sec-Intro-to-Probability-21",
+  "url": "sec-Intro-to-Probability.html#sec-Intro-to-Probability-23",
   "type": "Exercise",
-  "number": "4.1.17",
+  "number": "4.1.19",
   "title": "",
   "body": " Which of the following is the formula used to calculate ?                               "
 },
@@ -1040,7 +1130,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Intro-to-Probability.html#def-prior-posterior-probability",
   "type": "Definition",
-  "number": "4.1.18",
+  "number": "4.1.20",
   "title": "",
   "body": "      Prior probability: the probability that an event will occur as determined without any additional information that could affect it     Posterior probability: a revision of a prior probability using additional information      "
 },
@@ -1049,7 +1139,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Intro-to-Probability.html#ex-vehicles-marginal",
   "type": "Exercise",
-  "number": "4.1.19",
+  "number": "4.1.21",
   "title": "",
   "body": " Use the contingency table from to answer the following questions.      GM  Ford  Toyota  Total    Car  5  14  7  26    Truck  6  1  3  10    Total  11  15  10  36      What is the probability that a randomly selected vehicle is a Toyota, given it is a car?       What is the probability that a randomly selected vehicle is a truck, given it is a Ford?      "
 },
@@ -1097,6 +1187,15 @@ var ptx_lunr_docs = [
   "number": "4.2.4",
   "title": "",
   "body": " A company has 140 employees, of which 30 are supervisors. Eighty of the employees are married, and 20% of the married employees are supervisors. If a company employee is randomly selected, what is the probability that employee is married and is a supervisor?      "
+},
+{
+  "id": "sec-independence-7",
+  "level": "2",
+  "url": "sec-independence.html#sec-independence-7",
+  "type": "Exercise",
+  "number": "4.2.5",
+  "title": "",
+  "body": ""
 },
 {
   "id": "sec-Random-Variables",
@@ -1492,7 +1591,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.1",
   "title": "The Normal Distribution",
-  "body": " The Normal Distribution   The mathematical expression that describes the shape of the normal probability distribution is called the normal probability density function: Despite the complexity of this function, there are only two parameters that completely deter- mine the shape of the distribution: the mean, , and the standard deviation, . Let’s take a closer look at how they impact the distribution. (Don’t worry---we won’t be using this formula to compute probabilities. We have other tools!)     How does changing the standard deviation ( ) and the mean ( ) change the curve?  Graph of Normal Distribution powered by Desmos           controls the spread of the curve. Larger results in a flatter, more spread out curve     controls the location of the center. Larger shifts the hill of the curve to the right        Characteristics of the Normal Probability Distribution:     The distribution is bell-shaped and symmetric around the mean.    Because the shape is symmetrical, the mean and median are equal and located at the center of the distribution.    Random variables around the mean, where the curve is the tallest have a higher probability of occurring than values toward the end of the distribution.    The total area under the curve is . Since the distribution is symmetric, the area to the left of the mean equals as does the area to the right of the mean    No matter how far in either direction the distribution curve extends, it never touches the horizontal axis -- but it gets increasingly closer.       Examples of Normal Probability Distributions:      The Standard Normal Distribution:  Recall that the -score of a value, , describes the number of standard deviations that the value is from the mean of its distribution:    Values of that are less than the mean have _______ -scores     postive      negative      zero      Values of that are more than the mean have _______ -scores     positive      negative      zero      The -score for the mean equals ________                                A coffee shop wants to understand the distribution of amounts that their customers are spending per order. They find that the average amount a customer spends per order is , and the standard deviation is . If we assume that the amounts spent per order are normally distributed, and Rey comes in and spends , what is the -score for Rey's order?        When the original random variable, , follows a normal distribution, -scores also follow a normal distribution with , . It is called the standard normal distribution .     Graph of Standard Normal Distribution powered by Desmos      Calculating Probabilities for Normal Distributions:  The standard normal distribution allows us to calculate probabilities for any normal distribution since we can standardize it with -scores. The tables at this link ( Standard Normal Table ) provide you with the cumulative area to the LEFT of the -score.  We can also use Excel to calculate the cumulative area to the left of the -score by typing   ( Note: We can type 1 instead of TRUE in this formula in Excel.)     Find the probability for a standard normal distribution    In Excel:      So how do we use the table or the Excel formula to find any probability for a normal distribution?  There are 3 basic types of problems:   To the left of any -score: Look up the -score in the table (or calculate it in Excel) and use the area given.    To the right of any -score: Look up the -score in the table (or calculate it in Excel) subtract the area from 1.    Between any two -scores: Look up both -scores in the table (or calculate them in Excel) and subtract the smaller area from the larger area.       Find the following probabilities for a standard normal distribution:        In Excel:         In Excel:         In Excel:      Normal Distribution Probability Calculator (Made in GeoGebra by Andreas Lindner)     We already saw an Excel command that will allow us to find a probability associated with a standard normal distribution. There is also an Excel command that allows us to find a probability associated with a general normal distribution, and in this case, we will need to specify the mean and standard deviation of the distribution. (These first two commands both apply to situations where the goal is to compute a probability associated with a data value.)    : applies to problems involving a normal distribution with a specified mean and standard deviation     : applies to problems involving the standard normal distribution ( )   (As we've seen before, cumulative .)   Suppose the average height of 5 year old girls is normally distributed with mean cm and standard deviation cm. Find the following:   Find the probability that a randomly selected 5 year old girl's height is is at least cm.    .   Find the probability that a randomly selected 5 year old girl's height is between and cm.    .    We're going to do a matching activity in class to practice working with these formulas to calculate probabilities for normal distributions. (The next few exercises include online versions of this activity.)   Normal Distribution Matching Problem  Match each probability with the Excel formula we would use to calculate it.     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is between 120 and 180?    NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)      A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is more than 40?    1-NORM.DIST(40,135,22,1)     Normal Distribution Matching Problem  Match each probability with the Excel formula we would use to calculate it.     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is less than 90?    NORM.DIST(90,135,22,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(2.35,TRUE)     Normal Distribution Matching Problem  Match each probability with the Excel formula we would use to calculate it.     Find the probability for a standard normal distribution:     1-NORM.S.DIST(2.35,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.76,1)- NORM.S.DIST(-0.86,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.5,TRUE)      Find the probability for a standard normal distribution:     1-NORM.S.DIST(1.5,TRUE)      Images for    (A)       (B)       (C)        Normal Distribution Matching Problem  Match the images in with the probability that is shown in the image    (a)???   NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)     (b)???   1-NORM.DIST(40,135,22,1)     ???   NORM.DIST(90,135,22,1)     ???   Find the probability for a standard normal distribution:      Normal Distribution Matching Problem  Problem instructions.    image   Find the probability for a standard normal distribution:      image   Find the probability for a standard normal distribution:      image   NORM.S.DIST(1.5,TRUE)      image    1-NORM.S.DIST(1.5,TRUE)      Let be the standard normal variable.  Find . Round your answer to four decimal places:         Any value in the interval is marked as correct for this problem.      Incorrect. Did you round to four decimal places?       Let be the standard normal variable.  Find . Round your answer to four decimal places:         Any value in the interval is marked as correct for this problem.      Incorrect. Did you round to four decimal places?       Finding or if we have information about a probability:   What if we want to know the specific that satisfies a given probability? Then we can work backward using the tables ( Standard Normal Table ) and use the -score formula in reverse. If the exact probability cannot be found in the table, then we can use the closest values.   The Excel formulas that apply to this situation are similar to the ones we saw earlier, replacing .DIST with .INV:   NORM.INV(probability, mean, standard deviation) applies to normal distributions with a specified mean and standard deviation    NORM.S.INV(probability) is used for standard normal distributions      Let be the standard normal variable.  Find such that . Round your answer to four decimal places:         Any value in the interval is marked as correct for this problem.      Incorrect. Did you round to four decimal places?       Let be the standard normal variable.  Find such that . Round your answer to four decimal places:         Any value in the interval is marked as correct for this problem.      Incorrect. Did you round to four decimal places?       A random variable follows the normal probability distribution with a mean of 50 and a standard deviation of 20.   What value of represents the 75th percentile?       Find the value of so that probability lies below it.       Find the value of that represents the highest of all values        Suppose the retirement age of professional athletes in a certain league is normally distributed with mean years and standard deviation years. Find the following:   Find the probability that a randomly selected athlete's retirement age is is at least years.    .   Find the probability that a randomly selected athlete's retirement age is between and years.    .   Find such that the probability that a randomly selected athlete's retirement age is is at most years is .   If then years.   Find such that the probability that a randomly selected athlete's retirement age is between years and years is .   If then years.    "
+  "body": " The Normal Distribution   The mathematical expression that describes the shape of the normal probability distribution is called the normal probability density function: Despite the complexity of this function, there are only two parameters that completely deter- mine the shape of the distribution: the mean, , and the standard deviation, . Let’s take a closer look at how they impact the distribution. (Don’t worry---we won’t be using this formula to compute probabilities. We have other tools!)     How does changing the standard deviation ( ) and the mean ( ) change the curve?  Graph of Normal Distribution powered by Desmos           controls the spread of the curve. Larger results in a flatter, more spread out curve     controls the location of the center. Larger shifts the hill of the curve to the right        Characteristics of the Normal Probability Distribution:     The distribution is bell-shaped and symmetric around the mean.    Because the shape is symmetrical, the mean and median are equal and located at the center of the distribution.    Random variables around the mean, where the curve is the tallest have a higher probability of occurring than values toward the end of the distribution.    The total area under the curve is . Since the distribution is symmetric, the area to the left of the mean equals as does the area to the right of the mean    No matter how far in either direction the distribution curve extends, it never touches the horizontal axis -- but it gets increasingly closer.       Examples of Normal Probability Distributions:  There are many examples of random variables that are normally distributed in many different real-world settings! Here are a few examples of random variables that are normally distributed or that could be in certain situations:   Shoe sizes    blood pressure    ACT scores    birth weight of babies    salaries at a particular workplace    length of movies       The Standard Normal Distribution:  Recall that the -score of a value, , describes the number of standard deviations that the value is from the mean of its distribution:    Values of that are less than the mean have _______ -scores     postive      negative      zero      Values of that are more than the mean have _______ -scores     positive      negative      zero      The -score for the mean equals ________                                A coffee shop wants to understand the distribution of amounts that their customers are spending per order. They find that the average amount a customer spends per order is , and the standard deviation is . If we assume that the amounts spent per order are normally distributed, and Rey comes in and spends , what is the -score for Rey's order?        When the original random variable, , follows a normal distribution, -scores also follow a normal distribution with , . It is called the standard normal distribution .     Graph of Standard Normal Distribution powered by Desmos      Calculating Probabilities for Normal Distributions:  The standard normal distribution allows us to calculate probabilities for any normal distribution since we can standardize it with -scores. The tables at this link ( Standard Normal Table ) provide you with the cumulative area to the LEFT of the -score.  We can also use Excel to calculate the cumulative area to the left of the -score by typing   ( Note: We can type 1 instead of TRUE in this formula in Excel.)     Find the probability for a standard normal distribution    In Excel:      So how do we use the table or the Excel formula to find any probability for a normal distribution?  There are 3 basic types of problems:   To the left of any -score: Look up the -score in the table (or calculate it in Excel) and use the area given.    To the right of any -score: Look up the -score in the table (or calculate it in Excel) subtract the area from 1.    Between any two -scores: Look up both -scores in the table (or calculate them in Excel) and subtract the smaller area from the larger area.       Find the following probabilities for a standard normal distribution:        In Excel:         In Excel:         In Excel:      Normal Distribution Probability Calculator (Made in GeoGebra by Andreas Lindner)     We already saw an Excel command that will allow us to find a probability associated with a standard normal distribution. There is also an Excel command that allows us to find a probability associated with a general normal distribution, and in this case, we will need to specify the mean and standard deviation of the distribution. (These first two commands both apply to situations where the goal is to compute a probability associated with a data value.)    : applies to problems involving a normal distribution with a specified mean and standard deviation     : applies to problems involving the standard normal distribution ( )   (As we've seen before, cumulative .)   Suppose the average height of 5 year old girls is normally distributed with mean cm and standard deviation cm. Find the following:   Find the probability that a randomly selected 5 year old girl's height is is at least cm.    .   Find the probability that a randomly selected 5 year old girl's height is between and cm.    .    We're going to do a matching activity in class to practice working with these formulas to calculate probabilities for normal distributions. (The next few exercises include online versions of this activity.)   Normal Distribution Matching Problem  Match each probability with the Excel formula we would use to calculate it.     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is between 120 and 180?    NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)      A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is more than 40?    1-NORM.DIST(40,135,22,1)     Normal Distribution Matching Problem  Match each probability with the Excel formula we would use to calculate it.     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is less than 90?    NORM.DIST(90,135,22,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(2.35,TRUE)     Normal Distribution Matching Problem  Match each probability with the Excel formula we would use to calculate it.     Find the probability for a standard normal distribution:     1-NORM.S.DIST(2.35,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.76,1)- NORM.S.DIST(-0.86,1)      Find the probability for a standard normal distribution:     NORM.S.DIST(1.5,TRUE)      Find the probability for a standard normal distribution:     1-NORM.S.DIST(1.5,TRUE)      Images for    (A)       (B)       (C)        Normal Distribution Matching Problem  Match the images in with the probability that is shown in the image    (a)???   NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)     (b)???   1-NORM.DIST(40,135,22,1)     ???   NORM.DIST(90,135,22,1)     ???   Find the probability for a standard normal distribution:      Normal Distribution Matching Problem  Problem instructions.    image   Find the probability for a standard normal distribution:      image   Find the probability for a standard normal distribution:      image   NORM.S.DIST(1.5,TRUE)      image    1-NORM.S.DIST(1.5,TRUE)      Let be the standard normal variable.  Find . Round your answer to four decimal places:         Any value in the interval is marked as correct for this problem.      Incorrect. Did you round to four decimal places?       Let be the standard normal variable.  Find . Round your answer to four decimal places:         Any value in the interval is marked as correct for this problem.      Incorrect. Did you round to four decimal places?       Finding or if we have information about a probability:   What if we want to know the specific that satisfies a given probability? Then we can work backward using the tables ( Standard Normal Table ) and use the -score formula in reverse. If the exact probability cannot be found in the table, then we can use the closest values.   The Excel formulas that apply to this situation are similar to the ones we saw earlier, replacing .DIST with .INV:   NORM.INV(probability, mean, standard deviation) applies to normal distributions with a specified mean and standard deviation    NORM.S.INV(probability) is used for standard normal distributions      Let be the standard normal variable.  Find such that . Round your answer to four decimal places:         Any value in the interval is marked as correct for this problem.      Incorrect. Did you round to four decimal places?       Let be the standard normal variable.  Find such that . Round your answer to four decimal places:         Any value in the interval is marked as correct for this problem.      Incorrect. Did you round to four decimal places?       A random variable follows the normal probability distribution with a mean of 50 and a standard deviation of 20.   What value of represents the 75th percentile?       Find the value of so that probability lies below it.       Find the value of that represents the highest of all values        Suppose the retirement age of professional athletes in a certain league is normally distributed with mean years and standard deviation years. Find the following:   Find the probability that a randomly selected athlete's retirement age is is at least years.    .   Find the probability that a randomly selected athlete's retirement age is between and years.    .   Find such that the probability that a randomly selected athlete's retirement age is is at most years is .   If then years.   Find such that the probability that a randomly selected athlete's retirement age is between years and years is .   If then years.    "
 },
 {
   "id": "sec-normal-distribution-3",
@@ -2455,7 +2554,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "11.2",
   "title": "Hypothesis Test for a Single <span class=\"process-math\">\\(\\sigma^2\\)<\/span>",
-  "body": " Hypothesis Test for a Single   We will still follow the same hypothesis testing procedures from , but take care to use the proper probability distribution, the , and the correct formula for the test statistic. Notice that it involves the sample variance, , a good estimate for . The test statistic for hypothesis tests of this type are computed with the formula:   Keep in mind that often variability is described by the standard deviation rather than variance. We can still complete a hypothesis test for by simply squaring the given standard deviation values.   In the next example, we perform a single population hypothesis test for using the traditional method of hypothesis testing. Recall that this method requires the identification of critical value(s), , which we can find using a table or using the below Excel commands:    (Similar to Donnelly 13.7)  The volatility of world crude oil prices is important because of its impact on global economic stability. One measure of volatility is the standard deviation. The data table in the Excel file below lists the monthly price of crude oil from January 1974 to March 2024.  The standard deviation of crude oil prices between January 1974 and December 2021 was about a barrel  Assuming , check to see if the standard deviation of crude oil prices between January 2022 and March 2024 has decreased from what it was prior to this time period. (Use the traditional method of hypothesis testing.)      In our next example, we will use the p-value method of hypothesis testing. Once again, the tables for the Chi-square distribution are limited in the precision they can provide for our p-values. Therefore, we will rely on Excel to compute the p-values using the following formulas: where     the test statistic,      the degrees of freedom    cumulative   TRUE (since we want the accumulated area left of our test statistic)      (Donnelly 13.29)  As smartphones have become more sophisticated, their data usage has increased and caused capacity issues with service providers. High variability in data usage among customers can result in slow connections with the cellphone network. Suppose a cellphone network would like to test if the standard deviation of monthly data usage for its customers has increased beyond 400 megabytes (MB). A random sample of 25 customers was found to have a standard deviation of 460 MB. Using , perform a hypothesis test to determine if the standard deviation for the monthly data usage for the cellphone network has exceeded 400 MB. Use the p-value method of hypothesis testing.                        Since p-value , we fail to reject .  There is not enough evidence to conclude that the standard deviation for monthly data usage for the cell phone network has exceeded 400 MB.    "
+  "body": " Hypothesis Test for a Single   We will still follow the same hypothesis testing procedures from , but take care to use the proper probability distribution, the , and the correct formula for the test statistic. Notice that it involves the sample variance, , a good estimate for . The test statistic for hypothesis tests of this type are computed with the formula:   Keep in mind that often variability is described by the standard deviation rather than variance. We can still complete a hypothesis test for by simply squaring the given standard deviation values.   In the next example, we perform a single population hypothesis test for using the traditional method of hypothesis testing. Recall that this method requires the identification of critical value(s), , which we can find using a table or using the below Excel commands:    (Similar to Donnelly 13.7)  The volatility of world crude oil prices is important because of its impact on global economic stability. One measure of volatility is the standard deviation. The data table in the Excel file below lists the monthly price of crude oil from January 1974 to March 2024.  The standard deviation of crude oil prices between January 1974 and December 2021 was about a barrel  Assuming , check to see if the standard deviation of crude oil prices between January 2022 and March 2024 has decreased from what it was prior to this time period. (Use the traditional method of hypothesis testing.)      In our next example, we will use the p-value method of hypothesis testing. Once again, the tables for the Chi-square distribution are limited in the precision they can provide for our p-values. Therefore, we will rely on Excel to compute the p-values using the following formulas: where     the test statistic,      the degrees of freedom    cumulative   TRUE (since we want the accumulated area left of our test statistic)      (Donnelly 13.29)  As smartphones have become more sophisticated, their data usage has increased and caused capacity issues with service providers. High variability in data usage among customers can result in slow connections with the cellphone network. Suppose a cellphone network would like to test if the standard deviation of monthly data usage for its customers has increased beyond 400 megabytes (MB). A random sample of 25 customers was found to have a standard deviation of 460 MB. Using , perform a hypothesis test to determine if the standard deviation for the monthly data usage for the cellphone network has exceeded 400 MB. Use the p-value method of hypothesis testing.                        Since p-value , we fail to reject .  There is not enough evidence to conclude that the standard deviation for monthly data usage for the cell phone network has exceeded 400 MB.      "
 },
 {
   "id": "sec-hyp-test-single-variance-4",
@@ -2474,6 +2573,15 @@ var ptx_lunr_docs = [
   "number": "11.2.2",
   "title": "",
   "body": " (Donnelly 13.29)  As smartphones have become more sophisticated, their data usage has increased and caused capacity issues with service providers. High variability in data usage among customers can result in slow connections with the cellphone network. Suppose a cellphone network would like to test if the standard deviation of monthly data usage for its customers has increased beyond 400 megabytes (MB). A random sample of 25 customers was found to have a standard deviation of 460 MB. Using , perform a hypothesis test to determine if the standard deviation for the monthly data usage for the cellphone network has exceeded 400 MB. Use the p-value method of hypothesis testing.                        Since p-value , we fail to reject .  There is not enough evidence to conclude that the standard deviation for monthly data usage for the cell phone network has exceeded 400 MB.  "
+},
+{
+  "id": "sec-hyp-test-single-variance-7-1",
+  "level": "2",
+  "url": "sec-hyp-test-single-variance.html#sec-hyp-test-single-variance-7-1",
+  "type": "Exercise",
+  "number": "11.2.1",
+  "title": "",
+  "body": ""
 },
 {
   "id": "sec-F-dist",
@@ -2518,7 +2626,88 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "11.4",
   "title": "Comparing Variances from Two Populations",
-  "body": " Comparing Variances from Two Populations   When we want to compare the variances of two samples, we do this by conducting a test of the ratio of the variances. If the ratio is equal to , then the variances are equal; if not, then they are unequal.  The sample variances is a good estimate of the population variance. Not surprisingly, the ratio of the two sample variances, , drawn from their respective populations is a good estimate for the ratio of the two population variances, . The sampling distribution of is -distributed with and degrees of freedom if we have independent samples from two normal populations. Since we are comparing two variances, the test statistic is:   The formula for this test statistic is easy to compute by hand, nevertheless, we can also use Excel to do the work if we have raw data (not summary statistics). After stating the two hypotheses, we will go to the Data Analysis tool and choose F-Test Two-Sample for Variances to complete the test.          "
+  "body": " Comparing Variances from Two Populations   When we want to compare the variances of two samples, we do this by conducting a test of the ratio of the variances. If the ratio is equal to , then the variances are equal; if not, then they are unequal.  The sample variances is a good estimate of the population variance. Not surprisingly, the ratio of the two sample variances, , drawn from their respective populations is a good estimate for the ratio of the two population variances, . The sampling distribution of is -distributed with and degrees of freedom if we have independent samples from two normal populations. Since we are comparing two variances, the test statistic is:   The formula for this test statistic is easy to compute by hand, nevertheless, we can also use Excel to do the work if we have raw data (not summary statistics). After stating the two hypotheses, we will go to the Data Analysis tool and choose F-Test Two-Sample for Variances to complete the test.    A company is doing a hypothesis test on the variation in quality from two suppliers. Both distributions are normal, and the populations are independent. Use . A sample of 29 products were selected from Supplier 1 and a standard deviation of quality was found to be 5.8426. A sample of 30 products were selected from Supplier 2 and a standard deviation of quality was found to be 3.2156. Test to see if the variance in quality for Supplier 1 is larger than Supplier 2.   What are the correct hypotheses?                                  What test statistic should we use for this problem?                                Find the test statistic.       What is the p-value?       The decision is to...     Reject the null hypothesis.      Fail to reject the null hypothesis.     The correct summary would be:     There is enough evidence to support the claim that the variance in quality for Supplier 1 is larger than Supplier 2.      There is not enough evidence to support the claim that the variance in quality for Supplier 1 is larger than Supplier 2.      There is enough evidence to reject the claim that the variance in quality for Supplier 1 is larger than Supplier 2.      There is enough evidence to reject the claim that the variance in quality for Supplier 1 is larger than Supplier 2.      A statistics student wants to investigate salaries of men and women in a certain Fortune 500 company. Two samples of salaries of men and women employees were obtained independently and analyzed. The sample data is in the Excel file below. (Assume that the samples are from normal populations.)      Which of the samples has a larger sample standard deviation?   Use STDEV.S in Excel to find the sample standard deviations.         Use a level of significance to decide whether there is sufficient evidence that in the Fortune 500 company, the standard deviation of the salary of men is greater than the standard deviation of the salary of women.         Since we have the raw data from the samples, we can use F-Test Two-Sample for Variances in the Data Analysis tool in Excel.     From this, we'll get a p-value of approximately 0.4182, which is bigger than . So we fail to reject the null hypothesis and do not have enough evidence to conclude that .            "
+},
+{
+  "id": "sec-hyp-test-two-variances-3",
+  "level": "2",
+  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-3",
+  "type": "Exercise",
+  "number": "11.4.1",
+  "title": "",
+  "body": " A company is doing a hypothesis test on the variation in quality from two suppliers. Both distributions are normal, and the populations are independent. Use . A sample of 29 products were selected from Supplier 1 and a standard deviation of quality was found to be 5.8426. A sample of 30 products were selected from Supplier 2 and a standard deviation of quality was found to be 3.2156. Test to see if the variance in quality for Supplier 1 is larger than Supplier 2.   What are the correct hypotheses?                                  What test statistic should we use for this problem?                                Find the test statistic.       What is the p-value?       The decision is to...     Reject the null hypothesis.      Fail to reject the null hypothesis.     The correct summary would be:     There is enough evidence to support the claim that the variance in quality for Supplier 1 is larger than Supplier 2.      There is not enough evidence to support the claim that the variance in quality for Supplier 1 is larger than Supplier 2.      There is enough evidence to reject the claim that the variance in quality for Supplier 1 is larger than Supplier 2.      There is enough evidence to reject the claim that the variance in quality for Supplier 1 is larger than Supplier 2.    "
+},
+{
+  "id": "sec-hyp-test-two-variances-4",
+  "level": "2",
+  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-4",
+  "type": "Exercise",
+  "number": "11.4.2",
+  "title": "",
+  "body": " A statistics student wants to investigate salaries of men and women in a certain Fortune 500 company. Two samples of salaries of men and women employees were obtained independently and analyzed. The sample data is in the Excel file below. (Assume that the samples are from normal populations.)      Which of the samples has a larger sample standard deviation?   Use STDEV.S in Excel to find the sample standard deviations.         Use a level of significance to decide whether there is sufficient evidence that in the Fortune 500 company, the standard deviation of the salary of men is greater than the standard deviation of the salary of women.         Since we have the raw data from the samples, we can use F-Test Two-Sample for Variances in the Data Analysis tool in Excel.     From this, we'll get a p-value of approximately 0.4182, which is bigger than . So we fail to reject the null hypothesis and do not have enough evidence to conclude that .  "
+},
+{
+  "id": "sec-hyp-test-two-variances-5-1",
+  "level": "2",
+  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-5-1",
+  "type": "Exercise",
+  "number": "11.4.1",
+  "title": "",
+  "body": ""
+},
+{
+  "id": "sec-hyp-test-two-variances-5-2",
+  "level": "2",
+  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-5-2",
+  "type": "Exercise",
+  "number": "11.4.2",
+  "title": "",
+  "body": ""
+},
+{
+  "id": "sec-hyp-test-two-variances-5-3",
+  "level": "2",
+  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-5-3",
+  "type": "Exercise",
+  "number": "11.4.3",
+  "title": "",
+  "body": ""
+},
+{
+  "id": "sec-hyp-test-two-variances-5-4",
+  "level": "2",
+  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-5-4",
+  "type": "Exercise",
+  "number": "11.4.4",
+  "title": "",
+  "body": ""
+},
+{
+  "id": "sec-hyp-test-two-variances-5-5",
+  "level": "2",
+  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-5-5",
+  "type": "Exercise",
+  "number": "11.4.5",
+  "title": "",
+  "body": ""
+},
+{
+  "id": "sec-hyp-test-two-variances-5-6",
+  "level": "2",
+  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-5-6",
+  "type": "Exercise",
+  "number": "11.4.6",
+  "title": "",
+  "body": ""
+},
+{
+  "id": "sec-hyp-test-two-variances-5-7",
+  "level": "2",
+  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-5-7",
+  "type": "Exercise",
+  "number": "11.4.7",
+  "title": "",
+  "body": ""
 },
 {
   "id": "sec-Overview",
@@ -2545,7 +2734,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "12.2",
   "title": "Comparing Two Means with Independent Samples",
-  "body": " Comparing Two Means with Independent Samples   In this section, we study two-sample hypothesis tests and confidence intervals. First, we will assume that the standard deviation, , is known. Then we will look at the more realistic case where is unknown.        The sampling distribution for the difference in means is normal given normal populations or large samples ( ). The mean of this sampling distribution is     The standard error for this sampling distribution is     The test statistic for a hypothesis test comparing the difference between two means with independent samples and known standard deviations is defined by: where    = the hypothesized difference in population means      (defined by the null hypothesis)     =  the standard error for the difference between the      two means     =  the difference in sample means between      Populations 1 and 2          This formula is a little unwieldy so whenever we are dealing with raw data (not just summary statistics), we will use Excel to do all the time-consuming calculations.  Now let's demonstrate the two ways we can perform this type of hypothesis test. First, in we will complete the hypothesis test by hand, manually computing all of the required calculations. Then in > we will rely on Excel to do the calculations. After stating the two hypotheses, we will navigate to the Data Analysis tool and choose z-Test Two-Sample for Means to complete the test.   (Donnelly 10.7)  Suppose the Bureau of Labor Statistics would like to investigate if the average retirement age for a worker in Japan is higher than the average retirement age for a worker in the United States. A random sample of 30 retired U.S. workers had an average retirement age of 64.6 years. A random sample of 30 retired Japanese workers had an average retirement age of 67.5 years. Assume the population standard deviation for the retirement age in the U.S. is 4.0 years and for Japan is 4.5 years. Perform a hypothesis test using to determine if the average retirement age in Japan is higher than it is in the United States.    (Donnelly Your Turn 1)  Major League Baseball officials (and many fans) have been concerned about the lengths of games, particularly playoff games. Suppose the officials would like to test the hypothesis that the mean length of a playoff game is longer than the mean length of a regular season game. The data in the Excel file below shows the length of games, in minutes, for randomly selected games from the regular season and from the playoffs. Assume the standard deviations of the playoff and regular season games are 25 and 21 minutes respectively. Using , can we conclude that playoff games are longer, on average, than regular season games?         The sample provides enough evidence to conclude that the average length of playoff games is longer than the average length of regular season games.     The formula for the confidence interval for the difference between two means given known standard deviations is where again     the standard error for the difference between two means      the difference in sample means between Populations 1 and 2     Remember that the book likes to identify the two sides of the interval as LCL (lower confidence limit) and UCL (upper confidence limit).     (Donnelly 10.9)  Expedia.com would like to estimate the difference between the average rental price of a car with automatic transmission versus the average rental price of a car with manual transmission at a certain airport. The table below shows the average one-week rental prices for two random samples, as well as the population standard deviations and sample sizes for each type of car.       Sample mean  Sample size  Population standard deviation    Automatic       Manual        Construct a confidence interval to estimate the difference in the average cost of a one-week rental between these two types of cars at the airport. Can you conclude that a difference exists in the average rental price of the two types of cars?      Population 1: automatic    Population 2: manual   Formula:   Standard error:      MOE:   LCL:   UCL:   We are confident that   Since the interval does not contain 0, we can conclude that there is a difference in the average cost of a rental with different transmissions.   When we don't know the population standard deviations, we substitute the sample standard deviations in their place. Recall from that this means the proper sampling distribution is the Student's -distribution instead of the normal distribution (as long as the sample sizes are large and\/or the samples are drawn from normal populations).  In addition, we also need to determine whether or not to assume that the unknown variances are equal or unequal. We could use the -test from Chapter !!!!INSERT!!!!! to draw this conclusion -- but most of the time (in this class) you will be told which situation applies. Let's examine the formulas associated with each of these two cases.      Case 1: The population variances are not equal , i.e.,   The test statistic and confidence interval formulas are where       the hypothesized difference in population means (defined by the null hypothesis)      the difference in sample means between Populations 1 and 2      the variance and size, respectively, of the sample from Population 1      the variance and size, respectively, of the sample from Population 2     The test statistic, , has degrees of freedom, , defined by the following formula:   This looks messy, but note that you've already computed and during the test statistic calculation!     Case 2: The population variances are equal , i.e.   In this scenario, the denominator of the test statistic (which recall from Case 1 includes the sample variances) gets simplified because we can pool the two sample variances.  The test statistic and confidence interval formulas are:   The pooled variance , , is the weighted average of 2 sample variances drawn from 2 populations.  This formula is actually quite easy to use:   The test statistic, , has degrees of freedom, .     Once again, we will rely on Excel to do these computations for us whenever we have raw data. After stating the two hypotheses, go to the Data Analysis tool and choose t-Test Two-Sample Assuming Equal Variances or t-Test Two-Sample Assuming Unequal Variances to complete the test.   (Donnelly 10.52)  The airline industry measures fuel efficiency by calculating how many miles one seat can travel, whether occupied or not, on one gallon of jet fuel. The data in the Excel file below shows the fuel economy, in miles per seat, for 15 randomly selected flights on Delta and US Airways. Perform a hypothesis test using to determine if the average fuel efficiency differs between the two airlines. Assume the population variances for the fuel efficiency for these two airlines are not equal.           (Donnelly 10.45)  During a decline in the housing market in the 2010s, it appeared that the average size of a newly-constructed house fell. To investigate this trend, the square footages of a random sample of houses built in 2008 were compared to houses in 2018. The following table summarizes the sample means and standard deviations for the two samples drawn in 2008 and 2018. Assume that the population variances for the square footages of houses built in these two years are equal.      2008  2018    Sample mean  2,462.3  2,257.0    Sample standard deviation  760.8  730.2    Sample size  45  40      Using , perform a hypothesis test to determine if the average home constructed in 2008 was larger than a home built in 2018.       Population 1: 2008    Population 2: 2018                       test statistic:      Since the p-value is bigger than (and is not in the rejection region), we fail to reject .  There is not enough evidence to conclude that the average size of a newly constructed house fell in 2018 compared to 2008.    Construct a confidence interval to estimate the average difference in the square footages of new homes constructed in these two years.    so the critical values are approximately and .  Formula for confidence interval:   Margin of error:   LCL:   UCL:   We are confident that    "
+  "body": " Comparing Two Means with Independent Samples   In this section, we study two-sample hypothesis tests and confidence intervals. First, we will assume that the standard deviation, , is known. Then we will look at the more realistic case where is unknown.        The sampling distribution for the difference in means is normal given normal populations or large samples ( ). The mean of this sampling distribution is     The standard error for this sampling distribution is     The test statistic for a hypothesis test comparing the difference between two means with independent samples and known standard deviations is defined by: where    = the hypothesized difference in population means      (defined by the null hypothesis)     =  the standard error for the difference between the      two means     =  the difference in sample means between      Populations 1 and 2          This formula is a little unwieldy so whenever we are dealing with raw data (not just summary statistics), we will use Excel to do all the time-consuming calculations.  Now let's demonstrate the two ways we can perform this type of hypothesis test. First, in we will complete the hypothesis test by hand, manually computing all of the required calculations. Then in > we will rely on Excel to do the calculations. After stating the two hypotheses, we will navigate to the Data Analysis tool and choose z-Test Two-Sample for Means to complete the test.   (Donnelly 10.7)  Suppose the Bureau of Labor Statistics would like to investigate if the average retirement age for a worker in Japan is higher than the average retirement age for a worker in the United States. A random sample of 30 retired U.S. workers had an average retirement age of 64.6 years. A random sample of 30 retired Japanese workers had an average retirement age of 67.5 years. Assume the population standard deviation for the retirement age in the U.S. is 4.0 years and for Japan is 4.5 years. Perform a hypothesis test using to determine if the average retirement age in Japan is higher than it is in the United States.    (Donnelly Your Turn 1)  Major League Baseball officials (and many fans) have been concerned about the lengths of games, particularly playoff games. Suppose the officials would like to test the hypothesis that the mean length of a playoff game is longer than the mean length of a regular season game. The data in the Excel file below shows the length of games, in minutes, for randomly selected games from the regular season and from the playoffs. Assume the standard deviations of the playoff and regular season games are 25 and 21 minutes respectively. Using , can we conclude that playoff games are longer, on average, than regular season games?         The sample provides enough evidence to conclude that the average length of playoff games is longer than the average length of regular season games.     The formula for the confidence interval for the difference between two means given known standard deviations is where again     the standard error for the difference between two means      the difference in sample means between Populations 1 and 2     Remember that the book likes to identify the two sides of the interval as LCL (lower confidence limit) and UCL (upper confidence limit).     (Donnelly 10.9)  Expedia.com would like to estimate the difference between the average rental price of a car with automatic transmission versus the average rental price of a car with manual transmission at a certain airport. The table below shows the average one-week rental prices for two random samples, as well as the population standard deviations and sample sizes for each type of car.       Sample mean  Sample size  Population standard deviation    Automatic       Manual        Construct a confidence interval to estimate the difference in the average cost of a one-week rental between these two types of cars at the airport. Can you conclude that a difference exists in the average rental price of the two types of cars?      Population 1: automatic    Population 2: manual   Formula:   Standard error:      MOE:   LCL:   UCL:   We are confident that   Since the interval does not contain 0, we can conclude that there is a difference in the average cost of a rental with different transmissions.   When we don't know the population standard deviations, we substitute the sample standard deviations in their place. Recall from that this means the proper sampling distribution is the Student's -distribution instead of the normal distribution (as long as the sample sizes are large and\/or the samples are drawn from normal populations).  In addition, we also need to determine whether or not to assume that the unknown variances are equal or unequal. We could use the -test from Chapter !!!!INSERT!!!!! to draw this conclusion -- but most of the time (in this class) you will be told which situation applies. Let's examine the formulas associated with each of these two cases.      Case 1: The population variances are not equal , i.e.,   The test statistic and confidence interval formulas are where       the hypothesized difference in population means (defined by the null hypothesis)      the difference in sample means between Populations 1 and 2      the variance and size, respectively, of the sample from Population 1      the variance and size, respectively, of the sample from Population 2     The test statistic, , has degrees of freedom, , defined by the following formula:   This looks messy, but note that you've already computed and during the test statistic calculation!     Case 2: The population variances are equal , i.e.   In this scenario, the denominator of the test statistic (which recall from Case 1 includes the sample variances) gets simplified because we can pool the two sample variances.  The test statistic and confidence interval formulas are:   The pooled variance , , is the weighted average of 2 sample variances drawn from 2 populations.  This formula is actually quite easy to use:   The test statistic, , has degrees of freedom, .     Once again, we will rely on Excel to do these computations for us whenever we have raw data. After stating the two hypotheses, go to the Data Analysis tool and choose t-Test Two-Sample Assuming Equal Variances or t-Test Two-Sample Assuming Unequal Variances to complete the test.   (Donnelly 10.52)  The airline industry measures fuel efficiency by calculating how many miles one seat can travel, whether occupied or not, on one gallon of jet fuel. The data in the Excel file below shows the fuel economy, in miles per seat, for 15 randomly selected flights on Delta and US Airways. Perform a hypothesis test using to determine if the average fuel efficiency differs between the two airlines. Assume the population variances for the fuel efficiency for these two airlines are not equal.           (Donnelly 10.45)  During a decline in the housing market in the 2010s, it appeared that the average size of a newly-constructed house fell. To investigate this trend, the square footages of a random sample of houses built in 2008 were compared to houses in 2018. The following table summarizes the sample means and standard deviations for the two samples drawn in 2008 and 2018. Assume that the population variances for the square footages of houses built in these two years are equal.      2008  2018    Sample mean  2,462.3  2,257.0    Sample standard deviation  760.8  730.2    Sample size  45  40      Using , perform a hypothesis test to determine if the average home constructed in 2008 was larger than a home built in 2018.       Population 1: 2008    Population 2: 2018                       test statistic:      Since the p-value is bigger than (and is not in the rejection region), we fail to reject .  There is not enough evidence to conclude that the average size of a newly constructed house fell in 2018 compared to 2008.    Construct a confidence interval to estimate the average difference in the square footages of new homes constructed in these two years.    so the critical values are approximately and .  Formula for confidence interval:   Margin of error:   LCL:   UCL:   We are confident that     A statistics student wants to verify the claim that in a certain Fortune 500 company the average salary of female employees is different from the average salary of male employees. Two samples of male and female workers were obtained independently and analyzed. The sample data is in the Excel file below. (Assume that the samples are from normal populations.)      Which of the samples has a larger mean?   Is there sufficient evidence to conclude that male employees in this company have higher salaries than female employees?   "
 },
 {
   "id": "def-difference-means-independent",
@@ -2609,6 +2798,15 @@ var ptx_lunr_docs = [
   "number": "12.2.7",
   "title": "",
   "body": " (Donnelly 10.45)  During a decline in the housing market in the 2010s, it appeared that the average size of a newly-constructed house fell. To investigate this trend, the square footages of a random sample of houses built in 2008 were compared to houses in 2018. The following table summarizes the sample means and standard deviations for the two samples drawn in 2008 and 2018. Assume that the population variances for the square footages of houses built in these two years are equal.      2008  2018    Sample mean  2,462.3  2,257.0    Sample standard deviation  760.8  730.2    Sample size  45  40      Using , perform a hypothesis test to determine if the average home constructed in 2008 was larger than a home built in 2018.       Population 1: 2008    Population 2: 2018                       test statistic:      Since the p-value is bigger than (and is not in the rejection region), we fail to reject .  There is not enough evidence to conclude that the average size of a newly constructed house fell in 2018 compared to 2008.    Construct a confidence interval to estimate the average difference in the square footages of new homes constructed in these two years.    so the critical values are approximately and .  Formula for confidence interval:   Margin of error:   LCL:   UCL:   We are confident that   "
+},
+{
+  "id": "sec-two-means-independent-16",
+  "level": "2",
+  "url": "sec-two-means-independent.html#sec-two-means-independent-16",
+  "type": "Exercise",
+  "number": "12.2.8",
+  "title": "",
+  "body": " A statistics student wants to verify the claim that in a certain Fortune 500 company the average salary of female employees is different from the average salary of male employees. Two samples of male and female workers were obtained independently and analyzed. The sample data is in the Excel file below. (Assume that the samples are from normal populations.)      Which of the samples has a larger mean?   Is there sufficient evidence to conclude that male employees in this company have higher salaries than female employees?  "
 },
 {
   "id": "sec-two-means-dependent",

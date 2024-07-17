@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="7069">
+<statement>
+<p>
+Given a set of data that is skewed-left, there is at least <underscore/><underscore/><underscore/><underscore/><underscore/> <percent/> of the data within 3 standard deviations.</p>
+<p>
+Fill in the blank with the best answer:</p>
+<p><ol style="list-style-type:upper-alpha"><li>0</li> 
+<li>68</li> 
+<li>75</li> 
+<li>89</li> 
+<li>95</li> 
+<li>99.7</li> 
+</ol></p>
+
+
+</statement>
+<solution>
+<p><ul><li>D: 89</li></ul></p>
+</solution>
+</myopenmath>
+

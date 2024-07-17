@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="25941">
+<statement>
+<p>
+The maintenance department at the main campus of a large state university receives daily requests to replace fluorecent lightbulbs.
+The distribution of the number
+of daily requests is bell-shaped and has a mean of 62 and a standard deviation of 7.
+Using the 68-95-99.7 rule, what is the approximate percentage of lightbulb replacement requests
+numbering between 41 and 62?</p>
+<p>
+Do not enter the percent symbol.</p>
+<p>
+ans = <fillin characters="20" /> <percent/>
+</p>
+</statement>
+<solution>
+<p><ul><li>49.9 or 49.85</li></ul></p>
+</solution>
+</myopenmath>
+

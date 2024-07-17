@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="7096">
+<statement>
+<p>
+In a brand recognition study, 1100 consumers knew of Coke, and 24 did not.
+Use these results to estimate the probability that a randomly selected consumer will recognize Coke.</p>
+<p>
+Report the answer as a percent rounded to one decimal place accuracy.
+You need not enter the "<percent/>" symbol. </p>
+<p>
+prob = <fillin characters="20" /><percent/>
+</p>
+</statement>
+<solution>
+<p><ul><li>97.9</li></ul></p>
+</solution>
+</myopenmath>
+

@@ -69,7 +69,7 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
 <script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -110,15 +110,86 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.3.2';
+eBookConfig.runestone_version = '7.3.3';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.3.2/prefix-runtime.740db250e511e1cc.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.3.2/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.3.2/prefix-runestone.9813637ef2f0e0ee.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.3.2/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.3.2/prefix-runestone.f64dcc3632d7a0c3.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.3.3/prefix-runtime.740db250e511e1cc.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.3.3/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.3.3/prefix-runestone.9813637ef2f0e0ee.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.3.3/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.3.3/prefix-runestone.f64dcc3632d7a0c3.css">
+<style>
+#subsec-grouped-quantitative-data-9-4-1 { counter-set: subsec-grouped-quantitative-data-9-4-1 0; }
+#subsec-grouped-quantitative-data-9-4-1 > li::marker { content: ""counter(subsec-grouped-quantitative-data-9-4-1,decimal)"."; }
+#subsec-grouped-quantitative-data-9-4-1 > li { counter-increment: subsec-grouped-quantitative-data-9-4-1; }
+#subsec-watch-for-2-1 { counter-set: subsec-watch-for-2-1 0; }
+#subsec-watch-for-2-1 > li::marker { content: ""counter(subsec-watch-for-2-1,decimal)"."; }
+#subsec-watch-for-2-1 > li { counter-increment: subsec-watch-for-2-1; }
+#sec-measures-central-tendency-6-1 { counter-set: sec-measures-central-tendency-6-1 0; }
+#sec-measures-central-tendency-6-1 > li::marker { content: ""counter(sec-measures-central-tendency-6-1,decimal)"."; }
+#sec-measures-central-tendency-6-1 > li { counter-increment: sec-measures-central-tendency-6-1; }
+#def-stdev-1-2-1 { counter-set: def-stdev-1-2-1 0; }
+#def-stdev-1-2-1 > li::marker { content: ""counter(def-stdev-1-2-1,decimal)"."; }
+#def-stdev-1-2-1 > li { counter-increment: def-stdev-1-2-1; }
+#sec-Intro-to-Probability-10-1 { counter-set: sec-Intro-to-Probability-10-1 0; }
+#sec-Intro-to-Probability-10-1 > li::marker { content: ""counter(sec-Intro-to-Probability-10-1,decimal)"."; }
+#sec-Intro-to-Probability-10-1 > li { counter-increment: sec-Intro-to-Probability-10-1; }
+#def-discrete-probability-distribution-1-1-2 { counter-set: def-discrete-probability-distribution-1-1-2 0; }
+#def-discrete-probability-distribution-1-1-2 > li::marker { content: ""counter(def-discrete-probability-distribution-1-1-2,decimal)"."; }
+#def-discrete-probability-distribution-1-1-2 > li { counter-increment: def-discrete-probability-distribution-1-1-2; }
+#def-Binomial-1-1-2 { counter-set: def-Binomial-1-1-2 0; }
+#def-Binomial-1-1-2 > li::marker { content: ""counter(def-Binomial-1-1-2,decimal)"."; }
+#def-Binomial-1-1-2 > li { counter-increment: def-Binomial-1-1-2; }
+#def-Poisson-1-2-1 { counter-set: def-Poisson-1-2-1 0; }
+#def-Poisson-1-2-1 > li::marker { content: ""counter(def-Poisson-1-2-1,decimal)"."; }
+#def-Poisson-1-2-1 > li { counter-increment: def-Poisson-1-2-1; }
+#subsection-characteristics-of-normal-distn-2-1 { counter-set: subsection-characteristics-of-normal-distn-2-1 0; }
+#subsection-characteristics-of-normal-distn-2-1 > li::marker { content: ""counter(subsection-characteristics-of-normal-distn-2-1,decimal)"."; }
+#subsection-characteristics-of-normal-distn-2-1 > li { counter-increment: subsection-characteristics-of-normal-distn-2-1; }
+#subsection-calculating-probabilities-normal-7-1 { counter-set: subsection-calculating-probabilities-normal-7-1 0; }
+#subsection-calculating-probabilities-normal-7-1 > li::marker { content: ""counter(subsection-calculating-probabilities-normal-7-1,decimal)"."; }
+#subsection-calculating-probabilities-normal-7-1 > li { counter-increment: subsection-calculating-probabilities-normal-7-1; }
+#subsection-differences-between-expon-and-normal-2-1 { counter-set: subsection-differences-between-expon-and-normal-2-1 0; }
+#subsection-differences-between-expon-and-normal-2-1 > li::marker { content: ""counter(subsection-differences-between-expon-and-normal-2-1,decimal)"."; }
+#subsection-differences-between-expon-and-normal-2-1 > li { counter-increment: subsection-differences-between-expon-and-normal-2-1; }
+#sec-Sampling-Distribution-of-Mean-6-1 { counter-set: sec-Sampling-Distribution-of-Mean-6-1 0; }
+#sec-Sampling-Distribution-of-Mean-6-1 > li::marker { content: ""counter(sec-Sampling-Distribution-of-Mean-6-1,decimal)"."; }
+#sec-Sampling-Distribution-of-Mean-6-1 > li { counter-increment: sec-Sampling-Distribution-of-Mean-6-1; }
+#sec-Central-Limit-Theorem-3-1 { counter-set: sec-Central-Limit-Theorem-3-1 0; }
+#sec-Central-Limit-Theorem-3-1 > li::marker { content: ""counter(sec-Central-Limit-Theorem-3-1,decimal)"."; }
+#sec-Central-Limit-Theorem-3-1 > li { counter-increment: sec-Central-Limit-Theorem-3-1; }
+#subsec-Students-t-3-2 { counter-set: subsec-Students-t-3-2 0; }
+#subsec-Students-t-3-2 > li::marker { content: ""counter(subsec-Students-t-3-2,decimal)"."; }
+#subsec-Students-t-3-2 > li { counter-increment: subsec-Students-t-3-2; }
+#subsec-Confidence-Interval-Sigma-Unknown-3-2 { counter-set: subsec-Confidence-Interval-Sigma-Unknown-3-2 0; }
+#subsec-Confidence-Interval-Sigma-Unknown-3-2 > li::marker { content: ""counter(subsec-Confidence-Interval-Sigma-Unknown-3-2,decimal)"."; }
+#subsec-Confidence-Interval-Sigma-Unknown-3-2 > li { counter-increment: subsec-Confidence-Interval-Sigma-Unknown-3-2; }
+#sec-Determining-Sample-Size-2-2-1 { counter-set: sec-Determining-Sample-Size-2-2-1 0; }
+#sec-Determining-Sample-Size-2-2-1 > li::marker { content: ""counter(sec-Determining-Sample-Size-2-2-1,decimal)"."; }
+#sec-Determining-Sample-Size-2-2-1 > li { counter-increment: sec-Determining-Sample-Size-2-2-1; }
+#subsec-logic-hyp-testing-2-2-1 { counter-set: subsec-logic-hyp-testing-2-2-1 0; }
+#subsec-logic-hyp-testing-2-2-1 > li::marker { content: ""counter(subsec-logic-hyp-testing-2-2-1,decimal)"."; }
+#subsec-logic-hyp-testing-2-2-1 > li { counter-increment: subsec-logic-hyp-testing-2-2-1; }
+#def-critical-value-method-1-2-1 { counter-set: def-critical-value-method-1-2-1 0; }
+#def-critical-value-method-1-2-1 > li::marker { content: ""counter(def-critical-value-method-1-2-1,decimal)"."; }
+#def-critical-value-method-1-2-1 > li { counter-increment: def-critical-value-method-1-2-1; }
+#def-p-value-method-1-2-1 { counter-set: def-p-value-method-1-2-1 0; }
+#def-p-value-method-1-2-1 > li::marker { content: ""counter(def-p-value-method-1-2-1,decimal)"."; }
+#def-p-value-method-1-2-1 > li { counter-increment: def-p-value-method-1-2-1; }
+#sec-chi-squared-3-3 { counter-set: sec-chi-squared-3-3 0; }
+#sec-chi-squared-3-3 > li::marker { content: ""counter(sec-chi-squared-3-3,decimal)"."; }
+#sec-chi-squared-3-3 > li { counter-increment: sec-chi-squared-3-3; }
+#sec-F-dist-5-3 { counter-set: sec-F-dist-5-3 0; }
+#sec-F-dist-5-3 > li::marker { content: ""counter(sec-F-dist-5-3,decimal)"."; }
+#sec-F-dist-5-3 > li { counter-increment: sec-F-dist-5-3; }
+#sec-Diamonds-3-1-3-1 { counter-set: sec-Diamonds-3-1-3-1 0; }
+#sec-Diamonds-3-1-3-1 > li::marker { content: ""counter(sec-Diamonds-3-1-3-1,decimal)"."; }
+#sec-Diamonds-3-1-3-1 > li { counter-increment: sec-Diamonds-3-1-3-1; }
+#sec-Diamonds-4-1-3-1 { counter-set: sec-Diamonds-4-1-3-1 0; }
+#sec-Diamonds-4-1-3-1 > li::marker { content: ""counter(sec-Diamonds-4-1-3-1,decimal)"."; }
+#sec-Diamonds-4-1-3-1 > li { counter-increment: sec-Diamonds-4-1-3-1; }
+</style>
 </head>
 <body id="changeme" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
@@ -145,7 +216,7 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural contains-active toc-item-list">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth0"><ul class="structural contains-active toc-item-list">
 <li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-Intro-to-Bus-Stats.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Business Statistics</span></a></div>
@@ -289,9 +360,15 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="ch-Hypothesis-Variance.html" class="internal"><span class="codenumber">11</span> <span class="title">Hypothesis Tests for the Population Variance</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-chi-squared.html" class="internal"><span class="codenumber">11.1</span> <span class="title">The Chi-square Distribution</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hyp-test-single-variance.html" class="internal"><span class="codenumber">11.2</span> <span class="title">Hypothesis Test for a Single <span class="process-math">\(\sigma^2\)</span></span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-hyp-test-single-variance.html" class="internal"><span class="codenumber">11.2</span> <span class="title">Hypothesis Test for a Single <span class="process-math">\(\sigma^2\)</span></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-hyp-test-single-variance.html#sec-hyp-test-single-variance-7" class="internal"><span class="codenumber">11.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-F-dist.html" class="internal"><span class="codenumber">11.3</span> <span class="title">The <span class="process-math">\(F\)</span>-Distribution</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hyp-test-two-variances.html" class="internal"><span class="codenumber">11.4</span> <span class="title">Comparing Variances from Two Populations</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-hyp-test-two-variances.html" class="internal"><span class="codenumber">11.4</span> <span class="title">Comparing Variances from Two Populations</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-5" class="internal"><span class="codenumber">11.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -320,58 +397,62 @@ eBookConfig.enable_chatcodes =  false;
 <section class="introduction" id="sec-TypesOfData-2"><div class="para" id="sec-TypesOfData-2-1">The purpose of descriptive statistics is to summarize or display data so that the audience can quickly obtain an overview of the information.  There are two main types of data:  <em class="emphasis">quantitative data</em> and <em class="emphasis">qualitative data</em>.</div> <div class="para" id="sec-TypesOfData-2-2">Let’s define those and other types of data we will work with in this course.  Then we will move on to review how Excel is used to create meaningful tables, charts, and graphs that summarize our data.</div></section><article class="definition definition-like" id="def-quantitative-qualitative"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="def-quantitative-qualitative-1-1"><ul class="disc">
+<div class="para logical" id="def-quantitative-qualitative-1-1"><ul class="disc" id="def-quantitative-qualitative-1-1-1">
 <li id="def-quantitative-qualitative-1-1-1-1"><div class="para" id="def-quantitative-qualitative-1-1-1-1-1">
 <em class="emphasis">Quantitative data</em> uses numbers to describe data.</div></li>
 <li id="def-quantitative-qualitative-1-1-1-2"><div class="para" id="def-quantitative-qualitative-1-1-1-2-1">
 <em class="emphasis">Qualitative data</em> uses descriptive terms, i.e. categories, to describe data.</div></li>
-</ul></div></article><article class="definition definition-like" id="def-discrete-continuous"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span>
+</ul></div></article><details id="sec-TypesOfData-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Qualitative vs. Quantitative Data.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div id="momid2wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momid2" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=6908&amp;frame_id=momid2"></iframe></div></article></details><article class="definition definition-like" id="def-discrete-continuous"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="def-discrete-continuous-1-1"><ul class="disc">
+<div class="para logical" id="def-discrete-continuous-1-1"><ul class="disc" id="def-discrete-continuous-1-1-1">
 <li id="def-discrete-continuous-1-1-1-1"><div class="para" id="def-discrete-continuous-1-1-1-1-1">
 <em class="emphasis">Discrete values</em> are based on observations that can be counted and are typically represented by whole numbers.</div></li>
 <li id="def-discrete-continuous-1-1-1-2"><div class="para" id="def-discrete-continuous-1-1-1-2-1">
 <em class="emphasis">Continuous values</em> are based on measured observations and can take on any real number.</div></li>
-</ul></div></article><details id="sec-TypesOfData-5" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="period">.</span>
-</h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="" data-multipleanswers="true" data-random="">
-<div class="para" id="sec-TypesOfData-5-1-1">Which of the following are <em class="emphasis">discrete</em> values?</div>
-<li data-component="answer" id="_opt_a" data-correct=""><div class="para" id="sec-TypesOfData-5-2-1-1-1">number of iPads sold</div></li>
-<li data-component="feedback" id="_opt_a">
-<li data-component="answer" id="_opt_b" data-correct=""><div class="para" id="sec-TypesOfData-5-2-2-1-1">number of light bulbs that burned for more than 1000 hours in a quality control program</div></li>
-<li data-component="feedback" id="_opt_b">
-<li data-component="answer" id="_opt_c"><div class="para" id="sec-TypesOfData-5-2-3-1-1">weight</div></li>
-<li data-component="feedback" id="_opt_c">
-<li data-component="answer" id="_opt_d"><div class="para" id="sec-TypesOfData-5-2-4-1-1">time</div></li>
-<li data-component="feedback" id="_opt_d">
-<li data-component="answer" id="_opt_e"><div class="para" id="sec-TypesOfData-5-2-5-1-1">distance</div></li>
-<li data-component="feedback" id="_opt_e">
-<li data-component="answer" id="_opt_f"><div class="para" id="sec-TypesOfData-5-2-6-1-1">number of hours a light bulb burned before going out</div></li>
-<li data-component="feedback" id="_opt_f">
-</ul></div></div></article></details><details id="sec-TypesOfData-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+</ul></div></article><details id="sec-TypesOfData-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="period">.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="" data-multipleanswers="true" data-random="">
-<div class="para" id="sec-TypesOfData-6-1-1">Which of the following are <em class="emphasis">continuous</em> values?</div>
-<li data-component="answer" id="_opt_a"><div class="para" id="sec-TypesOfData-6-2-1-1-1">number of iPads sold</div></li>
+<div class="para" id="sec-TypesOfData-6-1-1">Which of the following are <em class="emphasis">discrete</em> values?</div>
+<li data-component="answer" id="_opt_a" data-correct=""><div class="para" id="sec-TypesOfData-6-2-1-1-1">number of iPads sold</div></li>
 <li data-component="feedback" id="_opt_a">
-<li data-component="answer" id="_opt_b"><div class="para" id="sec-TypesOfData-6-2-2-1-1">number of light bulbs that burned for more than 1000 hours in a quality control program</div></li>
+<li data-component="answer" id="_opt_b" data-correct=""><div class="para" id="sec-TypesOfData-6-2-2-1-1">number of light bulbs that burned for more than 1000 hours in a quality control program</div></li>
 <li data-component="feedback" id="_opt_b">
-<li data-component="answer" id="_opt_c" data-correct=""><div class="para" id="sec-TypesOfData-6-2-3-1-1">weight</div></li>
+<li data-component="answer" id="_opt_c"><div class="para" id="sec-TypesOfData-6-2-3-1-1">weight</div></li>
 <li data-component="feedback" id="_opt_c">
-<li data-component="answer" id="_opt_d" data-correct=""><div class="para" id="sec-TypesOfData-6-2-4-1-1">time</div></li>
+<li data-component="answer" id="_opt_d"><div class="para" id="sec-TypesOfData-6-2-4-1-1">time</div></li>
 <li data-component="feedback" id="_opt_d">
-<li data-component="answer" id="_opt_e" data-correct=""><div class="para" id="sec-TypesOfData-6-2-5-1-1">distance</div></li>
+<li data-component="answer" id="_opt_e"><div class="para" id="sec-TypesOfData-6-2-5-1-1">distance</div></li>
 <li data-component="feedback" id="_opt_e">
-<li data-component="answer" id="_opt_f" data-correct=""><div class="para" id="sec-TypesOfData-6-2-6-1-1">number of hours a light bulb burned before going out</div></li>
+<li data-component="answer" id="_opt_f"><div class="para" id="sec-TypesOfData-6-2-6-1-1">number of hours a light bulb burned before going out</div></li>
 <li data-component="feedback" id="_opt_f">
-</ul></div></div></article></details><section class="subsection" id="subsec-levels-measurement"><h3 class="heading hide-type">
+</ul></div></div></article></details><details id="sec-TypesOfData-7" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="period">.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="" data-multipleanswers="true" data-random="">
+<div class="para" id="sec-TypesOfData-7-1-1">Which of the following are <em class="emphasis">continuous</em> values?</div>
+<li data-component="answer" id="_opt_a"><div class="para" id="sec-TypesOfData-7-2-1-1-1">number of iPads sold</div></li>
+<li data-component="feedback" id="_opt_a">
+<li data-component="answer" id="_opt_b"><div class="para" id="sec-TypesOfData-7-2-2-1-1">number of light bulbs that burned for more than 1000 hours in a quality control program</div></li>
+<li data-component="feedback" id="_opt_b">
+<li data-component="answer" id="_opt_c" data-correct=""><div class="para" id="sec-TypesOfData-7-2-3-1-1">weight</div></li>
+<li data-component="feedback" id="_opt_c">
+<li data-component="answer" id="_opt_d" data-correct=""><div class="para" id="sec-TypesOfData-7-2-4-1-1">time</div></li>
+<li data-component="feedback" id="_opt_d">
+<li data-component="answer" id="_opt_e" data-correct=""><div class="para" id="sec-TypesOfData-7-2-5-1-1">distance</div></li>
+<li data-component="feedback" id="_opt_e">
+<li data-component="answer" id="_opt_f" data-correct=""><div class="para" id="sec-TypesOfData-7-2-6-1-1">number of hours a light bulb burned before going out</div></li>
+<li data-component="feedback" id="_opt_f">
+</ul></div></div></article></details><details id="sec-TypesOfData-8" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.2.6</span><span class="period">.</span><span class="space"> </span><span class="title">Discrete vs. Continuous Data.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div id="momid3wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momid3" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=6911&amp;frame_id=momid3"></iframe></div></article></details><section class="subsection" id="subsec-levels-measurement"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="space"> </span><span class="title">Levels of Measurement</span>
 </h3>
 <article class="definition definition-like" id="def-levels-measurement"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.7</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="def-levels-measurement-1-1"><ul class="disc">
+<div class="para logical" id="def-levels-measurement-1-1"><ul class="disc" id="def-levels-measurement-1-1-1">
 <li id="def-levels-measurement-1-1-1-1">
 <div class="para" id="def-levels-measurement-1-1-1-1-1">A <em class="emphasis">nominal</em> level of measurement deals strictly with qualitative data assigned to predetermined categories.</div>
 <div class="para" id="def-levels-measurement-1-1-1-1-2">Examples:  marital status, gender, political affiliation</div>
@@ -388,22 +469,24 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="def-levels-measurement-1-1-1-4-1">A <em class="emphasis">ratio</em> level of measurement has all the features of interval data but with the added benefit of having a true zero point.</div>
 <div class="para" id="def-levels-measurement-1-1-1-4-2">Examples:  age, height, weight, number of home runs</div>
 </li>
-</ul></div></article></section><details id="sec-TypesOfData-8" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.2.6</span><span class="period">.</span>
-</h3></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec-TypesOfData-8-1"><div class="para" id="sec-TypesOfData-8-1-1">Identify the type of data (qualitative, quantitative-discrete, quantitative-continuous) and the level of measurement for each data source.</div></div>
-<article class="task exercise-like" id="sec-TypesOfData-8-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="sec-TypesOfData-8-2-1-1">the temperature outside (in degrees Fahrenheit)</div>
-<div class="solutions"><details id="sec-TypesOfData-8-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-TypesOfData-8-2-2-1">quantitative-continuous, interval</div></div></details></div></article><article class="task exercise-like" id="sec-TypesOfData-8-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="sec-TypesOfData-8-3-1-1">the price for one gallon of gasoline</div>
-<div class="solutions"><details id="sec-TypesOfData-8-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-TypesOfData-8-3-2-1">quantitative-continuous, ratio</div></div></details></div></article><article class="task exercise-like" id="sec-TypesOfData-8-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="sec-TypesOfData-8-4-1-1">the letter grade earned in your statistics class</div>
-<div class="solutions"><details id="sec-TypesOfData-8-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-TypesOfData-8-4-2-1">qualitative, ordinal</div></div></details></div></article><article class="task exercise-like" id="sec-TypesOfData-8-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para" id="sec-TypesOfData-8-5-1-1">the number of boxes of Cheerios on the shelf of a grocery store</div>
-<div class="solutions"><details id="sec-TypesOfData-8-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-TypesOfData-8-5-2-1">quantitative-discrete, ratio</div></div></details></div></article><article class="task exercise-like" id="sec-TypesOfData-8-6"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<div class="para" id="sec-TypesOfData-8-6-1-1">the types of cars driven by students in your class</div>
-<div class="solutions"><details id="sec-TypesOfData-8-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-TypesOfData-8-6-2-1">qualitative, nominal</div></div></details></div></article><article class="task exercise-like" id="sec-TypesOfData-8-7"><h4 class="heading"><span class="codenumber">(f)</span></h4>
-<div class="para" id="sec-TypesOfData-8-7-1-1">the number of times a person goes to the gym in a week</div>
-<div class="solutions"><details id="sec-TypesOfData-8-7-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-TypesOfData-8-7-2-1">quantitative-discrete, ratio</div></div></details></div></article></article></details></section></div>
+</ul></div></article></section><details id="sec-TypesOfData-10" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.2.8</span><span class="period">.</span><span class="space"> </span><span class="title">Level of Measurement.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div id="momid4wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momid4" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=6916&amp;frame_id=momid4"></iframe></div></article></details><details id="sec-TypesOfData-11" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.2.9</span><span class="period">.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec-TypesOfData-11-1"><div class="para" id="sec-TypesOfData-11-1-1">Identify the type of data (qualitative, quantitative-discrete, quantitative-continuous) and the level of measurement for each data source.</div></div>
+<article class="task exercise-like" id="sec-TypesOfData-11-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-TypesOfData-11-2-1-1">the temperature outside (in degrees Fahrenheit)</div>
+<div class="solutions"><details id="sec-TypesOfData-11-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-TypesOfData-11-2-2-1">quantitative-continuous, interval</div></div></details></div></article><article class="task exercise-like" id="sec-TypesOfData-11-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-TypesOfData-11-3-1-1">the price for one gallon of gasoline</div>
+<div class="solutions"><details id="sec-TypesOfData-11-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-TypesOfData-11-3-2-1">quantitative-continuous, ratio</div></div></details></div></article><article class="task exercise-like" id="sec-TypesOfData-11-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="sec-TypesOfData-11-4-1-1">the letter grade earned in your statistics class</div>
+<div class="solutions"><details id="sec-TypesOfData-11-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-TypesOfData-11-4-2-1">qualitative, ordinal</div></div></details></div></article><article class="task exercise-like" id="sec-TypesOfData-11-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="sec-TypesOfData-11-5-1-1">the number of boxes of Cheerios on the shelf of a grocery store</div>
+<div class="solutions"><details id="sec-TypesOfData-11-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-TypesOfData-11-5-2-1">quantitative-discrete, ratio</div></div></details></div></article><article class="task exercise-like" id="sec-TypesOfData-11-6"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="para" id="sec-TypesOfData-11-6-1-1">the types of cars driven by students in your class</div>
+<div class="solutions"><details id="sec-TypesOfData-11-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-TypesOfData-11-6-2-1">qualitative, nominal</div></div></details></div></article><article class="task exercise-like" id="sec-TypesOfData-11-7"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<div class="para" id="sec-TypesOfData-11-7-1-1">the number of times a person goes to the gym in a week</div>
+<div class="solutions"><details id="sec-TypesOfData-11-7-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-TypesOfData-11-7-2-1">quantitative-discrete, ratio</div></div></details></div></article></article></details></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-intro-to-stats.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-Displaying-Data.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
