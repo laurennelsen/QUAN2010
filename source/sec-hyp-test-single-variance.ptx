@@ -111,7 +111,7 @@
 </exercise>
 
 
-<exercises>
+<exercises component="web-only-exercises">
 
 <exercise>
   <myopenmath problem="337353" />

@@ -263,7 +263,7 @@
   
 
   
-<exercises>
+<exercises component="web-only-exercises">
 
   <exercise>
     <myopenmath problem="123043" />
