@@ -4,8 +4,8 @@
 <p>
 A company has a policy of retiring company cars; this policy looks at number of miles driven, purpose of trips, style of car and other features.
 The distribution of the number of months in service for the fleet of cars is bell-shaped and has a mean of
-41 months and a standard deviation of 6 months.
-Using the 68-95-99.7 rule, what is the approximate percentage of cars that remain in service between 29 and 35 months?</p>
+64 months and a standard deviation of 5 months.
+Using the 68-95-99.7 rule, what is the approximate percentage of cars that remain in service between 74 and 79 months?</p>
 <p>
 Do not enter the percent symbol.</p>
 <p>
@@ -13,7 +13,7 @@ ans = <fillin characters="20" /> <percent/>
 </p>
 </statement>
 <solution>
-<p><ul><li>13.5</li></ul></p>
+<p><ul><li>2.35 or 2.4</li></ul></p>
 </solution>
 </myopenmath>
 

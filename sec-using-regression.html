@@ -180,9 +180,9 @@ eBookConfig.enable_chatcodes =  false;
 #sec-chi-squared-3-3 { counter-set: sec-chi-squared-3-3 0; }
 #sec-chi-squared-3-3 > li::marker { content: ""counter(sec-chi-squared-3-3,decimal)"."; }
 #sec-chi-squared-3-3 > li { counter-increment: sec-chi-squared-3-3; }
-#sec-F-dist-5-3 { counter-set: sec-F-dist-5-3 0; }
-#sec-F-dist-5-3 > li::marker { content: ""counter(sec-F-dist-5-3,decimal)"."; }
-#sec-F-dist-5-3 > li { counter-increment: sec-F-dist-5-3; }
+#sec-F-dist-3-3 { counter-set: sec-F-dist-3-3 0; }
+#sec-F-dist-3-3 > li::marker { content: ""counter(sec-F-dist-3-3,decimal)"."; }
+#sec-F-dist-3-3 > li { counter-increment: sec-F-dist-3-3; }
 #sec-Diamonds-3-1-3-1 { counter-set: sec-Diamonds-3-1-3-1 0; }
 #sec-Diamonds-3-1-3-1 > li::marker { content: ""counter(sec-Diamonds-3-1-3-1,decimal)"."; }
 #sec-Diamonds-3-1-3-1 > li { counter-increment: sec-Diamonds-3-1-3-1; }
@@ -367,7 +367,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-F-dist.html" class="internal"><span class="codenumber">11.3</span> <span class="title">The <span class="process-math">\(F\)</span>-Distribution</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-hyp-test-two-variances.html" class="internal"><span class="codenumber">11.4</span> <span class="title">Comparing Variances from Two Populations</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-5" class="internal"><span class="codenumber">11.4</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-6" class="internal"><span class="codenumber">11.4</span> <span class="title">Exercises</span></a></div></li></ul>
 </li>
 </ul>
 </li>
@@ -407,8 +407,24 @@ CI=b_i\pm t_{\alpha/2}s_{b_i}
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">13.3.1</span><span class="period">.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec-using-regression-4-1">
 <div class="para" id="sec-using-regression-4-1-1">Let’s look back at the hospital example from earlier.</div> <div class="para" id="sec-using-regression-4-1-2">A hospital would like to develop a regression model to predict the total hospital bill for a patient based on the age of the patient (<span class="process-math">\(x_1\)</span>), the patient’s length of stay (<span class="process-math">\(x_2\)</span>), and the number of days in the hospital’s intensive care unit (ICU) (<span class="process-math">\(x_3\)</span>).  Data for these variables can be found in the table in the Excel file below. <a class="external" href="external/sheets/HospitalExample.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/HospitalExample.xlsx</code></a>
-</div> <div class="para" id="sec-using-regression-4-1-3">Construct and interpret the <span class="process-math">\(95\%\)</span> confidence interval for the regression coefficient for each of the independent variables in the model.</div>
-</div></article></details></section></div>
+</div> <div class="para" id="sec-using-regression-4-1-3">(Here are the solutions to all parts of this problem:  <a class="external" href="external/sheets/HospitalExampleContinuedSolutions.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/HospitalExampleContinuedSolutions.xlsx</code></a> )</div>
+</div>
+<article class="task exercise-like" id="sec-using-regression-4-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-using-regression-4-2-1-1">Find and interpret the adjusted coefficient of variation.</div></article><article class="task exercise-like" id="sec-using-regression-4-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para logical" id="sec-using-regression-4-3-1-1">
+<div class="para">Let <span class="process-math">\(\alpha=0.10\text{,}\)</span> and test the following hypothesis:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+H_0:\;\beta_1=\beta_2=\beta_3=0
+\end{equation*}
+</div>
+</div> <div class="para logical" id="sec-using-regression-4-3-1-2"><div class="displaymath process-math">
+\begin{equation*}
+H_1:\; \text{at least one } \beta_i\neq 0
+\end{equation*}
+</div></div></article><article class="task exercise-like" id="sec-using-regression-4-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="sec-using-regression-4-4-1-1">Let <span class="process-math">\(\alpha = 0.05\text{,}\)</span> and test to see if each of the <span class="process-math">\(\beta_i\)</span>s is equal to zero.</div></article><article class="task exercise-like" id="sec-using-regression-4-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="sec-using-regression-4-5-1-1">Construct and interpret the <span class="process-math">\(95\%\)</span> confidence interval for the regression coefficient for each of the independent variables in the model.</div></article></article></details></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-developing-regression-model.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-Diamonds.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

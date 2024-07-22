@@ -180,9 +180,9 @@ eBookConfig.enable_chatcodes =  false;
 #sec-chi-squared-3-3 { counter-set: sec-chi-squared-3-3 0; }
 #sec-chi-squared-3-3 > li::marker { content: ""counter(sec-chi-squared-3-3,decimal)"."; }
 #sec-chi-squared-3-3 > li { counter-increment: sec-chi-squared-3-3; }
-#sec-F-dist-5-3 { counter-set: sec-F-dist-5-3 0; }
-#sec-F-dist-5-3 > li::marker { content: ""counter(sec-F-dist-5-3,decimal)"."; }
-#sec-F-dist-5-3 > li { counter-increment: sec-F-dist-5-3; }
+#sec-F-dist-3-3 { counter-set: sec-F-dist-3-3 0; }
+#sec-F-dist-3-3 > li::marker { content: ""counter(sec-F-dist-3-3,decimal)"."; }
+#sec-F-dist-3-3 > li { counter-increment: sec-F-dist-3-3; }
 #sec-Diamonds-3-1-3-1 { counter-set: sec-Diamonds-3-1-3-1 0; }
 #sec-Diamonds-3-1-3-1 > li::marker { content: ""counter(sec-Diamonds-3-1-3-1,decimal)"."; }
 #sec-Diamonds-3-1-3-1 > li { counter-increment: sec-Diamonds-3-1-3-1; }
@@ -367,7 +367,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-F-dist.html" class="internal"><span class="codenumber">11.3</span> <span class="title">The <span class="process-math">\(F\)</span>-Distribution</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-hyp-test-two-variances.html" class="internal"><span class="codenumber">11.4</span> <span class="title">Comparing Variances from Two Populations</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-5" class="internal"><span class="codenumber">11.4</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-6" class="internal"><span class="codenumber">11.4</span> <span class="title">Exercises</span></a></div></li></ul>
 </li>
 </ul>
 </li>
@@ -401,33 +401,74 @@ eBookConfig.enable_chatcodes =  false;
 <li id="sec-correlation-3-1-1-1-1"><div class="para" id="sec-correlation-3-1-1-1-1-1">An <em class="emphasis">independent variable</em> explains the variation in the dependent variable</div></li>
 <li id="sec-correlation-3-1-1-1-2"><div class="para" id="sec-correlation-3-1-1-1-2-1">A <em class="emphasis">dependent variable</em> is explained by one or more independent variables</div></li>
 </ul></div></article><div class="para" id="sec-correlation-4-1">Correlation analysis provides a way to measure the strength and direction of the linear relationship between the two variables (the aforementioned independent and dependent variables).  This is done by computing the <em class="emphasis">sample correlation coefficient</em>, <span class="process-math">\(r\text{.}\)</span>
-</div> <div class="para logical" id="sec-correlation-4-2">
-<div class="para">The range of the correlation coefficient is <span class="process-math">\(-1\text{ to } 1\text{.}\)</span>
 </div>
-<ul class="disc" id="sec-correlation-4-2-2">
-<li id="sec-correlation-4-2-2-1"><div class="para" id="sec-correlation-4-2-2-1-1">A <em class="emphasis">positive</em> value indicates that as <span class="process-math">\(x\)</span> increases, <span class="process-math">\(y\)</span> also increases.</div></li>
-<li id="sec-correlation-4-2-2-2"><div class="para" id="sec-correlation-4-2-2-2-1">A <em class="emphasis">negative</em> value indicates that as <span class="process-math">\(x\)</span> increases, <span class="process-math">\(y\)</span> decreases.</div></li>
-</ul>
-</div> <div class="para" id="sec-correlation-4-3">Recall that we used the Excel formula, CORREL, to calculate this number in a previous chapter.  Now we improve on that skill by learning how to use a hypothesis test to assess the strength of the linear relationship described by <span class="process-math">\(r\text{.}\)</span>
-</div> <div class="para" id="sec-correlation-4-4">The population correlation coefficient, <span class="process-math">\(\rho\text{,}\)</span> refers to the correlation between all values of two variables in a population.  A value of <span class="process-math">\(\rho=0\)</span> means that there is no linear relationship between <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span>  We don’t know the value of <span class="process-math">\(\rho\)</span> so we use the sample correlation coefficient to test whether we have enough evidence from the sample to conclude that there is a linear relationship between the variables in the population.  The two hypotheses for this hypothesis test are:</div> <div class="para logical" id="sec-correlation-4-5"><div class="displaymath process-math" id="sec-correlation-4-5-1">
+<details id="sec-correlation-5" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">13.1.3</span><span class="period">.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><article class="task exercise-like" id="sec-correlation-5-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="" data-multipleanswers="false">
+<div class="para" id="sec-correlation-5-1-1-1">The range of the correlation coefficient is ...</div>
+<li data-component="answer" id="_opt_a" data-correct=""><div class="para" id="sec-correlation-5-1-2-1-1-1">-1 to 1</div></li>
+<li data-component="feedback" id="_opt_a">
+<li data-component="answer" id="_opt_b"><div class="para" id="sec-correlation-5-1-2-2-1-1">0 to 1</div></li>
+<li data-component="feedback" id="_opt_b">
+<li data-component="answer" id="_opt_c"><div class="para" id="sec-correlation-5-1-2-3-1-1">-1 to 0</div></li>
+<li data-component="feedback" id="_opt_c">
+<li data-component="answer" id="_opt_d"><div class="para" id="sec-correlation-5-1-2-4-1-1">0 to 100</div></li>
+<li data-component="feedback" id="_opt_d">
+</ul></div></div></article><article class="task exercise-like" id="sec-correlation-5-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="" data-multipleanswers="false">
+<div class="para" id="sec-correlation-5-2-1-1">A <em class="emphasis">positive</em> value of the correlation coeffficient indicates that as <span class="process-math">\(x\)</span> increases, ...</div>
+<li data-component="answer" id="_opt_a" data-correct=""><div class="para" id="sec-correlation-5-2-2-1-1-1">
+<span class="process-math">\(y\)</span> also increases.</div></li>
+<li data-component="feedback" id="_opt_a">
+<li data-component="answer" id="_opt_b"><div class="para" id="sec-correlation-5-2-2-2-1-1">
+<span class="process-math">\(y\)</span> decreases.</div></li>
+<li data-component="feedback" id="_opt_b">
+<li data-component="answer" id="_opt_c"><div class="para" id="sec-correlation-5-2-2-3-1-1">
+<span class="process-math">\(y\)</span> stays the same.</div></li>
+<li data-component="feedback" id="_opt_c">
+</ul></div></div></article><article class="task exercise-like" id="sec-correlation-5-3"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="" data-multipleanswers="false">
+<div class="para" id="sec-correlation-5-3-1-1">A <em class="emphasis">negative</em> value of the correlation coeffficient indicates that as <span class="process-math">\(x\)</span> increases, ...</div>
+<li data-component="answer" id="_opt_a"><div class="para" id="sec-correlation-5-3-2-1-1-1">
+<span class="process-math">\(y\)</span> increases.</div></li>
+<li data-component="feedback" id="_opt_a">
+<li data-component="answer" id="_opt_b" data-correct=""><div class="para" id="sec-correlation-5-3-2-2-1-1">
+<span class="process-math">\(y\)</span> decreases.</div></li>
+<li data-component="feedback" id="_opt_b">
+<li data-component="answer" id="_opt_c"><div class="para" id="sec-correlation-5-3-2-3-1-1">
+<span class="process-math">\(y\)</span> stays the same.</div></li>
+<li data-component="feedback" id="_opt_c">
+</ul></div></div></article></article></details><div class="para" id="sec-correlation-6">Recall that we used the Excel formula, CORREL, to calculate this number in a previous chapter.  Now we improve on that skill by learning how to use a hypothesis test to assess the strength of the linear relationship described by <span class="process-math">\(r\text{.}\)</span>
+</div>
+<div class="para" id="sec-correlation-7">The population correlation coefficient, <span class="process-math">\(\rho\text{,}\)</span> refers to the correlation between all values of two variables in a population.  A value of <span class="process-math">\(\rho=0\)</span> means that there is no linear relationship between <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span>  We don’t know the value of <span class="process-math">\(\rho\)</span> so we use the sample correlation coefficient to test whether we have enough evidence from the sample to conclude that there is a linear relationship between the variables in the population.  The two hypotheses for this hypothesis test are:</div>
+<div class="para logical" id="sec-correlation-8"><div class="displaymath process-math" id="sec-correlation-8-1">
 \begin{gather*}
 H_0 : \rho\leq 0 \\
 H_1 : \rho&gt;0 
 \end{gather*}
-</div></div> <div class="para" id="sec-correlation-4-6">The test statistic uses the Student’s <span class="process-math">\(t\)</span>-distribution with formula:</div> <div class="para logical" id="sec-correlation-4-7"><div class="displaymath process-math">
+</div></div>
+<div class="para" id="sec-correlation-9">The test statistic uses the Student’s <span class="process-math">\(t\)</span>-distribution with formula:</div>
+<div class="para logical" id="sec-correlation-10"><div class="displaymath process-math">
 \begin{equation*}
 t = \frac{r}{\sqrt{\frac{1-r^2}{n-2}}}
 \end{equation*}
-</div></div> <div class="para" id="sec-correlation-4-8">Degrees of freedom here are.... <span class="process-math">\(df=..... \)</span>
+</div></div>
+<div class="para" id="sec-correlation-11">Degrees of freedom here are: <span class="process-math">\(df=n-2 \text{.}\)</span>
 </div>
 <details id="housingmarket" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">13.1.3</span><span class="period">.</span>
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">13.1.4</span><span class="period">.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="housingmarket-1"><div class="para" id="housingmarket-1-1">The housing market in the United States is generally affected by economic conditions and interest rates, but also by the time of the year.  More people usually buy and sell homes in the spring summer months.  We want to see if there is a strong correlation between new home listings and temperature.  The Excel file below includes the number of new housing listings in Colorado, as well as temperature and precipitation at Denver International Airport (DEN). <a class="external" href="external/sheets/Colorado%20Housing%20Inventory%20and%20Weather%20Data.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/Colorado Housing Inventory and Weather Data.xlsx</code></a>
 </div></div>
 <article class="task exercise-like" id="housingmarket-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="housingmarket-2-1-1">Determine the sample correlation coefficient between the number of new listings and the precipitation.</div></article><article class="task exercise-like" id="housingmarket-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="housingmarket-3-1-1">Determine the sample correlation coefficient between the number of new listings and the maximum temperature.</div></article><article class="task exercise-like" id="housingmarket-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="housingmarket-4-1-1">Using <span class="process-math">\(\alpha=0.02\text{,}\)</span> test if the population correlation coefficient between the number of new listings and the maximum temperature is different from zero.  What conclusions can you draw?</div></article></article></details></section></div>
+<div class="para" id="housingmarket-2-1-1">Determine the sample correlation coefficient between the number of new listings and the precipitation.</div>
+<div class="solutions"><details id="housingmarket-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="housingmarket-2-2-1"><span class="process-math">\(r\approx 0.2867\)</span></div></div></details></div></article><article class="task exercise-like" id="housingmarket-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="housingmarket-3-1-1">Determine the sample correlation coefficient between the number of new listings and the maximum temperature.</div>
+<div class="solutions"><details id="housingmarket-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="housingmarket-3-2-1"><span class="process-math">\(r\approx 0.6864\)</span></div></div></details></div></article><article class="task exercise-like" id="housingmarket-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="housingmarket-4-1-1">Using <span class="process-math">\(\alpha=0.02\text{,}\)</span> test if the population correlation coefficient between the number of new listings and the maximum temperature is different from zero.  What conclusions can you draw?</div>
+<div class="solutions"><details id="housingmarket-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="housingmarket-4-2-1"><a class="external" href="external/sheets/Colorado%20Housing%20Inventory%20and%20Weather%20Data%20Solutions.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/Colorado Housing Inventory and Weather Data Solutions.xlsx</code></a></div> <div class="para" id="housingmarket-4-2-2">We reject the null hypothesis and can conclude that the population correlation coefficient between the number of new listings and the maximum temperature is different from zero, and there is a linear relationship between these two variables.</div>
+</div></details></div></article></article></details></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="ch-Intro-to-Regression-Modeling.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-developing-regression-model.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
