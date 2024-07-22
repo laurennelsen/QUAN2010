@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="717338">
+<statement>
+<p>Lola is conducting market research on the amount typically spent on the purchase of a first vehicle. Lola has determined that the average cost of a first vehicle is <dollar/>6800, and that the distribution of costs is normally distributed with a standard deviation of <dollar/>580.
+  </p>
+<p>
+  a. Find the probability that a single randomly selected first-time vehicle purchase is less than <dollar/>7370. (Round to 4 decimal places.)</p>
+<p style="padding-left: 40px;"><fillin characters="10" /></p>
+<p>b. The cost of the middle 60<percent/> of first-time vehicle purchases falls between (round to the nearest dollar):</p>
+<p style="padding-left: 40px;"><dollar/><fillin characters="10" /> to <dollar/><fillin characters="10" /></p>
+<p>c. If a random sample of 40 first-time vehicle purchasers is selected, what is the probability that the <em>sample average</em> amount spent is between <dollar/>6770 and <dollar/>6950? (Round to 4 decimal places.)</p>
+<p style="padding-left: 40px;"><fillin characters="10" /></p>
+
+</statement>
+<solution>
+<p><ul><li>0.8371</li><li>6312</li><li>7288</li><li>0.5773</li></ul></p><p>a. Since the probability here is for a single randomly selected individiual, we use the <m>\displaystyle{X}</m> distribution, which has mean and standard deviation as given. Using Desmos (or other technology), we need:</p>
+<p style="padding-left: 40px;"><m>\displaystyle{P}{\left({x}{<}{7370}\right)}=\text{normaldist}{\left({6800},{580}\right)}.\text{cdf}{\left(-\infty,{7370}\right)}={0.8371}</m> </p>
+<p>b. To find the cutoff values for the middle <m>\displaystyle{60}\%</m>  of the distribution, need the remaining <m>\displaystyle{1}-{0.6}={0.4}</m> of the area to be split between the 2 tails. This means that the area to the <em>left</em> of the lower bound is 0.2, and the area to the <em>right</em> of the upper bound is 0.2, resulting in an area <em>to the <em>left</em></em> of the upper bound of 0.8. In Desmos (or other technology), we find each of these values using .inversecdf with the <m>\displaystyle{X}</m> distribution:</p>
+<p style="padding-left: 40px;">lower bound <m>\displaystyle=\text{normaldist}{\left({6800},{580}\right)}.\text{inversecdf}{\left({0.2}\right)}={6312}</m> </p>
+<p style="padding-left: 40px;">upper bound <m>\displaystyle=\text{normaldist}{\left({6800},{580}\right)}.\text{inversecdf}{\left({0.8}\right)}={7288}</m> </p>
+<p>c. The probability here is related to <m>\displaystyle\overline{{X}}</m> , so now we use the sampling disitribution of means to find the probability (NOT the underlying <m>\displaystyle{X}</m> distribution):</p>
+<p style="padding-left: 40px;"><m>\displaystyle{P}{\left({6770}{<}\overline{{x}}{<}{6950}\right)}=\text{normaldist}{\left({6800},\frac{{580}}{\sqrt{{{40}}}}\right)}.\text{cdf}{\left({6770},{6950}\right)}={0.5773}</m> </p>
+<p><em>NOTE:</em> each instance of normaldist<m>\displaystyle{\left(\mu,\sigma\right)}</m> above could be replaced by first defining the distribution with a variable name. E.g.:</p>
+<p><ul>
+  <li><m>\displaystyle{N}=\text{normaldist}{\left({6800},{580}\right)}</m> for the <m>\displaystyle{X}</m> distribution</li>
+  <li> <m>\displaystyle{S}=\text{normaldist}{\left({6800},\frac{{580}}{\sqrt{{{40}}}}\right)}</m> for the <m>\displaystyle\overline{{X}}</m> distribution</li>
+</ul></p>
+</solution>
+</myopenmath>
+

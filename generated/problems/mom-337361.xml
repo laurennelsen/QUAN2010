@@ -3,28 +3,28 @@
 <statement>
 <p class="seqsep" role="heading" tabindex="-1">Part 1 of 5</p><p style="text-align: center;"></p><figure><image width="133%"  pi:generated="problems/images/Problem12.1.HW5.jpg" /></figure>
 <p>Is the variance for the amount of money, in dollars, that shoppers spend on Saturdays at the mall the same as the variance for the amount of money that shoppers spend on Sundays at the mall? Suppose that the tables below show the results of a study:</p>
-<p>Saturday: </p><table><tabular> <row><cell>56.8</cell><cell>100.2</cell><cell>77.2</cell><cell>83.9</cell><cell>55</cell></row><row><cell>73.2</cell><cell>60.3</cell><cell>107.7</cell><cell>92.7</cell><cell>72.1</cell></row><row><cell>93.1</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></tabular></table>
-<p>(Note: The average and the standard deviation of the data are respectively 79.29 dollars and 17.849 dollars.)</p>
-<p>Sunday: </p><table><tabular> <row><cell>97.5</cell><cell>109.7</cell><cell>70.1</cell><cell>99.9</cell><cell>89.4</cell></row><row><cell>73.1</cell><cell>101.1</cell><cell>79.6</cell><cell>64.6</cell><cell>71.8</cell></row></tabular></table>
-<p>(Note: The average and the standard deviation of the data are respectively 85.68 dollars and 15.795 dollars.)</p>
+<p>Saturday: </p><table><tabular> <row><cell>90.4</cell><cell>26.4</cell><cell>73.4</cell><cell>66.9</cell><cell>66.9</cell></row><row><cell>76.7</cell><cell>77.8</cell><cell>74.6</cell><cell>91.1</cell><cell>77</cell></row><row><cell>62.3</cell><cell>82.5</cell><cell>47.3</cell><cell>96.1</cell><cell>97.8</cell></row><row><cell>37.3</cell><cell>72.9</cell><cell>39.6</cell><cell>66.6</cell><cell></cell></row></tabular></table>
+<p>(Note: The average and the standard deviation of the data are respectively 69.66 dollars and 19.952 dollars.)</p>
+<p>Sunday: </p><table><tabular> <row><cell>66</cell><cell>80.1</cell><cell>81.7</cell><cell>105.6</cell><cell>108.5</cell></row><row><cell>84</cell><cell>64.6</cell><cell>107.8</cell><cell>93.4</cell><cell>99.6</cell></row><row><cell>104.2</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></tabular></table>
+<p>(Note: The average and the standard deviation of the data are respectively 90.5 dollars and 16.215 dollars.)</p>
 <p>Use a 1<percent/> significance level to test the claim that the standard deviation for the amount of money that shoppers spend on Saturday is the same as the standard deviation for the amount of money that shoppers spend on Sunday. If normality plots are not provided assume that the samples are from normal populations.</p>
 <p>Procedure: </p>
-<p><ol style="list-style-type:upper-alpha"><li>Two paired means T Hypothesis Test</li> 
-<li>Two variances F Hypothesis Test</li> 
-<li>Two proportions Z Hypothesis Test</li> 
-<li>Two means T (non-pooled) Hypothesis Test</li> 
-<li>Two means Z Hypothesis Test</li> 
+<p><ol style="list-style-type:upper-alpha"><li>Two proportions Z Hypothesis Test</li> 
 <li>Two means T (pooled) Hypothesis Test</li> 
+<li>Two means T (non-pooled) Hypothesis Test</li> 
+<li>Two paired means T Hypothesis Test</li> 
+<li>Two variances F Hypothesis Test</li> 
+<li>Two means Z Hypothesis Test</li> 
 </ol></p>
 <p>Assumptions: (select everything that applies) </p>
-<p><ol style="list-style-type:upper-alpha"><li>Paired samples</li> 
-<li>Population standard deviation are unknown but assumed equal</li> 
+<p><ol style="list-style-type:upper-alpha"><li>Simple random samples</li> 
 <li>Population standard deviation are unknown</li> 
-<li>Sample sizes are both greater than 30</li> 
-<li>Simple random samples</li> 
 <li>Population standard deviations are known</li> 
 <li>Independent samples</li> 
 <li>Normal populations</li> 
+<li>Sample sizes are both greater than 30</li> 
+<li>Population standard deviation are unknown but assumed equal</li> 
+<li>Paired samples</li> 
 <li>The number of positive and negative responses are both greater than 10 for both samples</li> 
 </ol></p>
 <p class="seqsep" role="heading" tabindex="-1">Part 2 of 5</p>
@@ -33,38 +33,38 @@
   
     <row>
       <cell> <m>\displaystyle{H}_{{0}}:</m> <p><ol style="list-style-type:upper-alpha"><li>σ₁<ampersand />;sup2/σ₂<ampersand />;sup2</li> 
-<li>μ</li> 
 <li>p₁-p₂</li> 
 <li>μ₁-μ₂</li> 
+<li>μ</li> 
 </ol></p>
 =<fillin characters="2" /></cell>
-      <cell>, where <p><ol style="list-style-type:upper-alpha"><li>μ's are</li> 
-<li>μ=μ₁-μ₂ is</li> 
-<li>p's are</li> 
+      <cell>, where <p><ol style="list-style-type:upper-alpha"><li>p's are</li> 
+<li>μ's are</li> 
 <li>σ's are</li> 
+<li>μ=μ₁-μ₂ is</li> 
 </ol></p>
- the <p><ol style="list-style-type:upper-alpha"><li>population standard deviations</li> 
+ the <p><ol style="list-style-type:upper-alpha"><li>population means</li> 
 <li>difference between population means</li> 
 <li>population proportions</li> 
-<li>population means</li> 
+<li>population standard deviations</li> 
 </ol></p>
  and the units are <p><ol style="list-style-type:upper-alpha"><li>lbs</li> 
-<li>N</li> 
-<li>Watt</li> 
-<li>J</li> 
 <li><dollar/></li> 
+<li>N</li> 
+<li>J</li> 
+<li>Watt</li> 
 </ol></p>
 </cell>
     </row>
     <row>
-      <cell> <m>\displaystyle{H}_{{a}}:</m> <p><ol style="list-style-type:upper-alpha"><li>σ₁<ampersand />;sup2/σ₂<ampersand />;sup2</li> 
+      <cell> <m>\displaystyle{H}_{{a}}:</m> <p><ol style="list-style-type:upper-alpha"><li>μ</li> 
+<li>σ₁<ampersand />;sup2/σ₂<ampersand />;sup2</li> 
 <li>μ₁-μ₂</li> 
-<li>μ</li> 
 <li>p₁-p₂</li> 
 </ol></p>
 <p><ol style="list-style-type:upper-alpha"><li><less/><less/>/label<greater/></li> 
-<li>≠</li> 
 <li><greater/></li> 
+<li>≠</li> 
 </ol></p>
 <fillin characters="2" /></cell>
       <cell>, and the test is <p><ol style="list-style-type:upper-alpha"><li>Left-Tail</li> 
@@ -78,8 +78,8 @@
 <p class="seqsep" role="heading" tabindex="-1">Part 3 of 5</p>
 <p>Step 3. Compute the value of the test statistic: </p>
 <p><ol style="list-style-type:upper-alpha"><li><ampersand />;<hash/>967<ampersand />;sup2₀</li> 
-<li>f₀</li> 
 <li>t₀</li> 
+<li>f₀</li> 
 <li>z₀</li> 
 </ol></p>
 =<fillin characters="2" /> (Round the answer to 3 decimal places)
@@ -112,8 +112,8 @@
       <cell>Is the P-value less than the significance level?</cell>
     </row>
     <row>
-      <cell><p><ol style="list-style-type:upper-alpha"><li>yes</li> 
-<li>no</li> 
+      <cell><p><ol style="list-style-type:upper-alpha"><li>no</li> 
+<li>yes</li> 
 </ol></p>
 </cell>
       <cell><p><ol style="list-style-type:upper-alpha"><li>no</li> 
@@ -123,23 +123,23 @@
     </row>
   
 </tabular></table><p style="padding-left: 40px;">Conclusion: </p>
-<p><ol style="list-style-type:upper-alpha"><li>Reject the null hypothesis in favor of the alternative.</li> 
-<li>Do not reject the null hypothesis in favor of the alternative.</li> 
+<p><ol style="list-style-type:upper-alpha"><li>Do not reject the null hypothesis in favor of the alternative.</li> 
+<li>Reject the null hypothesis in favor of the alternative.</li> 
 </ol></p>
 <p class="seqsep" role="heading" tabindex="-1">Part 5 of 5</p>
 <p>Step 6. Interpretation:</p>
 <p style="padding-left: 40px;">At 1<percent/> significance level we </p>
-<p><ol style="list-style-type:upper-alpha"><li>DO</li> 
-<li>DO NOT</li> 
+<p><ol style="list-style-type:upper-alpha"><li>DO NOT</li> 
+<li>DO</li> 
 </ol></p>
  have sufficient evidence to reject the null hypothesis in favor of the alternative hypothesis.
 
 </statement>
 <solution>
-<p><ul><li>B: Two variances F Hypothesis Test</li><li><p>Simple random samples</p>
+<p><ul><li>E: Two variances F Hypothesis Test</li><li><p>Simple random samples</p>
 <p>Independent samples</p>
 <p>Normal populations</p>
-<p>Population standard deviation are unknown</p></li><li>A: σ₁<ampersand />;sup2/σ₂<ampersand />;sup2</li><li>1</li><li>D: σ's are</li><li>A: population standard deviations</li><li>E: <dollar/></li><li>A: σ₁<ampersand />;sup2/σ₂<ampersand />;sup2</li><li>B: ≠</li><li>1</li><li>C: Two-Tail</li><li>1</li><li>B: f₀</li><li>1.277</li><li>0.168</li><li>6.417</li><li>0.724</li><li>B: no</li><li>A: no</li><li>B: Do not reject the null hypothesis in favor of the alternative.</li><li>B: DO NOT</li></ul></p><p>Is the variance for the amount of money, in dollars, that shoppers spend on Saturdays at the mall the same as the variance for the amount of money that shoppers spend on Sundays at the mall? On Saturday, the average and the standard deviation of the data are respectively 79.29 dollars and 17.849 dollars. On Sunday, the average and the standard deviation of the data are respectively 85.68 dollars and 15.795 dollars. Use a 1<percent/> significance level to test the claim that the standard deviation for the amount of money that shoppers spend on Saturday is the same as the standard deviation for the amount of money that shoppers spend on Sunday. If normality plots are not provided assume that the samples are from normal populations.</p>
+<p>Population standard deviation are unknown</p></li><li>A: σ₁<ampersand />;sup2/σ₂<ampersand />;sup2</li><li>1</li><li>C: σ's are</li><li>D: population standard deviations</li><li>B: <dollar/></li><li>B: σ₁<ampersand />;sup2/σ₂<ampersand />;sup2</li><li>C: ≠</li><li>1</li><li>C: Two-Tail</li><li>1</li><li>C: f₀</li><li>1.514</li><li>0.248</li><li>5.340</li><li>0.509</li><li>A: no</li><li>A: no</li><li>A: Do not reject the null hypothesis in favor of the alternative.</li><li>A: DO NOT</li></ul></p><p>Is the variance for the amount of money, in dollars, that shoppers spend on Saturdays at the mall the same as the variance for the amount of money that shoppers spend on Sundays at the mall? On Saturday, the average and the standard deviation of the data are respectively 69.66 dollars and 19.952 dollars. On Sunday, the average and the standard deviation of the data are respectively 90.5 dollars and 16.215 dollars. Use a 1<percent/> significance level to test the claim that the standard deviation for the amount of money that shoppers spend on Saturday is the same as the standard deviation for the amount of money that shoppers spend on Sunday. If normality plots are not provided assume that the samples are from normal populations.</p>
 <p>Procedure: In the question, look for the keywords such as mean/average, proportion/percentage, variance/standard deviation! In this case, we have "standard deviation for the amount of money that shoppers spend" and two populations, thus we are going to perform Two Variances F Hypothesis Test.</p>
 <p>Assumptions (select everything that applies): For Two Variances F Hypothesis Test,</p>
 <p><ul>
@@ -152,8 +152,8 @@
 <p style="padding-left: 40px;">The null hypothesis <m>\displaystyle{H}_{{0}}</m>: <m>\displaystyle{\frac{{{\sigma_{{1}}^{{2}}}}}{{{\sigma_{{2}}^{{2}}}}}}={1}</m>, where σ₁ is the standard deviation for the amount of money that shoppers spend on Saturday and σ₂ is the standard deviation for the amount of money that shoppers spend on Sunday and the units are dollars;</p>
 <p style="padding-left: 40px;">The alternative hypothesis <m>\displaystyle{H}_{{a}}</m> : <m>\displaystyle{\frac{{{\sigma_{{1}}^{{2}}}}}{{{\sigma_{{2}}^{{2}}}}}}\ne{1}</m> and the test is Two-Tailed</p>
 <p>Step 2. The significance level <m>\displaystyle\alpha=</m> 1<percent/></p>
-<p>Step 3. Compute the value of the test statistic: <m>\displaystyle{f}_{{0}}={\frac{{{{s}_{{1}}^{{2}}}}}{{{{s}_{{2}}^{{2}}}}}}=\frac{{{17.849}^{{2}}}}{{{15.795}^{{2}}}}={1.277}</m> (Round the answer to 3 decimal places) with degrees of freedom <m>\displaystyle{\left({d}{f}{n},{d}{f}{d}\right)}={\left({10},{9}\right)}</m></p>
-<p>To practice finding the test statistic (in this case, <m>\displaystyle{f}_{{0}}={1.277}</m>), please consider the following <url href="https://www.myopenmath.com/embedq.php?id=760294">problem</url>:</p>
+<p>Step 3. Compute the value of the test statistic: <m>\displaystyle{f}_{{0}}={\frac{{{{s}_{{1}}^{{2}}}}}{{{{s}_{{2}}^{{2}}}}}}=\frac{{{19.952}^{{2}}}}{{{16.215}^{{2}}}}={1.514}</m> (Round the answer to 3 decimal places) with degrees of freedom <m>\displaystyle{\left({d}{f}{n},{d}{f}{d}\right)}={\left({18},{10}\right)}</m></p>
+<p>To practice finding the test statistic (in this case, <m>\displaystyle{f}_{{0}}={1.514}</m>), please consider the following <url href="https://www.myopenmath.com/embedq.php?id=760294">problem</url>:</p>
 <p><lbracket/>EMBED: QID760294<rbracket/></p>
 <p>Step 4. Testing Procedure: (Round the answers to 3 decimal places)</p>
 <table><tabular>       
@@ -167,13 +167,13 @@
 <cell>Compute the P-value of the test statistic:</cell>
 </row>
 <row>
-<cell>left CV is <m>\displaystyle{f}_{{{1}-\frac{\alpha}{{2}}}}={f}_{{0.995}}={0.168}</m>  and right CV is <m>\displaystyle{f}_{{\frac{\alpha}{{2}}}}={f}_{{0.005}}={6.417}</m> </cell>
-<cell>P-value is <m>\displaystyle{2}\min{\left({P}{\left({F}{<}{f}_{{0}}\right)},{P}{\left({F}{>}{f}_{{0}}\right)}\right)}={0.724}</m> </cell>
+<cell>left CV is <m>\displaystyle{f}_{{{1}-\frac{\alpha}{{2}}}}={f}_{{0.995}}={0.248}</m>  and right CV is <m>\displaystyle{f}_{{\frac{\alpha}{{2}}}}={f}_{{0.005}}={5.34}</m> </cell>
+<cell>P-value is <m>\displaystyle{2}\min{\left({P}{\left({F}{<}{f}_{{0}}\right)},{P}{\left({F}{>}{f}_{{0}}\right)}\right)}={0.509}</m> </cell>
 </row>
 
-</tabular></table><p>To practice finding the critical values (in this case, <m>\displaystyle{f}_{{{1}-\frac{\alpha}{{2}}}}={f}_{{0.995}}={0.168}</m> and <m>\displaystyle{f}_{{\frac{\alpha}{{2}}}}={f}_{{0.005}}={6.417}</m>) and drawing the rejection region, please consider the following <url href="https://www.myopenmath.com/embedq.php?id=760347">problem</url>:</p>
+</tabular></table><p>To practice finding the critical values (in this case, <m>\displaystyle{f}_{{{1}-\frac{\alpha}{{2}}}}={f}_{{0.995}}={0.248}</m> and <m>\displaystyle{f}_{{\frac{\alpha}{{2}}}}={f}_{{0.005}}={5.34}</m>) and drawing the rejection region, please consider the following <url href="https://www.myopenmath.com/embedq.php?id=760347">problem</url>:</p>
 <p><lbracket/>EMBED: QID760347<rbracket/></p>
-<p>To practice finding the P-value (in this case, <m>\displaystyle{2}\min{\left({P}{\left({F}{<}{f}_{{0}}\right)},{P}{\left({F}{>}{f}_{{0}}\right)}\right)}={0.724}</m>), please consider the following <url href="https://www.myopenmath.com/embedq.php?id=760354">problem</url>:</p>
+<p>To practice finding the P-value (in this case, <m>\displaystyle{2}\min{\left({P}{\left({F}{<}{f}_{{0}}\right)},{P}{\left({F}{>}{f}_{{0}}\right)}\right)}={0.509}</m>), please consider the following <url href="https://www.myopenmath.com/embedq.php?id=760354">problem</url>:</p>
 <p><lbracket/>EMBED: QID760354<rbracket/></p>
 <p>Step 5. Decision:</p>
 <table><tabular>       
@@ -183,8 +183,8 @@
 <cell>PVA</cell>
 </row>
 <row>
-<cell>Is the test statistic <m>\displaystyle{f}_{{0}}={1.277}</m> in the rejection region, in other words, is <m>\displaystyle{1.277}</m> less than <m>\displaystyle{0.168}</m> or greater than <m>\displaystyle{6.417}</m>?</cell>
-<cell>Is the P-value 0.724 less than the significance level <m>\displaystyle\alpha</m>, in other words, is <m>\displaystyle{0.724}{<}{0.01}</m>?</cell>
+<cell>Is the test statistic <m>\displaystyle{f}_{{0}}={1.514}</m> in the rejection region, in other words, is <m>\displaystyle{1.514}</m> less than <m>\displaystyle{0.248}</m> or greater than <m>\displaystyle{5.34}</m>?</cell>
+<cell>Is the P-value 0.509 less than the significance level <m>\displaystyle\alpha</m>, in other words, is <m>\displaystyle{0.509}{<}{0.01}</m>?</cell>
 </row>
 <row>
 <cell>no</cell>
@@ -197,21 +197,21 @@
 <p>Step-by-step (with technology):</p>
 <p>(StatCrunch) In the menu, select Stat<greater/>Variance Stats<greater/>Two Samples<greater/>With Summary and then enter the following:</p>
 <p style="text-align: center;"><em>Sample 1:</em></p>
-<p style="text-align: center;"><em>Variance</em>: 318.587</p>
-<p style="text-align: center;"><em>Sample size</em>: 11</p>
+<p style="text-align: center;"><em>Variance</em>: 398.082</p>
+<p style="text-align: center;"><em>Sample size</em>: 19</p>
 <p style="text-align: center;"><em>Sample 2:</em></p>
-<p style="text-align: center;"><em>Variance</em>: 249.482</p>
-<p style="text-align: center;"><em>Sample size</em>: 10</p>
+<p style="text-align: center;"><em>Variance</em>: 262.926</p>
+<p style="text-align: center;"><em>Sample size</em>: 11</p>
 <p style="text-align: center;"><em>Perform</em>: Hypothesis test for <m>\displaystyle{\sigma_{{1}}^{{2}}}\text{/}{\sigma_{{2}}^{{2}}}</m> </p>
 <p style="text-align: center;"><em> <m>\displaystyle{H}_{{0}}</m> </em>: <m>\displaystyle{\sigma_{{1}}^{{2}}}\text{/}{\sigma_{{2}}^{{2}}}={1}</m> </p>
 <p style="text-align: center;"><em> <m>\displaystyle{H}_{{A}}</m> </em>: <m>\displaystyle{\sigma_{{1}}^{{2}}}\text{/}{\sigma_{{2}}^{{2}}}\ne{1}</m> </p>
 <p style="text-align: center;">(press Compute!)</p>
 <p>(TI-83 Plus) Press STAT<greater/>TESTS<greater/>D:2-SampFTest... and then enter the following:</p>
 <p style="text-align: center;">Inpt: Stats</p>
-<p style="text-align: center;"> <m>\displaystyle{S}{x}{1}:{17.849}</m> </p>
-<p style="text-align: center;"> <m>\displaystyle{n}{1}:{11}</m> </p>
-<p style="text-align: center;"> <m>\displaystyle{S}{x}{2}:{15.795}</m> </p>
-<p style="text-align: center;"> <m>\displaystyle{n}{2}:{10}</m> </p>
+<p style="text-align: center;"> <m>\displaystyle{S}{x}{1}:{19.952}</m> </p>
+<p style="text-align: center;"> <m>\displaystyle{n}{1}:{19}</m> </p>
+<p style="text-align: center;"> <m>\displaystyle{S}{x}{2}:{16.215}</m> </p>
+<p style="text-align: center;"> <m>\displaystyle{n}{2}:{11}</m> </p>
 <p style="text-align: center;"> <m>\displaystyle\sigma{1}:\ne\sigma{2}</m> </p>
 <p style="text-align: center;">(press ENTER on Calculate)</p>
 <p style="text-align: left;">Among the results, you can find the test statistic and the p-value. When using technology, it is much easier to conduct the test using the p-value approach. Be aware, that technology can help you with computations but you still need to be familiar with the procedure to make the right conclusion!</p>

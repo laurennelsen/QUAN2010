@@ -432,18 +432,34 @@ ME_{\overline{x}}=z_{\alpha/2}\cdot\left(\frac{\sigma}{\sqrt{n}}\right)\text{  a
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">9.6.1</span><span class="period">.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-Determining-Sample-Size-3-1-1">(Donnelly 8.44)</div> <div class="para" id="sec-Determining-Sample-Size-3-1-2">Determine the sample size needed to construct a <span class="process-math">\(99\%\)</span> confidence interval to estimate the average GPA for the student population at a college with a margin of error equal to <span class="process-math">\(0.5\text{.}\)</span>  Assume the standard deviation of the GPA for the student population is <span class="process-math">\(2.5\text{.}\)</span>
 </div>
-<div class="solutions"><details id="sec-Determining-Sample-Size-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-Determining-Sample-Size-3-2-1">Using the formula, we’ll get <span class="process-math">\(n\approx 165.87\text{.}\)</span>  We always need to round up to guarantee the desired margin of error.  So here, we need a sample size of at least <span class="process-math">\(166\text{.}\)</span>
-</div></div></details></div></article></details><details id="sec-Determining-Sample-Size-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<div class="solutions"><details id="sec-Determining-Sample-Size-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-Determining-Sample-Size-3-2-1"><span class="process-math">\(ME_{\overline{x}}=0.5\)</span></div> <div class="para" id="sec-Determining-Sample-Size-3-2-2"><span class="process-math">\(\sigma=2.5\)</span></div> <div class="para" id="sec-Determining-Sample-Size-3-2-3"><span class="process-math">\(1-\alpha=0.99\rightarrow \alpha=0.01\rightarrow \alpha/2=.005\rightarrow z_{.005}=NORM.S.INV(.995)\approx 2.575\)</span></div> <div class="para logical" id="sec-Determining-Sample-Size-3-2-4"><div class="displaymath process-math">
+\begin{equation*}
+n\approx \frac{(2.575)^2(2.5)^2}{(0.5)^2}\approx 165.87
+\end{equation*}
+</div></div> <div class="para" id="sec-Determining-Sample-Size-3-2-5">Using the formula, we’ll get <span class="process-math">\(n\approx 165.87\text{.}\)</span>  We always need to round up to guarantee the desired margin of error.  So here, we need a sample size of at least <span class="process-math">\(\boxed{166}\text{.}\)</span>
+</div>
+</div></details></div></article></details><details id="sec-Determining-Sample-Size-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">9.6.2</span><span class="period">.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-Determining-Sample-Size-4-1-1">(Donnelly 8.47)</div> <div class="para" id="sec-Determining-Sample-Size-4-1-2">A certain region would like to estimate the proportion of voters who intend to participate in upcoming elections.  A pilot sample of 50 voters found that 39 of them intended to vote in the election.  Determine the additional number of voters that need to be sampled to construct a <span class="process-math">\(96\%\)</span> interval with a margin of error equal to <span class="process-math">\(0.08\)</span> to estimate the proportion.</div>
-<div class="solutions"><details id="sec-Determining-Sample-Size-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-Determining-Sample-Size-4-2-1">
+<div class="solutions"><details id="sec-Determining-Sample-Size-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-Determining-Sample-Size-4-2-1"><span class="process-math">\(\overline{p}=\frac{39}{50}=0.78\)</span></div> <div class="para" id="sec-Determining-Sample-Size-4-2-2"><span class="process-math">\(ME_{\overline{p}}=0.08\)</span></div> <div class="para" id="sec-Determining-Sample-Size-4-2-3"><span class="process-math">\(1-\alpha=0.96\rightarrow \alpha=0.04\rightarrow \alpha/2=.02\)</span></div> <div class="para" id="sec-Determining-Sample-Size-4-2-4"><span class="process-math">\(z_{.02}=NORM.S.INV(.98)\approx 2.054\)</span></div> <div class="para logical" id="sec-Determining-Sample-Size-4-2-5"><div class="displaymath process-math">
+\begin{equation*}
+n\approx \frac{(2.054)^2(.78)^2(1-.78)}{(.08)^2}
+\end{equation*}
+</div></div> <div class="para logical" id="sec-Determining-Sample-Size-4-2-6">
 <div class="para">Using the formula (and rounding up), we’ll get that <span class="process-math">\(n\)</span> needs to be at least <span class="process-math">\(114\text{.}\)</span>  Since the pilot sample included <span class="process-math">\(50\)</span> voters, to get to <span class="process-math">\(114\)</span> voters, we need to sample</div>
 <div class="displaymath process-math">
 \begin{equation*}
-114-50=64\text{ more voters.}
+114-50=\boxed{64\text{ more voters.}}
 \end{equation*}
 </div>
-</div></div></details></div></article></details></section></div>
+</div>
+</div></details></div></article></details><article class="note remark-like" id="sec-Determining-Sample-Size-5"><h3 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">9.6.3</span><span class="period">.</span>
+</h3>
+<div class="para" id="sec-Determining-Sample-Size-5-1">If a pilot sample is not available, then use <span class="process-math">\(\overline{p}=0.5\text{.}\)</span>
+</div></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-Confidence-Interval-for-Proportion.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-Hypothesis-Testing-Single-Pop.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

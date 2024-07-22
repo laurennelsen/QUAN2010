@@ -434,13 +434,13 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <ol class="decimal" id="subsec-Confidence-Interval-Sigma-Unknown-3-2">
 <li id="subsec-Confidence-Interval-Sigma-Unknown-3-2-1"><div class="para" id="subsec-Confidence-Interval-Sigma-Unknown-3-2-1-1">
-<em class="emphasis">Table:</em> Use this link ...insert.... (or Table 5 in Appendix A of the textbook).  Note that you will locate the degrees of freedom along the left column and the confidence level across the top of the table -- the desired critical value is located where the two meet inside the table.</div></li>
+<em class="emphasis">Table:</em> Use this link <a class="external" href="https://www.brockport.edu/live/files/6866-studentstdistributiontablepdf" target="_blank"><code class="code-inline tex2jax_ignore">https://www.brockport.edu/live/files/6866-studentstdistributiontablepdf</code></a> (or Table 5 in Appendix A of the textbook).  Note that you will locate the degrees of freedom along the left column and the confidence level across the top of the table -- the desired critical value is located where the two meet inside the table.</div></li>
 <li id="subsec-Confidence-Interval-Sigma-Unknown-3-2-2"><div class="para logical" id="subsec-Confidence-Interval-Sigma-Unknown-3-2-2-1">
 <div class="para">
 <em class="emphasis">Excel:</em> Use the Excel formula</div>
 <div class="displaymath process-math">
 \begin{equation*}
-T.INV.2T(\alpha,df),
+\boxed{T.INV.2T(\alpha,df)},
 \end{equation*}
 </div>
 <div class="para">where <span class="process-math">\(\alpha=\text{ the significance level and }df=n-1.\)</span>
@@ -455,32 +455,38 @@ T.INV.2T(\alpha,df),
 </div>
 <article class="task exercise-like" id="subsec-Confidence-Interval-Sigma-Unknown-4-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="subsec-Confidence-Interval-Sigma-Unknown-4-2-1-1"><span class="process-math">\(n=18\)</span></div>
-<div class="solutions"><details id="subsec-Confidence-Interval-Sigma-Unknown-4-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="subsec-Confidence-Interval-Sigma-Unknown-4-2-2-1">
+<div class="solutions"><details id="subsec-Confidence-Interval-Sigma-Unknown-4-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="subsec-Confidence-Interval-Sigma-Unknown-4-2-2-1"><span class="process-math">\(df=17,\; t_{.05}=T.INV.2T(.10,17)\approx 1.74\)</span></div> <div class="para" id="subsec-Confidence-Interval-Sigma-Unknown-4-2-2-2"><span class="process-math">\(\hat{\sigma_{\overline{x}}}=\frac{13.9}{\sqrt{18}}\approx 3.276\)</span></div> <div class="para" id="subsec-Confidence-Interval-Sigma-Unknown-4-2-2-3"><span class="process-math">\(ME_{\overline{x}}\approx 1.74\cdot (3.276)\approx 5.7007\)</span></div> <div class="para" id="subsec-Confidence-Interval-Sigma-Unknown-4-2-2-4"><span class="process-math">\(\overline{x}\pm ME_{\overline{x}}\rightarrow 68\pm 5.7007\)</span></div> <div class="para logical" id="subsec-Confidence-Interval-Sigma-Unknown-4-2-2-5">
 <div class="para">We are <span class="process-math">\(90\%\)</span> confident that</div>
 <div class="displaymath process-math">
 \begin{equation*}
 62.299\lt \mu\lt 73.701 
 \end{equation*}
 </div>
-</div></div></details></div></article><article class="task exercise-like" id="subsec-Confidence-Interval-Sigma-Unknown-4-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+</div>
+</div></details></div></article><article class="task exercise-like" id="subsec-Confidence-Interval-Sigma-Unknown-4-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="subsec-Confidence-Interval-Sigma-Unknown-4-3-1-1"><span class="process-math">\(n=41\)</span></div>
-<div class="solutions"><details id="subsec-Confidence-Interval-Sigma-Unknown-4-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="subsec-Confidence-Interval-Sigma-Unknown-4-3-2-1">
+<div class="solutions"><details id="subsec-Confidence-Interval-Sigma-Unknown-4-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="subsec-Confidence-Interval-Sigma-Unknown-4-3-2-1"><span class="process-math">\(df=40,\; t_{.05}=T.INV.2T(.10,40)\approx 1.684\)</span></div> <div class="para" id="subsec-Confidence-Interval-Sigma-Unknown-4-3-2-2"><span class="process-math">\(\hat{\sigma_{\overline{x}}}=\frac{13.9}{\sqrt{41}}\approx 2.171\)</span></div> <div class="para" id="subsec-Confidence-Interval-Sigma-Unknown-4-3-2-3"><span class="process-math">\(ME_{\overline{x}}\approx 1.684\cdot (2.171)\approx 3.656\)</span></div> <div class="para" id="subsec-Confidence-Interval-Sigma-Unknown-4-3-2-4"><span class="process-math">\(\overline{x}\pm ME_{\overline{x}}\rightarrow 68\pm 3.656\)</span></div> <div class="para logical" id="subsec-Confidence-Interval-Sigma-Unknown-4-3-2-5">
 <div class="para">We are <span class="process-math">\(90\%\)</span> confident that</div>
 <div class="displaymath process-math">
 \begin{equation*}
 64.344\lt \mu\lt 71.656 
 \end{equation*}
 </div>
-</div></div></details></div></article><article class="task exercise-like" id="subsec-Confidence-Interval-Sigma-Unknown-4-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+</div>
+</div></details></div></article><article class="task exercise-like" id="subsec-Confidence-Interval-Sigma-Unknown-4-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="subsec-Confidence-Interval-Sigma-Unknown-4-4-1-1"><span class="process-math">\(n=64\)</span></div>
-<div class="solutions"><details id="subsec-Confidence-Interval-Sigma-Unknown-4-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="subsec-Confidence-Interval-Sigma-Unknown-4-4-2-1">
+<div class="solutions"><details id="subsec-Confidence-Interval-Sigma-Unknown-4-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="subsec-Confidence-Interval-Sigma-Unknown-4-4-2-1"><span class="process-math">\(df=63,\; t_{.05}=T.INV.2T(.10,63)\approx 1.669\)</span></div> <div class="para" id="subsec-Confidence-Interval-Sigma-Unknown-4-4-2-2"><span class="process-math">\(\hat{\sigma_{\overline{x}}}=\frac{13.9}{\sqrt{64}}\approx 1.7375\)</span></div> <div class="para" id="subsec-Confidence-Interval-Sigma-Unknown-4-4-2-3"><span class="process-math">\(ME_{\overline{x}}\approx 1.669\cdot (1.7375)\approx 2.8999\)</span></div> <div class="para" id="subsec-Confidence-Interval-Sigma-Unknown-4-4-2-4"><span class="process-math">\(\overline{x}\pm ME_{\overline{x}}\rightarrow 68\pm 2.8999\)</span></div> <div class="para logical" id="subsec-Confidence-Interval-Sigma-Unknown-4-4-2-5">
 <div class="para">We are <span class="process-math">\(90\%\)</span> confident that</div>
 <div class="displaymath process-math">
 \begin{equation*}
 65.1001\lt \mu\lt 70.8999 
 \end{equation*}
 </div>
-</div></div></details></div></article></article></details><details id="subsec-Confidence-Interval-Sigma-Unknown-5" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+</div>
+</div></details></div></article></article></details><details id="subsec-Confidence-Interval-Sigma-Unknown-5" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">9.4.2</span><span class="period">.</span>
 </h4></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="" data-multipleanswers="false">
 <div class="para" id="subsec-Confidence-Interval-Sigma-Unknown-5-1-1">Describe the effect on the interval by increasing the sample size.</div>
@@ -499,12 +505,14 @@ T.INV.2T(\alpha,df),
 </div>
 <article class="task exercise-like" id="subsec-Confidence-Interval-Sigma-Unknown-6-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="subsec-Confidence-Interval-Sigma-Unknown-6-2-1-1">Construct a <span class="process-math">\(90\%\)</span> confidence interval to estimate the average beer consumption per cruise.</div>
-<div class="solutions"><details id="subsec-Confidence-Interval-Sigma-Unknown-6-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="subsec-Confidence-Interval-Sigma-Unknown-6-2-2-1"><ul class="disc" id="subsec-Confidence-Interval-Sigma-Unknown-6-2-2-1-1">
-<li id="subsec-Confidence-Interval-Sigma-Unknown-6-2-2-1-1-1"><div class="para" id="subsec-Confidence-Interval-Sigma-Unknown-6-2-2-1-1-1-1">LCL: <span class="process-math">\(80,131\)</span>
+<div class="solutions"><details id="subsec-Confidence-Interval-Sigma-Unknown-6-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="subsec-Confidence-Interval-Sigma-Unknown-6-2-2-1"><span class="process-math">\(n=18\rightarrow df=17,\;\; \overline{x}=81977,\;\; s=4502\)</span></div> <div class="para" id="subsec-Confidence-Interval-Sigma-Unknown-6-2-2-2"><span class="process-math">\(\hat{\sigma_{\overline{x}}}=\frac{4502}{\sqrt{18}}\approx 1061,\;\; t_{.05}=NORM.S.INV(.95)\approx 1.74\)</span></div> <div class="para" id="subsec-Confidence-Interval-Sigma-Unknown-6-2-2-3"><span class="process-math">\(ME_{\overline{x}}\approx 1.74\cdot (1061)\approx 1846.14\)</span></div> <div class="para" id="subsec-Confidence-Interval-Sigma-Unknown-6-2-2-4"><span class="process-math">\(\overline{x}\pm ME_x \rightarrow 81977\pm 1846.14\)</span></div> <div class="para logical" id="subsec-Confidence-Interval-Sigma-Unknown-6-2-2-5"><ul class="disc" id="subsec-Confidence-Interval-Sigma-Unknown-6-2-2-5-1">
+<li id="subsec-Confidence-Interval-Sigma-Unknown-6-2-2-5-1-1"><div class="para" id="subsec-Confidence-Interval-Sigma-Unknown-6-2-2-5-1-1-1">LCL: <span class="process-math">\(80131\)</span>
 </div></li>
-<li id="subsec-Confidence-Interval-Sigma-Unknown-6-2-2-1-1-2"><div class="para" id="subsec-Confidence-Interval-Sigma-Unknown-6-2-2-1-1-2-1">UCL:  <span class="process-math">\(83,823\)</span>
+<li id="subsec-Confidence-Interval-Sigma-Unknown-6-2-2-5-1-2"><div class="para" id="subsec-Confidence-Interval-Sigma-Unknown-6-2-2-5-1-2-1">UCL:  <span class="process-math">\(83823\)</span>
 </div></li>
-</ul></div></div></details></div></article><article class="task exercise-like" id="subsec-Confidence-Interval-Sigma-Unknown-6-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+</ul></div> <div class="para" id="subsec-Confidence-Interval-Sigma-Unknown-6-2-2-6">We are <span class="process-math">\(90\%\)</span> confident that the average number of bottles consumed is between 80131 and 83823.</div>
+</div></details></div></article><article class="task exercise-like" id="subsec-Confidence-Interval-Sigma-Unknown-6-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="subsec-Confidence-Interval-Sigma-Unknown-6-3-1-1">What assumptions need to be made to construct this interval?</div>
 <div class="solutions"><details id="subsec-Confidence-Interval-Sigma-Unknown-6-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="subsec-Confidence-Interval-Sigma-Unknown-6-3-2-1">Since <span class="process-math">\(n\lt 30\text{,}\)</span> the population must be normally distributed.</div></div></details></div></article></article></details><details id="subsec-Confidence-Interval-Sigma-Unknown-7" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">9.4.4</span><span class="period">.</span>
