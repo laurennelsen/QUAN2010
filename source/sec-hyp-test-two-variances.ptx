@@ -21,15 +21,19 @@
 
 </introduction>
 
+<note>
+  In general, if we are testing to see if one variance is larger than the other, we want to choose population 1 to be the one with the larger sample standard deviation so that we will be doing a right-tail test.
+</note>
+
 
 
 
   <exercise>
-    <statement>
+    <introduction>
       <p>
         A company is doing a hypothesis test on the variation in quality from two suppliers. Both distributions are normal, and the populations are independent. Use <m>\alpha=0.05</m>. A sample of 29 products were selected from Supplier 1 and a standard deviation of quality was found to be 5.8426. A sample of 30 products were selected from Supplier 2 and a standard deviation of quality was found to be 3.2156. Test to see if the variance in quality for Supplier 1 is larger than Supplier 2.
       </p>
-    </statement>
+    </introduction>
     <task>
       <statement>
         <p>

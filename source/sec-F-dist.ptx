@@ -5,42 +5,151 @@
 
   <introduction>
 
-  <p>
-    !!!!!!!!!!make bullets below multiple choice!!!!!!!!!!
-  </p>
+ 
 
 
-</introduction>
-
-<definition xml:id="def-F-dist">
+<investigation xml:id="def-F-dist">
     <statement>
         <p>
             The <m>F</m>-Distribution is defined as the ratio of variances of two populations normally distributed.  It is unique in that it depends on two degrees of freedom:  <m>D_1</m> and <m>D_2</m>.  The other key properties of the <m>F</m>-distribution:
-            <ul>
-                <li>
-                    <p>
-                        The <m>F</m>-distribution curves are not symmetric, but instead ________________
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        As the degrees of freedom increase, the skewness of the curve __________________
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        The area under the curve is equal to _________________
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        All values of the <m>F</m>-distribution are greater than or equal to _________________
-                    </p>
-                </li>
-            </ul>
+
         </p>
     </statement>
-</definition>
+
+    <task>
+        <statement>
+            <p>
+                The <m>F</m>-distribution curves are not symmetric, but instead .....
+            </p>
+        </statement>
+        <choices>
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        positively skewed
+                    </p>
+                </statement>
+            </choice>
+            <choice correct="no">
+                <statement>
+                    <p>
+                        negatively skewed
+                    </p>
+                </statement>
+            </choice>
+        
+        </choices>
+    </task>
+
+    <task>
+        <statement>
+            <p>
+                As the degrees of freedom increase, the skewness of the curve .....
+            </p>
+        </statement>
+        <choices>
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        decreases
+                    </p>
+                </statement>
+            </choice>
+            <choice correct="no">
+                <statement>
+                    <p>
+                        increases
+                    </p>
+                </statement>
+            </choice>
+            <choice correct="no">
+                <statement>
+                    <p>
+                        stays the same
+                    </p>
+                </statement>
+            </choice>
+        
+        </choices>
+    </task>
+
+
+    <task>
+        <statement>
+            <p>
+                The area under the curve is equal to .....
+            </p>
+        </statement>
+        <choices>
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        1
+                    </p>
+                </statement>
+            </choice>
+            <choice correct="no">
+                <statement>
+                    <p>
+                        0
+                    </p>
+                </statement>
+            </choice>
+            <choice correct="no">
+                <statement>
+                    <p>
+                        5
+                    </p>
+                </statement>
+            </choice>
+        
+        </choices>
+    </task>
+
+    <task>
+        <statement>
+            <p>
+                All values of the <m>F</m>-distribution are greater than or equal to .....
+            </p>
+        </statement>
+        <choices>
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        0
+                    </p>
+                </statement>
+            </choice>
+            <choice correct="no">
+                <statement>
+                    <p>
+                        1
+                    </p>
+                </statement>
+            </choice>
+            <choice correct="no">
+                <statement>
+                    <p>
+                        5
+                    </p>
+                </statement>
+            </choice>
+            <choice correct="no">
+                <statement>
+                    <p>
+                        -1
+                    </p>
+                </statement>
+            </choice>
+        
+        </choices>
+    </task>
+
+
+
+</investigation>
+
+
 
 
 <figure xml:id="figure-geogebra-F-dist">
@@ -48,6 +157,9 @@
     <interactive xml:id="geogebra-F-dist" geogebra="vS9wXZBC" aspect="9:5" />
   </figure>
 
+
+
+</introduction>
 
 
   <p>

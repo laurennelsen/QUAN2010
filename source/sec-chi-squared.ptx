@@ -11,41 +11,151 @@
     <interactive xml:id="geogebra-chi-square" geogebra="UJZMCJXA" aspect="9:5" />
   </figure>
 
-  <p>
-    !!!!!!!!!!Make bullets below multiple choice!!!!!!!!!
-  </p>
+ 
 
-  <definition xml:id="def-chi-square">
+  <investigation xml:id="def-chi-square">
     <statement>
       <p>
         The chi-square (<q>ki square</q>) distribution, <m>\chi^2</m>, is similar to the Student's <m>t</m>-distribution in that it is a family of curves based on the number of degrees of freedom.  The other key properties of the Chi-square distribution:
       </p>
-      <p>
-        <ul>
-          <li>
-            <p>
-              The <m>\chi^2</m> distribution curves are not symmetric, but instead are ____________
-            </p>
-          </li>
-          <li>
-            <p>
-              As the degrees of freedom increases, the skewness ___________
-            </p>
-          </li>
-          <li>
-            <p>
-              The area under the curve is equal to __________
-            </p>
-          </li>
-          <li>
-            <p>
-              All <m>\chi^2</m> values are greater than or equal to ____________
-            </p>
-          </li>
-        </ul>
-      </p>
+
     </statement>
-  </definition>
+    <task>
+      <statement>
+        The <m>\chi^2</m> distribution curves are not symmetric, but instead are .....
+      </statement>
+      <choices>
+        <choice correct="yes">
+          <statement>
+            <p>
+              positively skewed
+            </p>
+          </statement>
+        </choice>
+        <choice correct="no">
+          <statement>
+            <p>
+              negatively skewed
+            </p>
+          </statement>
+        </choice>
+      </choices>
+      </task>
+     
+      <task>
+        <statement>
+          <p>
+            As the degrees of freedom increases, the skewness .....
+          </p>
+        </statement>
+        <choices>
+          <choice correct="yes">
+            <statement>
+              <p>
+                decreases
+              </p>
+            </statement>
+          </choice>
+          <choice correct="no">
+            <statement>
+              <p>
+                increases
+              </p>
+            </statement>
+          </choice>
+          <choice correct="no">
+            <statement>
+              <p>
+                stays the same
+              </p>
+            </statement>
+          </choice>
+        
+        </choices>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            The area under the curve is equal to .....
+          </p>
+        </statement>
+        <choices>
+          <choice correct="no">
+            <statement>
+              <p>
+                0
+              </p>
+            </statement>
+          </choice>
+          <choice correct="no">
+            <statement>
+              <p>
+                <m>1/2</m>
+              </p>
+            </statement>
+          </choice>
+          <choice correct="yes">
+            <statement>
+              <p>
+                1
+              </p>
+            </statement>
+          </choice>
+          <choice correct="no">
+            <statement>
+              <p>
+                2
+              </p>
+            </statement>
+          </choice>
+        
+        </choices>
+      </task>
+
+
+      <task>
+        <statement>
+          <p>
+            All <m>\chi^2</m> values are greater than or equal to .....
+          </p>
+        </statement>
+        <choices>
+          <choice correct="yes">
+            <statement>
+              <p>
+                0
+              </p>
+            </statement>
+          </choice>
+          <choice correct="no">
+            <statement>
+              <p>
+                1
+              </p>
+            </statement>
+          </choice>
+          <choice correct="no">
+            <statement>
+              <p>
+                <m>1/2</m>
+              </p>
+            </statement>
+          </choice>
+          <choice correct="no">
+            <statement>
+              <p>
+                2
+              </p>
+            </statement>
+          </choice>
+        </choices>
+      </task>
+
+          
+            
+  </investigation>
 
 
 </introduction>

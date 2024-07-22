@@ -92,6 +92,40 @@
 
         </p>
     </statement>
+    <answer>
+        <p>
+            <m>n=500,\; p=0.33,\; \overline{p}=\frac{170}{500}=0.34</m>
+        </p>
+        <p>
+            <m>H_0: \; p\leq 0.33</m>
+        </p>
+        <p>
+            <m>\alpha=0.05</m>
+        </p>
+        <p>
+            <m>np=500(.33)\geq 5</m>
+        </p>
+        <p>
+            <m>n(1-p)=500(.67)\geq 5</m>
+        </p>
+        <p>
+            <m>H_1: \; p\gt 0.33</m>
+        </p>
+        <p>
+            critical value:
+            <m>z_{.05}=NORM.S.INV(.95)\approx 1.645</m>
+        </p>
+        <p>
+            test statistic:
+            <m>z_p=\frac{.34-.33}{\sqrt{\frac{.33(.67)}{500}}}\approx .48</m>
+        </p>
+        <p>
+            Since <m>z_p\lt z_{.05}</m> and this is a right-tailed test, the test statistic does not fall in the rejection region, and we fail to reject <m>H_0</m>.
+        </p>
+        <p>
+            The sample does not provide enough evidence to support the claim that the proportion of admissions officials who visit a student's social networking page has increased in the past year.
+        </p>
+    </answer>
   </exercise>
 
   </section>

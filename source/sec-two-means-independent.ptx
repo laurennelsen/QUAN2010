@@ -87,6 +87,38 @@
 
         </p>
     </statement>
+    <answer>
+        <p>
+            Population 1 = average retirement age in Japan
+        </p>
+        <p>
+            Population 2 = average retirement age in US
+        </p>
+        <p>
+            <m>\alpha=0.05,\; n_1=n_2=30,\; \overline{x}_1=67.5,\; \overline{x}_2=64.6,\; \sigma_1=4.5,\; \sigma_2=4.0</m>
+        </p>
+        <p>
+            <m>H_0: \; \mu_1-\mu_2\leq 0</m>
+        </p>
+        <p>
+            <m>H_1: \; \mu_1-\mu_2\gt 0</m>
+        </p>
+        <p>
+            critical value: <m>NORM.S.INV(0.95)\approx 1.645</m>
+        </p>
+        <p>
+            standard error: <m>\sigma_{\overline{x}_1-\overline{x}_2}=\sqrt{\frac{(4.5)^2}{30}+\frac{(4.0)^2}{30}}\approx 1.0992</m>
+        </p>
+        <p>
+            test statistic: <m>z_{\overline{x}}\approx \frac{(67.5-64.6)-0}{1.0992}\approx 2.64</m>
+        </p>
+        <p>
+            Since the test statistic is bigger than the critical value and this is a right-tail test, we reject <m>H_0</m>.
+        </p>
+        <p>
+            There is enough evidence to conclude that the average retirement age in Japan is higher than in the USA.
+        </p>
+    </answer>
 </exercise>
 
 <exercise xml:id="ex-two-means-Excel">
@@ -223,7 +255,7 @@
 </p>
 
 <p>
-    In addition, we also need to determine whether or not to assume that the unknown variances are equal or unequal.  We could use the <m>F</m>-test from Chapter !!!!INSERT!!!!! to draw this conclusion -- but most of the time (in this class) you will be told which situation applies.  Let's examine the formulas associated with each of these two cases.
+    In addition, we also need to determine whether or not to assume that the unknown variances are equal or unequal.  We could use the <m>F</m>-test from <xref ref="ch-Hypothesis-Variance"/> to draw this conclusion -- but most of the time (in this class) you will be told which situation applies.  Let's examine the formulas associated with each of these two cases.
 </p>
 
 
@@ -461,6 +493,11 @@
           Which of the samples has a larger mean?
         </p>
       </statement>
+      <answer>
+        <p>
+            The sample of men's salaries has a larger mean than the sample of women's salaries.  (The sample mean women's salary is about <m>\$ 57,200</m>, and the sample mean men's salary is about <m>\$ 69,338</m>.)
+        </p>
+      </answer>
     </task>
     <task>
       <statement>
@@ -468,6 +505,29 @@
           Is there sufficient evidence to conclude that male employees in this company have higher salaries than female employees?
         </p>
       </statement>
+      <answer>
+        <p>
+            Population 1: women
+        </p>
+        <p>
+            Population 2: men
+        </p>
+        <p>
+            (Let's use <m>\alpha=0.10</m>.)
+        </p>
+        <p>
+            <m>H_0: \; \mu_1 - \mu_2 \geq 0</m>
+        </p>
+        <p>
+            <m>H_1: \; \mu_1 - \mu_2 \lt 0</m>
+        </p>
+        <p>
+            <url href="external/sheets/CompanySalariesSolution.xlsx" />
+        </p>
+        <p>
+            No, there is not sufficient evidence to conclude that male employees in this company have higher salaries than female employees because we got a p-value of <m>\approx 0.4182</m>, which is bigger than <m>\alpha</m>.
+        </p>
+      </answer>
     </task>
 
     </exercise>
