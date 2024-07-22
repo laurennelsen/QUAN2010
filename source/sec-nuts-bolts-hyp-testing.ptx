@@ -136,27 +136,58 @@
             Match each situation with the correct p-value.  (I recommend drawing a picture of the rejection region to help with this.)
         </p>
     </statement>
-    
+
     <matches>
 
         <match order="1">
-            <premise>left-tailed test, test stat. <m>z_{\overline{x}}=-2.75</m></premise>
-            <response><m>\approx 0.0030</m></response>
+            <premise>
+                <p>left-tailed test, test stat. <m>z_{\overline{x}}=-2.75</m>
+                    </p>
+                </premise>
+            <response>
+                <p>
+                <m>\approx 0.0030</m>
+            </p>
+            </response>
         </match>
 
         <match order="2">
-            <premise>right-tailed test, test stat. <m>z_{\overline{x}}=1.90</m></premise>
-            <response><m>\approx 0.0287</m></response>
+            <premise>
+                <p>
+                right-tailed test, test stat. <m>z_{\overline{x}}=1.90</m>
+                </p>
+            </premise>
+            <response>
+                <p>
+                <m>\approx 0.0287</m>
+                </p>
+            </response>
         </match>
 
         <match order="3">
-            <premise>two-tailed test, test stat. <m>z_{\overline{x}}=-1.84</m></premise>
-            <response><m>\approx 0.0658</m></response>
+            <premise>
+                <p>
+                two-tailed test, test stat. <m>z_{\overline{x}}=-1.84</m>
+                </p>
+            </premise>
+            <response>
+                <p>
+                <m>\approx 0.0658</m>
+                </p>
+            </response>
         </match>
 
         <match order="4">
-            <premise>two-tailed test, test stat. <m>z_{\overline{x}}=2.50</m></premise>
-            <response><m>\approx 0.0124</m></response>
+            <premise>
+                <p>
+                two-tailed test, test stat. <m>z_{\overline{x}}=2.50</m>
+                </p>
+            </premise>
+            <response>
+                <p>
+                <m>\approx 0.0124</m>
+                </p>
+            </response>
         </match>
         
     </matches>
@@ -220,9 +251,6 @@
 </introduction>
 
 
-<p>
-    Now we
-</p>
 
 </subsection>
 
