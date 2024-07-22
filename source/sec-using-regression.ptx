@@ -31,12 +31,49 @@
     </p>
 
     <p>
-
-    Construct and interpret the <m>95\%</m> confidence interval for the regression coefficient for each of the independent variables in the model.
-
+      (Here are the solutions to all parts of this problem:  <url href="external/sheets/HospitalExampleContinuedSolutions.xlsx" />
+      )
     </p>
-    
+
   </introduction>
+
+  <task>
+    <statement>
+      <p>
+        Find and interpret the adjusted coefficient of variation.
+      </p>
+    </statement>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Let <m>\alpha=0.10</m>, and test the following hypothesis:
+        <me>H_0:\;\beta_1=\beta_2=\beta_3=0</me>
+      </p>
+      <p>
+        <me>H_1:\; \text{at least one } \beta_i\neq 0</me>
+      </p>
+    </statement>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Let <m>\alpha = 0.05</m>, and test to see if each of the <m>\beta_i</m>s is equal to zero.
+      </p>
+    </statement>
+  </task>
+
+  <task>
+    <statement>
+      <p>
+        Construct and interpret the <m>95\%</m> confidence interval for the regression coefficient for each of the independent variables in the model.
+      </p>
+    </statement>
+  </task>
+
+    
   
 </exercise>
 

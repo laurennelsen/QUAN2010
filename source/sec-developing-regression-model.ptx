@@ -78,6 +78,11 @@
                 Construct a scatter plot for these data.  Let satisfaction be the independent variable and let activations be the dependent variable.
             </p>
         </statement>
+        <answer>
+            <p>
+                (Excel file with solutions is in the answer to the last part of this problem.)
+            </p>
+        </answer>
     </task>
     <task>
         <statement>
@@ -85,6 +90,11 @@
                 Determine the equation of the regression line for the data.
             </p>
         </statement>
+        <answer>
+            <p>
+                <m>y=6.919x-23.468</m>
+            </p>
+        </answer>
     </task>
     <task>
         <statement>
@@ -92,6 +102,11 @@
                 Interpret the value of the slope in the equation.
             </p>
         </statement>
+        <answer>
+            <p>
+                The slope means that for each 1 unit increase in satisfaction score, there is a 6.919 increase in activations.
+            </p>
+        </answer>
     </task>
     <task>
         <statement>
@@ -99,6 +114,12 @@
                 Predict the number of activations for an employee with a satisfaction level of 7.4.
             </p>
         </statement>
+        <answer>
+            <p>
+                For a satisfaction score of 7.4, the predicted number of activations is
+                <me>y=6.919(7.4-23.468=27.7326</me>
+            </p>
+        </answer>
     </task>
     <task>
         <statement>
@@ -106,6 +127,11 @@
                 Calculate the correlation coefficient for this sample.
             </p>
         </statement>
+        <answer>
+            <p>
+                <m>r\approx 0.8437</m>
+            </p>
+        </answer>
     </task>
     <task>
         <statement>
@@ -113,7 +139,14 @@
                 Using <m>\alpha=0.10</m>, test to determine if the population correlation coefficient is not equal to zero.  What conclusions can be made based on these results?
             </p>
         </statement>
+        <answer>
+            <p>
+                <url href="external/sheets/VerizonExampleCorrelationSolutions.xlsx" />
+    
+            </p>
+        </answer>
     </task>
+    
 </exercise>
 
 <exercise>
@@ -137,6 +170,14 @@ A hospital would like to develop a regression model to predict the total hospita
                 Construct a regression model using all three independent variables.
             </p>
         </statement>
+        <answer>
+            <p>
+                The regression model is y-hat = -462.5 + 113.555*x_1 + 1218.626*x_2 + 2213.213*x_3
+            </p>
+            <p>
+                <url href="external/sheets/HospitalExampleSolutions.xlsx" />
+            </p>
+        </answer>
     </task>
     <task>
         <statement>
@@ -144,6 +185,14 @@ A hospital would like to develop a regression model to predict the total hospita
                 Interpret the meaning of the regression coefficients.
             </p>
         </statement>
+        <answer>
+            <p>
+                For each additional year of age, the hospital bill increases by $113.56.  For each additional day spent in the hospital, the hospital bill increases by $1218.63.  For each additional day spent in the ICU, the hospital bill increases by $2213.21.
+            </p>
+            <p>
+                <url href="external/sheets/HospitalExampleSolutions.xlsx" />
+            </p>
+        </answer>
     </task>
     <task>
         <statement>
@@ -151,6 +200,14 @@ A hospital would like to develop a regression model to predict the total hospita
                 Predict the average hospital bill for a 76-year-old person hospitalized for 5 days with 3 days spent in the ICU.
             </p>
         </statement>
+        <answer>
+            <p>
+                The model predicts that the hospital bill for a 76 year old, in the hospital for 5 days, with 3 days spent in the ICU to be y-hat = -462.5 + 113.555*76 + 1218.626*5 + 2213.213*3 = $20,900.45
+            </p>
+            <p>
+                <url href="external/sheets/HospitalExampleSolutions.xlsx" />
+            </p>
+        </answer>
     </task>
 
 </exercise>
@@ -186,6 +243,39 @@ A hospital would like to develop a regression model to predict the total hospita
                 For <m>x=1</m>, what is the corresponding <m>y</m>-value, and what is <m>\hat{y}</m>?
             </p>
         </statement>
+        <choices>
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        <m>y=3</m>
+                    </p>
+                    <p>
+                        <m>\hat{y}\approx 1.581</m>
+                    </p>
+                </statement>
+            </choice>
+            <choice correct="no">
+                <statement>
+                    <p>
+                        <m>y\approx 1.581</m>
+                    </p>
+                    <p>
+                        <m>\hat{y}\approx 3</m>
+                    </p>
+                </statement>
+            </choice>
+            <choice correct="no">
+                <statement>
+                    <p>
+                        <m>y=1</m>
+                    </p>
+                    <p>
+                        <m>\hat{y}=1</m>
+                    </p>
+                </statement>
+            </choice>
+        
+        </choices>
     </task>
     <task>
         <statement>
@@ -193,6 +283,30 @@ A hospital would like to develop a regression model to predict the total hospita
                 For <m>x=1</m>, what is <m>y-\hat{y}</m>?
             </p>
         </statement>
+        <choices>
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        <m>y-\hat{y}\approx 3-1.581=1.419</m>
+                    </p>
+                </statement>
+            </choice>
+            <choice correct="no">
+                <statement>
+                    <p>
+                        <m>y-\hat{y}\approx 0.5-1.581=-1.081</m>
+                    </p>
+                </statement>
+            </choice>
+            <choice correct="no">
+                <statement>
+                    <p>
+                        <m>y-\hat{y}\approx 0.5-0=0.5</m>
+                    </p>
+                </statement>
+            </choice>
+        
+        </choices>
     </task>
   </exercise>
 
@@ -287,6 +401,12 @@ A hospital would like to develop a regression model to predict the total hospita
                 <url href="external/sheets/VerizonExample.xlsx" />
             </p>
 
+            <p>
+                (Here are the solutions to all parts from this problem:
+                    <url href="external/sheets/VerizonExampleRegressionSolutions.xlsx" />)
+    
+            </p>
+
         </introduction>
 
         <task>
@@ -317,6 +437,12 @@ A hospital would like to develop a regression model to predict the total hospita
                 </p>
             </statement>
         </task>
+       
     </exercise>
+
+
+    <note>
+        <q>Multiple R</q> under <q>Regression Statistics</q> is the absolute value of the sample correlation coefficient, <m>r</m>.
+    </note>
 
 </section>

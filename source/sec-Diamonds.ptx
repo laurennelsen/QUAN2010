@@ -27,7 +27,7 @@
 
   <exercise>
 
-    <statement>
+    <introduction>
         <p>
             Here is the file we are going to use for this problem:
             <url href="external/sheets/Diamonds.xlsx" />
@@ -35,28 +35,43 @@
         <p>
             The price of diamonds is not just determined by size, but by multiple characteristics.  For simplicity, in this example we will start with size.  Create the scatterplot for the two variables <q>Price</q> and <q>Carat</q>.
         </p>
-  
-    <p>
-        <ol>
-            <li>
+        <p>
+            (The solutions to all parts of this problem are here:              <url href="external/sheets/DiamondsSimpleLinearRegressionSolutions.xlsx" />)
+            
+        </p>
+        </introduction>
+
+
+        <task>
+            <statement>
                 <p>
                     Determine the least squares line.  Interpret the slope coefficient.
+
                 </p>
-            </li>
-            <li>
+            </statement>
+        </task>
+
+
+        <task>
+            <statement>
                 <p>
                     According to your least squares line, what would you expect the price to be for a 5 carat diamond?
+
                 </p>
-            </li>
-            <li>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
                 <p>
                     Compute the coefficient of correlation.  What does it tell you about the relationship between the size of a diamond and the price?
-                </p>
-            </li>
-        </ol>
-    </p>
 
-</statement>
+                </p>
+            </statement>
+        </task>
+  
+    
+
 </exercise>
 
 
@@ -67,7 +82,7 @@
 
 <exercise>
 
-    <statement>
+    <introduction>
         <p>
             We're going to use the same file we used in the previous problem:
             <url href="external/sheets/Diamonds.xlsx" />
@@ -75,43 +90,73 @@
         <p>
             Now we will take into consideration the other characteristics of diamonds that determine price:  carat, color, clarity, and cut.  Let's redo the regression and create a model that does a better job than the one in the previous example that only included a single predictor variable.
         </p>
-  
-    <p>
-        <ol>
-            <li>
+        <p>
+            (The solutions to all parts of this problem are here:              <url href="external/sheets/DiamondsMultipleRegressionSolutions.xlsx" />)
+            
+        </p>
+        </introduction>
+
+
+
+        <task>
+            <statement>
                 <p>
                     Create the regression model with all 5 variables that are provided:  color, depth (in percentage), clarity, table (in percentage), and carat.
+
                 </p>
-            </li>
-            <li>
+            </statement>
+        </task>
+
+
+        <task>
+            <statement>
                 <p>
                     Interpret each of the coefficients in the model.
+
                 </p>
-            </li>
-            <li>
+            </statement>
+        </task>
+
+
+        <task>
+            <statement>
                 <p>
                     Do all 5 of the predictor variables belong in the model?  Why or why not?
+
                 </p>
-            </li>
-            <li>
+            </statement>
+        </task>
+
+
+        <task>
+            <statement>
                 <p>
                     Is the overall model valid?  Why or why not?
+
                 </p>
-            </li>
-            <li>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
                 <p>
                     What is the coefficient of determination?  What does it tell you about the model?
+
                 </p>
-            </li>
-            <li>
+            </statement>
+        </task>
+
+        <task>
+            <statement>
                 <p>
                     Remove variables one by one and reassess the model.  What is the best model to predict the price of a diamond?  Why?
-                </p>
-            </li>
-        </ol>
-    </p>
 
-</statement>
+                </p>
+            </statement>
+        </task>
+  
+   
+
 </exercise>
 
   

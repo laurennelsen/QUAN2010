@@ -37,8 +37,116 @@
     <p>
         Correlation analysis provides a way to measure the strength and direction of the linear relationship between the two variables (the aforementioned independent and dependent variables).  This is done by computing the <em>sample correlation coefficient</em>, <m>r</m>.
     </p>
+    </statement>
 
-    <p>
+
+    <exercise>
+        <task>
+            <statement>
+                <p>
+                    The range of the correlation coefficient is ...
+                </p>
+            </statement>
+            <choices>
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            -1 to 1
+                        </p>
+                    </statement>
+                </choice>
+                <choice correct="no">
+                    <statement>
+                        <p>
+                            0 to 1
+                        </p>
+                    </statement>
+                </choice>
+                <choice correct="no">
+                    <statement>
+                        <p>
+                            -1 to 0
+                        </p>
+                    </statement>
+                </choice>
+                <choice correct="no">
+                    <statement>
+                        <p>
+                            0 to 100
+                        </p>
+                    </statement>
+                </choice>
+            
+            </choices>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    A <em>positive</em> value of the correlation coeffficient indicates that as <m>x</m> increases, ...
+                </p>
+            </statement>
+            <choices>
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            <m>y</m> also increases.
+                        </p>
+                    </statement>
+                </choice>
+                <choice correct="no">
+                    <statement>
+                        <p>
+                            <m>y</m> decreases.
+                        </p>
+                    </statement>
+                </choice>
+                <choice correct="no">
+                    <statement>
+                        <p>
+                            <m>y</m> stays the same.
+                        </p>
+                    </statement>
+                </choice>
+            
+            </choices>
+        </task>
+
+        <task>
+            <statement>
+                <p>
+                    A <em>negative</em> value of the correlation coeffficient indicates that as <m>x</m> increases, ...
+                </p>
+            </statement>
+            <choices>
+                <choice correct="no">
+                    <statement>
+                        <p>
+                            <m>y</m> increases.
+                        </p>
+                    </statement>
+                </choice>
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            <m>y</m> decreases.
+                        </p>
+                    </statement>
+                </choice>
+                <choice correct="no">
+                    <statement>
+                        <p>
+                            <m>y</m> stays the same.
+                        </p>
+                    </statement>
+                </choice>
+            
+            </choices>
+        </task>
+
+    </exercise>
+
+    <!--<p>
         The range of the correlation coefficient is <m>-1\text{ to } 1</m>.
 
         <ul>
@@ -53,7 +161,7 @@
                 </p>
             </li>
         </ul>
-    </p>
+    </p>-->
 
 <p>
     Recall that we used the Excel formula, CORREL, to calculate this number in a previous chapter.  Now we improve on that skill by learning how to use a hypothesis test to assess the strength of the linear relationship described by <m>r</m>.
@@ -81,12 +189,11 @@
     </p>
 
     <p>
-        Degrees of freedom here are....
-        <m>  df=..... </m>
+        Degrees of freedom here are:
+        <m>  df=n-2 </m>.
     </p>
 
 
-    </statement>
 
 
 
@@ -107,6 +214,11 @@
                     Determine the sample correlation coefficient between the number of new listings and the precipitation.
                 </p>
             </statement>
+            <answer>
+                <p>
+                    <m>r\approx 0.2867</m>
+                </p>
+            </answer>
         </task>
         <task>
             <statement>
@@ -114,6 +226,11 @@
                     Determine the sample correlation coefficient between the number of new listings and the maximum temperature.
                 </p>
             </statement>
+            <answer>
+                <p>
+                    <m>r\approx 0.6864</m>
+                </p>
+            </answer>
         </task>
         <task>
             <statement>
@@ -121,6 +238,15 @@
                     Using <m>\alpha=0.02</m>, test if the population correlation coefficient between the number of new listings and the maximum temperature is different from zero.  What conclusions can you draw?
                 </p>
             </statement>
+            <answer>
+                <p>
+                    <url href="external/sheets/Colorado Housing Inventory and Weather Data Solutions.xlsx" />
+
+                </p>
+                <p>
+                    We reject the null hypothesis and can conclude that the population correlation coefficient between the number of new listings and the maximum temperature is different from zero, and there is a linear relationship between these two variables.
+                </p>
+            </answer>
         </task>
 </exercise>
 
