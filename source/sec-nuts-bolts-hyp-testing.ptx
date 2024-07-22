@@ -24,12 +24,19 @@
             <p>
                 We survey <m>200</m> students, and the sample average is <m>15</m> hours per week.  If the population mean really is <m>\mu=13.5</m>, what is the probability of getting a sample mean this extreme?
             </p>
+            
         </statement>
     </task>
     <task>
         <statement>
             <p>
                 We survey <m>15</m> students, and the sample average is <m>14</m> hours per week.  If the population mean really is <m>\mu=13.5</m>, what is the probability of getting a sample mean this extreme?
+            </p>
+            <p>
+                (Let's use the link below to think about these questions.)
+            </p>
+            <p>
+                <url href="https://www.emathinstruction.com/sample-normal-distribution/" />
             </p>
         </statement>
     </task>
@@ -62,7 +69,7 @@
 
 
 <p>
-    !!!!!!INSERT Exercises 4 and 5 from the notes!!!!!!
+    !!!!!!FIX FOLLOWING EXERCISES!!!!!!
 </p>
 
 
@@ -74,28 +81,81 @@
     </statement>
     <matches>
 
-        <match>
+        <match order="1">
             <premise>
                 <p>
-                    A left-tailed test with <m>\alpha=0.01</m>
+                    A left-tailed test with significance level 0.01
                 </p>
             </premise>
             <response> 
                 <p>
-                <m>NORM.S.INV(0.01)\approx </m>
+                <m>NORM.S.INV(0.01)\approx -2.33 </m>
             </p> 
         </response>
         </match>
 
-        <match>
+        <match order="2">
             <premise>
                 <p>
-                    A right-tailed test with <m>\alpha=0.10</m></p>
+                    A right-tailed test with <m>\alpha=0.10</m>
+                </p>
                 </premise>
                 <response> 
                     <p>
-                        <m>NORM.S.INV(0.9)\approx </m></p> 
+                        <m>NORM.S.INV(0.9)\approx 1.28 </m>
+                    </p> 
                     </response>
+        </match>
+
+
+        <match order="3">
+            <premise>
+                <p>
+                    A two-tailed test with <m>\alpha=0.05</m>
+                </p>
+            </premise>
+            <response>
+                <p>
+                    <m>NORM.S.INV(0.025)\approx -1.96</m>
+                </p>
+                <p>
+                    <m>\pm 1.96</m>
+                </p>
+            </response>
+        </match>
+        
+        
+    </matches>
+</exercise>
+
+
+
+<exercise>
+    <statement>
+        <p>
+            Match each situation with the correct p-value.  (I recommend drawing a picture of the rejection region to help with this.)
+        </p>
+    </statement>
+    <matches>
+
+        <match order="1">
+            <premise>A left-tailed test with test statistic <m>z_{\overline{x}}=-2.75</m></premise>
+            <response><m>NORM.S.DIST(-2.75,TRUE)\approx 0.0030</m></response>
+        </match>
+
+        <match order="2">
+            <premise>A right-tailed test with test statistic <m>z_{\overline{x}}=1.90</m></premise>
+            <response><m>1-NORM.S.DIST(1.90,TRUE)\approx 0.0287</m></response>
+        </match>
+
+        <match order="3">
+            <premise>A two-tailed test with test statistic <m>z_{\overline{x}}=-1.84</m></premise>
+            <response><m>2\cdot NORM.S.DIST(-1.84,TRUE)\approx 0.0658</m></response>
+        </match>
+
+        <match order="4">
+            <premise>A two-tailed test with test statistic <m>z_{\overline{x}}=2.50</m></premise>
+            <response><m>2\cdot NORM.S.DIST(-2.5,1)\approx 0.0124</m></response>
         </match>
         
     </matches>
@@ -258,6 +318,14 @@
                 Step 2:  Draw the appropriate curve, identify the significance level, and label critical value(s).
             </p>
         </statement>
+        <answer>
+            <p>
+                <figure>
+                    <caption>powered by Desmos</caption>
+                    <interactive xml:id="desmos-pizza-example" desmos="hbkpuoy7hm" aspect="4:3" />
+                  </figure>
+            </p>
+        </answer>
     </task>
     <task>
         <statement>
@@ -326,7 +394,7 @@
                     </li>
                     <li>
                         <p>
-                            <m>H_1</m>:  <m>\mu\neq</m>  (<m>\leftarrow </m> two-tail test)
+                            <m>H_1</m>:  <m>\mu\neq 5</m>  (<m>\leftarrow </m> two-tail test)
                         </p>
                     </li>
                 </ul>
@@ -339,6 +407,20 @@
                 Step 2:  Draw the appropriate curve, identify the significance level, and label critical value(s).
             </p>
         </statement>
+        <answer>
+            <p>
+                <figure>
+                    <caption>powered by Desmos</caption>
+                    <interactive xml:id="desmos-deli-example" desmos="3dtileotui" aspect="4:3" />
+                  </figure>
+            </p>
+            <p>
+                <m>-z_{.025}=NORM.S.INV(.025)\approx -1.96</m>
+            </p>
+            <p>
+                By symmetry, <m>z_{.025}\approx 1.96</m>
+            </p>
+        </answer>
     </task>
     <task>
         <statement>
@@ -461,6 +543,14 @@
                 Step 2:  Draw the appropriate curve, identify the significance level.
             </p>
         </statement>
+        <answer>
+            <p>
+                <figure>
+                    <caption>powered by Desmos</caption>
+                    <interactive xml:id="desmos-sporting-goods-example" desmos="ewo5ogwkeh" aspect="4:3" />
+                  </figure>
+            </p>
+        </answer>
     </task>
     <task>
         <statement>

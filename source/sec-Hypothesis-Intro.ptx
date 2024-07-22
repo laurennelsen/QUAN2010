@@ -145,9 +145,15 @@ Suppose we draw a random sample from the population and get a sample mean higher
         <p>
             A <em>one-tail hypothesis test</em> can be viewed as either a <em>left-tail</em> or <em>right-tail</em> test.
         </p>
-        <p>
-            .....insert definition.......
-        </p>
+                    <figure>
+                        <caption>Left-tail test powered by Desmos</caption>
+                        <interactive xml:id="desmos-left-tail" desmos="pg1apkehzq" aspect="4:3" />
+                      </figure>
+
+                      <figure>
+                        <caption>Right-tail test powered by Desmos</caption>
+                        <interactive xml:id="desmos-right-tail" desmos="e9xpcyrli3" aspect="4:3" />
+                      </figure>
     </statement>
 </definition>
 
@@ -163,11 +169,25 @@ Suppose we draw a random sample from the population and get a sample mean higher
                 <xref ref="ex-onetail"/>
             </p>
         </statement>
-        <answer>
-            <p>
-                one-tail test
-            </p>
-        </answer>
+        <choices>
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        one-tail test
+                    </p>
+                </statement>
+            </choice>
+            <choice correct="no">
+                <statement>
+                    <p>
+                        two-tail test
+                    </p>
+                </statement>
+            </choice>
+        
+        </choices>
+        
+    
     </task>
     <task>
         <statement>
@@ -175,11 +195,23 @@ Suppose we draw a random sample from the population and get a sample mean higher
         <xref ref="ex-twotail"/>
             </p>
             </statement>
-        <answer>
-            <p>
-                two-tail test
-            </p>
-        </answer>
+            <choices>
+                <choice correct="no">
+                    <statement>
+                        <p>
+                            one-tail test
+                        </p>
+                    </statement>
+                </choice>
+                <choice correct="yes">
+                    <statement>
+                        <p>
+                            two-tail test
+                        </p>
+                    </statement>
+                </choice>
+            
+            </choices>
     </task>
 </exercise>
 

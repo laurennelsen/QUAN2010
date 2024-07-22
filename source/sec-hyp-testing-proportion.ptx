@@ -3,8 +3,25 @@
 <section xml:id="sec-hyp-testing-proportion" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Hypothesis Testing for the Population Proportion</title>
 
-
   <introduction>
+    <p>
+        Now we want to see how we can use information about a sample proportion to see what we can conclude about the population proportion.
+    </p>
+  </introduction>
+
+  <investigation>
+    <p>
+        A Harris poll surveyed 2016 adults and found that 463 of them had one or more tattoos. Does the sample provide evidence that the percentage of adults who have a tattoo is less than 25%? 
+
+    </p>
+    <p>
+        <figure xml:id="figure-geogebra-tattoo-simulation">
+            <caption>Tattoo Simulation (Made in GeoGebra by Steve Phelps)</caption>
+            <interactive xml:id="geogebra-tattoo-simulation" geogebra="ava6qwmr" aspect="9:5" />
+          </figure>
+    </p>
+    </investigation>
+
     <p>
         The last type of hypothesis test that we will study in this chapter involves the population proportion, <m>p</m>.  This test is useful for testing claims made about the proportion of something.  Recall that proportion data follow the binomial distribution, which can be approximated by the normal distribution under the conditions:
         <me>np\geq 5 \text{ and } n(1-p)\geq 5,\text{ where}</me>
@@ -21,7 +38,6 @@
         When these conditions are met, the test statistic for this hypothesis test is calculated with this formula:
         <me>z_p = \frac{\overline{p}-p}{\sqrt{\frac{p(1-p)}{n}}}</me>
     </p>
-  </introduction>
 
 
   <exercise>
@@ -34,6 +50,35 @@
 
         </p>
     </statement>
+    <answer>
+        <p>
+            <m>n=200,\; \alpha=0.10,\; p=.45,\; \overline{p}=\frac{80}{200}</m>
+        </p>
+        <p>
+            <m>np=200(.45)=90\geq 5</m>
+        </p>
+        <p>
+            <m>n(1-p)=200(.55)\geq 5</m>
+        </p>
+        <p>
+            <m>H_0:\; p\geq .45</m>
+        </p>
+        <p>
+            <m>H_1:\; p\lt .45</m>
+        </p>
+        <p>
+            <me>z_p=\frac{.40-.45}{\sqrt{\frac{.45(.55)}{200}}}\approx -1.42</me>
+        </p>
+        <p>
+            <me>\text{p-value}\approx NORM.S.DIST(-1.42,1)\approx 0.0778</me>
+        </p>
+        <p>
+            <me>\text{p-value}\lt\alpha\rightarrow \text{ Reject } H_0</me>
+        </p>
+        <p>
+            There is enough evidence to conclude that the proportion of unemployed out of work more than 6 months declined as the job market improved.
+        </p>
+    </answer>
   </exercise>
 
 

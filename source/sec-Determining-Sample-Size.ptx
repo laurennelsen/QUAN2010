@@ -67,7 +67,19 @@
     </statement>
     <answer>
         <p>
-            Using the formula, we'll get <m>n\approx 165.87</m>.  We always need to round up to guarantee the desired margin of error.  So here, we need a sample size of at least <m>166</m>.
+            <m>ME_{\overline{x}}=0.5</m>
+        </p>
+        <p>
+            <m>\sigma=2.5</m>
+        </p>
+        <p>
+            <m>1-\alpha=0.99\rightarrow \alpha=0.01\rightarrow \alpha/2=.005\rightarrow z_{.005}=NORM.S.INV(.995)\approx 2.575</m>
+        </p>
+        <p>
+            <me>n\approx \frac{(2.575)^2(2.5)^2}{(0.5)^2}\approx 165.87</me>
+        </p>
+        <p>
+            Using the formula, we'll get <m>n\approx 165.87</m>.  We always need to round up to guarantee the desired margin of error.  So here, we need a sample size of at least <m>\boxed{166}</m>.
         </p>
     </answer>
   </exercise>
@@ -84,10 +96,32 @@
     </statement>
     <answer>
         <p>
+            <m>\overline{p}=\frac{39}{50}=0.78</m>
+        </p>
+        <p>
+            <m>ME_{\overline{p}}=0.08</m>
+        </p>
+        <p>
+            <m>1-\alpha=0.96\rightarrow \alpha=0.04\rightarrow \alpha/2=.02</m>
+        </p>
+        <p>
+            <m>z_{.02}=NORM.S.INV(.98)\approx 2.054</m>
+        </p>
+        <p>
+            <me>n\approx \frac{(2.054)^2(.78)^2(1-.78)}{(.08)^2}</me>
+        </p>
+        <p>
             Using the formula (and rounding up), we'll get that <m>n</m> needs to be at least <m>114</m>.  Since the pilot sample included <m>50</m> voters, to get to <m>114</m> voters, we need to sample
-            <me>114-50=64\text{ more voters.}</me>
+            <me>114-50=\boxed{64\text{ more voters.}}</me>
         </p>
     </answer>
   </exercise>
+
+
+  <note>
+    <p>
+        If a pilot sample is not available, then use <m>\overline{p}=0.5</m>.
+    </p>
+  </note>
 
 </section>

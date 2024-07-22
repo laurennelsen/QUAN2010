@@ -25,7 +25,7 @@
 
 
 <p>
-    ....include an example......
+    For example, let's say we work for a company with 500 employees, and we want to understand what proportion of employees is happy with their health benefits.  We sample 20 employees, and in that sample, <m>65\%</m> of the employees are happy with their health benefits.  It is probably not the case that exactly <m>65\%</m> of <em>all</em> employees are happy with their health benefits.  However, we would like to use that point estimate of <m>65\%</m> to estimate the true proportion of <em>all</em> employees that is happy with their health benefits.
 </p>
 
 </section>

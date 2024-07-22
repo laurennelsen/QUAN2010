@@ -11,7 +11,10 @@
     <!-- Level at which are html files generated (chapter/section/etc): -->
     <chunking level="2" />
     <!-- Depth for table of contents.  0 means no TOC -->
-    <tableofcontents level="0" />
+    <!-- (There are issues when this is set to 2 for the print version. Set to 0 for the print version and 2 for web version)-->
+  
+    <tableofcontents level="2" />
+
     <!-- Visibility of exercise components where they first appear.          -->
     <!-- There are four components (statement/hint/answer/solution) for each -->
     <!-- of five exercise types (inline/divisional/worksheet/reading/        -->
@@ -29,7 +32,8 @@
   <!-- stored or created.  Directories are relative to the main -->
   <!-- source PreTeXt file                                      -->
   <source>
-    <version include=""/>
+    <!--Include the following line to remove the problematic MyOpenMath Problems for the print version (they can be included in the online version):-->
+    <!--<version include=""/>-->
     <directories external="../assets" generated="../generated-assets" />
     <!-- Set which marked elements are included in this version: -->
     <!-- See

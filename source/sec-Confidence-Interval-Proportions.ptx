@@ -78,6 +78,15 @@
         </statement>
         <answer>
             <p>
+                <m>\hat{\sigma_p}=\sqrt{\frac{.779(1-.779)}{240}}\approx .0268</m>
+            </p>
+            <p>
+                <m>\alpha=0.10\rightarrow\alpha/2=.05\rightarrow z_{.05}=NORM.S.INV(.95)\approx 1.645</m>
+            </p>
+            <p>
+                <m>ME_{\overline{p}}\approx 1.645\cdot (.0268)</m>
+            </p>
+            <p>
                 <me>ME_{\overline{p}}\approx 0.0441</me>
             </p>
         </answer>
@@ -89,6 +98,9 @@
             </p>
         </statement>
         <answer>
+            <p>
+                <m>\overline{p}\pm ME_{\overline{p}}\rightarrow .779\pm .0441</m>
+            </p>
             <p>
                 We are <m>90\%</m> confident that <m>0.7349\lt p \lt 0.8231</m>.  (That is, we are <m>90\%</m> confident that the proportion of taxpayers who filed electronically in 2018 is between <m>73.49\%</m> and <m>82.31\%</m>.)
             </p>

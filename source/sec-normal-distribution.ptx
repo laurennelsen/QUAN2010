@@ -423,6 +423,43 @@ There are many examples of random variables that are normally distributed in man
             <p>
                 We're going to do a matching activity in class to practice working with these formulas to calculate probabilities for normal distributions.  (The next few exercises include online versions of this activity.)
             </p>
+            <answer>
+                <p>
+                    Here are the solutions to the in-class activity:
+                    <ul>
+                        <li>
+                            <p>
+                                1, L, @
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                2, I, <m>\infty</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                3,A,!
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                4,F,<m>\box</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                5,B,<m>\triangle</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                ...need to fix this....
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </answer>
           </activity>
 
 
@@ -579,6 +616,9 @@ There are many examples of random variables that are normally distributed in man
     </matches>
 
 </exercise>
+
+
+
 
 
 
@@ -1034,6 +1074,12 @@ There are many examples of random variables that are normally distributed in man
               <p> If <m>P(32.27-k\lt X\lt 32.27+k)=42\%</m> then <m>k\approx 2.0032526847915357</m> years. </p>
             </answer>
           </task>
+      </exercise>
+
+
+
+      <exercise>
+        <myopenmath problem="803116" />
       </exercise>
 
 

@@ -94,14 +94,14 @@
 
 
             <exercise>
+                <introduction>
                 <p>
                     (Donnelly 6.21,22)
                 </p>
-                <statement>
                     <p>
                         An exponential probability distribution has a mean equal to 5 minutes per customer.  Calculate the following probabilities for the distribution.
                     </p>
-                </statement>
+                </introduction>
                 <task>
                     <m>P(X\leq 10)</m>
                     <answer>
@@ -164,6 +164,108 @@
                     <p>
                       Incorrect.
                       Did you round to four decimal places?
+                    </p>
+                    <p>
+                        (Here <m>\lambda=\frac{18\text{ customers}}{1\text{ hour}}\cdot\frac{1\text{ hour}}{60\text{ min}}=0.3\text{ customers per minute}.</m>)
+                    </p>
+                  </feedback>
+                  </condition>
+                  </var>
+                </setup>
+              </exercise> 
+
+
+
+              <exercise>
+                <statement>
+                    <p>
+                    An exponential probability distribution has lambda equal to <m>18</m> customers per hour.  Find the probability that the next customer will arrive within the next 15 minutes.  (Round your answer to 4 decimal places.)  <var/>
+                  </p>
+                </statement>
+                <setup>
+                  <var>
+              
+                  <condition number="0.9889" tolerance="0.0001">
+                  <feedback>
+                    <p>
+                      Any value in the interval <m>0.9889\pm 0.0001</m> is marked as correct for this problem.
+                    </p>
+                  </feedback>
+                  </condition>
+                  <condition string=".*">
+                  <feedback>
+                    <p>
+                      Incorrect.
+                      Did you round to four decimal places?  
+                    </p>
+                    <p>
+                        (Here <m>\lambda=\frac{18\text{ customers}}{1\text{ hour}}\cdot\frac{1\text{ hour}}{60\text{ min}}=0.3\text{ customers per minute}.</m>)
+                    </p>
+                  </feedback>
+                  </condition>
+                  </var>
+                </setup>
+              </exercise> 
+
+
+
+              <exercise>
+                <statement>
+                    <p>
+                    An exponential probability distribution has lambda equal to <m>18</m> customers per hour.  Find the probability that the next customer will arrive within the next 2 to 5 minutes.  (Round your answer to 4 decimal places.)  <var/>
+                  </p>
+                </statement>
+                <setup>
+                  <var>
+              
+                  <condition number="0.3257" tolerance="0.0001">
+                  <feedback>
+                    <p>
+                      Any value in the interval <m>0.3257\pm 0.0001</m> is marked as correct for this problem.
+                    </p>
+                  </feedback>
+                  </condition>
+                  <condition string=".*">
+                  <feedback>
+                    <p>
+                      Incorrect.
+                      Did you round to four decimal places?  
+                    </p>
+                    <p>
+                        (Here <m>\lambda=\frac{18\text{ customers}}{1\text{ hour}}\cdot\frac{1\text{ hour}}{60\text{ min}}=0.3\text{ customers per minute}.</m>)
+                    </p>
+                  </feedback>
+                  </condition>
+                  </var>
+                </setup>
+              </exercise> 
+
+
+
+              <exercise>
+                <statement>
+                    <p>
+                    An exponential probability distribution has lambda equal to <m>18</m> customers per hour.  Find the probability that the next customer will arrive within the next 45 <em>seconds</em>.  (Round your answer to 4 decimal places.)  <var/>
+                  </p>
+                </statement>
+                <setup>
+                  <var>
+              
+                  <condition number="0.2015" tolerance="0.0001">
+                  <feedback>
+                    <p>
+                      Any value in the interval <m>0.2015\pm 0.0001</m> is marked as correct for this problem.
+                    </p>
+                  </feedback>
+                  </condition>
+                  <condition string=".*">
+                  <feedback>
+                    <p>
+                      Incorrect.
+                      Did you round to four decimal places?  
+                    </p>
+                    <p>
+                        (Here <m>\lambda=\frac{0.3\text{ customers}}{1\text{ minute}}\cdot\frac{1\text{ minute}}{60\text{ seconds}}=0.005\text{ customers per second}.</m>)
                     </p>
                   </feedback>
                   </condition>

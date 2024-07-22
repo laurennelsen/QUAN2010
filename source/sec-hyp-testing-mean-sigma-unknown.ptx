@@ -25,6 +25,31 @@
 
         </p>
     </statement>
+    <answer>
+        <p>
+            <m>n=35\rightarrow df=34,\;\; \overline{x}=752,\;\; s=22,\;\; \alpha=0.05</m>
+        </p>
+        <p>
+            <m>H_0: \; \mu\leq 742</m>
+        </p>
+        <p>
+            <m>H_1: \; \mu\gt 742 \;\; (\leftarrow \text{ right-tail test})</m>
+        </p>
+        <p>
+            critical value:
+            <m>t_{.05}=T.INV(.95,34)\approx 1.691</m>
+        </p>
+        <p>
+            test statistic:
+            <me>t_{\overline{x}}=\frac{752-742}{22/\sqrt{35}}\approx 2.69</me>
+        </p>
+        <p>
+            Since <m>t_{\overline{x}}\gt t_{\alpha}</m>, the test statistic falls in the rejection region; therefore, reject <m>H_0</m>.
+        </p>
+        <p>
+            There is enough evidence to conclude that the average credit score for mortgages has increased since 2017.
+        </p>
+    </answer>
   </exercise>
 
 
@@ -58,9 +83,15 @@
 
         </p>
         <p>
-            !!!INSERT Excel file!!!!!
+            <url href="external/sheets/SnapchatSolutions.xlsx" />
         </p>
     </statement>
+    <answer>
+        <p>
+            <url href="external/sheets/SnapchatSolutions.xlsx" />
+
+        </p>
+    </answer>
   </exercise>
 
 

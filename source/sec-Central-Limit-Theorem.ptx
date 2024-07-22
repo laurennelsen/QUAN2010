@@ -85,14 +85,14 @@
 
 
 <exercise>
-  <statement>
+  <introduction>
     <p>
       (Donnelly 7.21)
     </p>
     <p>
       According to the Organization for Economic Cooperation and Development (OECD), adults worked an average of 1771 hours in 2016.  Assume the population standard deviation is 390 hours and that a random sample of 50 adults was selected.
     </p>
-  </statement>
+  </introduction>
   <task>
     <statement>
       <p>
@@ -155,6 +155,11 @@
       </p>
     </answer>
   </task>
+</exercise>
+
+
+<exercise>
+  <myopenmath problem="717338" />
 </exercise>
 
 

@@ -64,13 +64,13 @@
     <ol>
       <li>
         <p>
-          <em>Table:</em> Use this link ...insert.... (or Table 5 in Appendix A of the textbook).  Note that you will locate the degrees of freedom along the left column and the confidence level across the top of the table -- the desired critical value is located where the two meet inside the table.
+          <em>Table:</em> Use this link <url href="https://www.brockport.edu/live/files/6866-studentstdistributiontablepdf" /> (or Table 5 in Appendix A of the textbook).  Note that you will locate the degrees of freedom along the left column and the confidence level across the top of the table -- the desired critical value is located where the two meet inside the table.
         </p>
       </li>
       <li>
         <p>
           <em>Excel:</em> Use the Excel formula
-          <me>T.INV.2T(\alpha,df),</me>
+          <me>\boxed{T.INV.2T(\alpha,df)},</me>
           where <m>\alpha=\text{ the significance level and }df=n-1.</m>
         </p>
       </li>
@@ -95,6 +95,18 @@
         </p>
       </statement>
       <answer>
+        <p>
+          <m>df=17,\; t_{.05}=T.INV.2T(.10,17)\approx 1.74</m>
+        </p>
+        <p>
+          <m>\hat{\sigma_{\overline{x}}}=\frac{13.9}{\sqrt{18}}\approx 3.276</m>
+        </p>
+        <p>
+          <m>ME_{\overline{x}}\approx 1.74\cdot (3.276)\approx 5.7007</m>
+        </p>
+        <p>
+          <m>\overline{x}\pm ME_{\overline{x}}\rightarrow 68\pm 5.7007</m>
+        </p>
         <p>We are <m>90\%</m> confident that 
           <me>62.299\lt \mu\lt 73.701 </me>
         </p>
@@ -108,6 +120,18 @@
         </p>
       </statement>
       <answer>
+        <p>
+          <m>df=40,\; t_{.05}=T.INV.2T(.10,40)\approx 1.684</m>
+        </p>
+        <p>
+          <m>\hat{\sigma_{\overline{x}}}=\frac{13.9}{\sqrt{41}}\approx 2.171</m>
+        </p>
+        <p>
+          <m>ME_{\overline{x}}\approx 1.684\cdot (2.171)\approx 3.656</m>
+        </p>
+        <p>
+          <m>\overline{x}\pm ME_{\overline{x}}\rightarrow 68\pm 3.656</m>
+        </p>
         <p>We are <m>90\%</m> confident that 
           <me>64.344\lt \mu\lt 71.656 </me>
         </p>
@@ -121,6 +145,18 @@
         </p>
       </statement>
       <answer>
+        <p>
+          <m>df=63,\; t_{.05}=T.INV.2T(.10,63)\approx 1.669</m>
+        </p>
+        <p>
+          <m>\hat{\sigma_{\overline{x}}}=\frac{13.9}{\sqrt{64}}\approx 1.7375</m>
+        </p>
+        <p>
+          <m>ME_{\overline{x}}\approx 1.669\cdot (1.7375)\approx 2.8999</m>
+        </p>
+        <p>
+          <m>\overline{x}\pm ME_{\overline{x}}\rightarrow 68\pm 2.8999</m>
+        </p>
         <p>We are <m>90\%</m> confident that 
           <me>65.1001\lt \mu\lt 70.8999 </me>
         </p>
@@ -191,18 +227,33 @@
       </statement>
       <answer>
         <p>
+          <m>n=18\rightarrow df=17,\;\; \overline{x}=81977,\;\; s=4502</m>
+        </p>
+        <p>
+          <m>\hat{\sigma_{\overline{x}}}=\frac{4502}{\sqrt{18}}\approx 1061,\;\; t_{.05}=NORM.S.INV(.95)\approx 1.74</m>
+        </p>
+        <p>
+          <m>ME_{\overline{x}}\approx 1.74\cdot (1061)\approx 1846.14</m>
+        </p>
+        <p>
+          <m>\overline{x}\pm ME_x \rightarrow 81977\pm 1846.14</m>
+        </p>
+        <p>
           <ul>
             <li>
               <p>
-                LCL: <m>80,131</m>
+                LCL: <m>80131</m>
               </p>
             </li>
             <li>
               <p>
-                UCL:  <m>83,823</m>
+                UCL:  <m>83823</m>
               </p>
             </li>
           </ul>
+        </p>
+        <p>
+          We are <m>90\%</m> confident that the average number of bottles consumed is between 80131 and 83823.
         </p>
       </answer>
     </task>
