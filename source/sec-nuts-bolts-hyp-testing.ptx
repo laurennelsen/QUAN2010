@@ -136,26 +136,27 @@
             Match each situation with the correct p-value.  (I recommend drawing a picture of the rejection region to help with this.)
         </p>
     </statement>
+    
     <matches>
 
         <match order="1">
-            <premise>A left-tailed test with test statistic <m>z_{\overline{x}}=-2.75</m></premise>
-            <response><m>NORM.S.DIST(-2.75,TRUE)\approx 0.0030</m></response>
+            <premise>left-tailed test, test stat. <m>z_{\overline{x}}=-2.75</m></premise>
+            <response><m>\approx 0.0030</m></response>
         </match>
 
         <match order="2">
-            <premise>A right-tailed test with test statistic <m>z_{\overline{x}}=1.90</m></premise>
-            <response><m>1-NORM.S.DIST(1.90,TRUE)\approx 0.0287</m></response>
+            <premise>right-tailed test, test stat. <m>z_{\overline{x}}=1.90</m></premise>
+            <response><m>\approx 0.0287</m></response>
         </match>
 
         <match order="3">
-            <premise>A two-tailed test with test statistic <m>z_{\overline{x}}=-1.84</m></premise>
-            <response><m>2\cdot NORM.S.DIST(-1.84,TRUE)\approx 0.0658</m></response>
+            <premise>two-tailed test, test stat. <m>z_{\overline{x}}=-1.84</m></premise>
+            <response><m>\approx 0.0658</m></response>
         </match>
 
         <match order="4">
-            <premise>A two-tailed test with test statistic <m>z_{\overline{x}}=2.50</m></premise>
-            <response><m>2\cdot NORM.S.DIST(-2.5,1)\approx 0.0124</m></response>
+            <premise>two-tailed test, test stat. <m>z_{\overline{x}}=2.50</m></premise>
+            <response><m>\approx 0.0124</m></response>
         </match>
         
     </matches>
