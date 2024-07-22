@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="717338">
 <statement>
-<p>Rachael is conducting market research on the amount typically spent on the purchase of a first vehicle. Rachael has determined that the average cost of a first vehicle is <dollar/>5500, and that the distribution of costs is normally distributed with a standard deviation of <dollar/>730.
+<p>Ross is conducting market research on the amount typically spent on the purchase of a first vehicle. Ross has determined that the average cost of a first vehicle is <dollar/>5700, and that the distribution of costs is normally distributed with a standard deviation of <dollar/>670.
   </p>
 <p>
-  a. Find the probability that a single randomly selected first-time vehicle purchase is more than <dollar/>4250. (Round to 4 decimal places.)</p>
+  a. Find the probability that a single randomly selected first-time vehicle purchase is less than <dollar/>6740. (Round to 4 decimal places.)</p>
 <p style="padding-left: 40px;"><fillin characters="10" /></p>
 <p>b. The cost of the middle 30<percent/> of first-time vehicle purchases falls between (round to the nearest dollar):</p>
 <p style="padding-left: 40px;"><dollar/><fillin characters="10" /> to <dollar/><fillin characters="10" /></p>
-<p>c. If a random sample of 75 first-time vehicle purchasers is selected, what is the probability that the <em>sample average</em> amount spent is between <dollar/>5420 and <dollar/>5670? (Round to 4 decimal places.)</p>
+<p>c. If a random sample of 75 first-time vehicle purchasers is selected, what is the probability that the <em>sample average</em> amount spent is between <dollar/>5660 and <dollar/>5860? (Round to 4 decimal places.)</p>
 <p style="padding-left: 40px;"><fillin characters="10" /></p>
 
 </statement>
 <solution>
-<p><ul><li>0.9566</li><li>5219</li><li>5781</li><li>0.8068</li></ul></p><p>a. Since the probability here is for a single randomly selected individiual, we use the <m>\displaystyle{X}</m> distribution, which has mean and standard deviation as given. Using Desmos (or other technology), we need:</p>
-<p style="padding-left: 40px;"><m>\displaystyle{P}{\left({x}{>}{4250}\right)}=\text{normaldist}{\left({5500},{730}\right)}.\text{cdf}{\left({4250},\infty\right)}={0.9566}</m> </p>
+<p><ul><li>0.9397</li><li>5442</li><li>5958</li><li>0.6781</li></ul></p><p>a. Since the probability here is for a single randomly selected individiual, we use the <m>\displaystyle{X}</m> distribution, which has mean and standard deviation as given. Using Desmos (or other technology), we need:</p>
+<p style="padding-left: 40px;"><m>\displaystyle{P}{\left({x}{<}{6740}\right)}=\text{normaldist}{\left({5700},{670}\right)}.\text{cdf}{\left(-\infty,{6740}\right)}={0.9397}</m> </p>
 <p>b. To find the cutoff values for the middle <m>\displaystyle{30}\%</m>  of the distribution, need the remaining <m>\displaystyle{1}-{0.3}={0.7}</m> of the area to be split between the 2 tails. This means that the area to the <em>left</em> of the lower bound is 0.35, and the area to the <em>right</em> of the upper bound is 0.35, resulting in an area <em>to the <em>left</em></em> of the upper bound of 0.65. In Desmos (or other technology), we find each of these values using .inversecdf with the <m>\displaystyle{X}</m> distribution:</p>
-<p style="padding-left: 40px;">lower bound <m>\displaystyle=\text{normaldist}{\left({5500},{730}\right)}.\text{inversecdf}{\left({0.35}\right)}={5219}</m> </p>
-<p style="padding-left: 40px;">upper bound <m>\displaystyle=\text{normaldist}{\left({5500},{730}\right)}.\text{inversecdf}{\left({0.65}\right)}={5781}</m> </p>
+<p style="padding-left: 40px;">lower bound <m>\displaystyle=\text{normaldist}{\left({5700},{670}\right)}.\text{inversecdf}{\left({0.35}\right)}={5442}</m> </p>
+<p style="padding-left: 40px;">upper bound <m>\displaystyle=\text{normaldist}{\left({5700},{670}\right)}.\text{inversecdf}{\left({0.65}\right)}={5958}</m> </p>
 <p>c. The probability here is related to <m>\displaystyle\overline{{X}}</m> , so now we use the sampling disitribution of means to find the probability (NOT the underlying <m>\displaystyle{X}</m> distribution):</p>
-<p style="padding-left: 40px;"><m>\displaystyle{P}{\left({5420}{<}\overline{{x}}{<}{5670}\right)}=\text{normaldist}{\left({5500},\frac{{730}}{\sqrt{{{75}}}}\right)}.\text{cdf}{\left({5420},{5670}\right)}={0.8068}</m> </p>
+<p style="padding-left: 40px;"><m>\displaystyle{P}{\left({5660}{<}\overline{{x}}{<}{5860}\right)}=\text{normaldist}{\left({5700},\frac{{670}}{\sqrt{{{75}}}}\right)}.\text{cdf}{\left({5660},{5860}\right)}={0.6781}</m> </p>
 <p><em>NOTE:</em> each instance of normaldist<m>\displaystyle{\left(\mu,\sigma\right)}</m> above could be replaced by first defining the distribution with a variable name. E.g.:</p>
 <p><ul>
-  <li><m>\displaystyle{N}=\text{normaldist}{\left({5500},{730}\right)}</m> for the <m>\displaystyle{X}</m> distribution</li>
-  <li> <m>\displaystyle{S}=\text{normaldist}{\left({5500},\frac{{730}}{\sqrt{{{75}}}}\right)}</m> for the <m>\displaystyle\overline{{X}}</m> distribution</li>
+  <li><m>\displaystyle{N}=\text{normaldist}{\left({5700},{670}\right)}</m> for the <m>\displaystyle{X}</m> distribution</li>
+  <li> <m>\displaystyle{S}=\text{normaldist}{\left({5700},\frac{{670}}{\sqrt{{{75}}}}\right)}</m> for the <m>\displaystyle\overline{{X}}</m> distribution</li>
 </ul></p>
 </solution>
 </myopenmath>

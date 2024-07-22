@@ -4,15 +4,15 @@
 <p>
 Is this value from a discrete or continuous data set.</p>
 <p>
-Your height in centimeters</p>
-<p><ol style="list-style-type:upper-alpha"><li>Continuous</li> 
-<li>Discrete</li> 
+The number of children a person has</p>
+<p><ol style="list-style-type:upper-alpha"><li>Discrete</li> 
+<li>Continuous</li> 
 </ol></p>
 
 
 </statement>
 <solution>
-<p><ul><li>A: Continuous</li></ul></p>
+<p><ul><li>A: Discrete</li></ul></p>
 </solution>
 </myopenmath>
 
