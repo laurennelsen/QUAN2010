@@ -421,7 +421,7 @@ There are many examples of random variables that are normally distributed in man
 
           <activity>
             <p>
-                We're going to do a matching activity in class to practice working with these formulas to calculate probabilities for normal distributions.  (The next few exercises include online versions of this activity.)
+                We're going to do a matching activity in class to practice working with these formulas to calculate probabilities for normal distributions.  (The next few exercises include online versions of part of this activity.)
             </p>
             <answer>
                 <p>
@@ -444,7 +444,7 @@ There are many examples of random variables that are normally distributed in man
                         </li>
                         <li>
                             <p>
-                                4,F,<m>\box</m>
+                                4,F,<m>\square</m>
                             </p>
                         </li>
                         <li>
@@ -454,7 +454,17 @@ There are many examples of random variables that are normally distributed in man
                         </li>
                         <li>
                             <p>
-                                ...need to fix this....
+                                6,Q,<m>\heartsuit</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                7,T,<m>\clubsuit</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                8,C,<m>\Rightarrow</m>
                             </p>
                         </li>
                     </ul>
@@ -464,7 +474,359 @@ There are many examples of random variables that are normally distributed in man
 
 
 
-  <exercise label="matching1">
+          <exercise>
+            <title>Normal Distribution Practice Activity</title>
+            
+            <task>
+                <statement>
+                    <p> A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22.  What is the probability that a randomly selected value is more than 40?
+                    </p>
+                </statement>
+                <choices>
+                    <choice correct="yes">
+                        <statement>
+                            <p>
+                                1-NORM.DIST(40,135,22,1)
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                                NORM.DIST(40,135,22,1)
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                                NORM.DIST(40,135,22,0)
+                            </p>
+                        </statement>
+                    </choice>
+                
+                </choices>
+            </task>
+    
+            <task>
+                <statement>
+                    <p> A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22.  What is the probability that a randomly selected value is less than 90?
+                    </p>
+                </statement>
+                <choices>
+                    <choice correct="yes">
+                        <statement>
+                            <p>
+                                NORM.DIST(90,135,22,1)
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                               1- NORM.DIST(90,135,22,1)
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                                NORM.DIST(90,135,22,0)
+                            </p>
+                        </statement>
+                    </choice>
+                
+                </choices>
+            </task>
+
+
+            <task>
+                <statement>
+                    <p> A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22.  What is the probability that a randomly selected value is between 120 and 180?
+                    </p>
+                </statement>
+                <choices>
+                    <choice correct="yes">
+                        <statement>
+                            <p>
+                                NORM.S.DIST(2.05,1)-NORM.S.DIST(0.68,1)
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                                NORM.DIST(2.05,135,22,1)-NORM.DIST(0.68,135,22,1)
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                                NORM.S.DIST(0.68,1)-NORM.S.DIST(2.05,1)
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                                2.01\cdotNORM.S.DIST(0.68,1)
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                                NORM.S.DIST(2.05,0)-NORM.S.DIST(0.68,0)
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                                NORM.S.DIST(180,0)-NORM.S.DIST(120,0)
+                            </p>
+                        </statement>
+                    </choice>
+                
+                </choices>
+            </task>
+            
+          </exercise> 
+
+
+          
+
+
+          
+
+          <exercise>
+            <title>Normal Distribution Practice Activity</title>
+            
+            <task>
+                <statement>
+                    <p>
+                        Find the probability for the standard normal distribution:
+                        
+                            <me>P(Z\lt 2.35)</me>
+                          
+                    </p>
+                </statement>
+                <choices>
+                    <choice correct="yes">
+                        <statement>
+                            <p>
+                                <m>NORM.S.DIST(2.35,TRUE)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                               <m> 1-NORM.S.DIST(2.35,TRUE)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                                <m>NORM.S.DIST(2.35,FALSE)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                                <m>1-NORM.S.DIST(2.35,FALSE)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                
+                </choices>
+            </task>
+
+
+            <task>
+                <statement>
+                    <p> Find the probability for a standard normal distribution:
+                    </p>
+                    <p>
+                      <me>P(Z\gt 2.35)</me>
+                    </p>
+                </statement>
+                <choices>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                               <m> NORM.S.DIST(2.35,TRUE)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="yes">
+                        <statement>
+                            <p>
+                                <m>1-NORM.S.DIST(2.35,TRUE)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                                <m>NORM.S.DIST(2.35,FALSE)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                               <m> 1-NORM.S.DIST(2.35,FALSE)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                
+                </choices>
+            </task>
+
+
+            <task>
+                <statement>
+                    <p> Find the probability for a standard normal distribution:
+                    </p>
+                    <p>
+                      <me>P(-0.86\leq Z\leq 1.76)</me>
+                    </p>
+                </statement>
+
+                <choices>
+                    <choice correct="yes">
+                        <statement>
+                            <p>
+                                <m>NORM.S.DIST(1.76,TRUE)-NORM.S.DIST(-0.86,TRUE)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                                <m>NORM.S.DIST(1.76,0)-NORM.S.DIST(-0.86,0)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                               <m> NORM.S.DIST(-0.86,TRUE)-NORM.S.DIST(1.76,TRUE)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    
+                
+                </choices>
+            </task>
+            
+          </exercise> 
+
+
+       
+
+
+
+
+
+          <exercise>
+            <title>Normal Distribution Practice Activity</title>
+
+            <task>
+                <statement>
+                    <p> Find the probability for a standard normal distribution:
+                    </p>
+                    <p>
+                      <me>P(Z\leq 1.50)</me>
+                    </p>
+                </statement>
+                <choices>
+                    <choice correct="yes">
+                        <statement>
+                            <p>
+                                <m>NORM.S.DIST(1.5,TRUE)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                               <m> 1-NORM.S.DIST(1.5,TRUE)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                               <m> 1.5-NORM.S.DIST(1,TRUE)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                               <m> NORM.S.DIST(1.5,0)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    
+                </choices>
+            </task>
+
+                        
+            <task>
+                <statement>
+                    <p> Find the probability for a standard normal distribution:
+                    </p>
+                    <p>
+                        <me>P(Z\geq 1.50)</me>
+                      </p>
+                </statement>
+                <choices>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                               <m> NORM.S.DIST(1.5,TRUE)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="yes">
+                        <statement>
+                            <p>
+                               <m> 1-NORM.S.DIST(1.5,TRUE)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                               <m> 1.5-NORM.S.DIST(1,TRUE)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                               <m> NORM.S.DIST(1.5,0)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    
+                
+                </choices>
+            </task>
+            </exercise>
+
+          
+
+
+
+
+<!--  <exercise label="matching1">
     <title>Normal Distribution Matching Problem</title>
     <statement>
     <p>
@@ -545,10 +907,10 @@ There are many examples of random variables that are normally distributed in man
 
 </matches>
 
-</exercise>
+</exercise>-->
 
 
-<exercise label="matching3">
+<!--<exercise label="matching3">
         <title>Normal Distribution Matching Problem</title>
         <statement>
         <p>
@@ -615,7 +977,7 @@ There are many examples of random variables that are normally distributed in man
 
     </matches>
 
-</exercise>
+</exercise>-->
 
 
 
@@ -630,15 +992,14 @@ There are many examples of random variables that are normally distributed in man
 
 
 
+<!--<figure xml:id="image-normal-matching"/>
 
-
-  <figure xml:id="image-normal-matching">
+   <figure xml:id="image-normal-matching">
     <caption>Images for <xref ref="ex-NormalImageMatching"/></caption>
     <sidebyside>
         <figure>
-            <caption>(A)</caption>
+            <caption>A</caption>
             <image width="50%" xml:id="fig-A">
-              
                 <latex-image >
                     \begin{tikzpicture}
                     \begin{axis}[every axis plot post/.append style={ mark=none,samples=50,smooth},domain=50:220]
@@ -653,7 +1014,7 @@ There are many examples of random variables that are normally distributed in man
               </image>
         </figure>
         <figure>
-            <caption>(B)</caption>
+            <caption>B</caption>
             <image width="50%" xml:id="fig-B">
               
                 <latex-image >
@@ -670,7 +1031,7 @@ There are many examples of random variables that are normally distributed in man
               </image>
         </figure>
         <figure>
-            <caption>(C)</caption>
+            <caption>C</caption>
             <image width="50%" xml:id="fig-C">
               
                 <latex-image >
@@ -686,11 +1047,82 @@ There are many examples of random variables that are normally distributed in man
             
               </image>
         </figure>
+        
+    </sidebyside>
+</figure> -->
+
+
+
+<!--
+
+<figure xml:id="image-normal-matching-2">
+    <caption>Images for <xref ref="matching5"/></caption>
+    <sidebyside>
+
+        <figure>
+            <caption>D</caption>
+            <image width="50%" xml:id="fig-D">
+              
+                <latex-image >
+                    \begin{tikzpicture}[scale=.6]
+\begin{axis}[every axis plot post/.append style={ mark=none,samples=50,smooth},domain=-4:4]
+
+\addplot {\gauss{0}{1}};
+
+\addplot [fill=cyan!30, draw=none, domain=-4:2.35] {\gauss{0}{1}} \closedcycle; 
+\end{axis}
+\end{tikzpicture}
+                </latex-image>
+            
+              </image>
+        </figure>
+
+        <figure>
+            <caption>E</caption>
+            <image width="50%" xml:id="fig-E">
+              
+                <latex-image >
+                    \begin{tikzpicture}[scale=.6]
+\begin{axis}[every axis plot post/.append style={ mark=none,samples=50,smooth},domain=-4:4]
+
+\addplot {\gauss{0}{1}};
+
+\addplot [fill=cyan!30, draw=none, domain=2.35:4] {\gauss{0}{1}} \closedcycle; 
+\end{axis}
+\end{tikzpicture}
+                </latex-image>
+            
+              </image>
+        </figure>
+
+
+        <figure>
+            <caption>F</caption>
+            <image width="50%" xml:id="fig-F">
+              
+                <latex-image >
+                    \begin{tikzpicture}[scale=.6]
+\begin{axis}[every axis plot post/.append style={ mark=none,samples=50,smooth},domain=-4:4]
+
+\addplot {\gauss{0}{1}};
+
+\addplot [fill=cyan!30, draw=none, domain=2.35:4] {\gauss{0}{1}} \closedcycle; 
+\end{axis}
+\end{tikzpicture}
+                </latex-image>
+            
+              </image>
+        </figure>
+
+
     </sidebyside>
 </figure>
 
 
-<exercise xml:id="ex-NormalImageMatching">
+-->
+
+
+<!--<exercise xml:id="ex-NormalImageMatching">
     <title>Normal Distribution Matching Problem</title>
     <statement>
     <p>
@@ -702,9 +1134,9 @@ There are many examples of random variables that are normally distributed in man
 
     <match>
         <premise>
-        
-            (a)???
-            
+        <p>
+            A
+            </p>
         </premise>
         <response>
             <p>
@@ -715,7 +1147,9 @@ There are many examples of random variables that are normally distributed in man
 
     <match>
         <premise>
-            (b)???
+            <p>
+            B
+            </p>
         </premise>
         <response>
             <p>
@@ -726,7 +1160,9 @@ There are many examples of random variables that are normally distributed in man
 
     <match>
         <premise>
-            ???
+            <p>
+            C
+            </p>
         </premise>
         <response>
             <p>
@@ -735,23 +1171,14 @@ There are many examples of random variables that are normally distributed in man
         </response>
     </match>
 
-    <match>
-        <premise>
-            ???
-        </premise>
-        <response>
-            <p>
-                Find the probability for a standard normal distribution: <m>P(Z \lt 2.35)</m>
-                </p>
-        </response>
-    </match>
+    
 
 </matches>
 
-</exercise>
+</exercise>-->
 
 
-<exercise label="matching5">
+<!--<exercise xml:id="matching5">
         <title>Normal Distribution Matching Problem</title>
         <statement>
         <p>
@@ -760,6 +1187,17 @@ There are many examples of random variables that are normally distributed in man
         </statement>
     
      <matches>
+
+        <match>
+            <premise>
+                D
+            </premise>
+            <response>
+                <p>
+                    Find the probability for a standard normal distribution: <m>P(Z \lt 2.35)</m>
+                    </p>
+            </response>
+        </match>
 
     <match>
         <premise>
@@ -809,7 +1247,7 @@ There are many examples of random variables that are normally distributed in man
 
     </matches>
 
-</exercise>
+</exercise>-->
 
 
 
@@ -817,7 +1255,7 @@ There are many examples of random variables that are normally distributed in man
 
         <exercise>
             <statement>
-                <p> Let <m>z</m> be the standard normal variable. </p>
+                <p> Let <m>Z</m> be the standard normal variable. </p>
               <p> Find <m>P(Z\geq -2.89)</m>.  Round your answer to four decimal places: </p>
               <p>
                 <var />
@@ -986,11 +1424,11 @@ There are many examples of random variables that are normally distributed in man
       
 
     <exercise>
-        <statement>
+        <introduction>
             <p>
                 A random variable follows the normal probability distribution with a mean of 50 and a standard deviation of 20.
             </p>
-        </statement>
+        </introduction>
             <task>
                 <statement>
                     <p>

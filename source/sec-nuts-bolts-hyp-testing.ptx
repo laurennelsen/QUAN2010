@@ -68,10 +68,6 @@
 </definition>
 
 
-<p>
-    !!!!!!FIX FOLLOWING EXERCISES!!!!!!
-</p>
-
 
 <exercise>
     <statement>
@@ -133,64 +129,185 @@
 <exercise>
     <statement>
         <p>
-            Match each situation with the correct p-value.  (I recommend drawing a picture of the rejection region to help with this.)
+           Choose the correct p-value for each situation.  (I recommend drawing a picture of the rejection region to help with this.)
         </p>
     </statement>
 
-    <matches>
-
-        <match order="1">
-            <premise>
-                <p>left-tailed test, test stat. <m>z_{\overline{x}}=-2.75</m>
-                    </p>
-                </premise>
-            <response>
-                <p>
-                <m>\approx 0.0030</m>
+    <task>
+        <statement>
+            <p>
+               A left-tailed test with test statistic <m>z_{\overline{x}}=-2.75</m>
             </p>
-            </response>
-        </match>
+        </statement>
+        <choices>
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        <m>\approx 0.0030</m>
+                    </p>
+                </statement>
+            </choice>
 
-        <match order="2">
-            <premise>
-                <p>
-                right-tailed test, test stat. <m>z_{\overline{x}}=1.90</m>
-                </p>
-            </premise>
-            <response>
-                <p>
-                <m>\approx 0.0287</m>
-                </p>
-            </response>
-        </match>
+            <choice correct="no">
+                <statement>
+                    <p>
+                        <m>\approx 0.0287</m>
+                    </p>
+                </statement>
+            </choice>
 
-        <match order="3">
-            <premise>
-                <p>
-                two-tailed test, test stat. <m>z_{\overline{x}}=-1.84</m>
-                </p>
-            </premise>
-            <response>
-                <p>
-                <m>\approx 0.0658</m>
-                </p>
-            </response>
-        </match>
+            <choice correct="no">
+                <statement>
+                    <p>
+                        <m>\approx 0.0658</m>
+                    </p>
+                </statement>
+            </choice>
 
-        <match order="4">
-            <premise>
-                <p>
-                two-tailed test, test stat. <m>z_{\overline{x}}=2.50</m>
-                </p>
-            </premise>
-            <response>
-                <p>
-                <m>\approx 0.0124</m>
-                </p>
-            </response>
-        </match>
+            <choice correct="no">
+                <statement>
+                    <p>
+                        <m>\approx 0.0124</m>
+                    </p>
+                </statement>
+            </choice>
         
-    </matches>
+        </choices>
+    </task>
+
+    <task>
+        <statement>
+            <p>
+                A right-tailed test with test statistic <m>z_{\overline{x}}=1.90</m>
+
+            </p>
+        </statement>
+        <choices>
+            <choice correct="no">
+                <statement>
+                    <p>
+                        <m>\approx 0.0030</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        <m>\approx 0.0287</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="no">
+                <statement>
+                    <p>
+                        <m>\approx 0.0658</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="no">
+                <statement>
+                    <p>
+                        <m>\approx 0.0124</m>
+                    </p>
+                </statement>
+            </choice>
+        
+        </choices>
+    </task>
+
+
+    <task>
+        <statement>
+            <p>
+                A two-tailed test with test statistic <m>z_{\overline{x}}=-1.84</m>
+
+            </p>
+        </statement>
+        <choices>
+            <choice correct="no">
+                <statement>
+                    <p>
+                        <m>\approx 0.0030</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="no">
+                <statement>
+                    <p>
+                        <m>\approx 0.0287</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        <m>\approx 0.0658</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="no">
+                <statement>
+                    <p>
+                        <m>\approx 0.0124</m>
+                    </p>
+                </statement>
+            </choice>
+        
+        </choices>
+    </task>
+
+
+    <task>
+        <statement>
+            <p>
+               A two-tailed test with test stat. <m>z_{\overline{x}}=2.50</m>
+
+            </p>
+        </statement>
+        <choices>
+            <choice correct="no">
+                <statement>
+                    <p>
+                        <m>\approx 0.0030</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="no">
+                <statement>
+                    <p>
+                        <m>\approx 0.0287</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="no">
+                <statement>
+                    <p>
+                        <m>\approx 0.0658</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        <m>\approx 0.0124</m>
+                    </p>
+                </statement>
+            </choice>
+        
+        </choices>
+    </task>
+
+
+       
 </exercise>
 
 
