@@ -205,20 +205,44 @@
 
 
 <figure xml:id="figure-geogebra-confidence-z">
-    <caption>Confidence Interval <m>z</m>-value (Made in GeoGebra by Terry Lee Lindenmuth)</caption>
-    <interactive xml:id="geogebra-confidence-z" geogebra="FhfpDVSh" aspect="9:5" />
+    <caption>
+        <p>Confidence Interval <m>z</m>-value (Made in GeoGebra by Terry Lee Lindenmuth)
+        </p>
+        <p>
+            Link to GeoGebra:  <url href="https://www.geogebra.org/m/FhfpDVSh"></url>
+        </p>
+        </caption>
+
+    <interactive platform="geogebra" aspect="4:3">
+        <slate xml:id="geogebra-confidence-z" surface="geogebra" material="FhfpDVSh" material-width="800" material-height="600"/>
+        </interactive>
   </figure>
 
 
   <figure xml:id="figure-geogebra-confidence-tweaks">
-    <caption>Confidence Interval <m>z</m>-value (Made in GeoGebra by David Gurney)</caption>
+    <caption>
+        <p>Confidence Interval <m>z</m>-value (Made in GeoGebra by David Gurney)
+        </p>
+        <p>
+            Link to GeoGebra:  <url href="https://www.geogebra.org/m/Kcq3UxwZ"></url>
+        </p>
+        </caption>
     <interactive xml:id="geogebra-confidence-tweaks" geogebra="Kcq3UxwZ" aspect="9:5" />
   </figure>
 
 
   <figure xml:id="figure-geogebra-confidence-interval">
-    <caption>Confidence Interval <m>z</m>-value (Made in GeoGebra by Tim Elton)</caption>
-    <interactive xml:id="geogebra-confidence-interval" geogebra="kyhqchxb" aspect="9:5" />
+    <caption>
+        <p>Confidence Interval <m>z</m>-value (Made in GeoGebra by Tim Elton)
+        </p>
+        <p>
+            Link to GeoGebra:  <url href="https://www.geogebra.org/m/kyhqchxb"></url>
+        </p>
+        </caption>
+
+    <interactive platform="geogebra" aspect="9:5">
+        <slate xml:id="geogebra-confidence-interval" surface="geogebra" material="kyhqchxb" material-width="1350" material-height="750"/>
+        </interactive>
   </figure>
 
 

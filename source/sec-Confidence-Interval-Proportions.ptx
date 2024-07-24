@@ -26,8 +26,18 @@
 </introduction>
 
 <figure xml:id="figure-geogebra-binomial-normal">
-    <caption>Binomial and Normal Distributions <m>z</m>-value (Made in GeoGebra by Steve Phelps)</caption>
-    <interactive xml:id="geogebra-binomial-normal" geogebra="xqvcg8sm" aspect="9:5" />
+    <caption>
+        <p>Binomial and Normal Distributions <m>z</m>-value (Made in GeoGebra by Steve Phelps)
+        </p>
+        <p>
+            Link to GeoGebra:  <url href="https://www.geogebra.org/m/xqvcg8sm"></url>
+        </p>
+        </caption>
+
+  <interactive platform="geogebra" aspect="9:5">
+    <slate xml:id="geogebra-binomial-normal" surface="geogebra" material="xqvcg8sm" material-width="900" material-height="500"/>
+    </interactive>
+
   </figure>
 
 <definition xml:id="def-confidence-interval-proportion">

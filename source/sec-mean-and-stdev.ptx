@@ -144,8 +144,17 @@
     </p>
     
 <figure xml:id="figure-geogebra-empirical">
-    <caption>The Empirical Rule (Made in GeoGebra by Kady Schneiter)</caption>
-    <interactive xml:id="geogebra-empirical" geogebra="vsznbtjh" aspect="9:5" />
+    <caption>
+        <p>The Empirical Rule (Made in GeoGebra by Kady Schneiter)
+            </p>
+            <p>
+                Link to GeoGebra:  <url href="https://www.geogebra.org/m/vsznbtjh"></url>
+            </p>
+        </caption>
+
+    <interactive platform="geogebra" aspect="9:5">
+        <slate xml:id="geogebra-empirical" surface="geogebra" material="vsznbtjh" material-width="1100" material-height="500"/>
+        </interactive>
   </figure>
 
 

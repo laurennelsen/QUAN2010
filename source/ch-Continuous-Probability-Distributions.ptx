@@ -14,7 +14,14 @@
           <p>
             <em>Normal Distribution:</em>
             <figure xml:id="figure-geogebra-normaldist">
-              <caption>Normal Distribution (Made in GeoGebra by the GeoGebra Materials Team)</caption>
+              <caption>
+                <p>Normal Distribution (Made in GeoGebra by the GeoGebra Materials Team)
+</p>
+<p>
+  Link to GeoGebra:  <url href="https://www.geogebra.org/m/W9Nz53Ct"></url>
+</p>
+
+                </caption>
               <interactive xml:id="geogebra-normaldist" geogebra="W9Nz53Ct" aspect="9:5" />
             </figure>
           
@@ -25,7 +32,14 @@
           <p>
             <em>Exponential Distribution:</em>
             <figure xml:id="figure-geogebra-expondist">
-              <caption>Exponential Distribution (Made in GeoGebra by DavidK)</caption>
+              <caption>
+                <p>Exponential Distribution (Made in GeoGebra by DavidK)
+</p>
+<p>
+  Link to GeoGebra:  <url href="https://www.geogebra.org/m/gjd2dmzw"></url>
+</p>
+
+                </caption>
               <interactive xml:id="geogebra-expondist" geogebra="gjd2dmzw" aspect="9:5" />
             </figure>
           </p>
@@ -35,7 +49,13 @@
           <p>
             <em>Uniform Distribution:</em>
             <figure xml:id="figure-geogebra-unifdist">
-              <caption>Uniform Distribution (Made in GeoGebra by David Ramsay)</caption>
+              <caption>
+                <p>Uniform Distribution (Made in GeoGebra by David Ramsay)
+                  </p>
+                  <p>
+                    Link to GeoGebra:  <url href="https://www.geogebra.org/m/v2EnMNF9"></url>
+                  </p>
+                </caption>
               <interactive xml:id="geogebra-unifdist" geogebra="v2EnMNF9" aspect="9:5" />
             </figure>
           </p>

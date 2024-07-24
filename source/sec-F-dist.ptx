@@ -8,6 +8,11 @@
  
 
 
+    <figure xml:id="figure-geogebra-F-dist">
+        <caption><m>F</m>-Distribution (Made in GeoGebra by therimalaya and Lauren Nelsen)</caption>
+        <interactive xml:id="geogebra-F-dist" geogebra="wxaeghfh" aspect="9:5" />
+      </figure>
+
 <investigation xml:id="def-F-dist">
     <statement>
         <p>
@@ -151,11 +156,6 @@
 
 
 
-
-<figure xml:id="figure-geogebra-F-dist">
-    <caption><m>F</m>-Distribution (Made in GeoGebra by therimalaya)</caption>
-    <interactive xml:id="geogebra-F-dist" geogebra="vS9wXZBC" aspect="9:5" />
-  </figure>
 
 
 

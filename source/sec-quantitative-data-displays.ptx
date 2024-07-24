@@ -543,13 +543,30 @@ Let's discuss these definitions in the example below:
         </p>
         <p>
             Below is an example of a line chart.  (Check the box to see the line chart.)
-            <figure xml:id="figure-geogebra-line-chart">
+
+            <!--<figure xml:id="figure-geogebra-line-chart">
                 <caption>Line Chart Examples (Made in GeoGebra by David Gurney)</caption>
                 <interactive xml:id="geogebra-line-chart" geogebra="gfghJvap" aspect="9:5" />
-              </figure>
+              </figure>-->
+
+              <figure xml:id="figure-geogebra-line-chart">
+                <caption>
+                    <p>Line Chart Examples (Made in GeoGebra by David Gurney)
+</p>
+<p>
+    Link to GeoGebra:  <url href="https://www.geogebra.org/m/gfghJvap"></url>
+</p>
+
+                    </caption>
+                <interactive platform="geogebra" aspect="1600:1600">
+                    <slate xml:id="geogebra-line-chart" surface="geogebra" material="gfghJvap" material-width="900" material-height="900"/>
+                    </interactive>
+            </figure>
         </p>
     </statement>
 </definition>
+
+
     
 </subsection>
 

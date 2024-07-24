@@ -564,8 +564,18 @@
         </p>
     </statement>
     <figure xml:id="figure-geogebra-union-intersection">
-        <caption>Union and Intersection (Made in GeoGebra by Vaibhav Zade)</caption>
-        <interactive xml:id="geogebra-union-intersection" geogebra="grxxwm4c" aspect="9:5" />
+        <caption>
+            <p>Union and Intersection (Made in GeoGebra by Vaibhav Zade)
+</p>
+<p>
+    Link to GeoGebra:  <url href="https://www.geogebra.org/m/grxxwm4c"></url>
+</p>
+
+            </caption>
+
+        <interactive platform="geogebra" aspect="13:6">
+            <slate xml:id="geogebra-union-intersection" surface="geogebra" material="grxxwm4c" material-width="1300" material-height="600"/>
+            </interactive>
       </figure>
 </definition>
 

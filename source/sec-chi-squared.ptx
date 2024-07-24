@@ -7,8 +7,18 @@
   <introduction>
 
   <figure xml:id="figure-geogebra-chi-square">
-    <caption>Chi-square Distribution (Made in GeoGebra by Chris Rosenthal)</caption>
-    <interactive xml:id="geogebra-chi-square" geogebra="UJZMCJXA" aspect="9:5" />
+    <caption>
+      <p>Chi-square Distribution (Made in GeoGebra by Chris Rosenthal)
+</p>
+<p>
+  Link to GeoGebra:  <url href="https://www.geogebra.org/m/UJZMCJXA"></url>
+</p>
+
+      </caption>
+
+    <interactive platform="geogebra" aspect="9:5">
+      <slate xml:id="geogebra-chi-square" surface="geogebra" material="UJZMCJXA" material-width="950" material-height="528"/>
+      </interactive>
   </figure>
 
  

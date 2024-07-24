@@ -324,8 +324,17 @@ A hospital would like to develop a regression model to predict the total hospita
     </statement>
 
     <figure xml:id="figure-geogebra-SSE">
-        <caption>Least Squares Visualization (Made in GeoGebra by Ivan Gatewood)</caption>
-        <interactive xml:id="geogebra-SSE" geogebra="tRUGb6Hg" aspect="9:5" />
+        <caption>
+            <p>Least Squares Visualization (Made in GeoGebra by Ivan Gatewood)
+                </p>
+                <p>
+                    Link to GeoGebra:  <url href="https://www.geogebra.org/m/tRUGb6Hg"></url>
+                </p>
+            </caption>
+
+        <interactive platform="geogebra" aspect="9:5">
+            <slate xml:id="geogebra-SSE" surface="geogebra" material="tRUGb6Hg" material-width="1350" material-height="750"/>
+            </interactive>
       </figure>
 
 </definition>
