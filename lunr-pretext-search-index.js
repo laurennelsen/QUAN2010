@@ -1591,14 +1591,23 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.1",
   "title": "The Normal Distribution",
-  "body": " The Normal Distribution   The mathematical expression that describes the shape of the normal probability distribution is called the normal probability density function: Despite the complexity of this function, there are only two parameters that completely deter- mine the shape of the distribution: the mean, , and the standard deviation, . Let’s take a closer look at how they impact the distribution. (Don’t worry---we won’t be using this formula to compute probabilities. We have other tools!)     How does changing the standard deviation ( ) and the mean ( ) change the curve?  Graph of Normal Distribution powered by Desmos           controls the spread of the curve. Larger results in a flatter, more spread out curve     controls the location of the center. Larger shifts the hill of the curve to the right        Characteristics of the Normal Probability Distribution:     The distribution is bell-shaped and symmetric around the mean.    Because the shape is symmetrical, the mean and median are equal and located at the center of the distribution.    Random variables around the mean, where the curve is the tallest have a higher probability of occurring than values toward the end of the distribution.    The total area under the curve is . Since the distribution is symmetric, the area to the left of the mean equals as does the area to the right of the mean    No matter how far in either direction the distribution curve extends, it never touches the horizontal axis -- but it gets increasingly closer.       Examples of Normal Probability Distributions:  There are many examples of random variables that are normally distributed in many different real-world settings! Here are a few examples of random variables that are normally distributed or that could be in certain situations:   Shoe sizes    blood pressure    ACT scores    birth weight of babies    salaries at a particular workplace    length of movies       The Standard Normal Distribution:  Recall that the -score of a value, , describes the number of standard deviations that the value is from the mean of its distribution:    Values of that are less than the mean have _______ -scores     postive      negative      zero      Values of that are more than the mean have _______ -scores     positive      negative      zero      The -score for the mean equals ________                                A coffee shop wants to understand the distribution of amounts that their customers are spending per order. They find that the average amount a customer spends per order is , and the standard deviation is . If we assume that the amounts spent per order are normally distributed, and Rey comes in and spends , what is the -score for Rey's order?        When the original random variable, , follows a normal distribution, -scores also follow a normal distribution with , . It is called the standard normal distribution .     Graph of Standard Normal Distribution powered by Desmos      Calculating Probabilities for Normal Distributions:  The standard normal distribution allows us to calculate probabilities for any normal distribution since we can standardize it with -scores. The tables at this link ( Standard Normal Table ) provide you with the cumulative area to the LEFT of the -score.  We can also use Excel to calculate the cumulative area to the left of the -score by typing   ( Note: We can type 1 instead of TRUE in this formula in Excel.)     Find the probability for a standard normal distribution    In Excel:      So how do we use the table or the Excel formula to find any probability for a normal distribution?  There are 3 basic types of problems:   To the left of any -score: Look up the -score in the table (or calculate it in Excel) and use the area given.    To the right of any -score: Look up the -score in the table (or calculate it in Excel) subtract the area from 1.    Between any two -scores: Look up both -scores in the table (or calculate them in Excel) and subtract the smaller area from the larger area.       Find the following probabilities for a standard normal distribution:        In Excel:         In Excel:         In Excel:      Normal Distribution Probability Calculator (Made in GeoGebra by Andreas Lindner)     We already saw an Excel command that will allow us to find a probability associated with a standard normal distribution. There is also an Excel command that allows us to find a probability associated with a general normal distribution, and in this case, we will need to specify the mean and standard deviation of the distribution. (These first two commands both apply to situations where the goal is to compute a probability associated with a data value.)    : applies to problems involving a normal distribution with a specified mean and standard deviation     : applies to problems involving the standard normal distribution ( )   (As we've seen before, cumulative .)   Suppose the average height of 5 year old girls is normally distributed with mean cm and standard deviation cm. Find the following:   Find the probability that a randomly selected 5 year old girl's height is is at least cm.    .   Find the probability that a randomly selected 5 year old girl's height is between and cm.    .    We're going to do a matching activity in class to practice working with these formulas to calculate probabilities for normal distributions. (The next few exercises include online versions of part of this activity.)   Here are the solutions to the in-class activity:   1, L, @    2, I,     3,A,!    4,F,     5,B,     6,Q,     7,T,     8,C,        Normal Distribution Practice Activity  A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is more than 40?     1-NORM.DIST(40,135,22,1)      NORM.DIST(40,135,22,1)      NORM.DIST(40,135,22,0)     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is less than 90?     NORM.DIST(90,135,22,1)      1- NORM.DIST(90,135,22,1)      NORM.DIST(90,135,22,0)     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is between 120 and 180?     NORM.S.DIST(2.05,1)-NORM.S.DIST(0.68,1)      NORM.DIST(2.05,135,22,1)-NORM.DIST(0.68,135,22,1)      NORM.S.DIST(0.68,1)-NORM.S.DIST(2.05,1)      2.01\\cdotNORM.S.DIST(0.68,1)      NORM.S.DIST(2.05,0)-NORM.S.DIST(0.68,0)      NORM.S.DIST(180,0)-NORM.S.DIST(120,0)     Normal Distribution Practice Activity  Find the probability for the standard normal distribution:                                 Find the probability for a standard normal distribution:                                   Find the probability for a standard normal distribution:                            Normal Distribution Practice Activity  Find the probability for a standard normal distribution:                                   Find the probability for a standard normal distribution:                                          Let be the standard normal variable.  Find . Round your answer to four decimal places:         Any value in the interval is marked as correct for this problem.      Incorrect. Did you round to four decimal places?       Let be the standard normal variable.  Find . Round your answer to four decimal places:         Any value in the interval is marked as correct for this problem.      Incorrect. Did you round to four decimal places?       Finding or if we have information about a probability:   What if we want to know the specific that satisfies a given probability? Then we can work backward using the tables ( Standard Normal Table ) and use the -score formula in reverse. If the exact probability cannot be found in the table, then we can use the closest values.   The Excel formulas that apply to this situation are similar to the ones we saw earlier, replacing .DIST with .INV:   NORM.INV(probability, mean, standard deviation) applies to normal distributions with a specified mean and standard deviation    NORM.S.INV(probability) is used for standard normal distributions      Let be the standard normal variable.  Find such that . Round your answer to four decimal places:         Any value in the interval is marked as correct for this problem.      Incorrect. Did you round to four decimal places?       Let be the standard normal variable.  Find such that . Round your answer to four decimal places:         Any value in the interval is marked as correct for this problem.      Incorrect. Did you round to four decimal places?       A random variable follows the normal probability distribution with a mean of 50 and a standard deviation of 20.   What value of represents the 75th percentile?       Find the value of so that probability lies below it.       Find the value of that represents the highest of all values        Suppose the retirement age of professional athletes in a certain league is normally distributed with mean years and standard deviation years. Find the following:   Find the probability that a randomly selected athlete's retirement age is is at least years.    .   Find the probability that a randomly selected athlete's retirement age is between and years.    .   Find such that the probability that a randomly selected athlete's retirement age is is at most years is .   If then years.   Find such that the probability that a randomly selected athlete's retirement age is between years and years is .   If then years.     "
+  "body": " The Normal Distribution    Continuous Probability Distribution Matching Problem  Match each probability distribution with the situation in which it is useful.    Normal Distribution   Useful when data tends to fall in the center and extreme values are rare     exponential distribution   Useful when low values for data occur often and high values are rare     uniform distribution   Useful when data of all values have an equal chance of occurring     The mathematical expression that describes the shape of the normal probability distribution is called the normal probability density function: Despite the complexity of this function, there are only two parameters that completely deter- mine the shape of the distribution: the mean, , and the standard deviation, . Let’s take a closer look at how they impact the distribution. (Don’t worry---we won’t be using this formula to compute probabilities. We have other tools!)    How does changing the standard deviation ( ) and the mean ( ) change the curve?  Graph of Normal Distribution powered by Desmos           controls the spread of the curve. Larger results in a flatter, more spread out curve     controls the location of the center. Larger shifts the hill of the curve to the right        Characteristics of the Normal Probability Distribution:     The distribution is bell-shaped and symmetric around the mean.    Because the shape is symmetrical, the mean and median are equal and located at the center of the distribution.    Random variables around the mean, where the curve is the tallest have a higher probability of occurring than values toward the end of the distribution.    The total area under the curve is . Since the distribution is symmetric, the area to the left of the mean equals as does the area to the right of the mean    No matter how far in either direction the distribution curve extends, it never touches the horizontal axis -- but it gets increasingly closer.       Examples of Normal Probability Distributions:  There are many examples of random variables that are normally distributed in many different real-world settings! Here are a few examples of random variables that are normally distributed or that could be in certain situations:   Shoe sizes    blood pressure    ACT scores    birth weight of babies    salaries at a particular workplace    length of movies       The Standard Normal Distribution:  Recall that the -score of a value, , describes the number of standard deviations that the value is from the mean of its distribution:    Values of that are less than the mean have _______ -scores     postive      negative      zero      Values of that are more than the mean have _______ -scores     positive      negative      zero      The -score for the mean equals ________                                A coffee shop wants to understand the distribution of amounts that their customers are spending per order. They find that the average amount a customer spends per order is , and the standard deviation is . If we assume that the amounts spent per order are normally distributed, and Rey comes in and spends , what is the -score for Rey's order?        When the original random variable, , follows a normal distribution, -scores also follow a normal distribution with , . It is called the standard normal distribution .     Graph of Standard Normal Distribution powered by Desmos      Calculating Probabilities for Normal Distributions:  The standard normal distribution allows us to calculate probabilities for any normal distribution since we can standardize it with -scores. The tables at this link ( Standard Normal Table ) provide you with the cumulative area to the LEFT of the -score.  We can also use Excel to calculate the cumulative area to the left of the -score by typing   ( Note: We can type 1 instead of TRUE in this formula in Excel.)     Find the probability for a standard normal distribution    In Excel:      So how do we use the table or the Excel formula to find any probability for a normal distribution?  There are 3 basic types of problems:   To the left of any -score: Look up the -score in the table (or calculate it in Excel) and use the area given.    To the right of any -score: Look up the -score in the table (or calculate it in Excel) subtract the area from 1.    Between any two -scores: Look up both -scores in the table (or calculate them in Excel) and subtract the smaller area from the larger area.       Find the following probabilities for a standard normal distribution:        In Excel:         In Excel:         In Excel:      Normal Distribution Probability Calculator (Made in GeoGebra by Andreas Lindner)     We already saw an Excel command that will allow us to find a probability associated with a standard normal distribution. There is also an Excel command that allows us to find a probability associated with a general normal distribution, and in this case, we will need to specify the mean and standard deviation of the distribution. (These first two commands both apply to situations where the goal is to compute a probability associated with a data value.)    : applies to problems involving a normal distribution with a specified mean and standard deviation     : applies to problems involving the standard normal distribution ( )   (As we've seen before, cumulative .)   Suppose the average height of 5 year old girls is normally distributed with mean cm and standard deviation cm. Find the following:   Find the probability that a randomly selected 5 year old girl's height is is at least cm.    .   Find the probability that a randomly selected 5 year old girl's height is between and cm.    .    We're going to do a matching activity in class to practice working with these formulas to calculate probabilities for normal distributions. (The next few exercises include online versions of part of this activity.)   Here are the solutions to the in-class activity:   1, L, @    2, I,     3,A,!    4,F,     5,B,     6,Q,     7,T,     8,C,        Normal Distribution Practice Activity  A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is more than 40?     1-NORM.DIST(40,135,22,1)      NORM.DIST(40,135,22,1)      NORM.DIST(40,135,22,0)     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is less than 90?     NORM.DIST(90,135,22,1)      1- NORM.DIST(90,135,22,1)      NORM.DIST(90,135,22,0)     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is between 120 and 180?     NORM.S.DIST(2.05,1)-NORM.S.DIST(0.68,1)      NORM.DIST(2.05,135,22,1)-NORM.DIST(0.68,135,22,1)      NORM.S.DIST(0.68,1)-NORM.S.DIST(2.05,1)      2.01\\cdotNORM.S.DIST(0.68,1)      NORM.S.DIST(2.05,0)-NORM.S.DIST(0.68,0)      NORM.S.DIST(180,0)-NORM.S.DIST(120,0)     Normal Distribution Practice Activity  Find the probability for the standard normal distribution:                                 Find the probability for a standard normal distribution:                                   Find the probability for a standard normal distribution:                            Normal Distribution Practice Activity  Find the probability for a standard normal distribution:                                   Find the probability for a standard normal distribution:                                          Let be the standard normal variable.  Find . Round your answer to four decimal places:         Any value in the interval is marked as correct for this problem.      Incorrect. Did you round to four decimal places?       Let be the standard normal variable.  Find . Round your answer to four decimal places:         Any value in the interval is marked as correct for this problem.      Incorrect. Did you round to four decimal places?       Finding or if we have information about a probability:   What if we want to know the specific that satisfies a given probability? Then we can work backward using the tables ( Standard Normal Table ) and use the -score formula in reverse. If the exact probability cannot be found in the table, then we can use the closest values.   The Excel formulas that apply to this situation are similar to the ones we saw earlier, replacing .DIST with .INV:   NORM.INV(probability, mean, standard deviation) applies to normal distributions with a specified mean and standard deviation    NORM.S.INV(probability) is used for standard normal distributions      Let be the standard normal variable.  Find such that . Round your answer to four decimal places:         Any value in the interval is marked as correct for this problem.      Incorrect. Did you round to four decimal places?       Let be the standard normal variable.  Find such that . Round your answer to four decimal places:         Any value in the interval is marked as correct for this problem.      Incorrect. Did you round to four decimal places?       A random variable follows the normal probability distribution with a mean of 50 and a standard deviation of 20.   What value of represents the 75th percentile?       Find the value of so that probability lies below it.       Find the value of that represents the highest of all values        Suppose the retirement age of professional athletes in a certain league is normally distributed with mean years and standard deviation years. Find the following:   Find the probability that a randomly selected athlete's retirement age is is at least years.    .   Find the probability that a randomly selected athlete's retirement age is between and years.    .   Find such that the probability that a randomly selected athlete's retirement age is is at most years is .   If then years.   Find such that the probability that a randomly selected athlete's retirement age is between years and years is .   If then years.     "
 },
 {
   "id": "sec-normal-distribution-3",
   "level": "2",
   "url": "sec-normal-distribution.html#sec-normal-distribution-3",
-  "type": "Question",
+  "type": "Exercise",
   "number": "7.1.1",
+  "title": "Continuous Probability Distribution Matching Problem.",
+  "body": "Continuous Probability Distribution Matching Problem  Match each probability distribution with the situation in which it is useful.    Normal Distribution   Useful when data tends to fall in the center and extreme values are rare     exponential distribution   Useful when low values for data occur often and high values are rare     uniform distribution   Useful when data of all values have an equal chance of occurring    "
+},
+{
+  "id": "sec-normal-distribution-5",
+  "level": "2",
+  "url": "sec-normal-distribution.html#sec-normal-distribution-5",
+  "type": "Question",
+  "number": "7.1.2",
   "title": "",
   "body": "  How does changing the standard deviation ( ) and the mean ( ) change the curve?  Graph of Normal Distribution powered by Desmos           controls the spread of the curve. Larger results in a flatter, more spread out curve     controls the location of the center. Larger shifts the hill of the curve to the right      "
 },
@@ -1607,7 +1616,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#multiple choice1",
   "type": "Exercise",
-  "number": "7.1.3",
+  "number": "7.1.4",
   "title": "",
   "body": " Values of that are less than the mean have _______ -scores     postive      negative      zero    "
 },
@@ -1616,7 +1625,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#multiple choice2",
   "type": "Exercise",
-  "number": "7.1.4",
+  "number": "7.1.5",
   "title": "",
   "body": " Values of that are more than the mean have _______ -scores     positive      negative      zero    "
 },
@@ -1625,7 +1634,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#multiple choice3",
   "type": "Exercise",
-  "number": "7.1.5",
+  "number": "7.1.6",
   "title": "",
   "body": " The -score for the mean equals ________                               "
 },
@@ -1634,7 +1643,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#subsection-standard-normal-distn-6",
   "type": "Exercise",
-  "number": "7.1.6",
+  "number": "7.1.7",
   "title": "",
   "body": "A coffee shop wants to understand the distribution of amounts that their customers are spending per order. They find that the average amount a customer spends per order is , and the standard deviation is . If we assume that the amounts spent per order are normally distributed, and Rey comes in and spends , what is the -score for Rey's order?     "
 },
@@ -1643,7 +1652,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#def-standard-normal",
   "type": "Definition",
-  "number": "7.1.7",
+  "number": "7.1.8",
   "title": "",
   "body": "  When the original random variable, , follows a normal distribution, -scores also follow a normal distribution with , . It is called the standard normal distribution .   "
 },
@@ -1652,7 +1661,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#subsection-standard-normal-distn-8",
   "type": "Figure",
-  "number": "7.1.8",
+  "number": "7.1.9",
   "title": "",
   "body": " Graph of Standard Normal Distribution powered by Desmos   "
 },
@@ -1661,7 +1670,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#subsection-calculating-probabilities-normal-5-1",
   "type": "Example",
-  "number": "7.1.9",
+  "number": "7.1.10",
   "title": "",
   "body": "  Find the probability for a standard normal distribution    In Excel:    "
 },
@@ -1670,7 +1679,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#subsection-calculating-probabilities-normal-8",
   "type": "Example",
-  "number": "7.1.10",
+  "number": "7.1.11",
   "title": "",
   "body": "  Find the following probabilities for a standard normal distribution:        In Excel:         In Excel:         In Excel:    "
 },
@@ -1679,27 +1688,9 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#figure-geogebra-normal-probability",
   "type": "Figure",
-  "number": "7.1.11",
-  "title": "",
-  "body": " Normal Distribution Probability Calculator (Made in GeoGebra by Andreas Lindner)   "
-},
-{
-  "id": "sec-normal-distribution-9",
-  "level": "2",
-  "url": "sec-normal-distribution.html#sec-normal-distribution-9",
-  "type": "Exercise",
   "number": "7.1.12",
   "title": "",
-  "body": " Suppose the average height of 5 year old girls is normally distributed with mean cm and standard deviation cm. Find the following:   Find the probability that a randomly selected 5 year old girl's height is is at least cm.    .   Find the probability that a randomly selected 5 year old girl's height is between and cm.    .  "
-},
-{
-  "id": "sec-normal-distribution-10",
-  "level": "2",
-  "url": "sec-normal-distribution.html#sec-normal-distribution-10",
-  "type": "Activity",
-  "number": "7.1.1",
-  "title": "",
-  "body": " We're going to do a matching activity in class to practice working with these formulas to calculate probabilities for normal distributions. (The next few exercises include online versions of part of this activity.)   Here are the solutions to the in-class activity:   1, L, @    2, I,     3,A,!    4,F,     5,B,     6,Q,     7,T,     8,C,       "
+  "body": " Normal Distribution Probability Calculator (Made in GeoGebra by Andreas Lindner)   "
 },
 {
   "id": "sec-normal-distribution-11",
@@ -1707,42 +1698,60 @@ var ptx_lunr_docs = [
   "url": "sec-normal-distribution.html#sec-normal-distribution-11",
   "type": "Exercise",
   "number": "7.1.13",
-  "title": "Normal Distribution Practice Activity.",
-  "body": "Normal Distribution Practice Activity  A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is more than 40?     1-NORM.DIST(40,135,22,1)      NORM.DIST(40,135,22,1)      NORM.DIST(40,135,22,0)     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is less than 90?     NORM.DIST(90,135,22,1)      1- NORM.DIST(90,135,22,1)      NORM.DIST(90,135,22,0)     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is between 120 and 180?     NORM.S.DIST(2.05,1)-NORM.S.DIST(0.68,1)      NORM.DIST(2.05,135,22,1)-NORM.DIST(0.68,135,22,1)      NORM.S.DIST(0.68,1)-NORM.S.DIST(2.05,1)      2.01\\cdotNORM.S.DIST(0.68,1)      NORM.S.DIST(2.05,0)-NORM.S.DIST(0.68,0)      NORM.S.DIST(180,0)-NORM.S.DIST(120,0)    "
+  "title": "",
+  "body": " Suppose the average height of 5 year old girls is normally distributed with mean cm and standard deviation cm. Find the following:   Find the probability that a randomly selected 5 year old girl's height is is at least cm.    .   Find the probability that a randomly selected 5 year old girl's height is between and cm.    .  "
 },
 {
   "id": "sec-normal-distribution-12",
   "level": "2",
   "url": "sec-normal-distribution.html#sec-normal-distribution-12",
-  "type": "Exercise",
-  "number": "7.1.14",
-  "title": "Normal Distribution Practice Activity.",
-  "body": "Normal Distribution Practice Activity  Find the probability for the standard normal distribution:                                 Find the probability for a standard normal distribution:                                   Find the probability for a standard normal distribution:                           "
+  "type": "Activity",
+  "number": "7.1.1",
+  "title": "",
+  "body": " We're going to do a matching activity in class to practice working with these formulas to calculate probabilities for normal distributions. (The next few exercises include online versions of part of this activity.)   Here are the solutions to the in-class activity:   1, L, @    2, I,     3,A,!    4,F,     5,B,     6,Q,     7,T,     8,C,       "
 },
 {
   "id": "sec-normal-distribution-13",
   "level": "2",
   "url": "sec-normal-distribution.html#sec-normal-distribution-13",
   "type": "Exercise",
-  "number": "7.1.15",
+  "number": "7.1.14",
   "title": "Normal Distribution Practice Activity.",
-  "body": "Normal Distribution Practice Activity  Find the probability for a standard normal distribution:                                   Find the probability for a standard normal distribution:                                  "
+  "body": "Normal Distribution Practice Activity  A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is more than 40?     1-NORM.DIST(40,135,22,1)      NORM.DIST(40,135,22,1)      NORM.DIST(40,135,22,0)     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is less than 90?     NORM.DIST(90,135,22,1)      1- NORM.DIST(90,135,22,1)      NORM.DIST(90,135,22,0)     A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22. What is the probability that a randomly selected value is between 120 and 180?     NORM.S.DIST(2.05,1)-NORM.S.DIST(0.68,1)      NORM.DIST(2.05,135,22,1)-NORM.DIST(0.68,135,22,1)      NORM.S.DIST(0.68,1)-NORM.S.DIST(2.05,1)      2.01\\cdotNORM.S.DIST(0.68,1)      NORM.S.DIST(2.05,0)-NORM.S.DIST(0.68,0)      NORM.S.DIST(180,0)-NORM.S.DIST(120,0)    "
 },
 {
   "id": "sec-normal-distribution-14",
   "level": "2",
   "url": "sec-normal-distribution.html#sec-normal-distribution-14",
   "type": "Exercise",
-  "number": "7.1.16",
-  "title": "",
-  "body": " Let be the standard normal variable.  Find . Round your answer to four decimal places:         Any value in the interval is marked as correct for this problem.      Incorrect. Did you round to four decimal places?     "
+  "number": "7.1.15",
+  "title": "Normal Distribution Practice Activity.",
+  "body": "Normal Distribution Practice Activity  Find the probability for the standard normal distribution:                                 Find the probability for a standard normal distribution:                                   Find the probability for a standard normal distribution:                           "
 },
 {
   "id": "sec-normal-distribution-15",
   "level": "2",
   "url": "sec-normal-distribution.html#sec-normal-distribution-15",
   "type": "Exercise",
+  "number": "7.1.16",
+  "title": "Normal Distribution Practice Activity.",
+  "body": "Normal Distribution Practice Activity  Find the probability for a standard normal distribution:                                   Find the probability for a standard normal distribution:                                  "
+},
+{
+  "id": "sec-normal-distribution-16",
+  "level": "2",
+  "url": "sec-normal-distribution.html#sec-normal-distribution-16",
+  "type": "Exercise",
   "number": "7.1.17",
+  "title": "",
+  "body": " Let be the standard normal variable.  Find . Round your answer to four decimal places:         Any value in the interval is marked as correct for this problem.      Incorrect. Did you round to four decimal places?     "
+},
+{
+  "id": "sec-normal-distribution-17",
+  "level": "2",
+  "url": "sec-normal-distribution.html#sec-normal-distribution-17",
+  "type": "Exercise",
+  "number": "7.1.18",
   "title": "",
   "body": " Let be the standard normal variable.  Find . Round your answer to four decimal places:         Any value in the interval is marked as correct for this problem.      Incorrect. Did you round to four decimal places?     "
 },
@@ -1751,7 +1760,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#subsection-normal-inv-4",
   "type": "Exercise",
-  "number": "7.1.18",
+  "number": "7.1.19",
   "title": "",
   "body": " Let be the standard normal variable.  Find such that . Round your answer to four decimal places:         Any value in the interval is marked as correct for this problem.      Incorrect. Did you round to four decimal places?     "
 },
@@ -1760,7 +1769,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#subsection-normal-inv-5",
   "type": "Exercise",
-  "number": "7.1.19",
+  "number": "7.1.20",
   "title": "",
   "body": " Let be the standard normal variable.  Find such that . Round your answer to four decimal places:         Any value in the interval is marked as correct for this problem.      Incorrect. Did you round to four decimal places?     "
 },
@@ -1769,7 +1778,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#subsection-normal-inv-6",
   "type": "Exercise",
-  "number": "7.1.20",
+  "number": "7.1.21",
   "title": "",
   "body": " A random variable follows the normal probability distribution with a mean of 50 and a standard deviation of 20.   What value of represents the 75th percentile?       Find the value of so that probability lies below it.       Find the value of that represents the highest of all values      "
 },
@@ -1778,7 +1787,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#subsection-normal-inv-7",
   "type": "Exercise",
-  "number": "7.1.21",
+  "number": "7.1.22",
   "title": "",
   "body": " Suppose the retirement age of professional athletes in a certain league is normally distributed with mean years and standard deviation years. Find the following:   Find the probability that a randomly selected athlete's retirement age is is at least years.    .   Find the probability that a randomly selected athlete's retirement age is between and years.    .   Find such that the probability that a randomly selected athlete's retirement age is is at most years is .   If then years.   Find such that the probability that a randomly selected athlete's retirement age is between years and years is .   If then years.  "
 },
@@ -1787,7 +1796,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-normal-distribution.html#subsection-normal-inv-8",
   "type": "Exercise",
-  "number": "7.1.22",
+  "number": "7.1.23",
   "title": "",
   "body": ""
 },
@@ -2599,7 +2608,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "11.2",
   "title": "Hypothesis Test for a Single <span class=\"process-math\">\\(\\sigma^2\\)<\/span>",
-  "body": " Hypothesis Test for a Single   We will still follow the same hypothesis testing procedures from , but take care to use the proper probability distribution, the , and the correct formula for the test statistic. Notice that it involves the sample variance, , a good estimate for . The test statistic for hypothesis tests of this type are computed with the formula:   Keep in mind that often variability is described by the standard deviation rather than variance. We can still complete a hypothesis test for by simply squaring the given standard deviation values.   In the next example, we perform a single population hypothesis test for using the traditional method of hypothesis testing. Recall that this method requires the identification of critical value(s), , which we can find using a table or using the below Excel commands:    (Similar to Donnelly 13.7)  The volatility of world crude oil prices is important because of its impact on global economic stability. One measure of volatility is the standard deviation. The data table in the Excel file below lists the monthly price of crude oil from January 1974 to March 2024.  The standard deviation of crude oil prices between January 1974 and December 2021 was about a barrel  Assuming , check to see if the standard deviation of crude oil prices between January 2022 and March 2024 has decreased from what it was prior to this time period. (Use the traditional method of hypothesis testing.)          In our next example, we will use the p-value method of hypothesis testing. Once again, the tables for the Chi-square distribution are limited in the precision they can provide for our p-values. Therefore, we will rely on Excel to compute the p-values using the following formulas: where     the test statistic,      the degrees of freedom    cumulative   TRUE (since we want the accumulated area left of our test statistic)      (Donnelly 13.29)  As smartphones have become more sophisticated, their data usage has increased and caused capacity issues with service providers. High variability in data usage among customers can result in slow connections with the cellphone network. Suppose a cellphone network would like to test if the standard deviation of monthly data usage for its customers has increased beyond 400 megabytes (MB). A random sample of 25 customers was found to have a standard deviation of 460 MB. Using , perform a hypothesis test to determine if the standard deviation for the monthly data usage for the cellphone network has exceeded 400 MB. Use the p-value method of hypothesis testing.                        Since p-value , we fail to reject .  There is not enough evidence to conclude that the standard deviation for monthly data usage for the cell phone network has exceeded 400 MB.   "
+  "body": " Hypothesis Test for a Single   We will still follow the same hypothesis testing procedures from , but take care to use the proper probability distribution, the , and the correct formula for the test statistic. Notice that it involves the sample variance, , a good estimate for . The test statistic for hypothesis tests of this type are computed with the formula:   Keep in mind that often variability is described by the standard deviation rather than variance. We can still complete a hypothesis test for by simply squaring the given standard deviation values.   In the next example, we perform a single population hypothesis test for using the traditional method of hypothesis testing. Recall that this method requires the identification of critical value(s), , which we can find using a table or using the below Excel commands:    (Similar to Donnelly 13.7)  The volatility of world crude oil prices is important because of its impact on global economic stability. One measure of volatility is the standard deviation. The data table in the Excel file below lists the monthly price of crude oil from January 1974 to March 2024.  The standard deviation of crude oil prices between January 1974 and December 2021 was about a barrel  Assuming , check to see if the standard deviation of crude oil prices between January 2022 and March 2024 has decreased from what it was prior to this time period. (Use the traditional method of hypothesis testing.)          In our next example, we will use the p-value method of hypothesis testing. Once again, the tables for the Chi-square distribution are limited in the precision they can provide for our p-values. Therefore, we will rely on Excel to compute the p-values using the following formulas: where     the test statistic,      the degrees of freedom    cumulative   TRUE (since we want the accumulated area left of our test statistic)      (Donnelly 13.29)  As smartphones have become more sophisticated, their data usage has increased and caused capacity issues with service providers. High variability in data usage among customers can result in slow connections with the cellphone network. Suppose a cellphone network would like to test if the standard deviation of monthly data usage for its customers has increased beyond 400 megabytes (MB). A random sample of 25 customers was found to have a standard deviation of 460 MB. Using , perform a hypothesis test to determine if the standard deviation for the monthly data usage for the cellphone network has exceeded 400 MB. Use the p-value method of hypothesis testing.                        Since p-value , we fail to reject .  There is not enough evidence to conclude that the standard deviation for monthly data usage for the cell phone network has exceeded 400 MB.      "
 },
 {
   "id": "sec-hyp-test-single-variance-4",
@@ -2618,6 +2627,15 @@ var ptx_lunr_docs = [
   "number": "11.2.2",
   "title": "",
   "body": " (Donnelly 13.29)  As smartphones have become more sophisticated, their data usage has increased and caused capacity issues with service providers. High variability in data usage among customers can result in slow connections with the cellphone network. Suppose a cellphone network would like to test if the standard deviation of monthly data usage for its customers has increased beyond 400 megabytes (MB). A random sample of 25 customers was found to have a standard deviation of 460 MB. Using , perform a hypothesis test to determine if the standard deviation for the monthly data usage for the cellphone network has exceeded 400 MB. Use the p-value method of hypothesis testing.                        Since p-value , we fail to reject .  There is not enough evidence to conclude that the standard deviation for monthly data usage for the cell phone network has exceeded 400 MB.  "
+},
+{
+  "id": "sec-hyp-test-single-variance-7-1",
+  "level": "2",
+  "url": "sec-hyp-test-single-variance.html#sec-hyp-test-single-variance-7-1",
+  "type": "Exercise",
+  "number": "11.2.1",
+  "title": "",
+  "body": ""
 },
 {
   "id": "sec-F-dist",
@@ -2662,7 +2680,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "11.4",
   "title": "Comparing Variances from Two Populations",
-  "body": " Comparing Variances from Two Populations   When we want to compare the variances of two samples, we do this by conducting a test of the ratio of the variances. If the ratio is equal to , then the variances are equal; if not, then they are unequal.  The sample variances is a good estimate of the population variance. Not surprisingly, the ratio of the two sample variances, , drawn from their respective populations is a good estimate for the ratio of the two population variances, . The sampling distribution of is -distributed with and degrees of freedom if we have independent samples from two normal populations. Since we are comparing two variances, the test statistic is:   The formula for this test statistic is easy to compute by hand, nevertheless, we can also use Excel to do the work if we have raw data (not summary statistics). After stating the two hypotheses, we will go to the Data Analysis tool and choose F-Test Two-Sample for Variances to complete the test.   In general, if we are testing to see if one variance is larger than the other, we want to choose population 1 to be the one with the larger sample standard deviation so that we will be doing a right-tail test.   A company is doing a hypothesis test on the variation in quality from two suppliers. Both distributions are normal, and the populations are independent. Use . A sample of 29 products were selected from Supplier 1 and a standard deviation of quality was found to be 5.8426. A sample of 30 products were selected from Supplier 2 and a standard deviation of quality was found to be 3.2156. Test to see if the variance in quality for Supplier 1 is larger than Supplier 2.   What are the correct hypotheses?                                  What test statistic should we use for this problem?                                Find the test statistic.       What is the p-value?       The decision is to...     Reject the null hypothesis.      Fail to reject the null hypothesis.     The correct summary would be:     There is enough evidence to support the claim that the variance in quality for Supplier 1 is larger than Supplier 2.      There is not enough evidence to support the claim that the variance in quality for Supplier 1 is larger than Supplier 2.      There is enough evidence to reject the claim that the variance in quality for Supplier 1 is larger than Supplier 2.      There is enough evidence to reject the claim that the variance in quality for Supplier 1 is larger than Supplier 2.      A statistics student wants to investigate salaries of men and women in a certain Fortune 500 company. Two samples of salaries of men and women employees were obtained independently and analyzed. The sample data is in the Excel file below. (Assume that the samples are from normal populations.)      Which of the samples has a larger sample standard deviation?   Use STDEV.S in Excel to find the sample standard deviations.         Use a level of significance to decide whether there is sufficient evidence that in the Fortune 500 company, the standard deviation of the salary of men is greater than the standard deviation of the salary of women.         Since we have the raw data from the samples, we can use F-Test Two-Sample for Variances in the Data Analysis tool in Excel.     From this, we'll get a p-value of approximately 0.4182, which is bigger than . So we fail to reject the null hypothesis and do not have enough evidence to conclude that .   "
+  "body": " Comparing Variances from Two Populations   When we want to compare the variances of two samples, we do this by conducting a test of the ratio of the variances. If the ratio is equal to , then the variances are equal; if not, then they are unequal.  The sample variances is a good estimate of the population variance. Not surprisingly, the ratio of the two sample variances, , drawn from their respective populations is a good estimate for the ratio of the two population variances, . The sampling distribution of is -distributed with and degrees of freedom if we have independent samples from two normal populations. Since we are comparing two variances, the test statistic is:   The formula for this test statistic is easy to compute by hand, nevertheless, we can also use Excel to do the work if we have raw data (not summary statistics). After stating the two hypotheses, we will go to the Data Analysis tool and choose F-Test Two-Sample for Variances to complete the test.   In general, if we are testing to see if one variance is larger than the other, we want to choose population 1 to be the one with the larger sample standard deviation so that we will be doing a right-tail test.   A company is doing a hypothesis test on the variation in quality from two suppliers. Both distributions are normal, and the populations are independent. Use . A sample of 29 products were selected from Supplier 1 and a standard deviation of quality was found to be 5.8426. A sample of 30 products were selected from Supplier 2 and a standard deviation of quality was found to be 3.2156. Test to see if the variance in quality for Supplier 1 is larger than Supplier 2.   What are the correct hypotheses?                                  What test statistic should we use for this problem?                                Find the test statistic.       What is the p-value?       The decision is to...     Reject the null hypothesis.      Fail to reject the null hypothesis.     The correct summary would be:     There is enough evidence to support the claim that the variance in quality for Supplier 1 is larger than Supplier 2.      There is not enough evidence to support the claim that the variance in quality for Supplier 1 is larger than Supplier 2.      There is enough evidence to reject the claim that the variance in quality for Supplier 1 is larger than Supplier 2.      There is enough evidence to reject the claim that the variance in quality for Supplier 1 is larger than Supplier 2.      A statistics student wants to investigate salaries of men and women in a certain Fortune 500 company. Two samples of salaries of men and women employees were obtained independently and analyzed. The sample data is in the Excel file below. (Assume that the samples are from normal populations.)      Which of the samples has a larger sample standard deviation?   Use STDEV.S in Excel to find the sample standard deviations.         Use a level of significance to decide whether there is sufficient evidence that in the Fortune 500 company, the standard deviation of the salary of men is greater than the standard deviation of the salary of women.         Since we have the raw data from the samples, we can use F-Test Two-Sample for Variances in the Data Analysis tool in Excel.     From this, we'll get a p-value of approximately 0.4182, which is bigger than . So we fail to reject the null hypothesis and do not have enough evidence to conclude that .            "
 },
 {
   "id": "sec-hyp-test-two-variances-3",
@@ -2690,6 +2708,69 @@ var ptx_lunr_docs = [
   "number": "11.4.3",
   "title": "",
   "body": " A statistics student wants to investigate salaries of men and women in a certain Fortune 500 company. Two samples of salaries of men and women employees were obtained independently and analyzed. The sample data is in the Excel file below. (Assume that the samples are from normal populations.)      Which of the samples has a larger sample standard deviation?   Use STDEV.S in Excel to find the sample standard deviations.         Use a level of significance to decide whether there is sufficient evidence that in the Fortune 500 company, the standard deviation of the salary of men is greater than the standard deviation of the salary of women.         Since we have the raw data from the samples, we can use F-Test Two-Sample for Variances in the Data Analysis tool in Excel.     From this, we'll get a p-value of approximately 0.4182, which is bigger than . So we fail to reject the null hypothesis and do not have enough evidence to conclude that .  "
+},
+{
+  "id": "sec-hyp-test-two-variances-6-1",
+  "level": "2",
+  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-6-1",
+  "type": "Exercise",
+  "number": "11.4.1",
+  "title": "",
+  "body": ""
+},
+{
+  "id": "sec-hyp-test-two-variances-6-2",
+  "level": "2",
+  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-6-2",
+  "type": "Exercise",
+  "number": "11.4.2",
+  "title": "",
+  "body": ""
+},
+{
+  "id": "sec-hyp-test-two-variances-6-3",
+  "level": "2",
+  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-6-3",
+  "type": "Exercise",
+  "number": "11.4.3",
+  "title": "",
+  "body": ""
+},
+{
+  "id": "sec-hyp-test-two-variances-6-4",
+  "level": "2",
+  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-6-4",
+  "type": "Exercise",
+  "number": "11.4.4",
+  "title": "",
+  "body": ""
+},
+{
+  "id": "sec-hyp-test-two-variances-6-5",
+  "level": "2",
+  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-6-5",
+  "type": "Exercise",
+  "number": "11.4.5",
+  "title": "",
+  "body": ""
+},
+{
+  "id": "sec-hyp-test-two-variances-6-6",
+  "level": "2",
+  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-6-6",
+  "type": "Exercise",
+  "number": "11.4.6",
+  "title": "",
+  "body": ""
+},
+{
+  "id": "sec-hyp-test-two-variances-6-7",
+  "level": "2",
+  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-6-7",
+  "type": "Exercise",
+  "number": "11.4.7",
+  "title": "",
+  "body": ""
 },
 {
   "id": "sec-Overview",

@@ -354,9 +354,15 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="ch-Hypothesis-Variance.html" class="internal"><span class="codenumber">11</span> <span class="title">Hypothesis Tests for the Population Variance</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-chi-squared.html" class="internal"><span class="codenumber">11.1</span> <span class="title">The Chi-square Distribution</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hyp-test-single-variance.html" class="internal"><span class="codenumber">11.2</span> <span class="title">Hypothesis Test for a Single <span class="process-math">\(\sigma^2\)</span></span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-hyp-test-single-variance.html" class="internal"><span class="codenumber">11.2</span> <span class="title">Hypothesis Test for a Single <span class="process-math">\(\sigma^2\)</span></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-hyp-test-single-variance.html#sec-hyp-test-single-variance-7" class="internal"><span class="codenumber">11.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-F-dist.html" class="internal"><span class="codenumber">11.3</span> <span class="title">The <span class="process-math">\(F\)</span>-Distribution</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hyp-test-two-variances.html" class="internal"><span class="codenumber">11.4</span> <span class="title">Comparing Variances from Two Populations</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-hyp-test-two-variances.html" class="internal"><span class="codenumber">11.4</span> <span class="title">Comparing Variances from Two Populations</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-6" class="internal"><span class="codenumber">11.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -382,7 +388,16 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-normal-distribution"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">7.1</span><span class="space"> </span><span class="title">The Normal Distribution</span>
 </h2>
-<section class="introduction" id="sec-normal-distribution-2"><div class="para logical" id="sec-normal-distribution-2-1">
+<section class="introduction" id="sec-normal-distribution-2"></section><details id="sec-normal-distribution-3" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">7.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Continuous Probability Distribution Matching Problem.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone matching_section"><ul data-component="dragndrop" data-question_label="" style="visibility: hidden;" id="">
+<span data-subcomponent="question"><div class="para" id="sec-normal-distribution-3-2-1">Match each probability distribution with the situation in which it is useful.</div></span><li data-subcomponent="draggable" id="_drag1">Normal Distribution</li>
+<li data-subcomponent="dropzone" for="_drag1"><div class="para" id="sec-normal-distribution-3-3-1-2-1">Useful when data tends to fall in the center and extreme values are rare</div></li>
+<li data-subcomponent="draggable" id="_drag2">exponential distribution</li>
+<li data-subcomponent="dropzone" for="_drag2"><div class="para" id="sec-normal-distribution-3-3-2-2-1">Useful when low values for data occur often and high values are rare</div></li>
+<li data-subcomponent="draggable" id="_drag3">uniform distribution</li>
+<li data-subcomponent="dropzone" for="_drag3"><div class="para" id="sec-normal-distribution-3-3-3-2-1">Useful when data of all values have an equal chance of occurring</div></li>
+</ul></div></div></article></details><div class="para logical" id="sec-normal-distribution-4">
 <div class="para">The mathematical expression that describes the shape of the normal probability distribution is called the normal probability density function:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -390,14 +405,15 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
 \end{equation*}
 </div>
 <div class="para">Despite the complexity of this function, there are only two parameters that completely deter- mine the shape of the distribution: the mean, <span class="process-math">\(\mu\text{,}\)</span> and the standard deviation, <span class="process-math">\(\sigma\text{.}\)</span> Let’s take a closer look at how they impact the distribution. (Don’t worry---we won’t be using this formula to compute probabilities. We have other tools!)</div>
-</div></section><details id="sec-normal-distribution-3" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Question</span><span class="space"> </span><span class="codenumber">7.1.1</span><span class="period">.</span>
-</h3></summary><article class="question example-like knowl__content"><div class="para" id="sec-normal-distribution-3-1-1">How does changing the standard deviation (<span class="process-math">\(\sigma\)</span>) and the mean (<span class="process-math">\(\mu\)</span>) change the curve? <figure class="figure figure-like" id="sec-normal-distribution-3-1-1-3"><iframe src="https://www.desmos.com/calculator/jxzs8fz9qr" id="desmos-normal" width="600" height="450"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.2<span class="period">.</span></span><span class="space"> </span>Graph of Normal Distribution powered by Desmos</figcaption></figure>
 </div>
-<div class="solutions"><details id="sec-normal-distribution-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-normal-distribution-3-2-1"><ul class="disc" id="sec-normal-distribution-3-2-1-1">
-<li id="sec-normal-distribution-3-2-1-1-1"><div class="para" id="sec-normal-distribution-3-2-1-1-1-1">
+<details id="sec-normal-distribution-5" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">7.1.2</span><span class="period">.</span>
+</h3></summary><article class="question example-like knowl__content"><div class="para" id="sec-normal-distribution-5-1-1">How does changing the standard deviation (<span class="process-math">\(\sigma\)</span>) and the mean (<span class="process-math">\(\mu\)</span>) change the curve? <figure class="figure figure-like" id="sec-normal-distribution-5-1-1-3"><iframe src="https://www.desmos.com/calculator/jxzs8fz9qr" id="desmos-normal" width="600" height="450"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.3<span class="period">.</span></span><span class="space"> </span>Graph of Normal Distribution powered by Desmos</figcaption></figure>
+</div>
+<div class="solutions"><details id="sec-normal-distribution-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-normal-distribution-5-2-1"><ul class="disc" id="sec-normal-distribution-5-2-1-1">
+<li id="sec-normal-distribution-5-2-1-1-1"><div class="para" id="sec-normal-distribution-5-2-1-1-1-1">
 <span class="process-math">\(\sigma:\)</span> controls the “spread” of the curve.  Larger <span class="process-math">\(\sigma\)</span> results in a flatter, more spread out curve</div></li>
-<li id="sec-normal-distribution-3-2-1-1-2"><div class="para" id="sec-normal-distribution-3-2-1-1-2-1">
+<li id="sec-normal-distribution-5-2-1-1-2"><div class="para" id="sec-normal-distribution-5-2-1-1-2-1">
 <span class="process-math">\(\mu:\)</span> controls the location of the center.  Larger <span class="process-math">\(\mu\)</span> shifts the “hill” of the curve to the right</div></li>
 </ul></div></div></details></div></article></details><section class="subsection" id="subsection-characteristics-of-normal-distn"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">7.1.1</span><span class="space"> </span><span class="title">Characteristics of the Normal Probability Distribution:</span>
@@ -433,7 +449,7 @@ z=\frac{x-\mu}{\sigma}
 </div>
 </div>
 <details id="multiple choice1" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">7.1.3</span><span class="period">.</span>
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">7.1.4</span><span class="period">.</span>
 </h4></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="multiple choice1" data-multipleanswers="false">
 <div class="para" id="multiple choice1-1-1">Values of <span class="process-math">\(x\)</span> that are less than the mean have _______ <span class="process-math">\(z\)</span>-scores</div>
 <li data-component="answer" id="multiple choice1_opt_a"><div class="para" id="multiple choice1-2-1-1-1">postive</div></li>
@@ -443,7 +459,7 @@ z=\frac{x-\mu}{\sigma}
 <li data-component="answer" id="multiple choice1_opt_c"><div class="para" id="multiple choice1-2-3-1-1">zero</div></li>
 <li data-component="feedback" id="multiple choice1_opt_c">
 </ul></div></div></article></details><details id="multiple choice2" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">7.1.4</span><span class="period">.</span>
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">7.1.5</span><span class="period">.</span>
 </h4></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="multiple choice2" data-multipleanswers="false">
 <div class="para" id="multiple choice2-1-1">Values of <span class="process-math">\(x\)</span> that are more than the mean have _______ <span class="process-math">\(z\)</span>-scores</div>
 <li data-component="answer" id="multiple choice2_opt_a" data-correct=""><div class="para" id="multiple choice2-2-1-1-1">positive</div></li>
@@ -453,7 +469,7 @@ z=\frac{x-\mu}{\sigma}
 <li data-component="answer" id="multiple choice2_opt_c"><div class="para" id="multiple choice2-2-3-1-1">zero</div></li>
 <li data-component="feedback" id="multiple choice2_opt_c">
 </ul></div></div></article></details><details id="multiple choice3" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">7.1.5</span><span class="period">.</span>
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">7.1.6</span><span class="period">.</span>
 </h4></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="multiple choice3" data-multipleanswers="false">
 <div class="para" id="multiple choice3-1-1">The <span class="process-math">\(z\)</span>-score for the mean equals ________</div>
 <li data-component="answer" id="multiple choice3_opt_a" data-correct=""><div class="para" id="multiple choice3-2-1-1-1"><span class="process-math">\(0\)</span></div></li>
@@ -465,15 +481,15 @@ z=\frac{x-\mu}{\sigma}
 <li data-component="answer" id="multiple choice3_opt_d"><div class="para" id="multiple choice3-2-4-1-1"><span class="process-math">\(0.5\)</span></div></li>
 <li data-component="feedback" id="multiple choice3_opt_d">
 </ul></div></div></article></details><details id="subsection-standard-normal-distn-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">7.1.6</span><span class="period">.</span>
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">7.1.7</span><span class="period">.</span>
 </h4></summary><article class="exercise exercise-like knowl__content">A coffee shop wants to understand the distribution of amounts that their customers are spending per order.  They find that the average amount a customer spends per order is <span class="process-math">\(\$ 7.50\text{,}\)</span> and the standard deviation is <span class="process-math">\(\$1.25\text{.}\)</span>  If we assume that the amounts spent per order are normally distributed, and Rey comes in and spends <span class="process-math">\(\$10.00\text{,}\)</span> what is the <span class="process-math">\(z\)</span>-score for Rey’s order?<div class="solutions"><details id="subsection-standard-normal-distn-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="subsection-standard-normal-distn-6-2-1"><div class="displaymath process-math">
 \begin{equation*}
 z=\frac{10.00-7.50}{1.25} = 2 
 \end{equation*}
 </div></div></div></details></div></article></details><article class="definition definition-like" id="def-standard-normal"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.1.7</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.1.8</span><span class="period">.</span>
 </h4>
-<div class="para" id="def-standard-normal-1-1">When the original random variable, <span class="process-math">\(x\text{,}\)</span> follows a normal distribution, <span class="process-math">\(z\)</span>-scores also follow a normal distribution with <span class="process-math">\(\mu=0\text{,}\)</span> <span class="process-math">\(\sigma=1\text{.}\)</span>  It is called the <em class="emphasis">standard normal distribution</em>.</div></article><figure class="figure figure-like" id="subsection-standard-normal-distn-8"><iframe src="https://www.desmos.com/calculator/elacje4bcl" id="desmos-standard-normal" width="600" height="450"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.8<span class="period">.</span></span><span class="space"> </span>Graph of Standard Normal Distribution powered by Desmos</figcaption></figure></section><section class="subsection" id="subsection-calculating-probabilities-normal"><h3 class="heading hide-type">
+<div class="para" id="def-standard-normal-1-1">When the original random variable, <span class="process-math">\(x\text{,}\)</span> follows a normal distribution, <span class="process-math">\(z\)</span>-scores also follow a normal distribution with <span class="process-math">\(\mu=0\text{,}\)</span> <span class="process-math">\(\sigma=1\text{.}\)</span>  It is called the <em class="emphasis">standard normal distribution</em>.</div></article><figure class="figure figure-like" id="subsection-standard-normal-distn-8"><iframe src="https://www.desmos.com/calculator/elacje4bcl" id="desmos-standard-normal" width="600" height="450"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.9<span class="period">.</span></span><span class="space"> </span>Graph of Standard Normal Distribution powered by Desmos</figcaption></figure></section><section class="subsection" id="subsection-calculating-probabilities-normal"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">7.1.4</span><span class="space"> </span><span class="title">Calculating Probabilities for Normal Distributions:</span>
 </h3>
 <div class="para" id="subsection-calculating-probabilities-normal-2">The standard normal distribution allows us to calculate probabilities for any normal distribution since we can standardize it with <span class="process-math">\(z\)</span>-scores.   The tables at this link (<a class="external" href="https://www.math.arizona.edu/~rsims/ma464/standardnormaltable.pdf" target="_blank">Standard Normal Table</a><details class="ptx-footnote" aria-live="polite" id="subsection-calculating-probabilities-normal-2-3"><summary class="ptx-footnote__number" title="Footnote 7.1.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="subsection-calculating-probabilities-normal-2-3"><code class="code-inline tex2jax_ignore">www.math.arizona.edu/~rsims/ma464/standardnormaltable.pdf</code></div></details>) provide you with the cumulative area to the LEFT of the <span class="process-math">\(z\)</span>-score.</div>
@@ -487,7 +503,7 @@ z=\frac{10.00-7.50}{1.25} = 2
 </div>
 <div class="para" id="subsection-calculating-probabilities-normal-4">(<em class="emphasis">Note:</em>  We can type “1” instead of “TRUE” in this formula in Excel.)</div>
 <div class="para" id="subsection-calculating-probabilities-normal-5"><details id="subsection-calculating-probabilities-normal-5-1" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.1.9</span><span class="period">.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.1.10</span><span class="period">.</span>
 </h4></summary><article class="example example-like knowl__content"><div class="para" id="subsection-calculating-probabilities-normal-5-1-1-1">Find the probability <span class="process-math">\(P(Z\leq -1.3)\)</span> for a standard normal distribution</div>
 <div class="solutions"><details id="subsection-calculating-probabilities-normal-5-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="subsection-calculating-probabilities-normal-5-1-2-1">
 <div class="para">In Excel:</div>
@@ -507,7 +523,7 @@ z=\frac{10.00-7.50}{1.25} = 2
 </ol>
 </div>
 <details id="subsection-calculating-probabilities-normal-8" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.1.10</span><span class="period">.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.1.11</span><span class="period">.</span>
 </h4></summary><article class="example example-like knowl__content"><div class="introduction" id="subsection-calculating-probabilities-normal-8-1"><div class="para" id="subsection-calculating-probabilities-normal-8-1-1">Find the following probabilities for a standard normal distribution:</div></div>
 <article class="task exercise-like" id="subsection-calculating-probabilities-normal-8-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="subsection-calculating-probabilities-normal-8-2-1-1"><span class="process-math">\(P(Z\lt-0.5)\)</span></div>
@@ -536,84 +552,84 @@ z=\frac{10.00-7.50}{1.25} = 2
 = NORM.S.DIST(2.7,TRUE) - NORM.S.DIST(0.2,TRUE) \approx 0.4173 
 \end{equation*}
 </div>
-</div></div></details></div></article></article></details><figure class="figure figure-like" id="figure-geogebra-normal-probability"><iframe src="https://www.geogebra.org/material/iframe/id/KzkYq4Bt/width/800/height/444/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="geogebra-normal" width="600" height="333"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.11<span class="period">.</span></span><span class="space"> </span>Normal Distribution Probability Calculator (Made in GeoGebra by Andreas Lindner)</figcaption></figure></section><div class="para logical" id="sec-normal-distribution-8">
+</div></div></details></div></article></article></details><figure class="figure figure-like" id="figure-geogebra-normal-probability"><iframe src="https://www.geogebra.org/material/iframe/id/KzkYq4Bt/width/800/height/444/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="geogebra-normal" width="600" height="333"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.12<span class="period">.</span></span><span class="space"> </span>Normal Distribution Probability Calculator (Made in GeoGebra by Andreas Lindner)</figcaption></figure></section><div class="para logical" id="sec-normal-distribution-10">
 <div class="para">We already saw an Excel command that will allow us to find a probability associated with a standard normal distribution.  There is also an Excel command that allows us to find a probability associated with a general normal distribution, and in this case, we will need to specify the mean and standard deviation of the distribution. (These first two commands both apply to situations where the goal is to compute a probability associated with a data value.)</div>
-<ul class="disc" id="sec-normal-distribution-8-1">
-<li id="sec-normal-distribution-8-1-1"><div class="para" id="sec-normal-distribution-8-1-1-1">
+<ul class="disc" id="sec-normal-distribution-10-1">
+<li id="sec-normal-distribution-10-1-1"><div class="para" id="sec-normal-distribution-10-1-1-1">
 <span class="process-math">\(NORM.DIST(x,\text{mean},\text{standard deviation},\text{cumulative})\text{:}\)</span>  applies to problems involving a normal distribution with a specified mean and standard deviation</div></li>
-<li id="sec-normal-distribution-8-1-2"><div class="para" id="sec-normal-distribution-8-1-2-1">
+<li id="sec-normal-distribution-10-1-2"><div class="para" id="sec-normal-distribution-10-1-2-1">
 <span class="process-math">\(NORM.S.DIST(x,\text{cumulative})\text{:}\)</span>  applies to problems involving the standard normal distribution (<span class="process-math">\(\mu=0\text{ and }\sigma=1\)</span>)</div></li>
 </ul>
 <div class="para">(As we’ve seen before, cumulative<span class="process-math">\(=TRUE\text{ or }FALSE\text{.}\)</span>)</div>
 </div>
-<details id="sec-normal-distribution-9" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">7.1.12</span><span class="period">.</span>
-</h3></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec-normal-distribution-9-1"><div class="para" id="sec-normal-distribution-9-1-1">Suppose the average height of 5 year old girls is normally distributed with mean <span class="process-math">\(108.32\)</span> cm and standard deviation <span class="process-math">\(5.6\)</span> cm. Find the following:</div></div>
-<article class="task exercise-like" id="sec-normal-distribution-9-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="sec-normal-distribution-9-2-1-1">Find the probability that a randomly selected 5 year old girl’s height is is at least <span class="process-math">\(97.66\)</span> cm.</div>
-<div class="solutions"><details id="sec-normal-distribution-9-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-normal-distribution-9-2-2-1"><span class="process-math">\(P(X\geq 97.66)\approx 0.9715169885897529\text{.}\)</span></div></div></details></div></article><article class="task exercise-like" id="sec-normal-distribution-9-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="sec-normal-distribution-9-3-1-1">Find the probability that a randomly selected 5 year old girl’s height is between <span class="process-math">\(107.22\)</span> and <span class="process-math">\(109.94\)</span> cm.</div>
-<div class="solutions"><details id="sec-normal-distribution-9-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-normal-distribution-9-3-2-1"><span class="process-math">\(P(107.22\lt X\lt 109.94)\approx 0.19168126069053149\text{.}\)</span></div></div></details></div></article></article></details><article class="activity project-like" id="sec-normal-distribution-10"><h3 class="heading">
+<details id="sec-normal-distribution-11" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">7.1.13</span><span class="period">.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec-normal-distribution-11-1"><div class="para" id="sec-normal-distribution-11-1-1">Suppose the average height of 5 year old girls is normally distributed with mean <span class="process-math">\(108.32\)</span> cm and standard deviation <span class="process-math">\(5.6\)</span> cm. Find the following:</div></div>
+<article class="task exercise-like" id="sec-normal-distribution-11-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="sec-normal-distribution-11-2-1-1">Find the probability that a randomly selected 5 year old girl’s height is is at least <span class="process-math">\(97.66\)</span> cm.</div>
+<div class="solutions"><details id="sec-normal-distribution-11-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-normal-distribution-11-2-2-1"><span class="process-math">\(P(X\geq 97.66)\approx 0.9715169885897529\text{.}\)</span></div></div></details></div></article><article class="task exercise-like" id="sec-normal-distribution-11-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-normal-distribution-11-3-1-1">Find the probability that a randomly selected 5 year old girl’s height is between <span class="process-math">\(107.22\)</span> and <span class="process-math">\(109.94\)</span> cm.</div>
+<div class="solutions"><details id="sec-normal-distribution-11-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-normal-distribution-11-3-2-1"><span class="process-math">\(P(107.22\lt X\lt 109.94)\approx 0.19168126069053149\text{.}\)</span></div></div></details></div></article></article></details><article class="activity project-like" id="sec-normal-distribution-12"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.1.1</span><span class="period">.</span>
 </h3>
-<div class="para" id="sec-normal-distribution-10-1">We’re going to do a matching activity in class to practice working with these formulas to calculate probabilities for normal distributions.  (The next few exercises include online versions of part of this activity.)</div> <details id="sec-normal-distribution-10-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-normal-distribution-10-2-1">
+<div class="para" id="sec-normal-distribution-12-1">We’re going to do a matching activity in class to practice working with these formulas to calculate probabilities for normal distributions.  (The next few exercises include online versions of part of this activity.)</div> <details id="sec-normal-distribution-12-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-normal-distribution-12-2-1">
 <div class="para">Here are the solutions to the in-class activity:</div>
-<ul class="disc" id="sec-normal-distribution-10-2-1-1">
-<li id="sec-normal-distribution-10-2-1-1-1"><div class="para" id="sec-normal-distribution-10-2-1-1-1-1">1, L, @</div></li>
-<li id="sec-normal-distribution-10-2-1-1-2"><div class="para" id="sec-normal-distribution-10-2-1-1-2-1">2, I, <span class="process-math">\(\infty\)</span>
+<ul class="disc" id="sec-normal-distribution-12-2-1-1">
+<li id="sec-normal-distribution-12-2-1-1-1"><div class="para" id="sec-normal-distribution-12-2-1-1-1-1">1, L, @</div></li>
+<li id="sec-normal-distribution-12-2-1-1-2"><div class="para" id="sec-normal-distribution-12-2-1-1-2-1">2, I, <span class="process-math">\(\infty\)</span>
 </div></li>
-<li id="sec-normal-distribution-10-2-1-1-3"><div class="para" id="sec-normal-distribution-10-2-1-1-3-1">3,A,!</div></li>
-<li id="sec-normal-distribution-10-2-1-1-4"><div class="para" id="sec-normal-distribution-10-2-1-1-4-1">4,F,<span class="process-math">\(\square\)</span>
+<li id="sec-normal-distribution-12-2-1-1-3"><div class="para" id="sec-normal-distribution-12-2-1-1-3-1">3,A,!</div></li>
+<li id="sec-normal-distribution-12-2-1-1-4"><div class="para" id="sec-normal-distribution-12-2-1-1-4-1">4,F,<span class="process-math">\(\square\)</span>
 </div></li>
-<li id="sec-normal-distribution-10-2-1-1-5"><div class="para" id="sec-normal-distribution-10-2-1-1-5-1">5,B,<span class="process-math">\(\triangle\)</span>
+<li id="sec-normal-distribution-12-2-1-1-5"><div class="para" id="sec-normal-distribution-12-2-1-1-5-1">5,B,<span class="process-math">\(\triangle\)</span>
 </div></li>
-<li id="sec-normal-distribution-10-2-1-1-6"><div class="para" id="sec-normal-distribution-10-2-1-1-6-1">6,Q,<span class="process-math">\(\heartsuit\)</span>
+<li id="sec-normal-distribution-12-2-1-1-6"><div class="para" id="sec-normal-distribution-12-2-1-1-6-1">6,Q,<span class="process-math">\(\heartsuit\)</span>
 </div></li>
-<li id="sec-normal-distribution-10-2-1-1-7"><div class="para" id="sec-normal-distribution-10-2-1-1-7-1">7,T,<span class="process-math">\(\clubsuit\)</span>
+<li id="sec-normal-distribution-12-2-1-1-7"><div class="para" id="sec-normal-distribution-12-2-1-1-7-1">7,T,<span class="process-math">\(\clubsuit\)</span>
 </div></li>
-<li id="sec-normal-distribution-10-2-1-1-8"><div class="para" id="sec-normal-distribution-10-2-1-1-8-1">8,C,<span class="process-math">\(\Rightarrow\)</span>
+<li id="sec-normal-distribution-12-2-1-1-8"><div class="para" id="sec-normal-distribution-12-2-1-1-8-1">8,C,<span class="process-math">\(\Rightarrow\)</span>
 </div></li>
 </ul>
-</div></div></details></article><details id="sec-normal-distribution-11" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">7.1.13</span><span class="period">.</span><span class="space"> </span><span class="title">Normal Distribution Practice Activity.</span>
-</h3></summary><article class="exercise exercise-like knowl__content"><article class="task exercise-like" id="sec-normal-distribution-11-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="" data-multipleanswers="false">
-<div class="para" id="sec-normal-distribution-11-2-1-1">A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22.  What is the probability that a randomly selected value is more than 40?</div>
-<li data-component="answer" id="_opt_a" data-correct=""><div class="para" id="sec-normal-distribution-11-2-2-1-1-1">1-NORM.DIST(40,135,22,1)</div></li>
-<li data-component="feedback" id="_opt_a">
-<li data-component="answer" id="_opt_b"><div class="para" id="sec-normal-distribution-11-2-2-2-1-1">NORM.DIST(40,135,22,1)</div></li>
-<li data-component="feedback" id="_opt_b">
-<li data-component="answer" id="_opt_c"><div class="para" id="sec-normal-distribution-11-2-2-3-1-1">NORM.DIST(40,135,22,0)</div></li>
-<li data-component="feedback" id="_opt_c">
-</ul></div></div></article><article class="task exercise-like" id="sec-normal-distribution-11-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="" data-multipleanswers="false">
-<div class="para" id="sec-normal-distribution-11-3-1-1">A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22.  What is the probability that a randomly selected value is less than 90?</div>
-<li data-component="answer" id="_opt_a" data-correct=""><div class="para" id="sec-normal-distribution-11-3-2-1-1-1">NORM.DIST(90,135,22,1)</div></li>
-<li data-component="feedback" id="_opt_a">
-<li data-component="answer" id="_opt_b"><div class="para" id="sec-normal-distribution-11-3-2-2-1-1">1- NORM.DIST(90,135,22,1)</div></li>
-<li data-component="feedback" id="_opt_b">
-<li data-component="answer" id="_opt_c"><div class="para" id="sec-normal-distribution-11-3-2-3-1-1">NORM.DIST(90,135,22,0)</div></li>
-<li data-component="feedback" id="_opt_c">
-</ul></div></div></article><article class="task exercise-like" id="sec-normal-distribution-11-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="" data-multipleanswers="false">
-<div class="para" id="sec-normal-distribution-11-4-1-1">A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22.  What is the probability that a randomly selected value is between 120 and 180?</div>
-<li data-component="answer" id="_opt_a" data-correct=""><div class="para" id="sec-normal-distribution-11-4-2-1-1-1">NORM.S.DIST(2.05,1)-NORM.S.DIST(0.68,1)</div></li>
-<li data-component="feedback" id="_opt_a">
-<li data-component="answer" id="_opt_b"><div class="para" id="sec-normal-distribution-11-4-2-2-1-1">NORM.DIST(2.05,135,22,1)-NORM.DIST(0.68,135,22,1)</div></li>
-<li data-component="feedback" id="_opt_b">
-<li data-component="answer" id="_opt_c"><div class="para" id="sec-normal-distribution-11-4-2-3-1-1">NORM.S.DIST(0.68,1)-NORM.S.DIST(2.05,1)</div></li>
-<li data-component="feedback" id="_opt_c">
-<li data-component="answer" id="_opt_d"><div class="para" id="sec-normal-distribution-11-4-2-4-1-1">2.01\cdotNORM.S.DIST(0.68,1)</div></li>
-<li data-component="feedback" id="_opt_d">
-<li data-component="answer" id="_opt_e"><div class="para" id="sec-normal-distribution-11-4-2-5-1-1">NORM.S.DIST(2.05,0)-NORM.S.DIST(0.68,0)</div></li>
-<li data-component="feedback" id="_opt_e">
-<li data-component="answer" id="_opt_f"><div class="para" id="sec-normal-distribution-11-4-2-6-1-1">NORM.S.DIST(180,0)-NORM.S.DIST(120,0)</div></li>
-<li data-component="feedback" id="_opt_f">
-</ul></div></div></article></article></details><details id="sec-normal-distribution-12" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+</div></div></details></article><details id="sec-normal-distribution-13" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">7.1.14</span><span class="period">.</span><span class="space"> </span><span class="title">Normal Distribution Practice Activity.</span>
-</h3></summary><article class="exercise exercise-like knowl__content"><article class="task exercise-like" id="sec-normal-distribution-12-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+</h3></summary><article class="exercise exercise-like knowl__content"><article class="task exercise-like" id="sec-normal-distribution-13-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="" data-multipleanswers="false">
-<div class="para logical" id="sec-normal-distribution-12-2-1-1">
+<div class="para" id="sec-normal-distribution-13-2-1-1">A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22.  What is the probability that a randomly selected value is more than 40?</div>
+<li data-component="answer" id="_opt_a" data-correct=""><div class="para" id="sec-normal-distribution-13-2-2-1-1-1">1-NORM.DIST(40,135,22,1)</div></li>
+<li data-component="feedback" id="_opt_a">
+<li data-component="answer" id="_opt_b"><div class="para" id="sec-normal-distribution-13-2-2-2-1-1">NORM.DIST(40,135,22,1)</div></li>
+<li data-component="feedback" id="_opt_b">
+<li data-component="answer" id="_opt_c"><div class="para" id="sec-normal-distribution-13-2-2-3-1-1">NORM.DIST(40,135,22,0)</div></li>
+<li data-component="feedback" id="_opt_c">
+</ul></div></div></article><article class="task exercise-like" id="sec-normal-distribution-13-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="" data-multipleanswers="false">
+<div class="para" id="sec-normal-distribution-13-3-1-1">A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22.  What is the probability that a randomly selected value is less than 90?</div>
+<li data-component="answer" id="_opt_a" data-correct=""><div class="para" id="sec-normal-distribution-13-3-2-1-1-1">NORM.DIST(90,135,22,1)</div></li>
+<li data-component="feedback" id="_opt_a">
+<li data-component="answer" id="_opt_b"><div class="para" id="sec-normal-distribution-13-3-2-2-1-1">1- NORM.DIST(90,135,22,1)</div></li>
+<li data-component="feedback" id="_opt_b">
+<li data-component="answer" id="_opt_c"><div class="para" id="sec-normal-distribution-13-3-2-3-1-1">NORM.DIST(90,135,22,0)</div></li>
+<li data-component="feedback" id="_opt_c">
+</ul></div></div></article><article class="task exercise-like" id="sec-normal-distribution-13-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="" data-multipleanswers="false">
+<div class="para" id="sec-normal-distribution-13-4-1-1">A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22.  What is the probability that a randomly selected value is between 120 and 180?</div>
+<li data-component="answer" id="_opt_a" data-correct=""><div class="para" id="sec-normal-distribution-13-4-2-1-1-1">NORM.S.DIST(2.05,1)-NORM.S.DIST(0.68,1)</div></li>
+<li data-component="feedback" id="_opt_a">
+<li data-component="answer" id="_opt_b"><div class="para" id="sec-normal-distribution-13-4-2-2-1-1">NORM.DIST(2.05,135,22,1)-NORM.DIST(0.68,135,22,1)</div></li>
+<li data-component="feedback" id="_opt_b">
+<li data-component="answer" id="_opt_c"><div class="para" id="sec-normal-distribution-13-4-2-3-1-1">NORM.S.DIST(0.68,1)-NORM.S.DIST(2.05,1)</div></li>
+<li data-component="feedback" id="_opt_c">
+<li data-component="answer" id="_opt_d"><div class="para" id="sec-normal-distribution-13-4-2-4-1-1">2.01\cdotNORM.S.DIST(0.68,1)</div></li>
+<li data-component="feedback" id="_opt_d">
+<li data-component="answer" id="_opt_e"><div class="para" id="sec-normal-distribution-13-4-2-5-1-1">NORM.S.DIST(2.05,0)-NORM.S.DIST(0.68,0)</div></li>
+<li data-component="feedback" id="_opt_e">
+<li data-component="answer" id="_opt_f"><div class="para" id="sec-normal-distribution-13-4-2-6-1-1">NORM.S.DIST(180,0)-NORM.S.DIST(120,0)</div></li>
+<li data-component="feedback" id="_opt_f">
+</ul></div></div></article></article></details><details id="sec-normal-distribution-14" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">7.1.15</span><span class="period">.</span><span class="space"> </span><span class="title">Normal Distribution Practice Activity.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><article class="task exercise-like" id="sec-normal-distribution-14-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="" data-multipleanswers="false">
+<div class="para logical" id="sec-normal-distribution-14-2-1-1">
 <div class="para">Find the probability for the standard normal distribution:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -621,84 +637,84 @@ P(Z\lt 2.35)
 \end{equation*}
 </div>
 </div>
-<li data-component="answer" id="_opt_a" data-correct=""><div class="para" id="sec-normal-distribution-12-2-2-1-1-1"><span class="process-math">\(NORM.S.DIST(2.35,TRUE)\)</span></div></li>
+<li data-component="answer" id="_opt_a" data-correct=""><div class="para" id="sec-normal-distribution-14-2-2-1-1-1"><span class="process-math">\(NORM.S.DIST(2.35,TRUE)\)</span></div></li>
 <li data-component="feedback" id="_opt_a">
-<li data-component="answer" id="_opt_b"><div class="para" id="sec-normal-distribution-12-2-2-2-1-1"><span class="process-math">\(1-NORM.S.DIST(2.35,TRUE)\)</span></div></li>
+<li data-component="answer" id="_opt_b"><div class="para" id="sec-normal-distribution-14-2-2-2-1-1"><span class="process-math">\(1-NORM.S.DIST(2.35,TRUE)\)</span></div></li>
 <li data-component="feedback" id="_opt_b">
-<li data-component="answer" id="_opt_c"><div class="para" id="sec-normal-distribution-12-2-2-3-1-1"><span class="process-math">\(NORM.S.DIST(2.35,FALSE)\)</span></div></li>
+<li data-component="answer" id="_opt_c"><div class="para" id="sec-normal-distribution-14-2-2-3-1-1"><span class="process-math">\(NORM.S.DIST(2.35,FALSE)\)</span></div></li>
 <li data-component="feedback" id="_opt_c">
-<li data-component="answer" id="_opt_d"><div class="para" id="sec-normal-distribution-12-2-2-4-1-1"><span class="process-math">\(1-NORM.S.DIST(2.35,FALSE)\)</span></div></li>
+<li data-component="answer" id="_opt_d"><div class="para" id="sec-normal-distribution-14-2-2-4-1-1"><span class="process-math">\(1-NORM.S.DIST(2.35,FALSE)\)</span></div></li>
 <li data-component="feedback" id="_opt_d">
-</ul></div></div></article><article class="task exercise-like" id="sec-normal-distribution-12-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+</ul></div></div></article><article class="task exercise-like" id="sec-normal-distribution-14-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="" data-multipleanswers="false">
-<div class="para" id="sec-normal-distribution-12-3-1-1">Find the probability for a standard normal distribution:</div> <div class="para logical" id="sec-normal-distribution-12-3-1-2"><div class="displaymath process-math">
+<div class="para" id="sec-normal-distribution-14-3-1-1">Find the probability for a standard normal distribution:</div> <div class="para logical" id="sec-normal-distribution-14-3-1-2"><div class="displaymath process-math">
 \begin{equation*}
 P(Z\gt 2.35)
 \end{equation*}
 </div></div>
-<li data-component="answer" id="_opt_a"><div class="para" id="sec-normal-distribution-12-3-2-1-1-1"><span class="process-math">\(NORM.S.DIST(2.35,TRUE)\)</span></div></li>
+<li data-component="answer" id="_opt_a"><div class="para" id="sec-normal-distribution-14-3-2-1-1-1"><span class="process-math">\(NORM.S.DIST(2.35,TRUE)\)</span></div></li>
 <li data-component="feedback" id="_opt_a">
-<li data-component="answer" id="_opt_b" data-correct=""><div class="para" id="sec-normal-distribution-12-3-2-2-1-1"><span class="process-math">\(1-NORM.S.DIST(2.35,TRUE)\)</span></div></li>
+<li data-component="answer" id="_opt_b" data-correct=""><div class="para" id="sec-normal-distribution-14-3-2-2-1-1"><span class="process-math">\(1-NORM.S.DIST(2.35,TRUE)\)</span></div></li>
 <li data-component="feedback" id="_opt_b">
-<li data-component="answer" id="_opt_c"><div class="para" id="sec-normal-distribution-12-3-2-3-1-1"><span class="process-math">\(NORM.S.DIST(2.35,FALSE)\)</span></div></li>
+<li data-component="answer" id="_opt_c"><div class="para" id="sec-normal-distribution-14-3-2-3-1-1"><span class="process-math">\(NORM.S.DIST(2.35,FALSE)\)</span></div></li>
 <li data-component="feedback" id="_opt_c">
-<li data-component="answer" id="_opt_d"><div class="para" id="sec-normal-distribution-12-3-2-4-1-1"><span class="process-math">\(1-NORM.S.DIST(2.35,FALSE)\)</span></div></li>
+<li data-component="answer" id="_opt_d"><div class="para" id="sec-normal-distribution-14-3-2-4-1-1"><span class="process-math">\(1-NORM.S.DIST(2.35,FALSE)\)</span></div></li>
 <li data-component="feedback" id="_opt_d">
-</ul></div></div></article><article class="task exercise-like" id="sec-normal-distribution-12-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+</ul></div></div></article><article class="task exercise-like" id="sec-normal-distribution-14-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="" data-multipleanswers="false">
-<div class="para" id="sec-normal-distribution-12-4-1-1">Find the probability for a standard normal distribution:</div> <div class="para logical" id="sec-normal-distribution-12-4-1-2"><div class="displaymath process-math">
+<div class="para" id="sec-normal-distribution-14-4-1-1">Find the probability for a standard normal distribution:</div> <div class="para logical" id="sec-normal-distribution-14-4-1-2"><div class="displaymath process-math">
 \begin{equation*}
 P(-0.86\leq Z\leq 1.76)
 \end{equation*}
 </div></div>
-<li data-component="answer" id="_opt_a" data-correct=""><div class="para" id="sec-normal-distribution-12-4-2-1-1-1"><span class="process-math">\(NORM.S.DIST(1.76,TRUE)-NORM.S.DIST(-0.86,TRUE)\)</span></div></li>
+<li data-component="answer" id="_opt_a" data-correct=""><div class="para" id="sec-normal-distribution-14-4-2-1-1-1"><span class="process-math">\(NORM.S.DIST(1.76,TRUE)-NORM.S.DIST(-0.86,TRUE)\)</span></div></li>
 <li data-component="feedback" id="_opt_a">
-<li data-component="answer" id="_opt_b"><div class="para" id="sec-normal-distribution-12-4-2-2-1-1"><span class="process-math">\(NORM.S.DIST(1.76,0)-NORM.S.DIST(-0.86,0)\)</span></div></li>
+<li data-component="answer" id="_opt_b"><div class="para" id="sec-normal-distribution-14-4-2-2-1-1"><span class="process-math">\(NORM.S.DIST(1.76,0)-NORM.S.DIST(-0.86,0)\)</span></div></li>
 <li data-component="feedback" id="_opt_b">
-<li data-component="answer" id="_opt_c"><div class="para" id="sec-normal-distribution-12-4-2-3-1-1"><span class="process-math">\(NORM.S.DIST(-0.86,TRUE)-NORM.S.DIST(1.76,TRUE)\)</span></div></li>
+<li data-component="answer" id="_opt_c"><div class="para" id="sec-normal-distribution-14-4-2-3-1-1"><span class="process-math">\(NORM.S.DIST(-0.86,TRUE)-NORM.S.DIST(1.76,TRUE)\)</span></div></li>
 <li data-component="feedback" id="_opt_c">
-</ul></div></div></article></article></details><details id="sec-normal-distribution-13" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">7.1.15</span><span class="period">.</span><span class="space"> </span><span class="title">Normal Distribution Practice Activity.</span>
-</h3></summary><article class="exercise exercise-like knowl__content"><article class="task exercise-like" id="sec-normal-distribution-13-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+</ul></div></div></article></article></details><details id="sec-normal-distribution-15" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">7.1.16</span><span class="period">.</span><span class="space"> </span><span class="title">Normal Distribution Practice Activity.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><article class="task exercise-like" id="sec-normal-distribution-15-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="" data-multipleanswers="false">
-<div class="para" id="sec-normal-distribution-13-2-1-1">Find the probability for a standard normal distribution:</div> <div class="para logical" id="sec-normal-distribution-13-2-1-2"><div class="displaymath process-math">
+<div class="para" id="sec-normal-distribution-15-2-1-1">Find the probability for a standard normal distribution:</div> <div class="para logical" id="sec-normal-distribution-15-2-1-2"><div class="displaymath process-math">
 \begin{equation*}
 P(Z\leq 1.50)
 \end{equation*}
 </div></div>
-<li data-component="answer" id="_opt_a" data-correct=""><div class="para" id="sec-normal-distribution-13-2-2-1-1-1"><span class="process-math">\(NORM.S.DIST(1.5,TRUE)\)</span></div></li>
+<li data-component="answer" id="_opt_a" data-correct=""><div class="para" id="sec-normal-distribution-15-2-2-1-1-1"><span class="process-math">\(NORM.S.DIST(1.5,TRUE)\)</span></div></li>
 <li data-component="feedback" id="_opt_a">
-<li data-component="answer" id="_opt_b"><div class="para" id="sec-normal-distribution-13-2-2-2-1-1"><span class="process-math">\(1-NORM.S.DIST(1.5,TRUE)\)</span></div></li>
+<li data-component="answer" id="_opt_b"><div class="para" id="sec-normal-distribution-15-2-2-2-1-1"><span class="process-math">\(1-NORM.S.DIST(1.5,TRUE)\)</span></div></li>
 <li data-component="feedback" id="_opt_b">
-<li data-component="answer" id="_opt_c"><div class="para" id="sec-normal-distribution-13-2-2-3-1-1"><span class="process-math">\(1.5-NORM.S.DIST(1,TRUE)\)</span></div></li>
+<li data-component="answer" id="_opt_c"><div class="para" id="sec-normal-distribution-15-2-2-3-1-1"><span class="process-math">\(1.5-NORM.S.DIST(1,TRUE)\)</span></div></li>
 <li data-component="feedback" id="_opt_c">
-<li data-component="answer" id="_opt_d"><div class="para" id="sec-normal-distribution-13-2-2-4-1-1"><span class="process-math">\(NORM.S.DIST(1.5,0)\)</span></div></li>
+<li data-component="answer" id="_opt_d"><div class="para" id="sec-normal-distribution-15-2-2-4-1-1"><span class="process-math">\(NORM.S.DIST(1.5,0)\)</span></div></li>
 <li data-component="feedback" id="_opt_d">
-</ul></div></div></article><article class="task exercise-like" id="sec-normal-distribution-13-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+</ul></div></div></article><article class="task exercise-like" id="sec-normal-distribution-15-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="" data-multipleanswers="false">
-<div class="para" id="sec-normal-distribution-13-3-1-1">Find the probability for a standard normal distribution:</div> <div class="para logical" id="sec-normal-distribution-13-3-1-2"><div class="displaymath process-math">
+<div class="para" id="sec-normal-distribution-15-3-1-1">Find the probability for a standard normal distribution:</div> <div class="para logical" id="sec-normal-distribution-15-3-1-2"><div class="displaymath process-math">
 \begin{equation*}
 P(Z\geq 1.50)
 \end{equation*}
 </div></div>
-<li data-component="answer" id="_opt_a"><div class="para" id="sec-normal-distribution-13-3-2-1-1-1"><span class="process-math">\(NORM.S.DIST(1.5,TRUE)\)</span></div></li>
+<li data-component="answer" id="_opt_a"><div class="para" id="sec-normal-distribution-15-3-2-1-1-1"><span class="process-math">\(NORM.S.DIST(1.5,TRUE)\)</span></div></li>
 <li data-component="feedback" id="_opt_a">
-<li data-component="answer" id="_opt_b" data-correct=""><div class="para" id="sec-normal-distribution-13-3-2-2-1-1"><span class="process-math">\(1-NORM.S.DIST(1.5,TRUE)\)</span></div></li>
+<li data-component="answer" id="_opt_b" data-correct=""><div class="para" id="sec-normal-distribution-15-3-2-2-1-1"><span class="process-math">\(1-NORM.S.DIST(1.5,TRUE)\)</span></div></li>
 <li data-component="feedback" id="_opt_b">
-<li data-component="answer" id="_opt_c"><div class="para" id="sec-normal-distribution-13-3-2-3-1-1"><span class="process-math">\(1.5-NORM.S.DIST(1,TRUE)\)</span></div></li>
+<li data-component="answer" id="_opt_c"><div class="para" id="sec-normal-distribution-15-3-2-3-1-1"><span class="process-math">\(1.5-NORM.S.DIST(1,TRUE)\)</span></div></li>
 <li data-component="feedback" id="_opt_c">
-<li data-component="answer" id="_opt_d"><div class="para" id="sec-normal-distribution-13-3-2-4-1-1"><span class="process-math">\(NORM.S.DIST(1.5,0)\)</span></div></li>
+<li data-component="answer" id="_opt_d"><div class="para" id="sec-normal-distribution-15-3-2-4-1-1"><span class="process-math">\(NORM.S.DIST(1.5,0)\)</span></div></li>
 <li data-component="feedback" id="_opt_d">
-</ul></div></div></article></article></details><details id="sec-normal-distribution-14" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">7.1.16</span><span class="period">.</span>
-</h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone fillintheblank_section"><div data-component="fillintheblank" data-question_label="" id="">
-<div class="para" id="sec-normal-distribution-14-1-1">Let <span class="process-math">\(Z\)</span> be the standard normal variable.</div> <div class="para" id="sec-normal-distribution-14-1-2">Find <span class="process-math">\(P(Z\geq -2.89)\text{.}\)</span>  Round your answer to four decimal places:</div> <div class="para" id="sec-normal-distribution-14-1-3"><input type="text" placeholder="Number"></div>
-<script type="application/json">[[{"number": [0.998,0.9982], "feedback": "<div class=\"para\" id=\"sec-normal-distribution-14-2-1-1-1-1\">Any value in the interval <span class=\"process-math\">\\(0.9981\\pm 0.0001\\)<\/span> is marked as correct for this problem.<\/div>"}, {"regex": "^\\s*.*\\s*$", "regexFlags": "", "feedback": "<div class=\"para\" id=\"sec-normal-distribution-14-2-1-2-1-1\">Incorrect. Did you round to four decimal places?<\/div>"}]]</script>
-</div></div></div></article></details><details id="sec-normal-distribution-15" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+</ul></div></div></article></article></details><details id="sec-normal-distribution-16" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">7.1.17</span><span class="period">.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone fillintheblank_section"><div data-component="fillintheblank" data-question_label="" id="">
-<div class="para" id="sec-normal-distribution-15-1-1">Let <span class="process-math">\(z\)</span> be the standard normal variable.</div> <div class="para" id="sec-normal-distribution-15-1-2">Find <span class="process-math">\(P(0.11\lt Z\lt 2.7)\text{.}\)</span>  Round your answer to four decimal places:</div> <div class="para" id="sec-normal-distribution-15-1-3"><input type="text" placeholder="Number"></div>
-<script type="application/json">[[{"number": [0.4526,0.4528], "feedback": "<div class=\"para\" id=\"sec-normal-distribution-15-2-1-1-1-1\">Any value in the interval <span class=\"process-math\">\\(0.4527\\pm 0.0001\\)<\/span> is marked as correct for this problem.<\/div>"}, {"regex": "^\\s*.*\\s*$", "regexFlags": "", "feedback": "<div class=\"para\" id=\"sec-normal-distribution-15-2-1-2-1-1\">Incorrect. Did you round to four decimal places?<\/div>"}]]</script>
+<div class="para" id="sec-normal-distribution-16-1-1">Let <span class="process-math">\(Z\)</span> be the standard normal variable.</div> <div class="para" id="sec-normal-distribution-16-1-2">Find <span class="process-math">\(P(Z\geq -2.89)\text{.}\)</span>  Round your answer to four decimal places:</div> <div class="para" id="sec-normal-distribution-16-1-3"><input type="text" placeholder="Number"></div>
+<script type="application/json">[[{"number": [0.998,0.9982], "feedback": "<div class=\"para\" id=\"sec-normal-distribution-16-2-1-1-1-1\">Any value in the interval <span class=\"process-math\">\\(0.9981\\pm 0.0001\\)<\/span> is marked as correct for this problem.<\/div>"}, {"regex": "^\\s*.*\\s*$", "regexFlags": "", "feedback": "<div class=\"para\" id=\"sec-normal-distribution-16-2-1-2-1-1\">Incorrect. Did you round to four decimal places?<\/div>"}]]</script>
+</div></div></div></article></details><details id="sec-normal-distribution-17" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">7.1.18</span><span class="period">.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone fillintheblank_section"><div data-component="fillintheblank" data-question_label="" id="">
+<div class="para" id="sec-normal-distribution-17-1-1">Let <span class="process-math">\(z\)</span> be the standard normal variable.</div> <div class="para" id="sec-normal-distribution-17-1-2">Find <span class="process-math">\(P(0.11\lt Z\lt 2.7)\text{.}\)</span>  Round your answer to four decimal places:</div> <div class="para" id="sec-normal-distribution-17-1-3"><input type="text" placeholder="Number"></div>
+<script type="application/json">[[{"number": [0.4526,0.4528], "feedback": "<div class=\"para\" id=\"sec-normal-distribution-17-2-1-1-1-1\">Any value in the interval <span class=\"process-math\">\\(0.4527\\pm 0.0001\\)<\/span> is marked as correct for this problem.<\/div>"}, {"regex": "^\\s*.*\\s*$", "regexFlags": "", "feedback": "<div class=\"para\" id=\"sec-normal-distribution-17-2-1-2-1-1\">Incorrect. Did you round to four decimal places?<\/div>"}]]</script>
 </div></div></div></article></details><section class="subsection" id="subsection-normal-inv"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">7.1.5</span><span class="space"> </span><span class="title">Finding <span class="process-math">\(Z\)</span> or <span class="process-math">\(X\)</span> if we have information about a probability:</span>
 </h3>
@@ -710,17 +726,17 @@ P(Z\geq 1.50)
 </ul>
 </div>
 <details id="subsection-normal-inv-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">7.1.18</span><span class="period">.</span>
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">7.1.19</span><span class="period">.</span>
 </h4></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone fillintheblank_section"><div data-component="fillintheblank" data-question_label="" id="">
 <div class="para" id="subsection-normal-inv-4-1-1">Let <span class="process-math">\(z\)</span> be the standard normal variable.</div> <div class="para" id="subsection-normal-inv-4-1-2">Find <span class="process-math">\(z^*\)</span> such that <span class="process-math">\(P(Z\leq z^*)=0.61\text{.}\)</span>  Round your answer to four decimal places:</div> <div class="para" id="subsection-normal-inv-4-1-3"><input type="text" placeholder="Number"></div>
 <script type="application/json">[[{"number": [0.2792,0.2794], "feedback": "<div class=\"para\" id=\"subsection-normal-inv-4-2-1-1-1-1\">Any value in the interval <span class=\"process-math\">\\(0.2793\\pm 0.0001\\)<\/span> is marked as correct for this problem.<\/div>"}, {"regex": "^\\s*.*\\s*$", "regexFlags": "", "feedback": "<div class=\"para\" id=\"subsection-normal-inv-4-2-1-2-1-1\">Incorrect. Did you round to four decimal places?<\/div>"}]]</script>
 </div></div></div></article></details><details id="subsection-normal-inv-5" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">7.1.19</span><span class="period">.</span>
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">7.1.20</span><span class="period">.</span>
 </h4></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone fillintheblank_section"><div data-component="fillintheblank" data-question_label="" id="">
 <div class="para" id="subsection-normal-inv-5-1-1">Let <span class="process-math">\(z\)</span> be the standard normal variable.</div> <div class="para" id="subsection-normal-inv-5-1-2">Find <span class="process-math">\(z^*\)</span> such that <span class="process-math">\(P(-z^*\lt Z\lt z^*)=0.69\text{.}\)</span>  Round your answer to four decimal places:</div> <div class="para" id="subsection-normal-inv-5-1-3"><input type="text" placeholder="Number"></div>
 <script type="application/json">[[{"number": [0.2792,0.2794], "feedback": "<div class=\"para\" id=\"subsection-normal-inv-5-2-1-1-1-1\">Any value in the interval <span class=\"process-math\">\\(1.0152\\pm 0.0001\\)<\/span> is marked as correct for this problem.<\/div>"}, {"regex": "^\\s*.*\\s*$", "regexFlags": "", "feedback": "<div class=\"para\" id=\"subsection-normal-inv-5-2-1-2-1-1\">Incorrect. Did you round to four decimal places?<\/div>"}]]</script>
 </div></div></div></article></details><details id="subsection-normal-inv-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">7.1.20</span><span class="period">.</span>
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">7.1.21</span><span class="period">.</span>
 </h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="subsection-normal-inv-6-1"><div class="para" id="subsection-normal-inv-6-1-1">A random variable follows the normal probability distribution with a mean of 50 and a standard deviation of 20.</div></div>
 <article class="task exercise-like" id="subsection-normal-inv-6-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="subsection-normal-inv-6-2-1-1">What value of <span class="process-math">\(X\)</span> represents the 75th percentile?</div>
@@ -729,7 +745,7 @@ P(Z\geq 1.50)
 <div class="solutions"><details id="subsection-normal-inv-6-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="subsection-normal-inv-6-3-2-1"><span class="process-math">\(NORM.INV(0.40,50,20)\approx 44.93\)</span></div></div></details></div></article><article class="task exercise-like" id="subsection-normal-inv-6-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="subsection-normal-inv-6-4-1-1">Find the value of <span class="process-math">\(X\)</span> that represents the highest <span class="process-math">\(10\%\)</span> of all values</div>
 <div class="solutions"><details id="subsection-normal-inv-6-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="subsection-normal-inv-6-4-2-1"><span class="process-math">\(NORM.DIST(0.90,50,20)\approx 75.63\)</span></div></div></details></div></article></article></details><details id="subsection-normal-inv-7" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">7.1.21</span><span class="period">.</span>
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">7.1.22</span><span class="period">.</span>
 </h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="subsection-normal-inv-7-1"><div class="para" id="subsection-normal-inv-7-1-1">Suppose the retirement age of professional athletes in a certain league is normally distributed with mean <span class="process-math">\(32.27\)</span> years and standard deviation <span class="process-math">\(3.62\)</span> years. Find the following:</div></div>
 <article class="task exercise-like" id="subsection-normal-inv-7-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="subsection-normal-inv-7-2-1-1">Find the probability that a randomly selected athlete’s retirement age is is at least <span class="process-math">\(30.15\)</span> years.</div>
@@ -742,7 +758,7 @@ P(Z\geq 1.50)
 <div class="para" id="subsection-normal-inv-7-5-1-1">Find <span class="process-math">\(k\)</span> such that the probability that a randomly selected athlete’s retirement age is between <span class="process-math">\(32.27-k\)</span> years and <span class="process-math">\(32.27+k\)</span> years is <span class="process-math">\(42\%\text{.}\)</span>
 </div>
 <div class="solutions"><details id="subsection-normal-inv-7-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="subsection-normal-inv-7-5-2-1">If <span class="process-math">\(P(32.27-k\lt X\lt 32.27+k)=42\%\)</span> then <span class="process-math">\(k\approx 2.0032526847915357\)</span> years.</div></div></details></div></article></article></details><details id="subsection-normal-inv-8" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">7.1.22</span><span class="period">.</span>
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">7.1.23</span><span class="period">.</span>
 </h4></summary><article class="exercise exercise-like knowl__content"><div id="momsubsection-normal-inv-8-1wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momsubsection-normal-inv-8-1" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=803116&amp;frame_id=momsubsection-normal-inv-8-1"></iframe></div></article></details></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="ch-Continuous-Probability-Distributions.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-exponential-distribution.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
