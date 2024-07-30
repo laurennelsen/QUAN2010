@@ -4,6 +4,61 @@
   <title>The Normal Distribution</title>
 
   <introduction>
+
+    </introduction>
+
+
+    <exercise>
+        <title>Continuous Probability Distribution Matching Problem</title>
+        <statement>
+        <p>
+            Match each probability distribution with the situation in which it is useful.
+        </p>
+        </statement>
+    
+     <matches>
+    
+    <match>
+        <premise>
+            Normal Distribution
+        </premise>
+        <response>
+            <p>
+                Useful when data tends to fall in the center and extreme values are rare
+                </p>
+        </response>
+    </match>
+    
+    <match>
+        <premise>
+            exponential distribution
+        </premise>
+        <response>
+            <p>
+                Useful when low values for data occur often and high values are rare
+                </p>
+        </response>
+    </match>
+    
+    <match>
+      <premise>
+          uniform distribution
+      </premise>
+      <response>
+          <p>
+              Useful when data of all values have an equal chance of occurring
+              </p>
+      </response>
+    </match>
+    
+    </matches>
+    
+    </exercise>
+    
+
+
+
+
   <p> The mathematical expression that describes the shape of the normal probability distribution is called the normal probability density function:
   <me>
 f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
@@ -11,7 +66,6 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
     Despite the complexity of this function, there are only two parameters that completely deter- mine the shape of the distribution: the mean, <m>\mu</m>, and the standard deviation, <m>\sigma</m>. Let’s take a closer look at how they impact the distribution. (Don’t worry---we won’t be using this formula to compute probabilities. We have other tools!)
      </p>
 
-     </introduction>
 
 <question>
     <statement>

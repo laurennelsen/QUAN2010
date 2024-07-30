@@ -65,53 +65,7 @@
    </p>
 
 
-  <exercise label="matching">
-    <title>Normal Distribution Matching Problem</title>
-    <statement>
-    <p>
-        Match each probability distribution with the situation in which it is useful.
-    </p>
-    </statement>
-
- <matches>
-
-<match>
-    <premise>
-        Normal Distribution
-    </premise>
-    <response>
-        <p>
-            Useful when data tends to fall in the center and extreme values are rare
-            </p>
-    </response>
-</match>
-
-<match>
-    <premise>
-        exponential distribution
-    </premise>
-    <response>
-        <p>
-            Useful when low values for data occur often and high values are rare
-            </p>
-    </response>
-</match>
-
-<match>
-  <premise>
-      uniform distribution
-  </premise>
-  <response>
-      <p>
-          Useful when data of all values have an equal chance of occurring
-          </p>
-  </response>
-</match>
-
-</matches>
-
-</exercise>
-
+  
 
 </introduction>
 
