@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="803116">
 <statement>
-<p>Issa is conducting market research on the cost of  a cell phone data plan. Issa has determined that the average annual cost of  a cell phone data plan is <dollar/>1108, and that the distribution of costs is normally distributed with a standard deviation of <dollar/>80. </p>
-<p>a. Find the probability that a single randomly selected consumer spends more than <dollar/>1001 on  a cell phone data plan.</p>
+<p>Mika is conducting market research on the cost of auto insurance. Mika has determined that the average annual cost of auto insurance is <dollar/>1248, and that the distribution of costs is normally distributed with a standard deviation of <dollar/>89. </p>
+<p>a. Find the probability that a single randomly selected consumer spends less than <dollar/>1401 on auto insurance.</p>
 <p style="padding-left: 40px;"><fillin characters="20" /></p>
-<p>b. The cost of the middle 60<percent/> of  cell phone data plans falls between (round to the nearest dollar):</p>
+<p>b. The cost of the middle 80<percent/> of auto insurance policies falls between (round to the nearest dollar):</p>
 <p style="padding-left: 40px;"><dollar/><fillin characters="20" /> to <dollar/><fillin characters="20" /> per year.</p>
-<p>c. The <em>most expensive </em>6<percent/> of  cell phone data plans cost at least how much annually?</p>
+<p>c. The <em>most expensive </em>6<percent/> of auto insurance policies cost at least how much annually?</p>
 <p style="padding-left: 40px;"><dollar/><fillin characters="20" /></p>
 
 </statement>
 <solution>
-<p><ul><li>0.9095</li><li>1041</li><li>1175</li><li>1232</li></ul></p><p>Define the normal distribution in Desmos: <m>\displaystyle{N}=\text{normaldist}{\left({1108},{80}\right)}</m>.</p>
-<p>a. <m>\displaystyle{P}{\left({x}{>}{1001}\right)}={N}.{c}{d}{f{{\left({1001},\infty\right)}}}={0.9095}</m></p>
-<p>b. For the middle 60<percent/> of the data, need the remaining 40<percent/> of the data split between the left and right tails of the distribution. So the lower bound of the range has <m>\displaystyle{0.2}</m> of the area to the left and the upper bound of the range has <m>\displaystyle{0.2}</m> of the area to the right, which means <m>\displaystyle{0.8}</m> to the left. Therefore:</p>
-<p style="padding-left: 40px;">Lower bound <m>\displaystyle={N}.\text{inversecdf}{\left({0.2}\right)}={1041}</m></p>
-<p style="padding-left: 40px;">Upper bound <m>\displaystyle={N}.\text{inversecdf}{\left({0.8}\right)}={1175}</m></p>
+<p><ul><li>0.9572</li><li>1134</li><li>1362</li><li>1386</li></ul></p><p>Define the normal distribution in Desmos: <m>\displaystyle{N}=\text{normaldist}{\left({1248},{89}\right)}</m>.</p>
+<p>a. <m>\displaystyle{P}{\left({x}{<}{1401}\right)}={N}.{c}{d}{f{{\left({1401}\right)}}}={0.9572}</m><less/>/p<greater/></p>
+<p>b. For the middle 80<percent/> of the data, need the remaining 20<percent/> of the data split between the left and right tails of the distribution. So the lower bound of the range has <m>\displaystyle{0.1}</m> of the area to the left and the upper bound of the range has <m>\displaystyle{0.1}</m> of the area to the right, which means <m>\displaystyle{0.9}</m> to the left. Therefore:</p>
+<p style="padding-left: 40px;">Lower bound <m>\displaystyle={N}.\text{inversecdf}{\left({0.1}\right)}={1134}</m></p>
+<p style="padding-left: 40px;">Upper bound <m>\displaystyle={N}.\text{inversecdf}{\left({0.9}\right)}={1362}</m></p>
 <p>c. For the most expensive 6<percent/> of the distribution, need <m>\displaystyle{0.06}</m> of the area to the right of the data value, so need <m>\displaystyle{1}-{0.0}{.06}={0.94}</m> to the left. Therefore:</p>
-<p style="padding-left: 40px;"> <m>\displaystyle{x}={N}.\text{inversecdf}{\left({0.94}\right)}={1232}</m> </p>
+<p style="padding-left: 40px;"> <m>\displaystyle{x}={N}.\text{inversecdf}{\left({0.94}\right)}={1386}</m> </p>
 </solution>
 </myopenmath>
 
