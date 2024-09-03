@@ -2608,7 +2608,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "11.2",
   "title": "Hypothesis Test for a Single <span class=\"process-math\">\\(\\sigma^2\\)<\/span>",
-  "body": " Hypothesis Test for a Single   We will still follow the same hypothesis testing procedures from , but take care to use the proper probability distribution, the , and the correct formula for the test statistic. Notice that it involves the sample variance, , a good estimate for . The test statistic for hypothesis tests of this type are computed with the formula:   Keep in mind that often variability is described by the standard deviation rather than variance. We can still complete a hypothesis test for by simply squaring the given standard deviation values.   In the next example, we perform a single population hypothesis test for using the traditional method of hypothesis testing. Recall that this method requires the identification of critical value(s), , which we can find using a table or using the below Excel commands:    (Similar to Donnelly 13.7)  The volatility of world crude oil prices is important because of its impact on global economic stability. One measure of volatility is the standard deviation. The data table in the Excel file below lists the monthly price of crude oil from January 1974 to March 2024.  The standard deviation of crude oil prices between January 1974 and December 2021 was about a barrel  Assuming , check to see if the standard deviation of crude oil prices between January 2022 and March 2024 has decreased from what it was prior to this time period. (Use the traditional method of hypothesis testing.)          In our next example, we will use the p-value method of hypothesis testing. Once again, the tables for the Chi-square distribution are limited in the precision they can provide for our p-values. Therefore, we will rely on Excel to compute the p-values using the following formulas: where     the test statistic,      the degrees of freedom    cumulative   TRUE (since we want the accumulated area left of our test statistic)      (Donnelly 13.29)  As smartphones have become more sophisticated, their data usage has increased and caused capacity issues with service providers. High variability in data usage among customers can result in slow connections with the cellphone network. Suppose a cellphone network would like to test if the standard deviation of monthly data usage for its customers has increased beyond 400 megabytes (MB). A random sample of 25 customers was found to have a standard deviation of 460 MB. Using , perform a hypothesis test to determine if the standard deviation for the monthly data usage for the cellphone network has exceeded 400 MB. Use the p-value method of hypothesis testing.                        Since p-value , we fail to reject .  There is not enough evidence to conclude that the standard deviation for monthly data usage for the cell phone network has exceeded 400 MB.   "
+  "body": " Hypothesis Test for a Single   We will still follow the same hypothesis testing procedures from , but take care to use the proper probability distribution, the , and the correct formula for the test statistic. Notice that it involves the sample variance, , a good estimate for . The test statistic for hypothesis tests of this type are computed with the formula:   Keep in mind that often variability is described by the standard deviation rather than variance. We can still complete a hypothesis test for by simply squaring the given standard deviation values.   In the next example, we perform a single population hypothesis test for using the traditional method of hypothesis testing. Recall that this method requires the identification of critical value(s), , which we can find using a table or using the below Excel commands:    (Similar to Donnelly 13.7)  The volatility of world crude oil prices is important because of its impact on global economic stability. One measure of volatility is the standard deviation. The data table in the Excel file below lists the monthly price of crude oil from January 1974 to March 2024.  The standard deviation of crude oil prices between January 1974 and December 2021 was about a barrel  Assuming , check to see if the standard deviation of crude oil prices between January 2022 and March 2024 has decreased from what it was prior to this time period. (Use the traditional method of hypothesis testing.)          In our next example, we will use the p-value method of hypothesis testing. Once again, the tables for the Chi-square distribution are limited in the precision they can provide for our p-values. Therefore, we will rely on Excel to compute the p-values using the following formulas: where     the test statistic,      the degrees of freedom    cumulative   TRUE (since we want the accumulated area left of our test statistic)      (Donnelly 13.29)  As smartphones have become more sophisticated, their data usage has increased and caused capacity issues with service providers. High variability in data usage among customers can result in slow connections with the cellphone network. Suppose a cellphone network would like to test if the standard deviation of monthly data usage for its customers has increased beyond 400 megabytes (MB). A random sample of 25 customers was found to have a standard deviation of 460 MB. Using , perform a hypothesis test to determine if the standard deviation for the monthly data usage for the cellphone network has exceeded 400 MB. Use the p-value method of hypothesis testing.                        Since p-value , we fail to reject .  There is not enough evidence to conclude that the standard deviation for monthly data usage for the cell phone network has exceeded 400 MB.      "
 },
 {
   "id": "sec-hyp-test-single-variance-4",
@@ -2627,6 +2627,15 @@ var ptx_lunr_docs = [
   "number": "11.2.2",
   "title": "",
   "body": " (Donnelly 13.29)  As smartphones have become more sophisticated, their data usage has increased and caused capacity issues with service providers. High variability in data usage among customers can result in slow connections with the cellphone network. Suppose a cellphone network would like to test if the standard deviation of monthly data usage for its customers has increased beyond 400 megabytes (MB). A random sample of 25 customers was found to have a standard deviation of 460 MB. Using , perform a hypothesis test to determine if the standard deviation for the monthly data usage for the cellphone network has exceeded 400 MB. Use the p-value method of hypothesis testing.                        Since p-value , we fail to reject .  There is not enough evidence to conclude that the standard deviation for monthly data usage for the cell phone network has exceeded 400 MB.  "
+},
+{
+  "id": "sec-hyp-test-single-variance-7-1",
+  "level": "2",
+  "url": "sec-hyp-test-single-variance.html#sec-hyp-test-single-variance-7-1",
+  "type": "Exercise",
+  "number": "11.2.1",
+  "title": "",
+  "body": ""
 },
 {
   "id": "sec-F-dist",
@@ -2671,7 +2680,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "11.4",
   "title": "Comparing Variances from Two Populations",
-  "body": " Comparing Variances from Two Populations   When we want to compare the variances of two samples, we do this by conducting a test of the ratio of the variances. If the ratio is equal to , then the variances are equal; if not, then they are unequal.  The sample variances is a good estimate of the population variance. Not surprisingly, the ratio of the two sample variances, , drawn from their respective populations is a good estimate for the ratio of the two population variances, . The sampling distribution of is -distributed with and degrees of freedom if we have independent samples from two normal populations. Since we are comparing two variances, the test statistic is:   The formula for this test statistic is easy to compute by hand, nevertheless, we can also use Excel to do the work if we have raw data (not summary statistics). After stating the two hypotheses, we will go to the Data Analysis tool and choose F-Test Two-Sample for Variances to complete the test.   In general, if we are testing to see if one variance is larger than the other, we want to choose population 1 to be the one with the larger sample standard deviation so that we will be doing a right-tail test.   A company is doing a hypothesis test on the variation in quality from two suppliers. Both distributions are normal, and the populations are independent. Use . A sample of 29 products were selected from Supplier 1 and a standard deviation of quality was found to be 5.8426. A sample of 30 products were selected from Supplier 2 and a standard deviation of quality was found to be 3.2156. Test to see if the variance in quality for Supplier 1 is larger than Supplier 2.   What are the correct hypotheses?                                  What test statistic should we use for this problem?                                Find the test statistic.       What is the p-value?       The decision is to...     Reject the null hypothesis.      Fail to reject the null hypothesis.     The correct summary would be:     There is enough evidence to support the claim that the variance in quality for Supplier 1 is larger than Supplier 2.      There is not enough evidence to support the claim that the variance in quality for Supplier 1 is larger than Supplier 2.      There is enough evidence to reject the claim that the variance in quality for Supplier 1 is larger than Supplier 2.      There is enough evidence to reject the claim that the variance in quality for Supplier 1 is larger than Supplier 2.      A statistics student wants to investigate salaries of men and women in a certain Fortune 500 company. Two samples of salaries of men and women employees were obtained independently and analyzed. The sample data is in the Excel file below. (Assume that the samples are from normal populations.)      Which of the samples has a larger sample standard deviation?   Use STDEV.S in Excel to find the sample standard deviations.         Use a level of significance to decide whether there is sufficient evidence that in the Fortune 500 company, the standard deviation of the salary of men is greater than the standard deviation of the salary of women.         Since we have the raw data from the samples, we can use F-Test Two-Sample for Variances in the Data Analysis tool in Excel.     From this, we'll get a p-value of approximately 0.4182, which is bigger than . So we fail to reject the null hypothesis and do not have enough evidence to conclude that .   "
+  "body": " Comparing Variances from Two Populations   When we want to compare the variances of two samples, we do this by conducting a test of the ratio of the variances. If the ratio is equal to , then the variances are equal; if not, then they are unequal.  The sample variances is a good estimate of the population variance. Not surprisingly, the ratio of the two sample variances, , drawn from their respective populations is a good estimate for the ratio of the two population variances, . The sampling distribution of is -distributed with and degrees of freedom if we have independent samples from two normal populations. Since we are comparing two variances, the test statistic is:   The formula for this test statistic is easy to compute by hand, nevertheless, we can also use Excel to do the work if we have raw data (not summary statistics). After stating the two hypotheses, we will go to the Data Analysis tool and choose F-Test Two-Sample for Variances to complete the test.   In general, if we are testing to see if one variance is larger than the other, we want to choose population 1 to be the one with the larger sample standard deviation so that we will be doing a right-tail test.   A company is doing a hypothesis test on the variation in quality from two suppliers. Both distributions are normal, and the populations are independent. Use . A sample of 29 products were selected from Supplier 1 and a standard deviation of quality was found to be 5.8426. A sample of 30 products were selected from Supplier 2 and a standard deviation of quality was found to be 3.2156. Test to see if the variance in quality for Supplier 1 is larger than Supplier 2.   What are the correct hypotheses?                                  What test statistic should we use for this problem?                                Find the test statistic.       What is the p-value?       The decision is to...     Reject the null hypothesis.      Fail to reject the null hypothesis.     The correct summary would be:     There is enough evidence to support the claim that the variance in quality for Supplier 1 is larger than Supplier 2.      There is not enough evidence to support the claim that the variance in quality for Supplier 1 is larger than Supplier 2.      There is enough evidence to reject the claim that the variance in quality for Supplier 1 is larger than Supplier 2.      There is enough evidence to reject the claim that the variance in quality for Supplier 1 is larger than Supplier 2.      A statistics student wants to investigate salaries of men and women in a certain Fortune 500 company. Two samples of salaries of men and women employees were obtained independently and analyzed. The sample data is in the Excel file below. (Assume that the samples are from normal populations.)      Which of the samples has a larger sample standard deviation?   Use STDEV.S in Excel to find the sample standard deviations.         Use a level of significance to decide whether there is sufficient evidence that in the Fortune 500 company, the standard deviation of the salary of men is greater than the standard deviation of the salary of women.         Since we have the raw data from the samples, we can use F-Test Two-Sample for Variances in the Data Analysis tool in Excel.     From this, we'll get a p-value of approximately 0.4182, which is bigger than . So we fail to reject the null hypothesis and do not have enough evidence to conclude that .            "
 },
 {
   "id": "sec-hyp-test-two-variances-3",
@@ -2699,6 +2708,69 @@ var ptx_lunr_docs = [
   "number": "11.4.3",
   "title": "",
   "body": " A statistics student wants to investigate salaries of men and women in a certain Fortune 500 company. Two samples of salaries of men and women employees were obtained independently and analyzed. The sample data is in the Excel file below. (Assume that the samples are from normal populations.)      Which of the samples has a larger sample standard deviation?   Use STDEV.S in Excel to find the sample standard deviations.         Use a level of significance to decide whether there is sufficient evidence that in the Fortune 500 company, the standard deviation of the salary of men is greater than the standard deviation of the salary of women.         Since we have the raw data from the samples, we can use F-Test Two-Sample for Variances in the Data Analysis tool in Excel.     From this, we'll get a p-value of approximately 0.4182, which is bigger than . So we fail to reject the null hypothesis and do not have enough evidence to conclude that .  "
+},
+{
+  "id": "sec-hyp-test-two-variances-6-1",
+  "level": "2",
+  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-6-1",
+  "type": "Exercise",
+  "number": "11.4.1",
+  "title": "",
+  "body": ""
+},
+{
+  "id": "sec-hyp-test-two-variances-6-2",
+  "level": "2",
+  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-6-2",
+  "type": "Exercise",
+  "number": "11.4.2",
+  "title": "",
+  "body": ""
+},
+{
+  "id": "sec-hyp-test-two-variances-6-3",
+  "level": "2",
+  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-6-3",
+  "type": "Exercise",
+  "number": "11.4.3",
+  "title": "",
+  "body": ""
+},
+{
+  "id": "sec-hyp-test-two-variances-6-4",
+  "level": "2",
+  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-6-4",
+  "type": "Exercise",
+  "number": "11.4.4",
+  "title": "",
+  "body": ""
+},
+{
+  "id": "sec-hyp-test-two-variances-6-5",
+  "level": "2",
+  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-6-5",
+  "type": "Exercise",
+  "number": "11.4.5",
+  "title": "",
+  "body": ""
+},
+{
+  "id": "sec-hyp-test-two-variances-6-6",
+  "level": "2",
+  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-6-6",
+  "type": "Exercise",
+  "number": "11.4.6",
+  "title": "",
+  "body": ""
+},
+{
+  "id": "sec-hyp-test-two-variances-6-7",
+  "level": "2",
+  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-6-7",
+  "type": "Exercise",
+  "number": "11.4.7",
+  "title": "",
+  "body": ""
 },
 {
   "id": "sec-Overview",
