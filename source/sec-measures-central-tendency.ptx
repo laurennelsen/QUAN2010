@@ -170,9 +170,9 @@
     <interactive xml:id="geogebra-skew" geogebra="Z9rKvgj6" aspect="9:5" />
   </figure>
 
-  <figure xml:id="fig-right-skew">
-    <caption>Right-skewed</caption>
-  <image xml:id="tikz-right-skew">
+  <figure xml:id="fig-left-skew">
+    <caption>Left-skewed</caption>
+  <image xml:id="tikz-left-skew">
     <latex-image>
       \begin{tikzpicture}
       \begin{axis}[axis lines=left, ticks=none,xmax=0.5,ymax=0.5]
@@ -200,9 +200,9 @@
   </image>
 </figure>
 
-<figure xml:id="fig-left-skew">
-  <caption>Left-skewed</caption>
-<image xml:id="tikz-left-skew">
+<figure xml:id="fig-right-skew">
+  <caption>Right-skewed</caption>
+<image xml:id="tikz-right-skew">
   <latex-image>
     \begin{tikzpicture}
 \begin{axis}[axis lines=left, ticks=none,xmin=0,ymax=0.5]
