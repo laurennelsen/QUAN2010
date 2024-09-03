@@ -475,7 +475,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.1",
   "title": "Measures of Central Tendency",
-  "body": " Measures of Central Tendency   In statistics, average or typical values are known as measures of central tendency .     The mean ( or ) is the most common measure of central tendency and is calculated by summing all the data points and dividing by the size of the data set.     The mean is the sum of the data items divided by the number of items: where represents the sum of all the data items and represents the numbef of items.     The mean of a sample is symbolized by .    The mean of an entire population is symbolized by .        The Excel file below has the earnings for the top 10 highest paid actors in 2023. (The data is taken from Yahoo .)     Find the mean earnings, in millions of dollars, for the ten highest-earning actors.    million dollars     The median is the value in the data set for which half of the observations are higher and half are lower.       To find the median of a group of data items,   Arrange the data items in order, from smallest to largest.    If the number of data items is odd, the median is the data item in the middle of the list.    If the number of data items is even, the median is the mean of the two middle data items.      Find the median for each of the following groups of data:       data items in order:   median:        data items in order:   median:     The Excel file below has the earnings for the top 10 highest paid actors in 2023. (The data is taken from Yahoo .)     Find the median earnings, in millions of dollars, for the ten highest-earning actors.  Is the median different thant the mean you found in , and if so, why?    The median is less than the mean that we found in .    Skewed Distribution, Mean, and Median (Made in GeoGebra by Casper Buisman)     Right-skewed       Symmetric       Left-skewed       How are the mean and median related to each other in each of the following frequency distribution shapes?   symmetric   the mean and median are approximately equal   left-skewed   the median is greater than the mean; potential low outliers pull the mean left   right-skewed   the median is less than the mean; potential high outliers pull the mean right   Statisticians generally use the median instead of the mean when reporting income. Why do you think this is?   Five employees in the assembly section of a television manufacturing company earn salaries of and annually. The section manager has an annual salary of .   Find the median annual salary for the six people.       Find the mean annual salary for the six people.         An outlier is a value that is much higher or lower than most of the data.  (We'll have a more formal\/specific definition of an outlier later.)      The mode is the data value that occurs most often in a data set. If more than one data value has the highest frequency, then each of these data values is a mode. If there is no data value that occurs most often, then the data set has no mode.      If a dataset is bimodal if it has two modes.     Find the mode for each of the following groups of data:   7, 2, 4, 7, 8, 10   mode: 7   2, 1, 4, 5, 3   There is no mode since no number occurs more than once.   3, 3, 4, 5, 6, 6   The modes are 3 and 6. (The data set is bimodal .)    Consider the following data values: Calculate the mean, median, and mode, and then describe the shape of the distribution.      data items in order:      modes:   The distribution is left-skewed.    The data in the Excel file below lists daily Dow Jones Industrial Average values from June 2019 through May 2024.      Calculate the mean, median, and mode(s) (using Excel).      mean:     median:     modes:       Describe the shape of the distribution.   The distribution is left-skewed.   "
+  "body": " Measures of Central Tendency   In statistics, average or typical values are known as measures of central tendency .     The mean ( or ) is the most common measure of central tendency and is calculated by summing all the data points and dividing by the size of the data set.     The mean is the sum of the data items divided by the number of items: where represents the sum of all the data items and represents the numbef of items.     The mean of a sample is symbolized by .    The mean of an entire population is symbolized by .        The Excel file below has the earnings for the top 10 highest paid actors in 2023. (The data is taken from Yahoo .)     Find the mean earnings, in millions of dollars, for the ten highest-earning actors.    million dollars     The median is the value in the data set for which half of the observations are higher and half are lower.       To find the median of a group of data items,   Arrange the data items in order, from smallest to largest.    If the number of data items is odd, the median is the data item in the middle of the list.    If the number of data items is even, the median is the mean of the two middle data items.      Find the median for each of the following groups of data:       data items in order:   median:        data items in order:   median:     The Excel file below has the earnings for the top 10 highest paid actors in 2023. (The data is taken from Yahoo .)     Find the median earnings, in millions of dollars, for the ten highest-earning actors.  Is the median different thant the mean you found in , and if so, why?    The median is less than the mean that we found in .    Skewed Distribution, Mean, and Median (Made in GeoGebra by Casper Buisman)     Left-skewed       Symmetric       Right-skewed       How are the mean and median related to each other in each of the following frequency distribution shapes?   symmetric   the mean and median are approximately equal   left-skewed   the median is greater than the mean; potential low outliers pull the mean left   right-skewed   the median is less than the mean; potential high outliers pull the mean right   Statisticians generally use the median instead of the mean when reporting income. Why do you think this is?   Five employees in the assembly section of a television manufacturing company earn salaries of and annually. The section manager has an annual salary of .   Find the median annual salary for the six people.       Find the mean annual salary for the six people.         An outlier is a value that is much higher or lower than most of the data.  (We'll have a more formal\/specific definition of an outlier later.)      The mode is the data value that occurs most often in a data set. If more than one data value has the highest frequency, then each of these data values is a mode. If there is no data value that occurs most often, then the data set has no mode.      If a dataset is bimodal if it has two modes.     Find the mode for each of the following groups of data:   7, 2, 4, 7, 8, 10   mode: 7   2, 1, 4, 5, 3   There is no mode since no number occurs more than once.   3, 3, 4, 5, 6, 6   The modes are 3 and 6. (The data set is bimodal .)    Consider the following data values: Calculate the mean, median, and mode, and then describe the shape of the distribution.      data items in order:      modes:   The distribution is left-skewed.    The data in the Excel file below lists daily Dow Jones Industrial Average values from June 2019 through May 2024.      Calculate the mean, median, and mode(s) (using Excel).      mean:     median:     modes:       Describe the shape of the distribution.   The distribution is left-skewed.   "
 },
 {
   "id": "def-mean",
@@ -532,13 +532,13 @@ var ptx_lunr_docs = [
   "body": " Skewed Distribution, Mean, and Median (Made in GeoGebra by Casper Buisman)   "
 },
 {
-  "id": "fig-right-skew",
+  "id": "fig-left-skew",
   "level": "2",
-  "url": "sec-measures-central-tendency.html#fig-right-skew",
+  "url": "sec-measures-central-tendency.html#fig-left-skew",
   "type": "Figure",
   "number": "3.1.7",
   "title": "",
-  "body": " Right-skewed     "
+  "body": " Left-skewed     "
 },
 {
   "id": "fig-symmetric",
@@ -550,13 +550,13 @@ var ptx_lunr_docs = [
   "body": " Symmetric     "
 },
 {
-  "id": "fig-left-skew",
+  "id": "fig-right-skew",
   "level": "2",
-  "url": "sec-measures-central-tendency.html#fig-left-skew",
+  "url": "sec-measures-central-tendency.html#fig-right-skew",
   "type": "Figure",
   "number": "3.1.9",
   "title": "",
-  "body": " Left-skewed     "
+  "body": " Right-skewed     "
 },
 {
   "id": "ex-skew",
@@ -2608,7 +2608,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "11.2",
   "title": "Hypothesis Test for a Single <span class=\"process-math\">\\(\\sigma^2\\)<\/span>",
-  "body": " Hypothesis Test for a Single   We will still follow the same hypothesis testing procedures from , but take care to use the proper probability distribution, the , and the correct formula for the test statistic. Notice that it involves the sample variance, , a good estimate for . The test statistic for hypothesis tests of this type are computed with the formula:   Keep in mind that often variability is described by the standard deviation rather than variance. We can still complete a hypothesis test for by simply squaring the given standard deviation values.   In the next example, we perform a single population hypothesis test for using the traditional method of hypothesis testing. Recall that this method requires the identification of critical value(s), , which we can find using a table or using the below Excel commands:    (Similar to Donnelly 13.7)  The volatility of world crude oil prices is important because of its impact on global economic stability. One measure of volatility is the standard deviation. The data table in the Excel file below lists the monthly price of crude oil from January 1974 to March 2024.  The standard deviation of crude oil prices between January 1974 and December 2021 was about a barrel  Assuming , check to see if the standard deviation of crude oil prices between January 2022 and March 2024 has decreased from what it was prior to this time period. (Use the traditional method of hypothesis testing.)          In our next example, we will use the p-value method of hypothesis testing. Once again, the tables for the Chi-square distribution are limited in the precision they can provide for our p-values. Therefore, we will rely on Excel to compute the p-values using the following formulas: where     the test statistic,      the degrees of freedom    cumulative   TRUE (since we want the accumulated area left of our test statistic)      (Donnelly 13.29)  As smartphones have become more sophisticated, their data usage has increased and caused capacity issues with service providers. High variability in data usage among customers can result in slow connections with the cellphone network. Suppose a cellphone network would like to test if the standard deviation of monthly data usage for its customers has increased beyond 400 megabytes (MB). A random sample of 25 customers was found to have a standard deviation of 460 MB. Using , perform a hypothesis test to determine if the standard deviation for the monthly data usage for the cellphone network has exceeded 400 MB. Use the p-value method of hypothesis testing.                        Since p-value , we fail to reject .  There is not enough evidence to conclude that the standard deviation for monthly data usage for the cell phone network has exceeded 400 MB.      "
+  "body": " Hypothesis Test for a Single   We will still follow the same hypothesis testing procedures from , but take care to use the proper probability distribution, the , and the correct formula for the test statistic. Notice that it involves the sample variance, , a good estimate for . The test statistic for hypothesis tests of this type are computed with the formula:   Keep in mind that often variability is described by the standard deviation rather than variance. We can still complete a hypothesis test for by simply squaring the given standard deviation values.   In the next example, we perform a single population hypothesis test for using the traditional method of hypothesis testing. Recall that this method requires the identification of critical value(s), , which we can find using a table or using the below Excel commands:    (Similar to Donnelly 13.7)  The volatility of world crude oil prices is important because of its impact on global economic stability. One measure of volatility is the standard deviation. The data table in the Excel file below lists the monthly price of crude oil from January 1974 to March 2024.  The standard deviation of crude oil prices between January 1974 and December 2021 was about a barrel  Assuming , check to see if the standard deviation of crude oil prices between January 2022 and March 2024 has decreased from what it was prior to this time period. (Use the traditional method of hypothesis testing.)          In our next example, we will use the p-value method of hypothesis testing. Once again, the tables for the Chi-square distribution are limited in the precision they can provide for our p-values. Therefore, we will rely on Excel to compute the p-values using the following formulas: where     the test statistic,      the degrees of freedom    cumulative   TRUE (since we want the accumulated area left of our test statistic)      (Donnelly 13.29)  As smartphones have become more sophisticated, their data usage has increased and caused capacity issues with service providers. High variability in data usage among customers can result in slow connections with the cellphone network. Suppose a cellphone network would like to test if the standard deviation of monthly data usage for its customers has increased beyond 400 megabytes (MB). A random sample of 25 customers was found to have a standard deviation of 460 MB. Using , perform a hypothesis test to determine if the standard deviation for the monthly data usage for the cellphone network has exceeded 400 MB. Use the p-value method of hypothesis testing.                        Since p-value , we fail to reject .  There is not enough evidence to conclude that the standard deviation for monthly data usage for the cell phone network has exceeded 400 MB.   "
 },
 {
   "id": "sec-hyp-test-single-variance-4",
@@ -2627,15 +2627,6 @@ var ptx_lunr_docs = [
   "number": "11.2.2",
   "title": "",
   "body": " (Donnelly 13.29)  As smartphones have become more sophisticated, their data usage has increased and caused capacity issues with service providers. High variability in data usage among customers can result in slow connections with the cellphone network. Suppose a cellphone network would like to test if the standard deviation of monthly data usage for its customers has increased beyond 400 megabytes (MB). A random sample of 25 customers was found to have a standard deviation of 460 MB. Using , perform a hypothesis test to determine if the standard deviation for the monthly data usage for the cellphone network has exceeded 400 MB. Use the p-value method of hypothesis testing.                        Since p-value , we fail to reject .  There is not enough evidence to conclude that the standard deviation for monthly data usage for the cell phone network has exceeded 400 MB.  "
-},
-{
-  "id": "sec-hyp-test-single-variance-7-1",
-  "level": "2",
-  "url": "sec-hyp-test-single-variance.html#sec-hyp-test-single-variance-7-1",
-  "type": "Exercise",
-  "number": "11.2.1",
-  "title": "",
-  "body": ""
 },
 {
   "id": "sec-F-dist",
@@ -2680,7 +2671,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "11.4",
   "title": "Comparing Variances from Two Populations",
-  "body": " Comparing Variances from Two Populations   When we want to compare the variances of two samples, we do this by conducting a test of the ratio of the variances. If the ratio is equal to , then the variances are equal; if not, then they are unequal.  The sample variances is a good estimate of the population variance. Not surprisingly, the ratio of the two sample variances, , drawn from their respective populations is a good estimate for the ratio of the two population variances, . The sampling distribution of is -distributed with and degrees of freedom if we have independent samples from two normal populations. Since we are comparing two variances, the test statistic is:   The formula for this test statistic is easy to compute by hand, nevertheless, we can also use Excel to do the work if we have raw data (not summary statistics). After stating the two hypotheses, we will go to the Data Analysis tool and choose F-Test Two-Sample for Variances to complete the test.   In general, if we are testing to see if one variance is larger than the other, we want to choose population 1 to be the one with the larger sample standard deviation so that we will be doing a right-tail test.   A company is doing a hypothesis test on the variation in quality from two suppliers. Both distributions are normal, and the populations are independent. Use . A sample of 29 products were selected from Supplier 1 and a standard deviation of quality was found to be 5.8426. A sample of 30 products were selected from Supplier 2 and a standard deviation of quality was found to be 3.2156. Test to see if the variance in quality for Supplier 1 is larger than Supplier 2.   What are the correct hypotheses?                                  What test statistic should we use for this problem?                                Find the test statistic.       What is the p-value?       The decision is to...     Reject the null hypothesis.      Fail to reject the null hypothesis.     The correct summary would be:     There is enough evidence to support the claim that the variance in quality for Supplier 1 is larger than Supplier 2.      There is not enough evidence to support the claim that the variance in quality for Supplier 1 is larger than Supplier 2.      There is enough evidence to reject the claim that the variance in quality for Supplier 1 is larger than Supplier 2.      There is enough evidence to reject the claim that the variance in quality for Supplier 1 is larger than Supplier 2.      A statistics student wants to investigate salaries of men and women in a certain Fortune 500 company. Two samples of salaries of men and women employees were obtained independently and analyzed. The sample data is in the Excel file below. (Assume that the samples are from normal populations.)      Which of the samples has a larger sample standard deviation?   Use STDEV.S in Excel to find the sample standard deviations.         Use a level of significance to decide whether there is sufficient evidence that in the Fortune 500 company, the standard deviation of the salary of men is greater than the standard deviation of the salary of women.         Since we have the raw data from the samples, we can use F-Test Two-Sample for Variances in the Data Analysis tool in Excel.     From this, we'll get a p-value of approximately 0.4182, which is bigger than . So we fail to reject the null hypothesis and do not have enough evidence to conclude that .            "
+  "body": " Comparing Variances from Two Populations   When we want to compare the variances of two samples, we do this by conducting a test of the ratio of the variances. If the ratio is equal to , then the variances are equal; if not, then they are unequal.  The sample variances is a good estimate of the population variance. Not surprisingly, the ratio of the two sample variances, , drawn from their respective populations is a good estimate for the ratio of the two population variances, . The sampling distribution of is -distributed with and degrees of freedom if we have independent samples from two normal populations. Since we are comparing two variances, the test statistic is:   The formula for this test statistic is easy to compute by hand, nevertheless, we can also use Excel to do the work if we have raw data (not summary statistics). After stating the two hypotheses, we will go to the Data Analysis tool and choose F-Test Two-Sample for Variances to complete the test.   In general, if we are testing to see if one variance is larger than the other, we want to choose population 1 to be the one with the larger sample standard deviation so that we will be doing a right-tail test.   A company is doing a hypothesis test on the variation in quality from two suppliers. Both distributions are normal, and the populations are independent. Use . A sample of 29 products were selected from Supplier 1 and a standard deviation of quality was found to be 5.8426. A sample of 30 products were selected from Supplier 2 and a standard deviation of quality was found to be 3.2156. Test to see if the variance in quality for Supplier 1 is larger than Supplier 2.   What are the correct hypotheses?                                  What test statistic should we use for this problem?                                Find the test statistic.       What is the p-value?       The decision is to...     Reject the null hypothesis.      Fail to reject the null hypothesis.     The correct summary would be:     There is enough evidence to support the claim that the variance in quality for Supplier 1 is larger than Supplier 2.      There is not enough evidence to support the claim that the variance in quality for Supplier 1 is larger than Supplier 2.      There is enough evidence to reject the claim that the variance in quality for Supplier 1 is larger than Supplier 2.      There is enough evidence to reject the claim that the variance in quality for Supplier 1 is larger than Supplier 2.      A statistics student wants to investigate salaries of men and women in a certain Fortune 500 company. Two samples of salaries of men and women employees were obtained independently and analyzed. The sample data is in the Excel file below. (Assume that the samples are from normal populations.)      Which of the samples has a larger sample standard deviation?   Use STDEV.S in Excel to find the sample standard deviations.         Use a level of significance to decide whether there is sufficient evidence that in the Fortune 500 company, the standard deviation of the salary of men is greater than the standard deviation of the salary of women.         Since we have the raw data from the samples, we can use F-Test Two-Sample for Variances in the Data Analysis tool in Excel.     From this, we'll get a p-value of approximately 0.4182, which is bigger than . So we fail to reject the null hypothesis and do not have enough evidence to conclude that .   "
 },
 {
   "id": "sec-hyp-test-two-variances-3",
@@ -2708,69 +2699,6 @@ var ptx_lunr_docs = [
   "number": "11.4.3",
   "title": "",
   "body": " A statistics student wants to investigate salaries of men and women in a certain Fortune 500 company. Two samples of salaries of men and women employees were obtained independently and analyzed. The sample data is in the Excel file below. (Assume that the samples are from normal populations.)      Which of the samples has a larger sample standard deviation?   Use STDEV.S in Excel to find the sample standard deviations.         Use a level of significance to decide whether there is sufficient evidence that in the Fortune 500 company, the standard deviation of the salary of men is greater than the standard deviation of the salary of women.         Since we have the raw data from the samples, we can use F-Test Two-Sample for Variances in the Data Analysis tool in Excel.     From this, we'll get a p-value of approximately 0.4182, which is bigger than . So we fail to reject the null hypothesis and do not have enough evidence to conclude that .  "
-},
-{
-  "id": "sec-hyp-test-two-variances-6-1",
-  "level": "2",
-  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-6-1",
-  "type": "Exercise",
-  "number": "11.4.1",
-  "title": "",
-  "body": ""
-},
-{
-  "id": "sec-hyp-test-two-variances-6-2",
-  "level": "2",
-  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-6-2",
-  "type": "Exercise",
-  "number": "11.4.2",
-  "title": "",
-  "body": ""
-},
-{
-  "id": "sec-hyp-test-two-variances-6-3",
-  "level": "2",
-  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-6-3",
-  "type": "Exercise",
-  "number": "11.4.3",
-  "title": "",
-  "body": ""
-},
-{
-  "id": "sec-hyp-test-two-variances-6-4",
-  "level": "2",
-  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-6-4",
-  "type": "Exercise",
-  "number": "11.4.4",
-  "title": "",
-  "body": ""
-},
-{
-  "id": "sec-hyp-test-two-variances-6-5",
-  "level": "2",
-  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-6-5",
-  "type": "Exercise",
-  "number": "11.4.5",
-  "title": "",
-  "body": ""
-},
-{
-  "id": "sec-hyp-test-two-variances-6-6",
-  "level": "2",
-  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-6-6",
-  "type": "Exercise",
-  "number": "11.4.6",
-  "title": "",
-  "body": ""
-},
-{
-  "id": "sec-hyp-test-two-variances-6-7",
-  "level": "2",
-  "url": "sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-6-7",
-  "type": "Exercise",
-  "number": "11.4.7",
-  "title": "",
-  "body": ""
 },
 {
   "id": "sec-Overview",

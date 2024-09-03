@@ -3,71 +3,71 @@
 <statement>
 <p class="seqsep" role="heading" tabindex="-1">Part 1 of 5</p>
 <p>A group of activists wants to verify the claim that in a certain Fortune 500 company the average salary of female employees is different from the average salary of male employees. Two samples of male and female workers were obtained independently and analyzed.</p>
-<p>Females (in thousands of dollars): </p><table><tabular> <row><cell>62.9</cell><cell>67.3</cell><cell>83.9</cell><cell>63.5</cell><cell>80.1</cell></row><row><cell>47.7</cell><cell>58.1</cell><cell>57.2</cell><cell>98.7</cell><cell>57.9</cell></row><row><cell>92.8</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></tabular></table>
-<p>(Note: The average and the standard deviation of the data are respectively <dollar/>70.01 K and <dollar/>16.395 K.)</p>
-<p>Males (in thousands of dollars): </p><table><tabular> <row><cell>73</cell><cell>42.3</cell><cell>71.8</cell><cell>54.4</cell><cell>23.3</cell></row><row><cell>73.4</cell><cell>43.3</cell><cell>68.8</cell><cell>43.4</cell><cell>46.8</cell></row><row><cell>79.3</cell><cell>88.1</cell><cell>89.5</cell><cell>71.8</cell><cell>96.5</cell></row></tabular></table>
-<p>(Note: The average and the standard deviation of the data are respectively <dollar/>64.38 K and <dollar/>21.047 K.)</p>
-<p>The standard deviation for the first sample appears to be different from the standard deviation of the second sample. Use 10<percent/> level of significance to decide whether there is sufficient evidence that in the Fortune 500 company, the standard deviation of the salary of males is less than the standard deviation of the salary of females. If normality plots are not provided assume that the samples are from normal populations.</p>
+<p>Females (in thousands of dollars): </p><table><tabular> <row><cell>45.2</cell><cell>70.2</cell><cell>37</cell><cell>47.8</cell><cell>51.6</cell></row><row><cell>58.2</cell><cell>43</cell><cell>54.5</cell><cell>86.7</cell><cell>63.5</cell></row><row><cell>50.1</cell><cell>53.3</cell><cell>58</cell><cell>76.9</cell><cell>61.9</cell></row><row><cell>70.5</cell><cell>36.5</cell><cell>58.3</cell><cell>94.2</cell><cell></cell></row></tabular></table>
+<p>(Note: The average and the standard deviation of the data are respectively <dollar/>58.81 K and <dollar/>15.57 K.)</p>
+<p>Males (in thousands of dollars): </p><table><tabular> <row><cell>63.8</cell><cell>61</cell><cell>65.6</cell><cell>54.6</cell><cell>66.8</cell></row><row><cell>78.6</cell><cell>62.8</cell><cell>63.8</cell><cell>70.5</cell><cell>71.6</cell></row><row><cell>66.3</cell><cell>84.4</cell><cell>59.1</cell><cell>73</cell><cell>72.4</cell></row><row><cell>56.9</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></tabular></table>
+<p>(Note: The average and the standard deviation of the data are respectively <dollar/>66.95 K and <dollar/>7.877 K.)</p>
+<p>The standard deviation for the first sample appears to be different from the standard deviation of the second sample. Use 10<percent/> level of significance to decide whether there is sufficient evidence that in the Fortune 500 company, the standard deviation of the salary of males is the same as the standard deviation of the salary of females. If normality plots are not provided assume that the samples are from normal populations.</p>
 <p>Procedure: </p>
-<p><ol style="list-style-type:upper-alpha"><li>Two means T (non-pooled) Hypothesis Test</li> 
+<p><ol style="list-style-type:upper-alpha"><li>Two variances F Hypothesis Test</li> 
+<li>Two means Z Hypothesis Test</li> 
 <li>Two means T (pooled) Hypothesis Test</li> 
+<li>Two means T (non-pooled) Hypothesis Test</li> 
 <li>Two paired means T Hypothesis Test</li> 
 <li>Two proportions Z Hypothesis Test</li> 
-<li>Two means Z Hypothesis Test</li> 
-<li>Two variances F Hypothesis Test</li> 
 </ol></p>
 <p>Assumptions: (select everything that applies) </p>
-<p><ol style="list-style-type:upper-alpha"><li>Population standard deviation are unknown</li> 
-<li>Population standard deviations are unknown but assumed equal</li> 
-<li>The number of positive and negative responses are both greater than 10 for both samples</li> 
+<p><ol style="list-style-type:upper-alpha"><li>Population standard deviations are known</li> 
 <li>Sample sizes are both greater than 30</li> 
-<li>Paired samples</li> 
-<li>Independent samples</li> 
 <li>Simple random samples</li> 
-<li>Population standard deviations are known</li> 
 <li>Normal populations</li> 
+<li>Independent samples</li> 
+<li>The number of positive and negative responses are both greater than 10 for both samples</li> 
+<li>Population standard deviation are unknown</li> 
+<li>Population standard deviations are unknown but assumed equal</li> 
+<li>Paired samples</li> 
 </ol></p>
 <p class="seqsep" role="heading" tabindex="-1">Part 2 of 5</p>
 <p>Step 1. Hypotheses Set-Up:</p>
 <table><tabular>     
   
     <row>
-      <cell> <m>\displaystyle{H}_{{0}}:</m> <p><ol style="list-style-type:upper-alpha"><li>p₁-p₂</li> 
+      <cell> <m>\displaystyle{H}_{{0}}:</m> <p><ol style="list-style-type:upper-alpha"><li>μ₁-μ₂</li> 
 <li>μ</li> 
-<li>μ₁-μ₂</li> 
+<li>p₁-p₂</li> 
 <li>σ₁<ampersand />;sup2/σ₂<ampersand />;sup2</li> 
 </ol></p>
 =<fillin characters="2" /></cell>
-      <cell>, where <p><ol style="list-style-type:upper-alpha"><li>μ's are</li> 
-<li>σ's are</li> 
+      <cell>, where <p><ol style="list-style-type:upper-alpha"><li>σ's are</li> 
 <li>μ=μ₁-μ₂ is</li> 
 <li>p's are</li> 
+<li>μ's are</li> 
 </ol></p>
  the <p><ol style="list-style-type:upper-alpha"><li>population proportions</li> 
+<li>difference between population means</li> 
 <li>population standard deviations</li> 
 <li>population means</li> 
-<li>difference between population means</li> 
 </ol></p>
- and the units are <p><ol style="list-style-type:upper-alpha"><li>Pesos</li> 
-<li>100<percent/></li> 
+ and the units are <p><ol style="list-style-type:upper-alpha"><li><dollar/>1000</li> 
+<li>Pesos</li> 
 <li>CAN</li> 
-<li><dollar/>1000</li> 
+<li>100<percent/></li> 
 </ol></p>
 </cell>
     </row>
     <row>
-      <cell> <m>\displaystyle{H}_{{a}}:</m> <p><ol style="list-style-type:upper-alpha"><li>μ</li> 
+      <cell> <m>\displaystyle{H}_{{a}}:</m> <p><ol style="list-style-type:upper-alpha"><li>p₁-p₂</li> 
+<li>μ</li> 
 <li>μ₁-μ₂</li> 
 <li>σ₁<ampersand />;sup2/σ₂<ampersand />;sup2</li> 
-<li>p₁-p₂</li> 
 </ol></p>
 <p><ol style="list-style-type:upper-alpha"><li>≠</li> 
-<li><greater/></li> 
 <li><less/><less/>/label<greater/></li> 
+<li><greater/></li> 
 </ol></p>
 <fillin characters="2" /></cell>
-      <cell>, and the test is <p><ol style="list-style-type:upper-alpha"><li>Two-Tail</li> 
-<li>Right-Tail</li> 
+      <cell>, and the test is <p><ol style="list-style-type:upper-alpha"><li>Right-Tail</li> 
+<li>Two-Tail</li> 
 <li>Left-Tail</li> 
 </ol></p>
 </cell>
@@ -77,8 +77,8 @@
 <p class="seqsep" role="heading" tabindex="-1">Part 3 of 5</p>
 <p>Step 3. Compute the value of the test statistic: </p>
 <p><ol style="list-style-type:upper-alpha"><li><ampersand />;<hash/>967<ampersand />;sup2₀</li> 
-<li>f₀</li> 
 <li>t₀</li> 
+<li>f₀</li> 
 <li>z₀</li> 
 </ol></p>
 =<fillin characters="2" /> (Round the answer to 3 decimal places)
@@ -111,8 +111,8 @@
       <cell>Is the P-value less than the significance level?</cell>
     </row>
     <row>
-      <cell><p><ol style="list-style-type:upper-alpha"><li>yes</li> 
-<li>no</li> 
+      <cell><p><ol style="list-style-type:upper-alpha"><li>no</li> 
+<li>yes</li> 
 </ol></p>
 </cell>
       <cell><p><ol style="list-style-type:upper-alpha"><li>no</li> 
@@ -122,28 +122,28 @@
     </row>
   
 </tabular></table><p style="padding-left: 40px;">Conclusion: </p>
-<p><ol style="list-style-type:upper-alpha"><li>Reject the null hypothesis in favor of the alternative.</li> 
-<li>Do not reject the null hypothesis in favor of the alternative.</li> 
+<p><ol style="list-style-type:upper-alpha"><li>Do not reject the null hypothesis in favor of the alternative.</li> 
+<li>Reject the null hypothesis in favor of the alternative.</li> 
 </ol></p>
 <p class="seqsep" role="heading" tabindex="-1">Part 5 of 5</p>
 <p>Step 6. Interpretation:</p>
 <p style="padding-left: 40px;">At 10<percent/> significance level we </p>
-<p><ol style="list-style-type:upper-alpha"><li>DO</li> 
-<li>DO NOT</li> 
+<p><ol style="list-style-type:upper-alpha"><li>DO NOT</li> 
+<li>DO</li> 
 </ol></p>
  have sufficient evidence to reject the null hypothesis in favor of the alternative hypothesis.
 
 </statement>
 <solution>
-<p><ul><li>F: Two variances F Hypothesis Test</li><li><p>Simple random samples</p>
+<p><ul><li>A: Two variances F Hypothesis Test</li><li><p>Simple random samples</p>
 <p>Independent samples</p>
 <p>Normal populations</p>
-<p>Population standard deviation are unknown</p></li><li>D: σ₁<ampersand />;sup2/σ₂<ampersand />;sup2</li><li>1</li><li>B: σ's are</li><li>B: population standard deviations</li><li>D: <dollar/>1000</li><li>C: σ₁<ampersand />;sup2/σ₂<ampersand />;sup2</li><li>C: <less/><less/>/li<greater/></li><li>1</li><li>C: Left-Tail</li><li>10</li><li>B: f₀</li><li>0.607</li><li>0.443</li><li>DNE</li><li>0.216</li><li>B: no</li><li>A: no</li><li>B: Do not reject the null hypothesis in favor of the alternative.</li><li>B: DO NOT</li></ul></p><p>A group of activists wants to verify the claim that in a certain Fortune 500 company the average salary of female employees is different from the average salary of male employees. Two samples of male and female workers were obtained independently and analyzed.</p>
-<p>Females (in thousands of dollars): </p><table><tabular> <row><cell>62.9</cell><cell>67.3</cell><cell>83.9</cell><cell>63.5</cell><cell>80.1</cell></row><row><cell>47.7</cell><cell>58.1</cell><cell>57.2</cell><cell>98.7</cell><cell>57.9</cell></row><row><cell>92.8</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></tabular></table>
-<p>(Note: The average and the standard deviation of the data are respectively <dollar/>70.01 K and <dollar/>16.395 K.)</p>
-<p>Males (in thousands of dollars): </p><table><tabular> <row><cell>73</cell><cell>42.3</cell><cell>71.8</cell><cell>54.4</cell><cell>23.3</cell></row><row><cell>73.4</cell><cell>43.3</cell><cell>68.8</cell><cell>43.4</cell><cell>46.8</cell></row><row><cell>79.3</cell><cell>88.1</cell><cell>89.5</cell><cell>71.8</cell><cell>96.5</cell></row></tabular></table>
-<p>(Note: The average and the standard deviation of the data are respectively <dollar/>64.38 K and <dollar/>21.047 K.)</p>
-<p>The standard deviation for the first sample appears to be different from the standard deviation of the second sample. Use 10<percent/> level of significance to decide whether there is sufficient evidence that in the Fortune 500 company, the standard deviation of the salary of males is less than the standard deviation of the salary of females. If normality plots are not provided assume that the samples are from normal populations.</p>
+<p>Population standard deviation are unknown</p></li><li>D: σ₁<ampersand />;sup2/σ₂<ampersand />;sup2</li><li>1</li><li>A: σ's are</li><li>C: population standard deviations</li><li>A: <dollar/>1000</li><li>D: σ₁<ampersand />;sup2/σ₂<ampersand />;sup2</li><li>A: ≠</li><li>1</li><li>B: Two-Tail</li><li>10</li><li>C: f₀</li><li>3.907</li><li>0.441</li><li>2.353</li><li>0.011</li><li>B: yes</li><li>B: yes</li><li>B: Reject the null hypothesis in favor of the alternative.</li><li>B: DO</li></ul></p><p>A group of activists wants to verify the claim that in a certain Fortune 500 company the average salary of female employees is different from the average salary of male employees. Two samples of male and female workers were obtained independently and analyzed.</p>
+<p>Females (in thousands of dollars): </p><table><tabular> <row><cell>45.2</cell><cell>70.2</cell><cell>37</cell><cell>47.8</cell><cell>51.6</cell></row><row><cell>58.2</cell><cell>43</cell><cell>54.5</cell><cell>86.7</cell><cell>63.5</cell></row><row><cell>50.1</cell><cell>53.3</cell><cell>58</cell><cell>76.9</cell><cell>61.9</cell></row><row><cell>70.5</cell><cell>36.5</cell><cell>58.3</cell><cell>94.2</cell><cell></cell></row></tabular></table>
+<p>(Note: The average and the standard deviation of the data are respectively <dollar/>58.81 K and <dollar/>15.57 K.)</p>
+<p>Males (in thousands of dollars): </p><table><tabular> <row><cell>63.8</cell><cell>61</cell><cell>65.6</cell><cell>54.6</cell><cell>66.8</cell></row><row><cell>78.6</cell><cell>62.8</cell><cell>63.8</cell><cell>70.5</cell><cell>71.6</cell></row><row><cell>66.3</cell><cell>84.4</cell><cell>59.1</cell><cell>73</cell><cell>72.4</cell></row><row><cell>56.9</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></tabular></table>
+<p>(Note: The average and the standard deviation of the data are respectively <dollar/>66.95 K and <dollar/>7.877 K.)</p>
+<p>The standard deviation for the first sample appears to be different from the standard deviation of the second sample. Use 10<percent/> level of significance to decide whether there is sufficient evidence that in the Fortune 500 company, the standard deviation of the salary of males is the same as the standard deviation of the salary of females. If normality plots are not provided assume that the samples are from normal populations.</p>
 <p>Procedure: In the question, look for the keywords such as mean/average, proportion/percentage, variance/standard deviation! In this case, we have "the standard deviation of the salary" and two populations, thus we are going to perform Two Variances F Hypothesis Test.</p>
 <p>Assumptions (select everything that applies): For Two Variances F Hypothesis Test,</p>
 <p><ul>
@@ -154,10 +154,10 @@
 <p>Step-by-step (without technology):</p>
 <p>Step 1. Hypotheses Set-Up:</p>
 <p style="padding-left: 40px;">The null hypothesis <m>\displaystyle{H}_{{0}}</m>: <m>\displaystyle{\frac{{{\sigma_{{1}}^{{2}}}}}{{{\sigma_{{2}}^{{2}}}}}}={1}</m>, where σ₁ is the the standard deviation of the salary 1 and σ₂ is the the standard deviation of the salary 2 and the units are <dollar/>1000;</p>
-<p style="padding-left: 40px;">The alternative hypothesis <m>\displaystyle{H}_{{a}}</m> : <m>\displaystyle{\frac{{{\sigma_{{1}}^{{2}}}}}{{{\sigma_{{2}}^{{2}}}}}}{<}{1}</m> and the test is Left-Tail</p>
+<p style="padding-left: 40px;">The alternative hypothesis <m>\displaystyle{H}_{{a}}</m> : <m>\displaystyle{\frac{{{\sigma_{{1}}^{{2}}}}}{{{\sigma_{{2}}^{{2}}}}}}\ne{1}</m> and the test is Two-Tail</p>
 <p>Step 2. The significance level <m>\displaystyle\alpha=</m> 10<percent/></p>
-<p>Step 3. Compute the value of the test statistic: <m>\displaystyle{f}_{{0}}={\frac{{{{s}_{{1}}^{{2}}}}}{{{{s}_{{2}}^{{2}}}}}}=\frac{{{16.395}^{{2}}}}{{{21.047}^{{2}}}}={0.607}</m> (Round the answer to 3 decimal places) with degrees of freedom <m>\displaystyle{\left({d}{f}{n},{d}{f}{d}\right)}={\left({10},{14}\right)}</m></p>
-<p>To practice finding the test statistic (in this case, <m>\displaystyle{f}_{{0}}={0.607}</m>), please consider the following <url href="https://www.myopenmath.com/embedq.php?id=760294">problem</url>:</p>
+<p>Step 3. Compute the value of the test statistic: <m>\displaystyle{f}_{{0}}={\frac{{{{s}_{{1}}^{{2}}}}}{{{{s}_{{2}}^{{2}}}}}}=\frac{{{15.57}^{{2}}}}{{{7.877}^{{2}}}}={3.907}</m> (Round the answer to 3 decimal places) with degrees of freedom <m>\displaystyle{\left({d}{f}{n},{d}{f}{d}\right)}={\left({18},{15}\right)}</m></p>
+<p>To practice finding the test statistic (in this case, <m>\displaystyle{f}_{{0}}={3.907}</m>), please consider the following <url href="https://www.myopenmath.com/embedq.php?id=760294">problem</url>:</p>
 <p><lbracket/>EMBED: QID760294<rbracket/></p>
 <p>Step 4. Testing Procedure: (Round the answers to 3 decimal places)</p>
 <table><tabular>       
@@ -171,13 +171,13 @@
       <cell>Compute the P-value of the test statistic:</cell>
     </row>
     <row>
-      <cell>left CV is <m>\displaystyle{f}_{{{1}-\alpha}}={f}_{{0.9}}={0.443}</m>  and right CV is <m>\displaystyle{D}{N}{E}={D}{N}{E}</m> </cell>
-      <cell>P-value is <m>\displaystyle{P}{\left({F}{<}{f}_{{0}}\right)}={P}{\left({F}{<}{0.607}\right)}={0.216}</m> </cell>
+      <cell>left CV is <m>\displaystyle{f}_{{{1}-\frac{\alpha}{{2}}}}={f}_{{0.95}}={0.441}</m>  and right CV is <m>\displaystyle{f}_{{\frac{\alpha}{{2}}}}={f}_{{0.05}}={2.353}</m> </cell>
+      <cell>P-value is <m>\displaystyle{2}\min{\left({P}{\left({F}{<}{f}_{{0}}\right)},{P}{\left({F}{>}{f}_{{0}}\right)}\right)}={0.011}</m> </cell>
     </row>
   
-</tabular></table><p>To practice finding the critical values (in this case, <m>\displaystyle{f}_{{{1}-\alpha}}={f}_{{0.9}}={0.443}</m> and <m>\displaystyle{D}{N}{E}={D}{N}{E}</m>) and drawing the rejection region, please consider the following <url href="https://www.myopenmath.com/embedq.php?id=760347">problem</url>:</p>
+</tabular></table><p>To practice finding the critical values (in this case, <m>\displaystyle{f}_{{{1}-\frac{\alpha}{{2}}}}={f}_{{0.95}}={0.441}</m> and <m>\displaystyle{f}_{{\frac{\alpha}{{2}}}}={f}_{{0.05}}={2.353}</m>) and drawing the rejection region, please consider the following <url href="https://www.myopenmath.com/embedq.php?id=760347">problem</url>:</p>
 <p><lbracket/>EMBED: QID760347<rbracket/></p>
-<p>To practice finding the P-value (in this case, <m>\displaystyle{P}{\left({F}{<}{f}_{{0}}\right)}={P}{\left({F}{<}{0.607}\right)}={0.216}</m>), please consider the following <url href="https://www.myopenmath.com/embedq.php?id=760354">problem</url>:</p>
+<p>To practice finding the P-value (in this case, <m>\displaystyle{2}\min{\left({P}{\left({F}{<}{f}_{{0}}\right)},{P}{\left({F}{>}{f}_{{0}}\right)}\right)}={0.011}</m>), please consider the following <url href="https://www.myopenmath.com/embedq.php?id=760354">problem</url>:</p>
 <p><lbracket/>EMBED: QID760354<rbracket/></p>
 <p>Step 5. Decision:</p>
 <table><tabular>       
@@ -187,36 +187,36 @@
       <cell>PVA</cell>
     </row>
     <row>
-      <cell>Is the test statistic <m>\displaystyle{f}_{{0}}={0.607}</m> in the rejection region, in other words, is <m>\displaystyle{0.607}</m> less than <m>\displaystyle{0.443}</m>?</cell>
-      <cell>Is the P-value 0.216 less than the significance level <m>\displaystyle\alpha</m>, in other words, is <m>\displaystyle{0.216}{<}{0.1}</m>?</cell>
+      <cell>Is the test statistic <m>\displaystyle{f}_{{0}}={3.907}</m> in the rejection region, in other words, is <m>\displaystyle{3.907}</m> less than <m>\displaystyle{0.441}</m> or greater than <m>\displaystyle{2.353}</m>?</cell>
+      <cell>Is the P-value 0.011 less than the significance level <m>\displaystyle\alpha</m>, in other words, is <m>\displaystyle{0.011}{<}{0.1}</m>?</cell>
     </row>
     <row>
-      <cell>no</cell>
-      <cell>no</cell>
+      <cell>yes</cell>
+      <cell>yes</cell>
     </row>
   
-</tabular></table><p style="padding-left: 40px;">Conclusion: Do not reject the null hypothesis in favor of the alternative.</p>
+</tabular></table><p style="padding-left: 40px;">Conclusion: Reject the null hypothesis in favor of the alternative.</p>
 <p>Step 6. Interpretation:</p>
-<p style="padding-left: 40px;">At 10<percent/> significance level we DO NOT have sufficient evidence to reject the null hypothesis in favor of the alternative hypothesis.</p>
+<p style="padding-left: 40px;">At 10<percent/> significance level we DO have sufficient evidence to reject the null hypothesis in favor of the alternative hypothesis.</p>
 <p>Step-by-step (with technology):</p>
 <p>(StatCrunch) In the menu, select Stat<greater/>Variance Stats<greater/>Two Samples<greater/>With Summary and then enter the following:</p>
 <p style="text-align: center;"><em>Sample 1:</em></p>
-<p style="text-align: center;"><em>Variance</em>: 268.796</p>
-<p style="text-align: center;"><em>Sample size</em>: 11</p>
+<p style="text-align: center;"><em>Variance</em>: 242.425</p>
+<p style="text-align: center;"><em>Sample size</em>: 19</p>
 <p style="text-align: center;"><em>Sample 2:</em></p>
-<p style="text-align: center;"><em>Variance</em>: 442.976</p>
-<p style="text-align: center;"><em>Sample size</em>: 15</p>
+<p style="text-align: center;"><em>Variance</em>: 62.047</p>
+<p style="text-align: center;"><em>Sample size</em>: 16</p>
 <p style="text-align: center;"><em>Perform</em>: Hypothesis test for <m>\displaystyle{\sigma_{{1}}^{{2}}}\text{/}{\sigma_{{2}}^{{2}}}</m> </p>
 <p style="text-align: center;"><em> <m>\displaystyle{H}_{{0}}</m> </em>: <m>\displaystyle{\sigma_{{1}}^{{2}}}\text{/}{\sigma_{{2}}^{{2}}}={1}</m> </p>
-<p style="text-align: center;"><em> <m>\displaystyle{H}_{{A}}</m> </em>: <m>\displaystyle{\sigma_{{1}}^{{2}}}\text{/}{\sigma_{{2}}^{{2}}}{<}{1}</m> </p>
+<p style="text-align: center;"><em> <m>\displaystyle{H}_{{A}}</m> </em>: <m>\displaystyle{\sigma_{{1}}^{{2}}}\text{/}{\sigma_{{2}}^{{2}}}\ne{1}</m> </p>
 <p style="text-align: center;">(press Compute!)</p>
 <p>(TI-83 Plus) Press STAT<greater/>TESTS<greater/>D:2-SampFTest... and then enter the following:</p>
 <p style="text-align: center;">Inpt: Stats</p>
-<p style="text-align: center;"> <m>\displaystyle{S}{x}{1}:{16.395}</m> </p>
-<p style="text-align: center;"> <m>\displaystyle{n}{1}:{11}</m> </p>
-<p style="text-align: center;"> <m>\displaystyle{S}{x}{2}:{21.047}</m> </p>
-<p style="text-align: center;"> <m>\displaystyle{n}{2}:{15}</m> </p>
-<p style="text-align: center;"> <m>\displaystyle\sigma{1}:{<}\sigma{2}</m> </p>
+<p style="text-align: center;"> <m>\displaystyle{S}{x}{1}:{15.57}</m> </p>
+<p style="text-align: center;"> <m>\displaystyle{n}{1}:{19}</m> </p>
+<p style="text-align: center;"> <m>\displaystyle{S}{x}{2}:{7.877}</m> </p>
+<p style="text-align: center;"> <m>\displaystyle{n}{2}:{16}</m> </p>
+<p style="text-align: center;"> <m>\displaystyle\sigma{1}:\ne\sigma{2}</m> </p>
 <p style="text-align: center;">(press ENTER on Calculate)</p>
 <p style="text-align: left;">Among the results, you can find the test statistic and the p-value. When using technology, it is much easier to conduct the test using the p-value approach. Be aware, that technology can help you with computations but you still need to be familiar with the procedure to make the right conclusion!</p>
 <p>To practice making the decision based on the P-value, please consider the following <url href="https://www.myopenmath.com/embedq.php?id=408066">problem</url>:</p>
