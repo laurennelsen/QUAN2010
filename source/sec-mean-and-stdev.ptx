@@ -30,7 +30,7 @@
             The <em><m>z</m>-score</em> identifies the number of standard deviations a particular value is from the mean of its distribution.
         </p>
         <p>
-            <me>\text{formula:  } z=\frac{x-\mu}{\sigma}\text{  or  } \frac{x-\overline{x}}{s}\cdot 100</me>
+            <me>\text{formula:  } z=\frac{x-\mu}{\sigma}\text{  or  } \frac{x-\overline{x}}{s}</me>
         </p>
         <p>
             <me>\text{Excel formula:  STANDARDIZE}</me>
@@ -264,7 +264,6 @@
   </exercise>
 
   <exercise>
-    <title>Chebyshev's Theorem</title>
     <myopenmath problem="7069" />
   </exercise>
 
