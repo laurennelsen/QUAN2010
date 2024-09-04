@@ -3,39 +3,39 @@
 <statement>
 <p class="seqsep" role="heading" tabindex="-1">Part 1 of 5</p>
 <p>A pharmaceutical company is about to launch a new manufacturing process in addition to the existing one. The quality control manager believes that the new method results in a different variation in the weights of the capsules. To verify the claim, the samples from each production line were obtained and the results are below (in mg):</p>
-<p>Production Line 1: </p><table><tabular> <row><cell>101.4</cell><cell>101.1</cell><cell>101.1</cell><cell>100.5</cell><cell>99.6</cell></row><row><cell>100.1</cell><cell>103.5</cell><cell>101.3</cell><cell>100.6</cell><cell>101.3</cell></row></tabular></table>
-<p>(Note: The average and the standard deviation of the data are respectively 101.05 mg and 1.042 mg.)</p>
-<p>Production Line 2: </p><table><tabular> <row><cell>101</cell><cell>101.2</cell><cell>104.1</cell><cell>100.1</cell><cell>102.1</cell></row><row><cell>99.3</cell><cell>101.1</cell><cell>101.7</cell><cell>101.4</cell><cell>101.8</cell></row><row><cell>101.4</cell><cell>100</cell><cell>101.3</cell><cell>101.9</cell><cell>99.6</cell></row><row><cell>99.9</cell><cell>100.9</cell><cell></cell><cell></cell><cell></cell></row></tabular></table>
-<p>(Note: The average and the standard deviation of the data are respectively 101.11 mg and 1.143 mg.)</p>
+<p>Production Line 1: </p><table><tabular> <row><cell>99</cell><cell>98.1</cell><cell>100.9</cell><cell>99.5</cell><cell>102.7</cell></row><row><cell>98.6</cell><cell>97.7</cell><cell>100.1</cell><cell>100.4</cell><cell>96</cell></row></tabular></table>
+<p>(Note: The average and the standard deviation of the data are respectively 99.3 mg and 1.87 mg.)</p>
+<p>Production Line 2: </p><table><tabular> <row><cell>98.9</cell><cell>97.7</cell><cell>96.4</cell><cell>97.7</cell><cell>98.5</cell></row><row><cell>98.4</cell><cell>100.7</cell><cell>99.8</cell><cell>100.4</cell><cell>98</cell></row><row><cell>98</cell><cell>100.9</cell><cell>99.6</cell><cell>98.7</cell><cell>98.4</cell></row><row><cell>98.9</cell><cell>99.5</cell><cell></cell><cell></cell><cell></cell></row></tabular></table>
+<p>(Note: The average and the standard deviation of the data are respectively 98.85 mg and 1.187 mg.)</p>
 <p>Use a 10<percent/> significance level to test the claim that the standard deviation of the capsule weights in the production line 1 is different from the standard deviation of the capsule weights in the production line 2. If normality plots are not provided assume that the samples are from normal populations.</p>
 <p>Procedure: </p>
-<p><ol style="list-style-type:upper-alpha"><li>Two means Z Hypothesis Test</li> 
+<p><ol style="list-style-type:upper-alpha"><li>Two means T (non-pooled) Hypothesis Test</li> 
 <li>Two proportions Z Hypothesis Test</li> 
-<li>Two means T (non-pooled) Hypothesis Test</li> 
-<li>Two paired means T Hypothesis Test</li> 
 <li>Two variances F Hypothesis Test</li> 
 <li>Two means T (pooled) Hypothesis Test</li> 
+<li>Two means Z Hypothesis Test</li> 
+<li>Two paired means T Hypothesis Test</li> 
 </ol></p>
 <p>Assumptions: (select everything that applies) </p>
-<p><ol style="list-style-type:upper-alpha"><li>Population standard deviations are known</li> 
-<li>Paired samples</li> 
-<li>Population standard deviation are unknown but assumed equal</li> 
+<p><ol style="list-style-type:upper-alpha"><li>Sample sizes are both greater than 30</li> 
 <li>Independent samples</li> 
+<li>Population standard deviation are unknown but assumed equal</li> 
 <li>Normal populations</li> 
 <li>Simple random samples</li> 
-<li>Sample sizes are both greater than 30</li> 
-<li>The number of positive and negative responses are both greater than 10 for both samples</li> 
 <li>Population standard deviation are unknown</li> 
+<li>Paired samples</li> 
+<li>The number of positive and negative responses are both greater than 10 for both samples</li> 
+<li>Population standard deviations are known</li> 
 </ol></p>
 <p class="seqsep" role="heading" tabindex="-1">Part 2 of 5</p>
 <p>Step 1. Hypotheses Set-Up:</p>
 <table><tabular>     
   
     <row>
-      <cell> <m>\displaystyle{H}_{{0}}:</m> <p><ol style="list-style-type:upper-alpha"><li>μ₁-μ₂</li> 
-<li>μ</li> 
+      <cell> <m>\displaystyle{H}_{{0}}:</m> <p><ol style="list-style-type:upper-alpha"><li>p₁-p₂</li> 
+<li>μ₁-μ₂</li> 
 <li>σ₁<ampersand />;sup2/σ₂<ampersand />;sup2</li> 
-<li>p₁-p₂</li> 
+<li>μ</li> 
 </ol></p>
 =<fillin characters="2" /></cell>
       <cell>, where <p><ol style="list-style-type:upper-alpha"><li>μ's are</li> 
@@ -43,32 +43,32 @@
 <li>σ's are</li> 
 <li>μ=μ₁-μ₂ is</li> 
 </ol></p>
- the <p><ol style="list-style-type:upper-alpha"><li>population standard deviations</li> 
-<li>population proportions</li> 
+ the <p><ol style="list-style-type:upper-alpha"><li>population means</li> 
+<li>population standard deviations</li> 
 <li>difference between population means</li> 
-<li>population means</li> 
+<li>population proportions</li> 
 </ol></p>
- and the units are <p><ol style="list-style-type:upper-alpha"><li>kg</li> 
-<li>lbs</li> 
+ and the units are <p><ol style="list-style-type:upper-alpha"><li>lbs</li> 
 <li>oz</li> 
+<li>kg</li> 
 <li>mg</li> 
 </ol></p>
 </cell>
     </row>
     <row>
-      <cell> <m>\displaystyle{H}_{{a}}:</m> <p><ol style="list-style-type:upper-alpha"><li>μ₁-μ₂</li> 
-<li>σ₁<ampersand />;sup2/σ₂<ampersand />;sup2</li> 
-<li>μ</li> 
+      <cell> <m>\displaystyle{H}_{{a}}:</m> <p><ol style="list-style-type:upper-alpha"><li>μ</li> 
 <li>p₁-p₂</li> 
+<li>μ₁-μ₂</li> 
+<li>σ₁<ampersand />;sup2/σ₂<ampersand />;sup2</li> 
 </ol></p>
-<p><ol style="list-style-type:upper-alpha"><li>≠</li> 
-<li><less/><less/>/label<greater/></li> 
+<p><ol style="list-style-type:upper-alpha"><li><less/><less/>/label<greater/></li> 
+<li>≠</li> 
 <li><greater/></li> 
 </ol></p>
 <fillin characters="2" /></cell>
-      <cell>, and the test is <p><ol style="list-style-type:upper-alpha"><li>Two-Tail</li> 
+      <cell>, and the test is <p><ol style="list-style-type:upper-alpha"><li>Left-Tail</li> 
 <li>Right-Tail</li> 
-<li>Left-Tail</li> 
+<li>Two-Tail</li> 
 </ol></p>
 </cell>
     </row>
@@ -76,10 +76,10 @@
 </tabular></table><p>Step 2. The significance level <m>\displaystyle\alpha=</m> <fillin characters="2" /><percent/></p>
 <p class="seqsep" role="heading" tabindex="-1">Part 3 of 5</p>
 <p>Step 3. Compute the value of the test statistic: </p>
-<p><ol style="list-style-type:upper-alpha"><li>f₀</li> 
-<li><ampersand />;<hash/>967<ampersand />;sup2₀</li> 
-<li>z₀</li> 
+<p><ol style="list-style-type:upper-alpha"><li><ampersand />;<hash/>967<ampersand />;sup2₀</li> 
 <li>t₀</li> 
+<li>f₀</li> 
+<li>z₀</li> 
 </ol></p>
 =<fillin characters="2" /> (Round the answer to 3 decimal places)
 <p>Step 4. Testing Procedure: (Round the answers to 3 decimal places)</p>
@@ -111,8 +111,8 @@
       <cell>Is the P-value less than the significance level?</cell>
     </row>
     <row>
-      <cell><p><ol style="list-style-type:upper-alpha"><li>yes</li> 
-<li>no</li> 
+      <cell><p><ol style="list-style-type:upper-alpha"><li>no</li> 
+<li>yes</li> 
 </ol></p>
 </cell>
       <cell><p><ol style="list-style-type:upper-alpha"><li>yes</li> 
@@ -122,23 +122,23 @@
     </row>
   
 </tabular></table><p style="padding-left: 40px;">Conclusion: </p>
-<p><ol style="list-style-type:upper-alpha"><li>Reject the null hypothesis in favor of the alternative.</li> 
-<li>Do not reject the null hypothesis in favor of the alternative.</li> 
+<p><ol style="list-style-type:upper-alpha"><li>Do not reject the null hypothesis in favor of the alternative.</li> 
+<li>Reject the null hypothesis in favor of the alternative.</li> 
 </ol></p>
 <p class="seqsep" role="heading" tabindex="-1">Part 5 of 5</p>
 <p>Step 6. Interpretation:</p>
 <p style="padding-left: 40px;">At 10<percent/> significance level we </p>
-<p><ol style="list-style-type:upper-alpha"><li>DO</li> 
-<li>DO NOT</li> 
+<p><ol style="list-style-type:upper-alpha"><li>DO NOT</li> 
+<li>DO</li> 
 </ol></p>
  have sufficient evidence to reject the null hypothesis in favor of the alternative hypothesis.
 
 </statement>
 <solution>
-<p><ul><li>E: Two variances F Hypothesis Test</li><li><p>Simple random samples</p>
+<p><ul><li>C: Two variances F Hypothesis Test</li><li><p>Simple random samples</p>
 <p>Independent samples</p>
 <p>Normal populations</p>
-<p>Population standard deviation are unknown</p></li><li>C: σ₁<ampersand />;sup2/σ₂<ampersand />;sup2</li><li>1</li><li>C: σ's are</li><li>A: population standard deviations</li><li>D: mg</li><li>B: σ₁<ampersand />;sup2/σ₂<ampersand />;sup2</li><li>A: ≠</li><li>1</li><li>A: Two-Tail</li><li>10</li><li>A: f₀</li><li>0.831</li><li>0.335</li><li>2.538</li><li>0.803</li><li>B: no</li><li>B: no</li><li>B: Do not reject the null hypothesis in favor of the alternative.</li><li>B: DO NOT</li></ul></p><p>The quality control manager believes that the new method results in a different variation in the weights of the capsules (in mg). The average and the standard deviation of the data are respectively 101.05 mg and 1.042 mg. The average and the standard deviation of the data are respectively 101.11 mg and 1.143 mg.</p>
+<p>Population standard deviation are unknown</p></li><li>C: σ₁<ampersand />;sup2/σ₂<ampersand />;sup2</li><li>1</li><li>C: σ's are</li><li>B: population standard deviations</li><li>D: mg</li><li>D: σ₁<ampersand />;sup2/σ₂<ampersand />;sup2</li><li>B: ≠</li><li>1</li><li>C: Two-Tail</li><li>10</li><li>C: f₀</li><li>2.482</li><li>0.335</li><li>2.538</li><li>0.108</li><li>A: no</li><li>B: no</li><li>A: Do not reject the null hypothesis in favor of the alternative.</li><li>A: DO NOT</li></ul></p><p>The quality control manager believes that the new method results in a different variation in the weights of the capsules (in mg). The average and the standard deviation of the data are respectively 99.3 mg and 1.87 mg. The average and the standard deviation of the data are respectively 98.85 mg and 1.187 mg.</p>
 <p>Use a 10<percent/> significance level to test the claim that the standard deviation of the capsule weights in the production line 1 is different from the standard deviation of the capsule weights in the production line 2. If normality plots are not provided assume that the samples are from normal populations.</p>
 <p>Procedure: In the question, look for the keywords such as mean/average, proportion/percentage, variance/standard deviation! In this case, we have "standard deviation of the capsule weights in the production line" and two populations, thus we are going to perform Two Variances F Hypothesis Test.</p>
 <p>Assumptions (select everything that applies): For Two Variances F Hypothesis Test,</p>
@@ -152,8 +152,8 @@
 <p style="padding-left: 40px;">The null hypothesis <m>\displaystyle{H}_{{0}}</m>: <m>\displaystyle{\frac{{{\sigma_{{1}}^{{2}}}}}{{{\sigma_{{2}}^{{2}}}}}}={1}</m>, where σ₁ is the standard deviation of the capsule weights in the production line 1 and σ₂ is the standard deviation of the capsule weights in the production line 2 and the units are mg;</p>
 <p style="padding-left: 40px;">The alternative hypothesis <m>\displaystyle{H}_{{a}}</m> : <m>\displaystyle{\frac{{{\sigma_{{1}}^{{2}}}}}{{{\sigma_{{2}}^{{2}}}}}}\ne{1}</m> and the test is Two-Tail</p>
 <p>Step 2. The significance level <m>\displaystyle\alpha=</m> 10<percent/></p>
-<p>Step 3. Compute the value of the test statistic: <m>\displaystyle{f}_{{0}}={\frac{{{{s}_{{1}}^{{2}}}}}{{{{s}_{{2}}^{{2}}}}}}=\frac{{{1.042}^{{2}}}}{{{1.143}^{{2}}}}={0.831}</m> (Round the answer to 3 decimal places) with degrees of freedom <m>\displaystyle{\left({d}{f}{n},{d}{f}{d}\right)}={\left({9},{16}\right)}</m></p>
-<p>To practice finding the test statistic (in this case, <m>\displaystyle{f}_{{0}}={0.831}</m>), please consider the following <url href="https://www.myopenmath.com/embedq.php?id=760294">problem</url>:</p>
+<p>Step 3. Compute the value of the test statistic: <m>\displaystyle{f}_{{0}}={\frac{{{{s}_{{1}}^{{2}}}}}{{{{s}_{{2}}^{{2}}}}}}=\frac{{{1.87}^{{2}}}}{{{1.187}^{{2}}}}={2.482}</m> (Round the answer to 3 decimal places) with degrees of freedom <m>\displaystyle{\left({d}{f}{n},{d}{f}{d}\right)}={\left({9},{16}\right)}</m></p>
+<p>To practice finding the test statistic (in this case, <m>\displaystyle{f}_{{0}}={2.482}</m>), please consider the following <url href="https://www.myopenmath.com/embedq.php?id=760294">problem</url>:</p>
 <p><lbracket/>EMBED: QID760294<rbracket/></p>
 <p>Step 4. Testing Procedure: (Round the answers to 3 decimal places)</p>
 <table><tabular>       
@@ -168,12 +168,12 @@
     </row>
     <row>
       <cell>left CV is <m>\displaystyle{f}_{{{1}-\frac{\alpha}{{2}}}}={f}_{{0.95}}={0.335}</m>  and right CV is <m>\displaystyle{f}_{{\frac{\alpha}{{2}}}}={f}_{{0.05}}={2.538}</m> </cell>
-      <cell>P-value is <m>\displaystyle{2}\min{\left({P}{\left({F}{<}{f}_{{0}}\right)},{P}{\left({F}{>}{f}_{{0}}\right)}\right)}={0.803}</m> </cell>
+      <cell>P-value is <m>\displaystyle{2}\min{\left({P}{\left({F}{<}{f}_{{0}}\right)},{P}{\left({F}{>}{f}_{{0}}\right)}\right)}={0.108}</m> </cell>
     </row>
   
 </tabular></table><p>To practice finding the critical values (in this case, <m>\displaystyle{f}_{{{1}-\frac{\alpha}{{2}}}}={f}_{{0.95}}={0.335}</m> and <m>\displaystyle{f}_{{\frac{\alpha}{{2}}}}={f}_{{0.05}}={2.538}</m>) and drawing the rejection region, please consider the following <url href="https://www.myopenmath.com/embedq.php?id=760347">problem</url>:</p>
 <p><lbracket/>EMBED: QID760347<rbracket/></p>
-<p>To practice finding the P-value (in this case, <m>\displaystyle{2}\min{\left({P}{\left({F}{<}{f}_{{0}}\right)},{P}{\left({F}{>}{f}_{{0}}\right)}\right)}={0.803}</m>), please consider the following <url href="https://www.myopenmath.com/embedq.php?id=760354">problem</url>:</p>
+<p>To practice finding the P-value (in this case, <m>\displaystyle{2}\min{\left({P}{\left({F}{<}{f}_{{0}}\right)},{P}{\left({F}{>}{f}_{{0}}\right)}\right)}={0.108}</m>), please consider the following <url href="https://www.myopenmath.com/embedq.php?id=760354">problem</url>:</p>
 <p><lbracket/>EMBED: QID760354<rbracket/></p>
 <p>Step 5. Decision:</p>
 <table><tabular>       
@@ -183,8 +183,8 @@
       <cell>PVA</cell>
     </row>
     <row>
-      <cell>Is the test statistic <m>\displaystyle{f}_{{0}}={0.831}</m> in the rejection region, in other words, is <m>\displaystyle{0.831}</m> less than <m>\displaystyle{0.335}</m> or greater than <m>\displaystyle{2.538}</m>?</cell>
-      <cell>Is the P-value 0.803 less than the significance level <m>\displaystyle\alpha</m>, in other words, is <m>\displaystyle{0.803}{<}{0.1}</m>?</cell>
+      <cell>Is the test statistic <m>\displaystyle{f}_{{0}}={2.482}</m> in the rejection region, in other words, is <m>\displaystyle{2.482}</m> less than <m>\displaystyle{0.335}</m> or greater than <m>\displaystyle{2.538}</m>?</cell>
+      <cell>Is the P-value 0.108 less than the significance level <m>\displaystyle\alpha</m>, in other words, is <m>\displaystyle{0.108}{<}{0.1}</m>?</cell>
     </row>
     <row>
       <cell>no</cell>
@@ -197,10 +197,10 @@
 <p>Step-by-step (with technology):</p>
 <p>(StatCrunch) In the menu, select Stat<greater/>Variance Stats<greater/>Two Samples<greater/>With Summary and then enter the following:</p>
 <p style="text-align: center;"><em>Sample 1:</em></p>
-<p style="text-align: center;"><em>Variance</em>: 1.086</p>
+<p style="text-align: center;"><em>Variance</em>: 3.497</p>
 <p style="text-align: center;"><em>Sample size</em>: 10</p>
 <p style="text-align: center;"><em>Sample 2:</em></p>
-<p style="text-align: center;"><em>Variance</em>: 1.306</p>
+<p style="text-align: center;"><em>Variance</em>: 1.409</p>
 <p style="text-align: center;"><em>Sample size</em>: 17</p>
 <p style="text-align: center;"><em>Perform</em>: Hypothesis test for <m>\displaystyle{\sigma_{{1}}^{{2}}}\text{/}{\sigma_{{2}}^{{2}}}</m> </p>
 <p style="text-align: center;"><em> <m>\displaystyle{H}_{{0}}</m> </em>: <m>\displaystyle{\sigma_{{1}}^{{2}}}\text{/}{\sigma_{{2}}^{{2}}}={1}</m> </p>
@@ -208,9 +208,9 @@
 <p style="text-align: center;">(press Compute!)</p>
 <p>(TI-83 Plus) Press STAT<greater/>TESTS<greater/>D:2-SampFTest... and then enter the following:</p>
 <p style="text-align: center;">Inpt: Stats</p>
-<p style="text-align: center;"> <m>\displaystyle{S}{x}{1}:{1.042}</m> </p>
+<p style="text-align: center;"> <m>\displaystyle{S}{x}{1}:{1.87}</m> </p>
 <p style="text-align: center;"> <m>\displaystyle{n}{1}:{10}</m> </p>
-<p style="text-align: center;"> <m>\displaystyle{S}{x}{2}:{1.143}</m> </p>
+<p style="text-align: center;"> <m>\displaystyle{S}{x}{2}:{1.187}</m> </p>
 <p style="text-align: center;"> <m>\displaystyle{n}{2}:{17}</m> </p>
 <p style="text-align: center;"> <m>\displaystyle\sigma{1}:\ne\sigma{2}</m> </p>
 <p style="text-align: center;">(press ENTER on Calculate)</p>

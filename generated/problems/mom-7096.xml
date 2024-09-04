@@ -2,7 +2,7 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="7096">
 <statement>
 <p>
-In a brand recognition study, 1141 consumers knew of Ebay, and 41 did not.
+In a brand recognition study, 1009 consumers knew of Ebay, and 27 did not.
 Use these results to estimate the probability that a randomly selected consumer will recognize Ebay.</p>
 <p>
 Report the answer as a percent rounded to one decimal place accuracy.
@@ -12,7 +12,7 @@ prob = <fillin characters="20" /><percent/>
 </p>
 </statement>
 <solution>
-<p><ul><li>96.5</li></ul></p>
+<p><ul><li>97.4</li></ul></p>
 </solution>
 </myopenmath>
 
