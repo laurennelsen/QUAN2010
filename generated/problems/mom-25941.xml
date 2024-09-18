@@ -4,9 +4,9 @@
 <p>
 The maintenance department at the main campus of a large state university receives daily requests to replace fluorecent lightbulbs.
 The distribution of the number
-of daily requests is bell-shaped and has a mean of 42 and a standard deviation of 10.
+of daily requests is bell-shaped and has a mean of 45 and a standard deviation of 7.
 Using the 68-95-99.7 rule, what is the approximate percentage of lightbulb replacement requests
-numbering between 42 and 62?</p>
+numbering between 38 and 45?</p>
 <p>
 Do not enter the percent symbol.</p>
 <p>
@@ -14,7 +14,7 @@ ans = <fillin characters="20" /> <percent/>
 </p>
 </statement>
 <solution>
-<p><ul><li>47.5</li></ul></p>
+<p><ul><li>34</li></ul></p>
 </solution>
 </myopenmath>
 
