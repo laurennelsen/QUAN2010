@@ -2,7 +2,7 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="6916">
 <statement>
 <p>
-In a study, the data you collect are Gender.</p>
+In a study, the data you collect are Temperature in Celsius.</p>
 <p>
 What is the level of measurement?</p>
 <p><ol style="list-style-type:upper-alpha"><li>nominal</li> 
@@ -14,7 +14,7 @@ What is the level of measurement?</p>
 
 </statement>
 <solution>
-<p><ul><li>A: nominal</li></ul></p>
+<p><ul><li>C: interval</li></ul></p>
 </solution>
 </myopenmath>
 
