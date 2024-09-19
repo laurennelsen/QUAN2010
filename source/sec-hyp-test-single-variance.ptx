@@ -118,8 +118,188 @@
 
 <exercises component="web-only-exercises">
 
-<exercise>
+<!--<exercise>
   <myopenmath problem="1434307" />
+</exercise>-->
+
+<!--Replace the MyOpenMath problem above with a typed version:
+-->
+<exercise>
+  <introduction>
+    <p>
+      The 2006 general Social Survey asked a large number of people how much time they spent watching TV each day. The mean number of hours was 4.5 with a standard deviation of 2.3. Assume that in a sample of 54 teenagers, the sample standard deviation of daily TV time is 1.8 hours, and that the population of TV watching times is normally distributed. Under 5% significance level can you conclude that the population standard deviation of TV watching times for teenagers is different from 2.3?
+    </p>
+  </introduction>
+  <task>
+    <statement>
+      <p>
+        Choose the correct set of hypotheses:
+      </p>
+    </statement>
+    <choices>
+
+      <choice correct="yes">
+        <statement>
+          <p>
+            <m>H_0:\;\; \sigma^2 =(2.3)^2</m>,
+          </p>
+          <p>
+            <m>H_1:\;\; \sigma^2 \neq (2.3)^2</m>
+          </p>
+        </statement>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>
+            <m>H_0:\;\; \mu =2.3</m>,
+          </p>
+          <p>
+            <m>H_1:\;\; \mu \neq 2.3</m>
+          </p>
+        </statement>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>
+            <m>H_0:\;\; \sigma^2 =2.3</m>,
+          </p>
+          <p>
+            <m>H_1:\;\; \sigma^2\neq 2.3</m>
+          </p>
+        </statement>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>
+            <m>H_0:\;\; \mu =4.5</m>,
+          </p>
+          <p>
+            <m>H_1:\;\; \mu \neq 4.5</m>
+          </p>
+        </statement>
+      </choice>
+    
+    </choices>
+  </task>
+
+
+  <task>
+    <statement>
+      <p>
+        Which type of test is this?
+      </p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>
+            left-tailed test
+          </p>
+        </statement>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>
+            right-tailed test
+          </p>
+        </statement>
+      </choice>
+
+      <choice correct="yes">
+        <statement>
+          <p>
+            two-tailed test
+          </p>
+        </statement>
+      </choice>
+    
+    </choices>
+  </task>
+
+
+  <task>
+    <statement>
+      <p>
+        Compute the value of the test statistic.  (Round the answer to three decimal places.)
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <me>\chi^2=\frac{(53)(1.8)^2}{(2.3)^2}\approx 32.461</me>
+      </p>
+    </answer>
+  </task>
+
+
+  <task>
+    <statement>
+      <p>
+        Find the critical value(s) for the rejection region and find the p-value of the test statistic.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        <ul>
+          <li>
+            <p>
+              Critical values:
+            </p>
+            <p>
+              <m>\alpha/2=.025</m>
+            </p>
+            <p>
+              <m>CHISQ.INV.RT(.025,54-1)\approx 75.002  </m>
+            </p>
+            <p>
+              <m>CHISQ.INV(.025,54-1)\approx 34.776  </m>
+            </p>
+          </li>
+          <li>
+            <p>
+              p-value:
+            </p>
+            <p>
+              <m>\approx 2*CHISQ.DIST(32.461,53,1)\approx 0.023</m>
+            </p>
+          </li>
+        </ul>
+      </p>
+    </answer>
+  </task>
+
+
+  <task>
+    <statement>
+      <p>
+        Is the test statistic in the rejection region?  Is the p-value less than the significance level?
+      </p>
+    </statement>
+    <answer>
+      <p>
+        Yes, the test statistic is in the rejection region and the p-value is less than the significance level.
+      </p>
+    </answer>
+  </task>
+
+
+  <task>
+    <statement>
+      <p>
+        Do we have sufficient evidence to reject the null hypothesis in favor of the alternative hypothesis?
+      </p>
+    </statement>
+    <answer>
+      <p>
+        Yes, we have sufficient evidence to reject the null hypothesis and conclude that the standard deviation is different from <m>2.3</m>.
+      </p>
+    </answer>
+  </task>
+
+  
 </exercise>
   
 </exercises>
