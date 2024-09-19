@@ -2,33 +2,33 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="1434307">
 <statement>
 <p class="seqsep" role="heading" tabindex="-1">Part 1 of 5</p>
-<p>The 2014 general Social Survey asked a large number of people how much time they spent watching TV each day. The mean number of hours was 3.5 with a standard deviation of 2.4. Assume that in a sample of 58 teenagers, the sample standard deviation of daily TV time is 2.6 hours, and that the population of TV watching times is normally distributed. Under 1<percent/> significance level can you conclude that the population standard deviation of TV watching times for teenagers is the same as 2.4?</p>
+<p>The 2010 general Social Survey asked a large number of people how much time they spent watching TV each day. The mean number of hours was 4.9 with a standard deviation of 2.3. Assume that in a sample of 38 teenagers, the sample standard deviation of daily TV time is 2.2 hours, and that the population of TV watching times is normally distributed. Under 5<percent/> significance level can you conclude that the population standard deviation of TV watching times for teenagers is different from 2.3?</p>
 <p>Procedure: </p>
-<p><ol style="list-style-type:upper-alpha"><li>One variance <ampersand />;<hash/>967<ampersand />;sup2 Hypothesis Test</li> 
-<li>One proportion Z Hypothesis Test</li> 
+<p><ol style="list-style-type:upper-alpha"><li>One proportion Z Hypothesis Test</li> 
+<li>One variance <ampersand />;<hash/>967<ampersand />;sup2 Hypothesis Test</li> 
 <li>One mean T Hypothesis Test</li> 
 <li>One mean Z Hypothesis Test</li> 
 </ol></p>
 <p>Assumptions: (select everything that applies) </p>
 <p><ol style="list-style-type:upper-alpha"><li>Population standard deviation is unknown</li> 
-<li>Simple random sample</li> 
-<li>The number of positive and negative responses are both greater than 10</li> 
 <li>Sample size is greater than 30</li> 
 <li>Population standard deviation is known</li> 
+<li>The number of positive and negative responses are both greater than 10</li> 
 <li>Normal population</li> 
+<li>Simple random sample</li> 
 </ol></p>
 <p class="seqsep" role="heading" tabindex="-1">Part 2 of 5</p>
 <p>Step 1. Hypotheses Set-Up:</p>
 <table><tabular>     
   
     <row>
-      <cell><m>\displaystyle{H}_{{0}}:</m> <p><ol style="list-style-type:upper-alpha"><li>p</li> 
+      <cell><m>\displaystyle{H}_{{0}}:</m> <p><ol style="list-style-type:upper-alpha"><li>μ</li> 
+<li>p</li> 
 <li>σ<ampersand />;sup2</li> 
-<li>μ</li> 
 </ol></p>
 =<fillin characters="2" /></cell>
-      <cell>, where <p><ol style="list-style-type:upper-alpha"><li>σ</li> 
-<li>μ</li> 
+      <cell>, where <p><ol style="list-style-type:upper-alpha"><li>μ</li> 
+<li>σ</li> 
 <li>p</li> 
 </ol></p>
  is the <p><ol style="list-style-type:upper-alpha"><li>population proportion</li> 
@@ -36,10 +36,10 @@
 <li>population standard deviation</li> 
 </ol></p>
  and the units are <p><ol style="list-style-type:upper-alpha"><li>lbs</li> 
-<li>mg</li> 
-<li>g</li> 
-<li>kg</li> 
 <li>hr</li> 
+<li>kg</li> 
+<li>g</li> 
+<li>mg</li> 
 </ol></p>
 </cell>
     </row>
@@ -53,9 +53,9 @@
 <li><less/><less/>/label<greater/></li> 
 </ol></p>
 <fillin characters="2" /></cell>
-      <cell>, and the test is <p><ol style="list-style-type:upper-alpha"><li>Two-Tailed</li> 
+      <cell>, and the test is <p><ol style="list-style-type:upper-alpha"><li>Right-Tailed</li> 
+<li>Two-Tailed</li> 
 <li>Left-Tailed</li> 
-<li>Right-Tailed</li> 
 </ol></p>
 </cell>
     </row>
@@ -63,8 +63,8 @@
 </tabular></table><p>Step 2. The significance level <m>\displaystyle\alpha=</m> <fillin characters="2" /><percent/></p>
 <p class="seqsep" role="heading" tabindex="-1">Part 3 of 5</p>
 <p>Step 3. Compute the value of the test statistic: </p>
-<p><ol style="list-style-type:upper-alpha"><li><ampersand />;<hash/>967₀<ampersand />;sup2</li> 
-<li>z₀</li> 
+<p><ol style="list-style-type:upper-alpha"><li>z₀</li> 
+<li><ampersand />;<hash/>967₀<ampersand />;sup2</li> 
 <li>t₀</li> 
 </ol></p>
 =<fillin characters="2" /> (Round the answer to 3 decimal places)
@@ -113,7 +113,7 @@
 </ol></p>
 <p class="seqsep" role="heading" tabindex="-1">Part 5 of 5</p>
 <p>Step 6. Interpretation:</p>
-<p style="padding-left: 40px;">At 1<percent/> significance level we </p>
+<p style="padding-left: 40px;">At 5<percent/> significance level we </p>
 <p><ol style="list-style-type:upper-alpha"><li>DO</li> 
 <li>DO NOT</li> 
 </ol></p>
@@ -121,9 +121,9 @@
 
 </statement>
 <solution>
-<p><ul><li>A: One variance <ampersand />;<hash/>967<ampersand />;sup2 Hypothesis Test</li><li><p>Simple random sample</p>
+<p><ul><li>B: One variance <ampersand />;<hash/>967<ampersand />;sup2 Hypothesis Test</li><li><p>Simple random sample</p>
 <p>Normal population</p>
-<p>Population standard deviation is unknown</p></li><li>B: σ<ampersand />;sup2</li><li>5.76</li><li>A: σ</li><li>C: population standard deviation</li><li>E: hr</li><li>B: σ<ampersand />;sup2</li><li>B: ≠</li><li>5.76</li><li>A: Two-Tailed</li><li>1</li><li>A: <ampersand />;<hash/>967₀<ampersand />;sup2</li><li>66.896</li><li>33.248</li><li>88.236</li><li>0.347</li><li>B: no</li><li>A: no</li><li>B: Do not reject the null hypothesis in favor of the alternative.</li><li>B: DO NOT</li></ul></p><p>The 2014 general Social Survey asked a large number of people how much time they spent watching TV each day. The mean number of hours was 3.5 with a standard deviation of 2.4. Assume that in a sample of 58 teenagers, the sample standard deviation of daily TV time is 2.6 hours, and that the population of TV watching times is normally distributed. Under 1<percent/> significance level can you conclude that the population standard deviation of TV watching times for teenagers is the same as 2.4?</p>
+<p>Population standard deviation is unknown</p></li><li>C: σ<ampersand />;sup2</li><li>5.29</li><li>B: σ</li><li>C: population standard deviation</li><li>B: hr</li><li>B: σ<ampersand />;sup2</li><li>B: ≠</li><li>5.29</li><li>B: Two-Tailed</li><li>5</li><li>B: <ampersand />;<hash/>967₀<ampersand />;sup2</li><li>33.853</li><li>22.106</li><li>55.668</li><li>0.765</li><li>B: no</li><li>A: no</li><li>B: Do not reject the null hypothesis in favor of the alternative.</li><li>B: DO NOT</li></ul></p><p>The 2010 general Social Survey asked a large number of people how much time they spent watching TV each day. The mean number of hours was 4.9 with a standard deviation of 2.3. Assume that in a sample of 38 teenagers, the sample standard deviation of daily TV time is 2.2 hours, and that the population of TV watching times is normally distributed. Under 5<percent/> significance level can you conclude that the population standard deviation of TV watching times for teenagers is different from 2.3?</p>
 <p>Procedure: In the question, look for the keywords such as mean/average, proportion/percentage, variance/standard deviation! In this case, we have "standard deviation of TV watching times for teenagers", thus we are going to perform One variance <ampersand />;<hash/>967<ampersand />;sup2 Hypothesis Test.</p>
 <p>Assumptions (select everything that applies): For One variance <ampersand />;<hash/>967<ampersand />;sup2 Hypothesis Test,</p>
 <p><ul>
@@ -133,11 +133,11 @@
 </ul></p>
 <p>Step-by-step (without technology):</p>
 <p>Step 1. Hypotheses Set-Up:</p>
-<p style="padding-left: 40px;">The null hypothesis  <m>\displaystyle{H}_{{0}}</m> : <m>\displaystyle\sigma^{{2}}={2.4}^{{2}}</m>, where σ<ampersand />;sup2 is the standard deviation of TV watching times for teenagers and the units are hours;</p>
-<p style="padding-left: 40px;">The alternative hypothesis <m>\displaystyle{H}_{{a}}</m> : <m>\displaystyle\sigma^{{2}}\ne{2.4}^{{2}}</m> and the test is Two-Tailed</p>
-<p>Step 2. The significance level <m>\displaystyle\alpha=</m> 1<percent/></p>
-<p>Step 3. Compute the value of the test statistic: <m>\displaystyle\amp#{967}^{{2}}_{0}={\frac{{{{s}_{{i}}^{{2}}}}}{{\frac{{\sigma_{{0}}^{{2}}}}{{{n}-{1}}}}}}=\frac{{{2.6}^{{2}}}}{{\frac{{{2.4}^{{2}}}}{{{58}-{1}}}}}={66.896}</m> (Round the answer to 3 decimal places)</p>
-<p>To practice finding the test statistic (in this case, <m>\displaystyle{\chi_{{0}}^{{2}}}_{0}={66.896}</m>), please consider the following <url href="https://www.myopenmath.com/embedq2.php?id=759442">problem</url>:</p>
+<p style="padding-left: 40px;">The null hypothesis  <m>\displaystyle{H}_{{0}}</m> : <m>\displaystyle\sigma^{{2}}={2.3}^{{2}}</m>, where σ<ampersand />;sup2 is the standard deviation of TV watching times for teenagers and the units are hours;</p>
+<p style="padding-left: 40px;">The alternative hypothesis <m>\displaystyle{H}_{{a}}</m> : <m>\displaystyle\sigma^{{2}}\ne{2.3}^{{2}}</m> and the test is Two-Tailed</p>
+<p>Step 2. The significance level <m>\displaystyle\alpha=</m> 5<percent/></p>
+<p>Step 3. Compute the value of the test statistic: <m>\displaystyle\amp#{967}^{{2}}_{0}={\frac{{{{s}_{{i}}^{{2}}}}}{{\frac{{\sigma_{{0}}^{{2}}}}{{{n}-{1}}}}}}=\frac{{{2.2}^{{2}}}}{{\frac{{{2.3}^{{2}}}}{{{38}-{1}}}}}={33.853}</m> (Round the answer to 3 decimal places)</p>
+<p>To practice finding the test statistic (in this case, <m>\displaystyle{\chi_{{0}}^{{2}}}_{0}={33.853}</m>), please consider the following <url href="https://www.myopenmath.com/embedq2.php?id=759442">problem</url>:</p>
 <p><lbracket/>EMBED: QID759442<rbracket/></p>
 <p>Step 4. Testing Procedure: (Round the answers to 3 decimal places)</p>
 <table><tabular>       
@@ -151,13 +151,13 @@
       <cell>Compute the P-value of the test statistic:</cell>
     </row>
     <row>
-      <cell>left CV is <m>\displaystyle\amp#{967}^{{2}}_{\left({1}-\frac{\alpha}{{2}}\right)}=\amp#{967}^{{2}}_{0.995}={33.248}</m>  and right CV is <m>\displaystyle\amp#{967}^{{2}}_{\left(\frac{\alpha}{{2}}\right)}=\amp#{967}^{{2}}_{0.005}={88.236}</m> </cell>
-      <cell>P-value is <m>\displaystyle{2}\min{\left({P}{\left(\amp#{967}^{{2}}{<}\amp#{967}^{{2}}_{0}\right)},{P}{\left(\amp#{967}^{{2}}{>}\amp#{967}^{{2}}_{0}\right)}\right)}={0.347}</m> </cell>
+      <cell>left CV is <m>\displaystyle\amp#{967}^{{2}}_{\left({1}-\frac{\alpha}{{2}}\right)}=\amp#{967}^{{2}}_{0.975}={22.106}</m>  and right CV is <m>\displaystyle\amp#{967}^{{2}}_{\left(\frac{\alpha}{{2}}\right)}=\amp#{967}^{{2}}_{0.025}={55.668}</m> </cell>
+      <cell>P-value is <m>\displaystyle{2}\min{\left({P}{\left(\amp#{967}^{{2}}{<}\amp#{967}^{{2}}_{0}\right)},{P}{\left(\amp#{967}^{{2}}{>}\amp#{967}^{{2}}_{0}\right)}\right)}={0.765}</m> </cell>
     </row>
   
-</tabular></table><p>To practice finding the critical values (in this case, <m>\displaystyle\amp#{967}^{{2}}_{\left({1}-\frac{\alpha}{{2}}\right)}=\amp#{967}^{{2}}_{0.995}={33.248}</m> and <m>\displaystyle\amp#{967}^{{2}}_{\left(\frac{\alpha}{{2}}\right)}=\amp#{967}^{{2}}_{0.005}={88.236}</m>) and drawing the rejection region, please consider the following <url href="https://www.myopenmath.com/embedq2.php?id=759519">problem</url>:</p>
+</tabular></table><p>To practice finding the critical values (in this case, <m>\displaystyle\amp#{967}^{{2}}_{\left({1}-\frac{\alpha}{{2}}\right)}=\amp#{967}^{{2}}_{0.975}={22.106}</m> and <m>\displaystyle\amp#{967}^{{2}}_{\left(\frac{\alpha}{{2}}\right)}=\amp#{967}^{{2}}_{0.025}={55.668}</m>) and drawing the rejection region, please consider the following <url href="https://www.myopenmath.com/embedq2.php?id=759519">problem</url>:</p>
 <p><lbracket/>EMBED: QID759519<rbracket/></p>
-<p>To practice finding the P-value (in this case, <m>\displaystyle{2}\min{\left({P}{\left(\amp#{967}^{{2}}{<}\amp#{967}^{{2}}_{0}\right)},{P}{\left(\amp#{967}^{{2}}{>}\amp#{967}^{{2}}_{0}\right)}\right)}={0.347}</m>), please consider the following <url href="https://www.myopenmath.com/embedq2.php?id=759520">problem</url>:</p>
+<p>To practice finding the P-value (in this case, <m>\displaystyle{2}\min{\left({P}{\left(\amp#{967}^{{2}}{<}\amp#{967}^{{2}}_{0}\right)},{P}{\left(\amp#{967}^{{2}}{>}\amp#{967}^{{2}}_{0}\right)}\right)}={0.765}</m>), please consider the following <url href="https://www.myopenmath.com/embedq2.php?id=759520">problem</url>:</p>
 <p><lbracket/>EMBED: QID759520<rbracket/></p>
 <p>Step 5. Decision:</p>
 <table><tabular>       
@@ -167,8 +167,8 @@
       <cell>PVA</cell>
     </row>
     <row>
-      <cell>Is the test statistic <m>\displaystyle\amp#{967}^{{2}}_{0}={66.896}</m> in the rejection region?</cell>
-      <cell>Is the P-value 0.347 less than the significance level <m>\displaystyle\alpha={0.01}</m> ?</cell>
+      <cell>Is the test statistic <m>\displaystyle\amp#{967}^{{2}}_{0}={33.853}</m> in the rejection region?</cell>
+      <cell>Is the P-value 0.765 less than the significance level <m>\displaystyle\alpha={0.05}</m> ?</cell>
     </row>
     <row>
       <cell>no</cell>
@@ -177,14 +177,14 @@
   
 </tabular></table><p style="padding-left: 40px;">Conclusion: Do not reject the null hypothesis in favor of the alternative.</p>
 <p>Step 6. Interpretation:</p>
-<p style="padding-left: 40px;">At 1<percent/> significance level we DO NOT have sufficient evidence to reject the null hypothesis in favor of the alternative hypothesis.</p>
+<p style="padding-left: 40px;">At 5<percent/> significance level we DO NOT have sufficient evidence to reject the null hypothesis in favor of the alternative hypothesis.</p>
 <p>Step-by-step (with technology):</p>
 <p>(StatCrunch) In the menu, select Stat<greater/>Variance Stats<greater/>One Sample<greater/>With Summary and then enter the following:</p>
-<p style="text-align: center;"><em>Sample variance</em>: 6.76</p>
-<p style="text-align: center;"><em>Sample size</em>: 58</p>
+<p style="text-align: center;"><em>Sample variance</em>: 4.84</p>
+<p style="text-align: center;"><em>Sample size</em>: 38</p>
 <p style="text-align: center;"><em>Perform</em>: Hypothesis test for <m>\displaystyle\sigma^{{2}}</m> </p>
-<p style="text-align: center;"><em> <m>\displaystyle{H}_{{0}}</m> </em>: <m>\displaystyle\sigma^{{2}}={5.76}</m> </p>
-<p style="text-align: center;"><em> <m>\displaystyle{H}_{{A}}</m> </em>: <m>\displaystyle\sigma^{{2}}\ne{5.76}</m> </p>
+<p style="text-align: center;"><em> <m>\displaystyle{H}_{{0}}</m> </em>: <m>\displaystyle\sigma^{{2}}={5.29}</m> </p>
+<p style="text-align: center;"><em> <m>\displaystyle{H}_{{A}}</m> </em>: <m>\displaystyle\sigma^{{2}}\ne{5.29}</m> </p>
 <p style="text-align: center;">(press Compute!)</p>
 <p style="text-align: left;">Among the results, you can find the test statistic and the p-value. When using technology, it is much easier to conduct the test using the p-value approach. Be aware, that technology can help you with computations but you still need to be familiar with the procedure to make the right conclusion!
 </p>
