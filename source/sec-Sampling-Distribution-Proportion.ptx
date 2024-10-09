@@ -48,7 +48,7 @@
   <definition xml:id="def-sampling-distribution-proportion">
     <statement>
       <p>
-        The <em>sampling distribution of the proportion</em> describes the pattern that the sample proportions tend to follow when randomly drawn from a population.  This distribution has a mean, <m>\overline{p}=\frac{x}{n}</m>, and a standard error (i.e. the standard deviation of the sample proportions), <m>\sigma_p=\sqrt{\frac{p(1-p)}{n}}</m>.
+        The <em>sampling distribution of the proportion</em> describes the pattern that the sample proportions tend to follow when randomly drawn from a population.  This distribution has a mean, <m>p</m> and a standard error (i.e. the standard deviation of the sample proportions), <m>\sigma_p=\sqrt{\frac{p(1-p)}{n}}</m>.  (The sample proportion is <m>\overline{p}=\frac{x}{n}</m>.)
       </p>
     </statement>
   </definition>
@@ -66,7 +66,7 @@
     <task>
       <statement>
         <p>
-          <m>x=35</m>
+          <m>n=35</m>
         </p>
       </statement>
       <answer>
@@ -79,7 +79,7 @@
     <task>
       <statement>
         <p>
-          <m>x=70</m>
+          <m>n=70</m>
         </p>
       </statement>
       <answer>
@@ -92,7 +92,7 @@
     <task>
       <statement>
         <p>
-          <m>x=105</m>
+          <m>n=105</m>
         </p>
       </statement>
       <answer>

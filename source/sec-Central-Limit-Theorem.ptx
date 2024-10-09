@@ -77,7 +77,7 @@
   </statement>
   <answer>
     <p>
-      <me>P(\overline{X}\geq 18)=P\left(Z\geq \frac{18-21}{15/\sqrt{33}}\right)\approx 1-P(Z\lt -1.15)=1-NORM.S.DIST(-1.15,1)\approx 0.8749</me>
+      <me>P(\overline{X}\geq 18)=P\left(Z\geq \frac{18-21}{15/\sqrt{33}}\right)\approx 1-P(Z\lt -1.15)=1-NORM.S.DIST(-1.15,1)\approx 0.8747</me>
     </p>
   </answer>
 </exercise>
@@ -113,7 +113,7 @@
     </statement>
     <answer>
       <p>
-        <me>P(\overline{x}\gt 1790)=P\left( Z\gt \frac{1790-1771}{\sigma_{\overline{x}}}\right)\approx 1-P(Z\lt 0.34)\approx 0.3669</me>
+        <me>P(\overline{x}\gt 1790)=P\left( Z\gt \frac{1790-1771}{\sigma_{\overline{x}}}\right)\approx 1-P(Z\lt 0.3444879)\approx 0.3652</me>
       </p>
     </answer>
   </task>
@@ -125,7 +125,7 @@
     </statement>
     <answer>
       <p>
-        <me>P(1720\lt \overline{x}\lt 1760) \approx P(-0.92\lt z\lt -0.20)\approx 0.2419</me>
+        <me>P(1720\lt \overline{x}\lt 1760) \approx P(-0.92\lt z\lt -0.20)\approx 0.242</me>
       </p>
     </answer>
   </task>
