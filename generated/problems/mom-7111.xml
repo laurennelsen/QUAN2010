@@ -2,7 +2,7 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="7111">
 <statement>
 <p>
-Suppose that 56<percent/> of people own dogs.  If you pick two people at random, what is the probability that they both own a dog?</p>
+Suppose that 10<percent/> of people own dogs.  If you pick two people at random, what is the probability that they both own a dog?</p>
 <p>
 Give your answer as a decimal (to at least 3 places) or fraction</p>
 <p><fillin characters="20" />Preview Question 1   </p>
@@ -10,7 +10,7 @@ Give your answer as a decimal (to at least 3 places) or fraction</p>
 
 </statement>
 <solution>
-<p><ul><li>0.3136</li></ul></p>
+<p><ul><li>0.01</li></ul></p>
 </solution>
 </myopenmath>
 
