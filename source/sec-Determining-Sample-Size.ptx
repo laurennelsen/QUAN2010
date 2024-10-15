@@ -45,7 +45,7 @@
         <li>
             <p>
                 The formula when working with a proportion is:
-                <me>\boxed{n=\frac{(z_{\alpha/2})^2\cdot\sigma^2}{(ME_{\overline{p}})^2}}</me>
+                <me>\boxed{n=\frac{(z_{\alpha/2})^2\cdot(\overline{p}(1-\overline{p}))}{(ME_{\overline{p}})^2}}</me>
             </p>
         </li>
     </ul>
@@ -108,7 +108,7 @@
             <m>z_{.02}=NORM.S.INV(.98)\approx 2.054</m>
         </p>
         <p>
-            <me>n\approx \frac{(2.054)^2(.78)^2(1-.78)}{(.08)^2}</me>
+            <me>n\approx \frac{(2.054)^2(.78)(1-.78)}{(.08)^2}</me>
         </p>
         <p>
             Using the formula (and rounding up), we'll get that <m>n</m> needs to be at least <m>114</m>.  Since the pilot sample included <m>50</m> voters, to get to <m>114</m> voters, we need to sample

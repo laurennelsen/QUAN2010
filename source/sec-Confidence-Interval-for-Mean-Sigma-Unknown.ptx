@@ -230,7 +230,7 @@
           <m>n=18\rightarrow df=17,\;\; \overline{x}=81977,\;\; s=4502</m>
         </p>
         <p>
-          <m>\hat{\sigma_{\overline{x}}}=\frac{4502}{\sqrt{18}}\approx 1061,\;\; t_{.05}=NORM.S.INV(.95)\approx 1.74</m>
+          <m>\hat{\sigma_{\overline{x}}}=\frac{4502}{\sqrt{18}}\approx 1061,\;\; t_{.05}=T.INV(.95)\approx 1.74</m>
         </p>
         <p>
           <m>ME_{\overline{x}}\approx 1.74\cdot (1061)\approx 1846.14</m>
