@@ -195,7 +195,7 @@
                 <li>
                     <p>
                         The <em>upper confidence limit (UCL)</em>:
-                        <me>\overline{x}-z_{\alpha/2}\cdot\sigma_{\overline{x}}</me>
+                        <me>\overline{x}+z_{\alpha/2}\cdot\sigma_{\overline{x}}</me>
                     </p>
                 </li>
             </ul>
