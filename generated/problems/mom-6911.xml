@@ -4,7 +4,7 @@
 <p>
 Is this value from a discrete or continuous data set.</p>
 <p>
-The average weight of newborn babies in ounces</p>
+The number of children a person has</p>
 <p><ol style="list-style-type:upper-alpha"><li>Discrete</li> 
 <li>Continuous</li> 
 </ol></p>
@@ -12,7 +12,7 @@ The average weight of newborn babies in ounces</p>
 
 </statement>
 <solution>
-<p><ul><li>B: Continuous</li></ul></p>
+<p><ul><li>A: Discrete</li></ul></p>
 </solution>
 </myopenmath>
 
