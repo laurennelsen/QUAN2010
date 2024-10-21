@@ -41,7 +41,7 @@
         </p>
       </statement>
       <choices>
-        <choice>
+        <choice correct="yes">
           <statement>
             <p>
               <m>H_0: \sigma_1^2 \leq  \sigma_2^2</m>
@@ -276,20 +276,248 @@
 
 <!--Replace this MyOpenMath problem below with a typed version since it has multiple parts
 -->
-<exercise>
+<!--<exercise>
   <myopenmath problem="1434306" />
+</exercise>-->
+
+<exercise>
+
+<statement>
+  <p>
+    
+  A pharmaceutical company is about to launch a new manufacturing process in addition to the existing one. The quality control manager believes that the new method results in a different variation in the weights of the capsules. To verify the claim, the samples from each production line were obtained and the results are in the Excel file below (in mg):
+
+</p>
+
+<p>
+  <url href="external/sheets/1434306_data.xlsx" />
+
+</p>
+<p>
+  Use a <m>5\%</m> significance level to test the claim that the standard deviation of the capsule weights in the production line 1 is smaller than the standard deviation of the capsule weights in the production line 2. If normality plots are not provided assume that the samples are from normal populations.
+
+</p>
+</statement>
+
+
+<solution>
+<p>
+In the question, look for the keywords such as mean/average, proportion/percentage, variance/standard deviation! In this case, we have "standard deviation of the capsule weights in the production line" and two populations, thus we are going to perform Two Variances F Hypothesis Test.
+</p>
+
+<p>
+  Find the sample standard deviations for each production line:
+  <ul>
+  <li>
+    <p>
+      Population 1:
+    </p>
+  <m>
+  STDEV.S(A2:E4)\approx 1.074
+    </m>
+    </li>
+    <li>
+      <p>
+        Population 2:
+      </p>
+      <m>
+      STDEV.S(A8:E11)\approx 1.909
+        </m>
+        </li>
+    </ul>
+    </p>
+
+    <p>
+      Since <m>1.909\gt 1.074</m>, we'll let <m>s_1\approx 1.909</m> and <m>s_2\approx 1.074</m>, and this will be a right-tailed test.
+    </p>
+
+<p>
+Hypotheses: <me>
+  H_0: \;\;\sigma_1^2 \leq \sigma_2^2, 
+</me>
+where <m>\sigma_1</m> is the standard deviation of the capsule weights in production line 2 and <m>\sigma_2</m> is the standard deviation of the capsule weights in production line 1 and the units are mg.
+
+<me>
+H_1: \;\;\sigma_1^2 \gt \sigma_2^2
+  </me>
+  </p>
+ 
+
+
+
+    <p>
+Test statistic:
+<me>
+F=\frac{s_1^2}{s_2^2}\approx \frac{1.074^2}{1.909^2}\approx 3.1574
+  </me>
+      </p>
+
+      <p>
+        Now find the p-value:
+        <me>
+          F.DIST.RT(3.1574,16-1,11-1)\approx 0.0359
+        </me>
+        
+      </p>
+
+      <p>
+Since the p-value is less than <m>\alpha</m>, we reject the null hypothesis and conclude that <m>\sigma_1^2 \gt \sigma_2^2</m>, so Production line 2 has a larger standard deviation of capsult weights than Production line 1.
+        </p>
+
+
+        <p>
+
+          </p>
+
+
+          <p>
+            (Alternatively, we can use the <q>F-Test Two-Sample for Variances</q> in the Data Analysis tool in Excel.)
+          </p>
+  </solution>
+
 </exercise>
 
 <!--Replace this MyOpenMath problem below with a typed version since it has multiple parts
 -->
-<exercise>
+<!--<exercise>
   <myopenmath problem="1434305" />
-</exercise>
+</exercise>-->
+
+<exercise>
+
+  <statement>
+    <p>
+      A nonprofit wants to verify the claim that in a certain Fortune 500 company the average salary of female employees is different from the average salary of male employees. Two samples of male and female workers were obtained independently and analyzed.
+
+      The salaries of workers in the samples are shown in the Excel file below.
+
+    </p>
+
+    <p>
+      <url href="external/sheets/1434305_data.xlsx" />
+    
+    </p>
+
+    <p>
+      The standard deviation for the first sample appears to be different from the standard deviation of the second sample. Use a <m>10\%</m> level of significance to decide whether there is sufficient evidence that in the Fortune 500 company, the standard deviation of the salary of males is the same as the standard deviation of the salary of females. Assume that the samples are from normal populations.
+
+      </p>
+  </statement>
+
+  <answer>
+    <p>
+      In the question, look for the keywords such as mean/average, proportion/percentage, variance/standard deviation! In this case, we have "the standard deviation of the salary" and two populations, thus we are going to perform Two Variances F Hypothesis Test.
+    </p>
+    <p>
+      Unfortunately, the Data Analysis tool in Excel only provides the results for a one-tail hypothesis test for comparing two population variances.
+    </p>
+    <p>
+      <ul>
+        <li>
+          <p>
+            In the sample of females:  <m>s=STDEV.S(A2:E4)\approx 13.1744</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            In the sample of males:  <m>s=STDEV.S(A8:E10)\approx 10.7037</m>
+          </p>
+        </li>
+      </ul>
+    </p>
+    <p>
+      Let females be population 1 and males be population 2.
+    </p>
+    <p>
+      Hypotheses:
+      <ul>
+        <li>
+          <p>
+            <m>H_0:\;\;\sigma_1^2=\sigma_2^2</m>
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>H_1:\;\;\sigma_1^2\neq\sigma_2^2</m>
+          </p>
+        </li>
+      </ul>
+    </p>
+    <p>
+Test statistic:
+<me>
+  F=\frac{s_1^2}{s_2^2}=\frac{13.1744^2}{10.7037^2}\approx 1.5149
+  </me>
+      </p>
+      <p>
+Find the critical value, <m>F_{\alpha/2}</m>:
+        </p>
+        <p>
+<m>\alpha=.1\Rightarrow \alpha/2=.05</m>
+          </p>
+          <p>
+            <m>F_{\alpha/2}=F.INV.RT(.05, 14-1, 14-1)\approx 2.5769</m>
+          </p>
+          <p>
+            Even though this is a two-tailed test, we only consider the rejection region on the right side of the distribution.  This is because when comparing two population variances, we always choose population 1 to be the one with the larger sample standard deviation.  This guarantees that <m>\frac{s_1^2}{s_2^2}\gt 1</m> so the test statistic will be bigger than <m>1</m>.
+          </p>
+          <p>
+            Since the test statistic is not in the rejection region, we fail to reject the null hypothesis, and we do not have enough evidence to conclude that <m>\sigma_1^2\neq\sigma_2^2</m>.
+          </p>
+  </answer>
+
+  </exercise>
 
 <!--Replace this MyOpenMath problem below with a typed version since it has multiple parts
 -->
-<exercise>
+<!--<exercise>
     <myopenmath problem="1434303" />
+  </exercise>-->
+
+  <exercise>
+    <p>
+      A group of economists wants to study the average annual leave among the US and EU workers. Two samples of US and EU workers were obtained independently and analyzed. The sample of 17 US workers had the average annual leave of 20.84 days and the standard deviation 4.378 days. The sample of 11 EU workers had the average annual leave of 25.92 days and the standard deviation 3.655 days. The standard deviation for the first sample appears to be different from the standard deviation of the second sample. Use a <m>10\%</m> level of significance to decide whether there is sufficient evidence that the standard deviation of the annual leave of US workers is greater than the standard deviation of the annual leave of EU workers. If normality plots are not provided assume that the samples are from normal populations.
+    </p>
+
+    <answer>
+      <p>
+        Population 1:  US workers, Population 2:  EU workers
+      </p>
+      <p>
+        <m>s_1=4.378</m>, <m>s_2=3.655</m>
+      </p>
+      <p>
+        <m>\bar{x}_1=20.84</m>, <m>\bar{x}_2=25.92</m>
+      </p>
+      <p>
+        <m>n_1=17</m>, <m>n_2=11</m>
+      </p>
+      <p>
+        <m>\alpha=.10</m>
+      </p>
+      <p>
+        <m>H_0:\;\;\sigma_1^2\leq \sigma_2^2</m>
+      </p>
+      <p>
+        <m>H_1:\;\;\sigma_1^2\gt \sigma_2^2</m>
+      </p>
+      <p>
+        Test statistic:
+        <me>
+          F=\frac{s_1^2}{s_2^2}\approx 1.43475
+        </me>
+        
+      </p>
+      <p>
+        p-value:
+      </p>
+      <p>
+        <m>F.DIST.RT(1.43475, 16,10)\approx 0.2855\gt\alpha</m>
+      </p>
+      <p>
+        Since the p-value is greater than <m>\alpha</m>, we do not have enough evidence to reject the null hypothesis.  So we do not have enough evidence to conclude that <m>\sigma_1^2\gt \sigma_2^2</m>.
+      </p>
+    </answer>
   </exercise>
 
  <exercise>
@@ -303,10 +531,70 @@
 
 <!--Replace this MyOpenMath problem below with a typed version since it has multiple parts
 -->
-<exercise>
+<!--<exercise>
   
     <myopenmath problem="1434301"/>
 
+  </exercise>-->
+
+  <exercise>
+    <statement>
+      <p>
+        Is the variance for the amount of money, in dollars, that shoppers spend on Saturdays at the mall the same as the variance for the amount of money that shoppers spend on Sundays at the mall? Suppose that the Excel file below shows the results of a study:
+      </p>
+      <p>
+        <url href="external/sheets/1434301_data.xlsx" />
+
+      </p>
+      <p>
+        Use a <m>5\%</m> significance level to test the claim that the standard deviation for the amount of money that shoppers spend on Saturday is the same as the standard deviation for the amount of money that shoppers spend on Sunday. If normality plots are not provided assume that the samples are from normal populations.
+      </p>
+    </statement>
+    <answer>
+      <p>
+        Procedure: In the question, look for the keywords such as mean/average, proportion/percentage, variance/standard deviation! In this case, we have "standard deviation for the amount of money that shoppers spend" and two populations, thus we are going to perform Two Variances F Hypothesis Test.
+
+
+      </p>
+
+      <p>
+        Saturday:  <m>s=STDEV.S(A2:E3)\approx 13.9939 </m>
+      </p>
+
+      <p>
+        Sunday:  <m>s=STDEV.S(A7:E10)\approx 13.7633 </m>
+      </p>
+      <p>
+So let Saturday be <q>population 1</q> and Saturday be <q>population 2</q>.
+        </p>
+
+        <p>
+          <m>H_0:  \frac{\sigma_1^2}{\sigma_2^2}=1</m>
+        </p>
+        <p>
+          <m>H_1:  \frac{\sigma_1^2}{\sigma_2^2}\neq 1</m>
+        </p>
+        <p>
+          Test statistic:
+          <me>
+            F=\frac{s_1^2}{s_2^2}=\frac{13.9939^2}{13.7633^2}\approx 1.03377991
+          </me>
+          
+        </p>
+
+        <p>
+          Critical value:
+        </p>
+        <p>
+          <m>\alpha=5\%\Rightarrow \alpha/2=.025</m>
+        </p>
+        <p>
+          <m>F_{.025}=F.INV.RT(.025, 10-1, 19-1)\approx 2.92911</m>
+        </p>
+        <p>
+          Since the test statistic is not in the rejection region, we fail to reject the null hypothesis, and we do not have enough evidence to conclude that <m>\frac{\sigma_1^2}{\sigma_2^2}\neq 1</m>.
+        </p>
+    </answer>
   </exercise>
 
 
