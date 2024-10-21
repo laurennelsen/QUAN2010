@@ -2,8 +2,8 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="7096">
 <statement>
 <p>
-In a brand recognition study, 1138 consumers knew of WalMart, and 16 did not.
-Use these results to estimate the probability that a randomly selected consumer will recognize WalMart.</p>
+In a brand recognition study, 1167 consumers knew of Pepsi, and 40 did not.
+Use these results to estimate the probability that a randomly selected consumer will recognize Pepsi.</p>
 <p>
 Report the answer as a percent rounded to one decimal place accuracy.
 You need not enter the "<percent/>" symbol. </p>
@@ -12,7 +12,7 @@ prob = <fillin characters="20" /><percent/>
 </p>
 </statement>
 <solution>
-<p><ul><li>98.6</li></ul></p>
+<p><ul><li>96.7</li></ul></p>
 </solution>
 </myopenmath>
 
