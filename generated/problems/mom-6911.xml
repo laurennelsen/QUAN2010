@@ -4,7 +4,7 @@
 <p>
 Is this value from a discrete or continuous data set.</p>
 <p>
-From a sample of 500 students, 70<percent/> feel stressed</p>
+The average rainfall in July in inches</p>
 <p><ol style="list-style-type:upper-alpha"><li>Continuous</li> 
 <li>Discrete</li> 
 </ol></p>
@@ -12,7 +12,7 @@ From a sample of 500 students, 70<percent/> feel stressed</p>
 
 </statement>
 <solution>
-<p><ul><li>B: Discrete</li></ul></p>
+<p><ul><li>A: Continuous</li></ul></p>
 </solution>
 </myopenmath>
 

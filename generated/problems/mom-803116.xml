@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="803116">
 <statement>
-<p>Jordan is conducting market research on the cost of  homeowners insurance. Jordan has determined that the average annual cost of  homeowners insurance is <dollar/>1178, and that the distribution of costs is normally distributed with a standard deviation of <dollar/>98. </p>
-<p>a. Find the probability that a single randomly selected consumer spends more than <dollar/>1106 on  homeowners insurance.</p>
+<p>Madison is conducting market research on the cost of  homeowners insurance. Madison has determined that the average annual cost of  homeowners insurance is <dollar/>1248, and that the distribution of costs is normally distributed with a standard deviation of <dollar/>83. </p>
+<p>a. Find the probability that a single randomly selected consumer spends less than <dollar/>1200 on  homeowners insurance.</p>
 <p style="padding-left: 40px;"><fillin characters="20" /></p>
-<p>b. The cost of the middle 30<percent/> of  homeowners insurance policies falls between (round to the nearest dollar):</p>
+<p>b. The cost of the middle 60<percent/> of  homeowners insurance policies falls between (round to the nearest dollar):</p>
 <p style="padding-left: 40px;"><dollar/><fillin characters="20" /> to <dollar/><fillin characters="20" /> per year.</p>
-<p>c. The <em>most expensive </em>19<percent/> of  homeowners insurance policies cost at least how much annually?</p>
+<p>c. The <em>most expensive </em>15<percent/> of  homeowners insurance policies cost at least how much annually?</p>
 <p style="padding-left: 40px;"><dollar/><fillin characters="20" /></p>
 
 </statement>
 <solution>
-<p><ul><li>0.7687</li><li>1140</li><li>1216</li><li>1264</li></ul></p><p>Define the normal distribution in Desmos: <m>\displaystyle{N}=\text{normaldist}{\left({1178},{98}\right)}</m>.
+<p><ul><li>0.2815</li><li>1178</li><li>1318</li><li>1334</li></ul></p><p>Define the normal distribution in Desmos: <m>\displaystyle{N}=\text{normaldist}{\left({1248},{83}\right)}</m>.
   </p>
 <p>
-  a. <m>\displaystyle{P}{\left({x}{>}{1106}\right)}={N}.{c}{d}{f{{\left({1106},\infty\right)}}}={0.7687}</m>
-  </p>
+  a. <m>\displaystyle{P}{\left({x}{<}{1200}\right)}={N}.{c}{d}{f{{\left({1200}\right)}}}={0.2815}</m>
+  <less/>/p<greater/></p>
 <p>
-  b. For the middle 30<percent/> of the data, need the remaining 70<percent/> of the data split between the left and right tails of the distribution. So the lower bound of the range has <m>\displaystyle{0.35}</m> of the area to the left and the upper bound of the range has <m>\displaystyle{0.35}</m> of the area to the right, which means <m>\displaystyle{0.65}</m> to the left. Therefore:</p>
-<p style="padding-left: 40px;">Lower bound <m>\displaystyle={N}.\text{inversecdf}{\left({0.35}\right)}={1140}</m></p>
-<p style="padding-left: 40px;">Upper bound <m>\displaystyle={N}.\text{inversecdf}{\left({0.65}\right)}={1216}</m></p>
-<p>c. For the most expensive 19<percent/> of the distribution, need <m>\displaystyle{0.19}</m> of the area to the right of the data value, so need <m>\displaystyle{1}-{0.0}{.19}={0.81}</m> to the left. Therefore:</p>
-<p style="padding-left: 40px;"> <m>\displaystyle{x}={N}.\text{inversecdf}{\left({0.81}\right)}={1264}</m> </p>
+  b. For the middle 60<percent/> of the data, need the remaining 40<percent/> of the data split between the left and right tails of the distribution. So the lower bound of the range has <m>\displaystyle{0.2}</m> of the area to the left and the upper bound of the range has <m>\displaystyle{0.2}</m> of the area to the right, which means <m>\displaystyle{0.8}</m> to the left. Therefore:</p>
+<p style="padding-left: 40px;">Lower bound <m>\displaystyle={N}.\text{inversecdf}{\left({0.2}\right)}={1178}</m></p>
+<p style="padding-left: 40px;">Upper bound <m>\displaystyle={N}.\text{inversecdf}{\left({0.8}\right)}={1318}</m></p>
+<p>c. For the most expensive 15<percent/> of the distribution, need <m>\displaystyle{0.15}</m> of the area to the right of the data value, so need <m>\displaystyle{1}-{0.0}{.15}={0.85}</m> to the left. Therefore:</p>
+<p style="padding-left: 40px;"> <m>\displaystyle{x}={N}.\text{inversecdf}{\left({0.85}\right)}={1334}</m> </p>
 </solution>
 </myopenmath>
 
