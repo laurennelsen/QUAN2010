@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Survivorship-Bias" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Survivorship Bias</title>
+
+<introduction>
+    <p>
+        A common type of error when it comes to dealing with a sample in statistics is called <em>Survivorship Bias</em>.  The video below discusses a classic example of survivorship bias involving planes in World War 2 and this image:
+    </p>
+</introduction>
+
+<image source="sheets/plane.png" width="100%">
+</image>
+
+
+<video youtube="P9WFpVsRtQg?si=6PGcIo6iBVUteLWC"/>
+
+
+
+
+
+
+  </section>

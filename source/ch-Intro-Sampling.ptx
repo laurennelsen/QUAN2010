@@ -35,5 +35,6 @@
   <!-- include sections -->
   <xi:include href="sec-Types-of-Sampling.ptx" />
   <xi:include href="sec-Errors-in-Sampling.ptx" />
+  <xi:include href="sec-Survivorship-Bias.ptx" />
 
 </chapter>
