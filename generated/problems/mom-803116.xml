@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="803116">
 <statement>
-<p>John is conducting market research on the cost of  homeowners insurance. John has determined that the average annual cost of  homeowners insurance is <dollar/>1199, and that the distribution of costs is normally distributed with a standard deviation of <dollar/>59. </p>
-<p>a. Find the probability that a single randomly selected consumer spends less than <dollar/>1257 on  homeowners insurance.</p>
+<p>Kylee is conducting market research on the cost of  a cell phone data plan. Kylee has determined that the average annual cost of  a cell phone data plan is <dollar/>807, and that the distribution of costs is normally distributed with a standard deviation of <dollar/>50. </p>
+<p>a. Find the probability that a single randomly selected consumer spends more than <dollar/>861 on  a cell phone data plan.</p>
 <p style="padding-left: 40px;"><fillin characters="20" /></p>
-<p>b. The cost of the middle 80<percent/> of  homeowners insurance policies falls between (round to the nearest dollar):</p>
+<p>b. The cost of the middle 50<percent/> of  cell phone data plans falls between (round to the nearest dollar):</p>
 <p style="padding-left: 40px;"><dollar/><fillin characters="20" /> to <dollar/><fillin characters="20" /> per year.</p>
-<p>c. The <em>most expensive </em>10<percent/> of  homeowners insurance policies cost at least how much annually?</p>
+<p>c. The <em>most expensive </em>10<percent/> of  cell phone data plans cost at least how much annually?</p>
 <p style="padding-left: 40px;"><dollar/><fillin characters="20" /></p>
 
 </statement>
 <solution>
-<p><ul><li>0.8372</li><li>1123</li><li>1275</li><li>1275</li></ul></p><p>Define the normal distribution in Desmos: <m>\displaystyle{N}=\text{normaldist}{\left({1199},{59}\right)}</m>.
+<p><ul><li>0.1401</li><li>773</li><li>841</li><li>871</li></ul></p><p>Define the normal distribution in Desmos: <m>\displaystyle{N}=\text{normaldist}{\left({807},{50}\right)}</m>.
   </p>
 <p>
-  a. <m>\displaystyle{P}{\left({x}{<}{1257}\right)}={N}.{c}{d}{f{{\left({1257}\right)}}}={0.8372}</m>
-  <less/>/p<greater/></p>
+  a. <m>\displaystyle{P}{\left({x}{>}{861}\right)}={N}.{c}{d}{f{{\left({861},\infty\right)}}}={0.1401}</m>
+  </p>
 <p>
-  b. For the middle 80<percent/> of the data, need the remaining 20<percent/> of the data split between the left and right tails of the distribution. So the lower bound of the range has <m>\displaystyle{0.1}</m> of the area to the left and the upper bound of the range has <m>\displaystyle{0.1}</m> of the area to the right, which means <m>\displaystyle{0.9}</m> to the left. Therefore:</p>
-<p style="padding-left: 40px;">Lower bound <m>\displaystyle={N}.\text{inversecdf}{\left({0.1}\right)}={1123}</m></p>
-<p style="padding-left: 40px;">Upper bound <m>\displaystyle={N}.\text{inversecdf}{\left({0.9}\right)}={1275}</m></p>
+  b. For the middle 50<percent/> of the data, need the remaining 50<percent/> of the data split between the left and right tails of the distribution. So the lower bound of the range has <m>\displaystyle{0.25}</m> of the area to the left and the upper bound of the range has <m>\displaystyle{0.25}</m> of the area to the right, which means <m>\displaystyle{0.75}</m> to the left. Therefore:</p>
+<p style="padding-left: 40px;">Lower bound <m>\displaystyle={N}.\text{inversecdf}{\left({0.25}\right)}={773}</m></p>
+<p style="padding-left: 40px;">Upper bound <m>\displaystyle={N}.\text{inversecdf}{\left({0.75}\right)}={841}</m></p>
 <p>c. For the most expensive 10<percent/> of the distribution, need <m>\displaystyle{0.1}</m> of the area to the right of the data value, so need <m>\displaystyle{1}-{0.0}{.1}={0.9}</m> to the left. Therefore:</p>
-<p style="padding-left: 40px;"> <m>\displaystyle{x}={N}.\text{inversecdf}{\left({0.9}\right)}={1275}</m> </p>
+<p style="padding-left: 40px;"> <m>\displaystyle{x}={N}.\text{inversecdf}{\left({0.9}\right)}={871}</m> </p>
 </solution>
 </myopenmath>
 

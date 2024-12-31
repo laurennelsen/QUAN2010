@@ -1585,6 +1585,15 @@ var ptx_lunr_docs = [
   "body": " (Donnelly 7.6)  The data table found below contains daily revenues for the past 350 business days earned from cell phone accessories (Bluetooth headsets, memory cards, and so on) sold at a local Verizon retail store in Delaware.    What is the population mean, ?       Use Excel to draw a systematic sample consisting of 14 days, and then calculate the sampling error for the sample.    , error    Use Excel to draw a systematic sample consisting of $35$ days, and then calculate the sampling error for the sample.    , error    Use Excel to draw a systematic sample consisting of $50$ days, and then calculate the sampling error for the sample.    , error    Compare the sampling error for parts a,b, and c, and explain the reason for the differences.   As the sample size increases, the sampling error tends to decrease.   What problems might be encountered with the sample obtained in part c?   Selecting every 7th day is the same day of every week. (This potentially biases the data.)  "
 },
 {
+  "id": "sec-Survivorship-Bias",
+  "level": "1",
+  "url": "sec-Survivorship-Bias.html",
+  "type": "Section",
+  "number": "6.3",
+  "title": "Survivorship Bias",
+  "body": " Survivorship Bias   A common type of error when it comes to dealing with a sample in statistics is called Survivorship Bias . The video below discusses a classic example of survivorship bias involving planes in World War 2 and this image:      "
+},
+{
   "id": "sec-normal-distribution",
   "level": "1",
   "url": "sec-normal-distribution.html",
