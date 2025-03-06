@@ -30,7 +30,7 @@
     </li>
     <li>
       <p>
-        The sampling distribution of the sample means will not be normally distributed when samples of size <m>n\geq 30</m> are drawn from a population that is not necessarily normal.
+        The sampling distribution of the sample means will be normally distributed when samples of size <m>n\geq 30</m> are drawn from a population that is not necessarily normal.
       </p>
     </li>
     <li>
