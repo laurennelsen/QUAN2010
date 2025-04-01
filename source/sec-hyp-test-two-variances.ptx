@@ -119,7 +119,7 @@
       </statement>
       <answer>
         <p>
-          <me>F=\frac{s_1^2}{s_2^2}=\frac{(4.147)^2}{(2.7311)^2}\approx 2.305647</me>
+          <me>F=\frac{s_1^2}{s_2^2}=\frac{(5.8426)^2}{(3.2156)^2}\approx 3.3013</me>
         </p>
       </answer>
     </task>
@@ -131,7 +131,7 @@
       </statement>
       <answer>
         <p>
-          <me>\text{p-value}\approx F.DIST.RT(2.305647,33-1,17-1)\approx 0.396</me>
+          <me>\text{p-value}\approx F.DIST.RT(3.3013,29-1,30-1)\approx 0.001</me>
         </p>
       </answer>
     </task>
