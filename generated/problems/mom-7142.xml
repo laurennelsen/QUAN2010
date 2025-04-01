@@ -2,16 +2,16 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="7142">
 <statement>
 <p>
-Pollsters are concerned about declining levels of cooperation among persons contacted in surveys.  A pollster contacts 91 people in the 18-21 age bracket and finds that 77 of them respond and 14 refuse to respond.  When 277 people in the 22-29 age bracket are contacted, 250 respond and 27 refuse to respond.  Assume that 1 of the 368 people is randomly selected.  Find the probability of getting someone in the 18-21 age bracket <em>OR</em> someone who refused to respond.</p>
+Pollsters are concerned about declining levels of cooperation among persons contacted in surveys.  A pollster contacts 77 people in the 18-21 age bracket and finds that 65 of them respond and 12 refuse to respond.  When 299 people in the 22-29 age bracket are contacted, 275 respond and 24 refuse to respond.  Assume that 1 of the 376 people is randomly selected.  Find the probability of getting someone in the 22-29 age bracket <em>OR</em> someone who refused to respond.</p>
 <p>
 Report the answer as a percent rounded to one decimal place accuracy.
 You need not enter the "<percent/>" symbol. </p>
 <p>
-prob = <fillin characters="20" /><percent/>
+prob = <input type="text" style="width:25ch" name="qn0" id="qn0" value="" autocomplete="off" aria-label="Question 1" class="text" /><percent/>
 </p>
 </statement>
 <solution>
-<p><ul><li>32.1</li></ul></p>
+<p><ul><li>82.7</li></ul></p>
 </solution>
 </myopenmath>
 
