@@ -9,13 +9,13 @@
     <subtitle>Introduction to Business Statistics</subtitle>
 
     <!-- Include frontmatter -->
-    <xi:include href="./frontmatter.ptx" />
+     <xi:include href="./frontmatter.ptx" /> 
 
     <!-- Include chapters -->
   <xi:include href="./ch-Intro-to-Bus-Stats.ptx" />
 
 
-     <xi:include href="./ch-Displaying-Data.ptx" />
+ <!--    <xi:include href="./ch-Displaying-Data.ptx" />
     
     <xi:include href="./ch-Descriptive-Statistics.ptx" />
 
@@ -43,10 +43,13 @@
 
 
     <xi:include href="./ch-Intro-to-Regression-Modeling.ptx" />
+  -->
 
 
     <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />
+
+
 
   </book>
 </pretext>

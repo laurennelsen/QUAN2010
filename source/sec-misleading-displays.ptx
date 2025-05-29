@@ -12,7 +12,12 @@
     </p>
 </introduction>
 
+<p>
+<figure>
 <video youtube="E91bGT9BjYk"/>
+<caption> Link to YouTube video  </caption>
+</figure>
+</p>
 
 <subsection xml:id="subsec-watch-for">
     <title>Things to watch for in visual displays of data</title>

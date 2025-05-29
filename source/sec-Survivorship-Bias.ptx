@@ -12,9 +12,12 @@
 <image source="sheets/plane.png" width="100%">
 </image>
 
-
-<video youtube="P9WFpVsRtQg?si=6PGcIo6iBVUteLWC"/>
-
+<p>
+<figure>
+  <caption> Link to YouTube video  </caption>
+  <video youtube="P9WFpVsRtQg?si=6PGcIo6iBVUteLWC"/>  
+</figure>
+</p>
 
 
 

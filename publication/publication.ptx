@@ -9,7 +9,7 @@
 <publication>
   <common>
     <!-- Level at which are html files generated (chapter/section/etc): -->
-    <chunking level="2" />
+    <chunking level="0" />
     <!-- Depth for table of contents.  0 means no TOC -->
     <!-- (There are issues when this is set to 2 for the print version. Set to 0 for the print version and 2 for web version)-->
   
@@ -148,4 +148,9 @@
 
   <!-- To use WeBWorK, you need a server.  -->
   <!-- <webwork server="https://webwork-ptx.aimath.org"> -->
+
+
+
+
+
 </publication>

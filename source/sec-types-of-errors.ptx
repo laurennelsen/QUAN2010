@@ -9,8 +9,12 @@
     </p>
   </introduction>
 
+  <p>
+  <figure>
+    <caption> Link to YouTube video  </caption>
   <video youtube="hYWQT5nt6DU"/>
-
+  </figure>
+</p>
 
   <definition xml:id="def-types-errors">
     <statement>

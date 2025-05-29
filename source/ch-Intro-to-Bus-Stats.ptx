@@ -3,12 +3,69 @@
 <chapter xml:id="ch-Intro-to-Bus-Stats" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Introduction to Business Statistics</title>
 
-  
+<introduction>
+<p>
+  Welcome to business statistics!
+</p>
+</introduction> 
+  <!--  <outcomes>
+
+      <p>
+        <ul>
+          <li>
+            <p>
+              outcome 1
+            </p>
+          </li>
+        </ul>
+      </p>
+      
+      <p>
+      <outcome>
+        <p>
+          Recognize the role of statistics in business decision-making processes.
+        </p>
+      </outcome>
+
+      <outcome>
+        <p>
+          Distinguish between descriptive and inferential statistics and understand their applications.
+        </p>
+      </outcome>
+
+      <outcome>
+        <p>
+          Define and differentiate between populations, samples, parameters, and statistics.
+        </p>
+      </outcome>
+
+      <outcome>
+        <p>
+          Classify data as qualitative or quantitative.
+        </p>
+      </outcome>
+
+      <outcome>
+        <p>
+          Be able to identify levels of measurement: nominal, ordinal, interval, and ratio.
+        </p>
+      </outcome>
+
+      <outcome>
+        <p>
+          Understand the significance of data collection methods and their impact on statistical analysis.
+        </p>
+      </outcome>
+    </p>
+    </outcomes>-->
+     
 
   <!-- include sections -->
   
-  <xi:include href="sec-intro-to-stats.ptx" />
+  <!--<xi:include href="sec-intro-to-stats.ptx" />-->
 
-  <xi:include href="sec-TypesOfData.ptx" />
+  <!--<xi:include href="sec-TypesOfData.ptx" />-->
+
+  <xi:include href="sec-correlation.ptx" />
 
 </chapter>

@@ -4,6 +4,13 @@
   <title>The Exponential Distribution</title>
 
 <introduction>
+Now we're going to look at the exponential distribution!
+</introduction>
+
+<subsection xml:id="subsection-intro-to-expon-dist">
+        <title>Introduction to the Exponential Distributions</title>
+
+        <p>
 
   <definition>
 
@@ -33,7 +40,7 @@
     </definition>
 
 
-</introduction>
+  
 
     <p>
     The only parameter in the formula is <m>\lambda</m>.  Let's look at how it impacts the shape of the distribution.
@@ -45,7 +52,8 @@
 
     </p>
 
-
+</p>
+</subsection>
 
     <subsection xml:id="subsection-differences-between-expon-and-normal">
         <title>Differences between the Exponential and Normal Distributions</title>
