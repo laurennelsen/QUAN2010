@@ -1,19 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="7056">
 <statement>
 <p>
 In a mid-size company, the distribution of the number
-of phone calls answered each day by each of the 12 receptionists is bell-shaped and has a mean of 55 and a standard deviation of 10.
+of phone calls answered each day by each of the 12 receptionists is bell-shaped and has a mean of 40 and a standard deviation of 5.
 Using the empirical rule (as presented in the book), what is the approximate percentage of daily phone calls
-numbering between 35 and 75?</p>
+numbering between 25 and 55?</p>
 <p>
 Do not enter the percent symbol.</p>
 <p>
-ans = <input type="text" style="width:25ch" name="qn0" id="qn0" value="" autocomplete="off" aria-label="Question 1" class="text" /> <percent/>
+ans = <input type="text" style="width:25ch" name="qn0" id="qn0" value="" autocomplete="off" aria-label="Question 1" class="text"/> <percent/>
 </p>
 </statement>
 <solution>
-<p><ul><li>95</li></ul></p>
+<p><ul><li>99.7</li></ul></p>
 </solution>
 </myopenmath>
-

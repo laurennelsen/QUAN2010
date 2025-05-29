@@ -1,18 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="6910">
 <statement>
 <p>
 Determine whether the value is a parameter or statistic</p>
 <p>
-Two thirds of the students in a class are women</p>
-<p><ol style="list-style-type:upper-alpha"><li>Statistic</li> 
-<li>Parameter</li> 
+In a sample of students who passed statistics, 70<percent/> used statistics in their future careers</p>
+<p><ol style="list-style-type:upper-alpha"><li>Parameter</li> 
+<li>Statistic</li> 
 </ol></p>
 
 
 </statement>
 <solution>
-<p><ul><li>B: Parameter</li></ul></p>
+<p><ul><li>B: Statistic</li></ul></p>
 </solution>
 </myopenmath>
-

@@ -1,16 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="7111">
 <statement>
 <p>
-Suppose that 56<percent/> of people own dogs.  If you pick two people at random, what is the probability that they both own a dog?</p>
+Suppose that 21<percent/> of people own dogs.  If you pick two people at random, what is the probability that they both own a dog?</p>
 <p>
 Give your answer as a decimal (to at least 3 places) or fraction</p>
-<p><input type="text" style="width:25ch" name="qn0" id="qn0" value="" autocomplete="off" aria-label="Question 1" class="text" />   </p>
+<p><input type="text" style="width:25ch" name="qn0" id="qn0" value="" autocomplete="off" aria-label="Question 1" class="text"/>   </p>
 
 
 </statement>
 <solution>
-<p><ul><li>0.3136</li></ul></p>
+<p><ul><li>0.0441</li></ul></p>
 </solution>
 </myopenmath>
-

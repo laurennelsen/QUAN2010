@@ -6,14 +6,20 @@
 <!--*                                          *-->
 <!--********************************************-->
 <html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>QUAN 2010 Comparing Variances from Two Populations</title>
-<meta name="Keywords" content="Authored in PreTeXt">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:type" content="book">
-<meta property="book:title" content="QUAN 2010 Notes">
-<meta property="book:author" content="Lauren M. Nelsen and Kimberly Swetz">
+<title>Comparing Variances from Two Populations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
 <script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
@@ -69,26 +75,12 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
-<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
-</script><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-<link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/shell_default.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/banner_default.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/navbar_default.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/toc_default.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/knowls_default.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/style_default.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/colors_blue_red.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
-<!--** eBookCongig is necessary to configure interactive       **-->
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="QUAN 2010 Notes">
+<meta property="book:author" content="Lauren M. Nelsen and Kimberly Swetz">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -110,88 +102,24 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.5.12';
+eBookConfig.runestone_version = '7.7.1';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.5.12/prefix-runtime.8ded03b2da8fab17.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.5.12/prefix-723.3e6434f80549315a.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.5.12/prefix-runestone.f6bda0c0ccce4835.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.5.12/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.5.12/prefix-runestone.e0c6d4592e23c667.css">
-<style>
-#subsec-grouped-quantitative-data-9-4-1 { counter-set: subsec-grouped-quantitative-data-9-4-1 0; }
-#subsec-grouped-quantitative-data-9-4-1 > li::marker { content: ""counter(subsec-grouped-quantitative-data-9-4-1,decimal)"."; }
-#subsec-grouped-quantitative-data-9-4-1 > li { counter-increment: subsec-grouped-quantitative-data-9-4-1; }
-#subsec-watch-for-2-1 { counter-set: subsec-watch-for-2-1 0; }
-#subsec-watch-for-2-1 > li::marker { content: ""counter(subsec-watch-for-2-1,decimal)"."; }
-#subsec-watch-for-2-1 > li { counter-increment: subsec-watch-for-2-1; }
-#sec-measures-central-tendency-6-1 { counter-set: sec-measures-central-tendency-6-1 0; }
-#sec-measures-central-tendency-6-1 > li::marker { content: ""counter(sec-measures-central-tendency-6-1,decimal)"."; }
-#sec-measures-central-tendency-6-1 > li { counter-increment: sec-measures-central-tendency-6-1; }
-#def-stdev-1-2-1 { counter-set: def-stdev-1-2-1 0; }
-#def-stdev-1-2-1 > li::marker { content: ""counter(def-stdev-1-2-1,decimal)"."; }
-#def-stdev-1-2-1 > li { counter-increment: def-stdev-1-2-1; }
-#sec-Intro-to-Probability-10-1 { counter-set: sec-Intro-to-Probability-10-1 0; }
-#sec-Intro-to-Probability-10-1 > li::marker { content: ""counter(sec-Intro-to-Probability-10-1,decimal)"."; }
-#sec-Intro-to-Probability-10-1 > li { counter-increment: sec-Intro-to-Probability-10-1; }
-#def-discrete-probability-distribution-1-1-2 { counter-set: def-discrete-probability-distribution-1-1-2 0; }
-#def-discrete-probability-distribution-1-1-2 > li::marker { content: ""counter(def-discrete-probability-distribution-1-1-2,decimal)"."; }
-#def-discrete-probability-distribution-1-1-2 > li { counter-increment: def-discrete-probability-distribution-1-1-2; }
-#def-Binomial-1-1-2 { counter-set: def-Binomial-1-1-2 0; }
-#def-Binomial-1-1-2 > li::marker { content: ""counter(def-Binomial-1-1-2,decimal)"."; }
-#def-Binomial-1-1-2 > li { counter-increment: def-Binomial-1-1-2; }
-#def-Poisson-1-2-1 { counter-set: def-Poisson-1-2-1 0; }
-#def-Poisson-1-2-1 > li::marker { content: ""counter(def-Poisson-1-2-1,decimal)"."; }
-#def-Poisson-1-2-1 > li { counter-increment: def-Poisson-1-2-1; }
-#subsection-characteristics-of-normal-distn-2-1 { counter-set: subsection-characteristics-of-normal-distn-2-1 0; }
-#subsection-characteristics-of-normal-distn-2-1 > li::marker { content: ""counter(subsection-characteristics-of-normal-distn-2-1,decimal)"."; }
-#subsection-characteristics-of-normal-distn-2-1 > li { counter-increment: subsection-characteristics-of-normal-distn-2-1; }
-#subsection-calculating-probabilities-normal-7-1 { counter-set: subsection-calculating-probabilities-normal-7-1 0; }
-#subsection-calculating-probabilities-normal-7-1 > li::marker { content: ""counter(subsection-calculating-probabilities-normal-7-1,decimal)"."; }
-#subsection-calculating-probabilities-normal-7-1 > li { counter-increment: subsection-calculating-probabilities-normal-7-1; }
-#subsection-differences-between-expon-and-normal-2-1 { counter-set: subsection-differences-between-expon-and-normal-2-1 0; }
-#subsection-differences-between-expon-and-normal-2-1 > li::marker { content: ""counter(subsection-differences-between-expon-and-normal-2-1,decimal)"."; }
-#subsection-differences-between-expon-and-normal-2-1 > li { counter-increment: subsection-differences-between-expon-and-normal-2-1; }
-#sec-Sampling-Distribution-of-Mean-6-1 { counter-set: sec-Sampling-Distribution-of-Mean-6-1 0; }
-#sec-Sampling-Distribution-of-Mean-6-1 > li::marker { content: ""counter(sec-Sampling-Distribution-of-Mean-6-1,decimal)"."; }
-#sec-Sampling-Distribution-of-Mean-6-1 > li { counter-increment: sec-Sampling-Distribution-of-Mean-6-1; }
-#sec-Central-Limit-Theorem-3-1 { counter-set: sec-Central-Limit-Theorem-3-1 0; }
-#sec-Central-Limit-Theorem-3-1 > li::marker { content: ""counter(sec-Central-Limit-Theorem-3-1,decimal)"."; }
-#sec-Central-Limit-Theorem-3-1 > li { counter-increment: sec-Central-Limit-Theorem-3-1; }
-#subsec-Students-t-3-2 { counter-set: subsec-Students-t-3-2 0; }
-#subsec-Students-t-3-2 > li::marker { content: ""counter(subsec-Students-t-3-2,decimal)"."; }
-#subsec-Students-t-3-2 > li { counter-increment: subsec-Students-t-3-2; }
-#subsec-Confidence-Interval-Sigma-Unknown-3-2 { counter-set: subsec-Confidence-Interval-Sigma-Unknown-3-2 0; }
-#subsec-Confidence-Interval-Sigma-Unknown-3-2 > li::marker { content: ""counter(subsec-Confidence-Interval-Sigma-Unknown-3-2,decimal)"."; }
-#subsec-Confidence-Interval-Sigma-Unknown-3-2 > li { counter-increment: subsec-Confidence-Interval-Sigma-Unknown-3-2; }
-#sec-Determining-Sample-Size-2-2-1 { counter-set: sec-Determining-Sample-Size-2-2-1 0; }
-#sec-Determining-Sample-Size-2-2-1 > li::marker { content: ""counter(sec-Determining-Sample-Size-2-2-1,decimal)"."; }
-#sec-Determining-Sample-Size-2-2-1 > li { counter-increment: sec-Determining-Sample-Size-2-2-1; }
-#subsec-logic-hyp-testing-2-2-1 { counter-set: subsec-logic-hyp-testing-2-2-1 0; }
-#subsec-logic-hyp-testing-2-2-1 > li::marker { content: ""counter(subsec-logic-hyp-testing-2-2-1,decimal)"."; }
-#subsec-logic-hyp-testing-2-2-1 > li { counter-increment: subsec-logic-hyp-testing-2-2-1; }
-#def-critical-value-method-1-2-1 { counter-set: def-critical-value-method-1-2-1 0; }
-#def-critical-value-method-1-2-1 > li::marker { content: ""counter(def-critical-value-method-1-2-1,decimal)"."; }
-#def-critical-value-method-1-2-1 > li { counter-increment: def-critical-value-method-1-2-1; }
-#def-p-value-method-1-2-1 { counter-set: def-p-value-method-1-2-1 0; }
-#def-p-value-method-1-2-1 > li::marker { content: ""counter(def-p-value-method-1-2-1,decimal)"."; }
-#def-p-value-method-1-2-1 > li { counter-increment: def-p-value-method-1-2-1; }
-#sec-chi-squared-3-3 { counter-set: sec-chi-squared-3-3 0; }
-#sec-chi-squared-3-3 > li::marker { content: ""counter(sec-chi-squared-3-3,decimal)"."; }
-#sec-chi-squared-3-3 > li { counter-increment: sec-chi-squared-3-3; }
-#sec-F-dist-3-3 { counter-set: sec-F-dist-3-3 0; }
-#sec-F-dist-3-3 > li::marker { content: ""counter(sec-F-dist-3-3,decimal)"."; }
-#sec-F-dist-3-3 > li { counter-increment: sec-F-dist-3-3; }
-</style>
+<script src="_static/prefix-runtime.cf591bce111c14c1.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.472f5a2f0bfe3571.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
 </head>
 <body id="changeme" class="pretext book ignore-math">
-<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
-<a id="logo-link" class="logo-link" target="_blank" href=""></a><div class="title-container">
-<h1 class="heading"><a href="QUAN_2010_Notes.html"><span class="title">QUAN 2010 Notes:</span> <span class="subtitle">Introduction to Business Statistics</span></a></h1>
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="QUAN_2010_Notes.html"><span class="title">QUAN 2010 Notes</span> <span class="subtitle">Introduction to Business Statistics</span></a></h1>
 <p class="byline">Lauren M. Nelsen and Kimberly Swetz</p>
-</div>
-</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
 <div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
 <div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
 <div class="search-results-controls">
@@ -202,7 +130,14 @@ eBookConfig.enable_chatcodes =  false;
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-F-dist.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-Hypothesis-Variance.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ch-Hypothesis-Testing-Two-Populations.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-F-dist.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-Hypothesis-Variance.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ch-Hypothesis-Testing-Two-Populations.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -210,7 +145,7 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural contains-active toc-item-list">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-Intro-to-Bus-Stats.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Business Statistics</span></a></div>
@@ -218,13 +153,17 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-intro-to-stats.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Introduction to Statistics</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-intro-to-stats.html#subsec-branches" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Branches of Statistics:</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-intro-to-stats.html#subsec-stats-definitions" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Definitions and Terms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-intro-to-stats.html#subsec-what-is-stats" class="internal"><span class="codenumber">1.1.1</span> <span class="title">What is Statistics?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-intro-to-stats.html#subsec-branches" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Branches of Statistics:</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-intro-to-stats.html#subsec-stats-definitions" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Definitions and Terms</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-TypesOfData.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Types of Data</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-TypesOfData.html#subsec-levels-measurement" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Levels of Measurement</span></a></div></li></ul>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-TypesOfData.html#subsec-types-of-data-definitions" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Introduction to different types of data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-TypesOfData.html#subsec-levels-measurement" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Levels of Measurement</span></a></div></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -234,10 +173,11 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-quantitative-data-displays.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Quantitative Data Displays</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-quantitative-data-displays.html#subsec-Histograms-Excel" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Creating Histograms in Excel</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-quantitative-data-displays.html#subsec-grouped-quantitative-data" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Grouped Quantitative Data</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-quantitative-data-displays.html#subsec-shapes-histograms" class="internal"><span class="codenumber">2.1.3</span> <span class="title">Shapes of Histograms</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-quantitative-data-displays.html#subsec-Scatter-Plots" class="internal"><span class="codenumber">2.1.4</span> <span class="title">Scatter Plots</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-quantitative-data-displays.html#subsec-frequency-Excel" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Creating Frequency Distributions in Excel</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-quantitative-data-displays.html#subsec-Histograms-Excel" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Creating Histograms in Excel</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-quantitative-data-displays.html#subsec-grouped-quantitative-data" class="internal"><span class="codenumber">2.1.3</span> <span class="title">Grouped Quantitative Data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-quantitative-data-displays.html#subsec-shapes-histograms" class="internal"><span class="codenumber">2.1.4</span> <span class="title">Shapes of Histograms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-quantitative-data-displays.html#subsec-Scatter-Plots" class="internal"><span class="codenumber">2.1.5</span> <span class="title">Scatter Plots</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -246,7 +186,10 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-misleading-displays.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Misleading Visual Displays of Data</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-misleading-displays.html#subsec-watch-for" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Things to watch for in visual displays of data</span></a></div></li></ul>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-misleading-displays.html#subsec-misleading" class="internal"><span class="codenumber">2.3.1</span> <span class="title">How can displays of data be misleading?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-misleading-displays.html#subsec-watch-for" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Things to watch for in visual displays of data</span></a></div></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -293,18 +236,21 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-normal-distribution.html" class="internal"><span class="codenumber">7.1</span> <span class="title">The Normal Distribution</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-normal-distribution.html#subsection-characteristics-of-normal-distn" class="internal"><span class="codenumber">7.1.1</span> <span class="title">Characteristics of the Normal Probability Distribution:</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-normal-distribution.html#subsection-examples-of-normal-distn" class="internal"><span class="codenumber">7.1.2</span> <span class="title">Examples of Normal Probability Distributions:</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-normal-distribution.html#subsection-standard-normal-distn" class="internal"><span class="codenumber">7.1.3</span> <span class="title">The Standard Normal Distribution:</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-normal-distribution.html#subsection-calculating-probabilities-normal" class="internal"><span class="codenumber">7.1.4</span> <span class="title">Calculating Probabilities for Normal Distributions:</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-normal-distribution.html#subsection-normal-inv" class="internal"><span class="codenumber">7.1.5</span> <span class="title">Finding <span class="process-math">\(Z\)</span> or <span class="process-math">\(X\)</span> if we have information about a probability:</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-normal-distribution.html#subsection-intro-to-the-normal-distn" class="internal"><span class="codenumber">7.1.1</span> <span class="title">Introduction to the Normal Probability Distribution:</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-normal-distribution.html#subsection-characteristics-of-normal-distn" class="internal"><span class="codenumber">7.1.2</span> <span class="title">Characteristics of the Normal Probability Distribution:</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-normal-distribution.html#subsection-examples-of-normal-distn" class="internal"><span class="codenumber">7.1.3</span> <span class="title">Examples of Normal Probability Distributions:</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-normal-distribution.html#subsection-standard-normal-distn" class="internal"><span class="codenumber">7.1.4</span> <span class="title">The Standard Normal Distribution:</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-normal-distribution.html#subsection-calculating-probabilities-normal" class="internal"><span class="codenumber">7.1.5</span> <span class="title">Calculating Probabilities for Normal Distributions:</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-normal-distribution.html#subsection-normal-distn-Excel" class="internal"><span class="codenumber">7.1.6</span> <span class="title">Calculating Normal Distribution Values in Excel:</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-normal-distribution.html#subsection-normal-inv" class="internal"><span class="codenumber">7.1.7</span> <span class="title">Finding <span class="process-math">\(Z\)</span> or <span class="process-math">\(X\)</span> if we have information about a probability:</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-exponential-distribution.html" class="internal"><span class="codenumber">7.2</span> <span class="title">The Exponential Distribution</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exponential-distribution.html#subsection-differences-between-expon-and-normal" class="internal"><span class="codenumber">7.2.1</span> <span class="title">Differences between the Exponential and Normal Distributions</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exponential-distribution.html#subsection-computing-expon-probabilities" class="internal"><span class="codenumber">7.2.2</span> <span class="title">Computing Probabilities for the Exponential Distributions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exponential-distribution.html#subsection-intro-to-expon-dist" class="internal"><span class="codenumber">7.2.1</span> <span class="title">Introduction to the Exponential Distributions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exponential-distribution.html#subsection-differences-between-expon-and-normal" class="internal"><span class="codenumber">7.2.2</span> <span class="title">Differences between the Exponential and Normal Distributions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exponential-distribution.html#subsection-computing-expon-probabilities" class="internal"><span class="codenumber">7.2.3</span> <span class="title">Computing Probabilities for the Exponential Distributions</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-uniform-distribution.html" class="internal"><span class="codenumber">7.3</span> <span class="title">The Uniform Distribution</span></a></div></li>
@@ -360,9 +306,9 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-hyp-test-single-variance.html#sec-hyp-test-single-variance-7" class="internal"><span class="codenumber">11.2</span> <span class="title">Exercises</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-F-dist.html" class="internal"><span class="codenumber">11.3</span> <span class="title">The <span class="process-math">\(F\)</span>-Distribution</span></a></div></li>
-<li class="toc-item toc-section active">
+<li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="sec-hyp-test-two-variances.html" class="internal"><span class="codenumber">11.4</span> <span class="title">Comparing Variances from Two Populations</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-6" class="internal"><span class="codenumber">11.4</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul class="structural toc-item-list active"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-6" class="internal"><span class="codenumber">11.4</span> <span class="title">Exercises</span></a></div></li></ul>
 </li>
 </ul>
 </li>
@@ -389,21 +335,24 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-hyp-test-two-variances"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">11.4</span><span class="space"> </span><span class="title">Comparing Variances from Two Populations</span>
 </h2>
-<section class="introduction" id="sec-hyp-test-two-variances-2"><div class="para" id="sec-hyp-test-two-variances-2-1">When we want to compare the variances of two samples, we do this by conducting a test of the ratio of the variances.  If the ratio is equal to <span class="process-math">\(1\text{,}\)</span> then the variances are equal; if not, then they are unequal.</div> <div class="para logical" id="sec-hyp-test-two-variances-2-2">
+<section class="introduction" id="sec-hyp-test-two-variances-2"><div class="para" id="sec-hyp-test-two-variances-2-1">When we want to compare the variances of two samples, we do this by conducting a test of the ratio of the variances.  If the ratio is equal to <span class="process-math">\(1\text{,}\)</span> then the variances are equal; if not, then they are unequal.</div>
+<div class="para logical" id="sec-hyp-test-two-variances-2-2">
 <div class="para">The sample variances is a good estimate of the population variance.  Not surprisingly, the ratio of the two sample variances, <span class="process-math">\(\frac{s_1^2}{s_2^2}\text{,}\)</span> drawn from their respective populations is a good estimate for the ratio of the two population variances, <span class="process-math">\(\frac{\sigma_1^2}{\sigma_2^2}\text{.}\)</span>  The sampling distribution of <span class="process-math">\(\frac{s_1^2}{s_2^2}\)</span> is <span class="process-math">\(F\)</span>-distributed with <span class="process-math">\(D_1=n_1-1\)</span> and <span class="process-math">\(D_2=n_2-1\)</span> degrees of freedom if we have independent samples from two normal populations.  Since we are comparing two variances, the test statistic is:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 F=\frac{s_1^2}{s_2^2}.
 \end{equation*}
 </div>
-</div> <div class="para" id="sec-hyp-test-two-variances-2-3">The formula for this test statistic is easy to compute by hand, nevertheless, we can also use Excel to do the work if we have raw data (not summary statistics).  After stating the two hypotheses, we will go to the <em class="emphasis">Data Analysis</em> tool and choose “F-Test Two-Sample for Variances” to complete the test.</div></section><article class="note remark-like" id="sec-hyp-test-two-variances-3"><h3 class="heading">
+</div>
+<div class="para" id="sec-hyp-test-two-variances-2-3">The formula for this test statistic is easy to compute by hand, nevertheless, we can also use Excel to do the work if we have raw data (not summary statistics).  After stating the two hypotheses, we will go to the <em class="emphasis">Data Analysis</em> tool and choose “F-Test Two-Sample for Variances” to complete the test.</div></section><article class="note remark-like" id="sec-hyp-test-two-variances-3"><h3 class="heading">
 <span class="type">Note</span><span class="space"> </span><span class="codenumber">11.4.1</span><span class="period">.</span>
-</h3>In general, if we are testing to see if one variance is larger than the other, we want to choose population 1 to be the one with the larger sample standard deviation so that we will be doing a right-tail test.</article><details id="sec-hyp-test-two-variances-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+</h3></article><details id="sec-hyp-test-two-variances-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">11.4.2</span><span class="period">.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec-hyp-test-two-variances-4-1"><div class="para" id="sec-hyp-test-two-variances-4-1-1">A company is doing a hypothesis test on the variation in quality from two suppliers. Both distributions are normal, and the populations are independent. Use <span class="process-math">\(\alpha=0.05\text{.}\)</span> A sample of 29 products were selected from Supplier 1 and a standard deviation of quality was found to be 5.8426. A sample of 30 products were selected from Supplier 2 and a standard deviation of quality was found to be 3.2156. Test to see if the variance in quality for Supplier 1 is larger than Supplier 2.</div></div>
 <article class="task exercise-like" id="sec-hyp-test-two-variances-4-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="" data-multipleanswers="false">
-<div class="para" id="sec-hyp-test-two-variances-4-2-1-1">What are the correct hypotheses?</div>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement"><div class="para" id="sec-hyp-test-two-variances-4-2-1-1">What are the correct hypotheses?</div></div>
+<ul data-component="multiplechoice" class="exercise-interactives" data-multipleanswers="false">
 <li data-component="answer" id="_opt_a" data-correct="">
 <div class="para" id="sec-hyp-test-two-variances-4-2-2-1-1-1"><span class="process-math">\(H_0: \sigma_1^2 \leq  \sigma_2^2\)</span></div> <div class="para" id="sec-hyp-test-two-variances-4-2-2-1-1-2"><span class="process-math">\(H_1: \sigma_1^2 \gt  \sigma_2^2\)</span></div>
 </li>
@@ -416,9 +365,11 @@ F=\frac{s_1^2}{s_2^2}.
 <div class="para" id="sec-hyp-test-two-variances-4-2-2-3-1-1"><span class="process-math">\(H_0: \sigma_1^2 =  \sigma_2^2\)</span></div> <div class="para" id="sec-hyp-test-two-variances-4-2-2-3-1-2"><span class="process-math">\(H_1: \sigma_1^2 \neq  \sigma_2^2\)</span></div>
 </li>
 <li data-component="feedback" id="_opt_c">
-</ul></div></div></article><article class="task exercise-like" id="sec-hyp-test-two-variances-4-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="" data-multipleanswers="false">
-<div class="para" id="sec-hyp-test-two-variances-4-3-1-1">What test statistic should we use for this problem?</div>
+</ul>
+</div></div></article><article class="task exercise-like" id="sec-hyp-test-two-variances-4-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement"><div class="para" id="sec-hyp-test-two-variances-4-3-1-1">What test statistic should we use for this problem?</div></div>
+<ul data-component="multiplechoice" class="exercise-interactives" data-multipleanswers="false">
 <li data-component="answer" id="_opt_a"><div class="para" id="sec-hyp-test-two-variances-4-3-2-1-1-1"><span class="process-math">\(z\)</span></div></li>
 <li data-component="feedback" id="_opt_a">
 <li data-component="answer" id="_opt_b"><div class="para" id="sec-hyp-test-two-variances-4-3-2-2-1-1"><span class="process-math">\(t\)</span></div></li>
@@ -427,7 +378,8 @@ F=\frac{s_1^2}{s_2^2}.
 <li data-component="feedback" id="_opt_c">
 <li data-component="answer" id="_opt_d"><div class="para" id="sec-hyp-test-two-variances-4-3-2-4-1-1"><span class="process-math">\(\chi^2\)</span></div></li>
 <li data-component="feedback" id="_opt_d">
-</ul></div></div></article><article class="task exercise-like" id="sec-hyp-test-two-variances-4-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+</ul>
+</div></div></article><article class="task exercise-like" id="sec-hyp-test-two-variances-4-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <div class="para" id="sec-hyp-test-two-variances-4-4-1-1">Find the test statistic.</div>
 <div class="solutions"><details id="sec-hyp-test-two-variances-4-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-hyp-test-two-variances-4-4-2-1"><div class="displaymath process-math">
 \begin{equation*}
@@ -440,15 +392,18 @@ F=\frac{s_1^2}{s_2^2}=\frac{(5.8426)^2}{(3.2156)^2}\approx 3.3013
 \text{p-value}\approx F.DIST.RT(3.3013,29-1,30-1)\approx 0.001
 \end{equation*}
 </div></div></div></details></div></article><article class="task exercise-like" id="sec-hyp-test-two-variances-4-6"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="" data-multipleanswers="false">
-<div class="para" id="sec-hyp-test-two-variances-4-6-1-1">The decision is to...</div>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement"><div class="para" id="sec-hyp-test-two-variances-4-6-1-1">The decision is to...</div></div>
+<ul data-component="multiplechoice" class="exercise-interactives" data-multipleanswers="false">
 <li data-component="answer" id="_opt_a" data-correct=""><div class="para" id="sec-hyp-test-two-variances-4-6-2-1-1-1">Reject the null hypothesis.</div></li>
 <li data-component="feedback" id="_opt_a">
 <li data-component="answer" id="_opt_b"><div class="para" id="sec-hyp-test-two-variances-4-6-2-2-1-1">Fail to reject the null hypothesis.</div></li>
 <li data-component="feedback" id="_opt_b">
-</ul></div></div></article><article class="task exercise-like" id="sec-hyp-test-two-variances-4-7"><h4 class="heading"><span class="codenumber">(f)</span></h4>
-<div class="ptx-runestone-container"><div class="runestone multiplechoice_section"><ul data-component="multiplechoice" id="" data-multipleanswers="false">
-<div class="para" id="sec-hyp-test-two-variances-4-7-1-1">The correct summary would be:</div>
+</ul>
+</div></div></article><article class="task exercise-like" id="sec-hyp-test-two-variances-4-7"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
+<div class="exercise-statement"><div class="para" id="sec-hyp-test-two-variances-4-7-1-1">The correct summary would be:</div></div>
+<ul data-component="multiplechoice" class="exercise-interactives" data-multipleanswers="false">
 <li data-component="answer" id="_opt_a" data-correct=""><div class="para" id="sec-hyp-test-two-variances-4-7-2-1-1-1">There is enough evidence to support the claim that the variance in quality for Supplier 1 is larger than Supplier 2.</div></li>
 <li data-component="feedback" id="_opt_a">
 <li data-component="answer" id="_opt_b"><div class="para" id="sec-hyp-test-two-variances-4-7-2-2-1-1">There is not enough evidence to support the claim that the variance in quality for Supplier 1 is larger than Supplier 2.</div></li>
@@ -457,19 +412,23 @@ F=\frac{s_1^2}{s_2^2}=\frac{(5.8426)^2}{(3.2156)^2}\approx 3.3013
 <li data-component="feedback" id="_opt_c">
 <li data-component="answer" id="_opt_d"><div class="para" id="sec-hyp-test-two-variances-4-7-2-4-1-1">There is enough evidence to reject the claim that the variance in quality for Supplier 1 is larger than Supplier 2.</div></li>
 <li data-component="feedback" id="_opt_d">
-</ul></div></div></article></article></details><details id="sec-hyp-test-two-variances-5" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+</ul>
+</div></div></article></article></details><details id="sec-hyp-test-two-variances-5" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">11.4.3</span><span class="period">.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec-hyp-test-two-variances-5-1">
-<div class="para" id="sec-hyp-test-two-variances-5-1-1">A statistics student wants to investigate salaries of men and women in a certain Fortune 500 company. Two samples of salaries of men and women employees were obtained independently and analyzed.  The sample data is in the Excel file below.  (Assume that the samples are from normal populations.)</div> <div class="para" id="sec-hyp-test-two-variances-5-1-2"><a class="external" href="external/sheets/CompanySalaries.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/CompanySalaries.xlsx</code></a></div>
+<div class="para" id="sec-hyp-test-two-variances-5-1-1">A statistics student wants to investigate salaries of men and women in a certain Fortune 500 company. Two samples of salaries of men and women employees were obtained independently and analyzed.  The sample data is in the Excel file below.  (Assume that the samples are from normal populations.)</div>
+<div class="para" id="sec-hyp-test-two-variances-5-1-2"><a class="external" href="external/sheets/CompanySalaries.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/CompanySalaries.xlsx</code></a></div>
 </div>
 <article class="task exercise-like" id="sec-hyp-test-two-variances-5-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <div class="para" id="sec-hyp-test-two-variances-5-2-1-1">Which of the samples has a larger sample standard deviation?</div>
 <div class="solutions"><details id="sec-hyp-test-two-variances-5-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
-<div class="para" id="sec-hyp-test-two-variances-5-2-2-1">Use STDEV.S in Excel to find the sample standard deviations.</div> <div class="para logical" id="sec-hyp-test-two-variances-5-2-2-2"><div class="displaymath process-math">
+<div class="para" id="sec-hyp-test-two-variances-5-2-2-1">Use STDEV.S in Excel to find the sample standard deviations.</div>
+<div class="para logical" id="sec-hyp-test-two-variances-5-2-2-2"><div class="displaymath process-math">
 \begin{equation*}
 s_{\text{men}}=s_1\approx 15.0973
 \end{equation*}
-</div></div> <div class="para logical" id="sec-hyp-test-two-variances-5-2-2-3"><div class="displaymath process-math">
+</div></div>
+<div class="para logical" id="sec-hyp-test-two-variances-5-2-2-3"><div class="displaymath process-math">
 \begin{equation*}
 s_{\text{women}}=s_2\approx 13.9944
 \end{equation*}
@@ -481,11 +440,15 @@ s_{\text{women}}=s_2\approx 13.9944
 \begin{equation*}
 H_0: \sigma_1^2 \leq \sigma_2^2
 \end{equation*}
-</div></div> <div class="para logical" id="sec-hyp-test-two-variances-5-3-2-2"><div class="displaymath process-math">
+</div></div>
+<div class="para logical" id="sec-hyp-test-two-variances-5-3-2-2"><div class="displaymath process-math">
 \begin{equation*}
 H_1: \sigma_1^2 \gt \sigma_2^2
 \end{equation*}
-</div></div> <div class="para" id="sec-hyp-test-two-variances-5-3-2-3">Since we have the raw data from the samples, we can use “F-Test Two-Sample for Variances” in the Data Analysis tool in Excel.</div> <div class="para" id="sec-hyp-test-two-variances-5-3-2-4"><a class="external" href="external/sheets/CompanySalariesSolution.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/CompanySalariesSolution.xlsx</code></a></div> <div class="para" id="sec-hyp-test-two-variances-5-3-2-5">From this, we’ll get a p-value of approximately 0.4182, which is bigger than <span class="process-math">\(\alpha=0.10\text{.}\)</span>  So we fail to reject the null hypothesis and do not have enough evidence to conclude that <span class="process-math">\(\sigma_1^2 \gt \sigma_2^2\text{.}\)</span>
+</div></div>
+<div class="para" id="sec-hyp-test-two-variances-5-3-2-3">Since we have the raw data from the samples, we can use “F-Test Two-Sample for Variances” in the Data Analysis tool in Excel.</div>
+<div class="para" id="sec-hyp-test-two-variances-5-3-2-4"><a class="external" href="external/sheets/CompanySalariesSolution.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/CompanySalariesSolution.xlsx</code></a></div>
+<div class="para" id="sec-hyp-test-two-variances-5-3-2-5">From this, we’ll get a p-value of approximately 0.4182, which is bigger than <span class="process-math">\(\alpha=0.10\text{.}\)</span>  So we fail to reject the null hypothesis and do not have enough evidence to conclude that <span class="process-math">\(\sigma_1^2 \gt \sigma_2^2\text{.}\)</span>
 </div>
 </div></details></div></article></article></details><section class="exercises" id="sec-hyp-test-two-variances-6"><h3 class="heading hide-type">
 <span class="type">Exercises</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Exercises</span>
@@ -494,7 +457,8 @@ H_1: \sigma_1^2 \gt \sigma_2^2
 <div id="momsec-hyp-test-two-variances-6-1-1wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momsec-hyp-test-two-variances-6-1-1" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=123043&amp;frame_id=momsec-hyp-test-two-variances-6-1-1"></iframe></div></article><article class="exercise exercise-like" id="sec-hyp-test-two-variances-6-2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
 <div class="para" id="sec-hyp-test-two-variances-6-2-1-1">A pharmaceutical company is about to launch a new manufacturing process in addition to the existing one. The quality control manager believes that the new method results in a different variation in the weights of the capsules. To verify the claim, the samples from each production line were obtained and the results are in the Excel file below (in mg):</div> <div class="para" id="sec-hyp-test-two-variances-6-2-1-2"><a class="external" href="external/sheets/1434306_data.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/1434306_data.xlsx</code></a></div> <div class="para" id="sec-hyp-test-two-variances-6-2-1-3">Use a <span class="process-math">\(5\%\)</span> significance level to test the claim that the standard deviation of the capsule weights in the production line 1 is smaller than the standard deviation of the capsule weights in the production line 2. If normality plots are not provided assume that the samples are from normal populations.</div>
 <div class="solutions"><details id="sec-hyp-test-two-variances-6-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="sec-hyp-test-two-variances-6-2-2-1">In the question, look for the keywords such as mean/average, proportion/percentage, variance/standard deviation! In this case, we have "standard deviation of the capsule weights in the production line" and two populations, thus we are going to perform Two Variances F Hypothesis Test.</div> <div class="para logical" id="sec-hyp-test-two-variances-6-2-2-2">
+<div class="para" id="sec-hyp-test-two-variances-6-2-2-1">In the question, look for the keywords such as mean/average, proportion/percentage, variance/standard deviation! In this case, we have "standard deviation of the capsule weights in the production line" and two populations, thus we are going to perform Two Variances F Hypothesis Test.</div>
+<div class="para logical" id="sec-hyp-test-two-variances-6-2-2-2">
 <div class="para">Find the sample standard deviations for each production line:</div>
 <ul class="disc" id="sec-hyp-test-two-variances-6-2-2-2-1">
 <li id="sec-hyp-test-two-variances-6-2-2-2-1-1">
@@ -506,7 +470,9 @@ H_1: \sigma_1^2 \gt \sigma_2^2
 <span class="process-math">\(STDEV.S(A8:E11)\approx 1.909\)</span>
 </li>
 </ul>
-</div> <div class="para" id="sec-hyp-test-two-variances-6-2-2-3">Since <span class="process-math">\(1.909\gt 1.074\text{,}\)</span> we’ll let <span class="process-math">\(s_1\approx 1.909\)</span> and <span class="process-math">\(s_2\approx 1.074\text{,}\)</span> and this will be a right-tailed test.</div> <div class="para logical" id="sec-hyp-test-two-variances-6-2-2-4">
+</div>
+<div class="para" id="sec-hyp-test-two-variances-6-2-2-3">Since <span class="process-math">\(1.909\gt 1.074\text{,}\)</span> we’ll let <span class="process-math">\(s_1\approx 1.909\)</span> and <span class="process-math">\(s_2\approx 1.074\text{,}\)</span> and this will be a right-tailed test.</div>
+<div class="para logical" id="sec-hyp-test-two-variances-6-2-2-4">
 <div class="para">Hypotheses:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -519,93 +485,122 @@ H_0: \;\;\sigma_1^2 \leq \sigma_2^2,
 H_1: \;\;\sigma_1^2 \gt \sigma_2^2
 \end{equation*}
 </div>
-</div> <div class="para logical" id="sec-hyp-test-two-variances-6-2-2-5">
+</div>
+<div class="para logical" id="sec-hyp-test-two-variances-6-2-2-5">
 <div class="para">Test statistic:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 F=\frac{s_1^2}{s_2^2}\approx \frac{1.074^2}{1.909^2}\approx 3.1574
 \end{equation*}
 </div>
-</div> <div class="para logical" id="sec-hyp-test-two-variances-6-2-2-6">
+</div>
+<div class="para logical" id="sec-hyp-test-two-variances-6-2-2-6">
 <div class="para">Now find the p-value:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 F.DIST.RT(3.1574,16-1,11-1)\approx 0.0359
 \end{equation*}
 </div>
-</div> <div class="para" id="sec-hyp-test-two-variances-6-2-2-7">Since the p-value is less than <span class="process-math">\(\alpha\text{,}\)</span> we reject the null hypothesis and conclude that <span class="process-math">\(\sigma_1^2 \gt \sigma_2^2\text{,}\)</span> so Production line 2 has a larger standard deviation of capsult weights than Production line 1.</div> <div class="para" id="sec-hyp-test-two-variances-6-2-2-8"></div> <div class="para" id="sec-hyp-test-two-variances-6-2-2-9">(Alternatively, we can use the “F-Test Two-Sample for Variances” in the Data Analysis tool in Excel.)</div>
+</div>
+<div class="para" id="sec-hyp-test-two-variances-6-2-2-7">Since the p-value is less than <span class="process-math">\(\alpha\text{,}\)</span> we reject the null hypothesis and conclude that <span class="process-math">\(\sigma_1^2 \gt \sigma_2^2\text{,}\)</span> so Production line 2 has a larger standard deviation of capsult weights than Production line 1.</div>
+<div class="para" id="sec-hyp-test-two-variances-6-2-2-8"></div>
+<div class="para" id="sec-hyp-test-two-variances-6-2-2-9">(Alternatively, we can use the “F-Test Two-Sample for Variances” in the Data Analysis tool in Excel.)</div>
 </div></details></div></article><article class="exercise exercise-like" id="sec-hyp-test-two-variances-6-3"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
 <div class="para" id="sec-hyp-test-two-variances-6-3-1-1">A nonprofit wants to verify the claim that in a certain Fortune 500 company the average salary of female employees is different from the average salary of male employees. Two samples of male and female workers were obtained independently and analyzed. The salaries of workers in the samples are shown in the Excel file below.</div> <div class="para" id="sec-hyp-test-two-variances-6-3-1-2"><a class="external" href="external/sheets/1434305_data.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/1434305_data.xlsx</code></a></div> <div class="para" id="sec-hyp-test-two-variances-6-3-1-3">The standard deviation for the first sample appears to be different from the standard deviation of the second sample. Use a <span class="process-math">\(10\%\)</span> level of significance to decide whether there is sufficient evidence that in the Fortune 500 company, the standard deviation of the salary of males is the same as the standard deviation of the salary of females. Assume that the samples are from normal populations.</div>
 <div class="solutions"><details id="sec-hyp-test-two-variances-6-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
-<div class="para" id="sec-hyp-test-two-variances-6-3-2-1">In the question, look for the keywords such as mean/average, proportion/percentage, variance/standard deviation! In this case, we have "the standard deviation of the salary" and two populations, thus we are going to perform Two Variances F Hypothesis Test.</div> <div class="para" id="sec-hyp-test-two-variances-6-3-2-2">Unfortunately, the Data Analysis tool in Excel only provides the results for a one-tail hypothesis test for comparing two population variances.</div> <div class="para logical" id="sec-hyp-test-two-variances-6-3-2-3"><ul class="disc" id="sec-hyp-test-two-variances-6-3-2-3-1">
+<div class="para" id="sec-hyp-test-two-variances-6-3-2-1">In the question, look for the keywords such as mean/average, proportion/percentage, variance/standard deviation! In this case, we have "the standard deviation of the salary" and two populations, thus we are going to perform Two Variances F Hypothesis Test.</div>
+<div class="para" id="sec-hyp-test-two-variances-6-3-2-2">Unfortunately, the Data Analysis tool in Excel only provides the results for a one-tail hypothesis test for comparing two population variances.</div>
+<div class="para logical" id="sec-hyp-test-two-variances-6-3-2-3"><ul class="disc" id="sec-hyp-test-two-variances-6-3-2-3-1">
 <li id="sec-hyp-test-two-variances-6-3-2-3-1-1"><div class="para" id="sec-hyp-test-two-variances-6-3-2-3-1-1-1">In the sample of females:  <span class="process-math">\(s=STDEV.S(A2:E4)\approx 13.1744\)</span>
 </div></li>
 <li id="sec-hyp-test-two-variances-6-3-2-3-1-2"><div class="para" id="sec-hyp-test-two-variances-6-3-2-3-1-2-1">In the sample of males:  <span class="process-math">\(s=STDEV.S(A8:E10)\approx 10.7037\)</span>
 </div></li>
-</ul></div> <div class="para" id="sec-hyp-test-two-variances-6-3-2-4">Let females be population 1 and males be population 2.</div> <div class="para logical" id="sec-hyp-test-two-variances-6-3-2-5">
+</ul></div>
+<div class="para" id="sec-hyp-test-two-variances-6-3-2-4">Let females be population 1 and males be population 2.</div>
+<div class="para logical" id="sec-hyp-test-two-variances-6-3-2-5">
 <div class="para">Hypotheses:</div>
 <ul class="disc" id="sec-hyp-test-two-variances-6-3-2-5-1">
 <li id="sec-hyp-test-two-variances-6-3-2-5-1-1"><div class="para" id="sec-hyp-test-two-variances-6-3-2-5-1-1-1"><span class="process-math">\(\displaystyle H_0:\;\;\sigma_1^2=\sigma_2^2\)</span></div></li>
 <li id="sec-hyp-test-two-variances-6-3-2-5-1-2"><div class="para" id="sec-hyp-test-two-variances-6-3-2-5-1-2-1"><span class="process-math">\(\displaystyle H_1:\;\;\sigma_1^2\neq\sigma_2^2\)</span></div></li>
 </ul>
-</div> <div class="para logical" id="sec-hyp-test-two-variances-6-3-2-6">
+</div>
+<div class="para logical" id="sec-hyp-test-two-variances-6-3-2-6">
 <div class="para">Test statistic:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 F=\frac{s_1^2}{s_2^2}=\frac{13.1744^2}{10.7037^2}\approx 1.5149
 \end{equation*}
 </div>
-</div> <div class="para" id="sec-hyp-test-two-variances-6-3-2-7">Find the critical value, <span class="process-math">\(F_{\alpha/2}\text{:}\)</span>
-</div> <div class="para" id="sec-hyp-test-two-variances-6-3-2-8"><span class="process-math">\(\alpha=.1\Rightarrow \alpha/2=.05\)</span></div> <div class="para" id="sec-hyp-test-two-variances-6-3-2-9"><span class="process-math">\(F_{\alpha/2}=F.INV.RT(.05, 14-1, 14-1)\approx 2.5769\)</span></div> <div class="para" id="sec-hyp-test-two-variances-6-3-2-10">Even though this is a two-tailed test, we only consider the rejection region on the right side of the distribution.  This is because when comparing two population variances, we always choose population 1 to be the one with the larger sample standard deviation.  This guarantees that <span class="process-math">\(\frac{s_1^2}{s_2^2}\gt 1\)</span> so the test statistic will be bigger than <span class="process-math">\(1\text{.}\)</span>
-</div> <div class="para" id="sec-hyp-test-two-variances-6-3-2-11">Since the test statistic is not in the rejection region, we fail to reject the null hypothesis, and we do not have enough evidence to conclude that <span class="process-math">\(\sigma_1^2\neq\sigma_2^2\text{.}\)</span>
+</div>
+<div class="para" id="sec-hyp-test-two-variances-6-3-2-7">Find the critical value, <span class="process-math">\(F_{\alpha/2}\text{:}\)</span>
+</div>
+<div class="para" id="sec-hyp-test-two-variances-6-3-2-8"><span class="process-math">\(\alpha=.1\Rightarrow \alpha/2=.05\)</span></div>
+<div class="para" id="sec-hyp-test-two-variances-6-3-2-9"><span class="process-math">\(F_{\alpha/2}=F.INV.RT(.05, 14-1, 14-1)\approx 2.5769\)</span></div>
+<div class="para" id="sec-hyp-test-two-variances-6-3-2-10">Even though this is a two-tailed test, we only consider the rejection region on the right side of the distribution.  This is because when comparing two population variances, we always choose population 1 to be the one with the larger sample standard deviation.  This guarantees that <span class="process-math">\(\frac{s_1^2}{s_2^2}\gt 1\)</span> so the test statistic will be bigger than <span class="process-math">\(1\text{.}\)</span>
+</div>
+<div class="para" id="sec-hyp-test-two-variances-6-3-2-11">Since the test statistic is not in the rejection region, we fail to reject the null hypothesis, and we do not have enough evidence to conclude that <span class="process-math">\(\sigma_1^2\neq\sigma_2^2\text{.}\)</span>
 </div>
 </div></details></div></article><article class="exercise exercise-like" id="sec-hyp-test-two-variances-6-4"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
 <div class="para" id="sec-hyp-test-two-variances-6-4-1">A group of economists wants to study the average annual leave among the US and EU workers. Two samples of US and EU workers were obtained independently and analyzed. The sample of 17 US workers had the average annual leave of 20.84 days and the standard deviation 4.378 days. The sample of 11 EU workers had the average annual leave of 25.92 days and the standard deviation 3.655 days. The standard deviation for the first sample appears to be different from the standard deviation of the second sample. Use a <span class="process-math">\(10\%\)</span> level of significance to decide whether there is sufficient evidence that the standard deviation of the annual leave of US workers is greater than the standard deviation of the annual leave of EU workers. If normality plots are not provided assume that the samples are from normal populations.</div>
 <details id="sec-hyp-test-two-variances-6-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
-<div class="para" id="sec-hyp-test-two-variances-6-4-2-1">Population 1:  US workers, Population 2:  EU workers</div> <div class="para" id="sec-hyp-test-two-variances-6-4-2-2">
+<div class="para" id="sec-hyp-test-two-variances-6-4-2-1">Population 1:  US workers, Population 2:  EU workers</div>
+<div class="para" id="sec-hyp-test-two-variances-6-4-2-2">
 <span class="process-math">\(s_1=4.378\text{,}\)</span> <span class="process-math">\(s_2=3.655\)</span>
-</div> <div class="para" id="sec-hyp-test-two-variances-6-4-2-3">
+</div>
+<div class="para" id="sec-hyp-test-two-variances-6-4-2-3">
 <span class="process-math">\(\bar{x}_1=20.84\text{,}\)</span> <span class="process-math">\(\bar{x}_2=25.92\)</span>
-</div> <div class="para" id="sec-hyp-test-two-variances-6-4-2-4">
+</div>
+<div class="para" id="sec-hyp-test-two-variances-6-4-2-4">
 <span class="process-math">\(n_1=17\text{,}\)</span> <span class="process-math">\(n_2=11\)</span>
-</div> <div class="para" id="sec-hyp-test-two-variances-6-4-2-5"><span class="process-math">\(\alpha=.10\)</span></div> <div class="para" id="sec-hyp-test-two-variances-6-4-2-6"><span class="process-math">\(H_0:\;\;\sigma_1^2\leq \sigma_2^2\)</span></div> <div class="para" id="sec-hyp-test-two-variances-6-4-2-7"><span class="process-math">\(H_1:\;\;\sigma_1^2\gt \sigma_2^2\)</span></div> <div class="para logical" id="sec-hyp-test-two-variances-6-4-2-8">
+</div>
+<div class="para" id="sec-hyp-test-two-variances-6-4-2-5"><span class="process-math">\(\alpha=.10\)</span></div>
+<div class="para" id="sec-hyp-test-two-variances-6-4-2-6"><span class="process-math">\(H_0:\;\;\sigma_1^2\leq \sigma_2^2\)</span></div>
+<div class="para" id="sec-hyp-test-two-variances-6-4-2-7"><span class="process-math">\(H_1:\;\;\sigma_1^2\gt \sigma_2^2\)</span></div>
+<div class="para logical" id="sec-hyp-test-two-variances-6-4-2-8">
 <div class="para">Test statistic:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 F=\frac{s_1^2}{s_2^2}\approx 1.43475
 \end{equation*}
 </div>
-</div> <div class="para" id="sec-hyp-test-two-variances-6-4-2-9">p-value:</div> <div class="para" id="sec-hyp-test-two-variances-6-4-2-10"><span class="process-math">\(F.DIST.RT(1.43475, 16,10)\approx 0.2855\gt\alpha\)</span></div> <div class="para" id="sec-hyp-test-two-variances-6-4-2-11">Since the p-value is greater than <span class="process-math">\(\alpha\text{,}\)</span> we do not have enough evidence to reject the null hypothesis.  So we do not have enough evidence to conclude that <span class="process-math">\(\sigma_1^2\gt \sigma_2^2\text{.}\)</span>
+</div>
+<div class="para" id="sec-hyp-test-two-variances-6-4-2-9">p-value:</div>
+<div class="para" id="sec-hyp-test-two-variances-6-4-2-10"><span class="process-math">\(F.DIST.RT(1.43475, 16,10)\approx 0.2855\gt\alpha\)</span></div>
+<div class="para" id="sec-hyp-test-two-variances-6-4-2-11">Since the p-value is greater than <span class="process-math">\(\alpha\text{,}\)</span> we do not have enough evidence to reject the null hypothesis.  So we do not have enough evidence to conclude that <span class="process-math">\(\sigma_1^2\gt \sigma_2^2\text{.}\)</span>
 </div>
 </div></details></article><article class="exercise exercise-like" id="sec-hyp-test-two-variances-6-5"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
 <div id="momsec-hyp-test-two-variances-6-5-1wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momsec-hyp-test-two-variances-6-5-1" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=634787&amp;frame_id=momsec-hyp-test-two-variances-6-5-1"></iframe></div></article><article class="exercise exercise-like" id="sec-hyp-test-two-variances-6-6"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
 <div id="momsec-hyp-test-two-variances-6-6-1wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momsec-hyp-test-two-variances-6-6-1" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=710429&amp;frame_id=momsec-hyp-test-two-variances-6-6-1"></iframe></div></article><article class="exercise exercise-like" id="sec-hyp-test-two-variances-6-7"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
 <div class="para" id="sec-hyp-test-two-variances-6-7-1-1">Is the variance for the amount of money, in dollars, that shoppers spend on Saturdays at the mall the same as the variance for the amount of money that shoppers spend on Sundays at the mall? Suppose that the Excel file below shows the results of a study:</div> <div class="para" id="sec-hyp-test-two-variances-6-7-1-2"><a class="external" href="external/sheets/1434301_data.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/1434301_data.xlsx</code></a></div> <div class="para" id="sec-hyp-test-two-variances-6-7-1-3">Use a <span class="process-math">\(5\%\)</span> significance level to test the claim that the standard deviation for the amount of money that shoppers spend on Saturday is the same as the standard deviation for the amount of money that shoppers spend on Sunday. If normality plots are not provided assume that the samples are from normal populations.</div>
 <div class="solutions"><details id="sec-hyp-test-two-variances-6-7-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
-<div class="para" id="sec-hyp-test-two-variances-6-7-2-1">Procedure: In the question, look for the keywords such as mean/average, proportion/percentage, variance/standard deviation! In this case, we have "standard deviation for the amount of money that shoppers spend" and two populations, thus we are going to perform Two Variances F Hypothesis Test.</div> <div class="para" id="sec-hyp-test-two-variances-6-7-2-2">Saturday:  <span class="process-math">\(s=STDEV.S(A2:E3)\approx 13.9939 \)</span>
-</div> <div class="para" id="sec-hyp-test-two-variances-6-7-2-3">Sunday:  <span class="process-math">\(s=STDEV.S(A7:E10)\approx 13.7633 \)</span>
-</div> <div class="para" id="sec-hyp-test-two-variances-6-7-2-4">So let Saturday be “population 1” and Saturday be “population 2”.</div> <div class="para" id="sec-hyp-test-two-variances-6-7-2-5"><span class="process-math">\(H_0:  \frac{\sigma_1^2}{\sigma_2^2}=1\)</span></div> <div class="para" id="sec-hyp-test-two-variances-6-7-2-6"><span class="process-math">\(H_1:  \frac{\sigma_1^2}{\sigma_2^2}\neq 1\)</span></div> <div class="para logical" id="sec-hyp-test-two-variances-6-7-2-7">
+<div class="para" id="sec-hyp-test-two-variances-6-7-2-1">Procedure: In the question, look for the keywords such as mean/average, proportion/percentage, variance/standard deviation! In this case, we have "standard deviation for the amount of money that shoppers spend" and two populations, thus we are going to perform Two Variances F Hypothesis Test.</div>
+<div class="para" id="sec-hyp-test-two-variances-6-7-2-2">Saturday:  <span class="process-math">\(s=STDEV.S(A2:E3)\approx 13.9939 \)</span>
+</div>
+<div class="para" id="sec-hyp-test-two-variances-6-7-2-3">Sunday:  <span class="process-math">\(s=STDEV.S(A7:E10)\approx 13.7633 \)</span>
+</div>
+<div class="para" id="sec-hyp-test-two-variances-6-7-2-4">So let Saturday be “population 1” and Saturday be “population 2”.</div>
+<div class="para" id="sec-hyp-test-two-variances-6-7-2-5"><span class="process-math">\(H_0:  \frac{\sigma_1^2}{\sigma_2^2}=1\)</span></div>
+<div class="para" id="sec-hyp-test-two-variances-6-7-2-6"><span class="process-math">\(H_1:  \frac{\sigma_1^2}{\sigma_2^2}\neq 1\)</span></div>
+<div class="para logical" id="sec-hyp-test-two-variances-6-7-2-7">
 <div class="para">Test statistic:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 F=\frac{s_1^2}{s_2^2}=\frac{13.9939^2}{13.7633^2}\approx 1.03377991
 \end{equation*}
 </div>
-</div> <div class="para" id="sec-hyp-test-two-variances-6-7-2-8">Critical value:</div> <div class="para" id="sec-hyp-test-two-variances-6-7-2-9"><span class="process-math">\(\alpha=5\%\Rightarrow \alpha/2=.025\)</span></div> <div class="para" id="sec-hyp-test-two-variances-6-7-2-10"><span class="process-math">\(F_{.025}=F.INV.RT(.025, 10-1, 19-1)\approx 2.92911\)</span></div> <div class="para" id="sec-hyp-test-two-variances-6-7-2-11">Since the test statistic is not in the rejection region, we fail to reject the null hypothesis, and we do not have enough evidence to conclude that <span class="process-math">\(\frac{\sigma_1^2}{\sigma_2^2}\neq 1\text{.}\)</span>
+</div>
+<div class="para" id="sec-hyp-test-two-variances-6-7-2-8">Critical value:</div>
+<div class="para" id="sec-hyp-test-two-variances-6-7-2-9"><span class="process-math">\(\alpha=5\%\Rightarrow \alpha/2=.025\)</span></div>
+<div class="para" id="sec-hyp-test-two-variances-6-7-2-10"><span class="process-math">\(F_{.025}=F.INV.RT(.025, 10-1, 19-1)\approx 2.92911\)</span></div>
+<div class="para" id="sec-hyp-test-two-variances-6-7-2-11">Since the test statistic is not in the rejection region, we fail to reject the null hypothesis, and we do not have enough evidence to conclude that <span class="process-math">\(\frac{\sigma_1^2}{\sigma_2^2}\neq 1\text{.}\)</span>
 </div>
 </div></details></div></article></section></section></div>
-<div class="ptx-content-footer">
+<div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-F-dist.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-Hypothesis-Testing-Two-Populations.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
-<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
 </div>
-<!--Start: Google Global Site Tag code--><!--*** DO NOT COPY ANOTHER PROJECT'S MAGIC NUMBERS/ID ***--><!--***           GET YOUR OWN FROM GOOGLE             ***-->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-5MQ0KVQEQ5"></script><script>  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-5MQ0KVQEQ5');
-</script><!--End: Google Global Site Tag code-->
 </body>
 </html>

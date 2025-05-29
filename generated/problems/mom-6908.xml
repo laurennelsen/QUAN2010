@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="6908">
 <statement>
 <p>
-In a study, the data you collect is Mood on a Happy/OK/Sad scale.</p>
+In a study, the data you collect is Letter grade (A,B,C,D,F).</p>
 <p>
 This data is:</p>
 <p><ol style="list-style-type:upper-alpha"><li>Quantitative</li> 
@@ -15,4 +15,3 @@ This data is:</p>
 <p><ul><li>B: Qualitative</li></ul></p>
 </solution>
 </myopenmath>
-
