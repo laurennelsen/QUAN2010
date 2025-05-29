@@ -4,20 +4,22 @@
   <title>Survivorship Bias</title>
 
 <introduction>
-    <p>
-        A common type of error when it comes to dealing with a sample in statistics is called <em>Survivorship Bias</em>.  The video below discusses a classic example of survivorship bias involving planes in World War 2 and this image:
-    </p>
+    
 </introduction>
+
+<p>
+        A common type of error when it comes to dealing with a sample in statistics is called <em>Survivorship Bias</em>.  The video below discusses a classic example of survivorship bias involving planes in World War 2 and this image:
+
 
 <image source="sheets/plane.png" width="100%">
 </image>
+  </p>
 
-<p>
 <figure>
-  <caption> Link to YouTube video  </caption>
-  <video youtube="P9WFpVsRtQg?si=6PGcIo6iBVUteLWC"/>  
+  <video youtube="P9WFpVsRtQg"/>  
+    <caption> Survivorship Bias YouTube video  </caption>
 </figure>
-</p>
+
 
 
 

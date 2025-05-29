@@ -34,18 +34,18 @@
 
 
 <!-- We start a new page after each thing-->
-<xsl:template match="activity|definition|observation|fact|remark|example|objectives|note">
+<xsl:template match="activity|example|exercise|investigation">
     <xsl:apply-imports />
     <xsl:text>\cleardoublepage&#xA;&#xA;</xsl:text>
 </xsl:template>
 
 <!-- We pull activities,etc. from each subsection -->
 <xsl:template match="subsection">
-    <xsl:apply-templates select="activity|definition|observation|fact|remark|example|note" />
+    <xsl:apply-templates select="activity|example|exercise|investigation" />
 </xsl:template>
 
 <!--Exercise groups are not in a subsection, so drop them -->
-<!-- <xsl:template match="exercises" />  -->
+ <xsl:template match="exercises" />  
  
 <!--Drop all the preface-->
 <xsl:template match="preface" />
@@ -53,8 +53,8 @@
 <xsl:template match="paragraphs[contains(@xml:id, 'readiness')]"/>
 <!--Drop back matter stuff -->
 <!--Omit tables-->
-<xsl:template match="appendix[contains(@xml:id,'table')]"/>
-<xsl:template match="index" />
+<!--<xsl:template match="appendix[contains(@xml:id,'table')]"/>
+<xsl:template match="index" />-->
 
 <!-- Use letter paper and leave one-inch margins all around -->
 <!--<xsl:param name="latex.geometry" select="'letterpaper,margin=1in'" />-->

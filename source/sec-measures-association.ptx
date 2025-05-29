@@ -5,10 +5,12 @@
 
 
   <introduction>
-    <p>
+    
+  </introduction>
+
+  <p>
         So far, the statistics we've studied have all dealt with describing one variable at a time.  Measures of association describe the relationship between two variables.
     </p>
-  </introduction>
 
   <definition xml:id="def-cov-correl">
     <statement>
@@ -32,7 +34,6 @@
   </definition>
 
 
-  Geogebra:
 
 <figure xml:id="figure-geogebra-correlation">
               <caption>Correlation (Made in GeoGebra by Zbynek Konecny)</caption>

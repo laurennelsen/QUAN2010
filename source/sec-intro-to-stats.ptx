@@ -4,12 +4,15 @@
   <title>Introduction to Statistics</title>
 
   <introduction>
-<p>
+<!--<p>
 Before we launch into dealing with any data or doing calculations, let's talk about what statistics is!
-</p>
+</p>-->
 
 </introduction>
  
+ <subsection xml:id="subsec-what-is-stats">
+    <title>What is Statistics?</title>
+
   <question>
     <p>
         What is statistics?
@@ -36,7 +39,7 @@ Before we launch into dealing with any data or doing calculations, let's talk ab
 
 
 
-
+</subsection>
 
   <subsection xml:id="subsec-branches">
     <title>Branches of Statistics:</title>

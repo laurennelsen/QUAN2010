@@ -4,6 +4,10 @@
   <title>Random Variables</title>
 
   <introduction>
+
+    </introduction>
+
+    
     <p>
       Many things in our world involve some level of uncertainty.  We want to use tools from probability to make decisions and see what we can confidently say about whatever it is we're investigating.
     </p>
@@ -43,7 +47,6 @@
 </p>
 
 
-</introduction>
 
 
   <definition xml:id="def-RandomVariables">

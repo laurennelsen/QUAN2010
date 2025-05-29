@@ -4,9 +4,9 @@
   <title>The Normal Distribution</title>
 
   <introduction>
-
+    <p>
     Now we're going to investigate each of these three distributions, starting with the normal distribution.
-
+    </p>
     </introduction>
 
     <subsection xml:id="subsection-intro-to-the-normal-distn">
@@ -439,7 +439,7 @@ There are many examples of random variables that are normally distributed in man
 
         <subsection xml:id="subsection-normal-distn-Excel">
   <title>Calculating Normal Distribution Values in Excel:</title>
-        <p>
+        
 
         <p>
             We already saw an Excel command that will allow us to find a probability associated with a standard normal distribution.  There is also an Excel command that allows us to find a probability associated with a general normal distribution, and in this case, we will need to specify the mean and standard deviation of the distribution. 
@@ -1385,7 +1385,7 @@ There are many examples of random variables that are normally distributed in man
 
 
 
-        </p>
+    
     </subsection>
 
 
@@ -1401,8 +1401,7 @@ There are many examples of random variables that are normally distributed in man
     <p>
         What if we want to know the specific <m>X</m> that satisfies a given probability?  Then we can work backward using the tables (<url href="https://www.math.arizona.edu/~rsims/ma464/standardnormaltable.pdf">Standard Normal Table</url>) and use the <m>z</m>-score formula in reverse.  If the exact probability cannot be found in the table, then we can use the closest values.
     </p>
-
-</introduction>
+    </introduction>
 
     <p>
         The Excel formulas that apply to this situation are similar to the ones we saw earlier, replacing .DIST with .INV:
@@ -1582,9 +1581,9 @@ There are many examples of random variables that are normally distributed in man
 
 
 
-      <!--<exercise>
+      <exercise>
         <myopenmath problem="803116" />
-      </exercise>-->
+      </exercise>
 
 
     </subsection>

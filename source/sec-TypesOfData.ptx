@@ -5,18 +5,18 @@
 
 
   <introduction>
-  <p> The purpose of descriptive statistics is to summarize or display data so that the audience can quickly obtain an overview of the information.  There are two main types of data:  <em>quantitative data</em> and <em>qualitative data</em>. 
+  
+</introduction>
+
+<subsection xml:id="subsec-types-of-data-definitions">
+  <title> Introduction to different types of data </title>
+
+<p> The purpose of descriptive statistics is to summarize or display data so that the audience can quickly obtain an overview of the information.  There are two main types of data:  <em>quantitative data</em> and <em>qualitative data</em>. 
   </p>
 
   <p>
     Let's define those and other types of data we will work with in this course.  Then we will move on to review how Excel is used to create meaningful tables, charts, and graphs that summarize our data.
   </p>
-</introduction>
-
-<!--<subsection xml:id="subsec-placeholder">
-  <title> Placeholder subsection </title>
-
-
 
   <definition xml:id="def-quantitative-qualitative">
     <statement>
@@ -227,11 +227,6 @@
       </statement>
     </definition>
     
-  </subsection>
-
-  
-<subsection xml:id="subsec-placeholder-2">
-    <title>Placeholder title</title>
 
   <exercise>
     <title>Level of Measurement</title>
@@ -320,6 +315,6 @@
   </task>
 </exercise>
 
-</subsection>-->
+</subsection>
 
 </section>

@@ -5,6 +5,10 @@
 
   <introduction>
 
+
+
+</introduction>
+
 <definition xml:id="def-point-estimate">
     <statement>
         <p>
@@ -15,9 +19,6 @@
         </p>
     </statement>
 </definition>
-
-
-</introduction>
 
 <p>
     The advantage of a point estimate is that it is easy to calculate and easy to understand.  The disadvantage is that it doesn't provide any information about the accuracy of the estimate.  For this reason, statisticians prefer an interval estimate, a range of values used to estimate the parameter.  This estimate <em>may</em> or <em>may not</em> contain the value of the parameter being estimated.

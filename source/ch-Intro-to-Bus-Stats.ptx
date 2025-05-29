@@ -4,9 +4,9 @@
   <title>Introduction to Business Statistics</title>
 
 <introduction>
-<p>
+<!--<p>
   Welcome to business statistics!
-</p>
+</p>-->
 </introduction> 
   <!--  <outcomes>
 
@@ -62,10 +62,9 @@
 
   <!-- include sections -->
   
-  <!--<xi:include href="sec-intro-to-stats.ptx" />-->
+  <xi:include href="sec-intro-to-stats.ptx" />
 
-  <!--<xi:include href="sec-TypesOfData.ptx" />-->
+  <xi:include href="sec-TypesOfData.ptx" />
 
-  <xi:include href="sec-correlation.ptx" />
 
 </chapter>

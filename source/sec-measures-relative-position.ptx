@@ -4,11 +4,13 @@
   <title>Measures of Relative Position</title>
 
   <introduction>
+
+
+</introduction>
+
 <p>
     Measures of relative position compare the position of one value in relation to other values in the data set.
 </p>
-
-</introduction>
 
 
 <definition xml:id="def-percentiles">

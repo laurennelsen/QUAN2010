@@ -5,6 +5,9 @@
 
   <introduction>
 
+    </introduction>
+
+
 <p>
     We can also estimate the proportion of a population by constructing a confidence interval from a sample.  Recall that proportion data follow the binomial distribution, which can be approximated by the normal distribution under the conditions:
     <ul>
@@ -23,7 +26,6 @@
 </p>
 
 
-</introduction>
 
 <figure xml:id="figure-geogebra-binomial-normal">
     <caption>

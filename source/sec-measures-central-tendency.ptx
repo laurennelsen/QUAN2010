@@ -4,10 +4,11 @@
   <title>Measures of Central Tendency</title>
 
   <introduction>
-    <p> In statistics, <q>average</q> or <q>typical</q> values are known as <em>measures of central tendency</em>. </p>
-</introduction>
 
-  
+  </introduction>
+
+      <p> In statistics, <q>average</q> or <q>typical</q> values are known as <em>measures of central tendency</em>. </p>
+
 
   <definition xml:id="def-mean">
     <statement>

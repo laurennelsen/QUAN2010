@@ -15,7 +15,7 @@
   <xi:include href="./ch-Intro-to-Bus-Stats.ptx" />
 
 
- <!--    <xi:include href="./ch-Displaying-Data.ptx" />
+     <xi:include href="./ch-Displaying-Data.ptx" />
     
     <xi:include href="./ch-Descriptive-Statistics.ptx" />
 
@@ -43,7 +43,7 @@
 
 
     <xi:include href="./ch-Intro-to-Regression-Modeling.ptx" />
-  -->
+  
 
 
     <!-- Include backmatter -->

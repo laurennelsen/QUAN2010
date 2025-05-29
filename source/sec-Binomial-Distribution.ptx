@@ -5,6 +5,7 @@
 
   <introduction>
 
+  </introduction>
 
   <definition xml:id="def-Binomial">
     <statement>
@@ -41,7 +42,6 @@
 
     </statement>
   </definition>
-  </introduction>
 
 
   <exercise label="binomial-multiple-choice">

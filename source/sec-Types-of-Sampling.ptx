@@ -4,10 +4,12 @@
   <title>Types of Sampling</title>
 
 <introduction>
-    <p>
+    
+</introduction>
+
+<p>
         A probability sample is a sample in which each member of the population has a known, nonzero chance of being selected for the sample.  There are five main types:
     </p>
-</introduction>
 
 <definition xml:id="def-types-samples">
     <statement>

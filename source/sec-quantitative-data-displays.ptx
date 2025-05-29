@@ -37,7 +37,12 @@
 
 </introduction>
 
+<subsection xml:id="subsec-frequency-Excel">
+    <title>Creating Frequency Distributions in Excel</title>
+
+<p>
 Let's discuss these definitions in the example below:
+</p>
 
 <exercise>
     <p>
@@ -117,6 +122,7 @@ Let's discuss these definitions in the example below:
 </p>
 </exploration>
 
+</subsection>
 
 
 <subsection xml:id="subsec-Histograms-Excel">

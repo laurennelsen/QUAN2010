@@ -5,6 +5,9 @@
 
   <introduction>
 
+    </introduction>
+
+
 <definition xml:id="def-sampling-error">
   <statement>
     <p>
@@ -27,7 +30,6 @@
   </statement>
 </definition>
 
-</introduction>
 
 
 <exercise>

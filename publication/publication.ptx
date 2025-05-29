@@ -9,7 +9,7 @@
 <publication>
   <common>
     <!-- Level at which are html files generated (chapter/section/etc): -->
-    <chunking level="0" />
+    <chunking level="2" />
     <!-- Depth for table of contents.  0 means no TOC -->
     <!-- (There are issues when this is set to 2 for the print version. Set to 0 for the print version and 2 for web version)-->
   
@@ -21,6 +21,9 @@
     <!-- project). Some examples:                                            -->
     <exercise-inline statement="yes" hint="yes" answer="yes" solution="yes" />
     <exercise-divisional statement="yes" hint="yes" answer="yes" solution="yes" />
+    <question statement="yes" hint="yes" answer="yes" solution="yes"/>
+    <investigation statement="yes" hint="yes" answer="yes" solution="yes"/>
+
     <!-- Style of fill-in-the-blanks: -->
     <fillin textstyle="underline" mathstyle="shade" />
     <!-- You can set a watermark: -->
@@ -81,8 +84,8 @@
     <worksheets formatted="yes" />
   </latex>
 
-  <html>
-    <analytics google-gst="G-5MQ0KVQEQ5"/>
+  <html embed-button="yes">
+    <!--<analytics google-gst="G-5MQ0KVQEQ5"/>-->
 
     <platform host="web"/>
     <!-- The host above could also be "runestone" -->
@@ -114,14 +117,7 @@
     <!-- put <css style="oscarlevin"/>                         -->
     <!-- See also                                              -->
     <!-- https://pretextbook.org/doc/guide/html/publication-file-online.html#online-style-options -->
-    <css
-        style="default"
-        colors="blue_red"
-        knowls="default"
-        toc="default"
-        banner="default"
-        navbar="default"
-    />
+    <css  theme="default-modern"    />
     <!-- Search can be default or none, or you can use a Google-cx number to use google's search
     feature (but then variant should be set to none to avoid conflict) -->
     <search variant="default" />
