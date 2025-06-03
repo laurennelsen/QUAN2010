@@ -139,7 +139,6 @@
 
 
   <exercise>
-    exercise>
     <statement>
     <p>
       The Excel file below has the earnings for the top 10 highest paid actors in 2023.  (The data is taken from <url href="https://finance.yahoo.com/news/10-highest-paid-actors-2023-185921075.html">Yahoo</url>.)
@@ -262,7 +261,9 @@
   </exercise>
 
   <question>
+    <p>
     Statisticians generally use the median instead of the mean when reporting income.  Why do you think this is?
+    </p>
   </question>
 
 
