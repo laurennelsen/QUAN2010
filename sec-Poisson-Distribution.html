@@ -421,10 +421,36 @@ P(X)=\frac{\lambda^Xe^{-\lambda}}{X!}\text{, where the mean number of occurrence
 <div class="para" id="sec-Poisson-Distribution-14-1-2">A customer support center for a computer manufacturer receives an average of 2.9 phone calls every five minutes.  Assume the number of calls received follows the Poisson distribution.  Use Excel to answer the following questions.</div>
 </div>
 <article class="task exercise-like" id="sec-Poisson-Distribution-14-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="sec-Poisson-Distribution-14-2-1-1">What is the probability that no calls will arrive during the next five minutes?</div></article><article class="task exercise-like" id="sec-Poisson-Distribution-14-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="sec-Poisson-Distribution-14-3-1-1">What is the probability that 3 or more calls will arrive during the next five minutes?</div></article><article class="task exercise-like" id="sec-Poisson-Distribution-14-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="sec-Poisson-Distribution-14-4-1-1">What is the probability that 3 calls will arrive during the next ten minutes?</div></article><article class="task exercise-like" id="sec-Poisson-Distribution-14-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para" id="sec-Poisson-Distribution-14-5-1-1">What is the probability that no more than 2 calls will arrive during the next ten minutes?</div></article></article></details></section></div>
+<div class="para" id="sec-Poisson-Distribution-14-2-1-1">What is the probability that no calls will arrive during the next five minutes?</div>
+<div class="solutions"><details id="sec-Poisson-Distribution-14-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-Poisson-Distribution-14-2-2-1"><div class="displaymath process-math">
+\begin{equation*}
+P(X=0)=POISSON.DIST(0,2.9,FALSE)\approx 0.0550
+\end{equation*}
+</div></div></div></details></div></article><article class="task exercise-like" id="sec-Poisson-Distribution-14-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-Poisson-Distribution-14-3-1-1">What is the probability that 3 or more calls will arrive during the next five minutes?</div>
+<div class="solutions"><details id="sec-Poisson-Distribution-14-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-Poisson-Distribution-14-3-2-1"><div class="displaymath process-math">
+\begin{equation*}
+P(X\geq 3)=1-P(X\leq 2)=1-POISSON.DIST(2,2.9,TRUE)\approx 0.5540
+\end{equation*}
+</div></div></div></details></div></article><article class="task exercise-like" id="sec-Poisson-Distribution-14-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="sec-Poisson-Distribution-14-4-1-1">What is the probability that 3 calls will arrive during the next ten minutes?</div>
+<div class="solutions"><details id="sec-Poisson-Distribution-14-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-Poisson-Distribution-14-4-2-1"><span class="process-math">\(\lambda=5.8\)</span></div>
+<div class="para logical" id="sec-Poisson-Distribution-14-4-2-2"><div class="displaymath process-math">
+\begin{equation*}
+P(X=3)=POISSON.DIST(3,5.8,FALSE)\approx 0.0985
+\end{equation*}
+</div></div>
+</div></details></div></article><article class="task exercise-like" id="sec-Poisson-Distribution-14-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="sec-Poisson-Distribution-14-5-1-1">What is the probability that no more than 2 calls will arrive during the next ten minutes?</div>
+<div class="solutions"><details id="sec-Poisson-Distribution-14-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-Poisson-Distribution-14-5-2-1"><span class="process-math">\(\lambda=5.8\)</span></div>
+<div class="para logical" id="sec-Poisson-Distribution-14-5-2-2"><div class="displaymath process-math">
+\begin{equation*}
+P(X\leq 2)=POISSON.DIST(2,5.8,TRUE)\approx 0.0715
+\end{equation*}
+</div></div>
+</div></details></div></article></article></details></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-Binomial-Distribution.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-Intro-Sampling.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

@@ -353,7 +353,8 @@ CHISQ.INV(\text{left tail area, degrees of freedom}),\;\;\; CHISQ.INV.RT(\text{r
 </div>
 <details id="sec-hyp-test-single-variance-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">11.2.1</span><span class="period">.</span>
-</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-hyp-test-single-variance-4-1-1">(Similar to Donnelly 13.7)</div> <div class="para" id="sec-hyp-test-single-variance-4-1-2">The volatility of world crude oil prices is important because of its impact on global economic stability.  One measure of volatility is the standard deviation.  The data table in the Excel file below lists the monthly price of crude oil from January 1974 to March 2024.</div> <div class="para" id="sec-hyp-test-single-variance-4-1-3">The standard deviation of crude oil prices between January 1974 and December 2021 was about <span class="process-math">\(\$ 27.4\)</span> a barrel</div> <div class="para" id="sec-hyp-test-single-variance-4-1-4">Assuming <span class="process-math">\(\alpha=0.10\text{,}\)</span> check to see if the standard deviation of crude oil prices between January 2022 and March 2024 has decreased from what it was prior to this time period.  (Use the traditional method of hypothesis testing.)</div> <div class="para" id="sec-hyp-test-single-variance-4-1-5"><a class="external" href="external/sheets/OilPrices.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/OilPrices.xlsx</code></a></div></article></details><div class="para logical" id="sec-hyp-test-single-variance-5">
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-hyp-test-single-variance-4-1-1">(Similar to Donnelly 13.7)</div> <div class="para" id="sec-hyp-test-single-variance-4-1-2">The volatility of world crude oil prices is important because of its impact on global economic stability.  One measure of volatility is the standard deviation.  The data table in the Excel file below lists the monthly price of crude oil from January 1974 to March 2024.</div> <div class="para" id="sec-hyp-test-single-variance-4-1-3">The standard deviation of crude oil prices between January 1974 and December 2021 was about <span class="process-math">\(\$ 27.4\)</span> a barrel</div> <div class="para" id="sec-hyp-test-single-variance-4-1-4">Assuming <span class="process-math">\(\alpha=0.10\text{,}\)</span> check to see if the standard deviation of crude oil prices between January 2022 and March 2024 has decreased from what it was prior to this time period.  (Use the traditional method of hypothesis testing.)</div> <div class="para" id="sec-hyp-test-single-variance-4-1-5"><a class="external" href="external/sheets/OilPrices.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/OilPrices.xlsx</code></a></div>
+<div class="solutions"><details id="sec-hyp-test-single-variance-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-hyp-test-single-variance-4-2-1"><a class="external" href="external/sheets/OilPricesSolutions.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/OilPricesSolutions.xlsx</code></a></div></div></details></div></article></details><div class="para logical" id="sec-hyp-test-single-variance-5">
 <div class="para">In our next example, we will use the p-value method of hypothesis testing.  Once again, the tables for the Chi-square distribution are limited in the precision they can provide for our p-values.  Therefore, we will rely on Excel to compute the p-values using the following formulas:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -382,7 +383,27 @@ CHISQ.DIST(x,df,\text{cumulative}),\;\;\; CHISQ.DIST.RT(x,df)
 </div>
 <details id="sec-hyp-test-single-variance-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">11.2.2</span><span class="period">.</span>
-</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-hyp-test-single-variance-6-1-1">(Donnelly 13.29)</div> <div class="para" id="sec-hyp-test-single-variance-6-1-2">As smartphones have become more sophisticated, their data usage has increased and caused capacity issues with service providers.  High variability in data usage among customers can result in slow connections with the cellphone network.  Suppose a cellphone network would like to test if the standard deviation of monthly data usage for its customers has increased beyond 400 megabytes (MB).  A random sample of 25 customers was found to have a standard deviation of 460 MB.  Using <span class="process-math">\(\alpha=0.05\text{,}\)</span> perform a hypothesis test to determine if the standard deviation for the monthly data usage for the cellphone network has exceeded 400 MB.  Use the p-value method of hypothesis testing.</div></article></details><section class="exercises" id="sec-hyp-test-single-variance-7"><h3 class="heading hide-type">
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-hyp-test-single-variance-6-1-1">(Donnelly 13.29)</div> <div class="para" id="sec-hyp-test-single-variance-6-1-2">As smartphones have become more sophisticated, their data usage has increased and caused capacity issues with service providers.  High variability in data usage among customers can result in slow connections with the cellphone network.  Suppose a cellphone network would like to test if the standard deviation of monthly data usage for its customers has increased beyond 400 megabytes (MB).  A random sample of 25 customers was found to have a standard deviation of 460 MB.  Using <span class="process-math">\(\alpha=0.05\text{,}\)</span> perform a hypothesis test to determine if the standard deviation for the monthly data usage for the cellphone network has exceeded 400 MB.  Use the p-value method of hypothesis testing.</div>
+<div class="solutions"><details id="sec-hyp-test-single-variance-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-hyp-test-single-variance-6-2-1"><span class="process-math">\(n=25\)</span></div>
+<div class="para" id="sec-hyp-test-single-variance-6-2-2"><span class="process-math">\(s=460\Rightarrow s^2=211,600\)</span></div>
+<div class="para" id="sec-hyp-test-single-variance-6-2-3"><span class="process-math">\(\alpha=0.05\)</span></div>
+<div class="para" id="sec-hyp-test-single-variance-6-2-4"><span class="process-math">\(H_0:  \sigma^2\leq 160,000\)</span></div>
+<div class="para" id="sec-hyp-test-single-variance-6-2-5"><span class="process-math">\(H_1:  \sigma^2\gt 400^2 = 160,000\leftarrow \text{ right-tail test}\)</span></div>
+<div class="para logical" id="sec-hyp-test-single-variance-6-2-6"><div class="displaymath process-math">
+\begin{equation*}
+\chi^2=\frac{(25-1)(211,600)}{160,000}\approx 31.74
+\end{equation*}
+</div></div>
+<div class="para logical" id="sec-hyp-test-single-variance-6-2-7"><div class="displaymath process-math">
+\begin{equation*}
+\text{p-value}\approx CHISQ.DIST.RT(31.74, 24)\approx 0.1336
+\end{equation*}
+</div></div>
+<div class="para" id="sec-hyp-test-single-variance-6-2-8">Since p-value <span class="process-math">\(\gt \alpha\text{,}\)</span> we fail to reject <span class="process-math">\(H_0\text{.}\)</span>
+</div>
+<div class="para" id="sec-hyp-test-single-variance-6-2-9">There is not enough evidence to conclude that the standard deviation for monthly data usage for the cell phone network has exceeded 400 MB.</div>
+</div></details></div></article></details><section class="exercises" id="sec-hyp-test-single-variance-7"><h3 class="heading hide-type">
 <span class="type">Exercises</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Exercises</span>
 </h3>
 <article class="exercise exercise-like" id="sec-hyp-test-single-variance-7-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
@@ -420,10 +441,30 @@ CHISQ.DIST(x,df,\text{cumulative}),\;\;\; CHISQ.DIST.RT(x,df)
 <li data-component="feedback" id="_opt_c">
 </ul>
 </div></div></article><article class="task exercise-like" id="sec-hyp-test-single-variance-7-1-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="sec-hyp-test-single-variance-7-1-4-1-1">Compute the value of the test statistic.  (Round the answer to three decimal places.)</div></article><article class="task exercise-like" id="sec-hyp-test-single-variance-7-1-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="sec-hyp-test-single-variance-7-1-5-1-1">Find the critical value(s) for the rejection region and find the p-value of the test statistic.</div></article><article class="task exercise-like" id="sec-hyp-test-single-variance-7-1-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="para" id="sec-hyp-test-single-variance-7-1-6-1-1">Is the test statistic in the rejection region?  Is the p-value less than the significance level?</div></article><article class="task exercise-like" id="sec-hyp-test-single-variance-7-1-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
-<div class="para" id="sec-hyp-test-single-variance-7-1-7-1-1">Do we have sufficient evidence to reject the null hypothesis in favor of the alternative hypothesis?</div></article></article></section></section></div>
+<div class="para" id="sec-hyp-test-single-variance-7-1-4-1-1">Compute the value of the test statistic.  (Round the answer to three decimal places.)</div>
+<div class="solutions"><details id="sec-hyp-test-single-variance-7-1-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-hyp-test-single-variance-7-1-4-2-1"><div class="displaymath process-math">
+\begin{equation*}
+\chi^2=\frac{(53)(1.8)^2}{(2.3)^2}\approx 32.461
+\end{equation*}
+</div></div></div></details></div></article><article class="task exercise-like" id="sec-hyp-test-single-variance-7-1-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="sec-hyp-test-single-variance-7-1-5-1-1">Find the critical value(s) for the rejection region and find the p-value of the test statistic.</div>
+<div class="solutions"><details id="sec-hyp-test-single-variance-7-1-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-hyp-test-single-variance-7-1-5-2-1"><ul class="disc" id="sec-hyp-test-single-variance-7-1-5-2-1-1">
+<li id="sec-hyp-test-single-variance-7-1-5-2-1-1-1">
+<div class="para" id="sec-hyp-test-single-variance-7-1-5-2-1-1-1-1">Critical values:</div>
+<div class="para" id="sec-hyp-test-single-variance-7-1-5-2-1-1-1-2"><span class="process-math">\(\alpha/2=.025\)</span></div>
+<div class="para" id="sec-hyp-test-single-variance-7-1-5-2-1-1-1-3"><span class="process-math">\(CHISQ.INV.RT(.025,54-1)\approx 75.002  \)</span></div>
+<div class="para" id="sec-hyp-test-single-variance-7-1-5-2-1-1-1-4"><span class="process-math">\(CHISQ.INV(.025,54-1)\approx 34.776  \)</span></div>
+</li>
+<li id="sec-hyp-test-single-variance-7-1-5-2-1-1-2">
+<div class="para" id="sec-hyp-test-single-variance-7-1-5-2-1-1-2-1">p-value:</div>
+<div class="para" id="sec-hyp-test-single-variance-7-1-5-2-1-1-2-2"><span class="process-math">\(\approx 2*CHISQ.DIST(32.461,53,1)\approx 0.023\)</span></div>
+</li>
+</ul></div></div></details></div></article><article class="task exercise-like" id="sec-hyp-test-single-variance-7-1-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="sec-hyp-test-single-variance-7-1-6-1-1">Is the test statistic in the rejection region?  Is the p-value less than the significance level?</div>
+<div class="solutions"><details id="sec-hyp-test-single-variance-7-1-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-hyp-test-single-variance-7-1-6-2-1">Yes, the test statistic is in the rejection region and the p-value is less than the significance level.</div></div></details></div></article><article class="task exercise-like" id="sec-hyp-test-single-variance-7-1-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para" id="sec-hyp-test-single-variance-7-1-7-1-1">Do we have sufficient evidence to reject the null hypothesis in favor of the alternative hypothesis?</div>
+<div class="solutions"><details id="sec-hyp-test-single-variance-7-1-7-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-hyp-test-single-variance-7-1-7-2-1">Yes, we have sufficient evidence to reject the null hypothesis and conclude that the standard deviation is different from <span class="process-math">\(2.3\text{.}\)</span>
+</div></div></details></div></article></article></section></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-chi-squared.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-F-dist.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

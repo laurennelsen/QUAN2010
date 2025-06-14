@@ -380,8 +380,18 @@ F=\frac{s_1^2}{s_2^2}.
 <li data-component="feedback" id="_opt_d">
 </ul>
 </div></div></article><article class="task exercise-like" id="sec-hyp-test-two-variances-4-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="sec-hyp-test-two-variances-4-4-1-1">Find the test statistic.</div></article><article class="task exercise-like" id="sec-hyp-test-two-variances-4-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para" id="sec-hyp-test-two-variances-4-5-1-1">What is the p-value?</div></article><article class="task exercise-like" id="sec-hyp-test-two-variances-4-6"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<div class="para" id="sec-hyp-test-two-variances-4-4-1-1">Find the test statistic.</div>
+<div class="solutions"><details id="sec-hyp-test-two-variances-4-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-hyp-test-two-variances-4-4-2-1"><div class="displaymath process-math">
+\begin{equation*}
+F=\frac{s_1^2}{s_2^2}=\frac{(5.8426)^2}{(3.2156)^2}\approx 3.3013
+\end{equation*}
+</div></div></div></details></div></article><article class="task exercise-like" id="sec-hyp-test-two-variances-4-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="sec-hyp-test-two-variances-4-5-1-1">What is the p-value?</div>
+<div class="solutions"><details id="sec-hyp-test-two-variances-4-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-hyp-test-two-variances-4-5-2-1"><div class="displaymath process-math">
+\begin{equation*}
+\text{p-value}\approx F.DIST.RT(3.3013,29-1,30-1)\approx 0.001
+\end{equation*}
+</div></div></div></details></div></article><article class="task exercise-like" id="sec-hyp-test-two-variances-4-6"><h4 class="heading"><span class="codenumber">(e)</span></h4>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
 <div class="exercise-statement"><div class="para" id="sec-hyp-test-two-variances-4-6-1-1">The decision is to...</div></div>
 <ul data-component="multiplechoice" class="exercise-interactives" data-multipleanswers="false">
@@ -410,14 +420,127 @@ F=\frac{s_1^2}{s_2^2}.
 <div class="para" id="sec-hyp-test-two-variances-5-1-2"><a class="external" href="external/sheets/CompanySalaries.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/CompanySalaries.xlsx</code></a></div>
 </div>
 <article class="task exercise-like" id="sec-hyp-test-two-variances-5-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="sec-hyp-test-two-variances-5-2-1-1">Which of the samples has a larger sample standard deviation?</div></article><article class="task exercise-like" id="sec-hyp-test-two-variances-5-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="sec-hyp-test-two-variances-5-3-1-1">Use a <span class="process-math">\(10\%\)</span> level of significance to decide whether there is sufficient evidence that in the Fortune 500 company, the standard deviation of the salary of men is greater than the standard deviation of the salary of women.</div></article></article></details><section class="exercises" id="sec-hyp-test-two-variances-6"><h3 class="heading hide-type">
+<div class="para" id="sec-hyp-test-two-variances-5-2-1-1">Which of the samples has a larger sample standard deviation?</div>
+<div class="solutions"><details id="sec-hyp-test-two-variances-5-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-hyp-test-two-variances-5-2-2-1">Use STDEV.S in Excel to find the sample standard deviations.</div>
+<div class="para logical" id="sec-hyp-test-two-variances-5-2-2-2"><div class="displaymath process-math">
+\begin{equation*}
+s_{\text{men}}=s_1\approx 15.0973
+\end{equation*}
+</div></div>
+<div class="para logical" id="sec-hyp-test-two-variances-5-2-2-3"><div class="displaymath process-math">
+\begin{equation*}
+s_{\text{women}}=s_2\approx 13.9944
+\end{equation*}
+</div></div>
+</div></details></div></article><article class="task exercise-like" id="sec-hyp-test-two-variances-5-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-hyp-test-two-variances-5-3-1-1">Use a <span class="process-math">\(10\%\)</span> level of significance to decide whether there is sufficient evidence that in the Fortune 500 company, the standard deviation of the salary of men is greater than the standard deviation of the salary of women.</div>
+<div class="solutions"><details id="sec-hyp-test-two-variances-5-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para logical" id="sec-hyp-test-two-variances-5-3-2-1"><div class="displaymath process-math">
+\begin{equation*}
+H_0: \sigma_1^2 \leq \sigma_2^2
+\end{equation*}
+</div></div>
+<div class="para logical" id="sec-hyp-test-two-variances-5-3-2-2"><div class="displaymath process-math">
+\begin{equation*}
+H_1: \sigma_1^2 \gt \sigma_2^2
+\end{equation*}
+</div></div>
+<div class="para" id="sec-hyp-test-two-variances-5-3-2-3">Since we have the raw data from the samples, we can use “F-Test Two-Sample for Variances” in the Data Analysis tool in Excel.</div>
+<div class="para" id="sec-hyp-test-two-variances-5-3-2-4"><a class="external" href="external/sheets/CompanySalariesSolution.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/CompanySalariesSolution.xlsx</code></a></div>
+<div class="para" id="sec-hyp-test-two-variances-5-3-2-5">From this, we’ll get a p-value of approximately 0.4182, which is bigger than <span class="process-math">\(\alpha=0.10\text{.}\)</span>  So we fail to reject the null hypothesis and do not have enough evidence to conclude that <span class="process-math">\(\sigma_1^2 \gt \sigma_2^2\text{.}\)</span>
+</div>
+</div></details></div></article></article></details><section class="exercises" id="sec-hyp-test-two-variances-6"><h3 class="heading hide-type">
 <span class="type">Exercises</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Exercises</span>
 </h3>
 <article class="exercise exercise-like" id="sec-hyp-test-two-variances-6-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
 <div id="momsec-hyp-test-two-variances-6-1-1wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momsec-hyp-test-two-variances-6-1-1" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=123043&amp;frame_id=momsec-hyp-test-two-variances-6-1-1"></iframe></div></article><article class="exercise exercise-like" id="sec-hyp-test-two-variances-6-2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
-<div class="para" id="sec-hyp-test-two-variances-6-2-1-1">A pharmaceutical company is about to launch a new manufacturing process in addition to the existing one. The quality control manager believes that the new method results in a different variation in the weights of the capsules. To verify the claim, the samples from each production line were obtained and the results are in the Excel file below (in mg):</div> <div class="para" id="sec-hyp-test-two-variances-6-2-1-2"><a class="external" href="external/sheets/1434306_data.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/1434306_data.xlsx</code></a></div> <div class="para" id="sec-hyp-test-two-variances-6-2-1-3">Use a <span class="process-math">\(5\%\)</span> significance level to test the claim that the standard deviation of the capsule weights in the production line 1 is smaller than the standard deviation of the capsule weights in the production line 2. If normality plots are not provided assume that the samples are from normal populations.</div></article><article class="exercise exercise-like" id="sec-hyp-test-two-variances-6-3"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
-<div class="para" id="sec-hyp-test-two-variances-6-3-1-1">A nonprofit wants to verify the claim that in a certain Fortune 500 company the average salary of female employees is different from the average salary of male employees. Two samples of male and female workers were obtained independently and analyzed. The salaries of workers in the samples are shown in the Excel file below.</div> <div class="para" id="sec-hyp-test-two-variances-6-3-1-2"><a class="external" href="external/sheets/1434305_data.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/1434305_data.xlsx</code></a></div> <div class="para" id="sec-hyp-test-two-variances-6-3-1-3">The standard deviation for the first sample appears to be different from the standard deviation of the second sample. Use a <span class="process-math">\(10\%\)</span> level of significance to decide whether there is sufficient evidence that in the Fortune 500 company, the standard deviation of the salary of males is the same as the standard deviation of the salary of females. Assume that the samples are from normal populations.</div></article><article class="exercise exercise-like" id="sec-hyp-test-two-variances-6-4"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
+<div class="para" id="sec-hyp-test-two-variances-6-2-1-1">A pharmaceutical company is about to launch a new manufacturing process in addition to the existing one. The quality control manager believes that the new method results in a different variation in the weights of the capsules. To verify the claim, the samples from each production line were obtained and the results are in the Excel file below (in mg):</div> <div class="para" id="sec-hyp-test-two-variances-6-2-1-2"><a class="external" href="external/sheets/1434306_data.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/1434306_data.xlsx</code></a></div> <div class="para" id="sec-hyp-test-two-variances-6-2-1-3">Use a <span class="process-math">\(5\%\)</span> significance level to test the claim that the standard deviation of the capsule weights in the production line 1 is smaller than the standard deviation of the capsule weights in the production line 2. If normality plots are not provided assume that the samples are from normal populations.</div>
+<div class="solutions"><details id="sec-hyp-test-two-variances-6-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sec-hyp-test-two-variances-6-2-2-1">In the question, look for the keywords such as mean/average, proportion/percentage, variance/standard deviation! In this case, we have "standard deviation of the capsule weights in the production line" and two populations, thus we are going to perform Two Variances F Hypothesis Test.</div>
+<div class="para logical" id="sec-hyp-test-two-variances-6-2-2-2">
+<div class="para">Find the sample standard deviations for each production line:</div>
+<ul class="disc" id="sec-hyp-test-two-variances-6-2-2-2-1">
+<li id="sec-hyp-test-two-variances-6-2-2-2-1-1">
+<div class="para" id="sec-hyp-test-two-variances-6-2-2-2-1-1-1">Population 1:</div>
+<span class="process-math">\(STDEV.S(A2:E4)\approx 1.074\)</span>
+</li>
+<li id="sec-hyp-test-two-variances-6-2-2-2-1-2">
+<div class="para" id="sec-hyp-test-two-variances-6-2-2-2-1-2-1">Population 2:</div>
+<span class="process-math">\(STDEV.S(A8:E11)\approx 1.909\)</span>
+</li>
+</ul>
+</div>
+<div class="para" id="sec-hyp-test-two-variances-6-2-2-3">Since <span class="process-math">\(1.909\gt 1.074\text{,}\)</span> we’ll let <span class="process-math">\(s_1\approx 1.909\)</span> and <span class="process-math">\(s_2\approx 1.074\text{,}\)</span> and this will be a right-tailed test.</div>
+<div class="para logical" id="sec-hyp-test-two-variances-6-2-2-4">
+<div class="para">Hypotheses:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+H_0: \;\;\sigma_1^2 \leq \sigma_2^2, 
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(\sigma_1\)</span> is the standard deviation of the capsule weights in production line 2 and <span class="process-math">\(\sigma_2\)</span> is the standard deviation of the capsule weights in production line 1 and the units are mg.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+H_1: \;\;\sigma_1^2 \gt \sigma_2^2
+\end{equation*}
+</div>
+</div>
+<div class="para logical" id="sec-hyp-test-two-variances-6-2-2-5">
+<div class="para">Test statistic:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+F=\frac{s_1^2}{s_2^2}\approx \frac{1.074^2}{1.909^2}\approx 3.1574
+\end{equation*}
+</div>
+</div>
+<div class="para logical" id="sec-hyp-test-two-variances-6-2-2-6">
+<div class="para">Now find the p-value:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+F.DIST.RT(3.1574,16-1,11-1)\approx 0.0359
+\end{equation*}
+</div>
+</div>
+<div class="para" id="sec-hyp-test-two-variances-6-2-2-7">Since the p-value is less than <span class="process-math">\(\alpha\text{,}\)</span> we reject the null hypothesis and conclude that <span class="process-math">\(\sigma_1^2 \gt \sigma_2^2\text{,}\)</span> so Production line 2 has a larger standard deviation of capsult weights than Production line 1.</div>
+<div class="para" id="sec-hyp-test-two-variances-6-2-2-8"></div>
+<div class="para" id="sec-hyp-test-two-variances-6-2-2-9">(Alternatively, we can use the “F-Test Two-Sample for Variances” in the Data Analysis tool in Excel.)</div>
+</div></details></div></article><article class="exercise exercise-like" id="sec-hyp-test-two-variances-6-3"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
+<div class="para" id="sec-hyp-test-two-variances-6-3-1-1">A nonprofit wants to verify the claim that in a certain Fortune 500 company the average salary of female employees is different from the average salary of male employees. Two samples of male and female workers were obtained independently and analyzed. The salaries of workers in the samples are shown in the Excel file below.</div> <div class="para" id="sec-hyp-test-two-variances-6-3-1-2"><a class="external" href="external/sheets/1434305_data.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/1434305_data.xlsx</code></a></div> <div class="para" id="sec-hyp-test-two-variances-6-3-1-3">The standard deviation for the first sample appears to be different from the standard deviation of the second sample. Use a <span class="process-math">\(10\%\)</span> level of significance to decide whether there is sufficient evidence that in the Fortune 500 company, the standard deviation of the salary of males is the same as the standard deviation of the salary of females. Assume that the samples are from normal populations.</div>
+<div class="solutions"><details id="sec-hyp-test-two-variances-6-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-hyp-test-two-variances-6-3-2-1">In the question, look for the keywords such as mean/average, proportion/percentage, variance/standard deviation! In this case, we have "the standard deviation of the salary" and two populations, thus we are going to perform Two Variances F Hypothesis Test.</div>
+<div class="para" id="sec-hyp-test-two-variances-6-3-2-2">Unfortunately, the Data Analysis tool in Excel only provides the results for a one-tail hypothesis test for comparing two population variances.</div>
+<div class="para logical" id="sec-hyp-test-two-variances-6-3-2-3"><ul class="disc" id="sec-hyp-test-two-variances-6-3-2-3-1">
+<li id="sec-hyp-test-two-variances-6-3-2-3-1-1"><div class="para" id="sec-hyp-test-two-variances-6-3-2-3-1-1-1">In the sample of females:  <span class="process-math">\(s=STDEV.S(A2:E4)\approx 13.1744\)</span>
+</div></li>
+<li id="sec-hyp-test-two-variances-6-3-2-3-1-2"><div class="para" id="sec-hyp-test-two-variances-6-3-2-3-1-2-1">In the sample of males:  <span class="process-math">\(s=STDEV.S(A8:E10)\approx 10.7037\)</span>
+</div></li>
+</ul></div>
+<div class="para" id="sec-hyp-test-two-variances-6-3-2-4">Let females be population 1 and males be population 2.</div>
+<div class="para logical" id="sec-hyp-test-two-variances-6-3-2-5">
+<div class="para">Hypotheses:</div>
+<ul class="disc" id="sec-hyp-test-two-variances-6-3-2-5-1">
+<li id="sec-hyp-test-two-variances-6-3-2-5-1-1"><div class="para" id="sec-hyp-test-two-variances-6-3-2-5-1-1-1"><span class="process-math">\(\displaystyle H_0:\;\;\sigma_1^2=\sigma_2^2\)</span></div></li>
+<li id="sec-hyp-test-two-variances-6-3-2-5-1-2"><div class="para" id="sec-hyp-test-two-variances-6-3-2-5-1-2-1"><span class="process-math">\(\displaystyle H_1:\;\;\sigma_1^2\neq\sigma_2^2\)</span></div></li>
+</ul>
+</div>
+<div class="para logical" id="sec-hyp-test-two-variances-6-3-2-6">
+<div class="para">Test statistic:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+F=\frac{s_1^2}{s_2^2}=\frac{13.1744^2}{10.7037^2}\approx 1.5149
+\end{equation*}
+</div>
+</div>
+<div class="para" id="sec-hyp-test-two-variances-6-3-2-7">Find the critical value, <span class="process-math">\(F_{\alpha/2}\text{:}\)</span>
+</div>
+<div class="para" id="sec-hyp-test-two-variances-6-3-2-8"><span class="process-math">\(\alpha=.1\Rightarrow \alpha/2=.05\)</span></div>
+<div class="para" id="sec-hyp-test-two-variances-6-3-2-9"><span class="process-math">\(F_{\alpha/2}=F.INV.RT(.05, 14-1, 14-1)\approx 2.5769\)</span></div>
+<div class="para" id="sec-hyp-test-two-variances-6-3-2-10">Even though this is a two-tailed test, we only consider the rejection region on the right side of the distribution.  This is because when comparing two population variances, we always choose population 1 to be the one with the larger sample standard deviation.  This guarantees that <span class="process-math">\(\frac{s_1^2}{s_2^2}\gt 1\)</span> so the test statistic will be bigger than <span class="process-math">\(1\text{.}\)</span>
+</div>
+<div class="para" id="sec-hyp-test-two-variances-6-3-2-11">Since the test statistic is not in the rejection region, we fail to reject the null hypothesis, and we do not have enough evidence to conclude that <span class="process-math">\(\sigma_1^2\neq\sigma_2^2\text{.}\)</span>
+</div>
+</div></details></div></article><article class="exercise exercise-like" id="sec-hyp-test-two-variances-6-4"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
 <div class="para" id="sec-hyp-test-two-variances-6-4-1">A group of economists wants to study the average annual leave among the US and EU workers. Two samples of US and EU workers were obtained independently and analyzed. The sample of 17 US workers had the average annual leave of 20.84 days and the standard deviation 4.378 days. The sample of 11 EU workers had the average annual leave of 25.92 days and the standard deviation 3.655 days. The standard deviation for the first sample appears to be different from the standard deviation of the second sample. Use a <span class="process-math">\(10\%\)</span> level of significance to decide whether there is sufficient evidence that the standard deviation of the annual leave of US workers is greater than the standard deviation of the annual leave of EU workers. If normality plots are not provided assume that the samples are from normal populations.</div>
 <details id="sec-hyp-test-two-variances-6-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="sec-hyp-test-two-variances-6-4-2-1">Population 1:  US workers, Population 2:  EU workers</div>
@@ -448,7 +571,30 @@ F=\frac{s_1^2}{s_2^2}\approx 1.43475
 </div></details></article><article class="exercise exercise-like" id="sec-hyp-test-two-variances-6-5"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
 <div id="momsec-hyp-test-two-variances-6-5-1wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momsec-hyp-test-two-variances-6-5-1" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=634787&amp;frame_id=momsec-hyp-test-two-variances-6-5-1"></iframe></div></article><article class="exercise exercise-like" id="sec-hyp-test-two-variances-6-6"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
 <div id="momsec-hyp-test-two-variances-6-6-1wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momsec-hyp-test-two-variances-6-6-1" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=710429&amp;frame_id=momsec-hyp-test-two-variances-6-6-1"></iframe></div></article><article class="exercise exercise-like" id="sec-hyp-test-two-variances-6-7"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
-<div class="para" id="sec-hyp-test-two-variances-6-7-1-1">Is the variance for the amount of money, in dollars, that shoppers spend on Saturdays at the mall the same as the variance for the amount of money that shoppers spend on Sundays at the mall? Suppose that the Excel file below shows the results of a study:</div> <div class="para" id="sec-hyp-test-two-variances-6-7-1-2"><a class="external" href="external/sheets/1434301_data.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/1434301_data.xlsx</code></a></div> <div class="para" id="sec-hyp-test-two-variances-6-7-1-3">Use a <span class="process-math">\(5\%\)</span> significance level to test the claim that the standard deviation for the amount of money that shoppers spend on Saturday is the same as the standard deviation for the amount of money that shoppers spend on Sunday. If normality plots are not provided assume that the samples are from normal populations.</div></article></section></section></div>
+<div class="para" id="sec-hyp-test-two-variances-6-7-1-1">Is the variance for the amount of money, in dollars, that shoppers spend on Saturdays at the mall the same as the variance for the amount of money that shoppers spend on Sundays at the mall? Suppose that the Excel file below shows the results of a study:</div> <div class="para" id="sec-hyp-test-two-variances-6-7-1-2"><a class="external" href="external/sheets/1434301_data.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/1434301_data.xlsx</code></a></div> <div class="para" id="sec-hyp-test-two-variances-6-7-1-3">Use a <span class="process-math">\(5\%\)</span> significance level to test the claim that the standard deviation for the amount of money that shoppers spend on Saturday is the same as the standard deviation for the amount of money that shoppers spend on Sunday. If normality plots are not provided assume that the samples are from normal populations.</div>
+<div class="solutions"><details id="sec-hyp-test-two-variances-6-7-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-hyp-test-two-variances-6-7-2-1">Procedure: In the question, look for the keywords such as mean/average, proportion/percentage, variance/standard deviation! In this case, we have "standard deviation for the amount of money that shoppers spend" and two populations, thus we are going to perform Two Variances F Hypothesis Test.</div>
+<div class="para" id="sec-hyp-test-two-variances-6-7-2-2">Saturday:  <span class="process-math">\(s=STDEV.S(A2:E3)\approx 13.9939 \)</span>
+</div>
+<div class="para" id="sec-hyp-test-two-variances-6-7-2-3">Sunday:  <span class="process-math">\(s=STDEV.S(A7:E10)\approx 13.7633 \)</span>
+</div>
+<div class="para" id="sec-hyp-test-two-variances-6-7-2-4">So let Saturday be “population 1” and Saturday be “population 2”.</div>
+<div class="para" id="sec-hyp-test-two-variances-6-7-2-5"><span class="process-math">\(H_0:  \frac{\sigma_1^2}{\sigma_2^2}=1\)</span></div>
+<div class="para" id="sec-hyp-test-two-variances-6-7-2-6"><span class="process-math">\(H_1:  \frac{\sigma_1^2}{\sigma_2^2}\neq 1\)</span></div>
+<div class="para logical" id="sec-hyp-test-two-variances-6-7-2-7">
+<div class="para">Test statistic:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+F=\frac{s_1^2}{s_2^2}=\frac{13.9939^2}{13.7633^2}\approx 1.03377991
+\end{equation*}
+</div>
+</div>
+<div class="para" id="sec-hyp-test-two-variances-6-7-2-8">Critical value:</div>
+<div class="para" id="sec-hyp-test-two-variances-6-7-2-9"><span class="process-math">\(\alpha=5\%\Rightarrow \alpha/2=.025\)</span></div>
+<div class="para" id="sec-hyp-test-two-variances-6-7-2-10"><span class="process-math">\(F_{.025}=F.INV.RT(.025, 10-1, 19-1)\approx 2.92911\)</span></div>
+<div class="para" id="sec-hyp-test-two-variances-6-7-2-11">Since the test statistic is not in the rejection region, we fail to reject the null hypothesis, and we do not have enough evidence to conclude that <span class="process-math">\(\frac{\sigma_1^2}{\sigma_2^2}\neq 1\text{.}\)</span>
+</div>
+</div></details></div></article></section></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-F-dist.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-Hypothesis-Testing-Two-Populations.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

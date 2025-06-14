@@ -363,10 +363,30 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="sec-Confidence-Interval-for-Proportion-6-1-2">The IRS reported that <span class="process-math">\(85\%\)</span> of individual tax returns were filed electronically in 2017.  A random sample of 240 tax returns from 2018 was selected.  From this sample, 187 were filed electronically.</div>
 </div>
 <article class="task exercise-like" id="sec-Confidence-Interval-for-Proportion-6-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="sec-Confidence-Interval-for-Proportion-6-2-1-1">What is the point estimate based on this sample?</div></article><article class="task exercise-like" id="sec-Confidence-Interval-for-Proportion-6-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="sec-Confidence-Interval-for-Proportion-6-3-1-1">What is the margin of error for this sample?</div></article><article class="task exercise-like" id="sec-Confidence-Interval-for-Proportion-6-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="sec-Confidence-Interval-for-Proportion-6-4-1-1">Construct a <span class="process-math">\(90\%\)</span> confidence interval to estimate the actual proportion of taxpayers who filed electronically in 2018?</div></article><article class="task exercise-like" id="sec-Confidence-Interval-for-Proportion-6-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para" id="sec-Confidence-Interval-for-Proportion-6-5-1-1">Is there any evidence that this proportion has changed since 2017 based on this sample?</div></article></article></details></section></div>
+<div class="para" id="sec-Confidence-Interval-for-Proportion-6-2-1-1">What is the point estimate based on this sample?</div>
+<div class="solutions"><details id="sec-Confidence-Interval-for-Proportion-6-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-Confidence-Interval-for-Proportion-6-2-2-1"><div class="displaymath process-math">
+\begin{equation*}
+\overline{p}=\frac{187}{240}\approx 0.779
+\end{equation*}
+</div></div></div></details></div></article><article class="task exercise-like" id="sec-Confidence-Interval-for-Proportion-6-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-Confidence-Interval-for-Proportion-6-3-1-1">What is the margin of error for this sample?</div>
+<div class="solutions"><details id="sec-Confidence-Interval-for-Proportion-6-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-Confidence-Interval-for-Proportion-6-3-2-1"><span class="process-math">\(\hat{\sigma_p}=\sqrt{\frac{.779(1-.779)}{240}}\approx .0268\)</span></div>
+<div class="para" id="sec-Confidence-Interval-for-Proportion-6-3-2-2"><span class="process-math">\(\alpha=0.10\rightarrow\alpha/2=.05\rightarrow z_{.05}=NORM.S.INV(.95)\approx 1.645\)</span></div>
+<div class="para" id="sec-Confidence-Interval-for-Proportion-6-3-2-3"><span class="process-math">\(ME_{\overline{p}}\approx 1.645\cdot (.0268)\)</span></div>
+<div class="para logical" id="sec-Confidence-Interval-for-Proportion-6-3-2-4"><div class="displaymath process-math">
+\begin{equation*}
+ME_{\overline{p}}\approx 0.0441
+\end{equation*}
+</div></div>
+</div></details></div></article><article class="task exercise-like" id="sec-Confidence-Interval-for-Proportion-6-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="sec-Confidence-Interval-for-Proportion-6-4-1-1">Construct a <span class="process-math">\(90\%\)</span> confidence interval to estimate the actual proportion of taxpayers who filed electronically in 2018?</div>
+<div class="solutions"><details id="sec-Confidence-Interval-for-Proportion-6-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-Confidence-Interval-for-Proportion-6-4-2-1"><span class="process-math">\(\overline{p}\pm ME_{\overline{p}}\rightarrow .779\pm .0441\)</span></div>
+<div class="para" id="sec-Confidence-Interval-for-Proportion-6-4-2-2">We are <span class="process-math">\(90\%\)</span> confident that <span class="process-math">\(0.7349\lt p \lt 0.8231\text{.}\)</span>  (That is, we are <span class="process-math">\(90\%\)</span> confident that the proportion of taxpayers who filed electronically in 2018 is between <span class="process-math">\(73.49\%\)</span> and <span class="process-math">\(82.31\%\text{.}\)</span>)</div>
+</div></details></div></article><article class="task exercise-like" id="sec-Confidence-Interval-for-Proportion-6-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="sec-Confidence-Interval-for-Proportion-6-5-1-1">Is there any evidence that this proportion has changed since 2017 based on this sample?</div>
+<div class="solutions"><details id="sec-Confidence-Interval-for-Proportion-6-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-Confidence-Interval-for-Proportion-6-5-2-1">Since 0.85 does not fall in the interval, there is evidence that the proportion of electronic filers has changed.</div></div></details></div></article></article></details></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-Confidence-Interval-for-Mean-Sigma-Unknown.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-Determining-Sample-Size.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
