@@ -113,7 +113,7 @@ A bank expects to receive six bad checks per day, on average. What is the probab
 
         <p>
           The probability of exactly <m>X</m> occurrences over a given interval is:
-          <me>P(X)=\frac{\lambda^Xe^{-\lambda}}{X!}\text{, where <m>\lambda=</m>the mean number of occurrences over the interval.}</me>
+          <me>P(X)=\frac{\lambda^Xe^{-\lambda}}{X!}\text{, where }\lambda=\text{the mean number of occurrences over the interval.}</me>
         </p>
 
         <p>
