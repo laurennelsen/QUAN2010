@@ -2,7 +2,7 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="6908">
 <statement>
 <p>
-In a study, the data you collect is Favorite candy bar.</p>
+In a study, the data you collect is Weight in pounds.</p>
 <p>
 This data is:</p>
 <p><ol style="list-style-type:upper-alpha"><li>Quantitative</li> 
@@ -12,6 +12,6 @@ This data is:</p>
 
 </statement>
 <solution>
-<p><ul><li>B: Qualitative</li></ul></p>
+<p><ul><li>A: Quantitative</li></ul></p>
 </solution>
 </myopenmath>
