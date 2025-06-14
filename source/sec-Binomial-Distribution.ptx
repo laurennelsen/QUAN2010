@@ -109,7 +109,7 @@
         In Excel:
         </p>
         <p>
-          <m>\text{The formula is } BINOM.DIST(x,n,p,\text{cumulative})\text{, where }\text{cumulative=TRUE (<m>x</m> or fewer successes) or FALSE (exactly <m>x</m> successes)}</m>
+          <m>\text{The formula is } BINOM.DIST(x,n,p,\text{cumulative})\text{, where }\text{cumulative=TRUE (x or fewer successes) or FALSE (exactly x successes)}</m>
         </p>
         <p>
         <me>\boxed{ P(X\leq x)=BINOM.DIST(x,n,p,TRUE)\;\;\;\text{ and }\;\;\; P(X=x)=BINOM.DIST(x,n,p,FALSE) }</me>

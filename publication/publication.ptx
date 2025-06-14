@@ -19,10 +19,10 @@
     <!-- There are four components (statement/hint/answer/solution) for each -->
     <!-- of five exercise types (inline/divisional/worksheet/reading/        -->
     <!-- project). Some examples:                                            -->
-    <exercise-inline statement="yes" hint="yes" answer="yes" solution="yes" />
-    <exercise-divisional statement="yes" hint="yes" answer="yes" solution="yes" />
-    <question statement="yes" hint="yes" answer="yes" solution="yes"/>
-    <investigation statement="yes" hint="yes" answer="yes" solution="yes"/>
+    <exercise-inline statement="yes" hint="yes" answer="no" solution="no" />
+    <exercise-divisional statement="yes" hint="yes" answer="no" solution="no" />
+    <question statement="yes" hint="yes" answer="no" solution="no"/>
+    <investigation statement="yes" hint="yes" answer="no" solution="no"/>
 
     <!-- Style of fill-in-the-blanks: -->
     <fillin textstyle="underline" mathstyle="shade" />
