@@ -102,7 +102,7 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.7.3';
+eBookConfig.runestone_version = '7.7.6';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
@@ -390,162 +390,15 @@ z_p = \frac{(\overline{p}_1-\overline{p}_2)-0}{\sqrt{\hat{p}(1-\hat{p})\left(\fr
 </h3>
 <div class="para" id="sec-two-proportions-indep-samples-10-1">Unfortunately, the <em class="emphasis">Data Analysis</em> tool in Excel does not perform the calculations for this scenario, so we will do all of these problems “by hand”.</div></article><details id="sec-two-proportions-indep-samples-11" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">12.4.2</span><span class="period">.</span>
-</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-two-proportions-indep-samples-11-1-1">(Donnelly 10.37)</div> <div class="para" id="sec-two-proportions-indep-samples-11-1-2">Economists theorize that the 2007-2008 recession affected men more than women because men are typically employed in industries that have been hit hardest by the recession.  Women, on the other hand, are typically employed in services which are considered more recession resistant.  A sample of 170 men and a sample of 150 women were drawn.  In those samples, 21 men were unemployed, and 11 of the women were unemployed.  Perform a hypothesis test using <span class="process-math">\(\alpha=0.05\)</span> to determine if the unemployment rate for men is higher than the rate for women.</div>
-<div class="solutions"><details id="sec-two-proportions-indep-samples-11-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
-<div class="para logical" id="sec-two-proportions-indep-samples-11-2-1">
-<div class="para">critical value:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-NORM.S.INV(0.95)\approx 1.645
-\end{equation*}
-</div>
-</div>
-<div class="para" id="sec-two-proportions-indep-samples-11-2-2">population 1 = men</div>
-<div class="para" id="sec-two-proportions-indep-samples-11-2-3">population 2 = women</div>
-<div class="para logical" id="sec-two-proportions-indep-samples-11-2-4">
-<div class="displaymath process-math">
-\begin{equation*}
-n_1=170,\; x_1=21,\; \overline{p}_1=\frac{21}{170}\approx 0.124
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-n_2=150,\; x_2=11,\; \overline{p}_2=\frac{11}{150}\approx 0.073
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\hat{p}=\frac{21+11}{170+150}=0.1
-\end{equation*}
-</div>
-</div>
-<div class="para logical" id="sec-two-proportions-indep-samples-11-2-5">
-<div class="para">test statistic:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-z_p\approx\frac{(0.124-0.073)-0}{0.1(0.9)\left(\frac{1}{170}+\frac{1}{150}\right)}\approx 1.52
-\end{equation*}
-</div>
-</div>
-<div class="para logical" id="sec-two-proportions-indep-samples-11-2-6">
-<div class="displaymath process-math">
-\begin{equation*}
-\text{test statistic}\lt \text{ critical value}\text{,}
-\end{equation*}
-</div>
-<div class="para">so fail to reject <span class="process-math">\(H_0\)</span>
-</div>
-</div>
-<div class="para" id="sec-two-proportions-indep-samples-11-2-7">There is not enough evidence to conclude that the unemployment rate is higher for men than women.</div>
-</div></details></div></article></details><details id="sec-two-proportions-indep-samples-12" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-two-proportions-indep-samples-11-1-1">(Donnelly 10.37)</div> <div class="para" id="sec-two-proportions-indep-samples-11-1-2">Economists theorize that the 2007-2008 recession affected men more than women because men are typically employed in industries that have been hit hardest by the recession.  Women, on the other hand, are typically employed in services which are considered more recession resistant.  A sample of 170 men and a sample of 150 women were drawn.  In those samples, 21 men were unemployed, and 11 of the women were unemployed.  Perform a hypothesis test using <span class="process-math">\(\alpha=0.05\)</span> to determine if the unemployment rate for men is higher than the rate for women.</div></article></details><details id="sec-two-proportions-indep-samples-12" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">12.4.3</span><span class="period">.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec-two-proportions-indep-samples-12-1">
 <div class="para" id="sec-two-proportions-indep-samples-12-1-1">(Donnelly 10.61)</div>
 <div class="para" id="sec-two-proportions-indep-samples-12-1-2">Negative equity (also known as being “underwater”) refers to a scenario where the market value of a residence is worth less than the outstanding balance on the mortgage for that home.  Suppose the Federal Housing Administration (FHA), which is the government agency charged with supporting the home financing market would like to test the hypothesis that the proportion of home mortgages with negative equity in Florida is more than <span class="process-math">\(7\%\)</span> higher than the national proportion.  A random sample of <span class="process-math">\(180\)</span> mortgages from Florida found that 67 were underwater.  A random sample of 190 mortgages across the United States found that 42 were underwater.</div>
 </div>
 <article class="task exercise-like" id="sec-two-proportions-indep-samples-12-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="sec-two-proportions-indep-samples-12-2-1-1">Using <span class="process-math">\(\alpha=0.05\text{,}\)</span> perform this hypothesis test for the FHA.</div>
-<div class="solutions"><details id="sec-two-proportions-indep-samples-12-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
-<div class="para" id="sec-two-proportions-indep-samples-12-2-2-1">population 1:  Florida, population 2: US</div>
-<div class="para logical" id="sec-two-proportions-indep-samples-12-2-2-2">
-<div class="displaymath process-math">
-\begin{equation*}
-n_1=180,\; x_1=67,\; p_1=\frac{67}{180}\approx 0.372
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-n_2=190,\; x_2=42,\; p_2=\frac{42}{190}\approx 0.221
-\end{equation*}
-</div>
-</div>
-<div class="para logical" id="sec-two-proportions-indep-samples-12-2-2-3">
-<div class="displaymath process-math">
-\begin{equation*}
-H_0: p_1-p_2\leq 0.07
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-H_1: p_1-p_2\gt 0.07
-\end{equation*}
-</div>
-</div>
-<div class="para" id="sec-two-proportions-indep-samples-12-2-2-4">Critical value:  <span class="process-math">\(NORM.S.INV(0.95)\approx 1.645\)</span>
-</div>
-<div class="para logical" id="sec-two-proportions-indep-samples-12-2-2-5"><div class="displaymath process-math">
-\begin{equation*}
-\sigma_{p_1-p_2}\approx \sqrt{\frac{0.372(0.628)}{180}+\frac{0.221(0.779)}{190}}\approx 0.0469
-\end{equation*}
-</div></div>
-<div class="para logical" id="sec-two-proportions-indep-samples-12-2-2-6">
-<div class="para">Test statistic:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-z_p\approx \frac{(0.372-0.221)-0.7}{0.0469}\approx 1.73
-\end{equation*}
-</div>
-</div>
-<div class="para" id="sec-two-proportions-indep-samples-12-2-2-7">Since the test statistic is bigger than the critical value, and this is a right-tailed test, we reject <span class="process-math">\(H_0\text{.}\)</span>
-</div>
-<div class="para" id="sec-two-proportions-indep-samples-12-2-2-8">There is enough evidence to conclude that the proportion of underwater mortgages in FL is more than <span class="process-math">\(7\%\)</span> higher than nationwide.</div>
-</div></details></div></article><article class="task exercise-like" id="sec-two-proportions-indep-samples-12-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="sec-two-proportions-indep-samples-12-3-1-1">Construct a <span class="process-math">\(95\%\)</span> confidence interval to estimate the difference in the proportion of underwater mortgages for these two populations.  Interpret the results.</div>
-<div class="solutions"><details id="sec-two-proportions-indep-samples-12-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
-<div class="para logical" id="sec-two-proportions-indep-samples-12-3-2-1">
-<div class="para">Formula:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-(\overline{p}_1-\overline{p}_2)\pm z_{\alpha/2}\cdot\sigma_{p_1-p_2}
-\end{equation*}
-</div>
-</div>
-<div class="para logical" id="sec-two-proportions-indep-samples-12-3-2-2"><div class="displaymath process-math">
-\begin{equation*}
-\overline{p}_1-\overline{p}_2\approx 0.372-0.221=0.151
-\end{equation*}
-</div></div>
-<div class="para logical" id="sec-two-proportions-indep-samples-12-3-2-3">
-<div class="displaymath process-math">
-\begin{equation*}
-z_{\alpha/2}=NORM.S.INV(0.975)\approx 1.96
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\sigma_{p_1-p_2}\approx 0.0469
-\end{equation*}
-</div>
-</div>
-<div class="para" id="sec-two-proportions-indep-samples-12-3-2-4">Margin of error: <span class="process-math">\(1.96(0.0469)\approx 0.0919\)</span>
-</div>
-<div class="para logical" id="sec-two-proportions-indep-samples-12-3-2-5">
-<div class="para">LCL:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-0.151-0.0919\approx 0.0591
-\end{equation*}
-</div>
-</div>
-<div class="para logical" id="sec-two-proportions-indep-samples-12-3-2-6">
-<div class="para">UCL:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-0.151+0.0919\approx 0.2429
-\end{equation*}
-</div>
-</div>
-<div class="para logical" id="sec-two-proportions-indep-samples-12-3-2-7">
-<div class="para">Interval: We are <span class="process-math">\(95\%\)</span> confident that</div>
-<div class="displaymath process-math">
-\begin{equation*}
-0.0591\lt p_1-p_2\lt 0.2429.
-\end{equation*}
-</div>
-</div>
-<div class="para" id="sec-two-proportions-indep-samples-12-3-2-8">Since <span class="process-math">\(.07\)</span> is in the interval, we cannot conclude that the difference between <span class="process-math">\(p_1\)</span> and <span class="process-math">\(p_2\)</span> is more than <span class="process-math">\(7\%\text{.}\)</span>
-</div>
-</div></details></div></article></article></details></section></div>
+<div class="para" id="sec-two-proportions-indep-samples-12-2-1-1">Using <span class="process-math">\(\alpha=0.05\text{,}\)</span> perform this hypothesis test for the FHA.</div></article><article class="task exercise-like" id="sec-two-proportions-indep-samples-12-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-two-proportions-indep-samples-12-3-1-1">Construct a <span class="process-math">\(95\%\)</span> confidence interval to estimate the difference in the proportion of underwater mortgages for these two populations.  Interpret the results.</div></article></article></details></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-two-means-dependent.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-Intro-to-Regression-Modeling.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

@@ -102,7 +102,7 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.7.3';
+eBookConfig.runestone_version = '7.7.6';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
@@ -400,29 +400,9 @@ z_{\overline{x}} = \frac{(\overline{x}_1 - \overline{x}_2)-(\mu_1-\mu_2)_{H_0}}{
 <div class="para" id="sec-two-means-independent-5">Now let’s demonstrate the two ways we can perform this type of hypothesis test.  First, in <a href="sec-two-means-independent.html#ex-two-means-hand" class="xref" data-knowl="./knowl/xref/ex-two-means-hand.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 12.2.2">Exercise 12.2.2</a> we will complete the hypothesis test by hand, manually computing all of the required calculations.  Then in <a href="sec-two-means-independent.html#ex-two-means-Excel" class="xref" data-knowl="./knowl/xref/ex-two-means-Excel.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 12.2.3">Exercise 12.2.3</a>&gt; we will rely on Excel to do the calculations.  After stating the two hypotheses, we will navigate to the <em class="emphasis">Data Analysis</em> tool and choose <em class="emphasis">z-Test Two-Sample for Means</em> to complete the test.</div>
 <details id="ex-two-means-hand" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">12.2.2</span><span class="period">.</span>
-</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="ex-two-means-hand-1-1">(Donnelly 10.7)</div> <div class="para" id="ex-two-means-hand-1-2">Suppose the Bureau of Labor Statistics would like to investigate if the average retirement age for a worker in Japan is higher than the average retirement age for a worker in the United States.  A random sample of 30 retired U.S. workers had an average retirement age of 64.6 years.  A random sample of 30 retired Japanese workers had an average retirement age of 67.5 years.  Assume the population standard deviation for the retirement age in the U.S. is 4.0 years and for Japan is 4.5 years.  Perform a hypothesis test using <span class="process-math">\(\alpha=0.05\)</span> to determine if the average retirement age in Japan is higher than it is in the United States.</div>
-<div class="solutions"><details id="ex-two-means-hand-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
-<div class="para" id="ex-two-means-hand-2-1">Population 1 = average retirement age in Japan</div>
-<div class="para" id="ex-two-means-hand-2-2">Population 2 = average retirement age in US</div>
-<div class="para" id="ex-two-means-hand-2-3"><span class="process-math">\(\alpha=0.05,\; n_1=n_2=30,\; \overline{x}_1=67.5,\; \overline{x}_2=64.6,\; \sigma_1=4.5,\; \sigma_2=4.0\)</span></div>
-<div class="para" id="ex-two-means-hand-2-4"><span class="process-math">\(H_0: \; \mu_1-\mu_2\leq 0\)</span></div>
-<div class="para" id="ex-two-means-hand-2-5"><span class="process-math">\(H_1: \; \mu_1-\mu_2\gt 0\)</span></div>
-<div class="para" id="ex-two-means-hand-2-6">critical value: <span class="process-math">\(NORM.S.INV(0.95)\approx 1.645\)</span>
-</div>
-<div class="para" id="ex-two-means-hand-2-7">standard error: <span class="process-math">\(\sigma_{\overline{x}_1-\overline{x}_2}=\sqrt{\frac{(4.5)^2}{30}+\frac{(4.0)^2}{30}}\approx 1.0992\)</span>
-</div>
-<div class="para" id="ex-two-means-hand-2-8">test statistic: <span class="process-math">\(z_{\overline{x}}\approx \frac{(67.5-64.6)-0}{1.0992}\approx 2.64\)</span>
-</div>
-<div class="para" id="ex-two-means-hand-2-9">Since the test statistic is bigger than the critical value and this is a right-tail test, we reject <span class="process-math">\(H_0\text{.}\)</span>
-</div>
-<div class="para" id="ex-two-means-hand-2-10">There is enough evidence to conclude that the average retirement age in Japan is higher than in the USA.</div>
-</div></details></div></article></details><details id="ex-two-means-Excel" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="ex-two-means-hand-1-1">(Donnelly 10.7)</div> <div class="para" id="ex-two-means-hand-1-2">Suppose the Bureau of Labor Statistics would like to investigate if the average retirement age for a worker in Japan is higher than the average retirement age for a worker in the United States.  A random sample of 30 retired U.S. workers had an average retirement age of 64.6 years.  A random sample of 30 retired Japanese workers had an average retirement age of 67.5 years.  Assume the population standard deviation for the retirement age in the U.S. is 4.0 years and for Japan is 4.5 years.  Perform a hypothesis test using <span class="process-math">\(\alpha=0.05\)</span> to determine if the average retirement age in Japan is higher than it is in the United States.</div></article></details><details id="ex-two-means-Excel" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">12.2.3</span><span class="period">.</span>
-</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="ex-two-means-Excel-1-1">(Donnelly Your Turn 1)</div> <div class="para" id="ex-two-means-Excel-1-2">Major League Baseball officials (and many fans) have been concerned about the lengths of games, particularly playoff games.  Suppose the officials would like to test the hypothesis that the mean length of a playoff game is longer than the mean length of a regular season game.  The data in the Excel file below shows the length of games, in minutes, for randomly selected games from the regular season and from the playoffs.  Assume the standard deviations of the playoff and regular season games are 25 and 21 minutes respectively.  Using <span class="process-math">\(\alpha = 0.02\text{,}\)</span> can we conclude that playoff games are longer, on average, than regular season games?</div> <div class="para" id="ex-two-means-Excel-1-3"><a class="external" href="external/sheets/MLBGames.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/MLBGames.xlsx</code></a></div>
-<div class="solutions"><details id="ex-two-means-Excel-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
-<div class="para" id="ex-two-means-Excel-2-1"><a class="external" href="external/sheets/MLBGamesSolution.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/MLBGamesSolution.xlsx</code></a></div>
-<div class="para" id="ex-two-means-Excel-2-2">The sample provides enough evidence to conclude that the average length of playoff games is longer than the average length of regular season games.</div>
-</div></details></div></article></details><article class="definition definition-like" id="def-confidence-two-means-known-sd"><h3 class="heading">
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="ex-two-means-Excel-1-1">(Donnelly Your Turn 1)</div> <div class="para" id="ex-two-means-Excel-1-2">Major League Baseball officials (and many fans) have been concerned about the lengths of games, particularly playoff games.  Suppose the officials would like to test the hypothesis that the mean length of a playoff game is longer than the mean length of a regular season game.  The data in the Excel file below shows the length of games, in minutes, for randomly selected games from the regular season and from the playoffs.  Assume the standard deviations of the playoff and regular season games are 25 and 21 minutes respectively.  Using <span class="process-math">\(\alpha = 0.02\text{,}\)</span> can we conclude that playoff games are longer, on average, than regular season games?</div> <div class="para" id="ex-two-means-Excel-1-3"><a class="external" href="external/sheets/MLBGames.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/MLBGames.xlsx</code></a></div></article></details><article class="definition definition-like" id="def-confidence-two-means-known-sd"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">12.2.4</span><span class="period">.</span>
 </h3>
 <div class="para logical" id="def-confidence-two-means-known-sd-1-1">
@@ -466,67 +446,7 @@ z_{\overline{x}} = \frac{(\overline{x}_1 - \overline{x}_2)-(\mu_1-\mu_2)_{H_0}}{
 <th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(36\)</span></th>
 <th scope="col" class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\$ 27\)</span></th>
 </tr>
-</table></div></div> <div class="para" id="sec-two-means-independent-9-1-4">Construct a <span class="process-math">\(90 \%\)</span> confidence interval to estimate the difference in the average cost of a one-week rental between these two types of cars at the airport.  Can you conclude that a difference exists in the average rental price of the two types of cars?</div>
-<div class="solutions"><details id="sec-two-means-independent-9-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
-<div class="para logical" id="sec-two-means-independent-9-2-1">
-<ul class="disc" id="sec-two-means-independent-9-2-1-1">
-<li id="sec-two-means-independent-9-2-1-1-1"><div class="para" id="sec-two-means-independent-9-2-1-1-1-1">Population 1:  automatic</div></li>
-<li id="sec-two-means-independent-9-2-1-1-2"><div class="para" id="sec-two-means-independent-9-2-1-1-2-1">Population 2:  manual</div></li>
-</ul>
-<div class="para">Formula:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-(\overline{x}_1-\overline{x}_2)\pm z_{\alpha/2}\cdot \sigma_{\overline{x}_1-\overline{x}_2}
-\end{equation*}
-</div>
-</div>
-<div class="para logical" id="sec-two-means-independent-9-2-2">
-<div class="para">Standard error:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\sigma_{\overline{x}_1-\overline{x}_2}=\sqrt{\frac{23^2}{52}+\frac{27^2}{36}}\approx 5.5157
-\end{equation*}
-</div>
-</div>
-<div class="para logical" id="sec-two-means-independent-9-2-3"><div class="displaymath process-math">
-\begin{equation*}
-z_{\alpha/2}=NORM.S.INV(0.95)\approx 1.645
-\end{equation*}
-</div></div>
-<div class="para logical" id="sec-two-means-independent-9-2-4">
-<div class="para">MOE:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\approx 1.645(5.5157)\approx 9.0733
-\end{equation*}
-</div>
-</div>
-<div class="para logical" id="sec-two-means-independent-9-2-5">
-<div class="para">LCL:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\approx (411.30-372.80)-9.0733=29.4267
-\end{equation*}
-</div>
-</div>
-<div class="para logical" id="sec-two-means-independent-9-2-6">
-<div class="para">UCL:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\approx (411.30-372.80)+9.0733=47.5733
-\end{equation*}
-</div>
-</div>
-<div class="para logical" id="sec-two-means-independent-9-2-7">
-<div class="para">We are <span class="process-math">\(90\%\)</span> confident that</div>
-<div class="displaymath process-math">
-\begin{equation*}
-29.43\lt \mu_1-\mu_2\lt 47.57.
-\end{equation*}
-</div>
-</div>
-<div class="para" id="sec-two-means-independent-9-2-8">Since the interval does not contain 0, we can conclude that there is a difference in the average cost of a rental with different transmissions.</div>
-</div></details></div></article></details><div class="para" id="sec-two-means-independent-10">When we don’t know the population standard deviations, we substitute the sample standard deviations in their place.  Recall from <a href="sec-Confidence-Interval-for-Mean-Sigma-Unknown.html" class="internal" title="Section 9.4: Confidence Intervals for the Mean (\sigma unknown)">Section 9.4</a> that this means the proper sampling distribution is the Student’s <span class="process-math">\(t\)</span>-distribution instead of the normal distribution (as long as the sample sizes are large and/or the samples are drawn from normal populations).</div>
+</table></div></div> <div class="para" id="sec-two-means-independent-9-1-4">Construct a <span class="process-math">\(90 \%\)</span> confidence interval to estimate the difference in the average cost of a one-week rental between these two types of cars at the airport.  Can you conclude that a difference exists in the average rental price of the two types of cars?</div></article></details><div class="para" id="sec-two-means-independent-10">When we don’t know the population standard deviations, we substitute the sample standard deviations in their place.  Recall from <a href="sec-Confidence-Interval-for-Mean-Sigma-Unknown.html" class="internal" title="Section 9.4: Confidence Intervals for the Mean (\sigma unknown)">Section 9.4</a> that this means the proper sampling distribution is the Student’s <span class="process-math">\(t\)</span>-distribution instead of the normal distribution (as long as the sample sizes are large and/or the samples are drawn from normal populations).</div>
 <div class="para" id="sec-two-means-independent-11">In addition, we also need to determine whether or not to assume that the unknown variances are equal or unequal.  We could use the <span class="process-math">\(F\)</span>-test from <a href="ch-Hypothesis-Variance.html" class="internal" title="Chapter 11: Hypothesis Tests for the Population Variance">Chapter 11</a> to draw this conclusion -- but most of the time (in this class) you will be told which situation applies.  Let’s examine the formulas associated with each of these two cases.</div>
 <div class="para logical" id="sec-two-means-independent-12"><ul class="disc" id="sec-two-means-independent-12-1">
 <li id="sec-two-means-independent-12-1-1">
@@ -603,8 +523,7 @@ s_p^2 = \frac{(n_1-1)s_1^2+(n_2-1)s_2^2}{(n_1-1)+(n_2-1)}
 <div class="para" id="sec-two-means-independent-13">Once again, we will rely on Excel to do these computations for us whenever we have raw data.  After stating the two hypotheses, go to the <em class="emphasis">Data Analysis</em> tool and choose “<em class="emphasis">t-Test Two-Sample Assuming Equal Variances</em>” or “<em class="emphasis">t-Test Two-Sample Assuming Unequal Variances</em>” to complete the test.</div>
 <details id="sec-two-means-independent-14" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">12.2.6</span><span class="period">.</span>
-</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-two-means-independent-14-1-1">(Donnelly 10.52)</div> <div class="para" id="sec-two-means-independent-14-1-2">The airline industry measures fuel efficiency by calculating how many miles one seat can travel, whether occupied or not, on one gallon of jet fuel.  The data in the Excel file below shows the fuel economy, in miles per seat, for 15 randomly selected flights on Delta and US Airways.  Perform a hypothesis test using <span class="process-math">\(\alpha=0.05\)</span> to determine if the average fuel efficiency differs between the two airlines.  Assume the population variances for the fuel efficiency for these two airlines are not equal.</div> <div class="para" id="sec-two-means-independent-14-1-3"><a class="external" href="external/sheets/FuelEfficiency.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/FuelEfficiency.xlsx</code></a></div>
-<div class="solutions"><details id="sec-two-means-independent-14-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-two-means-independent-14-2-1"><a class="external" href="external/sheets/FuelEfficiencySolution.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/FuelEfficiencySolution.xlsx</code></a></div></div></details></div></article></details><details id="sec-two-means-independent-15" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-two-means-independent-14-1-1">(Donnelly 10.52)</div> <div class="para" id="sec-two-means-independent-14-1-2">The airline industry measures fuel efficiency by calculating how many miles one seat can travel, whether occupied or not, on one gallon of jet fuel.  The data in the Excel file below shows the fuel economy, in miles per seat, for 15 randomly selected flights on Delta and US Airways.  Perform a hypothesis test using <span class="process-math">\(\alpha=0.05\)</span> to determine if the average fuel efficiency differs between the two airlines.  Assume the population variances for the fuel efficiency for these two airlines are not equal.</div> <div class="para" id="sec-two-means-independent-14-1-3"><a class="external" href="external/sheets/FuelEfficiency.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/FuelEfficiency.xlsx</code></a></div></article></details><details id="sec-two-means-independent-15" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">12.2.7</span><span class="period">.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec-two-means-independent-15-1">
 <div class="para" id="sec-two-means-independent-15-1-1">(Donnelly 10.45)</div>
@@ -633,103 +552,16 @@ s_p^2 = \frac{(n_1-1)s_1^2+(n_2-1)s_2^2}{(n_1-1)+(n_2-1)}
 </table></div></div>
 </div>
 <article class="task exercise-like" id="sec-two-means-independent-15-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="sec-two-means-independent-15-2-1-1">Using <span class="process-math">\(\alpha=0.05\text{,}\)</span> perform a hypothesis test to determine if the average home constructed in 2008 was larger than a home built in 2018.</div>
-<div class="solutions"><details id="sec-two-means-independent-15-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
-<div class="para logical" id="sec-two-means-independent-15-2-2-1-1"><ul class="disc" id="sec-two-means-independent-15-2-2-1-1-1">
-<li id="sec-two-means-independent-15-2-2-1-1-1-1"><div class="para" id="sec-two-means-independent-15-2-2-1-1-1-1-1">Population 1:  2008</div></li>
-<li id="sec-two-means-independent-15-2-2-1-1-1-2"><div class="para" id="sec-two-means-independent-15-2-2-1-1-1-2-1">Population 2:  2018</div></li>
-</ul></div> <div class="para" id="sec-two-means-independent-15-2-2-1-2"><div class="tabular-box natural-width"><table class="tabular">
-<tr>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(H_0:\)</span></td>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\mu_1-\mu_2=0\)</span></td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(H_1:\)</span></td>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\mu_1-\mu_2\gt 0\)</span></td>
-</tr>
-</table></div></div> <div class="para" id="sec-two-means-independent-15-2-2-1-3"><span class="process-math">\(\alpha=0.05,\;\;\; df=45+40-2=83\)</span></div> <div class="para logical" id="sec-two-means-independent-15-2-2-1-4"><div class="displaymath process-math">
-\begin{equation*}
-s_p^2 = \frac{(44)(578,816.64)+(39)(533,192.04)}{44+39}\approx 557,378.5749
-\end{equation*}
-</div></div> <div class="para" id="sec-two-means-independent-15-2-2-1-5">test statistic: <span class="process-math">\(t_{\overline{x}}=\frac{2462.3-2257-0}{\sqrt{557,378.5749\left( \frac{1}{45}+\frac{1}{40} \right)}}\approx 1.2654\)</span>
-</div> <div class="para logical" id="sec-two-means-independent-15-2-2-1-6"><div class="displaymath process-math">
-\begin{equation*}
-\text{p-value}=T.DIST.RT(1.2654,83)\approx 0.1046
-\end{equation*}
-</div></div> <div class="para" id="sec-two-means-independent-15-2-2-1-7">Since the p-value is bigger than <span class="process-math">\(\alpha\)</span> (and <span class="process-math">\(t_{\overline{x}}\)</span> is not in the rejection region), we fail to reject <span class="process-math">\(H_0\text{.}\)</span>
-</div> <div class="para" id="sec-two-means-independent-15-2-2-1-8">There is not enough evidence to conclude that the average size of a newly constructed house fell in 2018 compared to 2008.</div>
-</div></details></div></article><article class="task exercise-like" id="sec-two-means-independent-15-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="sec-two-means-independent-15-3-1-1">Construct a <span class="process-math">\(95\%\)</span> confidence interval to estimate the average difference in the square footages of new homes constructed in these two years.</div>
-<div class="solutions"><details id="sec-two-means-independent-15-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
-<div class="para logical" id="sec-two-means-independent-15-3-2-1">
-<div class="displaymath process-math">
-\begin{equation*}
-T.INV.2T(0.05,83)\approx 1.9889,
-\end{equation*}
-</div>
-<div class="para">so the critical values are approximately <span class="process-math">\(-1.9889\)</span> and <span class="process-math">\(1.9889\text{.}\)</span>
-</div>
-</div>
-<div class="para logical" id="sec-two-means-independent-15-3-2-2">
-<div class="para">Formula for confidence interval:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-(\overline{x}_1-\overline{x}_2)\pm t_{\alpha/2}\cdot\sqrt{s_p^2\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}
-\end{equation*}
-</div>
-</div>
-<div class="para logical" id="sec-two-means-independent-15-3-2-3">
-<div class="para">Margin of error:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\approx 1.9899\sqrt{557,378.5749\left(\frac{1}{45}+\frac{1}{40}\right)}\approx 322.8
-\end{equation*}
-</div>
-</div>
-<div class="para logical" id="sec-two-means-independent-15-3-2-4">
-<div class="para">LCL:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\approx (2462.3-2257)-322.8=-117.5
-\end{equation*}
-</div>
-</div>
-<div class="para logical" id="sec-two-means-independent-15-3-2-5">
-<div class="para">UCL:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\approx (2462.3-2257)+322.8=528.1
-\end{equation*}
-</div>
-</div>
-<div class="para logical" id="sec-two-means-independent-15-3-2-6">
-<div class="para">We are <span class="process-math">\(95\%\)</span> confident that</div>
-<div class="displaymath process-math">
-\begin{equation*}
--117.5\lt \mu_1-\mu_2\lt 528.1
-\end{equation*}
-</div>
-</div>
-</div></details></div></article></article></details><details id="sec-two-means-independent-16" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<div class="para" id="sec-two-means-independent-15-2-1-1">Using <span class="process-math">\(\alpha=0.05\text{,}\)</span> perform a hypothesis test to determine if the average home constructed in 2008 was larger than a home built in 2018.</div></article><article class="task exercise-like" id="sec-two-means-independent-15-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-two-means-independent-15-3-1-1">Construct a <span class="process-math">\(95\%\)</span> confidence interval to estimate the average difference in the square footages of new homes constructed in these two years.</div></article></article></details><details id="sec-two-means-independent-16" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">12.2.8</span><span class="period">.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="sec-two-means-independent-16-1">
 <div class="para" id="sec-two-means-independent-16-1-1">A statistics student wants to verify the claim that in a certain Fortune 500 company the average salary of female employees is different from the average salary of male employees. Two samples of male and female workers were obtained independently and analyzed.  The sample data is in the Excel file below.  (Assume that the samples are from normal populations.)</div>
 <div class="para" id="sec-two-means-independent-16-1-2"><a class="external" href="external/sheets/CompanySalaries.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/CompanySalaries.xlsx</code></a></div>
 </div>
 <article class="task exercise-like" id="sec-two-means-independent-16-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="sec-two-means-independent-16-2-1-1">Which of the samples has a larger mean?</div>
-<div class="solutions"><details id="sec-two-means-independent-16-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-two-means-independent-16-2-2-1">The sample of men’s salaries has a larger mean than the sample of women’s salaries.  (The sample mean women’s salary is about <span class="process-math">\(\$ 57,200\text{,}\)</span> and the sample mean men’s salary is about <span class="process-math">\(\$ 69,338\text{.}\)</span>)</div></div></details></div></article><article class="task exercise-like" id="sec-two-means-independent-16-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="sec-two-means-independent-16-3-1-1">Is there sufficient evidence to conclude that male employees in this company have higher salaries than female employees?</div>
-<div class="solutions"><details id="sec-two-means-independent-16-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
-<div class="para" id="sec-two-means-independent-16-3-2-1">Population 1: women</div>
-<div class="para" id="sec-two-means-independent-16-3-2-2">Population 2: men</div>
-<div class="para" id="sec-two-means-independent-16-3-2-3">(Let’s use <span class="process-math">\(\alpha=0.10\text{.}\)</span>)</div>
-<div class="para" id="sec-two-means-independent-16-3-2-4"><span class="process-math">\(H_0: \; \mu_1 - \mu_2 \geq 0\)</span></div>
-<div class="para" id="sec-two-means-independent-16-3-2-5"><span class="process-math">\(H_1: \; \mu_1 - \mu_2 \lt 0\)</span></div>
-<div class="para" id="sec-two-means-independent-16-3-2-6"><a class="external" href="external/sheets/CompanySalariesSolution.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/CompanySalariesSolution.xlsx</code></a></div>
-<div class="para" id="sec-two-means-independent-16-3-2-7">No, there is not sufficient evidence to conclude that male employees in this company have higher salaries than female employees because we got a p-value of <span class="process-math">\(\approx 0.4182\text{,}\)</span> which is bigger than <span class="process-math">\(\alpha\text{.}\)</span>
-</div>
-</div></details></div></article></article></details></section></div>
+<div class="para" id="sec-two-means-independent-16-2-1-1">Which of the samples has a larger mean?</div></article><article class="task exercise-like" id="sec-two-means-independent-16-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="sec-two-means-independent-16-3-1-1">Is there sufficient evidence to conclude that male employees in this company have higher salaries than female employees?</div></article></article></details></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-Overview.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-two-means-dependent.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
