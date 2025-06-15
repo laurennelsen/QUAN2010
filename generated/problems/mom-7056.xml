@@ -3,9 +3,9 @@
 <statement>
 <p>
 In a mid-size company, the distribution of the number
-of phone calls answered each day by each of the 12 receptionists is bell-shaped and has a mean of 61 and a standard deviation of 3.
+of phone calls answered each day by each of the 12 receptionists is bell-shaped and has a mean of 50 and a standard deviation of 7.
 Using the empirical rule (as presented in the book), what is the approximate percentage of daily phone calls
-numbering between 58 and 64?</p>
+numbering between 29 and 71?</p>
 <p>
 Do not enter the percent symbol.</p>
 <p>
@@ -13,6 +13,6 @@ ans = <input type="text" style="width:25ch" name="qn0" id="qn0" value="" autocom
 </p>
 </statement>
 <solution>
-<p><ul><li>68</li></ul></p>
+<p><ul><li>99.7</li></ul></p>
 </solution>
 </myopenmath>
