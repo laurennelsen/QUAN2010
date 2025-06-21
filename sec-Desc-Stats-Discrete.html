@@ -102,14 +102,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.7.6';
+eBookConfig.runestone_version = '7.8.2';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.107bf2d9be20d9c4.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.c7bf407f76a97812.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.8e4157bd77a28b29.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.2e7f40e86ae7d163.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -335,13 +335,17 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-Desc-Stats-Discrete"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">5.2</span><span class="space"> </span><span class="title">Descriptive Statistics for a Discrete Probability Distribution</span>
 </h2>
-<section class="introduction" id="sec-Desc-Stats-Discrete-2"><div class="para" id="sec-Desc-Stats-Discrete-2-1">There are a lot of things we might want to ask when we’re working with a discrete probability distribution.  For example, what average value would we expect rolling a die or playing a gambling game?  How spread out are the values?  These are all questions we want to be able to answer.</div>
+<section class="introduction" id="sec-Desc-Stats-Discrete-2"><div class="para" id="sec-Desc-Stats-Discrete-2-1">There are a lot of things we might want to ask when we’re working with a discrete probability distribution.  For example, what average value would we expect rolling a die or playing a gambling game?  How spread out are the values?  These are all questions we want to be able to answer.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Desc-Stats-Discrete-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="investigation project-like" id="sec-Desc-Stats-Discrete-2-2"><h3 class="heading">
 <span class="type">Investigation</span><span class="space"> </span><span class="codenumber">5.2.1</span><span class="period">.</span>
 </h3>
-<div class="para" id="sec-Desc-Stats-Discrete-2-2-1">The 2020 United States Census found the number of households of different sizes.  (Source: Table H2 from <a class="external" href="https://www.census.gov/data/tables/2023/demo/families/cps-2023.html" target="_blank"><code class="code-inline tex2jax_ignore">https://www.census.gov/data/tables/2023/demo/families/cps-2023.html</code></a>)</div>
-<div class="para" id="sec-Desc-Stats-Discrete-2-2-2">Below are the probabilities for different values of household size.</div>
-<div class="para" id="sec-Desc-Stats-Discrete-2-2-3"><div class="tabular-box natural-width"><table class="tabular">
+<div class="para" id="sec-Desc-Stats-Discrete-2-2-1">The 2020 United States Census found the number of households of different sizes.  (Source: Table H2 from <a class="external" href="https://www.census.gov/data/tables/2023/demo/families/cps-2023.html" target="_blank"><code class="code-inline tex2jax_ignore">https://www.census.gov/data/tables/2023/demo/families/cps-2023.html</code></a>)<div class="autopermalink" data-description="Paragraph"><a href="#sec-Desc-Stats-Discrete-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-Desc-Stats-Discrete-2-2-2">Below are the probabilities for different values of household size.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Desc-Stats-Discrete-2-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-Desc-Stats-Discrete-2-2-3">
+<div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="l m b2 r2 l0 t0 lines">Size</th>
 <th scope="col" class="l m b2 r2 l0 t0 lines">1 member</th>
@@ -354,41 +358,63 @@ eBookConfig.enable_chatcodes =  false;
 <th scope="col" class="l m b0 r2 l0 t0 lines">0.350</th>
 <th scope="col" class="l m b0 r0 l0 t0 lines">0.360</th>
 </tr>
-</table></div></div>
-<div class="para" id="sec-Desc-Stats-Discrete-2-2-4"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/sheets/HouseholdBarChart.png" class="contained"></div></div>
-<div class="para" id="sec-Desc-Stats-Discrete-2-2-5">What was the average household size in the United States in 2020?</div></article></section><article class="definition definition-like" id="sec-Desc-Stats-Discrete-3"><h3 class="heading">
+</table></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-Desc-Stats-Discrete-2-2-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-Desc-Stats-Discrete-2-2-4">
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/sheets/HouseholdBarChart.png" class="contained"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-Desc-Stats-Discrete-2-2-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-Desc-Stats-Discrete-2-2-5">What was the average household size in the United States in 2020?<div class="autopermalink" data-description="Paragraph"><a href="#sec-Desc-Stats-Discrete-2-2-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Investigation 5.2.1"><a href="#sec-Desc-Stats-Discrete-2-2" title="Copy heading and permalink for Investigation 5.2.1">🔗</a></div></article></section><article class="definition definition-like" id="sec-Desc-Stats-Discrete-3"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.2.1</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="sec-Desc-Stats-Discrete-3-1"><ul class="disc" id="sec-Desc-Stats-Discrete-3-1-1">
+<div class="para logical" id="sec-Desc-Stats-Discrete-3-1">
+<ul class="disc" id="sec-Desc-Stats-Discrete-3-1-1">
 <li id="sec-Desc-Stats-Discrete-3-1-1-1">
-<div class="para" id="sec-Desc-Stats-Discrete-3-1-1-1-1">The mean, or <em class="emphasis">expected value</em> of a discrete probability distribution is the weighted average of all outcomes of the random variable.</div>
+<div class="para" id="sec-Desc-Stats-Discrete-3-1-1-1-1">The mean, or <em class="emphasis">expected value</em> of a discrete probability distribution is the weighted average of all outcomes of the random variable.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Desc-Stats-Discrete-3-1-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="displaymath process-math">
 \begin{equation*}
 E(X)=\mu=\sum_{i=1}^n x_iP(x_i)
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Desc-Stats-Discrete-3-1-1-1" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="sec-Desc-Stats-Discrete-3-1-1-2"><div class="para" id="sec-Desc-Stats-Discrete-3-1-1-2-1">The <em class="emphasis">expected monetary value</em> is the mean when the discrete random variable is in dollars ($)</div></li>
+<li id="sec-Desc-Stats-Discrete-3-1-1-2">
+<div class="para" id="sec-Desc-Stats-Discrete-3-1-1-2-1">The <em class="emphasis">expected monetary value</em> is the mean when the discrete random variable is in dollars ($)<div class="autopermalink" data-description="Paragraph"><a href="#sec-Desc-Stats-Discrete-3-1-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Desc-Stats-Discrete-3-1-1-2" title="Copy heading and permalink for Item">🔗</a></div>
+</li>
 <li id="sec-Desc-Stats-Discrete-3-1-1-3">
-<div class="para" id="sec-Desc-Stats-Discrete-3-1-1-3-1">The <em class="emphasis">variance</em> of a discrete probability distribution measures the spread of the individual values around the mean.</div>
+<div class="para" id="sec-Desc-Stats-Discrete-3-1-1-3-1">The <em class="emphasis">variance</em> of a discrete probability distribution measures the spread of the individual values around the mean.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Desc-Stats-Discrete-3-1-1-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \sigma^2=\sum_{i=1}^n (x_i-\mu)^2P(x_i)
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Desc-Stats-Discrete-3-1-1-3" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-Desc-Stats-Discrete-3-1-1-4">
-<div class="para" id="sec-Desc-Stats-Discrete-3-1-1-4-1">The <em class="emphasis">standard deviation</em> of a discrete probability distribution measures the dispersion of the outcome of the random variable in relation to the mean.</div>
+<div class="para" id="sec-Desc-Stats-Discrete-3-1-1-4-1">The <em class="emphasis">standard deviation</em> of a discrete probability distribution measures the dispersion of the outcome of the random variable in relation to the mean.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Desc-Stats-Discrete-3-1-1-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \sigma=\sqrt{\sigma^2}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Desc-Stats-Discrete-3-1-1-4" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
-</ul></div></article><details id="sec-Desc-Stats-Discrete-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-Desc-Stats-Discrete-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 5.2.1"><a href="#sec-Desc-Stats-Discrete-3" title="Copy heading and permalink for Definition 5.2.1">🔗</a></div></article><details id="sec-Desc-Stats-Discrete-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.2</span><span class="period">.</span>
 </h3></summary><article class="example example-like knowl__content"><div class="introduction" id="sec-Desc-Stats-Discrete-4-1">
-<div class="para" id="sec-Desc-Stats-Discrete-4-1-1">(Donnely 5.7)  The table below shows the discrete probability distribution for the number of bedrooms per house in a certain community:</div>
+<div class="para" id="sec-Desc-Stats-Discrete-4-1-1">(Donnely 5.7)  The table below shows the discrete probability distribution for the number of bedrooms per house in a certain community:<div class="autopermalink" data-description="Paragraph"><a href="#sec-Desc-Stats-Discrete-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b2 r0 l0 t0 lines"><dfn class="terminology"><span class="process-math">\(\#\)</span> of Bedrooms</dfn></th>
@@ -412,18 +438,32 @@ E(X)=\mu=\sum_{i=1}^n x_iP(x_i)
 </tr>
 </table></div>
 </div>
-<article class="task exercise-like" id="sec-Desc-Stats-Discrete-4-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>Determine the missing probability for a 6-bedroom house.<div class="solutions"><details id="sec-Desc-Stats-Discrete-4-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-Desc-Stats-Discrete-4-2-2-1"><div class="displaymath process-math">
+<article class="task exercise-like" id="sec-Desc-Stats-Discrete-4-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>Determine the missing probability for a 6-bedroom house.<div class="solutions"><details id="sec-Desc-Stats-Discrete-4-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para logical" id="sec-Desc-Stats-Discrete-4-2-2-1">
+<div class="displaymath process-math">
 \begin{equation*}
 1-(0.23+0.57+0.14)=0.06
 \end{equation*}
-</div></div></div></details></div></article><article class="task exercise-like" id="sec-Desc-Stats-Discrete-4-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>Determine the mean number of bedrooms per house.<div class="solutions"><details id="sec-Desc-Stats-Discrete-4-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-Desc-Stats-Discrete-4-3-2-1"><div class="displaymath process-math">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-Desc-Stats-Discrete-4-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 5.2.2.a.1"><a href="#sec-Desc-Stats-Discrete-4-2-2" title="Copy heading and permalink for Answer 5.2.2.a.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 5.2.2.a"><a href="#sec-Desc-Stats-Discrete-4-2" title="Copy heading and permalink for Task 5.2.2.a">🔗</a></div></article><article class="task exercise-like" id="sec-Desc-Stats-Discrete-4-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>Determine the mean number of bedrooms per house.<div class="solutions"><details id="sec-Desc-Stats-Discrete-4-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para logical" id="sec-Desc-Stats-Discrete-4-3-2-1">
+<div class="displaymath process-math">
 \begin{equation*}
 \mu=\text{expected number of bedrooms}=3\cdot (0.23)+4\cdot (0.57)+5\cdot (0.14)+6\cdot (0.06)=4.03
 \end{equation*}
-</div></div></div></details></div></article><article class="task exercise-like" id="sec-Desc-Stats-Discrete-4-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="sec-Desc-Stats-Discrete-4-4-1-1">Determine the standard deviation for the number of bedrooms per house.  <em class="emphasis">(Hint:  Use a table like the one below in Excel to compute the variance first.  Do all the calculations in Excel.)</em>
-</div> <div class="para" id="sec-Desc-Stats-Discrete-4-4-1-2">Here is a link to an Excel file with a blank table like the one below: <a class="external" href="external/sheets/BedroomsCalculation.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/BedroomsCalculation.xlsx</code></a>
-</div> <figure class="table table-like" id="sec-Desc-Stats-Discrete-4-4-1-3"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">5.2.3<span class="period">.</span></span><span class="space"> </span>Calculation of Standard Deviation</figcaption><div class="tabular-box natural-width"><table class="tabular">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-Desc-Stats-Discrete-4-3-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 5.2.2.b.1"><a href="#sec-Desc-Stats-Discrete-4-3-2" title="Copy heading and permalink for Answer 5.2.2.b.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 5.2.2.b"><a href="#sec-Desc-Stats-Discrete-4-3" title="Copy heading and permalink for Task 5.2.2.b">🔗</a></div></article><article class="task exercise-like" id="sec-Desc-Stats-Discrete-4-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="sec-Desc-Stats-Discrete-4-4-1-1">Determine the standard deviation for the number of bedrooms per house.  <em class="emphasis">(Hint:  Use a table like the one below in Excel to compute the variance first.  Do all the calculations in Excel.)</em><div class="autopermalink" data-description="Paragraph"><a href="#sec-Desc-Stats-Discrete-4-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="sec-Desc-Stats-Discrete-4-4-1-2">Here is a link to an Excel file with a blank table like the one below: <a class="external" href="external/sheets/BedroomsCalculation.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/BedroomsCalculation.xlsx</code></a><div class="autopermalink" data-description="Paragraph"><a href="#sec-Desc-Stats-Discrete-4-4-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <figure class="table table-like" id="sec-Desc-Stats-Discrete-4-4-1-3"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">5.2.3<span class="period">.</span></span><span class="space"> </span>Calculation of Standard Deviation<div class="autopermalink" data-description="Table 5.2.3: Calculation of Standard Deviation"><a href="#sec-Desc-Stats-Discrete-4-4-1-3" title="Copy heading and permalink for Table 5.2.3: Calculation of Standard Deviation">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr class="header-horizontal">
 <th scope="col" class="c m b2 r2 l0 t0 lines"><span class="process-math">\(x\)</span></th>
 <th scope="col" class="c m b2 r0 l0 t0 lines"><span class="process-math">\(P(x)\)</span></th>
@@ -465,15 +505,25 @@ E(X)=\mu=\sum_{i=1}^n x_iP(x_i)
 <td class="c m b0 r0 l0 t0 lines"></td>
 </tr>
 </table></div></figure><div class="solutions"><details id="sec-Desc-Stats-Discrete-4-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
-<div class="para" id="sec-Desc-Stats-Discrete-4-4-2-1">Standard deviation:  <span class="process-math">\(\approx 0.7804\)</span>
+<div class="para" id="sec-Desc-Stats-Discrete-4-4-2-1">Standard deviation:  <span class="process-math">\(\approx 0.7804\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-Desc-Stats-Discrete-4-4-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-Desc-Stats-Discrete-4-4-2-2">Here is an Excel file where you can see the work for this problem: <a class="external" href="external/sheets/BedroomsCalculationSolution.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/BedroomsCalculationSolution.xlsx</code></a>
+<div class="para" id="sec-Desc-Stats-Discrete-4-4-2-2">Here is an Excel file where you can see the work for this problem: <a class="external" href="external/sheets/BedroomsCalculationSolution.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/BedroomsCalculationSolution.xlsx</code></a><div class="autopermalink" data-description="Paragraph"><a href="#sec-Desc-Stats-Discrete-4-4-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-</div></details></div></article></article></details><details id="sec-Desc-Stats-Discrete-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<div class="autopermalink" data-description="Answer 5.2.2.c.1"><a href="#sec-Desc-Stats-Discrete-4-4-2" title="Copy heading and permalink for Answer 5.2.2.c.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 5.2.2.c"><a href="#sec-Desc-Stats-Discrete-4-4" title="Copy heading and permalink for Task 5.2.2.c">🔗</a></div></article><div class="autopermalink" data-description="Example 5.2.2"><a href="#sec-Desc-Stats-Discrete-4" title="Copy heading and permalink for Example 5.2.2">🔗</a></div></article></details><details id="sec-Desc-Stats-Discrete-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.4</span><span class="period">.</span>
-</h3></summary><article class="example example-like knowl__content"><div class="para" id="sec-Desc-Stats-Discrete-5-1-1">(Donnelly 5.45)</div> <div class="para" id="sec-Desc-Stats-Discrete-5-1-2">Tees R Us manufactures and sells T-shirts for sporting events, is providing shirts for an upcoming tournament. Each shirt will cost <span class="process-math">\(\$9\)</span> to produce and will be sold for <span class="process-math">\(\$18\text{.}\)</span> Any unsold shirts at the end of the tournament can be sold for <span class="process-math">\(\$5\)</span> a piece in the near future. Tees R Us assumes the demand for the shirts will be <span class="process-math">\(500\text{,}\)</span> <span class="process-math">\(1000\text{,}\)</span> <span class="process-math">\(1500\text{,}\)</span> or <span class="process-math">\(2000\text{.}\)</span> They also estimate that the probabilities of each of these sales levels occurring will be <span class="process-math">\(15\%\text{,}\)</span> <span class="process-math">\(20\%\text{,}\)</span> <span class="process-math">\(25\%\text{,}\)</span> and <span class="process-math">\(40\%\text{,}\)</span> respectively. Determine the expected monetary value of the project if Tees R Us chooses to print <span class="process-math">\(1500\)</span> shirts for the tournament.</div> <div class="para" id="sec-Desc-Stats-Discrete-5-1-3">Here is an Excel file you can use for this problem: <a class="external" href="external/sheets/TeesRUs.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/TeesRUs.xlsx</code></a>
+</h3></summary><article class="example example-like knowl__content"><div class="para" id="sec-Desc-Stats-Discrete-5-1-1">(Donnelly 5.45)<div class="autopermalink" data-description="Paragraph"><a href="#sec-Desc-Stats-Discrete-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="sec-Desc-Stats-Discrete-5-1-2">Tees R Us manufactures and sells T-shirts for sporting events, is providing shirts for an upcoming tournament. Each shirt will cost <span class="process-math">\(\$9\)</span> to produce and will be sold for <span class="process-math">\(\$18\text{.}\)</span> Any unsold shirts at the end of the tournament can be sold for <span class="process-math">\(\$5\)</span> a piece in the near future. Tees R Us assumes the demand for the shirts will be <span class="process-math">\(500\text{,}\)</span> <span class="process-math">\(1000\text{,}\)</span> <span class="process-math">\(1500\text{,}\)</span> or <span class="process-math">\(2000\text{.}\)</span> They also estimate that the probabilities of each of these sales levels occurring will be <span class="process-math">\(15\%\text{,}\)</span> <span class="process-math">\(20\%\text{,}\)</span> <span class="process-math">\(25\%\text{,}\)</span> and <span class="process-math">\(40\%\text{,}\)</span> respectively. Determine the expected monetary value of the project if Tees R Us chooses to print <span class="process-math">\(1500\)</span> shirts for the tournament.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Desc-Stats-Discrete-5-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="sec-Desc-Stats-Discrete-5-1-3">Here is an Excel file you can use for this problem: <a class="external" href="external/sheets/TeesRUs.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/TeesRUs.xlsx</code></a><div class="autopermalink" data-description="Paragraph"><a href="#sec-Desc-Stats-Discrete-5-1-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="sec-Desc-Stats-Discrete-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-Desc-Stats-Discrete-5-2-1"><a class="external" href="external/sheets/TeesRUsSolution.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/TeesRUsSolution.xlsx</code></a></div></div></details></div></article></details></section></div>
+<div class="solutions"><details id="sec-Desc-Stats-Discrete-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-Desc-Stats-Discrete-5-2-1">
+<a class="external" href="external/sheets/TeesRUsSolution.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/TeesRUsSolution.xlsx</code></a><div class="autopermalink" data-description="Paragraph"><a href="#sec-Desc-Stats-Discrete-5-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 5.2.4.1"><a href="#sec-Desc-Stats-Discrete-5-2" title="Copy heading and permalink for Answer 5.2.4.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 5.2.4"><a href="#sec-Desc-Stats-Discrete-5" title="Copy heading and permalink for Example 5.2.4">🔗</a></div></article></details><div class="autopermalink" data-description="Section 5.2: Descriptive Statistics for a Discrete Probability Distribution"><a href="#sec-Desc-Stats-Discrete" title="Copy heading and permalink for Section 5.2: Descriptive Statistics for a Discrete Probability Distribution">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-Random-Variables.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-Binomial-Distribution.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

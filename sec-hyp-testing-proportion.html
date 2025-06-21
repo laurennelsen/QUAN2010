@@ -102,14 +102,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.7.6';
+eBookConfig.runestone_version = '7.8.2';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.107bf2d9be20d9c4.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.c7bf407f76a97812.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.8e4157bd77a28b29.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.2e7f40e86ae7d163.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -335,12 +335,19 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-hyp-testing-proportion"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">10.5</span><span class="space"> </span><span class="title">Hypothesis Testing for the Population Proportion</span>
 </h2>
-<section class="introduction" id="sec-hyp-testing-proportion-2"><div class="para" id="sec-hyp-testing-proportion-2-1">Now we want to see how we can use information about a sample proportion to see what we can conclude about the population proportion.</div></section><article class="investigation project-like" id="sec-hyp-testing-proportion-3"><h3 class="heading">
+<section class="introduction" id="sec-hyp-testing-proportion-2"><div class="para" id="sec-hyp-testing-proportion-2-1">Now we want to see how we can use information about a sample proportion to see what we can conclude about the population proportion.<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-proportion-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><article class="investigation project-like" id="sec-hyp-testing-proportion-3"><h3 class="heading">
 <span class="type">Investigation</span><span class="space"> </span><span class="codenumber">10.5.1</span><span class="period">.</span>
 </h3>
-<div class="para" id="sec-hyp-testing-proportion-3-1">A Harris poll surveyed 2016 adults and found that 463 of them had one or more tattoos. Does the sample provide evidence that the percentage of adults who have a tattoo is less than 25%?</div>
-<div class="para" id="sec-hyp-testing-proportion-3-2"><figure class="figure figure-like" id="figure-geogebra-tattoo-simulation"><iframe id="figure-geogebra-tattoo-simulation-2" width="600" height="333" src="figure-geogebra-tattoo-simulation-2-if.html"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">10.5.1<span class="period">.</span></span><span class="space"> </span><div class="para" id="figure-geogebra-tattoo-simulation-1-1">Tattoo Simulation (Made in GeoGebra by Steve Phelps)</div> <div class="para" id="figure-geogebra-tattoo-simulation-1-2">Link to GeoGebra:  <a class="external" href="https://www.geogebra.org/m/ava6qwmr" target="_blank"><code class="code-inline tex2jax_ignore">https://www.geogebra.org/m/ava6qwmr</code></a>
-</div></figcaption></figure></div></article><div class="para logical" id="sec-hyp-testing-proportion-4">
+<div class="para" id="sec-hyp-testing-proportion-3-1">A Harris poll surveyed 2016 adults and found that 463 of them had one or more tattoos. Does the sample provide evidence that the percentage of adults who have a tattoo is less than 25%?<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-proportion-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-hyp-testing-proportion-3-2">
+<figure class="figure figure-like" id="figure-geogebra-tattoo-simulation"><iframe id="figure-geogebra-tattoo-simulation-2" width="600" height="333" src="figure-geogebra-tattoo-simulation-2-if.html"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">10.5.1<span class="period">.</span></span><span class="space"> </span><div class="para" id="figure-geogebra-tattoo-simulation-1-1">Tattoo Simulation (Made in GeoGebra by Steve Phelps)<div class="autopermalink" data-description="Paragraph"><a href="#figure-geogebra-tattoo-simulation-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="figure-geogebra-tattoo-simulation-1-2">Link to GeoGebra:  <a class="external" href="https://www.geogebra.org/m/ava6qwmr" target="_blank"><code class="code-inline tex2jax_ignore">https://www.geogebra.org/m/ava6qwmr</code></a><div class="autopermalink" data-description="Paragraph"><a href="#figure-geogebra-tattoo-simulation-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Figure 10.5.1"><a href="#figure-geogebra-tattoo-simulation" title="Copy heading and permalink for Figure 10.5.1">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-proportion-3-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Investigation 10.5.1"><a href="#sec-hyp-testing-proportion-3" title="Copy heading and permalink for Investigation 10.5.1">🔗</a></div></article><div class="para logical" id="sec-hyp-testing-proportion-4">
 <div class="para">The last type of hypothesis test that we will study in this chapter involves the population proportion, <span class="process-math">\(p\text{.}\)</span>  This test is useful for testing claims made about the proportion of something.  Recall that proportion data follow the binomial distribution, which can be approximated by the normal distribution under the conditions:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -357,6 +364,7 @@ np\geq 5 \text{ and } n(1-p)\geq 5,\text{ where}
 <td class="l m b0 r0 l0 t0 lines">the sample size</td>
 </tr>
 </table></div></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-proportion-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="sec-hyp-testing-proportion-5">
 <div class="para">When these conditions are met, the test statistic for this hypothesis test is calculated with this formula:</div>
@@ -365,50 +373,92 @@ np\geq 5 \text{ and } n(1-p)\geq 5,\text{ where}
 z_p = \frac{\overline{p}-p}{\sqrt{\frac{p(1-p)}{n}}}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-proportion-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <details id="sec-hyp-testing-proportion-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">10.5.2</span><span class="period">.</span>
-</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-hyp-testing-proportion-6-1-1">(Donnelly 9.31)</div> <div class="para" id="sec-hyp-testing-proportion-6-1-2">In April 2010, <span class="process-math">\(45\%\)</span> of the unemployed had been out of work longer than six months.  Policy makers felt that this percentage declined during 2010 as the job market improved.  To test this theory, a random sample of 200 unemployed people was selected, and it was found that 80 had been out of work for more than six months.  Assuming <span class="process-math">\(\alpha = 0.10\text{,}\)</span> what conclusions can be drawn about the proportion of the unemployed who have been out of work for more than six months?  Use the p-value method of hypothesis testing.</div>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-hyp-testing-proportion-6-1-1">(Donnelly 9.31)<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-proportion-6-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="sec-hyp-testing-proportion-6-1-2">In April 2010, <span class="process-math">\(45\%\)</span> of the unemployed had been out of work longer than six months.  Policy makers felt that this percentage declined during 2010 as the job market improved.  To test this theory, a random sample of 200 unemployed people was selected, and it was found that 80 had been out of work for more than six months.  Assuming <span class="process-math">\(\alpha = 0.10\text{,}\)</span> what conclusions can be drawn about the proportion of the unemployed who have been out of work for more than six months?  Use the p-value method of hypothesis testing.<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-proportion-6-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="solutions"><details id="sec-hyp-testing-proportion-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
-<div class="para" id="sec-hyp-testing-proportion-6-2-1"><span class="process-math">\(n=200,\; \alpha=0.10,\; p=.45,\; \overline{p}=\frac{80}{200}\)</span></div>
-<div class="para" id="sec-hyp-testing-proportion-6-2-2"><span class="process-math">\(np=200(.45)=90\geq 5\)</span></div>
-<div class="para" id="sec-hyp-testing-proportion-6-2-3"><span class="process-math">\(n(1-p)=200(.55)\geq 5\)</span></div>
-<div class="para" id="sec-hyp-testing-proportion-6-2-4"><span class="process-math">\(H_0:\; p\geq .45\)</span></div>
-<div class="para" id="sec-hyp-testing-proportion-6-2-5"><span class="process-math">\(H_1:\; p\lt .45\)</span></div>
-<div class="para logical" id="sec-hyp-testing-proportion-6-2-6"><div class="displaymath process-math">
+<div class="para" id="sec-hyp-testing-proportion-6-2-1">
+<span class="process-math">\(n=200,\; \alpha=0.10,\; p=.45,\; \overline{p}=\frac{80}{200}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-proportion-6-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-hyp-testing-proportion-6-2-2">
+<span class="process-math">\(np=200(.45)=90\geq 5\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-proportion-6-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-hyp-testing-proportion-6-2-3">
+<span class="process-math">\(n(1-p)=200(.55)\geq 5\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-proportion-6-2-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-hyp-testing-proportion-6-2-4">
+<span class="process-math">\(H_0:\; p\geq .45\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-proportion-6-2-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-hyp-testing-proportion-6-2-5">
+<span class="process-math">\(H_1:\; p\lt .45\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-proportion-6-2-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-hyp-testing-proportion-6-2-6">
+<div class="displaymath process-math">
 \begin{equation*}
 z_p=\frac{.40-.45}{\sqrt{\frac{.45(.55)}{200}}}\approx -1.42
 \end{equation*}
-</div></div>
-<div class="para logical" id="sec-hyp-testing-proportion-6-2-7"><div class="displaymath process-math">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-proportion-6-2-6" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-hyp-testing-proportion-6-2-7">
+<div class="displaymath process-math">
 \begin{equation*}
 \text{p-value}\approx NORM.S.DIST(-1.42,1)\approx 0.0778
 \end{equation*}
-</div></div>
-<div class="para logical" id="sec-hyp-testing-proportion-6-2-8"><div class="displaymath process-math">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-proportion-6-2-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-hyp-testing-proportion-6-2-8">
+<div class="displaymath process-math">
 \begin{equation*}
 \text{p-value}\lt\alpha\rightarrow \text{ Reject } H_0
 \end{equation*}
-</div></div>
-<div class="para" id="sec-hyp-testing-proportion-6-2-9">There is enough evidence to conclude that the proportion of unemployed out of work more than 6 months declined as the job market improved.</div>
-</div></details></div></article></details><details id="sec-hyp-testing-proportion-7" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-proportion-6-2-8" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-hyp-testing-proportion-6-2-9">There is enough evidence to conclude that the proportion of unemployed out of work more than 6 months declined as the job market improved.<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-proportion-6-2-9" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 10.5.2.1"><a href="#sec-hyp-testing-proportion-6-2" title="Copy heading and permalink for Answer 10.5.2.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 10.5.2"><a href="#sec-hyp-testing-proportion-6" title="Copy heading and permalink for Exercise 10.5.2">🔗</a></div></article></details><details id="sec-hyp-testing-proportion-7" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">10.5.3</span><span class="period">.</span>
-</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-hyp-testing-proportion-7-1-1">(Donnelly 9.26)</div> <div class="para" id="sec-hyp-testing-proportion-7-1-2">An increased number of colleges have been using online resources to research applicants.  According to a study from last year, <span class="process-math">\(33\%\)</span> of admissions officers indicated that they visited an applying student’s social networking page.  A random sample of 500 admissions officers was recently selected and it was found that 170 of them visit the social networking sites of students applying to their college.  Assuming <span class="process-math">\(\alpha = 0.05\text{,}\)</span> does this sample provide support for the hypothesis that the proportion of admissions officers who visit an applying students’ social networking page has increased in the past year?  Use the traditional method of hypothesis testing.</div>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-hyp-testing-proportion-7-1-1">(Donnelly 9.26)<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-proportion-7-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="sec-hyp-testing-proportion-7-1-2">An increased number of colleges have been using online resources to research applicants.  According to a study from last year, <span class="process-math">\(33\%\)</span> of admissions officers indicated that they visited an applying student’s social networking page.  A random sample of 500 admissions officers was recently selected and it was found that 170 of them visit the social networking sites of students applying to their college.  Assuming <span class="process-math">\(\alpha = 0.05\text{,}\)</span> does this sample provide support for the hypothesis that the proportion of admissions officers who visit an applying students’ social networking page has increased in the past year?  Use the traditional method of hypothesis testing.<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-proportion-7-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="solutions"><details id="sec-hyp-testing-proportion-7-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
-<div class="para" id="sec-hyp-testing-proportion-7-2-1"><span class="process-math">\(n=500,\; p=0.33,\; \overline{p}=\frac{170}{500}=0.34\)</span></div>
-<div class="para" id="sec-hyp-testing-proportion-7-2-2"><span class="process-math">\(H_0: \; p\leq 0.33\)</span></div>
-<div class="para" id="sec-hyp-testing-proportion-7-2-3"><span class="process-math">\(\alpha=0.05\)</span></div>
-<div class="para" id="sec-hyp-testing-proportion-7-2-4"><span class="process-math">\(np=500(.33)\geq 5\)</span></div>
-<div class="para" id="sec-hyp-testing-proportion-7-2-5"><span class="process-math">\(n(1-p)=500(.67)\geq 5\)</span></div>
-<div class="para" id="sec-hyp-testing-proportion-7-2-6"><span class="process-math">\(H_1: \; p\gt 0.33\)</span></div>
-<div class="para" id="sec-hyp-testing-proportion-7-2-7">critical value: <span class="process-math">\(z_{.05}=NORM.S.INV(.95)\approx 1.645\)</span>
+<div class="para" id="sec-hyp-testing-proportion-7-2-1">
+<span class="process-math">\(n=500,\; p=0.33,\; \overline{p}=\frac{170}{500}=0.34\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-proportion-7-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-hyp-testing-proportion-7-2-8">test statistic: <span class="process-math">\(z_p=\frac{.34-.33}{\sqrt{\frac{.33(.67)}{500}}}\approx .48\)</span>
+<div class="para" id="sec-hyp-testing-proportion-7-2-2">
+<span class="process-math">\(H_0: \; p\leq 0.33\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-proportion-7-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-hyp-testing-proportion-7-2-9">Since <span class="process-math">\(z_p\lt z_{.05}\)</span> and this is a right-tailed test, the test statistic does not fall in the rejection region, and we fail to reject <span class="process-math">\(H_0\text{.}\)</span>
+<div class="para" id="sec-hyp-testing-proportion-7-2-3">
+<span class="process-math">\(\alpha=0.05\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-proportion-7-2-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-hyp-testing-proportion-7-2-10">The sample does not provide enough evidence to support the claim that the proportion of admissions officials who visit a student’s social networking page has increased in the past year.</div>
-</div></details></div></article></details></section></div>
+<div class="para" id="sec-hyp-testing-proportion-7-2-4">
+<span class="process-math">\(np=500(.33)\geq 5\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-proportion-7-2-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-hyp-testing-proportion-7-2-5">
+<span class="process-math">\(n(1-p)=500(.67)\geq 5\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-proportion-7-2-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-hyp-testing-proportion-7-2-6">
+<span class="process-math">\(H_1: \; p\gt 0.33\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-proportion-7-2-6" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-hyp-testing-proportion-7-2-7">critical value: <span class="process-math">\(z_{.05}=NORM.S.INV(.95)\approx 1.645\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-proportion-7-2-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-hyp-testing-proportion-7-2-8">test statistic: <span class="process-math">\(z_p=\frac{.34-.33}{\sqrt{\frac{.33(.67)}{500}}}\approx .48\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-proportion-7-2-8" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-hyp-testing-proportion-7-2-9">Since <span class="process-math">\(z_p\lt z_{.05}\)</span> and this is a right-tailed test, the test statistic does not fall in the rejection region, and we fail to reject <span class="process-math">\(H_0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-proportion-7-2-9" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-hyp-testing-proportion-7-2-10">The sample does not provide enough evidence to support the claim that the proportion of admissions officials who visit a student’s social networking page has increased in the past year.<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-proportion-7-2-10" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 10.5.3.1"><a href="#sec-hyp-testing-proportion-7-2" title="Copy heading and permalink for Answer 10.5.3.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 10.5.3"><a href="#sec-hyp-testing-proportion-7" title="Copy heading and permalink for Exercise 10.5.3">🔗</a></div></article></details><div class="autopermalink" data-description="Section 10.5: Hypothesis Testing for the Population Proportion"><a href="#sec-hyp-testing-proportion" title="Copy heading and permalink for Section 10.5: Hypothesis Testing for the Population Proportion">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-hyp-testing-mean-sigma-unknown.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-Hypothesis-Variance.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

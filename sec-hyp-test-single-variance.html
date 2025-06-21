@@ -102,14 +102,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.7.6';
+eBookConfig.runestone_version = '7.8.2';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.107bf2d9be20d9c4.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.c7bf407f76a97812.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.8e4157bd77a28b29.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.2e7f40e86ae7d163.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -342,19 +342,34 @@ eBookConfig.enable_chatcodes =  false;
 \boxed{ \chi^2 = \frac{(n-1)s^2}{\sigma^2} }
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-hyp-test-single-variance-2-2">Keep in mind that often variability is described by the standard deviation rather than variance.  We can still complete a hypothesis test for <span class="process-math">\(\sigma^2\)</span> by simply squaring the given standard deviation values.</div></section><div class="para logical" id="sec-hyp-test-single-variance-3">
+<div class="para" id="sec-hyp-test-single-variance-2-2">Keep in mind that often variability is described by the standard deviation rather than variance.  We can still complete a hypothesis test for <span class="process-math">\(\sigma^2\)</span> by simply squaring the given standard deviation values.<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><div class="para logical" id="sec-hyp-test-single-variance-3">
 <div class="para">In the next example, we perform a single population hypothesis test for <span class="process-math">\(\sigma^2\)</span> using the traditional method of hypothesis testing.  Recall that this method requires the identification of critical value(s), <span class="process-math">\(\chi^2_{\alpha}\text{,}\)</span> which we can find using a table or using the below Excel commands:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 CHISQ.INV(\text{left tail area, degrees of freedom}),\;\;\; CHISQ.INV.RT(\text{right tail area, degrees of freedom})
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <details id="sec-hyp-test-single-variance-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">11.2.1</span><span class="period">.</span>
-</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-hyp-test-single-variance-4-1-1">(Similar to Donnelly 13.7)</div> <div class="para" id="sec-hyp-test-single-variance-4-1-2">The volatility of world crude oil prices is important because of its impact on global economic stability.  One measure of volatility is the standard deviation.  The data table in the Excel file below lists the monthly price of crude oil from January 1974 to March 2024.</div> <div class="para" id="sec-hyp-test-single-variance-4-1-3">The standard deviation of crude oil prices between January 1974 and December 2021 was about <span class="process-math">\(\$ 27.4\)</span> a barrel</div> <div class="para" id="sec-hyp-test-single-variance-4-1-4">Assuming <span class="process-math">\(\alpha=0.10\text{,}\)</span> check to see if the standard deviation of crude oil prices between January 2022 and March 2024 has decreased from what it was prior to this time period.  (Use the traditional method of hypothesis testing.)</div> <div class="para" id="sec-hyp-test-single-variance-4-1-5"><a class="external" href="external/sheets/OilPrices.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/OilPrices.xlsx</code></a></div>
-<div class="solutions"><details id="sec-hyp-test-single-variance-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-hyp-test-single-variance-4-2-1"><a class="external" href="external/sheets/OilPricesSolutions.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/OilPricesSolutions.xlsx</code></a></div></div></details></div></article></details><div class="para logical" id="sec-hyp-test-single-variance-5">
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-hyp-test-single-variance-4-1-1">(Similar to Donnelly 13.7)<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="sec-hyp-test-single-variance-4-1-2">The volatility of world crude oil prices is important because of its impact on global economic stability.  One measure of volatility is the standard deviation.  The data table in the Excel file below lists the monthly price of crude oil from January 1974 to March 2024.<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-4-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="sec-hyp-test-single-variance-4-1-3">The standard deviation of crude oil prices between January 1974 and December 2021 was about <span class="process-math">\(\$ 27.4\)</span> a barrel<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-4-1-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="sec-hyp-test-single-variance-4-1-4">Assuming <span class="process-math">\(\alpha=0.10\text{,}\)</span> check to see if the standard deviation of crude oil prices between January 2022 and March 2024 has decreased from what it was prior to this time period.  (Use the traditional method of hypothesis testing.)<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-4-1-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="sec-hyp-test-single-variance-4-1-5">
+<a class="external" href="external/sheets/OilPrices.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/OilPrices.xlsx</code></a><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-4-1-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-hyp-test-single-variance-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-hyp-test-single-variance-4-2-1">
+<a class="external" href="external/sheets/OilPricesSolutions.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/OilPricesSolutions.xlsx</code></a><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-4-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 11.2.1.1"><a href="#sec-hyp-test-single-variance-4-2" title="Copy heading and permalink for Answer 11.2.1.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 11.2.1"><a href="#sec-hyp-test-single-variance-4" title="Copy heading and permalink for Exercise 11.2.1">🔗</a></div></article></details><div class="para logical" id="sec-hyp-test-single-variance-5">
 <div class="para">In our next example, we will use the p-value method of hypothesis testing.  Once again, the tables for the Chi-square distribution are limited in the precision they can provide for our p-values.  Therefore, we will rely on Excel to compute the p-values using the following formulas:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -380,91 +395,176 @@ CHISQ.DIST(x,df,\text{cumulative}),\;\;\; CHISQ.DIST.RT(x,df)
 </tr>
 </table></div>
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <details id="sec-hyp-test-single-variance-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">11.2.2</span><span class="period">.</span>
-</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-hyp-test-single-variance-6-1-1">(Donnelly 13.29)</div> <div class="para" id="sec-hyp-test-single-variance-6-1-2">As smartphones have become more sophisticated, their data usage has increased and caused capacity issues with service providers.  High variability in data usage among customers can result in slow connections with the cellphone network.  Suppose a cellphone network would like to test if the standard deviation of monthly data usage for its customers has increased beyond 400 megabytes (MB).  A random sample of 25 customers was found to have a standard deviation of 460 MB.  Using <span class="process-math">\(\alpha=0.05\text{,}\)</span> perform a hypothesis test to determine if the standard deviation for the monthly data usage for the cellphone network has exceeded 400 MB.  Use the p-value method of hypothesis testing.</div>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-hyp-test-single-variance-6-1-1">(Donnelly 13.29)<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-6-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="sec-hyp-test-single-variance-6-1-2">As smartphones have become more sophisticated, their data usage has increased and caused capacity issues with service providers.  High variability in data usage among customers can result in slow connections with the cellphone network.  Suppose a cellphone network would like to test if the standard deviation of monthly data usage for its customers has increased beyond 400 megabytes (MB).  A random sample of 25 customers was found to have a standard deviation of 460 MB.  Using <span class="process-math">\(\alpha=0.05\text{,}\)</span> perform a hypothesis test to determine if the standard deviation for the monthly data usage for the cellphone network has exceeded 400 MB.  Use the p-value method of hypothesis testing.<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-6-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="solutions"><details id="sec-hyp-test-single-variance-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
-<div class="para" id="sec-hyp-test-single-variance-6-2-1"><span class="process-math">\(n=25\)</span></div>
-<div class="para" id="sec-hyp-test-single-variance-6-2-2"><span class="process-math">\(s=460\Rightarrow s^2=211,600\)</span></div>
-<div class="para" id="sec-hyp-test-single-variance-6-2-3"><span class="process-math">\(\alpha=0.05\)</span></div>
-<div class="para" id="sec-hyp-test-single-variance-6-2-4"><span class="process-math">\(H_0:  \sigma^2\leq 160,000\)</span></div>
-<div class="para" id="sec-hyp-test-single-variance-6-2-5"><span class="process-math">\(H_1:  \sigma^2\gt 400^2 = 160,000\leftarrow \text{ right-tail test}\)</span></div>
-<div class="para logical" id="sec-hyp-test-single-variance-6-2-6"><div class="displaymath process-math">
+<div class="para" id="sec-hyp-test-single-variance-6-2-1">
+<span class="process-math">\(n=25\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-6-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-hyp-test-single-variance-6-2-2">
+<span class="process-math">\(s=460\Rightarrow s^2=211,600\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-6-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-hyp-test-single-variance-6-2-3">
+<span class="process-math">\(\alpha=0.05\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-6-2-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-hyp-test-single-variance-6-2-4">
+<span class="process-math">\(H_0:  \sigma^2\leq 160,000\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-6-2-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-hyp-test-single-variance-6-2-5">
+<span class="process-math">\(H_1:  \sigma^2\gt 400^2 = 160,000\leftarrow \text{ right-tail test}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-6-2-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-hyp-test-single-variance-6-2-6">
+<div class="displaymath process-math">
 \begin{equation*}
 \chi^2=\frac{(25-1)(211,600)}{160,000}\approx 31.74
 \end{equation*}
-</div></div>
-<div class="para logical" id="sec-hyp-test-single-variance-6-2-7"><div class="displaymath process-math">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-6-2-6" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-hyp-test-single-variance-6-2-7">
+<div class="displaymath process-math">
 \begin{equation*}
 \text{p-value}\approx CHISQ.DIST.RT(31.74, 24)\approx 0.1336
 \end{equation*}
-</div></div>
-<div class="para" id="sec-hyp-test-single-variance-6-2-8">Since p-value <span class="process-math">\(\gt \alpha\text{,}\)</span> we fail to reject <span class="process-math">\(H_0\text{.}\)</span>
 </div>
-<div class="para" id="sec-hyp-test-single-variance-6-2-9">There is not enough evidence to conclude that the standard deviation for monthly data usage for the cell phone network has exceeded 400 MB.</div>
-</div></details></div></article></details><section class="exercises" id="sec-hyp-test-single-variance-7"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-6-2-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-hyp-test-single-variance-6-2-8">Since p-value <span class="process-math">\(\gt \alpha\text{,}\)</span> we fail to reject <span class="process-math">\(H_0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-6-2-8" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-hyp-test-single-variance-6-2-9">There is not enough evidence to conclude that the standard deviation for monthly data usage for the cell phone network has exceeded 400 MB.<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-6-2-9" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 11.2.2.1"><a href="#sec-hyp-test-single-variance-6-2" title="Copy heading and permalink for Answer 11.2.2.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 11.2.2"><a href="#sec-hyp-test-single-variance-6" title="Copy heading and permalink for Exercise 11.2.2">🔗</a></div></article></details><section class="exercises" id="sec-hyp-test-single-variance-7"><h3 class="heading hide-type">
 <span class="type">Exercises</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Exercises</span>
 </h3>
 <article class="exercise exercise-like" id="sec-hyp-test-single-variance-7-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
-<div class="introduction" id="sec-hyp-test-single-variance-7-1-1"><div class="para" id="sec-hyp-test-single-variance-7-1-1-1">The 2006 general Social Survey asked a large number of people how much time they spent watching TV each day. The mean number of hours was 4.5 with a standard deviation of 2.3. Assume that in a sample of 54 teenagers, the sample standard deviation of daily TV time is 1.8 hours, and that the population of TV watching times is normally distributed. Under 5% significance level can you conclude that the population standard deviation of TV watching times for teenagers is different from 2.3?</div></div>
+<div class="introduction" id="sec-hyp-test-single-variance-7-1-1"><div class="para" id="sec-hyp-test-single-variance-7-1-1-1">The 2006 general Social Survey asked a large number of people how much time they spent watching TV each day. The mean number of hours was 4.5 with a standard deviation of 2.3. Assume that in a sample of 54 teenagers, the sample standard deviation of daily TV time is 1.8 hours, and that the population of TV watching times is normally distributed. Under 5% significance level can you conclude that the population standard deviation of TV watching times for teenagers is different from 2.3?<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-7-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
 <article class="task exercise-like" id="sec-hyp-test-single-variance-7-1-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
-<div class="exercise-statement"><div class="para" id="sec-hyp-test-single-variance-7-1-2-1-1">Choose the correct set of hypotheses:</div></div>
+<div class="exercise-statement"><div class="para" id="sec-hyp-test-single-variance-7-1-2-1-1">Choose the correct set of hypotheses:<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-7-1-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
 <ul data-component="multiplechoice" class="exercise-interactives" data-multipleanswers="false">
 <li data-component="answer" id="_opt_a" data-correct="">
-<div class="para" id="sec-hyp-test-single-variance-7-1-2-2-1-1-1"><span class="process-math">\(H_0:\;\; \sigma^2 =(2.3)^2\text{,}\)</span></div> <div class="para" id="sec-hyp-test-single-variance-7-1-2-2-1-1-2"><span class="process-math">\(H_1:\;\; \sigma^2 \neq (2.3)^2\)</span></div>
+<div class="para" id="sec-hyp-test-single-variance-7-1-2-2-1-1-1">
+<span class="process-math">\(H_0:\;\; \sigma^2 =(2.3)^2\text{,}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-7-1-2-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="sec-hyp-test-single-variance-7-1-2-2-1-1-2">
+<span class="process-math">\(H_1:\;\; \sigma^2 \neq (2.3)^2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-7-1-2-2-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 </li>
 <li data-component="feedback" id="_opt_a">
 <li data-component="answer" id="_opt_b">
-<div class="para" id="sec-hyp-test-single-variance-7-1-2-2-2-1-1"><span class="process-math">\(H_0:\;\; \mu =2.3\text{,}\)</span></div> <div class="para" id="sec-hyp-test-single-variance-7-1-2-2-2-1-2"><span class="process-math">\(H_1:\;\; \mu \neq 2.3\)</span></div>
+<div class="para" id="sec-hyp-test-single-variance-7-1-2-2-2-1-1">
+<span class="process-math">\(H_0:\;\; \mu =2.3\text{,}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-7-1-2-2-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="sec-hyp-test-single-variance-7-1-2-2-2-1-2">
+<span class="process-math">\(H_1:\;\; \mu \neq 2.3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-7-1-2-2-2-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 </li>
 <li data-component="feedback" id="_opt_b">
 <li data-component="answer" id="_opt_c">
-<div class="para" id="sec-hyp-test-single-variance-7-1-2-2-3-1-1"><span class="process-math">\(H_0:\;\; \sigma^2 =2.3\text{,}\)</span></div> <div class="para" id="sec-hyp-test-single-variance-7-1-2-2-3-1-2"><span class="process-math">\(H_1:\;\; \sigma^2\neq 2.3\)</span></div>
+<div class="para" id="sec-hyp-test-single-variance-7-1-2-2-3-1-1">
+<span class="process-math">\(H_0:\;\; \sigma^2 =2.3\text{,}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-7-1-2-2-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="sec-hyp-test-single-variance-7-1-2-2-3-1-2">
+<span class="process-math">\(H_1:\;\; \sigma^2\neq 2.3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-7-1-2-2-3-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 </li>
 <li data-component="feedback" id="_opt_c">
 <li data-component="answer" id="_opt_d">
-<div class="para" id="sec-hyp-test-single-variance-7-1-2-2-4-1-1"><span class="process-math">\(H_0:\;\; \mu =4.5\text{,}\)</span></div> <div class="para" id="sec-hyp-test-single-variance-7-1-2-2-4-1-2"><span class="process-math">\(H_1:\;\; \mu \neq 4.5\)</span></div>
+<div class="para" id="sec-hyp-test-single-variance-7-1-2-2-4-1-1">
+<span class="process-math">\(H_0:\;\; \mu =4.5\text{,}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-7-1-2-2-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="sec-hyp-test-single-variance-7-1-2-2-4-1-2">
+<span class="process-math">\(H_1:\;\; \mu \neq 4.5\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-7-1-2-2-4-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 </li>
 <li data-component="feedback" id="_opt_d">
 </ul>
-</div></div></article><article class="task exercise-like" id="sec-hyp-test-single-variance-7-1-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+</div></div>
+<div class="autopermalink" data-description="Task 11.2.1.a"><a href="#sec-hyp-test-single-variance-7-1-2" title="Copy heading and permalink for Task 11.2.1.a">🔗</a></div></article><article class="task exercise-like" id="sec-hyp-test-single-variance-7-1-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="ptx-runestone-container"><div class="runestone multiplechoice_section">
-<div class="exercise-statement"><div class="para" id="sec-hyp-test-single-variance-7-1-3-1-1">Which type of test is this?</div></div>
+<div class="exercise-statement"><div class="para" id="sec-hyp-test-single-variance-7-1-3-1-1">Which type of test is this?<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-7-1-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
 <ul data-component="multiplechoice" class="exercise-interactives" data-multipleanswers="false">
-<li data-component="answer" id="_opt_a"><div class="para" id="sec-hyp-test-single-variance-7-1-3-2-1-1-1">left-tailed test</div></li>
+<li data-component="answer" id="_opt_a"><div class="para" id="sec-hyp-test-single-variance-7-1-3-2-1-1-1">left-tailed test<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-7-1-3-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></li>
 <li data-component="feedback" id="_opt_a">
-<li data-component="answer" id="_opt_b"><div class="para" id="sec-hyp-test-single-variance-7-1-3-2-2-1-1">right-tailed test</div></li>
+<li data-component="answer" id="_opt_b"><div class="para" id="sec-hyp-test-single-variance-7-1-3-2-2-1-1">right-tailed test<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-7-1-3-2-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></li>
 <li data-component="feedback" id="_opt_b">
-<li data-component="answer" id="_opt_c" data-correct=""><div class="para" id="sec-hyp-test-single-variance-7-1-3-2-3-1-1">two-tailed test</div></li>
+<li data-component="answer" id="_opt_c" data-correct=""><div class="para" id="sec-hyp-test-single-variance-7-1-3-2-3-1-1">two-tailed test<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-7-1-3-2-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></li>
 <li data-component="feedback" id="_opt_c">
 </ul>
-</div></div></article><article class="task exercise-like" id="sec-hyp-test-single-variance-7-1-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="sec-hyp-test-single-variance-7-1-4-1-1">Compute the value of the test statistic.  (Round the answer to three decimal places.)</div>
-<div class="solutions"><details id="sec-hyp-test-single-variance-7-1-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-hyp-test-single-variance-7-1-4-2-1"><div class="displaymath process-math">
+</div></div>
+<div class="autopermalink" data-description="Task 11.2.1.b"><a href="#sec-hyp-test-single-variance-7-1-3" title="Copy heading and permalink for Task 11.2.1.b">🔗</a></div></article><article class="task exercise-like" id="sec-hyp-test-single-variance-7-1-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="sec-hyp-test-single-variance-7-1-4-1-1">Compute the value of the test statistic.  (Round the answer to three decimal places.)<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-7-1-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-hyp-test-single-variance-7-1-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para logical" id="sec-hyp-test-single-variance-7-1-4-2-1">
+<div class="displaymath process-math">
 \begin{equation*}
 \chi^2=\frac{(53)(1.8)^2}{(2.3)^2}\approx 32.461
 \end{equation*}
-</div></div></div></details></div></article><article class="task exercise-like" id="sec-hyp-test-single-variance-7-1-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="sec-hyp-test-single-variance-7-1-5-1-1">Find the critical value(s) for the rejection region and find the p-value of the test statistic.</div>
-<div class="solutions"><details id="sec-hyp-test-single-variance-7-1-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-hyp-test-single-variance-7-1-5-2-1"><ul class="disc" id="sec-hyp-test-single-variance-7-1-5-2-1-1">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-7-1-4-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 11.2.1.c.1"><a href="#sec-hyp-test-single-variance-7-1-4-2" title="Copy heading and permalink for Answer 11.2.1.c.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 11.2.1.c"><a href="#sec-hyp-test-single-variance-7-1-4" title="Copy heading and permalink for Task 11.2.1.c">🔗</a></div></article><article class="task exercise-like" id="sec-hyp-test-single-variance-7-1-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="sec-hyp-test-single-variance-7-1-5-1-1">Find the critical value(s) for the rejection region and find the p-value of the test statistic.<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-7-1-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-hyp-test-single-variance-7-1-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para logical" id="sec-hyp-test-single-variance-7-1-5-2-1">
+<ul class="disc" id="sec-hyp-test-single-variance-7-1-5-2-1-1">
 <li id="sec-hyp-test-single-variance-7-1-5-2-1-1-1">
-<div class="para" id="sec-hyp-test-single-variance-7-1-5-2-1-1-1-1">Critical values:</div>
-<div class="para" id="sec-hyp-test-single-variance-7-1-5-2-1-1-1-2"><span class="process-math">\(\alpha/2=.025\)</span></div>
-<div class="para" id="sec-hyp-test-single-variance-7-1-5-2-1-1-1-3"><span class="process-math">\(CHISQ.INV.RT(.025,54-1)\approx 75.002  \)</span></div>
-<div class="para" id="sec-hyp-test-single-variance-7-1-5-2-1-1-1-4"><span class="process-math">\(CHISQ.INV(.025,54-1)\approx 34.776  \)</span></div>
+<div class="para" id="sec-hyp-test-single-variance-7-1-5-2-1-1-1-1">Critical values:<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-7-1-5-2-1-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-hyp-test-single-variance-7-1-5-2-1-1-1-2">
+<span class="process-math">\(\alpha/2=.025\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-7-1-5-2-1-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-hyp-test-single-variance-7-1-5-2-1-1-1-3">
+<span class="process-math">\(CHISQ.INV.RT(.025,54-1)\approx 75.002  \)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-7-1-5-2-1-1-1-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-hyp-test-single-variance-7-1-5-2-1-1-1-4">
+<span class="process-math">\(CHISQ.INV(.025,54-1)\approx 34.776  \)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-7-1-5-2-1-1-1-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-hyp-test-single-variance-7-1-5-2-1-1-1" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-hyp-test-single-variance-7-1-5-2-1-1-2">
-<div class="para" id="sec-hyp-test-single-variance-7-1-5-2-1-1-2-1">p-value:</div>
-<div class="para" id="sec-hyp-test-single-variance-7-1-5-2-1-1-2-2"><span class="process-math">\(\approx 2*CHISQ.DIST(32.461,53,1)\approx 0.023\)</span></div>
+<div class="para" id="sec-hyp-test-single-variance-7-1-5-2-1-1-2-1">p-value:<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-7-1-5-2-1-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-hyp-test-single-variance-7-1-5-2-1-1-2-2">
+<span class="process-math">\(\approx 2*CHISQ.DIST(32.461,53,1)\approx 0.023\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-7-1-5-2-1-1-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-hyp-test-single-variance-7-1-5-2-1-1-2" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
-</ul></div></div></details></div></article><article class="task exercise-like" id="sec-hyp-test-single-variance-7-1-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="para" id="sec-hyp-test-single-variance-7-1-6-1-1">Is the test statistic in the rejection region?  Is the p-value less than the significance level?</div>
-<div class="solutions"><details id="sec-hyp-test-single-variance-7-1-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-hyp-test-single-variance-7-1-6-2-1">Yes, the test statistic is in the rejection region and the p-value is less than the significance level.</div></div></details></div></article><article class="task exercise-like" id="sec-hyp-test-single-variance-7-1-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
-<div class="para" id="sec-hyp-test-single-variance-7-1-7-1-1">Do we have sufficient evidence to reject the null hypothesis in favor of the alternative hypothesis?</div>
-<div class="solutions"><details id="sec-hyp-test-single-variance-7-1-7-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-hyp-test-single-variance-7-1-7-2-1">Yes, we have sufficient evidence to reject the null hypothesis and conclude that the standard deviation is different from <span class="process-math">\(2.3\text{.}\)</span>
-</div></div></details></div></article></article></section></section></div>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-7-1-5-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 11.2.1.d.1"><a href="#sec-hyp-test-single-variance-7-1-5-2" title="Copy heading and permalink for Answer 11.2.1.d.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 11.2.1.d"><a href="#sec-hyp-test-single-variance-7-1-5" title="Copy heading and permalink for Task 11.2.1.d">🔗</a></div></article><article class="task exercise-like" id="sec-hyp-test-single-variance-7-1-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="sec-hyp-test-single-variance-7-1-6-1-1">Is the test statistic in the rejection region?  Is the p-value less than the significance level?<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-7-1-6-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-hyp-test-single-variance-7-1-6-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-hyp-test-single-variance-7-1-6-2-1">Yes, the test statistic is in the rejection region and the p-value is less than the significance level.<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-7-1-6-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 11.2.1.e.1"><a href="#sec-hyp-test-single-variance-7-1-6-2" title="Copy heading and permalink for Answer 11.2.1.e.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 11.2.1.e"><a href="#sec-hyp-test-single-variance-7-1-6" title="Copy heading and permalink for Task 11.2.1.e">🔗</a></div></article><article class="task exercise-like" id="sec-hyp-test-single-variance-7-1-7"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para" id="sec-hyp-test-single-variance-7-1-7-1-1">Do we have sufficient evidence to reject the null hypothesis in favor of the alternative hypothesis?<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-7-1-7-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-hyp-test-single-variance-7-1-7-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-hyp-test-single-variance-7-1-7-2-1">Yes, we have sufficient evidence to reject the null hypothesis and conclude that the standard deviation is different from <span class="process-math">\(2.3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-test-single-variance-7-1-7-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 11.2.1.f.1"><a href="#sec-hyp-test-single-variance-7-1-7-2" title="Copy heading and permalink for Answer 11.2.1.f.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 11.2.1.f"><a href="#sec-hyp-test-single-variance-7-1-7" title="Copy heading and permalink for Task 11.2.1.f">🔗</a></div></article><div class="autopermalink" data-description="Exercise 11.2.1"><a href="#sec-hyp-test-single-variance-7-1" title="Copy heading and permalink for Exercise 11.2.1">🔗</a></div></article><div class="autopermalink" data-description="Exercises 11.2"><a href="#sec-hyp-test-single-variance-7" title="Copy heading and permalink for Exercises 11.2">🔗</a></div></section><div class="autopermalink" data-description="Section 11.2: Hypothesis Test for a Single \sigma^2"><a href="#sec-hyp-test-single-variance" title="Copy heading and permalink for Section 11.2: Hypothesis Test for a Single \sigma^2">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-chi-squared.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-F-dist.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

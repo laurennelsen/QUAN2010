@@ -102,14 +102,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.7.6';
+eBookConfig.runestone_version = '7.8.2';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.107bf2d9be20d9c4.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.c7bf407f76a97812.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.8e4157bd77a28b29.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.2e7f40e86ae7d163.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -335,109 +335,203 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-mean-and-stdev"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">3.3</span><span class="space"> </span><span class="title">Using the Mean and Standard Deviation Together</span>
 </h2>
-<section class="introduction" id="sec-mean-and-stdev-2"></section><div class="para" id="sec-mean-and-stdev-3">There are a few important concepts that use the mean and standard deviation together to describe data sets.</div>
+<section class="introduction" id="sec-mean-and-stdev-2"></section><div class="para" id="sec-mean-and-stdev-3">There are a few important concepts that use the mean and standard deviation together to describe data sets.<div class="autopermalink" data-description="Paragraph"><a href="#sec-mean-and-stdev-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="definition definition-like" id="def-cv"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.3.1</span><span class="period">.</span>
 </h3>
-<div class="para" id="def-cv-1-1">The <em class="emphasis">coefficient of variation (cv)</em> measures the standard deviation in terms of its percentage of the mean.</div> <div class="para logical" id="def-cv-1-2"><div class="displaymath process-math">
+<div class="para" id="def-cv-1-1">The <em class="emphasis">coefficient of variation (cv)</em> measures the standard deviation in terms of its percentage of the mean.<div class="autopermalink" data-description="Paragraph"><a href="#def-cv-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="def-cv-1-2">
+<div class="displaymath process-math">
 \begin{equation*}
 \text{formula:} \text{  cv}=\frac{\sigma}{\mu}\cdot 100\text{  or  } \frac{s}{\overline{x}}\cdot 100
 \end{equation*}
-</div></div></article><article class="definition definition-like" id="def-z-score"><h3 class="heading">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-cv-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 3.3.1"><a href="#def-cv" title="Copy heading and permalink for Definition 3.3.1">🔗</a></div></article><article class="definition definition-like" id="def-z-score"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.3.2</span><span class="period">.</span>
 </h3>
-<div class="para" id="def-z-score-1-1">The <em class="emphasis"><span class="process-math">\(z\)</span>-score</em> identifies the number of standard deviations a particular value is from the mean of its distribution.</div> <div class="para logical" id="def-z-score-1-2"><div class="displaymath process-math">
+<div class="para" id="def-z-score-1-1">The <em class="emphasis"><span class="process-math">\(z\)</span>-score</em> identifies the number of standard deviations a particular value is from the mean of its distribution.<div class="autopermalink" data-description="Paragraph"><a href="#def-z-score-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="def-z-score-1-2">
+<div class="displaymath process-math">
 \begin{equation*}
 \text{formula:  } z=\frac{x-\mu}{\sigma}\text{  or  } \frac{x-\overline{x}}{s}
 \end{equation*}
-</div></div> <div class="para logical" id="def-z-score-1-3"><div class="displaymath process-math">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-z-score-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="def-z-score-1-3">
+<div class="displaymath process-math">
 \begin{equation*}
 \text{Excel formula:  STANDARDIZE}
 \end{equation*}
-</div></div></article><details id="ex-weights-z" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-z-score-1-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 3.3.2"><a href="#def-z-score" title="Copy heading and permalink for Definition 3.3.2">🔗</a></div></article><details id="ex-weights-z" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">3.3.3</span><span class="period">.</span>
 </h3></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="ex-weights-z-1">
-<div class="para" id="ex-weights-z-1-1">The mean weight of newborn infants is 7 pounds, and the standard deviation is 0.8 pound.  The weights of newborn infants are <em class="emphasis">normally distributed</em>.  (This is a symmetric distribution that we’ll talk more about in a later chapter.)</div>
-<div class="para" id="ex-weights-z-1-2">Find the <span class="process-math">\(z\)</span>-scores for the following weights.</div>
+<div class="para" id="ex-weights-z-1-1">The mean weight of newborn infants is 7 pounds, and the standard deviation is 0.8 pound.  The weights of newborn infants are <em class="emphasis">normally distributed</em>.  (This is a symmetric distribution that we’ll talk more about in a later chapter.)<div class="autopermalink" data-description="Paragraph"><a href="#ex-weights-z-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ex-weights-z-1-2">Find the <span class="process-math">\(z\)</span>-scores for the following weights.<div class="autopermalink" data-description="Paragraph"><a href="#ex-weights-z-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 </div>
 <article class="task exercise-like" id="ex-weights-z-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="ex-weights-z-2-1-1">9 pounds</div>
-<div class="solutions"><details id="ex-weights-z-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="ex-weights-z-2-2-1"><div class="displaymath process-math">
+<div class="para" id="ex-weights-z-2-1-1">9 pounds<div class="autopermalink" data-description="Paragraph"><a href="#ex-weights-z-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="ex-weights-z-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para logical" id="ex-weights-z-2-2-1">
+<div class="displaymath process-math">
 \begin{equation*}
 z_9=\frac{9-7}{0.8}=2.5
 \end{equation*}
-</div></div></div></details></div></article><article class="task exercise-like" id="ex-weights-z-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="ex-weights-z-3-1-1">7 pounds</div>
-<div class="solutions"><details id="ex-weights-z-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="ex-weights-z-3-2-1"><div class="displaymath process-math">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-weights-z-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 3.3.3.a.1"><a href="#ex-weights-z-2-2" title="Copy heading and permalink for Answer 3.3.3.a.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 3.3.3.a"><a href="#ex-weights-z-2" title="Copy heading and permalink for Task 3.3.3.a">🔗</a></div></article><article class="task exercise-like" id="ex-weights-z-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="ex-weights-z-3-1-1">7 pounds<div class="autopermalink" data-description="Paragraph"><a href="#ex-weights-z-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="ex-weights-z-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para logical" id="ex-weights-z-3-2-1">
+<div class="displaymath process-math">
 \begin{equation*}
 z_7=\frac{7-7}{0.8}=0
 \end{equation*}
-</div></div></div></details></div></article><article class="task exercise-like" id="ex-weights-z-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="ex-weights-z-4-1-1">6 pounds</div>
-<div class="solutions"><details id="ex-weights-z-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="ex-weights-z-4-2-1"><div class="displaymath process-math">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-weights-z-3-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 3.3.3.b.1"><a href="#ex-weights-z-3-2" title="Copy heading and permalink for Answer 3.3.3.b.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 3.3.3.b"><a href="#ex-weights-z-3" title="Copy heading and permalink for Task 3.3.3.b">🔗</a></div></article><article class="task exercise-like" id="ex-weights-z-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="ex-weights-z-4-1-1">6 pounds<div class="autopermalink" data-description="Paragraph"><a href="#ex-weights-z-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="ex-weights-z-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para logical" id="ex-weights-z-4-2-1">
+<div class="displaymath process-math">
 \begin{equation*}
 z_6=\frac{6-7}{0.8}=-1.25
 \end{equation*}
-</div></div></div></details></div></article></article></details><details id="sec-mean-and-stdev-7" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Question</span><span class="space"> </span><span class="codenumber">3.3.4</span><span class="period">.</span>
-</h3></summary><article class="question example-like knowl__content"><div class="para" id="sec-mean-and-stdev-7-1-1">What do the <span class="process-math">\(z\)</span>-scores in <a href="sec-mean-and-stdev.html#ex-weights-z" class="xref" data-knowl="./knowl/xref/ex-weights-z.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 3.3.3">Exercise 3.3.3</a> mean about how the weights compare to the average weight of newborn infants?</div></article></details><details id="sec-mean-and-stdev-8" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
-<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">3.3.5</span><span class="period">.</span>
-</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-mean-and-stdev-8-1-1">An employee satisfaction survey was given to employees, and they were asked to rate their overall satisfaction with their job from 0 to 10 (inclusive).  The average rating was 5.5, and the standard deviation was 1.2.  What is the satisfaction rating corresponding to a <span class="process-math">\(z\)</span>-score of <span class="process-math">\(-1.5\text{?}\)</span>
 </div>
-<div class="solutions"><details id="sec-mean-and-stdev-8-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-mean-and-stdev-8-2-1"><div class="displaymath process-math">
+<div class="autopermalink" data-description="Paragraph"><a href="#ex-weights-z-4-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 3.3.3.c.1"><a href="#ex-weights-z-4-2" title="Copy heading and permalink for Answer 3.3.3.c.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 3.3.3.c"><a href="#ex-weights-z-4" title="Copy heading and permalink for Task 3.3.3.c">🔗</a></div></article><div class="autopermalink" data-description="Exercise 3.3.3"><a href="#ex-weights-z" title="Copy heading and permalink for Exercise 3.3.3">🔗</a></div></article></details><details id="sec-mean-and-stdev-7" class="question example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">3.3.4</span><span class="period">.</span>
+</h3></summary><article class="question example-like knowl__content"><div class="para" id="sec-mean-and-stdev-7-1-1">What do the <span class="process-math">\(z\)</span>-scores in <a href="sec-mean-and-stdev.html#ex-weights-z" class="xref" data-knowl="./knowl/xref/ex-weights-z.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 3.3.3">Exercise 3.3.3</a> mean about how the weights compare to the average weight of newborn infants?<div class="autopermalink" data-description="Paragraph"><a href="#sec-mean-and-stdev-7-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Question 3.3.4"><a href="#sec-mean-and-stdev-7" title="Copy heading and permalink for Question 3.3.4">🔗</a></div></article></details><details id="sec-mean-and-stdev-8" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">3.3.5</span><span class="period">.</span>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-mean-and-stdev-8-1-1">An employee satisfaction survey was given to employees, and they were asked to rate their overall satisfaction with their job from 0 to 10 (inclusive).  The average rating was 5.5, and the standard deviation was 1.2.  What is the satisfaction rating corresponding to a <span class="process-math">\(z\)</span>-score of <span class="process-math">\(-1.5\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-mean-and-stdev-8-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-mean-and-stdev-8-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para logical" id="sec-mean-and-stdev-8-2-1">
+<div class="displaymath process-math">
 \begin{equation*}
 \text{satisfaction rating}=\text{mean}-1.5(\text{standard deviation})=5.5-1.5(1.2)=5.5-1.8=3.7
 \end{equation*}
-</div></div></div></details></div></article></details><section class="subsection" id="subsec-empirical-rule"><h3 class="heading hide-type">
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-mean-and-stdev-8-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 3.3.5.1"><a href="#sec-mean-and-stdev-8-2" title="Copy heading and permalink for Answer 3.3.5.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 3.3.5"><a href="#sec-mean-and-stdev-8" title="Copy heading and permalink for Exercise 3.3.5">🔗</a></div></article></details><section class="subsection" id="subsec-empirical-rule"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">3.3.1</span><span class="space"> </span><span class="title">The Empirical Rule</span>
 </h3>
 <div class="para logical" id="subsec-empirical-rule-2">
 <div class="para">The <em class="emphasis">Empirical Rule</em> says that if a distribution follows a bell-shaped, symmetric curve centered around the mean, then we should expect:</div>
 <ul class="disc" id="subsec-empirical-rule-2-2">
-<li id="subsec-empirical-rule-2-2-1"><div class="para" id="subsec-empirical-rule-2-2-1-1">approximately <span class="process-math">\(68\%\)</span> of the data to fall within <em class="emphasis">one</em> standard deviation of the mean,</div></li>
-<li id="subsec-empirical-rule-2-2-2"><div class="para" id="subsec-empirical-rule-2-2-2-1">approximately <span class="process-math">\(95\%\)</span> of the data to fall within <em class="emphasis">two</em> standard deviations of the mean, and</div></li>
-<li id="subsec-empirical-rule-2-2-3"><div class="para" id="subsec-empirical-rule-2-2-3-1">approximately <span class="process-math">\(99.7\%\)</span> of the data to fall within <em class="emphasis">three</em> standard deviations of the mean.</div></li>
-</ul>
+<li id="subsec-empirical-rule-2-2-1">
+<div class="para" id="subsec-empirical-rule-2-2-1-1">approximately <span class="process-math">\(68\%\)</span> of the data to fall within <em class="emphasis">one</em> standard deviation of the mean,<div class="autopermalink" data-description="Paragraph"><a href="#subsec-empirical-rule-2-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<figure class="figure figure-like" id="figure-geogebra-empirical"><iframe id="figure-geogebra-empirical-2" width="600" height="333" src="figure-geogebra-empirical-2-if.html"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.3.6<span class="period">.</span></span><span class="space"> </span><div class="para" id="figure-geogebra-empirical-1-1">The Empirical Rule (Made in GeoGebra by Kady Schneiter)</div> <div class="para" id="figure-geogebra-empirical-1-2">Link to GeoGebra:  <a class="external" href="https://www.geogebra.org/m/vsznbtjh" target="_blank"><code class="code-inline tex2jax_ignore">https://www.geogebra.org/m/vsznbtjh</code></a>
-</div></figcaption></figure><details id="subsec-empirical-rule-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<div class="autopermalink" data-description="Item"><a href="#subsec-empirical-rule-2-2-1" title="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-empirical-rule-2-2-2">
+<div class="para" id="subsec-empirical-rule-2-2-2-1">approximately <span class="process-math">\(95\%\)</span> of the data to fall within <em class="emphasis">two</em> standard deviations of the mean, and<div class="autopermalink" data-description="Paragraph"><a href="#subsec-empirical-rule-2-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-empirical-rule-2-2-2" title="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-empirical-rule-2-2-3">
+<div class="para" id="subsec-empirical-rule-2-2-3-1">approximately <span class="process-math">\(99.7\%\)</span> of the data to fall within <em class="emphasis">three</em> standard deviations of the mean.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-empirical-rule-2-2-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-empirical-rule-2-2-3" title="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-empirical-rule-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="figure-geogebra-empirical"><iframe id="figure-geogebra-empirical-2" width="600" height="333" src="figure-geogebra-empirical-2-if.html"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.3.6<span class="period">.</span></span><span class="space"> </span><div class="para" id="figure-geogebra-empirical-1-1">The Empirical Rule (Made in GeoGebra by Kady Schneiter)<div class="autopermalink" data-description="Paragraph"><a href="#figure-geogebra-empirical-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="figure-geogebra-empirical-1-2">Link to GeoGebra:  <a class="external" href="https://www.geogebra.org/m/vsznbtjh" target="_blank"><code class="code-inline tex2jax_ignore">https://www.geogebra.org/m/vsznbtjh</code></a><div class="autopermalink" data-description="Paragraph"><a href="#figure-geogebra-empirical-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Figure 3.3.6"><a href="#figure-geogebra-empirical" title="Copy heading and permalink for Figure 3.3.6">🔗</a></div></figcaption></figure><details id="subsec-empirical-rule-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">3.3.7</span><span class="period">.</span><span class="space"> </span><span class="title">Empirical Rule.</span>
-</h4></summary><article class="exercise exercise-like knowl__content"><div id="momsubsec-empirical-rule-4-2wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momsubsec-empirical-rule-4-2" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=7056&amp;frame_id=momsubsec-empirical-rule-4-2"></iframe></div></article></details><details id="subsec-empirical-rule-5" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+</h4></summary><article class="exercise exercise-like knowl__content"><div id="momsubsec-empirical-rule-4-2wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momsubsec-empirical-rule-4-2" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=7056&amp;frame_id=momsubsec-empirical-rule-4-2"></iframe></div>
+<div class="autopermalink" data-description="Exercise 3.3.7: Empirical Rule"><a href="#subsec-empirical-rule-4" title="Copy heading and permalink for Exercise 3.3.7: Empirical Rule">🔗</a></div></article></details><details id="subsec-empirical-rule-5" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">3.3.8</span><span class="period">.</span><span class="space"> </span><span class="title">Empirical Rule.</span>
-</h4></summary><article class="exercise exercise-like knowl__content"><div id="momsubsec-empirical-rule-5-2wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momsubsec-empirical-rule-5-2" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=25941&amp;frame_id=momsubsec-empirical-rule-5-2"></iframe></div></article></details><details id="subsec-empirical-rule-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+</h4></summary><article class="exercise exercise-like knowl__content"><div id="momsubsec-empirical-rule-5-2wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momsubsec-empirical-rule-5-2" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=25941&amp;frame_id=momsubsec-empirical-rule-5-2"></iframe></div>
+<div class="autopermalink" data-description="Exercise 3.3.8: Empirical Rule"><a href="#subsec-empirical-rule-5" title="Copy heading and permalink for Exercise 3.3.8: Empirical Rule">🔗</a></div></article></details><details id="subsec-empirical-rule-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">3.3.9</span><span class="period">.</span><span class="space"> </span><span class="title">Empirical Rule.</span>
-</h4></summary><article class="exercise exercise-like knowl__content"><div id="momsubsec-empirical-rule-6-2wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momsubsec-empirical-rule-6-2" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=25942&amp;frame_id=momsubsec-empirical-rule-6-2"></iframe></div></article></details><article class="theorem theorem-like" id="thm-chebyshev-theorem"><h4 class="heading">
+</h4></summary><article class="exercise exercise-like knowl__content"><div id="momsubsec-empirical-rule-6-2wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momsubsec-empirical-rule-6-2" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=25942&amp;frame_id=momsubsec-empirical-rule-6-2"></iframe></div>
+<div class="autopermalink" data-description="Exercise 3.3.9: Empirical Rule"><a href="#subsec-empirical-rule-6" title="Copy heading and permalink for Exercise 3.3.9: Empirical Rule">🔗</a></div></article></details><article class="theorem theorem-like" id="thm-chebyshev-theorem"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.3.10</span><span class="period">.</span>
 </h4>
-<div class="para" id="thm-chebyshev-theorem-1-1"><em class="emphasis">Chebyshev’s Theorem:</em></div> <div class="para" id="thm-chebyshev-theorem-1-2">For any number <span class="process-math">\(z\)</span> greater than 1, the percent of data points that fall within <span class="process-math">\(z\)</span> standard deviations from the mean is at least <span class="process-math">\(\left( 1-\frac{1}{z^2}\right)\cdot 100\)</span> for <em class="emphasis">any distribution</em>, regardless of its shape.</div></article><details id="subsec-empirical-rule-8" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<div class="para" id="thm-chebyshev-theorem-1-1">
+<em class="emphasis">Chebyshev’s Theorem:</em><div class="autopermalink" data-description="Paragraph"><a href="#thm-chebyshev-theorem-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="thm-chebyshev-theorem-1-2">For any number <span class="process-math">\(z\)</span> greater than 1, the percent of data points that fall within <span class="process-math">\(z\)</span> standard deviations from the mean is at least <span class="process-math">\(\left( 1-\frac{1}{z^2}\right)\cdot 100\)</span> for <em class="emphasis">any distribution</em>, regardless of its shape.<div class="autopermalink" data-description="Paragraph"><a href="#thm-chebyshev-theorem-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 3.3.10"><a href="#thm-chebyshev-theorem" title="Copy heading and permalink for Theorem 3.3.10">🔗</a></div></article><details id="subsec-empirical-rule-8" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">3.3.11</span><span class="period">.</span>
-</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="subsec-empirical-rule-8-1"><div class="para" id="subsec-empirical-rule-8-1-1">Assume the average selling price for houses in a certain county is <span class="process-math">\(\$ 348,000\)</span> with a standard deviation of <span class="process-math">\(\$ 30,000\text{.}\)</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="subsec-empirical-rule-8-1"><div class="para" id="subsec-empirical-rule-8-1-1">Assume the average selling price for houses in a certain county is <span class="process-math">\(\$ 348,000\)</span> with a standard deviation of <span class="process-math">\(\$ 30,000\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-empirical-rule-8-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <article class="task exercise-like" id="subsec-empirical-rule-8-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="subsec-empirical-rule-8-2-1-1">Determine the coefficient of variation.</div>
-<div class="solutions"><details id="subsec-empirical-rule-8-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="subsec-empirical-rule-8-2-2-1"><div class="displaymath process-math">
+<div class="para" id="subsec-empirical-rule-8-2-1-1">Determine the coefficient of variation.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-empirical-rule-8-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="subsec-empirical-rule-8-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para logical" id="subsec-empirical-rule-8-2-2-1">
+<div class="displaymath process-math">
 \begin{equation*}
 CV = \frac{\sigma}{\mu}\cdot 100=\frac{30000}{348000}\cdot 100 = 8.62\%
 \end{equation*}
-</div></div></div></details></div></article><article class="task exercise-like" id="subsec-empirical-rule-8-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="subsec-empirical-rule-8-3-1-1">Calculate the <span class="process-math">\(z\)</span>-score for a house that sells for <span class="process-math">\(\$ 379,000\text{.}\)</span>
 </div>
-<div class="solutions"><details id="subsec-empirical-rule-8-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="subsec-empirical-rule-8-3-2-1"><div class="displaymath process-math">
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-empirical-rule-8-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 3.3.11.a.1"><a href="#subsec-empirical-rule-8-2-2" title="Copy heading and permalink for Answer 3.3.11.a.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 3.3.11.a"><a href="#subsec-empirical-rule-8-2" title="Copy heading and permalink for Task 3.3.11.a">🔗</a></div></article><article class="task exercise-like" id="subsec-empirical-rule-8-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="subsec-empirical-rule-8-3-1-1">Calculate the <span class="process-math">\(z\)</span>-score for a house that sells for <span class="process-math">\(\$ 379,000\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-empirical-rule-8-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="subsec-empirical-rule-8-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para logical" id="subsec-empirical-rule-8-3-2-1">
+<div class="displaymath process-math">
 \begin{equation*}
 z=\frac{x-\mu}{\sigma}=\frac{379000-348000}{30000}=1.03
 \end{equation*}
-</div></div></div></details></div></article><article class="task exercise-like" id="subsec-empirical-rule-8-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="subsec-empirical-rule-8-4-1-1">Using the Empirical Rule, determine the range of prices that includes <span class="process-math">\(68\%\)</span> of the homes around the mean.  (To do this, we need to assume that the selling prices of homes is bell-shaped and symmetric.)</div>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-empirical-rule-8-3-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 3.3.11.b.1"><a href="#subsec-empirical-rule-8-3-2" title="Copy heading and permalink for Answer 3.3.11.b.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 3.3.11.b"><a href="#subsec-empirical-rule-8-3" title="Copy heading and permalink for Task 3.3.11.b">🔗</a></div></article><article class="task exercise-like" id="subsec-empirical-rule-8-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="subsec-empirical-rule-8-4-1-1">Using the Empirical Rule, determine the range of prices that includes <span class="process-math">\(68\%\)</span> of the homes around the mean.  (To do this, we need to assume that the selling prices of homes is bell-shaped and symmetric.)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-empirical-rule-8-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="solutions"><details id="subsec-empirical-rule-8-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para" id="subsec-empirical-rule-8-4-2-1">
-<span class="process-math">\(68\%\)</span> of prices are within 1 standard deviation of the mean.  That is, <span class="process-math">\(68\%\)</span> of prices are between the numbers <span class="process-math">\(\mu\pm\sigma\)</span> (assuming the distribution of prices is bell-shaped and symmetric).</div>
-<div class="para logical" id="subsec-empirical-rule-8-4-2-2"><div class="displaymath process-math">
+<span class="process-math">\(68\%\)</span> of prices are within 1 standard deviation of the mean.  That is, <span class="process-math">\(68\%\)</span> of prices are between the numbers <span class="process-math">\(\mu\pm\sigma\)</span> (assuming the distribution of prices is bell-shaped and symmetric).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-empirical-rule-8-4-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-empirical-rule-8-4-2-2">
+<div class="displaymath process-math">
 \begin{equation*}
 348000\pm 30000\rightarrow \boxed{\$ 318,000 \text{ to } \$378,000}
 \end{equation*}
-</div></div>
-</div></details></div></article><article class="task exercise-like" id="subsec-empirical-rule-8-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="subsec-empirical-rule-8-5-1-1">Using Chebyshev’s Theorem, determine the range of prices that includes at least <span class="process-math">\(91\%\)</span> of the homes around the mean.  (Using Chebyshev’s Theorem, we don’t need to assume anything about how the prices are distributed.)</div>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-empirical-rule-8-4-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 3.3.11.c.1"><a href="#subsec-empirical-rule-8-4-2" title="Copy heading and permalink for Answer 3.3.11.c.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 3.3.11.c"><a href="#subsec-empirical-rule-8-4" title="Copy heading and permalink for Task 3.3.11.c">🔗</a></div></article><article class="task exercise-like" id="subsec-empirical-rule-8-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="subsec-empirical-rule-8-5-1-1">Using Chebyshev’s Theorem, determine the range of prices that includes at least <span class="process-math">\(91\%\)</span> of the homes around the mean.  (Using Chebyshev’s Theorem, we don’t need to assume anything about how the prices are distributed.)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-empirical-rule-8-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="solutions"><details id="subsec-empirical-rule-8-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para logical" id="subsec-empirical-rule-8-5-2-1">
 <div class="displaymath process-math">
@@ -470,8 +564,10 @@ z^2=\frac{1}{0.09}
 z=\sqrt{\frac{1}{0.09}}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-empirical-rule-8-5-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-empirical-rule-8-5-2-2">So the range of prices including values within <span class="process-math">\(\sqrt{\frac{1}{0.09}}\)</span> of the mean will include at least <span class="process-math">\(91\%\)</span> of the homes.</div>
+<div class="para" id="subsec-empirical-rule-8-5-2-2">So the range of prices including values within <span class="process-math">\(\sqrt{\frac{1}{0.09}}\)</span> of the mean will include at least <span class="process-math">\(91\%\)</span> of the homes.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-empirical-rule-8-5-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="para logical" id="subsec-empirical-rule-8-5-2-3">
 <div class="displaymath process-math">
 \begin{equation*}
@@ -488,10 +584,14 @@ z=\sqrt{\frac{1}{0.09}}
 \boxed{\$248,000\text{ to }\$ 448,000}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-empirical-rule-8-5-2-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-</div></details></div></article></article></details><details id="subsec-empirical-rule-9" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<div class="autopermalink" data-description="Answer 3.3.11.d.1"><a href="#subsec-empirical-rule-8-5-2" title="Copy heading and permalink for Answer 3.3.11.d.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 3.3.11.d"><a href="#subsec-empirical-rule-8-5" title="Copy heading and permalink for Task 3.3.11.d">🔗</a></div></article><div class="autopermalink" data-description="Exercise 3.3.11"><a href="#subsec-empirical-rule-8" title="Copy heading and permalink for Exercise 3.3.11">🔗</a></div></article></details><details id="subsec-empirical-rule-9" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">3.3.12</span><span class="period">.</span>
-</h4></summary><article class="exercise exercise-like knowl__content"><div id="momsubsec-empirical-rule-9-1wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momsubsec-empirical-rule-9-1" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=7069&amp;frame_id=momsubsec-empirical-rule-9-1"></iframe></div></article></details></section></section></div>
+</h4></summary><article class="exercise exercise-like knowl__content"><div id="momsubsec-empirical-rule-9-1wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momsubsec-empirical-rule-9-1" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=7069&amp;frame_id=momsubsec-empirical-rule-9-1"></iframe></div>
+<div class="autopermalink" data-description="Exercise 3.3.12"><a href="#subsec-empirical-rule-9" title="Copy heading and permalink for Exercise 3.3.12">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 3.3.1: The Empirical Rule"><a href="#subsec-empirical-rule" title="Copy heading and permalink for Subsection 3.3.1: The Empirical Rule">🔗</a></div></section><div class="autopermalink" data-description="Section 3.3: Using the Mean and Standard Deviation Together"><a href="#sec-mean-and-stdev" title="Copy heading and permalink for Section 3.3: Using the Mean and Standard Deviation Together">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-measures-variability.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-measures-relative-position.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

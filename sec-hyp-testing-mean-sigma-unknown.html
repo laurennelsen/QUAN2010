@@ -102,14 +102,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.7.6';
+eBookConfig.runestone_version = '7.8.2';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.107bf2d9be20d9c4.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.c7bf407f76a97812.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.8e4157bd77a28b29.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.2e7f40e86ae7d163.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -335,7 +335,8 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-hyp-testing-mean-sigma-unknown"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">10.4</span><span class="space"> </span><span class="title">Hypothesis Testing for <span class="process-math">\(\mu\)</span> When <span class="process-math">\(\sigma\)</span> is Unknown</span>
 </h2>
-<section class="introduction" id="sec-hyp-testing-mean-sigma-unknown-2"><div class="para" id="sec-hyp-testing-mean-sigma-unknown-2-1">Up to this point, we’ve assumed that we know <span class="process-math">\(\sigma\text{,}\)</span> the population mean.  But as we saw in the last chapter on confidence intervals, if we don’t know <span class="process-math">\(\mu\text{,}\)</span> it’s pretty unrealistic that we would know <span class="process-math">\(\sigma\text{.}\)</span>  So just like we did when creating confidence intervals, we will estimate <span class="process-math">\(\sigma\)</span> with the sample standard deviation, <span class="process-math">\(s\text{.}\)</span>  This means that we will be dealing with the Student’s <span class="process-math">\(t\)</span>-distribution in place of the normal distribution.</div>
+<section class="introduction" id="sec-hyp-testing-mean-sigma-unknown-2"><div class="para" id="sec-hyp-testing-mean-sigma-unknown-2-1">Up to this point, we’ve assumed that we know <span class="process-math">\(\sigma\text{,}\)</span> the population mean.  But as we saw in the last chapter on confidence intervals, if we don’t know <span class="process-math">\(\mu\text{,}\)</span> it’s pretty unrealistic that we would know <span class="process-math">\(\sigma\text{.}\)</span>  So just like we did when creating confidence intervals, we will estimate <span class="process-math">\(\sigma\)</span> with the sample standard deviation, <span class="process-math">\(s\text{.}\)</span>  This means that we will be dealing with the Student’s <span class="process-math">\(t\)</span>-distribution in place of the normal distribution.<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-mean-sigma-unknown-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="para logical" id="sec-hyp-testing-mean-sigma-unknown-2-2">
 <div class="para">Hence, the test statistic for hypothesis tests of this type are computed with the formula:</div>
 <div class="displaymath process-math">
@@ -343,14 +344,23 @@ eBookConfig.enable_chatcodes =  false;
 t_{\overline{x}}=\frac{\overline{x}-\mu}{s/\sqrt{n}}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-mean-sigma-unknown-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section><details id="sec-hyp-testing-mean-sigma-unknown-3" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">10.4.1</span><span class="period">.</span>
-</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-hyp-testing-mean-sigma-unknown-3-1-1">(Donnelly 9.20)</div> <div class="para" id="sec-hyp-testing-mean-sigma-unknown-3-1-2">In 2017, the average credit score for loans that were purchased by a government-sponsored mortgage loan company was 742.  A random sample of 35 mortgages recently purchased by the company was selected, and it was found that the average credit score was 752 with a sample standard deviation of 22.  Using <span class="process-math">\(\alpha = 0.05\text{,}\)</span> is there enough evidence from this sample to conclude that the average credit score for mortgages purchased by the company has increased since 2017?  Use the traditional method of hypothesis testing.</div>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-hyp-testing-mean-sigma-unknown-3-1-1">(Donnelly 9.20)<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-mean-sigma-unknown-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="sec-hyp-testing-mean-sigma-unknown-3-1-2">In 2017, the average credit score for loans that were purchased by a government-sponsored mortgage loan company was 742.  A random sample of 35 mortgages recently purchased by the company was selected, and it was found that the average credit score was 752 with a sample standard deviation of 22.  Using <span class="process-math">\(\alpha = 0.05\text{,}\)</span> is there enough evidence from this sample to conclude that the average credit score for mortgages purchased by the company has increased since 2017?  Use the traditional method of hypothesis testing.<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-mean-sigma-unknown-3-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="solutions"><details id="sec-hyp-testing-mean-sigma-unknown-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
-<div class="para" id="sec-hyp-testing-mean-sigma-unknown-3-2-1"><span class="process-math">\(n=35\rightarrow df=34,\;\; \overline{x}=752,\;\; s=22,\;\; \alpha=0.05\)</span></div>
-<div class="para" id="sec-hyp-testing-mean-sigma-unknown-3-2-2"><span class="process-math">\(H_0: \; \mu\leq 742\)</span></div>
-<div class="para" id="sec-hyp-testing-mean-sigma-unknown-3-2-3"><span class="process-math">\(H_1: \; \mu\gt 742 \;\; (\leftarrow \text{ right-tail test})\)</span></div>
-<div class="para" id="sec-hyp-testing-mean-sigma-unknown-3-2-4">critical value: <span class="process-math">\(t_{.05}=T.INV(.95,34)\approx 1.691\)</span>
+<div class="para" id="sec-hyp-testing-mean-sigma-unknown-3-2-1">
+<span class="process-math">\(n=35\rightarrow df=34,\;\; \overline{x}=752,\;\; s=22,\;\; \alpha=0.05\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-mean-sigma-unknown-3-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-hyp-testing-mean-sigma-unknown-3-2-2">
+<span class="process-math">\(H_0: \; \mu\leq 742\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-mean-sigma-unknown-3-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-hyp-testing-mean-sigma-unknown-3-2-3">
+<span class="process-math">\(H_1: \; \mu\gt 742 \;\; (\leftarrow \text{ right-tail test})\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-mean-sigma-unknown-3-2-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-hyp-testing-mean-sigma-unknown-3-2-4">critical value: <span class="process-math">\(t_{.05}=T.INV(.95,34)\approx 1.691\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-mean-sigma-unknown-3-2-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="sec-hyp-testing-mean-sigma-unknown-3-2-5">
 <div class="para">test statistic:</div>
@@ -359,11 +369,15 @@ t_{\overline{x}}=\frac{\overline{x}-\mu}{s/\sqrt{n}}
 t_{\overline{x}}=\frac{752-742}{22/\sqrt{35}}\approx 2.69
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-mean-sigma-unknown-3-2-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-hyp-testing-mean-sigma-unknown-3-2-6">Since <span class="process-math">\(t_{\overline{x}}\gt t_{\alpha}\text{,}\)</span> the test statistic falls in the rejection region; therefore, reject <span class="process-math">\(H_0\text{.}\)</span>
+<div class="para" id="sec-hyp-testing-mean-sigma-unknown-3-2-6">Since <span class="process-math">\(t_{\overline{x}}\gt t_{\alpha}\text{,}\)</span> the test statistic falls in the rejection region; therefore, reject <span class="process-math">\(H_0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-mean-sigma-unknown-3-2-6" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-hyp-testing-mean-sigma-unknown-3-2-7">There is enough evidence to conclude that the average credit score for mortgages has increased since 2017.</div>
-</div></details></div></article></details><div class="para logical" id="sec-hyp-testing-mean-sigma-unknown-4">
+<div class="para" id="sec-hyp-testing-mean-sigma-unknown-3-2-7">There is enough evidence to conclude that the average credit score for mortgages has increased since 2017.<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-mean-sigma-unknown-3-2-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 10.4.1.1"><a href="#sec-hyp-testing-mean-sigma-unknown-3-2" title="Copy heading and permalink for Answer 10.4.1.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 10.4.1"><a href="#sec-hyp-testing-mean-sigma-unknown-3" title="Copy heading and permalink for Exercise 10.4.1">🔗</a></div></article></details><div class="para logical" id="sec-hyp-testing-mean-sigma-unknown-4">
 <div class="para">In our next example, we will use the p-value method of hypothesis testing.  Unfortunately, tables for the Student’s <span class="process-math">\(t\)</span>-distribution are limited in the precision they can provide for our p-values.  Therefore,  we will rely on Excewl to compute the p-values using the following formulas:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -387,11 +401,22 @@ t_{\overline{x}}=\frac{752-742}{22/\sqrt{35}}\approx 2.69
 </tr>
 </table></div>
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-mean-sigma-unknown-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <details id="sec-hyp-testing-mean-sigma-unknown-5" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">10.4.2</span><span class="period">.</span>
-</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-hyp-testing-mean-sigma-unknown-5-1-1">(Donnelly 9.19)</div> <div class="para" id="sec-hyp-testing-mean-sigma-unknown-5-1-2">According to the financial reports by Snapchat, the average daily user of Snapchat created 19 messages, or “snaps,” per day in Q3 2017.  A college student wants to find out if the number of Snapchat messages has changed since Q3 2017 and creates a random sample using information from students on her campus for the current semester.  The results are found in this lesson’s Excel file.  Using <span class="process-math">\(\alpha = 0.01\text{,}\)</span> test the hypothesis that the number of Snapchats sent by the average Snapchat user has not changed since Q3 2017.  Use the p-value method of hypothesis testing.</div> <div class="para" id="sec-hyp-testing-mean-sigma-unknown-5-1-3"><a class="external" href="external/sheets/Snapchat.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/Snapchat.xlsx</code></a></div>
-<div class="solutions"><details id="sec-hyp-testing-mean-sigma-unknown-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para" id="sec-hyp-testing-mean-sigma-unknown-5-2-1"><a class="external" href="external/sheets/SnapchatSolutions.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/SnapchatSolutions.xlsx</code></a></div></div></details></div></article></details></section></div>
+</h3></summary><article class="exercise exercise-like knowl__content"><div class="para" id="sec-hyp-testing-mean-sigma-unknown-5-1-1">(Donnelly 9.19)<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-mean-sigma-unknown-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="sec-hyp-testing-mean-sigma-unknown-5-1-2">According to the financial reports by Snapchat, the average daily user of Snapchat created 19 messages, or “snaps,” per day in Q3 2017.  A college student wants to find out if the number of Snapchat messages has changed since Q3 2017 and creates a random sample using information from students on her campus for the current semester.  The results are found in this lesson’s Excel file.  Using <span class="process-math">\(\alpha = 0.01\text{,}\)</span> test the hypothesis that the number of Snapchats sent by the average Snapchat user has not changed since Q3 2017.  Use the p-value method of hypothesis testing.<div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-mean-sigma-unknown-5-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="sec-hyp-testing-mean-sigma-unknown-5-1-3">
+<a class="external" href="external/sheets/Snapchat.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/Snapchat.xlsx</code></a><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-mean-sigma-unknown-5-1-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sec-hyp-testing-mean-sigma-unknown-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="sec-hyp-testing-mean-sigma-unknown-5-2-1">
+<a class="external" href="external/sheets/SnapchatSolutions.xlsx" target="_blank"><code class="code-inline tex2jax_ignore">external/sheets/SnapchatSolutions.xlsx</code></a><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-mean-sigma-unknown-5-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 10.4.2.1"><a href="#sec-hyp-testing-mean-sigma-unknown-5-2" title="Copy heading and permalink for Answer 10.4.2.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Exercise 10.4.2"><a href="#sec-hyp-testing-mean-sigma-unknown-5" title="Copy heading and permalink for Exercise 10.4.2">🔗</a></div></article></details><div class="autopermalink" data-description="Section 10.4: Hypothesis Testing for \mu When \sigma is Unknown"><a href="#sec-hyp-testing-mean-sigma-unknown" title="Copy heading and permalink for Section 10.4: Hypothesis Testing for \mu When \sigma is Unknown">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-types-of-errors.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-hyp-testing-proportion.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

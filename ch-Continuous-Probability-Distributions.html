@@ -102,14 +102,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.7.6';
+eBookConfig.runestone_version = '7.8.2';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.107bf2d9be20d9c4.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.c7bf407f76a97812.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.8e4157bd77a28b29.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.2e7f40e86ae7d163.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -338,19 +338,35 @@ eBookConfig.enable_chatcodes =  false;
 <section class="introduction" id="ch-Continuous-Probability-Distributions-2"><div class="para logical" id="ch-Continuous-Probability-Distributions-2-1">
 <div class="para">In this chapter we will study probability distributions that arise from continuous random variables, which are outcomes that take on any numerical value in an interval, including numbers with decimal points. Recall that probabilities for specific values of a discrete random variable were easy to calculate and the graph of the discrete probability distribution looks like a histogram with a countable number of bars. By contrast, only the probability of a range of values (not a specific value) can be calculated for a continuous random variable. Why? Since there is an infinite number of possible values for a continuous random variable, the probability of one specific value is theoretically equal to zero! We’re going to study three specific continuous probability distributions and identify the types of data where they are useful.</div>
 <ul class="disc" id="ch-Continuous-Probability-Distributions-2-1-1">
-<li id="ch-Continuous-Probability-Distributions-2-1-1-1"><div class="para" id="ch-Continuous-Probability-Distributions-2-1-1-1-1">
-<em class="emphasis">Normal Distribution:</em> <figure class="figure figure-like" id="figure-geogebra-normaldist"><iframe src="https://www.geogebra.org/material/iframe/id/W9Nz53Ct/width/800/height/444/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="geogebra-normaldist" width="600" height="333"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.0.1<span class="period">.</span></span><span class="space"> </span><div class="para" id="figure-geogebra-normaldist-1-1">Normal Distribution (Made in GeoGebra by the GeoGebra Materials Team)</div> <div class="para" id="figure-geogebra-normaldist-1-2">Link to GeoGebra:  <a class="external" href="https://www.geogebra.org/m/W9Nz53Ct" target="_blank"><code class="code-inline tex2jax_ignore">https://www.geogebra.org/m/W9Nz53Ct</code></a>
-</div></figcaption></figure>
-</div></li>
-<li id="ch-Continuous-Probability-Distributions-2-1-1-2"><div class="para" id="ch-Continuous-Probability-Distributions-2-1-1-2-1">
-<em class="emphasis">Exponential Distribution:</em> <figure class="figure figure-like" id="figure-geogebra-expondist"><iframe src="https://www.geogebra.org/material/iframe/id/gjd2dmzw/width/800/height/444/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="geogebra-expondist" width="600" height="333"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.0.2<span class="period">.</span></span><span class="space"> </span><div class="para" id="figure-geogebra-expondist-1-1">Exponential Distribution (Made in GeoGebra by DavidK)</div> <div class="para" id="figure-geogebra-expondist-1-2">Link to GeoGebra:  <a class="external" href="https://www.geogebra.org/m/gjd2dmzw" target="_blank"><code class="code-inline tex2jax_ignore">https://www.geogebra.org/m/gjd2dmzw</code></a>
-</div></figcaption></figure>
-</div></li>
-<li id="ch-Continuous-Probability-Distributions-2-1-1-3"><div class="para" id="ch-Continuous-Probability-Distributions-2-1-1-3-1">
-<em class="emphasis">Uniform Distribution:</em> <figure class="figure figure-like" id="figure-geogebra-unifdist"><iframe src="https://www.geogebra.org/material/iframe/id/v2EnMNF9/width/800/height/444/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="geogebra-unifdist" width="600" height="333"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.0.3<span class="period">.</span></span><span class="space"> </span><div class="para" id="figure-geogebra-unifdist-1-1">Uniform Distribution (Made in GeoGebra by David Ramsay)</div> <div class="para" id="figure-geogebra-unifdist-1-2">Link to GeoGebra:  <a class="external" href="https://www.geogebra.org/m/v2EnMNF9" target="_blank"><code class="code-inline tex2jax_ignore">https://www.geogebra.org/m/v2EnMNF9</code></a>
-</div></figcaption></figure>
-</div></li>
+<li id="ch-Continuous-Probability-Distributions-2-1-1-1">
+<div class="para" id="ch-Continuous-Probability-Distributions-2-1-1-1-1">
+<em class="emphasis">Normal Distribution:</em> <figure class="figure figure-like" id="figure-geogebra-normaldist"><iframe src="https://www.geogebra.org/material/iframe/id/W9Nz53Ct/width/800/height/444/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="geogebra-normaldist" width="600" height="333"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.0.1<span class="period">.</span></span><span class="space"> </span><div class="para" id="figure-geogebra-normaldist-1-1">Normal Distribution (Made in GeoGebra by the GeoGebra Materials Team)<div class="autopermalink" data-description="Paragraph"><a href="#figure-geogebra-normaldist-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="figure-geogebra-normaldist-1-2">Link to GeoGebra:  <a class="external" href="https://www.geogebra.org/m/W9Nz53Ct" target="_blank"><code class="code-inline tex2jax_ignore">https://www.geogebra.org/m/W9Nz53Ct</code></a><div class="autopermalink" data-description="Paragraph"><a href="#figure-geogebra-normaldist-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Figure 7.0.1"><a href="#figure-geogebra-normaldist" title="Copy heading and permalink for Figure 7.0.1">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Paragraph"><a href="#ch-Continuous-Probability-Distributions-2-1-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ch-Continuous-Probability-Distributions-2-1-1-1" title="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ch-Continuous-Probability-Distributions-2-1-1-2">
+<div class="para" id="ch-Continuous-Probability-Distributions-2-1-1-2-1">
+<em class="emphasis">Exponential Distribution:</em> <figure class="figure figure-like" id="figure-geogebra-expondist"><iframe src="https://www.geogebra.org/material/iframe/id/gjd2dmzw/width/800/height/444/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="geogebra-expondist" width="600" height="333"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.0.2<span class="period">.</span></span><span class="space"> </span><div class="para" id="figure-geogebra-expondist-1-1">Exponential Distribution (Made in GeoGebra by DavidK)<div class="autopermalink" data-description="Paragraph"><a href="#figure-geogebra-expondist-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="figure-geogebra-expondist-1-2">Link to GeoGebra:  <a class="external" href="https://www.geogebra.org/m/gjd2dmzw" target="_blank"><code class="code-inline tex2jax_ignore">https://www.geogebra.org/m/gjd2dmzw</code></a><div class="autopermalink" data-description="Paragraph"><a href="#figure-geogebra-expondist-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Figure 7.0.2"><a href="#figure-geogebra-expondist" title="Copy heading and permalink for Figure 7.0.2">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Paragraph"><a href="#ch-Continuous-Probability-Distributions-2-1-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ch-Continuous-Probability-Distributions-2-1-1-2" title="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ch-Continuous-Probability-Distributions-2-1-1-3">
+<div class="para" id="ch-Continuous-Probability-Distributions-2-1-1-3-1">
+<em class="emphasis">Uniform Distribution:</em> <figure class="figure figure-like" id="figure-geogebra-unifdist"><iframe src="https://www.geogebra.org/material/iframe/id/v2EnMNF9/width/800/height/444/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="geogebra-unifdist" width="600" height="333"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.0.3<span class="period">.</span></span><span class="space"> </span><div class="para" id="figure-geogebra-unifdist-1-1">Uniform Distribution (Made in GeoGebra by David Ramsay)<div class="autopermalink" data-description="Paragraph"><a href="#figure-geogebra-unifdist-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="figure-geogebra-unifdist-1-2">Link to GeoGebra:  <a class="external" href="https://www.geogebra.org/m/v2EnMNF9" target="_blank"><code class="code-inline tex2jax_ignore">https://www.geogebra.org/m/v2EnMNF9</code></a><div class="autopermalink" data-description="Paragraph"><a href="#figure-geogebra-unifdist-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Figure 7.0.3"><a href="#figure-geogebra-unifdist" title="Copy heading and permalink for Figure 7.0.3">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Paragraph"><a href="#ch-Continuous-Probability-Distributions-2-1-1-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#ch-Continuous-Probability-Distributions-2-1-1-3" title="Copy heading and permalink for Item">🔗</a></div>
+</li>
 </ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#ch-Continuous-Probability-Distributions-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section><nav class="summary-links"><ul>
 <li><a href="sec-normal-distribution.html" class="internal"><span class="codenumber">7.1</span> <span class="title">The Normal Distribution</span></a></li>
 <li><a href="sec-exponential-distribution.html" class="internal"><span class="codenumber">7.2</span> <span class="title">The Exponential Distribution</span></a></li>
