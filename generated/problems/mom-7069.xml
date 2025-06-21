@@ -2,7 +2,7 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="7069">
 <statement>
 <p>
-Given a set of data that is skewed-right, there is at least <underscore/><underscore/><underscore/><underscore/><underscore/> <percent/> of the data within 3 standard deviations.</p>
+Given a set of data that is bell-shaped, there is approximately <underscore/><underscore/><underscore/><underscore/><underscore/> <percent/> of the data within 1 standard deviations.</p>
 <p>
 Fill in the blank with the best answer:</p>
 <p><ol style="list-style-type:upper-alpha"><li>0</li> 
@@ -16,6 +16,6 @@ Fill in the blank with the best answer:</p>
 
 </statement>
 <solution>
-<p><ul><li>D: 89</li></ul></p>
+<p><ul><li>B: 68</li></ul></p>
 </solution>
 </myopenmath>
