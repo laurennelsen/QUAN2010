@@ -11,11 +11,12 @@
 
     <subsection xml:id="subsection-intro-to-the-normal-distn">
   <title>Introduction to the Normal Probability Distribution:</title>
-        <p>
+      
 
 
-    <exercise label="Continuous-Distribution-Matching">
+    <exercise label="Continuous-Distribution-Matching" xml:id="matching-continuous">
         <title>Continuous Probability Distribution Matching Problem</title>
+
         <statement>
         <p>
             Match each probability distribution with the situation in which it is useful.
@@ -25,7 +26,7 @@
      <matches>
     
     <match>
-        <premise>
+        <premise order="2">
             Normal Distribution
         </premise>
         <response>
@@ -36,7 +37,7 @@
     </match>
     
     <match>
-        <premise>
+        <premise  order="1">
             exponential distribution
         </premise>
         <response>
@@ -47,7 +48,7 @@
     </match>
     
     <match>
-      <premise>
+      <premise  order="3">
           uniform distribution
       </premise>
       <response>
@@ -57,7 +58,7 @@
       </response>
     </match>
     
-    </matches>
+</matches>
     
     </exercise>
     
@@ -102,7 +103,7 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
     </answer>
 </question>
 
-</p>
+
 </subsection>
 
     <subsection xml:id="subsection-characteristics-of-normal-distn">
