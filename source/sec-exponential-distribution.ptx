@@ -22,7 +22,7 @@
 
     <p>
         The mathematical expression that describes the shape of the curve for the exponential probability distribution is called the exponential probability density function:
-        <me>f(x)=\lambda^{-\lambda x}\text{, where }\lambda=\text{the mean number of occurrences over an interval}</me>
+        <me>f(x)=\lambda e^{-\lambda x}\text{, where }\lambda=\text{the mean number of occurrences over an interval}</me>
     </p>
 
     <p>
