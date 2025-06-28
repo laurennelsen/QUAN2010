@@ -4,7 +4,7 @@
 <p>
 Determine whether the value is a parameter or statistic</p>
 <p>
-A sample of men reveals 60<percent/> took calculus</p>
+Two thirds of the students in a class are women</p>
 <p><ol style="list-style-type:upper-alpha"><li>Parameter</li> 
 <li>Statistic</li> 
 </ol></p>
@@ -12,6 +12,6 @@ A sample of men reveals 60<percent/> took calculus</p>
 
 </statement>
 <solution>
-<p><ul><li>B: Statistic</li></ul></p>
+<p><ul><li>A: Parameter</li></ul></p>
 </solution>
 </myopenmath>

@@ -2,8 +2,8 @@
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="7096">
 <statement>
 <p>
-In a brand recognition study, 758 consumers knew of Amazon, and 6 did not.
-Use these results to estimate the probability that a randomly selected consumer will recognize Amazon.</p>
+In a brand recognition study, 1000 consumers knew of Honda, and 7 did not.
+Use these results to estimate the probability that a randomly selected consumer will recognize Honda.</p>
 <p>
 Report the answer as a percent rounded to one decimal place accuracy.
 You need not enter the "<percent/>" symbol. </p>
@@ -12,6 +12,6 @@ prob = <input type="text" style="width:25ch" name="qn0" id="qn0" value="" autoco
 </p>
 </statement>
 <solution>
-<p><ul><li>99.2</li></ul></p>
+<p><ul><li>99.3</li></ul></p>
 </solution>
 </myopenmath>
