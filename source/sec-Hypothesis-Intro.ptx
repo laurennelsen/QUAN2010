@@ -17,7 +17,7 @@ The basic idea behind hypothesis testing is to assume that a population paramete
 
         <p>
 
-Suppose we draw a random sample from the population and get a sample mean higher than the population mean.  How far it is from the population mean?  If <m>\mu</m>> is true, what is the probability that we would get this value?  Is it so different from our hypothesized mean that our hypothesis cannot be true?  We have to decide what <q>so different</q> means.  Our sampling distribution tells us that the mean of all possible sample means should be the same as <m>\mu</m>>, so we can use those probability concepts to decide whether we think this sample statistic is extreme enough from the hypothesized mean to reject the null hypothesis.
+Suppose we draw a random sample from the population and get a sample mean higher than the population mean.  How far it is from the population mean?  If <m>\mu</m> is true, what is the probability that we would get this value?  Is it so different from our hypothesized mean that our hypothesis cannot be true?  We have to decide what <q>so different</q> means.  Our sampling distribution tells us that the mean of all possible sample means should be the same as <m>\mu</m>, so we can use those probability concepts to decide whether we think this sample statistic is extreme enough from the hypothesized mean to reject the null hypothesis.
     </p>
 
     <p>
