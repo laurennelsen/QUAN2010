@@ -1,59 +1,59 @@
 <?xml version='1.0' encoding='utf-8'?>
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="634787">
 <statement>
-<p>A movie theater company wants to see if there is a difference in the variance of movie ticket sales in Tampa and Sacramento per week. They sample 17 sales from Tampa (group 1) and 24 sales from Sacramento (group 2) and count the number of tickets sold over a week. Test the claim using a significance level of <m>\displaystyle\alpha</m> =0.05. Assume that movie sales are normally distributed.</p>
-<tabular> <row><cell>Tampa</cell><cell>Sacramento</cell></row><row><cell>874</cell><cell>873</cell></row><row><cell>884</cell><cell>876</cell></row><row><cell>865</cell><cell>874</cell></row><row><cell>879</cell><cell>884</cell></row><row><cell>875</cell><cell>886</cell></row><row><cell>921</cell><cell>881</cell></row><row><cell>905</cell><cell>883</cell></row><row><cell>919</cell><cell>888</cell></row><row><cell>880</cell><cell>898</cell></row><row><cell>904</cell><cell>878</cell></row><row><cell>871</cell><cell>899</cell></row><row><cell>868</cell><cell>890</cell></row><row><cell>915</cell><cell>882</cell></row><row><cell>927</cell><cell>873</cell></row><row><cell>881</cell><cell>868</cell></row><row><cell>866</cell><cell>910</cell></row><row><cell>863</cell><cell>894</cell></row><row><cell/><cell>867</cell></row><row><cell/><cell>873</cell></row><row><cell/><cell>890</cell></row><row><cell/><cell>887</cell></row><row><cell/><cell>878</cell></row><row><cell/><cell>894</cell></row><row><cell/><cell>894</cell></row></tabular>
+<p>A movie theater company wants to see if there is a difference in the variance of movie ticket sales in Milwaukee and Philadelphia per week. They sample 18 sales from Milwaukee (group 1) and 20 sales from Philadelphia (group 2) and count the number of tickets sold over a week. Test the claim using a significance level of <m>\displaystyle\alpha</m> =0.10. Assume that movie sales are normally distributed.</p>
+<tabular> <row><cell>Milwaukee</cell><cell>Philadelphia</cell></row><row><cell>825</cell><cell>828</cell></row><row><cell>829</cell><cell>806</cell></row><row><cell>826</cell><cell>799</cell></row><row><cell>836</cell><cell>794</cell></row><row><cell>817</cell><cell>826</cell></row><row><cell>815</cell><cell>794</cell></row><row><cell>828</cell><cell>823</cell></row><row><cell>830</cell><cell>847</cell></row><row><cell>827</cell><cell>810</cell></row><row><cell>831</cell><cell>810</cell></row><row><cell>811</cell><cell>811</cell></row><row><cell>818</cell><cell>825</cell></row><row><cell>834</cell><cell>809</cell></row><row><cell>822</cell><cell>809</cell></row><row><cell>838</cell><cell>812</cell></row><row><cell>826</cell><cell>822</cell></row><row><cell>823</cell><cell>801</cell></row><row><cell>817</cell><cell>827</cell></row><row><cell/><cell>847</cell></row><row><cell/><cell>837</cell></row></tabular>
 <p>What are the correct hypotheses? Note this may view better in full screen mode. Select the correct symbols in the order they appear in the problem.
   </p>
 <p>
   <m>{H}_{0}</m>: </p>
-<p><ol style="list-style-type:upper-alpha"><li>x̅<ampersand/>;<hash/>8321</li> 
-<li>σ<ampersand/>;<hash/>8321</li> 
-<li>σ<ampersand/>;<hash/>8321<ampersand/>;sup2</li> 
-<li>μ<ampersand/>;<hash/>8321</li> 
+<p><ol style="list-style-type:upper-alpha"><li>μ<ampersand/>;<hash/>8321</li> 
 <li>s<ampersand/>;<hash/>8321</li> 
 <li>p<ampersand/>;<hash/>8321</li> 
 <li>μd</li> 
+<li>x̅<ampersand/>;<hash/>8321</li> 
+<li>σ<ampersand/>;<hash/>8321<ampersand/>;sup2</li> 
+<li>σ<ampersand/>;<hash/>8321</li> 
 </ol></p>
- <p><ol style="list-style-type:upper-alpha"><li>=</li> 
+ <p><ol style="list-style-type:upper-alpha"><li>≤</li> 
+<li>=</li> 
+<li><greater/></li> 
+<li><less/><less/>/label<greater/></li> 
 <li>≥</li> 
 <li>≠</li> 
-<li><less/><less/>/label<greater/></li> 
-<li>≤</li> 
-<li><greater/></li> 
 </ol></p>
- <p><ol style="list-style-type:upper-alpha"><li>σ<ampersand/>;<hash/>8322<ampersand/>;sup2</li> 
-<li>s<ampersand/>;<hash/>8322</li> 
-<li>x̅<ampersand/>;<hash/>8322</li> 
-<li>σ<ampersand/>;<hash/>8322</li> 
-<li>p<ampersand/>;<hash/>8322</li> 
+ <p><ol style="list-style-type:upper-alpha"><li>x̅<ampersand/>;<hash/>8322</li> 
 <li>μ<ampersand/>;<hash/>8322</li> 
+<li>σ<ampersand/>;<hash/>8322<ampersand/>;sup2</li> 
+<li>p<ampersand/>;<hash/>8322</li> 
+<li>s<ampersand/>;<hash/>8322</li> 
 <li>0</li> 
+<li>σ<ampersand/>;<hash/>8322</li> 
 </ol></p>
   <p>
   <m>{H}_{1}</m>: </p>
-<p><ol style="list-style-type:upper-alpha"><li>p<ampersand/>;<hash/>8321</li> 
-<li>σ<ampersand/>;<hash/>8321<ampersand/>;sup2</li> 
+<p><ol style="list-style-type:upper-alpha"><li>s<ampersand/>;<hash/>8321</li> 
 <li>μ<ampersand/>;<hash/>8321</li> 
-<li>x̅<ampersand/>;<hash/>8321</li> 
-<li>s<ampersand/>;<hash/>8321</li> 
 <li>μd</li> 
+<li>p<ampersand/>;<hash/>8321</li> 
 <li>σ<ampersand/>;<hash/>8321</li> 
+<li>x̅<ampersand/>;<hash/>8321</li> 
+<li>σ<ampersand/>;<hash/>8321<ampersand/>;sup2</li> 
 </ol></p>
  <p><ol style="list-style-type:upper-alpha"><li>≥</li> 
 <li><greater/></li> 
-<li>=</li> 
-<li><less/><less/>/label<greater/></li> 
 <li>≠</li> 
 <li>≤</li> 
+<li>=</li> 
+<li><less/><less/>/label<greater/></li> 
 </ol></p>
- <p><ol style="list-style-type:upper-alpha"><li>σ<ampersand/>;<hash/>8322</li> 
-<li>p<ampersand/>;<hash/>8322</li> 
+ <p><ol style="list-style-type:upper-alpha"><li>p<ampersand/>;<hash/>8322</li> 
+<li>μ<ampersand/>;<hash/>8322</li> 
+<li>σ<ampersand/>;<hash/>8322</li> 
+<li>x̅<ampersand/>;<hash/>8322</li> 
 <li>σ<ampersand/>;<hash/>8322<ampersand/>;sup2</li> 
 <li>0</li> 
-<li>μ<ampersand/>;<hash/>8322</li> 
 <li>s<ampersand/>;<hash/>8322</li> 
-<li>x̅<ampersand/>;<hash/>8322</li> 
 </ol></p>
   <p>
   Based on the hypotheses, compute the following:</p>
@@ -64,23 +64,23 @@
 <p>The left tail critical value is = <input type="text" style="width:13ch" name="qn1007" id="qn1007" value="" autocomplete="off" aria-label="Question 1 Part 8 of 11" class="text"/></p>
 <p>The right-tail critical value is = <input type="text" style="width:13ch" name="qn1008" id="qn1008" value="" autocomplete="off" aria-label="Question 1 Part 9 of 11" class="text"/></p>
 <p>The decision is to </p>
-<p><ol style="list-style-type:upper-alpha"><li>Reject the null hypothesis</li> 
-<li>Fail to reject the null hypothesis</li> 
-<li>Reject the claim</li> 
+<p><ol style="list-style-type:upper-alpha"><li>Fail to reject the null hypothesis</li> 
 <li>Accept the alternative hypothesis</li> 
+<li>Reject the null hypothesis</li> 
+<li>Reject the claim</li> 
 </ol></p>
 .
 <p>The correct summary would be: </p>
-<p><ol style="list-style-type:upper-alpha"><li>There is not enough evidence to reject the claim</li> 
-<li>There is enough evidence to support the claim</li> 
+<p><ol style="list-style-type:upper-alpha"><li>There is not enough evidence to support the claim</li> 
+<li>There is not enough evidence to reject the claim</li> 
 <li>There is enough evidence to reject the claim</li> 
-<li>There is not enough evidence to support the claim</li> 
+<li>There is enough evidence to support the claim</li> 
 </ol></p>
- that there is a difference in the variance of movie ticket sales in Tampa and Sacramento per week.
+ that there is a difference in the variance of movie ticket sales in Milwaukee and Philadelphia per week.
 
 
 </statement>
 <solution>
-<p><ul><li>C: σ<ampersand/>;<hash/>8321<ampersand/>;sup2</li><li>A: =</li><li>A: σ<ampersand/>;<hash/>8322<ampersand/>;sup2</li><li>B: σ<ampersand/>;<hash/>8321<ampersand/>;sup2</li><li>E: ≠</li><li>C: σ<ampersand/>;<hash/>8322<ampersand/>;sup2</li><li>4.1939</li><li>0.3792</li><li>2.4396</li><li>A: Reject the null hypothesis</li><li>B: There is enough evidence to support the claim</li></ul></p>
+<p><ul><li>F: σ<ampersand/>;<hash/>8321<ampersand/>;sup2</li><li>B: =</li><li>C: σ<ampersand/>;<hash/>8322<ampersand/>;sup2</li><li>G: σ<ampersand/>;<hash/>8321<ampersand/>;sup2</li><li>C: ≠</li><li>E: σ<ampersand/>;<hash/>8322<ampersand/>;sup2</li><li>0.2269</li><li>0.4459</li><li>2.1977</li><li>C: Reject the null hypothesis</li><li>D: There is enough evidence to support the claim</li></ul></p>
 </solution>
 </myopenmath>

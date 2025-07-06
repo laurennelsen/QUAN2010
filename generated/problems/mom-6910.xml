@@ -4,14 +4,14 @@
 <p>
 Determine whether the value is a parameter or statistic</p>
 <p>
-20<percent/> of vehicles sold are compact cars</p>
-<p><ol style="list-style-type:upper-alpha"><li>Statistic</li> 
-<li>Parameter</li> 
+In a weight loss research study the sample of 50 women lost an average of 2.5 pounds</p>
+<p><ol style="list-style-type:upper-alpha"><li>Parameter</li> 
+<li>Statistic</li> 
 </ol></p>
 
 
 </statement>
 <solution>
-<p><ul><li>B: Parameter</li></ul></p>
+<p><ul><li>B: Statistic</li></ul></p>
 </solution>
 </myopenmath>
