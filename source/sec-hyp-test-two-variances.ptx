@@ -22,8 +22,10 @@
 </introduction>
 
 <note>
-  In general, if we are testing to see if one variance is larger than the other, we want to choose population 1 to be the one with the larger sample standard deviation so that we will be doing a right-tail test.
-</note>
+  <p>
+    In general, if we are testing to see if one variance is larger than the other, we want to choose population 1 to be the one with the larger sample standard deviation so that we will be doing a right-tail test.
+  </p>
+  </note>
 
 
 

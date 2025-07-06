@@ -23,6 +23,7 @@
     <exercise-divisional statement="yes" hint="yes" answer="yes" solution="yes" />
     <question statement="yes" hint="yes" answer="yes" solution="yes"/>
     <investigation statement="yes" hint="yes" answer="yes" solution="yes"/>
+    
 
     <!-- Style of fill-in-the-blanks: -->
     <fillin textstyle="underline" mathstyle="shade" />
