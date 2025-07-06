@@ -4,7 +4,7 @@
 <p>
 Is this value from a discrete or continuous data set.</p>
 <p>
-The number of classes you are taking this quarter</p>
+The average weight of newborn babies in ounces</p>
 <p><ol style="list-style-type:upper-alpha"><li>Discrete</li> 
 <li>Continuous</li> 
 </ol></p>
@@ -12,6 +12,6 @@ The number of classes you are taking this quarter</p>
 
 </statement>
 <solution>
-<p><ul><li>A: Discrete</li></ul></p>
+<p><ul><li>B: Continuous</li></ul></p>
 </solution>
 </myopenmath>
