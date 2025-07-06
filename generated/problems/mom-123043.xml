@@ -1,55 +1,55 @@
 <?xml version='1.0' encoding='utf-8'?>
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="123043">
 <statement>
-<p>A company is doing a hypothesis test on the variation in quality from two suppliers. Both distributions are normal, and the populations are independent. Use α = 0.05. A sample of 20 products were selected from Supplier 1 and a standard deviation of quality was found to be 5.6397. A sample of 19 products were selected from Supplier 2 and a standard deviation of quality was found to be 2.9312. Test to see if the variance in quality for Supplier 1 is larger than Supplier 2.</p>
+<p>A company is doing a hypothesis test on the variation in quality from two suppliers. Both distributions are normal, and the populations are independent. Use α = 0.1. A sample of 36 products were selected from Supplier 1 and a standard deviation of quality was found to be 8.6244. A sample of 14 products were selected from Supplier 2 and a standard deviation of quality was found to be 3.6499. Test to see if the variance in quality for Supplier 1 is larger than Supplier 2.</p>
 <p>What are the correct hypotheses? Note this may view better in full screen mode. Select the correct symbols in the order they appear in the problem. </p>
 <p><m>{H}_{0}</m>: </p>
+<p><ol style="list-style-type:upper-alpha"><li>p<ampersand/>;<hash/>8321</li> 
+<li>s<ampersand/>;<hash/>8321</li> 
+<li>μ<ampersand/>;<hash/>8321</li> 
+<li>x̅<ampersand/>;<hash/>8321</li> 
+<li>σ<ampersand/>;<hash/>8321</li> 
+<li>μd</li> 
+<li>σ<ampersand/>;<hash/>8321<ampersand/>;sup2</li> 
+</ol></p>
+ <p><ol style="list-style-type:upper-alpha"><li><greater/></li> 
+<li>=</li> 
+<li>≥</li> 
+<li><less/><less/>/label<greater/></li> 
+<li>≠</li> 
+<li>≤</li> 
+</ol></p>
+ <p><ol style="list-style-type:upper-alpha"><li>x̅<ampersand/>;<hash/>8322</li> 
+<li>σ<ampersand/>;<hash/>8322</li> 
+<li>0</li> 
+<li>σ<ampersand/>;<hash/>8322<ampersand/>;sup2</li> 
+<li>s<ampersand/>;<hash/>8322</li> 
+<li>μ<ampersand/>;<hash/>8322</li> 
+<li>p<ampersand/>;<hash/>8322</li> 
+</ol></p>
+ <p><m>{H}_{1}</m>: </p>
 <p><ol style="list-style-type:upper-alpha"><li>μ<ampersand/>;<hash/>8321</li> 
 <li>μd</li> 
 <li>x̅<ampersand/>;<hash/>8321</li> 
-<li>p<ampersand/>;<hash/>8321</li> 
 <li>σ<ampersand/>;<hash/>8321<ampersand/>;sup2</li> 
 <li>s<ampersand/>;<hash/>8321</li> 
-<li>σ<ampersand/>;<hash/>8321</li> 
-</ol></p>
- <p><ol style="list-style-type:upper-alpha"><li>≤</li> 
-<li>≥</li> 
-<li>≠</li> 
-<li>=</li> 
-<li><less/><less/>/label<greater/></li> 
-<li><greater/></li> 
-</ol></p>
- <p><ol style="list-style-type:upper-alpha"><li>σ<ampersand/>;<hash/>8322<ampersand/>;sup2</li> 
-<li>p<ampersand/>;<hash/>8322</li> 
-<li>μ<ampersand/>;<hash/>8322</li> 
-<li>x̅<ampersand/>;<hash/>8322</li> 
-<li>σ<ampersand/>;<hash/>8322</li> 
-<li>0</li> 
-<li>s<ampersand/>;<hash/>8322</li> 
-</ol></p>
- <p><m>{H}_{1}</m>: </p>
-<p><ol style="list-style-type:upper-alpha"><li>μd</li> 
-<li>x̅<ampersand/>;<hash/>8321</li> 
-<li>s<ampersand/>;<hash/>8321</li> 
-<li>σ<ampersand/>;<hash/>8321</li> 
-<li>μ<ampersand/>;<hash/>8321</li> 
-<li>σ<ampersand/>;<hash/>8321<ampersand/>;sup2</li> 
 <li>p<ampersand/>;<hash/>8321</li> 
+<li>σ<ampersand/>;<hash/>8321</li> 
 </ol></p>
- <p><ol style="list-style-type:upper-alpha"><li>≤</li> 
-<li>=</li> 
-<li><greater/></li> 
+ <p><ol style="list-style-type:upper-alpha"><li><less/><less/>/label<greater/></li> 
 <li>≠</li> 
-<li><less/><less/>/label<greater/></li> 
+<li>≤</li> 
 <li>≥</li> 
+<li><greater/></li> 
+<li>=</li> 
 </ol></p>
- <p><ol style="list-style-type:upper-alpha"><li>σ<ampersand/>;<hash/>8322<ampersand/>;sup2</li> 
+ <p><ol style="list-style-type:upper-alpha"><li>σ<ampersand/>;<hash/>8322</li> 
+<li>σ<ampersand/>;<hash/>8322<ampersand/>;sup2</li> 
 <li>0</li> 
-<li>s<ampersand/>;<hash/>8322</li> 
-<li>p<ampersand/>;<hash/>8322</li> 
 <li>x̅<ampersand/>;<hash/>8322</li> 
-<li>σ<ampersand/>;<hash/>8322</li> 
+<li>s<ampersand/>;<hash/>8322</li> 
 <li>μ<ampersand/>;<hash/>8322</li> 
+<li>p<ampersand/>;<hash/>8322</li> 
 </ol></p>
  <p>Based on the hypotheses, compute the following:</p>
 <p>Round answers to at least 4 decimal places.</p>
@@ -57,22 +57,22 @@
 <p>The p-value is = <input type="text" style="width:13ch" name="qn1007" id="qn1007" value="" autocomplete="off" aria-label="Question 1 Part 8 of 10" class="text"/></p>
 <p>The decision is to </p>
 <p><ol style="list-style-type:upper-alpha"><li>Fail to reject the null hypothesis</li> 
-<li>Reject the claim</li> 
 <li>Accept the alternative hypothesis</li> 
+<li>Reject the claim</li> 
 <li>Reject the null hypothesis</li> 
 </ol></p>
 .
 <p>The correct summary would be: </p>
 <p><ol style="list-style-type:upper-alpha"><li>There is not enough evidence to reject the claim</li> 
-<li>There is not enough evidence to support the claim</li> 
 <li>There is enough evidence to reject the claim</li> 
 <li>There is enough evidence to support the claim</li> 
+<li>There is not enough evidence to support the claim</li> 
 </ol></p>
  that the variance in quality for Supplier 1 is larger than Supplier 2.
 
 
 </statement>
 <solution>
-<p><ul><li>E: σ<ampersand/>;<hash/>8321<ampersand/>;sup2</li><li>A: ≤ or =</li><li>A: σ<ampersand/>;<hash/>8322<ampersand/>;sup2</li><li>F: σ<ampersand/>;<hash/>8321<ampersand/>;sup2</li><li>C: <greater/></li><li>A: σ<ampersand/>;<hash/>8322<ampersand/>;sup2</li><li>3.7019</li><li>0.0038</li><li>D: Reject the null hypothesis</li><li>D: There is enough evidence to support the claim</li></ul></p>
+<p><ul><li>G: σ<ampersand/>;<hash/>8321<ampersand/>;sup2</li><li>A: ≤ or =</li><li>D: σ<ampersand/>;<hash/>8322<ampersand/>;sup2</li><li>D: σ<ampersand/>;<hash/>8321<ampersand/>;sup2</li><li>E: <greater/></li><li>B: σ<ampersand/>;<hash/>8322<ampersand/>;sup2</li><li>5.5834</li><li>0.001</li><li>D: Reject the null hypothesis</li><li>C: There is enough evidence to support the claim</li></ul></p>
 </solution>
 </myopenmath>
