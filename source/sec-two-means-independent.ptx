@@ -478,9 +478,6 @@
 
 <exercise>
     <introduction>
-        <p>
-            <em>The solutions to this exercise will be corrected soon!</em>
-        </p>
     <p>
     A statistics student wants to verify the claim that in a certain Fortune 500 company the average salary of female employees is different from the average salary of male employees. Two samples of male and female workers were obtained independently and analyzed.  The sample data is in the Excel file below.  (Assume that the samples are from normal populations.)
     </p>
@@ -510,25 +507,25 @@
       </statement>
       <answer>
         <p>
-            Population 1: women
+            Population 1: men
         </p>
         <p>
-            Population 2: men
+            Population 2: women
         </p>
         <p>
-            (Let's use <m>\alpha=0.10</m>.)
+            (Let's use <m>\alpha=0.05</m>.)
         </p>
         <p>
-            <m>H_0: \; \mu_1 - \mu_2 \geq 0</m>
+            <m>H_0: \; \mu_1 - \mu_2 \leq 0</m>
         </p>
         <p>
-            <m>H_1: \; \mu_1 - \mu_2 \lt 0</m>
+            <m>H_1: \; \mu_1 - \mu_2 \gt 0</m>
         </p>
         <p>
             <url href="external/sheets/CompanySalariesSolution.xlsx" />
         </p>
         <p>
-            No, there is not sufficient evidence to conclude that male employees in this company have higher salaries than female employees because we got a p-value of <m>\approx 0.4182</m>, which is bigger than <m>\alpha</m>.
+            Yes, there is sufficient evidence to conclude that the average salary for the men in this company is larger than the average salary for the women in this company.
         </p>
       </answer>
     </task>

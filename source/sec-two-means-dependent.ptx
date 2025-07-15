@@ -53,9 +53,7 @@ Again, we rely on Excel to do the computations whenever we have raw data.  After
         <p>
             (Donnelly 10.50)
         </p>
-        <p>
-            <em>The solutions to this exercise will be corrected soon!</em>
-        </p>
+       
         <p>
             Pfizer would like to test the effectiveness of a new cholesterol medication it has developed.  To test the effectiveness, the LDL cholesterol level of 12 randomly selected individuals was measured before and after they took medication.  The data in the Excel file below shows the LDL measurement levels.
         </p>
@@ -87,10 +85,10 @@ Again, we rely on Excel to do the computations whenever we have raw data.  After
         </statement>
         <answer>
             <p>
-                <url href="external/sheets/LDLSolution.xlsx" />
+                <url href="external/sheets/LDLSolutions.xlsx" />
             </p>
             <p>
-                The <m>90\%</m> confidence interval is <m>(62.39, 77.44)</m>. 
+                The <m>90\%</m> confidence interval is <m>(62.33, 77.50)</m>. 
             </p>
         </answer>
     </task>
