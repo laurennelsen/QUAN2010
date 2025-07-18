@@ -451,7 +451,9 @@ A hospital would like to develop a regression model to predict the total hospita
 
 
     <note>
+        <p>
         <q>Multiple R</q> under <q>Regression Statistics</q> is the absolute value of the sample correlation coefficient, <m>r</m>.
+        </p>
     </note>
 
 </section>
