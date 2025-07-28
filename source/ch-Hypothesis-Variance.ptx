@@ -17,5 +17,6 @@ Before we dive into hypothesis testing, we need to introduce two new distributio
   <xi:include href="sec-hyp-test-single-variance.ptx" />
   <xi:include href="sec-F-dist.ptx" />
   <xi:include href="sec-hyp-test-two-variances.ptx" />
+  <xi:include href="sec-more-hypothesis-practice.ptx" />
 
 </chapter>

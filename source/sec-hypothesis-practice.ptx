@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-hypothesis-practice" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Test statistic Practice</title>
+
+<introduction>
+    <p>
+        Let's practice deciding what test statistic to use in different situations!
+    </p>
+</introduction>
+
+
+<exercise>
+
+    <statement>
+        For each scenario, decide what test statistic to use when doing the hypothesis test.
+    </statement>
+
+    <task>
+        <statement>
+            <p>
+                A retailer claims that <m>70\%</m> of customers are satisfied with their service. You want to test this claim using survey data from a random sample of 200 customers.
+            </p>
+        </statement>
+        <choices>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{p}-p}{\sqrt{\frac{p\cdot(1-p)}{n}}}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> t=\frac{\bar{x}-\mu}{(s/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{x}-\mu}{(\sigma/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+        </choices>
+
+    </task>
+
+
+
+
+    <task>
+        <statement>
+            <p>
+You want to test if the average time spent on a website is greater than 5 minutes.  You look at a sample of visits to the website and find that in the sample, the average time spent was 5.5 minutes and you have data from that sample.
+            </p>
+        </statement>
+        <choices>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{p}-p}{\sqrt{\frac{p\cdot(1-p)}{n}}}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+	                    <m> t=\frac{\bar{x}-\mu}{(s/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{x}-\mu}{(\sigma/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+        </choices>
+
+    </task>
+
+    <task>
+        <statement>
+            <p>
+A credit card company claims that the average transaction amount is <m>\$120</m>, with a known population standard deviation of $30. A random sample of 50 recent transactions shows an average of $125. The company wants to know if there is evidence that the average transaction amount has increased.
+            </p>
+        </statement>
+        <choices>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{p}-p}{\sqrt{\frac{p\cdot(1-p)}{n}}}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> t=\frac{\bar{x}-\mu}{(s/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{x}-\mu}{(\sigma/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+        </choices>
+
+    </task>
+
+
+    <task>
+        <statement>
+            <p>
+A small business believes that the average delivery time to customers is 5 days. A recent audit of a random sample of 25 deliveries shows a sample mean of 5.4 days with a sample standard deviation of 1.2 days. The owner wants to know if the data suggests that delivery times have increased.
+            </p>
+        </statement>
+        <choices>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{p}-p}{\sqrt{\frac{p\cdot(1-p)}{n}}}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+	                    <m> t=\frac{\bar{x}-\mu}{(s/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{x}-\mu}{(\sigma/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+        </choices>
+
+    </task>
+
+
+    <task>
+        <statement>
+            <p>
+A digital marketing agency claims that at least <m>40\%</m> of users click on their ads. You sample 300 users, and 110 clicked. Test if the true proportion is less than <m>40\%</m>.
+            </p>
+        </statement>
+        <choices>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{p}-p}{\sqrt{\frac{p\cdot(1-p)}{n}}}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> t=\frac{\bar{x}-\mu}{(s/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{x}-\mu}{(\sigma/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+        </choices>
+
+    </task>
+
+
+    <task>
+        <statement>
+            <p>
+A shipping company claims its packages arrive in 3 days on average, with a known population standard deviation of 0.5 days. You take a sample of 50 packages and want to test this claim.
+            </p>
+        </statement>
+        <choices>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{p}-p}{\sqrt{\frac{p\cdot(1-p)}{n}}}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> t=\frac{\bar{x}-\mu}{(s/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{x}-\mu}{(\sigma/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+        </choices>
+
+    </task>
+
+</exercise>
+
+
+
+<exercise>
+
+    <statement>
+        For each scenario, decide what test statistic to use when doing the hypothesis test.
+    </statement>
+
+    <task>
+        <statement>
+            <p>
+A business professor suspects that students at her university spend less than 10 hours/week studying for statistics. She surveys 18 students, and the sample has a mean of 8.7 hours and a sample standard deviation of 2.5 hours.            </p>
+        </statement>
+        <choices>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{p}-p}{\sqrt{\frac{p\cdot(1-p)}{n}}}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+	                    <m> t=\frac{\bar{x}-\mu}{(s/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{x}-\mu}{(\sigma/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+        </choices>
+
+    </task>
+
+
+
+
+    <task>
+        <statement>
+            <p>
+An accounting firm wants to know if the average number of hours worked per week by employees is different from the standard 40 hours. A random sample of 25 employees has a mean of 41.3 and a sample standard deviation of 2.8 hours.
+            </p>
+        </statement>
+        <choices>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{p}-p}{\sqrt{\frac{p\cdot(1-p)}{n}}}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+	                    <m> t=\frac{\bar{x}-\mu}{(s/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{x}-\mu}{(\sigma/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+        </choices>
+
+    </task>
+
+    <task>
+        <statement>
+            <p>
+A clothing company believes that <m>60\%</m> of customers prefer shopping online. You collect a sample of 500 customers, and 275 say they prefer online shopping.
+            </p>
+        </statement>
+        <choices>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{p}-p}{\sqrt{\frac{p\cdot(1-p)}{n}}}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> t=\frac{\bar{x}-\mu}{(s/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{x}-\mu}{(\sigma/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+        </choices>
+
+    </task>
+
+
+    <task>
+        <statement>
+            <p>
+A company advertises that its energy drink increases focus for an average of 120 minutes, and they know the population standard deviation is 10 minutes from large-scale lab testing. A sample of 40 users shows an average focus time of 117 minutes.
+            </p>
+        </statement>
+        <choices>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{p}-p}{\sqrt{\frac{p\cdot(1-p)}{n}}}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> t=\frac{\bar{x}-\mu}{(s/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{x}-\mu}{(\sigma/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+        </choices>
+
+    </task>
+
+
+    <task>
+        <statement>
+            <p>
+A bank wants to test whether the average wait time at a new branch is different from the usual 5 minutes. A sample of 10 customers has a mean wait time of 6.2 minutes and a sample standard deviation of 1.1 minutes.
+            </p>
+        </statement>
+        <choices>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{p}-p}{\sqrt{\frac{p\cdot(1-p)}{n}}}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+	                    <m> t=\frac{\bar{x}-\mu}{(s/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{x}-\mu}{(\sigma/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+        </choices>
+
+    </task>
+
+
+    <task>
+        <statement>
+            <p>
+A bakery wants to know if the average cost of an order has changed from $18. They sample 30 recent orders, and the sample standard deviation is <m>\$2.50</m>.
+            </p>
+        </statement>
+        <choices>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{p}-p}{\sqrt{\frac{p\cdot(1-p)}{n}}}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+	                    <m> t=\frac{\bar{x}-\mu}{(s/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{x}-\mu}{(\sigma/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+        </choices>
+
+    </task>
+
+</exercise>
+
+  </section>

@@ -1,0 +1,1046 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-more-hypothesis-practice" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>More Test Statistic Practice</title>
+
+<introduction>
+    <p>
+        Let's practice deciding what test statistic to use in different situations!
+    </p>
+</introduction>
+
+<exercise>
+<statement>
+        For each scenario, decide what test statistic to use when doing the hypothesis test.
+    </statement>
+
+    <task>
+        <statement>
+            <p>
+                You're testing whether the standard deviation of delivery times for a shipping service differs from the claimed 2.5 days.           
+             </p>
+        </statement>
+        <choices>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+	                    <m> \chi^2 = \frac{(n-1)s^2}{\sigma^2}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> F=\frac{s_1^2}{s_2^2} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            
+
+        </choices>
+
+    </task>
+
+    <task>
+        <statement>
+            <p>
+Two branches of a retail chain report weekly sales figures. Management wants to know if one branch has more consistent sales than the other. They collect a sample of 15 weeks of sales data from Branch A and 20 weeks from Branch B, and want to test if the variances in weekly sales between the two branches are significantly different.             </p>
+        </statement>
+        <choices>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> \chi^2 = \frac{(n-1)s^2}{\sigma^2}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+	                    <m> F=\frac{s_1^2}{s_2^2} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            
+
+        </choices>
+
+    </task>
+
+    <task>
+        <statement>
+            <p>
+A packaging company claims that the variance in box weights is no more than 0.5 ounces², which is important for maintaining shipping costs. A quality control manager randomly selects 30 boxes and finds that the sample variance is 0.8 <m>\text{ounces}^2</m>. The manager wants to test whether the actual variance exceeds the company’s standard.             </p>
+        </statement>
+        <choices>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+	                    <m> \chi^2 = \frac{(n-1)s^2}{\sigma^2}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> F=\frac{s_1^2}{s_2^2} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            
+
+        </choices>
+
+    </task>
+
+    <task>
+        <statement>
+            <p>
+Two customer service teams---Team A and Team B---log their daily call handling times. A manager suspects that Team A is less consistent in how long calls take compared to Team B. To test this, she randomly selects 12 days of data from Team A and 16 days from Team B, then compares the variability (variances) in call times between the two teams.             </p>
+        </statement>
+        <choices>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> \chi^2 = \frac{(n-1)s^2}{\sigma^2}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+	                    <m> F=\frac{s_1^2}{s_2^2} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            
+
+        </choices>
+
+    </task>
+
+        <task>
+        <statement>
+            <p>
+                A manager is comparing the variability in weekly sales between two product lines: Product A and Product B. The goal is to determine whether the two product lines have equal variances in weekly sales.
+The data from recent weeks is summarized below:
+<table>
+<tabular>
+<row>
+      <cell>Product</cell>
+      <cell>Sample Size</cell>
+      <cell>Sample Standard Deviation</cell>
+    </row>
+    
+    <row>
+      <cell>A</cell>
+      <cell>15</cell>
+      <cell>8.2</cell>
+    </row>
+    <row>
+      <cell>B</cell>
+      <cell>12</cell>
+      <cell>9.5</cell>
+    </row>
+</tabular>
+</table>
+            </p>
+            <p>
+                Using this data, test whether the sales for Product A are more consistent that sales for Product B.
+            </p>
+        </statement>
+        <choices>
+
+            
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> \chi^2 = \frac{(n-1)s^2}{\sigma^2}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+	                    <m> F=\frac{s_1^2}{s_2^2} </m>
+                    </p>
+                </statement>
+            </choice>
+
+
+        </choices>
+
+    </task>
+
+</exercise>
+
+
+
+            
+
+
+<exercise>
+
+    <statement>
+        For each scenario, decide what test statistic to use when doing the hypothesis test.
+    </statement>
+
+    <task>
+        <statement>
+            <p>
+                A retailer claims that <m>70\%</m> of customers are satisfied with their service. You want to test this claim using survey data from a random sample of 200 customers.
+            </p>
+        </statement>
+        <choices>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{p}-p}{\sqrt{\frac{p\cdot(1-p)}{n}}}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> t=\frac{\bar{x}-\mu}{(s/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{x}-\mu}{(\sigma/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> \chi^2 = \frac{(n-1)s^2}{\sigma^2}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> F=\frac{s_1^2}{s_2^2} </m>
+                    </p>
+                </statement>
+            </choice>
+
+
+        </choices>
+
+    </task>
+
+
+
+
+    <task>
+        <statement>
+            <p>
+You want to test if the average time spent on a website is greater than 5 minutes.  You look at a sample of visits to the website and find that in the sample, the average time spent was 5.5 minutes and you have data from that sample.
+            </p>
+        </statement>
+        <choices>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{p}-p}{\sqrt{\frac{p\cdot(1-p)}{n}}}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+	                    <m> t=\frac{\bar{x}-\mu}{(s/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{x}-\mu}{(\sigma/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> \chi^2 = \frac{(n-1)s^2}{\sigma^2}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> F=\frac{s_1^2}{s_2^2} </m>
+                    </p>
+                </statement>
+            </choice>
+
+
+        </choices>
+
+    </task>
+
+    <task>
+        <statement>
+            <p>
+A credit card company claims that the average transaction amount is <m>\$120</m>, with a known population standard deviation of $30. A random sample of 50 recent transactions shows an average of $125. The company wants to know if there is evidence that the average transaction amount has increased.
+            </p>
+        </statement>
+        <choices>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{p}-p}{\sqrt{\frac{p\cdot(1-p)}{n}}}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> t=\frac{\bar{x}-\mu}{(s/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{x}-\mu}{(\sigma/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> \chi^2 = \frac{(n-1)s^2}{\sigma^2}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> F=\frac{s_1^2}{s_2^2} </m>
+                    </p>
+                </statement>
+            </choice>
+
+
+        </choices>
+
+    </task>
+
+
+    <task>
+        <statement>
+            <p>
+A small business believes that the average delivery time to customers is 5 days. A recent audit of a random sample of 25 deliveries shows a sample mean of 5.4 days with a sample standard deviation of 1.2 days. The owner wants to know if the data suggests that delivery times have increased.
+            </p>
+        </statement>
+        <choices>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{p}-p}{\sqrt{\frac{p\cdot(1-p)}{n}}}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+	                    <m> t=\frac{\bar{x}-\mu}{(s/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{x}-\mu}{(\sigma/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> \chi^2 = \frac{(n-1)s^2}{\sigma^2}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> F=\frac{s_1^2}{s_2^2} </m>
+                    </p>
+                </statement>
+            </choice>
+
+
+        </choices>
+
+    </task>
+
+
+    <task>
+        <statement>
+            <p>
+A digital marketing agency claims that at least <m>40\%</m> of users click on their ads. You sample 300 users, and 110 clicked. Test if the true proportion is less than <m>40\%</m>.
+            </p>
+        </statement>
+        <choices>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{p}-p}{\sqrt{\frac{p\cdot(1-p)}{n}}}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> t=\frac{\bar{x}-\mu}{(s/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{x}-\mu}{(\sigma/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> \chi^2 = \frac{(n-1)s^2}{\sigma^2}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> F=\frac{s_1^2}{s_2^2} </m>
+                    </p>
+                </statement>
+            </choice>
+
+
+        </choices>
+
+    </task>
+
+
+    <task>
+        <statement>
+            <p>
+A shipping company claims its packages arrive in 3 days on average, with a known population standard deviation of 0.5 days. You take a sample of 50 packages and want to test this claim.
+            </p>
+        </statement>
+        <choices>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{p}-p}{\sqrt{\frac{p\cdot(1-p)}{n}}}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> t=\frac{\bar{x}-\mu}{(s/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{x}-\mu}{(\sigma/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> \chi^2 = \frac{(n-1)s^2}{\sigma^2}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> F=\frac{s_1^2}{s_2^2} </m>
+                    </p>
+                </statement>
+            </choice>
+
+
+        </choices>
+
+    </task>
+
+</exercise>
+
+
+
+<exercise>
+
+    <statement>
+        For each scenario, decide what test statistic to use when doing the hypothesis test.
+    </statement>
+
+
+    <task>
+        <statement>
+            <p>
+                A shipping company claims that the delivery times for its express service have a standard deviation of no more than 2 days. A business that regularly uses this service suspects that the delivery times are less consistent than advertised. To test this, the business randomly selects 25 recent shipments and finds that the sample standard deviation is 2.5 days.
+ At the 0.05 significance level, is there enough evidence to conclude that the variability in delivery times is greater than the company claims?
+            </p>
+        </statement>
+        <choices>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{p}-p}{\sqrt{\frac{p\cdot(1-p)}{n}}}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> t=\frac{\bar{x}-\mu}{(s/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{x}-\mu}{(\sigma/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+	                    <m> \chi^2 = \frac{(n-1)s^2}{\sigma^2}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> F=\frac{s_1^2}{s_2^2} </m>
+                    </p>
+                </statement>
+            </choice>
+
+
+        </choices>
+
+    </task>
+
+    <task>
+        <statement>
+            <p>
+A business professor suspects that students at her university spend less than 10 hours/week studying for statistics. She surveys 18 students, and the sample has a mean of 8.7 hours and a sample standard deviation of 2.5 hours.            </p>
+        </statement>
+        <choices>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{p}-p}{\sqrt{\frac{p\cdot(1-p)}{n}}}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+	                    <m> t=\frac{\bar{x}-\mu}{(s/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{x}-\mu}{(\sigma/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> \chi^2 = \frac{(n-1)s^2}{\sigma^2}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> F=\frac{s_1^2}{s_2^2} </m>
+                    </p>
+                </statement>
+            </choice>
+
+
+        </choices>
+
+    </task>
+
+
+
+
+    <task>
+        <statement>
+            <p>
+An accounting firm wants to know if the average number of hours worked per week by employees is different from the standard 40 hours. A random sample of 25 employees has a mean of 41.3 and a sample standard deviation of 2.8 hours.
+            </p>
+        </statement>
+        <choices>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{p}-p}{\sqrt{\frac{p\cdot(1-p)}{n}}}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+	                    <m> t=\frac{\bar{x}-\mu}{(s/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{x}-\mu}{(\sigma/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> \chi^2 = \frac{(n-1)s^2}{\sigma^2}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> F=\frac{s_1^2}{s_2^2} </m>
+                    </p>
+                </statement>
+            </choice>
+
+
+        </choices>
+
+    </task>
+
+    <task>
+        <statement>
+            <p>
+A clothing company believes that <m>60\%</m> of customers prefer shopping online. You collect a sample of 500 customers, and 275 say they prefer online shopping.
+            </p>
+        </statement>
+        <choices>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{p}-p}{\sqrt{\frac{p\cdot(1-p)}{n}}}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> t=\frac{\bar{x}-\mu}{(s/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{x}-\mu}{(\sigma/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> \chi^2 = \frac{(n-1)s^2}{\sigma^2}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> F=\frac{s_1^2}{s_2^2} </m>
+                    </p>
+                </statement>
+            </choice>
+
+
+        </choices>
+
+    </task>
+
+
+    <task>
+        <statement>
+            <p>
+A company advertises that its energy drink increases focus for an average of 120 minutes, and they know the population standard deviation is 10 minutes from large-scale lab testing. A sample of 40 users shows an average focus time of 117 minutes.
+            </p>
+        </statement>
+        <choices>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{p}-p}{\sqrt{\frac{p\cdot(1-p)}{n}}}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> t=\frac{\bar{x}-\mu}{(s/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{x}-\mu}{(\sigma/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> \chi^2 = \frac{(n-1)s^2}{\sigma^2}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> F=\frac{s_1^2}{s_2^2} </m>
+                    </p>
+                </statement>
+            </choice>
+
+
+        </choices>
+
+    </task>
+
+    <task>
+        <statement>
+            <p>
+                A manager is comparing the variability in weekly sales between two product lines: Product A and Product B. The goal is to determine whether the two product lines have equal variances in weekly sales.
+The data from recent weeks is summarized below:
+<table>
+<tabular>
+<row>
+      <cell>Product</cell>
+      <cell>Sample Size</cell>
+      <cell>Sample Standard Deviation</cell>
+    </row>
+    
+    <row>
+      <cell>A</cell>
+      <cell>10</cell>
+      <cell>4.2</cell>
+    </row>
+    <row>
+      <cell>B</cell>
+      <cell>12</cell>
+      <cell>2.9</cell>
+    </row>
+</tabular>
+</table>
+            </p>
+            <p>
+                Using this data, test whether the variances in weekly sales for the two products are significantly different.
+            </p>
+        </statement>
+        <choices>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{p}-p}{\sqrt{\frac{p\cdot(1-p)}{n}}}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> t=\frac{\bar{x}-\mu}{(s/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{x}-\mu}{(\sigma/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> \chi^2 = \frac{(n-1)s^2}{\sigma^2}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+	                    <m> F=\frac{s_1^2}{s_2^2} </m>
+                    </p>
+                </statement>
+            </choice>
+
+
+        </choices>
+
+    </task>
+
+
+    <task>
+        <statement>
+            <p>
+A bank wants to test whether the average wait time at a new branch is different from the usual 5 minutes. A sample of 10 customers has a mean wait time of 6.2 minutes and a sample standard deviation of 1.1 minutes.
+            </p>
+        </statement>
+        <choices>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{p}-p}{\sqrt{\frac{p\cdot(1-p)}{n}}}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+	                    <m> t=\frac{\bar{x}-\mu}{(s/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{x}-\mu}{(\sigma/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> \chi^2 = \frac{(n-1)s^2}{\sigma^2}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> F=\frac{s_1^2}{s_2^2} </m>
+                    </p>
+                </statement>
+            </choice>
+
+
+        </choices>
+
+    </task>
+
+
+    <task>
+        <statement>
+            <p>
+            </p>
+        </statement>
+        <choices>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{p}-p}{\sqrt{\frac{p\cdot(1-p)}{n}}}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> t=\frac{\bar{x}-\mu}{(s/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{x}-\mu}{(\sigma/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> \chi^2 = \frac{(n-1)s^2}{\sigma^2}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> F=\frac{s_1^2}{s_2^2} </m>
+                    </p>
+                </statement>
+            </choice>
+
+
+        </choices>
+
+    </task>
+
+
+    <task>
+        <statement>
+            <p>
+A bakery wants to know if the average cost of an order has changed from $18. They sample 30 recent orders, and the sample standard deviation is <m>\$2.50</m>.
+            </p>
+        </statement>
+        <choices>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{p}-p}{\sqrt{\frac{p\cdot(1-p)}{n}}}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice correct="yes">
+                <statement>
+                    <p>
+	                    <m> t=\frac{\bar{x}-\mu}{(s/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> z=\frac{\bar{x}-\mu}{(\sigma/\sqrt{n})} </m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> \chi^2 = \frac{(n-1)s^2}{\sigma^2}</m>
+                    </p>
+                </statement>
+            </choice>
+
+            <choice>
+                <statement>
+                    <p>
+	                    <m> F=\frac{s_1^2}{s_2^2} </m>
+                    </p>
+                </statement>
+            </choice>
+
+
+        </choices>
+
+    </task>
+
+</exercise>
+
+  </section>
