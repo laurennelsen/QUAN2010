@@ -272,7 +272,9 @@
   </exercise>
 
 
-  <exercise>
+  <handout>
+    <title>Paid Vacation Days Activity</title>
+  <activity workspace="3in">
     <introduction>
       <p>
         (Donnelly 8.27)
@@ -309,7 +311,7 @@
     </task>
     <task>
       <statement>
-        <p>
+        <p workspace="0.5in">
           Do the results from this sample validate the travel website's findings?
         </p>
       </statement>
@@ -321,7 +323,7 @@
     </task>
     <task>
       <statement>
-        <p>
+        <p workspace="0.5in">
           What assumptions need to be made about this population?
         </p>
       </statement>
@@ -331,7 +333,9 @@
         </p>
       </answer>
     </task>
-  </exercise>
+  </activity>
+
+</handout>
   
 </subsection>
 
