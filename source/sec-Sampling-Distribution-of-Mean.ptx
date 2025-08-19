@@ -15,7 +15,7 @@
 <handout>
   <title>Preview Activity:  Sampling Distributions drawing from a Normal Population</title>
 
-  <p workspace="2in">
+  <p>
     Before we start formally learning about sampling distributions, I'd like you to explore to see what happens when we take random samples from a population and calculate sample means.
   </p>
   <p>
@@ -40,15 +40,15 @@
           The Population:
           <ul>
             <li>
-              <p> Population shape:  <m>\underline{\hspace{5cm}}</m>
+              <p workspace=".5in"> Population shape:  <m>\underline{\hspace{5cm}}</m>
               </p>
             </li>
             <li>
-              <p> Population mean (<m> \mu </m>):  <m>\underline{\hspace{5cm}}</m>
+              <p workspace=".5in"> Population mean (<m> \mu </m>):  <m>\underline{\hspace{5cm}}</m>
               </p>
             </li>
             <li>
-              <p> Population standard deviation (<m> \sigma </m>):  <m>\underline{\hspace{5cm}}</m>
+              <p workspace=".5in"> Population standard deviation (<m> \sigma </m>):  <m>\underline{\hspace{5cm}}</m>
               </p>
             </li>
           </ul>
@@ -87,15 +87,15 @@
           Compare:
           <ul>
             <li>
-              <p>How does the average of the sample means compare to the population mean?
+              <p workspace=".5in">How does the average of the sample means compare to the population mean?
               </p>
             </li>
             <li>
-              <p>How does the spread of the sample means change as <m>n</m> increases?
+              <p workspace=".5in">How does the spread of the sample means change as <m>n</m> increases?
               </p>
             </li>
             <li>
-              <p>How does the shape of the distribution of sample means change as <m>n</m> increases?
+              <p workspace=".5in">How does the shape of the distribution of sample means change as <m>n</m> increases?
               </p>
             </li>
           </ul>
@@ -143,7 +143,7 @@
       </p>
 
       
-      <p workspace="5in">
+      <p>
      </p>
 
      <p>
@@ -153,15 +153,15 @@
           The Population:
           <ul>
             <li>
-              <p> Population shape:  <m>\underline{\hspace{5cm}}</m>
+              <p workspace=".5in"> Population shape:  <m>\underline{\hspace{5cm}}</m>
               </p>
             </li>
             <li>
-              <p> Population mean (<m> \mu </m>):  <m>\underline{\hspace{5cm}}</m>
+              <p workspace=".5in"> Population mean (<m> \mu </m>):  <m>\underline{\hspace{5cm}}</m>
               </p>
             </li>
             <li>
-              <p> Population standard deviation (<m> \sigma </m>):  <m>\underline{\hspace{5cm}}</m>
+              <p workspace=".5in"> Population standard deviation (<m> \sigma </m>):  <m>\underline{\hspace{5cm}}</m>
               </p>
             </li>
           </ul>
@@ -200,15 +200,15 @@
           Compare:
           <ul>
             <li>
-              <p>How does the average of the sample means compare to the population mean?
+              <p workspace=".5in">How does the average of the sample means compare to the population mean?
               </p>
             </li>
             <li>
-              <p>How does the spread of the sample means change as <m>n</m> increases?
+              <p workspace=".5in">How does the spread of the sample means change as <m>n</m> increases?
               </p>
             </li>
             <li>
-              <p>How does the shape of the distribution of sample means change as <m>n</m> increases?
+              <p workspace=".5in">How does the shape of the distribution of sample means change as <m>n</m> increases?
               </p>
             </li>
           </ul>

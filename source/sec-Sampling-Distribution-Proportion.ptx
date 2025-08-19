@@ -232,16 +232,16 @@
                   Analysis Questions:
                   <ol>
                     <li>
-                      <p workspace="2in"> For <m>p=0.5</m>, how does the shape of the sampling distribution change as <m>n</m> increases? </p>
+                      <p workspace="1in"> For <m>p=0.5</m>, how does the shape of the sampling distribution change as <m>n</m> increases? </p>
                     </li>
                     <li>
-                      <p workspace="2in"> How does the spread (variability) of the distribution change as <m>n</m> increases? </p>
+                      <p workspace="1in"> How does the spread (variability) of the distribution change as <m>n</m> increases? </p>
                     </li>
                     <li>
-                      <p workspace="2in"> For a fixed <m>n=50</m>, how does changing <m>p</m> affect the distribution? </p>
+                      <p workspace="1in"> For a fixed <m>n=50</m>, how does changing <m>p</m> affect the distribution? </p>
                     </li>
                     <li>
-                      <p workspace="2in"> Compare your observations with the rule of thumb in Experiment 3 -- did the distribution look normal when those conditions were met? </p>
+                      <p workspace="1in"> Compare your observations with the rule of thumb in Experiment 3 -- did the distribution look normal when those conditions were met? </p>
                     </li>
                   </ol>
                 </p>
