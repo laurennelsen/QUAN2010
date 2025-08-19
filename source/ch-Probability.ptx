@@ -8,5 +8,6 @@
   <!-- include sections -->
   <xi:include href="sec-Intro-to-Probability.ptx" />
   <xi:include href="sec-independence.ptx" />
+  <xi:include href="sec-notation.ptx" />
 
 </chapter>

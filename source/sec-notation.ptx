@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-notation" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Scientific Notation Reminder</title>
+
+  <introduction>
+<p>
+    When Excel calculates very small probabilities, it often shows the result in <em>scientific notation</em>.
+</p>
+
+  </introduction>
+
+  <p>
+Suppose you use Excel to calculate a probability and it gives the output:
+<code>
+4.7E-08
+</code>.
+  </p>
+  <p>
+This means:
+<me>
+4.7\times 10^{-8}=0.000000047
+</me>
+  </p>
+  <p>
+So the probability is <m>0.000000047</m>, which is very small!
+  </p>
+
+        <exercise>
+
+            <introduction>
+                <p>
+                    Convert each probability from Excel's scientific notation into standard decimal form:
+                </p>
+            </introduction>
+
+                <task>
+                    <statement>
+                    <p>
+                        Excel outputs <code> 2.3E-05 </code>.  Write this probability as a decimal.
+                    </p>
+                    </statement>
+                    <answer>
+                        <m> 0.000023</m>
+                    </answer>
+                </task>
+
+                <task>
+                    <statement>
+                    <p>
+                        Excel outputs <code> 7.1E-04 </code>.  Write this probability as a decimal.
+                    </p>
+                    </statement>
+                    <answer>
+                        <m> 0.00071</m>
+                    </answer>
+                </task>
+
+                <task>
+                    <statement>
+                    <p>
+                        Excel outputs <code> 9.6E-07 </code>.  Write this probability as a decimal.
+                    </p>
+                    </statement>
+                    <answer>
+                        <m> 0.00000096</m>
+                    </answer>
+                </task>
+
+                <task>
+                    <statement>
+                    <p>
+                        Excel outputs <code> 1.2E-02 </code>.  Write this probability as a decimal.
+                    </p>
+                    </statement>
+                    <answer>
+                        <m> 0.012</m>
+                    </answer>
+                </task>
+
+
+        </exercise>
+
+
+</section>
+
+

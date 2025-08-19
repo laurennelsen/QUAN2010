@@ -11,6 +11,239 @@
 
 </introduction>
 
+
+<handout>
+  <title>Preview Activity:  Sampling Distributions drawing from a Normal Population</title>
+
+  <p workspace="2in">
+    Before we start formally learning about sampling distributions, I'd like you to explore to see what happens when we take random samples from a population and calculate sample means.
+  </p>
+  <p>
+    Use the applet below to draw samples from a normal distribution and explore how sample means behave.
+  </p>
+  <p>
+    <em> To change the sample size, enter <q><m>n=\#</m></q> for the number you want to be the sample size. </em>
+  </p>
+    <p>(This applet was made in GeoGebra by Steve Phelps.)
+      <p>
+                  Link to GeoGebra:  <url href="https://www.geogebra.org/m/kUmJeEwx"></url>
+                </p>
+              
+              <interactive xml:id="geogebra-samplingdist" geogebra="kUmJeEwx" width="90%" aspect="9:5" shift-drag-zoom="yes" toolbar="yes" reset-icon="yes" algebra-input="yes" />
+            
+  </p>
+
+  <p>
+    <ol>
+      <li>
+        <p>
+          The Population:
+          <ul>
+            <li>
+              <p> Population shape:  <m>\underline{\hspace{5cm}}</m>
+              </p>
+            </li>
+            <li>
+              <p> Population mean (<m> \mu </m>):  <m>\underline{\hspace{5cm}}</m>
+              </p>
+            </li>
+            <li>
+              <p> Population standard deviation (<m> \sigma </m>):  <m>\underline{\hspace{5cm}}</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </li>
+      <li>
+        <p>
+          The Sample Means:  Choose a sample size, use the applet to generate many samples, and record what you observe.
+          
+  <tabular>
+    <row bottom="minor">
+      <cell right="minor">Sample Size (<m>n</m>)</cell>
+      <cell right="minor">Approximate Mean of Sample Means (<m>\mu_{\bar{x}}</m>)</cell>
+      <cell right="minor">Approximate Standard Deviation of Sample Means (<m>\sigma_{\bar{x}}</m>)</cell>
+    </row>
+    <row>
+      <cell right="minor"><m>n=4</m></cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+    </row>
+    <row>
+      <cell right="minor"><m>n=20</m></cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+    </row>
+    <row>
+      <cell right="minor"><m>n=35</m></cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+    </row>
+  </tabular>
+        </p>
+      </li>
+      <li>
+        <p>
+          Compare:
+          <ul>
+            <li>
+              <p>How does the average of the sample means compare to the population mean?
+              </p>
+            </li>
+            <li>
+              <p>How does the spread of the sample means change as <m>n</m> increases?
+              </p>
+            </li>
+            <li>
+              <p>How does the shape of the distribution of sample means change as <m>n</m> increases?
+              </p>
+            </li>
+          </ul>
+        </p>
+      </li>
+      <li>
+        <p>
+          Your Rule:
+        </p>
+        <p>
+          Based on your observations:
+          <ul>
+            <li>
+              <p workspace="1in">
+                The mean of the sampling distribution of the sample mean is about:
+              </p>
+            </li>
+            <li>
+              <p workspace="1in">
+                The standard deviation of the sampling distribution of the sample mean is about:
+              </p>
+            </li>
+          </ul>
+        </p>
+        <p>
+          (We'll check your <q>rules</q> together as a class and compare them with the exact formulas.)
+        </p>
+      </li>
+    </ol>
+  </p>
+
+</handout>
+
+<handout>
+  <title>Preview Activity:  Sampling Distributions drawing from a Population that is NOT Normal</title>
+
+  <p>
+    Now go to the GeoGebra link below to draw samples from a distribution that is <em>NOT</em> normal and explore how the sample means behave.
+  </p>
+  <p>
+                  Link to GeoGebra:  <url href="https://www.geogebra.org/m/dzfukxkt"></url>
+                </p>
+      <p>
+        Work through the same steps you did above to try to develop rules based on your observations.
+      </p>
+
+      
+      <p workspace="5in">
+     </p>
+
+     <p>
+    <ol>
+      <li>
+        <p>
+          The Population:
+          <ul>
+            <li>
+              <p> Population shape:  <m>\underline{\hspace{5cm}}</m>
+              </p>
+            </li>
+            <li>
+              <p> Population mean (<m> \mu </m>):  <m>\underline{\hspace{5cm}}</m>
+              </p>
+            </li>
+            <li>
+              <p> Population standard deviation (<m> \sigma </m>):  <m>\underline{\hspace{5cm}}</m>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </li>
+      <li>
+        <p>
+          The Sample Means:  Choose a sample size, use the applet to generate many samples, and record what you observe.
+          
+  <tabular>
+    <row bottom="minor">
+      <cell right="minor">Sample Size (<m>n</m>)</cell>
+      <cell right="minor">Approximate Mean of Sample Means (<m>\mu_{\bar{x}}</m>)</cell>
+      <cell right="minor">Approximate Standard Deviation of Sample Means (<m>\sigma_{\bar{x}}</m>)</cell>
+    </row>
+    <row>
+      <cell right="minor"><m>n=4</m></cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+    </row>
+    <row>
+      <cell right="minor"><m>n=20</m></cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+    </row>
+    <row>
+      <cell right="minor"><m>n=35</m></cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+    </row>
+  </tabular>
+        </p>
+      </li>
+      <li>
+        <p>
+          Compare:
+          <ul>
+            <li>
+              <p>How does the average of the sample means compare to the population mean?
+              </p>
+            </li>
+            <li>
+              <p>How does the spread of the sample means change as <m>n</m> increases?
+              </p>
+            </li>
+            <li>
+              <p>How does the shape of the distribution of sample means change as <m>n</m> increases?
+              </p>
+            </li>
+          </ul>
+        </p>
+      </li>
+      <li>
+        <p>
+          Your Rule:
+        </p>
+        <p>
+          Based on your observations:
+          <ul>
+            <li>
+              <p workspace="1in">
+                The mean of the sampling distribution of the sample mean is about:
+              </p>
+            </li>
+            <li>
+              <p workspace="1in">
+                The standard deviation of the sampling distribution of the sample mean is about:
+              </p>
+            </li>
+          </ul>
+        </p>
+        <p>
+          (We'll check your <q>rules</q> together as a class and compare them with the exact formulas.)
+        </p>
+      </li>
+    </ol>
+  </p>
+
+
+</handout>
+
+
   <example>
 
 <introduction>

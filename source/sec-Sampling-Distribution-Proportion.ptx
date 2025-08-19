@@ -13,6 +13,249 @@
 
 </introduction>
 
+<handout>
+  <title>Preview Activity:  Sampling Distribution of the Proportion</title>
+
+  <p>
+    Now go to the GeoGebra link below to investigate the sampling distribution of a proportion.
+  </p>
+  <p>
+                  Link to GeoGebra:  <url href="https://www.geogebra.org/m/srwskfpv"></url>
+                </p>
+      <p>
+        Try to develop rules based on your observations.
+      </p>
+
+      <ol>
+        <li>
+          <p> Exploration: 
+
+            <ul>
+              <li>
+                <p>
+                  Experiment 1:  Varying Sample Size with <m>p=0.5</m>
+                </p>
+                <p>
+                  Set the population proportion to <m>p=0.5</m>.  Try several different sample sizes and run as many trials as is helpful to see the shape of the distribution.  (I recommend somewhere from 100 to 300 trials.) 
+                  <tabular>
+    <row bottom="minor">
+      <cell right="minor"><m>p</m></cell>
+      <cell right="minor"><m>n</m></cell>
+      <cell right="minor">Shape of Distribution</cell>
+      <cell right="minor">Center (around what value?)</cell>
+      <cell right="minor">Spread (wide/narrow)</cell>
+    </row>
+    <row>
+      <cell right="minor"><m>0.5</m></cell>
+      <cell right="minor"><m>10</m></cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+    </row>
+    <row>
+      <cell right="minor"><m>0.5</m></cell>
+      <cell right="minor"><m>30</m></cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+    </row>
+    <row>
+      <cell right="minor"><m>0.5</m></cell>
+      <cell right="minor"><m>50</m></cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+    </row>
+    <row>
+      <cell right="minor"><m>0.5</m></cell>
+      <cell right="minor"><m>100</m></cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+    </row>
+    
+  </tabular>
+                </p>
+              </li>
+
+
+              <li>
+                <p>
+                  Experiment 2:  Varying Proportion with <m>n</m> Fixed
+                </p>
+                <p>
+                  Now fix <m>n=50</m>.  Try several different values of <m>p</m> and run as many trials as is helpful to see the shape of the distribution.  (I recommend somewhere from 100 to 300 trials.) 
+                  <tabular>
+    <row bottom="minor">
+      <cell right="minor"><m>p</m></cell>
+      <cell right="minor"><m>n</m></cell>
+      <cell right="minor">Shape of Distribution</cell>
+      <cell right="minor">Center (around what value?)</cell>
+      <cell right="minor">Spread (wide/narrow)</cell>
+    </row>
+    <row>
+      <cell right="minor"><m>0.1</m></cell>
+      <cell right="minor"><m>50</m></cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+    </row>
+    <row>
+      <cell right="minor"><m>0.3</m></cell>
+      <cell right="minor"><m>50</m></cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+    </row>
+    <row>
+      <cell right="minor"><m>0.5</m></cell>
+      <cell right="minor"><m>50</m></cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+    </row>
+    <row>
+      <cell right="minor"><m>0.7</m></cell>
+      <cell right="minor"><m>50</m></cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+    </row>
+    <row>
+      <cell right="minor"><m>0.9</m></cell>
+      <cell right="minor"><m>50</m></cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+    </row>
+    
+  </tabular>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Experiment 3:  Checking the Rule of Thumb
+                </p>
+                <p>
+                  For each combination you tried above, check whether the conditions below hold:
+                  <me>
+                    np\geq 5\text{  and  } n(1-p)\geq 5
+                  </me>
+                  <tabular>
+    <row bottom="minor">
+      <cell right="minor"><m>p</m></cell>
+      <cell right="minor"><m>n</m></cell>
+      <cell right="minor"><m>np</m></cell>
+      <cell right="minor"><m>n(1-p)</m></cell>
+      <cell right="minor">Did it look normal in the applet?</cell>
+    </row>
+    <row>
+      <cell right="minor">0.5</cell>
+      <cell right="minor">10</cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+    </row>
+    <row>
+      <cell right="minor">0.5</cell>
+      <cell right="minor">30</cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+    </row>
+    <row>
+      <cell right="minor">0.5</cell>
+      <cell right="minor">50</cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+    </row>
+    <row>
+      <cell right="minor">0.5</cell>
+      <cell right="minor">100</cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+    </row>
+    <row>
+      <cell right="minor">0.1</cell>
+      <cell right="minor">50</cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+    </row>
+    <row>
+      <cell right="minor">0.3</cell>
+      <cell right="minor">50</cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+    </row>
+    <row>
+      <cell right="minor">0.5</cell>
+      <cell right="minor">50</cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+    </row>
+    <row>
+      <cell right="minor">0.7</cell>
+      <cell right="minor">50</cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+    </row>
+    <row>
+      <cell right="minor">0.9</cell>
+      <cell right="minor">50</cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+      <cell right="minor"></cell>
+    </row>
+    
+    
+  </tabular>
+                </p>
+              </li>
+
+              
+              
+            </ul>
+
+          </p>
+        </li>
+
+        <li>
+
+                <p>
+                  Analysis Questions:
+                  <ol>
+                    <li>
+                      <p workspace="2in"> For <m>p=0.5</m>, how does the shape of the sampling distribution change as <m>n</m> increases? </p>
+                    </li>
+                    <li>
+                      <p workspace="2in"> How does the spread (variability) of the distribution change as <m>n</m> increases? </p>
+                    </li>
+                    <li>
+                      <p workspace="2in"> For a fixed <m>n=50</m>, how does changing <m>p</m> affect the distribution? </p>
+                    </li>
+                    <li>
+                      <p workspace="2in"> Compare your observations with the rule of thumb in Experiment 3 -- did the distribution look normal when those conditions were met? </p>
+                    </li>
+                  </ol>
+                </p>
+              </li>
+
+
+      </ol>
+
+      
+
+    
+
+
+</handout>
 
 <activity>
   <introduction>
