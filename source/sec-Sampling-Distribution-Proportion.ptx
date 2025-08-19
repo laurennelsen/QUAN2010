@@ -34,7 +34,7 @@
             <ul>
               <li>
                 <p>
-                  Experiment 1:  Varying Sample Size with <m>p=0.5</m>.  Set the population proportion to <m>p=0.5</m>.  Try several different sample sizes and run as many trials as is helpful to see the shape of the distribution.  (I recommend somewhere from 100 to 300 trials.) 
+                  <em>Experiment 1:  Varying Sample Size with <m>p=0.5</m>.</em>  Set the population proportion to <m>p=0.5</m>.  Try several different sample sizes and run as many trials as is helpful to see the shape of the distribution.  (I recommend somewhere from 100 to 300 trials.) 
                   <tabular>
     <row bottom="minor">
       <cell right="minor"><m>p</m></cell>
@@ -79,7 +79,7 @@
 
               <li>
                 <p>
-                  Experiment 2:  Varying Proportion with <m>n</m> Fixed.  Now fix <m>n=50</m>.  Try several different values of <m>p</m> and run as many trials as is helpful to see the shape of the distribution.  (I recommend somewhere from 100 to 300 trials.) 
+                  <em>Experiment 2:  Varying Proportion with <m>n</m> Fixed.</em>  Now fix <m>n=50</m>.  Try several different values of <m>p</m> and run as many trials as is helpful to see the shape of the distribution.  (I recommend somewhere from 100 to 300 trials.) 
                   <tabular>
     <row bottom="minor">
       <cell right="minor"><m>p</m></cell>
@@ -134,7 +134,7 @@
 
               <li>
                 <p>
-                  Experiment 3:  Checking the Rule of Thumb.  For each combination you tried above, check whether the conditions below hold:
+                  <em>Experiment 3:  Checking the Rule of Thumb.</em>  For each combination you tried above, check whether the conditions below hold:
                   <me>
                     np\geq 5\text{  and  } n(1-p)\geq 5
                   </me>
