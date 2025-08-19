@@ -273,8 +273,8 @@
 
 
   <handout>
-    <title>Paid Vacation Days Activity</title>
-  <activity workspace="3in">
+    <title>Paid Vacation Days Exercise</title>
+  <problem workspace="3in">
     <introduction>
       <p>
         (Donnelly 8.27)
@@ -285,11 +285,29 @@
       <p>
         <url href="external/sheets/PaidVacationDays.xlsx" />
       </p>
+      <p>
+        <ol marker="(a)">
+          <li>
+            <p>
+          Construct a <m>95\%</m> confidence interval to estimate the average number of paid vacation days for workers from this country.
+            </p>
+          </li>
+          <li>
+            <p>
+          Do the results from this sample validate the travel website's findings?
+            </p>
+          </li>
+          <li>
+            <p>
+          What assumptions need to be made about this population?
+            </p>
+          </li>
+        </ol>
+      </p>
     </introduction>
-    <task>
+  <!-- <task>
       <statement>
         <p>
-          Construct a <m>95\%</m> confidence interval to estimate the average number of paid vacation days for workers from this country.
         </p>
       </statement>
       <answer>
@@ -312,7 +330,6 @@
     <task>
       <statement>
         <p workspace="0.5in">
-          Do the results from this sample validate the travel website's findings?
         </p>
       </statement>
       <answer>
@@ -324,7 +341,6 @@
     <task>
       <statement>
         <p workspace="0.5in">
-          What assumptions need to be made about this population?
         </p>
       </statement>
       <answer>
@@ -332,8 +348,16 @@
           Since <m>n\lt 30</m>, the population must be normally distributed.
         </p>
       </answer>
-    </task>
-  </activity>
+    </task> -->
+    <answer>
+      <p>
+        Below is an Excel file with solutions to this problem.  (Don't open it before working through the problem yourself!)
+      </p>
+      <p>
+        <url href="external/sheets/PaidVacationDaysSolutions.xlsx" />
+      </p>
+    </answer>
+  </problem>
 
 </handout>
   
