@@ -1207,6 +1207,24 @@ var ptx_lunr_docs = [
   "body": "  "
 },
 {
+  "id": "sec-notation",
+  "level": "1",
+  "url": "sec-notation.html",
+  "type": "Section",
+  "number": "4.3",
+  "title": "Scientific Notation Reminder",
+  "body": " Scientific Notation Reminder   When Excel calculates very small probabilities, it often shows the result in scientific notation .   Suppose you use Excel to calculate a probability and it gives the output: 4.7E-08 .  This means:   So the probability is , which is very small!    Convert each probability from Excel's scientific notation into standard decimal form:     Excel outputs 2.3E-05 . Write this probability as a decimal.         Excel outputs 7.1E-04 . Write this probability as a decimal.         Excel outputs 9.6E-07 . Write this probability as a decimal.         Excel outputs 1.2E-02 . Write this probability as a decimal.        "
+},
+{
+  "id": "sec-notation-6",
+  "level": "2",
+  "url": "sec-notation.html#sec-notation-6",
+  "type": "Exercise",
+  "number": "4.3.1",
+  "title": "",
+  "body": "  Convert each probability from Excel's scientific notation into standard decimal form:     Excel outputs 2.3E-05 . Write this probability as a decimal.         Excel outputs 7.1E-04 . Write this probability as a decimal.         Excel outputs 9.6E-07 . Write this probability as a decimal.         Excel outputs 1.2E-02 . Write this probability as a decimal.       "
+},
+{
   "id": "sec-Random-Variables",
   "level": "1",
   "url": "sec-Random-Variables.html",
@@ -1942,21 +1960,21 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.1",
   "title": "Sampling Distribution of the Mean",
-  "body": " Sampling Distribution of the Mean   In addition to knowing how individual data values vary about the mean for a population, statisticians are interested in knowing how the means of samples of the same size taken from the same population vary about the population mean. (i.e., how do groups of data compare to the overall data?) This leads to arguably the most important topic in all of statistics.     We're going to do an activity where we roll dice and think about the distributions of the averages of our rolls.  Use the Excel file below to record your rolls for this activity.   (If you don't have dice, you can use the tool below.)   (Made in GeoGebra by Duane Habecker)       Roll a die at least 20 times. Use the Excel file above to record what you get on each roll. Then use the Data Analysis Histogram tool to visualize the distribution of rolls with the Bins  . (Before visualizing the rolls, think about what you expect the distribution to look like.)      Now roll 2 dice and in the next sheet of the Excel file, record those two rolls and then find the average of those two rolls. Repeat this at least 20 times. Use Excel to create a histogram of the averages .      Now roll 3 dice and in the next sheet of the Excel file, record those three rolls and then find the average of those three rolls. Repeat this at least 20 times. Use Excel to create a histogram of the averages .      Next we want to do this for averages of a larger number of rolls. But this is rather time-consuming, so we're going to use the link below to see how this would work if we rolled many more dice and looked at the distribution of the averages:        3Blue1Brown Video: But what is the Central Limit Theorem?        A sampling distribution of the mean is a distribution of the mean from numerous samples of the sample size. This distribution has mean and a standard error (i.e. the standard deviation of the sample means) .    There are three important properties that describe the distribution of sample means:   The sampling distribution of the mean of a random variable drawn from any population is approximately normal for sufficiently large sample size. The larger the sample size, the more closely the sample distribution resembles a normal distribution.    The mean of the sample means will be the same as the population mean; that is, .    The standard deviation of the sample means will be smaller than the standard deviation of the population; specifically,        (Donnelly 7.7)  For a population with a mean equal to 250 and a standard deviation equal to 25, calculate the standard error of the mean for the following sample sizes.     20           50           80            What can you conclude about the standard error as the sample size increases?      As the sample size increases, standard error decreases      As the sample size increases, standard error increases.      As the sample size increases, standard error stays the same.      As the sample size increases, the standard error might increase, decrease, or stay the same.      "
+  "body": " Sampling Distribution of the Mean   In addition to knowing how individual data values vary about the mean for a population, statisticians are interested in knowing how the means of samples of the same size taken from the same population vary about the population mean. (i.e., how do groups of data compare to the overall data?) This leads to arguably the most important topic in all of statistics.    Preview Activity: Sampling Distributions drawing from a Normal Population  Before we start formally learning about sampling distributions, I'd like you to explore to see what happens when we take random samples from a population and calculate sample means.  Use the applet below to draw samples from a normal distribution and explore how sample means behave.   To change the sample size, enter for the number you want to be the sample size.   (This applet was made in GeoGebra by Steve Phelps.) Link to GeoGebra:        The Population:   Population shape:     Population mean ( ):     Population standard deviation ( ):        The Sample Means: Choose a sample size, use the applet to generate many samples, and record what you observe.   Sample Size ( )  Approximate Mean of Sample Means ( )  Approximate Standard Deviation of Sample Means ( )                      Compare:   How does the average of the sample means compare to the population mean?    How does the spread of the sample means change as increases?    How does the shape of the distribution of sample means change as increases?       Your Rule:  Based on your observations:   The mean of the sampling distribution of the sample mean is about:    The standard deviation of the sampling distribution of the sample mean is about:     (We'll check your rules together as a class and compare them with the exact formulas.)       Preview Activity: Sampling Distributions drawing from a Population that is NOT Normal  Now go to the GeoGebra link below to draw samples from a distribution that is NOT normal and explore how the sample means behave.  Link to GeoGebra:   Work through the same steps you did above to try to develop rules based on your observations.       The Population:   Population shape:     Population mean ( ):     Population standard deviation ( ):        The Sample Means: Choose a sample size, use the applet to generate many samples, and record what you observe.   Sample Size ( )  Approximate Mean of Sample Means ( )  Approximate Standard Deviation of Sample Means ( )                      Compare:   How does the average of the sample means compare to the population mean?    How does the spread of the sample means change as increases?    How does the shape of the distribution of sample means change as increases?       Your Rule:  Based on your observations:   The mean of the sampling distribution of the sample mean is about:    The standard deviation of the sampling distribution of the sample mean is about:     (We'll check your rules together as a class and compare them with the exact formulas.)        We're going to do an activity where we roll dice and think about the distributions of the averages of our rolls.  Use the Excel file below to record your rolls for this activity.   (If you don't have dice, you can use the tool below.)   (Made in GeoGebra by Duane Habecker)       Roll a die at least 20 times. Use the Excel file above to record what you get on each roll. Then use the Data Analysis Histogram tool to visualize the distribution of rolls with the Bins  . (Before visualizing the rolls, think about what you expect the distribution to look like.)      Now roll 2 dice and in the next sheet of the Excel file, record those two rolls and then find the average of those two rolls. Repeat this at least 20 times. Use Excel to create a histogram of the averages .      Now roll 3 dice and in the next sheet of the Excel file, record those three rolls and then find the average of those three rolls. Repeat this at least 20 times. Use Excel to create a histogram of the averages .      Next we want to do this for averages of a larger number of rolls. But this is rather time-consuming, so we're going to use the link below to see how this would work if we rolled many more dice and looked at the distribution of the averages:        3Blue1Brown Video: But what is the Central Limit Theorem?        A sampling distribution of the mean is a distribution of the mean from numerous samples of the sample size. This distribution has mean and a standard error (i.e. the standard deviation of the sample means) .    There are three important properties that describe the distribution of sample means:   The sampling distribution of the mean of a random variable drawn from any population is approximately normal for sufficiently large sample size. The larger the sample size, the more closely the sample distribution resembles a normal distribution.    The mean of the sample means will be the same as the population mean; that is, .    The standard deviation of the sample means will be smaller than the standard deviation of the population; specifically,        (Donnelly 7.7)  For a population with a mean equal to 250 and a standard deviation equal to 25, calculate the standard error of the mean for the following sample sizes.     20           50           80            What can you conclude about the standard error as the sample size increases?      As the sample size increases, standard error decreases      As the sample size increases, standard error increases.      As the sample size increases, standard error stays the same.      As the sample size increases, the standard error might increase, decrease, or stay the same.      "
 },
 {
-  "id": "sec-Sampling-Distribution-of-Mean-3",
+  "id": "sec-Sampling-Distribution-of-Mean-5",
   "level": "2",
-  "url": "sec-Sampling-Distribution-of-Mean.html#sec-Sampling-Distribution-of-Mean-3",
+  "url": "sec-Sampling-Distribution-of-Mean.html#sec-Sampling-Distribution-of-Mean-5",
   "type": "Example",
   "number": "8.1.1",
   "title": "",
   "body": "  We're going to do an activity where we roll dice and think about the distributions of the averages of our rolls.  Use the Excel file below to record your rolls for this activity.   (If you don't have dice, you can use the tool below.)   (Made in GeoGebra by Duane Habecker)       Roll a die at least 20 times. Use the Excel file above to record what you get on each roll. Then use the Data Analysis Histogram tool to visualize the distribution of rolls with the Bins  . (Before visualizing the rolls, think about what you expect the distribution to look like.)      Now roll 2 dice and in the next sheet of the Excel file, record those two rolls and then find the average of those two rolls. Repeat this at least 20 times. Use Excel to create a histogram of the averages .      Now roll 3 dice and in the next sheet of the Excel file, record those three rolls and then find the average of those three rolls. Repeat this at least 20 times. Use Excel to create a histogram of the averages .      Next we want to do this for averages of a larger number of rolls. But this is rather time-consuming, so we're going to use the link below to see how this would work if we rolled many more dice and looked at the distribution of the averages:     "
 },
 {
-  "id": "sec-Sampling-Distribution-of-Mean-4-1",
+  "id": "sec-Sampling-Distribution-of-Mean-6-1",
   "level": "2",
-  "url": "sec-Sampling-Distribution-of-Mean.html#sec-Sampling-Distribution-of-Mean-4-1",
+  "url": "sec-Sampling-Distribution-of-Mean.html#sec-Sampling-Distribution-of-Mean-6-1",
   "type": "Figure",
   "number": "8.1.3",
   "title": "",
@@ -1972,18 +1990,18 @@ var ptx_lunr_docs = [
   "body": "  A sampling distribution of the mean is a distribution of the mean from numerous samples of the sample size. This distribution has mean and a standard error (i.e. the standard deviation of the sample means) .   "
 },
 {
-  "id": "sec-Sampling-Distribution-of-Mean-7",
+  "id": "sec-Sampling-Distribution-of-Mean-9",
   "level": "2",
-  "url": "sec-Sampling-Distribution-of-Mean.html#sec-Sampling-Distribution-of-Mean-7",
+  "url": "sec-Sampling-Distribution-of-Mean.html#sec-Sampling-Distribution-of-Mean-9",
   "type": "Exercise",
   "number": "8.1.5",
   "title": "",
   "body": "  (Donnelly 7.7)  For a population with a mean equal to 250 and a standard deviation equal to 25, calculate the standard error of the mean for the following sample sizes.     20           50           80         "
 },
 {
-  "id": "sec-Sampling-Distribution-of-Mean-8",
+  "id": "sec-Sampling-Distribution-of-Mean-10",
   "level": "2",
-  "url": "sec-Sampling-Distribution-of-Mean.html#sec-Sampling-Distribution-of-Mean-8",
+  "url": "sec-Sampling-Distribution-of-Mean.html#sec-Sampling-Distribution-of-Mean-10",
   "type": "Exercise",
   "number": "8.1.6",
   "title": "",
@@ -2050,12 +2068,12 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.3",
   "title": "The Sampling Distribution of the Proportion",
-  "body": " The Sampling Distribution of the Proportion   So far, the focus in this chapter has been on the distribution of sample means. However, sometimes we deal with business scenarios where we are counting observations in a sample and in this case the sample proportion (or percentage), , is the statistic that is relevant rather than the sample mean, .     We're going to get in groups, and in each group, you'll roll a die times. (Use this Excel document to keep track of your rolls: ) Count how many times you roll a 1 and use that to calculate the proportion of the 30 rolls for which the result was a 1 . After the whole class finishes finding this proportion, we're going to draw a histogram of all the sample proportions. Before doing this, though, think about the following questions:     What should the distribution of your individual rolls look like (approximately)?      What do you think the approximate shape of the histogram of all sample proportions will be? (Will it be skewed left, uniform, normal\/bell-shaped, or skewed right?)      What do you expect the approximate mean of the distribution of sample proportions to be? (Will it be , , , or ?)       The sampling distribution of the proportion describes the pattern that the sample proportions tend to follow when randomly drawn from a population. This distribution has a mean, , and a standard error (i.e. the standard deviation of the sample proportions), . (The sample proportion is .)      (Donnelly 7.25)  For a population with a proportion equal to 0.32, calculate the standard error of the proportion for the following sample sizes.                                          What can you conclude about the standard error as the sample size increases?      As the sample size increases, standard error decreases      As the sample size increases, standard error increases.      As the sample size increases, standard error stays the same.      As the sample size increases, the standard error might increase, decrease, or stay the same.        (Donnelly 7.32)  A social media survey found that of parents follow their children on Instagram. A random sample of 140 parents was selected.     Calculate the standard error of the proportion.           What is the probability that 104 or more parents from this sample follow their children on Instagram?           What is the probability that between 97 and 104 parents from this sample follow their children on Instagram?           If 81 parents responded that the follow their children on Instagram, does this result support the findings of the social media survey?     Since (less than ), the sample with only 81 parents answering yes is unusual. Therefore, the survey results are questionable.     "
+  "body": " The Sampling Distribution of the Proportion   So far, the focus in this chapter has been on the distribution of sample means. However, sometimes we deal with business scenarios where we are counting observations in a sample and in this case the sample proportion (or percentage), , is the statistic that is relevant rather than the sample mean, .    Preview Activity: Sampling Distribution of the Proportion  Now go to the GeoGebra link below to investigate the sampling distribution of a proportion.  Link to GeoGebra:   Try to develop rules based on your observations.    Exploration:   Experiment 1: Varying Sample Size with   Set the population proportion to . Try several different sample sizes and run as many trials as is helpful to see the shape of the distribution. (I recommend somewhere from 100 to 300 trials.)     Shape of Distribution  Center (around what value?)  Spread (wide\/narrow)                                   Experiment 2: Varying Proportion with Fixed  Now fix . Try several different values of and run as many trials as is helpful to see the shape of the distribution. (I recommend somewhere from 100 to 300 trials.)     Shape of Distribution  Center (around what value?)  Spread (wide\/narrow)                                          Experiment 3: Checking the Rule of Thumb  For each combination you tried above, check whether the conditions below hold:        Did it look normal in the applet?    0.5  10       0.5  30       0.5  50       0.5  100       0.1  50       0.3  50       0.5  50       0.7  50       0.9  50             Analysis Questions:   For , how does the shape of the sampling distribution change as increases?    How does the spread (variability) of the distribution change as increases?    For a fixed , how does changing affect the distribution?    Compare your observations with the rule of thumb in Experiment 3 -- did the distribution look normal when those conditions were met?          We're going to get in groups, and in each group, you'll roll a die times. (Use this Excel document to keep track of your rolls: ) Count how many times you roll a 1 and use that to calculate the proportion of the 30 rolls for which the result was a 1 . After the whole class finishes finding this proportion, we're going to draw a histogram of all the sample proportions. Before doing this, though, think about the following questions:     What should the distribution of your individual rolls look like (approximately)?      What do you think the approximate shape of the histogram of all sample proportions will be? (Will it be skewed left, uniform, normal\/bell-shaped, or skewed right?)      What do you expect the approximate mean of the distribution of sample proportions to be? (Will it be , , , or ?)       The sampling distribution of the proportion describes the pattern that the sample proportions tend to follow when randomly drawn from a population. This distribution has a mean, , and a standard error (i.e. the standard deviation of the sample proportions), . (The sample proportion is .)      (Donnelly 7.25)  For a population with a proportion equal to 0.32, calculate the standard error of the proportion for the following sample sizes.                                          What can you conclude about the standard error as the sample size increases?      As the sample size increases, standard error decreases      As the sample size increases, standard error increases.      As the sample size increases, standard error stays the same.      As the sample size increases, the standard error might increase, decrease, or stay the same.        (Donnelly 7.32)  A social media survey found that of parents follow their children on Instagram. A random sample of 140 parents was selected.     Calculate the standard error of the proportion.           What is the probability that 104 or more parents from this sample follow their children on Instagram?           What is the probability that between 97 and 104 parents from this sample follow their children on Instagram?           If 81 parents responded that the follow their children on Instagram, does this result support the findings of the social media survey?     Since (less than ), the sample with only 81 parents answering yes is unusual. Therefore, the survey results are questionable.     "
 },
 {
-  "id": "sec-Sampling-Distribution-Proportion-3",
+  "id": "sec-Sampling-Distribution-Proportion-4",
   "level": "2",
-  "url": "sec-Sampling-Distribution-Proportion.html#sec-Sampling-Distribution-Proportion-3",
+  "url": "sec-Sampling-Distribution-Proportion.html#sec-Sampling-Distribution-Proportion-4",
   "type": "Activity",
   "number": "8.3.1",
   "title": "",
@@ -2071,27 +2089,27 @@ var ptx_lunr_docs = [
   "body": "  The sampling distribution of the proportion describes the pattern that the sample proportions tend to follow when randomly drawn from a population. This distribution has a mean, , and a standard error (i.e. the standard deviation of the sample proportions), . (The sample proportion is .)   "
 },
 {
-  "id": "sec-Sampling-Distribution-Proportion-5",
+  "id": "sec-Sampling-Distribution-Proportion-6",
   "level": "2",
-  "url": "sec-Sampling-Distribution-Proportion.html#sec-Sampling-Distribution-Proportion-5",
+  "url": "sec-Sampling-Distribution-Proportion.html#sec-Sampling-Distribution-Proportion-6",
   "type": "Exercise",
   "number": "8.3.2",
   "title": "",
   "body": "  (Donnelly 7.25)  For a population with a proportion equal to 0.32, calculate the standard error of the proportion for the following sample sizes.                                       "
 },
 {
-  "id": "sec-Sampling-Distribution-Proportion-6",
+  "id": "sec-Sampling-Distribution-Proportion-7",
   "level": "2",
-  "url": "sec-Sampling-Distribution-Proportion.html#sec-Sampling-Distribution-Proportion-6",
+  "url": "sec-Sampling-Distribution-Proportion.html#sec-Sampling-Distribution-Proportion-7",
   "type": "Exercise",
   "number": "8.3.3",
   "title": "",
   "body": "  What can you conclude about the standard error as the sample size increases?      As the sample size increases, standard error decreases      As the sample size increases, standard error increases.      As the sample size increases, standard error stays the same.      As the sample size increases, the standard error might increase, decrease, or stay the same.     "
 },
 {
-  "id": "sec-Sampling-Distribution-Proportion-7",
+  "id": "sec-Sampling-Distribution-Proportion-8",
   "level": "2",
-  "url": "sec-Sampling-Distribution-Proportion.html#sec-Sampling-Distribution-Proportion-7",
+  "url": "sec-Sampling-Distribution-Proportion.html#sec-Sampling-Distribution-Proportion-8",
   "type": "Exercise",
   "number": "8.3.4",
   "title": "",

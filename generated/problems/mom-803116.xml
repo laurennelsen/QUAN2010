@@ -1,28 +1,28 @@
 <?xml version='1.0' encoding='utf-8'?>
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="803116">
 <statement>
-<p>Mitena is conducting market research on the cost of  homeowners insurance. Mitena has determined that the average annual cost of  homeowners insurance is <dollar/>912, and that the distribution of costs is normally distributed with a standard deviation of <dollar/>56.
+<p>Damian is conducting market research on the cost of  a cell phone data plan. Damian has determined that the average annual cost of  a cell phone data plan is <dollar/>1325, and that the distribution of costs is normally distributed with a standard deviation of <dollar/>92.
   </p>
 <p>
-  a. Find the probability that a single randomly selected consumer spends more than <dollar/>965 on  homeowners insurance.</p>
+  a. Find the probability that a single randomly selected consumer spends more than <dollar/>1382 on  a cell phone data plan.</p>
 <p style="padding-left: 40px;"><input type="text" style="width:25ch" name="qn1000" id="qn1000" value="" autocomplete="off" aria-label="Question 1 Part 1 of 4" class="text"/></p>
-<p>b. The cost of the middle 40<percent/> of  homeowners insurance policies falls between (round to the nearest dollar):</p>
+<p>b. The cost of the middle 40<percent/> of  cell phone data plans falls between (round to the nearest dollar):</p>
 <p style="padding-left: 40px;"><dollar/><input type="text" style="width:25ch" name="qn1001" id="qn1001" value="" autocomplete="off" aria-label="Question 1 Part 2 of 4" class="text"/> to <dollar/><input type="text" style="width:25ch" name="qn1002" id="qn1002" value="" autocomplete="off" aria-label="Question 1 Part 3 of 4" class="text"/> per year.</p>
-<p>c. The <em>most expensive </em>13<percent/> of  homeowners insurance policies cost at least how much annually?</p>
+<p>c. The <em>most expensive </em>10<percent/> of  cell phone data plans cost at least how much annually?</p>
 <p style="padding-left: 40px;"><dollar/><input type="text" style="width:25ch" name="qn1003" id="qn1003" value="" autocomplete="off" aria-label="Question 1 Part 4 of 4" class="text"/></p>
 
 </statement>
 <solution>
-<p><ul><li>0.172</li><li>883</li><li>941</li><li>975</li></ul></p><p>Define the normal distribution in Desmos: <m>\displaystyle{N}=\text{normaldist}{\left({912},{56}\right)}</m>.
+<p><ul><li>0.2678</li><li>1277</li><li>1373</li><li>1443</li></ul></p><p>Define the normal distribution in Desmos: <m>\displaystyle{N}=\text{normaldist}{\left({1325},{92}\right)}</m>.
   </p>
 <p>
-  a. <m>\displaystyle{P}{\left({x}{&gt;}{965}\right)}={N}.{c}{d}{f{{\left({965},\infty\right)}}}={0.172}</m>
+  a. <m>\displaystyle{P}{\left({x}{&gt;}{1382}\right)}={N}.{c}{d}{f{{\left({1382},\infty\right)}}}={0.2678}</m>
   </p>
 <p>
   b. For the middle 40<percent/> of the data, need the remaining 60<percent/> of the data split between the left and right tails of the distribution. So the lower bound of the range has <m>\displaystyle{0.3}</m> of the area to the left and the upper bound of the range has <m>\displaystyle{0.3}</m> of the area to the right, which means <m>\displaystyle{0.7}</m> to the left. Therefore:</p>
-<p style="padding-left: 40px;">Lower bound <m>\displaystyle={N}.\text{inversecdf}{\left({0.3}\right)}={883}</m></p>
-<p style="padding-left: 40px;">Upper bound <m>\displaystyle={N}.\text{inversecdf}{\left({0.7}\right)}={941}</m></p>
-<p>c. For the most expensive 13<percent/> of the distribution, need <m>\displaystyle{0.13}</m> of the area to the right of the data value, so need <m>\displaystyle{1}-{0.0}{.13}={0.87}</m> to the left. Therefore:</p>
-<p style="padding-left: 40px;"> <m>\displaystyle{x}={N}.\text{inversecdf}{\left({0.87}\right)}={975}</m> </p>
+<p style="padding-left: 40px;">Lower bound <m>\displaystyle={N}.\text{inversecdf}{\left({0.3}\right)}={1277}</m></p>
+<p style="padding-left: 40px;">Upper bound <m>\displaystyle={N}.\text{inversecdf}{\left({0.7}\right)}={1373}</m></p>
+<p>c. For the most expensive 10<percent/> of the distribution, need <m>\displaystyle{0.1}</m> of the area to the right of the data value, so need <m>\displaystyle{1}-{0.0}{.1}={0.9}</m> to the left. Therefore:</p>
+<p style="padding-left: 40px;"> <m>\displaystyle{x}={N}.\text{inversecdf}{\left({0.9}\right)}={1443}</m> </p>
 </solution>
 </myopenmath>
