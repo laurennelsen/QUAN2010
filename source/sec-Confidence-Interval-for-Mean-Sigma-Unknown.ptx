@@ -273,8 +273,8 @@
 
 
   <handout>
-    <title>Paid Vacation Days Exercise</title>
-  <problem workspace="3in">
+    <title>Paid Vacation Days Activity</title>
+  <exercise workspace="3in">
     <introduction>
       <p>
         (Donnelly 8.27)
@@ -360,7 +360,7 @@
         <url href="external/sheets/PaidVacationDaysSolutions.xlsx" />
       </p>
     </answer>
-  </problem>
+  </exercise>
 
 </handout>
   
