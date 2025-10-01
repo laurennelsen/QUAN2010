@@ -2282,7 +2282,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-Confidence-Interval-for-Mean-Sigma-Unknown.html#subsec-Confidence-Interval-Sigma-Unknown-7-2",
   "type": "Exercise",
-  "number": "9.4.4",
+  "number": "[STRUCT].3",
   "title": "",
   "body": "  (Donnelly 8.27)  According to a travel website, workers in a certain country lead the world in vacation days, averaging 41 days per year. The data in the Excel file below shows the number of paid vacation days for a random sample of 20 workers from this country.        Construct a confidence interval to estimate the average number of paid vacation days for workers from this country.    Do the results from this sample validate the travel website's findings?    What assumptions need to be made about this population?        Below is an Excel file with solutions to this problem.  (Don't open it before working through the problem yourself!)      "
 },
