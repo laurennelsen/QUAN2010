@@ -222,12 +222,12 @@
           Based on your observations:
           <ul>
             <li>
-              <p workspace="1in">
+              <p workspace=".75in">
                 The mean of the sampling distribution of the sample mean is about:
               </p>
             </li>
             <li>
-              <p workspace="1in">
+              <p workspace=".75in">
                 The standard deviation of the sampling distribution of the sample mean is about:
               </p>
             </li>
