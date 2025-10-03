@@ -1,28 +1,28 @@
 <?xml version='1.0' encoding='utf-8'?>
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="803116">
 <statement>
-<p>Roman is conducting market research on the cost of  homeowners insurance. Roman has determined that the average annual cost of  homeowners insurance is <dollar/>1388, and that the distribution of costs is normally distributed with a standard deviation of <dollar/>62.
+<p>Alexis is conducting market research on the cost of  homeowners insurance. Alexis has determined that the average annual cost of  homeowners insurance is <dollar/>1388, and that the distribution of costs is normally distributed with a standard deviation of <dollar/>65.
   </p>
 <p>
-  a. Find the probability that a single randomly selected consumer spends more than <dollar/>1498 on  homeowners insurance.</p>
+  a. Find the probability that a single randomly selected consumer spends more than <dollar/>1339 on  homeowners insurance.</p>
 <p style="padding-left: 40px;"><input type="text" style="width:25ch" name="qn1000" id="qn1000" value="" autocomplete="off" aria-label="Question 1 Part 1 of 4" class="text"/></p>
-<p>b. The cost of the middle 70<percent/> of  homeowners insurance policies falls between (round to the nearest dollar):</p>
+<p>b. The cost of the middle 60<percent/> of  homeowners insurance policies falls between (round to the nearest dollar):</p>
 <p style="padding-left: 40px;"><dollar/><input type="text" style="width:25ch" name="qn1001" id="qn1001" value="" autocomplete="off" aria-label="Question 1 Part 2 of 4" class="text"/> to <dollar/><input type="text" style="width:25ch" name="qn1002" id="qn1002" value="" autocomplete="off" aria-label="Question 1 Part 3 of 4" class="text"/> per year.</p>
-<p>c. The <em>most expensive </em>14<percent/> of  homeowners insurance policies cost at least how much annually?</p>
+<p>c. The <em>most expensive </em>6<percent/> of  homeowners insurance policies cost at least how much annually?</p>
 <p style="padding-left: 40px;"><dollar/><input type="text" style="width:25ch" name="qn1003" id="qn1003" value="" autocomplete="off" aria-label="Question 1 Part 4 of 4" class="text"/></p>
 
 </statement>
 <solution>
-<p><ul><li>0.038</li><li>1324</li><li>1452</li><li>1455</li></ul></p><p>Define the normal distribution in Desmos: <m>\displaystyle{N}=\text{normaldist}{\left({1388},{62}\right)}</m>.
+<p><ul><li>0.7745</li><li>1333</li><li>1443</li><li>1489</li></ul></p><p>Define the normal distribution in Desmos: <m>\displaystyle{N}=\text{normaldist}{\left({1388},{65}\right)}</m>.
   </p>
 <p>
-  a. <m>\displaystyle{P}{\left({x}{&gt;}{1498}\right)}={N}.{c}{d}{f{{\left({1498},\infty\right)}}}={0.038}</m>
+  a. <m>\displaystyle{P}{\left({x}{&gt;}{1339}\right)}={N}.{c}{d}{f{{\left({1339},\infty\right)}}}={0.7745}</m>
   </p>
 <p>
-  b. For the middle 70<percent/> of the data, need the remaining 30<percent/> of the data split between the left and right tails of the distribution. So the lower bound of the range has <m>\displaystyle{0.15}</m> of the area to the left and the upper bound of the range has <m>\displaystyle{0.15}</m> of the area to the right, which means <m>\displaystyle{0.85}</m> to the left. Therefore:</p>
-<p style="padding-left: 40px;">Lower bound <m>\displaystyle={N}.\text{inversecdf}{\left({0.15}\right)}={1324}</m></p>
-<p style="padding-left: 40px;">Upper bound <m>\displaystyle={N}.\text{inversecdf}{\left({0.85}\right)}={1452}</m></p>
-<p>c. For the most expensive 14<percent/> of the distribution, need <m>\displaystyle{0.14}</m> of the area to the right of the data value, so need <m>\displaystyle{1}-{0.0}{.14}={0.86}</m> to the left. Therefore:</p>
-<p style="padding-left: 40px;"> <m>\displaystyle{x}={N}.\text{inversecdf}{\left({0.86}\right)}={1455}</m> </p>
+  b. For the middle 60<percent/> of the data, need the remaining 40<percent/> of the data split between the left and right tails of the distribution. So the lower bound of the range has <m>\displaystyle{0.2}</m> of the area to the left and the upper bound of the range has <m>\displaystyle{0.2}</m> of the area to the right, which means <m>\displaystyle{0.8}</m> to the left. Therefore:</p>
+<p style="padding-left: 40px;">Lower bound <m>\displaystyle={N}.\text{inversecdf}{\left({0.2}\right)}={1333}</m></p>
+<p style="padding-left: 40px;">Upper bound <m>\displaystyle={N}.\text{inversecdf}{\left({0.8}\right)}={1443}</m></p>
+<p>c. For the most expensive 6<percent/> of the distribution, need <m>\displaystyle{0.06}</m> of the area to the right of the data value, so need <m>\displaystyle{1}-{0.0}{.06}={0.94}</m> to the left. Therefore:</p>
+<p style="padding-left: 40px;"> <m>\displaystyle{x}={N}.\text{inversecdf}{\left({0.94}\right)}={1489}</m> </p>
 </solution>
 </myopenmath>
