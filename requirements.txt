@@ -1,2 +1,2 @@
-# <!-- Managed automatically by PreTeXt authoring tools -->
+# This file was automatically generated with PreTeXt 2.19.1.
 pretext == 2.19.1

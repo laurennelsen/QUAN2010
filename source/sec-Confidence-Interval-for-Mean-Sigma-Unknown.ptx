@@ -272,10 +272,10 @@
   </exercise>
 
 
-  <handout>
+  <handout label="worksheet-paid-vacation">
     <title>Paid Vacation Days Activity</title>
   <exercise workspace="3in">
-    <introduction>
+    <statement>
       <p>
         (Donnelly 8.27)
       </p>
@@ -304,7 +304,7 @@
           </li>
         </ol>
       </p>
-    </introduction>
+    </statement>
   <!-- <task>
       <statement>
         <p>
