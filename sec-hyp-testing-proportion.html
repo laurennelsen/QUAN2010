@@ -102,15 +102,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.9.12';
+eBookConfig.runestone_version = '7.11.7';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.a85e2f1fefeea635.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.a707b621c77f7e48.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.557d81b04b3ec0e4.css">
+<script src="_static/prefix-runtime.991c135ccf182bf5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.c2757fc695bc848c.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.f4ab138da65f4203.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -364,7 +364,7 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="autopermalink" data-description="Investigation 10.5.1"><a href="#sec-hyp-testing-proportion-3" title="Copy heading and permalink for Investigation 10.5.1" aria-label="Copy heading and permalink for Investigation 10.5.1">🔗</a></div></article><div class="para logical" id="sec-hyp-testing-proportion-4">
 <div class="para">The last type of hypothesis test that we will study in this chapter involves the population proportion, <span class="process-math">\(p\text{.}\)</span>  This test is useful for testing claims made about the proportion of something.  Recall that proportion data follow the binomial distribution, which can be approximated by the normal distribution under the conditions:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-hyp-testing-proportion-4-2">
 \begin{equation*}
 np\geq 5 \text{ and } n(1-p)\geq 5,\text{ where}
 \end{equation*}
@@ -383,7 +383,7 @@ np\geq 5 \text{ and } n(1-p)\geq 5,\text{ where}
 </div>
 <div class="para logical" id="sec-hyp-testing-proportion-5">
 <div class="para">When these conditions are met, the test statistic for this hypothesis test is calculated with this formula:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-hyp-testing-proportion-5-1">
 \begin{equation*}
 z_p = \frac{\overline{p}-p}{\sqrt{\frac{p(1-p)}{n}}}
 \end{equation*}
@@ -412,7 +412,7 @@ z_p = \frac{\overline{p}-p}{\sqrt{\frac{p(1-p)}{n}}}
 <span class="process-math">\(H_1:\; p\lt .45\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-proportion-6-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="sec-hyp-testing-proportion-6-2-6">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-hyp-testing-proportion-6-2-6-1">
 \begin{equation*}
 z_p=\frac{.40-.45}{\sqrt{\frac{.45(.55)}{200}}}\approx -1.42
 \end{equation*}
@@ -420,7 +420,7 @@ z_p=\frac{.40-.45}{\sqrt{\frac{.45(.55)}{200}}}\approx -1.42
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-proportion-6-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="sec-hyp-testing-proportion-6-2-7">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-hyp-testing-proportion-6-2-7-1">
 \begin{equation*}
 \text{p-value}\approx NORM.S.DIST(-1.42,1)\approx 0.0778
 \end{equation*}
@@ -428,7 +428,7 @@ z_p=\frac{.40-.45}{\sqrt{\frac{.45(.55)}{200}}}\approx -1.42
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-hyp-testing-proportion-6-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="sec-hyp-testing-proportion-6-2-8">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-hyp-testing-proportion-6-2-8-1">
 \begin{equation*}
 \text{p-value}\lt\alpha\rightarrow \text{ Reject } H_0
 \end{equation*}

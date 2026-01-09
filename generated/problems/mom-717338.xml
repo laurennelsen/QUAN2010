@@ -1,28 +1,30 @@
 <?xml version='1.0' encoding='utf-8'?>
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="717338">
 <statement>
-<p>Jenny is conducting market research on the amount typically spent on the purchase of a first vehicle. Jenny has determined that the average cost of a first vehicle is <dollar/>5000, and that the distribution of costs is normally distributed with a standard deviation of <dollar/>650. </p>
-<p>a. Find the probability that a single randomly selected first-time vehicle purchase is less than <dollar/>4240. (Round to 4 decimal places.)</p>
-<p style="padding-left: 40px;"><input type="text" style="width:13ch" name="qn1000" id="qn1000" value="" autocomplete="off" aria-label="Question 1 Part 1 of 4" class="text"/></p>
-<p>b. The cost of the middle 50<percent/> of first-time vehicle purchases falls between (round to the nearest dollar):</p>
-<p style="padding-left: 40px;"><dollar/><input type="text" style="width:13ch" name="qn1001" id="qn1001" value="" autocomplete="off" aria-label="Question 1 Part 2 of 4" class="text"/> to <dollar/><input type="text" style="width:13ch" name="qn1002" id="qn1002" value="" autocomplete="off" aria-label="Question 1 Part 3 of 4" class="text"/></p>
-<p>c. If a random sample of 50 first-time vehicle purchasers is selected, what is the probability that the <em>sample average</em> amount spent is between <dollar/>4960 and <dollar/>5190? (Round to 4 decimal places.)</p>
-<p style="padding-left: 40px;"><input type="text" style="width:13ch" name="qn1003" id="qn1003" value="" autocomplete="off" aria-label="Question 1 Part 4 of 4" class="text"/></p>
+<p>Jalen is conducting market research on the amount typically spent on the purchase of a first vehicle. Jalen has determined that the average cost of a first vehicle is <dollar/>5800, and that the distribution of costs is normally distributed with a standard deviation of <dollar/>720.
+  </p>
+<p>
+  a. Find the probability that a single randomly selected first-time vehicle purchase is more than <dollar/>4790. (Round to 4 decimal places.)</p>
+<p style="padding-left: 40px;"><fillin characters="10"/></p>
+<p>b. The cost of the middle 30<percent/> of first-time vehicle purchases falls between (round to the nearest dollar):</p>
+<p style="padding-left: 40px;"><dollar/><fillin characters="10"/> to <dollar/><fillin characters="10"/></p>
+<p>c. If a random sample of 50 first-time vehicle purchasers is selected, what is the probability that the <em>sample average</em> amount spent is between <dollar/>5710 and <dollar/>5980? (Round to 4 decimal places.)</p>
+<p style="padding-left: 40px;"><fillin characters="10"/></p>
 
 </statement>
-<solution>
-<p><ul><li>0.1212</li><li>4562</li><li>5438</li><li>0.6489</li></ul></p><p>a. Since the probability here is for a single randomly selected consumer, we use the <m>\displaystyle{X}</m> distribution, which has mean and standard deviation as given.</p>
-<p>Using Desmos (or other technology), define the distribution: <m>\displaystyle\text{normaldist}{\left({5000},{650}\right)}.</m> Then use the dropdown menu and select REGION: Left and COMPUTE: AREA. Enter the VALUE <m>\displaystyle{4240}</m>  and the probability is given:</p>
-<p style="padding-left: 40px;"><m>\displaystyle{P}{\left({x}\leq{4240}\right)}={0.1212}</m> <less/>/p<greater/>
-</p><p style="padding-left: 40px;">Alternatively (older Desmos method), using .cdf approach:</p>
-<p style="padding-left: 40px;"><m>\displaystyle{P}{\left({x}\leq{4240}\right)}=\text{normaldist}{\left({5000},{650}\right)}.\text{cdf}{\left(-\infty,{4240}\right)}={0.1212}</m> <less/>/p<greater/>
-</p>
-<p>b. To find the cutoff values for the middle <m>\displaystyle{50}\%</m>  of the distribution, define the distribution again, and then use the dropdown menu and select REGION: Inner and COMPUTE: BOUNDS. Enter the middle AREA of 0.5, and the boundaries are given: <m>\displaystyle{4562}\leq{x}\leq{5438}.</m> </p>
-<p style="padding-left: 40px;">Alternatively (older Desmos method), for the middle 50<percent/>, need the remaining <m>\displaystyle{1}-{0.5}={0.5}</m> of the area to be split between the 2 tails. This means that the area to the <em>left</em> of the lower bound is 0.25, and the area to the <em>right</em> of the upper bound is 0.25, resulting in an area <em>to the <em>left</em></em> of the upper bound of 0.75. In Desmos (or other technology), we find each of these values using .inversecdf with the <m>\displaystyle{X}</m> distribution:</p>
-<p style="padding-left: 40px;">lower bound <m>\displaystyle=\text{normaldist}{\left({5000},{650}\right)}.\text{inversecdf}{\left({0.25}\right)}={4562}</m> </p>
-<p style="padding-left: 40px;">upper bound <m>\displaystyle=\text{normaldist}{\left({5000},{650}\right)}.\text{inversecdf}{\left({0.75}\right)}={5438}</m> </p>
+<answer>
+<p><ul><li>0.9197</li><li>5523</li><li>6077</li><li>0.7731</li></ul></p>
+</answer>
+<solution><p>a. Since the probability here is for a single randomly selected consumer, we use the <m>\displaystyle{X}</m> distribution, which has mean and standard deviation as given.</p>
+<p>Using Desmos (or other technology), define the distribution: <m>\displaystyle\text{normaldist}{\left({5800},{720}\right)}.</m> Then use the dropdown menu and select REGION: Right and COMPUTE: AREA. Enter the VALUE <m>\displaystyle{4790}</m>  and the probability is given:</p>
+<p style="padding-left: 40px;"><m>\displaystyle{P}{\left({x}\geq{4790}\right)}={0.9197}</m> </p>
+<p style="padding-left: 40px;">Alternatively (older Desmos method), using .cdf approach:</p>
+<p style="padding-left: 40px;"><m>\displaystyle{P}{\left({x}\geq{4790}\right)}=\text{normaldist}{\left({5800},{720}\right)}.\text{cdf}{\left({4790},\infty\right)}={0.9197}</m> </p>
+<p>b. To find the cutoff values for the middle <m>\displaystyle{30}\%</m>  of the distribution, define the distribution again, and then use the dropdown menu and select REGION: Inner and COMPUTE: BOUNDS. Enter the middle AREA of 0.3, and the boundaries are given: <m>\displaystyle{5523}\leq{x}\leq{6077}.</m> </p>
+<p style="padding-left: 40px;">Alternatively (older Desmos method), for the middle 30<percent/>, need the remaining <m>\displaystyle{1}-{0.3}={0.7}</m> of the area to be split between the 2 tails. This means that the area to the <em>left</em> of the lower bound is 0.35, and the area to the <em>right</em> of the upper bound is 0.35, resulting in an area <em>to the <em>left</em></em> of the upper bound of 0.65. In Desmos (or other technology), we find each of these values using .inversecdf with the <m>\displaystyle{X}</m> distribution:</p>
+<p style="padding-left: 40px;">lower bound <m>\displaystyle=\text{normaldist}{\left({5800},{720}\right)}.\text{inversecdf}{\left({0.35}\right)}={5523}</m> </p>
+<p style="padding-left: 40px;">upper bound <m>\displaystyle=\text{normaldist}{\left({5800},{720}\right)}.\text{inversecdf}{\left({0.65}\right)}={6077}</m> </p>
 <p>c. The probability here is related to <m>\displaystyle\overline{{X}}</m> , so now we use the sampling disitribution of means to find the probability (NOT the underlying <m>\displaystyle{X}</m> distribution).</p>
-<p>Define the distribution: <m>\displaystyle\text{normaldist}{\left({5000},\frac{{650}}{\sqrt{{{50}}}}\right)}</m> . Then use the dropdown menu and select REGION: Inner (for a "between" values area) and COMPUTE: Area. Enter the boundaries and the probability (area) is given: <m>\displaystyle{P}{\left({4960}\leq{x}\leq{5190}\right)}={0.6489}</m> </p>
-<p style="padding-left: 40px;">Alternatively (older Desmos method) use the .cdf approach:<m>\displaystyle{P}{\left({4960}\leq\overline{{x}}\leq{5190}\right)}=\text{normaldist}{\left({5000},\frac{{650}}{\sqrt{{{50}}}}\right)}.\text{cdf}{\left({4960},{5190}\right)}={0.6489}</m> </p>
-</solution>
+<p>Define the distribution: <m>\displaystyle\text{normaldist}{\left({5800},\frac{{720}}{\sqrt{{{50}}}}\right)}</m> . Then use the dropdown menu and select REGION: Inner (for a "between" values area) and COMPUTE: Area. Enter the boundaries and the probability (area) is given: <m>\displaystyle{P}{\left({5710}\leq{x}\leq{5980}\right)}={0.7731}</m> </p>
+<p style="padding-left: 40px;">Alternatively (older Desmos method) use the .cdf approach:<m>\displaystyle{P}{\left({5710}\leq\overline{{x}}\leq{5980}\right)}=\text{normaldist}{\left({5800},\frac{{720}}{\sqrt{{{50}}}}\right)}.\text{cdf}{\left({5710},{5980}\right)}={0.7731}</m> </p></solution>
 </myopenmath>

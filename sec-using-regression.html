@@ -102,15 +102,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.9.12';
+eBookConfig.runestone_version = '7.11.7';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.a85e2f1fefeea635.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.a707b621c77f7e48.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.557d81b04b3ec0e4.css">
+<script src="_static/prefix-runtime.991c135ccf182bf5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.c2757fc695bc848c.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.f4ab138da65f4203.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -353,7 +353,7 @@ eBookConfig.enable_chatcodes =  false;
 <section class="introduction" id="sec-using-regression-2"><div class="para" id="sec-using-regression-2-1">We can use our regression model to make predictions based on given values of the independent variables -- just plug the given values into the respective independent variable of the regression model.  But how reliable is this prediction?  We only have sample data so the prediction isn’t perfect.  Similar to what we did in a previous chapter, we will construct a confidence interval to aid in describing the accuracy of our predictions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-using-regression-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section><div class="para logical" id="sec-using-regression-3">
 <div class="para">There are a number of confidence intervals that we can create based on our regression model that provide insight into the validity of the model.  The only one we will focus on is related to the population slopes:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-using-regression-3-1">
 \begin{equation*}
 CI=b_i\pm t_{\alpha/2}s_{b_i} 
 \end{equation*}
@@ -377,14 +377,14 @@ CI=b_i\pm t_{\alpha/2}s_{b_i}
 <div class="autopermalink" data-description="Task 13.3.1.a"><a href="#sec-using-regression-4-2" title="Copy heading and permalink for Task 13.3.1.a" aria-label="Copy heading and permalink for Task 13.3.1.a">🔗</a></div></article><article class="task exercise-like" id="sec-using-regression-4-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <div class="para logical" id="sec-using-regression-4-3-1-1">
 <div class="para">Let <span class="process-math">\(\alpha=0.10\text{,}\)</span> and test the following hypothesis:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-using-regression-4-3-1-1-2">
 \begin{equation*}
 H_0:\;\beta_1=\beta_2=\beta_3=0
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-using-regression-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="sec-using-regression-4-3-1-2">
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-using-regression-4-3-1-2-1">
 \begin{equation*}
 H_1:\; \text{at least one } \beta_i\neq 0
 \end{equation*}

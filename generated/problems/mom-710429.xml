@@ -1,78 +1,79 @@
 <?xml version='1.0' encoding='utf-8'?>
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="710429">
 <statement>
-<p>Arthur Dent suspects that there is a difference in the variation in the number of daily customers at two restaurants, the Big Bang Burger Bar and Milliways. Both distributions are normal, and the populations are independent. Use α = 0.1. A sample of 38 randomly selected days from Big Bang Burger Bar found a standard deviation of 79.9046 customers. A sample of 25 randomly selected days from Milliways found a standard deviation of 37.2874. Test to see if there is a difference in the variance in the number of daily customers at the Big Bang Burger Bar compared to Milliways.</p>
+<p>Arthur Dent suspects that there is a difference in the variation in the number of daily customers at two restaurants, the Big Bang Burger Bar and Milliways. Both distributions are normal, and the populations are independent. Use α = 0.05. A sample of 24 randomly selected days from Big Bang Burger Bar found a standard deviation of 83.7317 customers. A sample of 25 randomly selected days from Milliways found a standard deviation of 43.3807. Test to see if there is a difference in the variance in the number of daily customers at the Big Bang Burger Bar compared to Milliways.</p>
 <p>What are the correct hypotheses? Note this may view better in full screen mode. Select the correct symbols in the order they appear in the problem. </p>
 <p><m>{H}_{0}</m>: </p>
-<p><ol style="list-style-type:upper-alpha"><li>μ<ampersand/>;<hash/>8321</li> 
-<li>μd</li> 
+<p><ol style="list-style-type:upper-alpha"><li>σ<ampersand/>;<hash/>8321<ampersand/>;sup2</li> 
+<li>σ<ampersand/>;<hash/>8321</li> 
 <li>s<ampersand/>;<hash/>8321</li> 
 <li>x̅<ampersand/>;<hash/>8321</li> 
-<li>σ<ampersand/>;<hash/>8321</li> 
 <li>p<ampersand/>;<hash/>8321</li> 
-<li>σ<ampersand/>;<hash/>8321<ampersand/>;sup2</li> 
+<li>μd</li> 
+<li>μ<ampersand/>;<hash/>8321</li> 
 </ol></p>
- <p><ol style="list-style-type:upper-alpha"><li><less/><less/>/label<greater/></li> 
-<li>≤</li> 
+ <p><ol style="list-style-type:upper-alpha"><li>=</li> 
 <li>≠</li> 
-<li>≥</li> 
 <li><greater/></li> 
-<li>=</li> 
+<li><less/><less/>/label<greater/></li> 
+<li>≥</li> 
+<li>≤</li> 
 </ol></p>
  <p><ol style="list-style-type:upper-alpha"><li>σ<ampersand/>;<hash/>8322</li> 
-<li>σ<ampersand/>;<hash/>8322<ampersand/>;sup2</li> 
-<li>s<ampersand/>;<hash/>8322</li> 
-<li>x̅<ampersand/>;<hash/>8322</li> 
 <li>p<ampersand/>;<hash/>8322</li> 
 <li>0</li> 
 <li>μ<ampersand/>;<hash/>8322</li> 
+<li>x̅<ampersand/>;<hash/>8322</li> 
+<li>σ<ampersand/>;<hash/>8322<ampersand/>;sup2</li> 
+<li>s<ampersand/>;<hash/>8322</li> 
 </ol></p>
  <p><m>{H}_{1}</m>: </p>
-<p><ol style="list-style-type:upper-alpha"><li>s<ampersand/>;<hash/>8321</li> 
+<p><ol style="list-style-type:upper-alpha"><li>p<ampersand/>;<hash/>8321</li> 
+<li>s<ampersand/>;<hash/>8321</li> 
 <li>μd</li> 
 <li>x̅<ampersand/>;<hash/>8321</li> 
-<li>μ<ampersand/>;<hash/>8321</li> 
 <li>σ<ampersand/>;<hash/>8321<ampersand/>;sup2</li> 
-<li>p<ampersand/>;<hash/>8321</li> 
+<li>μ<ampersand/>;<hash/>8321</li> 
 <li>σ<ampersand/>;<hash/>8321</li> 
 </ol></p>
- <p><ol style="list-style-type:upper-alpha"><li>≠</li> 
-<li><less/><less/>/label<greater/></li> 
+ <p><ol style="list-style-type:upper-alpha"><li>≥</li> 
 <li>≤</li> 
-<li>≥</li> 
-<li>=</li> 
 <li><greater/></li> 
+<li>≠</li> 
+<li>=</li> 
+<li><less/><less/>/label<greater/></li> 
 </ol></p>
- <p><ol style="list-style-type:upper-alpha"><li>σ<ampersand/>;<hash/>8322<ampersand/>;sup2</li> 
-<li>p<ampersand/>;<hash/>8322</li> 
-<li>x̅<ampersand/>;<hash/>8322</li> 
+ <p><ol style="list-style-type:upper-alpha"><li>0</li> 
 <li>s<ampersand/>;<hash/>8322</li> 
-<li>0</li> 
+<li>p<ampersand/>;<hash/>8322</li> 
+<li>σ<ampersand/>;<hash/>8322<ampersand/>;sup2</li> 
 <li>σ<ampersand/>;<hash/>8322</li> 
+<li>x̅<ampersand/>;<hash/>8322</li> 
 <li>μ<ampersand/>;<hash/>8322</li> 
 </ol></p>
  <p>Based on the hypotheses, compute the following:</p>
 <p>Round answers to at least 4 decimal places.</p>
-<p>The test statistic is = <input type="text" style="width:13ch" name="qn1006" id="qn1006" value="" autocomplete="off" aria-label="Question 1 Part 7 of 10" class="text"/></p>
-<p>The p-value is = <input type="text" style="width:13ch" name="qn1007" id="qn1007" value="" autocomplete="off" aria-label="Question 1 Part 8 of 10" class="text"/></p>
+<p>The test statistic is = <fillin characters="10"/></p>
+<p>The p-value is = <fillin characters="10"/></p>
 <p>The decision is to </p>
 <p><ol style="list-style-type:upper-alpha"><li>Reject the null hypothesis</li> 
-<li>Fail to reject the null hypothesis</li> 
 <li>Accept the alternative hypothesis</li> 
 <li>Reject the claim</li> 
+<li>Fail to reject the null hypothesis</li> 
 </ol></p>
 .
 <p>The correct summary would be: </p>
-<p><ol style="list-style-type:upper-alpha"><li>There is not enough evidence to reject the claim</li> 
-<li>There is not enough evidence to support the claim</li> 
-<li>There is enough evidence to reject the claim</li> 
+<p><ol style="list-style-type:upper-alpha"><li>There is not enough evidence to support the claim</li> 
 <li>There is enough evidence to support the claim</li> 
+<li>There is not enough evidence to reject the claim</li> 
+<li>There is enough evidence to reject the claim</li> 
 </ol></p>
  that the variance in the number of daily customers at the Big Bang Burger Bar compared to Milliways.
 
 
 </statement>
-<solution>
-<p><ul><li>G: σ<ampersand/>;<hash/>8321<ampersand/>;sup2</li><li>F: =</li><li>B: σ<ampersand/>;<hash/>8322<ampersand/>;sup2</li><li>E: σ<ampersand/>;<hash/>8321<ampersand/>;sup2</li><li>A: ≠</li><li>A: σ<ampersand/>;<hash/>8322<ampersand/>;sup2</li><li>4.5922</li><li>0.0001</li><li>A: Reject the null hypothesis</li><li>D: There is enough evidence to support the claim</li></ul></p>
-</solution>
+<answer>
+<p><ul><li>A: σ<ampersand/>;<hash/>8321<ampersand/>;sup2</li><li>A: =</li><li>F: σ<ampersand/>;<hash/>8322<ampersand/>;sup2</li><li>E: σ<ampersand/>;<hash/>8321<ampersand/>;sup2</li><li>D: ≠</li><li>D: σ<ampersand/>;<hash/>8322<ampersand/>;sup2</li><li>3.7255</li><li>0.0011</li><li>A: Reject the null hypothesis</li><li>B: There is enough evidence to support the claim</li></ul></p>
+</answer>
+
 </myopenmath>

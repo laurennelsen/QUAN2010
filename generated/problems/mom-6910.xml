@@ -4,14 +4,15 @@
 <p>
 Determine whether the value is a parameter or statistic</p>
 <p>
-In a sample of students who passed statistics, 70<percent/> used statistics in their future careers</p>
+A sample of men reveals 60<percent/> took calculus</p>
 <p><ol style="list-style-type:upper-alpha"><li>Parameter</li> 
 <li>Statistic</li> 
 </ol></p>
 
 
 </statement>
-<solution>
+<answer>
 <p><ul><li>B: Statistic</li></ul></p>
-</solution>
+</answer>
+
 </myopenmath>
