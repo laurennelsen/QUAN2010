@@ -45,12 +45,14 @@ Let's discuss these definitions in the example below:
 </p>
 
 <exercise>
+    <statement>
     <p>
         The Excel file below contains a frequency distribution for the number of hours that a sample of students worked in a certain week.  Let's use this frequency distribution to create relative and cumulative frequency distributions.
     </p>
     <p>
         <url href="external/sheets/WorkHoursFrequency.xlsx" />
     </p>
+</statement>
     <answer>
         <p>
             <url href="external/sheets/WorkHoursFrequencySolutions.xlsx" />
@@ -279,12 +281,14 @@ Let's discuss these definitions in the example below:
     </definition>
 
 <example xml:id="ex-DellHold">
+    <statement>
     <p>
         Let's look at the Excel file below and find the number of classes, <m>k</m>, that we should use to create a frequency distribution.
     </p>
     <p>
         <url href="external/sheets/DellHoldTimes.xlsx" />
     </p>
+</statement>
     <answer>
         <p>
             <m>n=50</m>, so we want <m>k</m> so that <m>2^k\geq 50</m>.
@@ -310,6 +314,7 @@ Let's discuss these definitions in the example below:
 </p>
 
 <exercise>
+    <statement>
     <p>
     Let's look back at the file from <xref ref="ex-DellHold"/>.  
     </p>
@@ -321,7 +326,7 @@ Let's discuss these definitions in the example below:
     <p>
         We found that <m>k=6</m> is a good choice for the number of classes, and let's use that the find a good width to use for each class.
     </p>
-
+</statement>
     <answer>
         <p>
             Estimated class width:
@@ -353,6 +358,7 @@ Let's discuss these definitions in the example below:
 </exercise>
 
 <exercise>
+    <statement>
     <p>
         In <xref ref="ex-DellHoldFrequency"/> you created a frequency distribution for the data in the Dell Hold Times file.
     </p>
@@ -379,6 +385,7 @@ Let's discuss these definitions in the example below:
             </li>
         </ul>
     </p>
+</statement>
     <answer>
         <p>
             We should get the frequency distribution below when doing this.
@@ -390,6 +397,7 @@ Let's discuss these definitions in the example below:
 
 
 <exercise>
+    <statement>
     <p>
         (Donnelly 2.9)
     </p>
@@ -423,6 +431,7 @@ Let's discuss these definitions in the example below:
             </li>
         </ol>
     </p>
+    </statement>
     <answer>
         <p>
             <url href="external/sheets/ReceiptsSolutions.xlsx" />
@@ -505,6 +514,7 @@ Let's discuss these definitions in the example below:
     </definition>
 
 <exercise>
+<statement>
     <p>
         Let's look at the example below with home prices and square footage:
         <figure>
@@ -515,6 +525,7 @@ Let's discuss these definitions in the example below:
     <p>
         What is the independent variable and what is the dependent variable?
     </p>
+</statement>
     <answer>
         <p>
             The independent variable is the square footage, and the dependent variable is home price.  (The home price <em>depends</em> on the square footage.)
@@ -524,6 +535,7 @@ Let's discuss these definitions in the example below:
 
 
 <exercise>
+    <statement>
     <p>
         (Donnelly 2.58)
     </p>
@@ -533,6 +545,7 @@ Let's discuss these definitions in the example below:
     <p>
         <url href="external/sheets/FoodCosts.xlsx" />
     </p>
+</statement>
     <answer>
         <p>
             <image source="sheets/FoodCostsScatter.png">
