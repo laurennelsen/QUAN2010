@@ -22,9 +22,10 @@
     <exercise-inline statement="yes" hint="yes" answer="yes" solution="yes" />
     <exercise-divisional statement="yes" hint="yes" answer="yes" solution="yes" />
     <question statement="yes" hint="yes" answer="yes" solution="yes"/>
-    <investigation statement="yes" hint="yes" answer="no" solution="yes"/>
-    <exploration statement="yes" hint="yes" answer="no" solution="yes"/>
-    <definition statement="yes" hint="yes" answer="no" solution="yes"/>
+    <investigation statement="yes" hint="yes" answer="yes" solution="yes"/>
+    <exploration statement="yes" hint="yes" answer="yes" solution="yes"/>
+    <definition statement="yes" hint="yes" answer="yes" solution="yes"/>
+    <example statement="yes" hint="yes" answer="yes" solution="yes"/>
 
     
 

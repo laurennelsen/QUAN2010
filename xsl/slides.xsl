@@ -23,7 +23,7 @@
 
 <!-- We do the expedient thing and *hard-code* the number    -->
 <!-- of each item cross-referenced from within the solutions -->
-<!-- manual, so the cropss-refernce text matches with HTML   -->
+<!-- manual, so the cross-reference text matches with HTML   -->
 <!-- output and LaTeX output for the entire book.            -->
 <!-- Since the output LaTeX file is a subset of the content, -->
 <!-- there will not be a \label for many \ref, and worse, if -->
@@ -41,7 +41,7 @@
 
 <!-- We pull activities,etc. from each subsection -->
 <xsl:template match="subsection">
-    <xsl:apply-templates select="activity|example|exercise|investigation" />
+    <xsl:apply-templates select="activity|example|exercise|investigation|definition|question|exploration|note|figure|theorem|task" />
 </xsl:template>
 
 <!--Exercise groups are not in a subsection, so drop them -->

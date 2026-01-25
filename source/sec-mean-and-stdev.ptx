@@ -4,12 +4,17 @@
   <title>Using the Mean and Standard Deviation Together</title>
 
   <introduction>
-    </introduction>
 
 
 <p>
     There are a few important concepts that use the mean and standard deviation together to describe data sets.
 </p>
+
+</introduction>
+
+
+
+<subsection xml:id="subsec-z-score-definitions">
 
 
 
@@ -119,6 +124,9 @@
         </p>
     </answer>
 </exercise>-->
+
+
+</subsection>
 
 <subsection xml:id="subsec-empirical-rule">
     <title>The Empirical Rule</title>

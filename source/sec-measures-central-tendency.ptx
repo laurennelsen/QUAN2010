@@ -5,10 +5,12 @@
 
   <introduction>
 
-  </introduction>
-
       <p> In statistics, <q>average</q> or <q>typical</q> values are known as <em>measures of central tendency</em>. </p>
 
+
+  </introduction>
+
+  
 
   <definition xml:id="def-mean">
     <statement>
@@ -165,10 +167,6 @@
   </answer>
   </exercise>
 
-  <figure xml:id="figure-geogebra-skew">
-    <caption>Skewed Distribution, Mean, and Median (Made in GeoGebra by Casper Buisman)</caption>
-    <interactive xml:id="geogebra-skew" geogebra="Z9rKvgj6" aspect="9:5" />
-  </figure>
 
   <figure xml:id="fig-left-skew">
     <caption>Left-skewed</caption>
@@ -453,5 +451,6 @@
           </answer>
         </task>
     </exercise>
+
 
 </section>

@@ -6,11 +6,15 @@
 
 <introduction>
     
-</introduction>
 
 <p>
         Qualitative data is handled differently when displayed, but you are already familiar with many of these different types of charts.  We quickly summarize them below.
     </p>
+
+
+</introduction>
+
+<subsection xml:id="subsec-definitions">
 
 
 <definition xml:id="def-qualitative-displays">
@@ -132,6 +136,8 @@
         </p>
     </answer>
 </exercise>
+
+</subsection>
 
 
 <subsection xml:id="subsec-pivot-tables">

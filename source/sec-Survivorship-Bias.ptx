@@ -16,8 +16,9 @@
   </p>
 
 <figure>
-  <video youtube="P9WFpVsRtQg"/>  
+  <title>Survivorship Bias</title>
     <caption> Survivorship Bias YouTube video  </caption>
+  <video xml:id="survivorship-bias" youtube="P9WFpVsRtQg"/>  
 </figure>
 
 

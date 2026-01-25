@@ -44,7 +44,9 @@
 
 </introduction>
 
+
   <definition>
+    <statement>
   <p> 
    
     <ul>
@@ -74,6 +76,7 @@
     </ul>
   
   </p>
+  </statement>
 </definition>
 
 
@@ -108,8 +111,10 @@
 
   </introduction>
 
+
   <task>
-    <statement>Determine the missing probability for a 6-bedroom house.
+    <statement>
+      <p>Determine the missing probability for a 6-bedroom house.</p>
       </statement>
       <answer>
         <p>
@@ -118,7 +123,8 @@
       </answer>
     </task>
 <task> 
-  <statement>Determine the mean number of bedrooms per house.
+  <statement>
+    <p>Determine the mean number of bedrooms per house.</p>
     </statement>
     <answer>
       <p>
@@ -141,8 +147,6 @@
 
     <table>
       <title>Calculation of Standard Deviation</title>
-      
-      <caption></caption>
       <tabular>
       <row header="yes" bottom="medium">
         <cell halign="center" right="medium"><m>x</m></cell>
@@ -202,7 +206,6 @@
 
 
 
-
 </example>
 
 
@@ -234,5 +237,7 @@
       </p>
     </answer>
 </example>
+
+
 
 </section>
