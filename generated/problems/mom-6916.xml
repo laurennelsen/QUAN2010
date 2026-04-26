@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="6916">
+<statement>
+<p>
+In a study, the data you collect are Wage per hour.</p>
+<p>
+What is the level of measurement?</p>
+<p><ol style="list-style-type:upper-alpha"><li>nominal</li> 
+<li>ordinal</li> 
+<li>interval</li> 
+<li>ratio</li> 
+</ol></p>
+
+
+</statement>
+<answer>
+<p><ul><li>D: ratio</li></ul></p>
+</answer>
+
+</myopenmath>

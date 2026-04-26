@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="6910">
+<statement>
+<p>
+Determine whether the value is a parameter or statistic</p>
+<p>
+A sample of men reveals 60<percent/> took calculus</p>
+<p><ol style="list-style-type:upper-alpha"><li>Statistic</li> 
+<li>Parameter</li> 
+</ol></p>
+
+
+</statement>
+<answer>
+<p><ul><li>A: Statistic</li></ul></p>
+</answer>
+
+</myopenmath>

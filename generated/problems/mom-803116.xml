@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="803116">
+<statement>
+<p>Kendall is conducting market research on the cost of  a cell phone data plan. Kendall has determined that the average annual cost of  a cell phone data plan is <dollar/>1017, and that the distribution of costs is normally distributed with a standard deviation of <dollar/>56.
+  </p>
+<p>
+  a. Find the probability that a single randomly selected consumer spends more than <dollar/>935 on  a cell phone data plan.</p>
+<p style="padding-left: 40px;"><fillin characters="10"/></p>
+<p>b. The cost of the middle 30<percent/> of  cell phone data plans falls between (round to the nearest dollar):</p>
+<p style="padding-left: 40px;"><dollar/><fillin characters="10"/> to <dollar/><fillin characters="10"/> per year.</p>
+<p>c. The <em>most expensive </em>19<percent/> of  cell phone data plans cost at least how much annually?</p>
+<p style="padding-left: 40px;"><dollar/><fillin characters="10"/></p>
+
+</statement>
+<answer>
+<p><ul><li>0.9284</li><li>995</li><li>1039</li><li>1066</li></ul></p>
+</answer>
+<solution><p>Define the normal distribution in Desmos: <m>\displaystyle{N}=\text{normaldist}{\left({1017},{56}\right)}</m>.
+  </p>
+<p>
+  a. <m>\displaystyle{P}{\left({x}{&gt;}{935}\right)}={N}.{c}{d}{f{{\left({935},\infty\right)}}}={0.9284}</m>
+  </p>
+<p>
+  b. For the middle 30<percent/> of the data, need the remaining 70<percent/> of the data split between the left and right tails of the distribution. So the lower bound of the range has <m>\displaystyle{0.35}</m> of the area to the left and the upper bound of the range has <m>\displaystyle{0.35}</m> of the area to the right, which means <m>\displaystyle{0.65}</m> to the left. Therefore:</p>
+<p style="padding-left: 40px;">Lower bound <m>\displaystyle={N}.\text{inversecdf}{\left({0.35}\right)}={995}</m></p>
+<p style="padding-left: 40px;">Upper bound <m>\displaystyle={N}.\text{inversecdf}{\left({0.65}\right)}={1039}</m></p>
+<p>c. For the most expensive 19<percent/> of the distribution, need <m>\displaystyle{0.19}</m> of the area to the right of the data value, so need <m>\displaystyle{1}-{0.0}{.19}={0.81}</m> to the left. Therefore:</p>
+<p style="padding-left: 40px;"> <m>\displaystyle{x}={N}.\text{inversecdf}{\left({0.81}\right)}={1066}</m> </p></solution>
+</myopenmath>

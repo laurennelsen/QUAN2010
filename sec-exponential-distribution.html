@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>The Exponential Distribution</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="QUAN 2010 Notes">
+<meta property="book:author" content="Lauren M. Nelsen and Kimberly Swetz">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.13.5';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.52176322e2c1dde5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.bbf2283c5c1d4f99.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="QUAN_2010_Notes.html"><span class="title">QUAN 2010 Notes</span> <span class="subtitle">Introduction to Business Statistics</span></a></h1>
+<p class="byline">Lauren M. Nelsen and Kimberly Swetz</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="embed-button" class="embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><div class="embed-popup hidden" id="embed-popup">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<div class="embed-code-container">
+<textarea class="embed-code-textbox" id="embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button class="copy-embed-button button" id="copy-embed-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div>
+</div>
+<button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-normal-distribution.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-Continuous-Probability-Distributions.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-uniform-distribution.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Intro-to-Bus-Stats.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Business Statistics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-intro-to-stats.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Introduction to Statistics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-intro-to-stats.html#subsec-what-is-stats" class="internal"><span class="codenumber">1.1.1</span> <span class="title">What is Statistics?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-intro-to-stats.html#subsec-branches" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Branches of Statistics:</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-intro-to-stats.html#subsec-stats-definitions" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Definitions and Terms</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-TypesOfData.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Types of Data</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-TypesOfData.html#subsec-types-of-data-definitions" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Introduction to different types of data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-TypesOfData.html#subsec-levels-measurement" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Levels of Measurement</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Displaying-Data.html" class="internal"><span class="codenumber">2</span> <span class="title">Displaying Data</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-quantitative-data-displays.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Quantitative Data Displays</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-quantitative-data-displays.html#subsec-frequency-Excel" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Creating Frequency Distributions in Excel</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-quantitative-data-displays.html#subsec-Histograms-Excel" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Creating Histograms in Excel</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-quantitative-data-displays.html#subsec-grouped-quantitative-data" class="internal"><span class="codenumber">2.1.3</span> <span class="title">Grouped Quantitative Data</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-quantitative-data-displays.html#subsec-shapes-histograms" class="internal"><span class="codenumber">2.1.4</span> <span class="title">Shapes of Histograms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-quantitative-data-displays.html#subsec-Scatter-Plots" class="internal"><span class="codenumber">2.1.5</span> <span class="title">Scatter Plots</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-qualitative-data-displays.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Qualitative Data Displays</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-qualitative-data-displays.html#subsec-definitions" class="internal"><span class="codenumber">2.2.1</span> <span class="title"></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-qualitative-data-displays.html#subsec-pivot-tables" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Contingency (Pivot) Tables</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-misleading-displays.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Misleading Visual Displays of Data</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-misleading-displays.html#subsec-misleading" class="internal"><span class="codenumber">2.3.1</span> <span class="title">How can displays of data be misleading?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-misleading-displays.html#subsec-watch-for" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Things to watch for in visual displays of data</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Descriptive-Statistics.html" class="internal"><span class="codenumber">3</span> <span class="title">Descriptive Statistics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-measures-central-tendency.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Measures of Central Tendency</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-measures-variability.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Measures of Variability</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-mean-and-stdev.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Using the Mean and Standard Deviation Together</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-mean-and-stdev.html#subsec-z-score-definitions" class="internal"><span class="codenumber">3.3.1</span> <span class="title"></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-mean-and-stdev.html#subsec-empirical-rule" class="internal"><span class="codenumber">3.3.2</span> <span class="title">The Empirical Rule</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-measures-relative-position.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Measures of Relative Position</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-measures-association.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Measures of Association Between Two Variables</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Probability.html" class="internal"><span class="codenumber">4</span> <span class="title">Probability</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Intro-to-Probability.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Introduction to Probability</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-independence.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Independent and Dependent Events</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-notation.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Scientific Notation Reminder</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Discrete-Probability-Distributions.html" class="internal"><span class="codenumber">5</span> <span class="title">Discrete Probability Distributions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Random-Variables.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Random Variables</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Desc-Stats-Discrete.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Descriptive Statistics for a Discrete Probability Distribution</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Binomial-Distribution.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Binomial Distribution</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Poisson-Distribution.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Poisson Distribution</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Intro-Sampling.html" class="internal"><span class="codenumber">6</span> <span class="title">Introduction to Sampling</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Types-of-Sampling.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Types of Sampling</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Errors-in-Sampling.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Errors in Sampling</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Survivorship-Bias.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Survivorship Bias</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-Continuous-Probability-Distributions.html" class="internal"><span class="codenumber">7</span> <span class="title">Continuous Probability Distributions</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-normal-distribution.html" class="internal"><span class="codenumber">7.1</span> <span class="title">The Normal Distribution</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-normal-distribution.html#subsection-intro-to-the-normal-distn" class="internal"><span class="codenumber">7.1.1</span> <span class="title">Introduction to the Normal Probability Distribution:</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-normal-distribution.html#subsection-characteristics-of-normal-distn" class="internal"><span class="codenumber">7.1.2</span> <span class="title">Characteristics of the Normal Probability Distribution:</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-normal-distribution.html#subsection-examples-of-normal-distn" class="internal"><span class="codenumber">7.1.3</span> <span class="title">Examples of Normal Probability Distributions:</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-normal-distribution.html#subsection-standard-normal-distn" class="internal"><span class="codenumber">7.1.4</span> <span class="title">The Standard Normal Distribution:</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-normal-distribution.html#subsection-calculating-probabilities-normal" class="internal"><span class="codenumber">7.1.5</span> <span class="title">Calculating Probabilities for Normal Distributions:</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-normal-distribution.html#subsection-normal-distn-Excel" class="internal"><span class="codenumber">7.1.6</span> <span class="title">Calculating Normal Distribution Values in Excel:</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-normal-distribution.html#subsection-normal-inv" class="internal"><span class="codenumber">7.1.7</span> <span class="title">Finding <span class="process-math">\(Z\)</span> or <span class="process-math">\(X\)</span> if we have information about a probability:</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-exponential-distribution.html" class="internal"><span class="codenumber">7.2</span> <span class="title">The Exponential Distribution</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exponential-distribution.html#subsection-intro-to-expon-dist" class="internal"><span class="codenumber">7.2.1</span> <span class="title">Introduction to the Exponential Distributions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exponential-distribution.html#subsection-differences-between-expon-and-normal" class="internal"><span class="codenumber">7.2.2</span> <span class="title">Differences between the Exponential and Normal Distributions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-exponential-distribution.html#subsection-computing-expon-probabilities" class="internal"><span class="codenumber">7.2.3</span> <span class="title">Computing Probabilities for the Exponential Distributions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-uniform-distribution.html" class="internal"><span class="codenumber">7.3</span> <span class="title">The Uniform Distribution</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Sampling-Distributions.html" class="internal"><span class="codenumber">8</span> <span class="title">Sampling Distributions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Sampling-Distribution-of-Mean.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Sampling Distribution of the Mean</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="sec-Sampling-Distribution-of-Mean.html#sec-Sampling-Distribution-of-Mean-3" class="internal"><span class="codenumber">8.1</span> <span class="title">Preview Activity:  Sampling Distributions drawing from a Normal Population</span></a></div></li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="sec-Sampling-Distribution-of-Mean.html#sec-Sampling-Distribution-of-Mean-4" class="internal"><span class="codenumber">8.1</span> <span class="title">Preview Activity:  Sampling Distributions drawing from a Population that is NOT Normal</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Central-Limit-Theorem.html" class="internal"><span class="codenumber">8.2</span> <span class="title">The Central Limit Theorem</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Sampling-Distribution-Proportion.html" class="internal"><span class="codenumber">8.3</span> <span class="title">The Sampling Distribution of the Proportion</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-handout"><div class="toc-title-box"><a href="sec-Sampling-Distribution-Proportion.html#sec-Sampling-Distribution-Proportion-3" class="internal"><span class="codenumber">8.3</span> <span class="title">Preview Activity:  Sampling Distribution of the Proportion</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Confidence-Intervals.html" class="internal"><span class="codenumber">9</span> <span class="title">Confidence Intervals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-point-estimates.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Point Estimates</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Confidence-Interval-for-Mean-Sigma-Known.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Confidence Intervals for the Mean (<span class="process-math">\(\sigma\)</span> known)</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Interpreting-Confidence-Interval.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Interpreting Confidence Intervals</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Confidence-Interval-for-Mean-Sigma-Unknown.html" class="internal"><span class="codenumber">9.4</span> <span class="title">Confidence Intervals for the Mean (<span class="process-math">\(\sigma\)</span> unknown)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-Confidence-Interval-for-Mean-Sigma-Unknown.html#subsec-Students-t" class="internal"><span class="codenumber">9.4.1</span> <span class="title">The Student’s <span class="process-math">\(t\)</span>-Distribution</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-Confidence-Interval-for-Mean-Sigma-Unknown.html#subsec-Confidence-Interval-Sigma-Unknown" class="internal"><span class="codenumber">9.4.2</span> <span class="title">Confidence Interval When <span class="process-math">\(\sigma\)</span> is Unknown</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-handout"><div class="toc-title-box"><a href="sec-Confidence-Interval-for-Mean-Sigma-Unknown.html#worksheet-paid-vacation" class="internal"><span class="codenumber">9.4.2</span> <span class="title">Paid Vacation Days Activity</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Confidence-Interval-for-Proportion.html" class="internal"><span class="codenumber">9.5</span> <span class="title">Confidence Intervals for Proportions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Determining-Sample-Size.html" class="internal"><span class="codenumber">9.6</span> <span class="title">Determining Sample Size</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Hypothesis-Testing-Single-Pop.html" class="internal"><span class="codenumber">10</span> <span class="title">Hypothesis Testing for a Single Population</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Hypothesis-Intro.html" class="internal"><span class="codenumber">10.1</span> <span class="title">Introduction to Hypothesis Testing</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-nuts-bolts-hyp-testing.html" class="internal"><span class="codenumber">10.2</span> <span class="title">The Nuts and Bolts of Hypothesis Testing</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-nuts-bolts-hyp-testing.html#subsec-hyp-test-intro" class="internal"><span class="codenumber">10.2.1</span> <span class="title"></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-nuts-bolts-hyp-testing.html#subsec-logic-hyp-testing" class="internal"><span class="codenumber">10.2.2</span> <span class="title">The Logic of Hypothesis Testing</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-nuts-bolts-hyp-testing.html#subsec-approaches-hyp-testing" class="internal"><span class="codenumber">10.2.3</span> <span class="title">Two approaches to Hypothesis Testing</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-types-of-errors.html" class="internal"><span class="codenumber">10.3</span> <span class="title">Type I and Type II Errors</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hyp-testing-mean-sigma-unknown.html" class="internal"><span class="codenumber">10.4</span> <span class="title">Hypothesis Testing for <span class="process-math">\(\mu\)</span> When <span class="process-math">\(\sigma\)</span> is Unknown</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hyp-testing-proportion.html" class="internal"><span class="codenumber">10.5</span> <span class="title">Hypothesis Testing for the Population Proportion</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-hypothesis-practice.html" class="internal"><span class="codenumber">10.6</span> <span class="title">Test statistic Practice</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Hypothesis-Variance.html" class="internal"><span class="codenumber">11</span> <span class="title">Hypothesis Tests for the Population Variance</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-chi-squared.html" class="internal"><span class="codenumber">11.1</span> <span class="title">The Chi-square Distribution</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-hyp-test-single-variance.html" class="internal"><span class="codenumber">11.2</span> <span class="title">Hypothesis Test for a Single <span class="process-math">\(\sigma^2\)</span></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-hyp-test-single-variance.html#sec-hyp-test-single-variance-7" class="internal"><span class="codenumber">11.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-F-dist.html" class="internal"><span class="codenumber">11.3</span> <span class="title">The <span class="process-math">\(F\)</span>-Distribution</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-hyp-test-two-variances.html" class="internal"><span class="codenumber">11.4</span> <span class="title">Comparing Variances from Two Populations</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-hyp-test-two-variances.html#sec-hyp-test-two-variances-6" class="internal"><span class="codenumber">11.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-more-hypothesis-practice.html" class="internal"><span class="codenumber">11.5</span> <span class="title">More Test Statistic Practice</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Hypothesis-Testing-Two-Populations.html" class="internal"><span class="codenumber">12</span> <span class="title">Hypothesis Tests Comparing Two Populations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Overview.html" class="internal"><span class="codenumber">12.1</span> <span class="title">Overview</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-two-means-independent.html" class="internal"><span class="codenumber">12.2</span> <span class="title">Comparing Two Means with Independent Samples</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-two-means-dependent.html" class="internal"><span class="codenumber">12.3</span> <span class="title">Two Dependent Samples</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-two-proportions-indep-samples.html" class="internal"><span class="codenumber">12.4</span> <span class="title">Two Proportions with Independent Samples</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-Intro-to-Regression-Modeling.html" class="internal"><span class="codenumber">13</span> <span class="title">Introduction to Regression Modeling</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-correlation.html" class="internal"><span class="codenumber">13.1</span> <span class="title">Correlation Analysis</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-developing-regression-model.html" class="internal"><span class="codenumber">13.2</span> <span class="title">Developing a Regression Model</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-using-regression.html" class="internal"><span class="codenumber">13.3</span> <span class="title">Using Regression to Make a Prediction</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-Diamonds.html" class="internal"><span class="codenumber">13.4</span> <span class="title">Diamonds Modeling</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-exponential-distribution"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Exponential Distribution</span>
+</h2>
+<section class="introduction" id="sec-exponential-distribution-2"></section><section class="subsection" id="subsection-intro-to-expon-dist"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.2.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Introduction to the Exponential Distributions</span>
+</h3>
+<div class="para" id="subsection-intro-to-expon-dist-2">
+<article class="definition definition-like" id="subsection-intro-to-expon-dist-2-1"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.2.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsection-intro-to-expon-dist-2-1-1">The exponential probability distribution is a continuous distribution commonly used in business to measure the time between customer arrivals or the time between failures in a business process<div class="autopermalink" data-description="Paragraph"><a href="#subsection-intro-to-expon-dist-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsection-intro-to-expon-dist-2-1-2">
+<div class="para">The mathematical expression that describes the shape of the curve for the exponential probability distribution is called the exponential probability density function:</div>
+<div class="displaymath process-math" id="subsection-intro-to-expon-dist-2-1-2-1">
+\begin{equation*}
+f(x)=\lambda e^{-\lambda x}\text{, where }\lambda=\text{the mean number of occurrences over an interval}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsection-intro-to-expon-dist-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-intro-to-expon-dist-2-1-3">Recall the we saw <span class="process-math">\(\lambda\)</span> in a previous chapter when the discrete Poisson distribution was introduced.  It is not a coincidence that we are using <span class="process-math">\(\lambda\)</span> in both of these distributions.  A <em class="emphasis">discrete</em> random variable that follows a Poisson distribution with a mean equal to <span class="process-math">\(\lambda\)</span> has a counterpart <em class="emphasis">continuous</em> random variable that follows the exponential distribution with a mean equal to <span class="process-math">\(\mu=\frac{1}{\lambda}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-intro-to-expon-dist-2-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-intro-to-expon-dist-2-1-4">It is easy to confuse the two -- try to remember that <span class="process-math">\(\lambda\)</span> is a countable (discrete) rate while <span class="process-math">\(\mu\)</span> is a measurable (continuous) interval.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-intro-to-expon-dist-2-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-intro-to-expon-dist-2-1-5">A small bit of good news:  the standard deviation for an exponential distribution is equal to its mean.  That is, <span class="process-math">\(\sigma=\mu=\frac{1}{\lambda}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-intro-to-expon-dist-2-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 7.2.1"><a href="#subsection-intro-to-expon-dist-2-1" title="Copy heading and permalink for Definition 7.2.1" aria-label="Copy heading and permalink for Definition 7.2.1">🔗</a></div></article> <div class="para" id="subsection-intro-to-expon-dist-2-2">The only parameter in the formula is <span class="process-math">\(\lambda\text{.}\)</span>  Let’s look at how it impacts the shape of the distribution. <figure class="figure figure-like" id="subsection-intro-to-expon-dist-2-2-2"><div class="interactive-iframe-container"><iframe src="https://www.desmos.com/calculator/kq2tps7jbe" id="desmos-expon" style="width:600px; height:450px; display: block; "></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.2.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Exponential Distribution powered by Desmos<div class="autopermalink" data-description="Figure 7.2.2"><a href="#subsection-intro-to-expon-dist-2-2-2" title="Copy heading and permalink for Figure 7.2.2" aria-label="Copy heading and permalink for Figure 7.2.2">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Paragraph"><a href="#subsection-intro-to-expon-dist-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsection-intro-to-expon-dist-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 7.2.1: Introduction to the Exponential Distributions"><a href="#subsection-intro-to-expon-dist" title="Copy heading and permalink for Subsection 7.2.1: Introduction to the Exponential Distributions" aria-label="Copy heading and permalink for Subsection 7.2.1: Introduction to the Exponential Distributions">🔗</a></div></section><section class="subsection" id="subsection-differences-between-expon-and-normal"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.2.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Differences between the Exponential and Normal Distributions</span>
+</h3>
+<div class="para logical" id="subsection-differences-between-expon-and-normal-2">
+<ol class="decimal" id="subsection-differences-between-expon-and-normal-2-1">
+<li id="subsection-differences-between-expon-and-normal-2-1-1">
+<div class="para" id="subsection-differences-between-expon-and-normal-2-1-1-1">The shape of the exponential distribution is right-skewed while the shape of the normal distribution is bell-shaped and symmetric.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-differences-between-expon-and-normal-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#subsection-differences-between-expon-and-normal-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="subsection-differences-between-expon-and-normal-2-1-2">
+<div class="para" id="subsection-differences-between-expon-and-normal-2-1-2-1">The shape of the exponential distribution is controlled by only one parameter, <span class="process-math">\(\mu\text{,}\)</span> while the shape of the normal distribution requires two parameters, <span class="process-math">\(\mu\)</span> and <span class="process-math">\(\sigma\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-differences-between-expon-and-normal-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#subsection-differences-between-expon-and-normal-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="subsection-differences-between-expon-and-normal-2-1-3">
+<div class="para" id="subsection-differences-between-expon-and-normal-2-1-3-1">The values of an exponential distribution are always positive; they can never be negative.  Values of the normal distribution can be both positive and negative.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-differences-between-expon-and-normal-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#subsection-differences-between-expon-and-normal-2-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsection-differences-between-expon-and-normal-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 7.2.2: Differences between the Exponential and Normal Distributions"><a href="#subsection-differences-between-expon-and-normal" title="Copy heading and permalink for Subsection 7.2.2: Differences between the Exponential and Normal Distributions" aria-label="Copy heading and permalink for Subsection 7.2.2: Differences between the Exponential and Normal Distributions">🔗</a></div></section><section class="subsection" id="subsection-computing-expon-probabilities"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.2.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Computing Probabilities for the Exponential Distributions</span>
+</h3>
+<div class="para logical" id="subsection-computing-expon-probabilities-2">
+<div class="para">There is no table for helping us calculate probabilities associated with an exponential distribution.  So we will rely on a formula and Excel to help with these calculations.  The formula for calculating the probability that a random variable is less than a specified value is:</div>
+<div class="displaymath process-math" id="subsection-computing-expon-probabilities-2-1">
+\begin{equation*}
+P(x\leq a)=1-e^{-a\lambda}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(\lambda=\text{the mean number of occurrences over an interval}\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsection-computing-expon-probabilities-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsection-computing-expon-probabilities-3">
+<div class="para">The Excel formula for calculating probabilities for the exponential distribution is</div>
+<div class="displaymath process-math" id="subsection-computing-expon-probabilities-3-1">
+\begin{equation*}
+EXPON.DIST(x,\lambda,\text{cumulative}),
+\end{equation*}
+</div>
+<div class="para">where cumulative=TRUE (if you want cumulative probability) or FALSE (if you do not want cumulative probability).</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsection-computing-expon-probabilities-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="subsection-computing-expon-probabilities-4" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Exercise</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.2.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="introduction" id="subsection-computing-expon-probabilities-4-1">
+<div class="para" id="subsection-computing-expon-probabilities-4-1-1">(Donnelly 6.21,22)<div class="autopermalink" data-description="Paragraph"><a href="#subsection-computing-expon-probabilities-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-computing-expon-probabilities-4-1-2">An exponential probability distribution has a mean equal to 5 minutes per customer.  Calculate the following probabilities for the distribution.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-computing-expon-probabilities-4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="subsection-computing-expon-probabilities-4-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<span class="process-math">\(P(X\leq 10)\)</span><details id="subsection-computing-expon-probabilities-4-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="subsection-computing-expon-probabilities-4-2-2-1">
+<span class="process-math">\(\mu=\frac{5\text{ min}}{1\text{ customer}}\Rightarrow \lambda=\frac{1\text{ customer}}{5\text{ min}}=0.2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-computing-expon-probabilities-4-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-computing-expon-probabilities-4-2-2-2">
+<span class="process-math">\(1-e^{-10(.2)}\approx 0.8647\)</span> OR <span class="process-math">\(EXPON.DIST(10,0.2,1)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-computing-expon-probabilities-4-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 7.2.3.a.1"><a href="#subsection-computing-expon-probabilities-4-2-2" title="Copy heading and permalink for Answer 7.2.3.a.1" aria-label="Copy heading and permalink for Answer 7.2.3.a.1">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Task 7.2.3.a"><a href="#subsection-computing-expon-probabilities-4-2" title="Copy heading and permalink for Task 7.2.3.a" aria-label="Copy heading and permalink for Task 7.2.3.a">🔗</a></div></article><article class="task exercise-like" id="subsection-computing-expon-probabilities-4-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="subsection-computing-expon-probabilities-4-3-1-1">
+<span class="process-math">\(P(X\gt 12)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-computing-expon-probabilities-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="subsection-computing-expon-probabilities-4-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="subsection-computing-expon-probabilities-4-3-2-1">
+<span class="process-math">\(1-P(X\lt 12)=1-EXPON.DIST(12,.2,1)\approx 0.0907\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-computing-expon-probabilities-4-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 7.2.3.b.1"><a href="#subsection-computing-expon-probabilities-4-3-2" title="Copy heading and permalink for Answer 7.2.3.b.1" aria-label="Copy heading and permalink for Answer 7.2.3.b.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 7.2.3.b"><a href="#subsection-computing-expon-probabilities-4-3" title="Copy heading and permalink for Task 7.2.3.b" aria-label="Copy heading and permalink for Task 7.2.3.b">🔗</a></div></article><article class="task exercise-like" id="subsection-computing-expon-probabilities-4-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="subsection-computing-expon-probabilities-4-4-1-1">
+<span class="process-math">\(P(1\leq X\leq 5)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-computing-expon-probabilities-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="subsection-computing-expon-probabilities-4-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para" id="subsection-computing-expon-probabilities-4-4-2-1">
+<span class="process-math">\(P(X\leq 5)-P(X\leq 1)\)</span> <span class="process-math">\(=EXPON.DIST(5,.2,1)-EXPON.DIST(1,.2,1)\)</span> <span class="process-math">\(\approx 0.4509\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-computing-expon-probabilities-4-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 7.2.3.c.1"><a href="#subsection-computing-expon-probabilities-4-4-2" title="Copy heading and permalink for Answer 7.2.3.c.1" aria-label="Copy heading and permalink for Answer 7.2.3.c.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Task 7.2.3.c"><a href="#subsection-computing-expon-probabilities-4-4" title="Copy heading and permalink for Task 7.2.3.c" aria-label="Copy heading and permalink for Task 7.2.3.c">🔗</a></div></article><div class="autopermalink" data-description="Exercise 7.2.3"><a href="#subsection-computing-expon-probabilities-4" title="Copy heading and permalink for Exercise 7.2.3" aria-label="Copy heading and permalink for Exercise 7.2.3">🔗</a></div></article></details><details id="subsection-computing-expon-probabilities-5" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Exercise</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.2.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone fillintheblank_section"><div data-component="fillintheblank" data-question_label="">
+<div class="para" id="subsection-computing-expon-probabilities-5-1-1">An exponential probability distribution has lambda equal to <span class="process-math">\(18\)</span> customers per hour.  Find the probability that the next customer will arrive within the next minute.  (Round your answer to 4 decimal places.)  <input type="text" placeholder="Number"><div class="autopermalink" data-description="Paragraph"><a href="#subsection-computing-expon-probabilities-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<script type="application/json">[[{"number": [0.2591,0.2593], "feedback": "<div class=\"para\" id=\"subsection-computing-expon-probabilities-5-2-1-1-1-1\">Any value in the interval <span class=\"process-math\">\\(0.2592\\pm 0.0001\\)<\/span> is marked as correct for this problem.<\/div>"}, {"regex": "^\\s*.*\\s*$", "regexFlags": "", "feedback": "<div class=\"para\" id=\"subsection-computing-expon-probabilities-5-2-1-2-1-1\">Incorrect. Did you round to four decimal places?<\/div><div class=\"para\" id=\"subsection-computing-expon-probabilities-5-2-1-2-1-2\">(Here <span class=\"process-math\">\\(\\lambda=\\frac{18\\text{ customers}}{1\\text{ hour}}\\cdot\\frac{1\\text{ hour}}{60\\text{ min}}=0.3\\text{ customers per minute}.\\)<\/span>)<\/div>"}]]</script>
+</div></div></div>
+<div class="autopermalink" data-description="Exercise 7.2.4"><a href="#subsection-computing-expon-probabilities-5" title="Copy heading and permalink for Exercise 7.2.4" aria-label="Copy heading and permalink for Exercise 7.2.4">🔗</a></div></article></details><details id="subsection-computing-expon-probabilities-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Exercise</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.2.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone fillintheblank_section"><div data-component="fillintheblank" data-question_label="">
+<div class="para" id="subsection-computing-expon-probabilities-6-1-1">An exponential probability distribution has lambda equal to <span class="process-math">\(18\)</span> customers per hour.  Find the probability that the next customer will arrive within the next 15 minutes.  (Round your answer to 4 decimal places.)  <input type="text" placeholder="Number"><div class="autopermalink" data-description="Paragraph"><a href="#subsection-computing-expon-probabilities-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<script type="application/json">[[{"number": [0.9888,0.989], "feedback": "<div class=\"para\" id=\"subsection-computing-expon-probabilities-6-2-1-1-1-1\">Any value in the interval <span class=\"process-math\">\\(0.9889\\pm 0.0001\\)<\/span> is marked as correct for this problem.<\/div>"}, {"regex": "^\\s*.*\\s*$", "regexFlags": "", "feedback": "<div class=\"para\" id=\"subsection-computing-expon-probabilities-6-2-1-2-1-1\">Incorrect. Did you round to four decimal places?<\/div><div class=\"para\" id=\"subsection-computing-expon-probabilities-6-2-1-2-1-2\">(Here <span class=\"process-math\">\\(\\lambda=\\frac{18\\text{ customers}}{1\\text{ hour}}\\cdot\\frac{1\\text{ hour}}{60\\text{ min}}=0.3\\text{ customers per minute}.\\)<\/span>)<\/div>"}]]</script>
+</div></div></div>
+<div class="autopermalink" data-description="Exercise 7.2.5"><a href="#subsection-computing-expon-probabilities-6" title="Copy heading and permalink for Exercise 7.2.5" aria-label="Copy heading and permalink for Exercise 7.2.5">🔗</a></div></article></details><details id="subsection-computing-expon-probabilities-7" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Exercise</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.2.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone fillintheblank_section"><div data-component="fillintheblank" data-question_label="">
+<div class="para" id="subsection-computing-expon-probabilities-7-1-1">An exponential probability distribution has lambda equal to <span class="process-math">\(18\)</span> customers per hour.  Find the probability that the next customer will arrive within the next 2 to 5 minutes.  (Round your answer to 4 decimal places.)  <input type="text" placeholder="Number"><div class="autopermalink" data-description="Paragraph"><a href="#subsection-computing-expon-probabilities-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<script type="application/json">[[{"number": [0.3256,0.3258], "feedback": "<div class=\"para\" id=\"subsection-computing-expon-probabilities-7-2-1-1-1-1\">Any value in the interval <span class=\"process-math\">\\(0.3257\\pm 0.0001\\)<\/span> is marked as correct for this problem.<\/div>"}, {"regex": "^\\s*.*\\s*$", "regexFlags": "", "feedback": "<div class=\"para\" id=\"subsection-computing-expon-probabilities-7-2-1-2-1-1\">Incorrect. Did you round to four decimal places?<\/div><div class=\"para\" id=\"subsection-computing-expon-probabilities-7-2-1-2-1-2\">(Here <span class=\"process-math\">\\(\\lambda=\\frac{18\\text{ customers}}{1\\text{ hour}}\\cdot\\frac{1\\text{ hour}}{60\\text{ min}}=0.3\\text{ customers per minute}.\\)<\/span>)<\/div>"}]]</script>
+</div></div></div>
+<div class="autopermalink" data-description="Exercise 7.2.6"><a href="#subsection-computing-expon-probabilities-7" title="Copy heading and permalink for Exercise 7.2.6" aria-label="Copy heading and permalink for Exercise 7.2.6">🔗</a></div></article></details><details id="subsection-computing-expon-probabilities-8" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
+<span class="type">Exercise</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.2.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4></summary><article class="exercise exercise-like knowl__content"><div class="ptx-runestone-container"><div class="runestone fillintheblank_section"><div data-component="fillintheblank" data-question_label="">
+<div class="para" id="subsection-computing-expon-probabilities-8-1-1">An exponential probability distribution has lambda equal to <span class="process-math">\(18\)</span> customers per hour.  Find the probability that the next customer will arrive within the next 45 <em class="emphasis">seconds</em>.  (Round your answer to 4 decimal places.)  <input type="text" placeholder="Number"><div class="autopermalink" data-description="Paragraph"><a href="#subsection-computing-expon-probabilities-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<script type="application/json">[[{"number": [0.2014,0.2016], "feedback": "<div class=\"para\" id=\"subsection-computing-expon-probabilities-8-2-1-1-1-1\">Any value in the interval <span class=\"process-math\">\\(0.2015\\pm 0.0001\\)<\/span> is marked as correct for this problem.<\/div>"}, {"regex": "^\\s*.*\\s*$", "regexFlags": "", "feedback": "<div class=\"para\" id=\"subsection-computing-expon-probabilities-8-2-1-2-1-1\">Incorrect. Did you round to four decimal places?<\/div><div class=\"para\" id=\"subsection-computing-expon-probabilities-8-2-1-2-1-2\">(Here <span class=\"process-math\">\\(\\lambda=\\frac{0.3\\text{ customers}}{1\\text{ minute}}\\cdot\\frac{1\\text{ minute}}{60\\text{ seconds}}=0.005\\text{ customers per second}.\\)<\/span>)<\/div>"}]]</script>
+</div></div></div>
+<div class="autopermalink" data-description="Exercise 7.2.7"><a href="#subsection-computing-expon-probabilities-8" title="Copy heading and permalink for Exercise 7.2.7" aria-label="Copy heading and permalink for Exercise 7.2.7">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 7.2.3: Computing Probabilities for the Exponential Distributions"><a href="#subsection-computing-expon-probabilities" title="Copy heading and permalink for Subsection 7.2.3: Computing Probabilities for the Exponential Distributions" aria-label="Copy heading and permalink for Subsection 7.2.3: Computing Probabilities for the Exponential Distributions">🔗</a></div></section><div class="autopermalink" data-description="Section 7.2: The Exponential Distribution"><a href="#sec-exponential-distribution" title="Copy heading and permalink for Section 7.2: The Exponential Distribution" aria-label="Copy heading and permalink for Section 7.2: The Exponential Distribution">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec-normal-distribution.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-uniform-distribution.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
