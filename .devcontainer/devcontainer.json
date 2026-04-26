@@ -1,4 +1,4 @@
-// This file was automatically generated with PreTeXt 2.19.1.
+// This file was automatically generated with PreTeXt 2.38.3.
 // If you modify this file, PreTeXt will no longer automatically update it.
 //
 //////////////////////////////////////////////////////////////
@@ -13,10 +13,11 @@
 //
 ///////////////////////////////////////////////////////////////
 {
-  "image": "pretextbook/pretext-full:1.6", // uses latest image from https://hub.docker.com/r/PreTeXtBook/pretext-full/tags
+  "image": "pretextbook/pretext-full:1.10", // uses latest image from https://hub.docker.com/r/PreTeXtBook/pretext-full/tags
   // If you don't need sagemath, you can use a smaller base image.  Comment out the line above and uncomment the line below to use a smaller image.
-  // "image": "pretextbook/pretext:1.6",
+  // "image": "pretextbook/pretext:1.10",
   "features": {"ghcr.io/devcontainers/features/github-cli": {}},
+
   // The pretext-full image above includes pretext, prefigure, and enough parts of latex and sagemath for most cases.  Here we install additional dependencies.
   "postCreateCommand": {
     "install pandoc": "bash ./.devcontainer/installPandoc.sh",
@@ -55,19 +56,20 @@
     }
   },
 
-  
+
   // Configure tool-specific properties.
   "customizations": {
     "codespaces": {
-      "openFiles": ["source/main.ptx"]
+      "openFiles": ["README.md"]
     },
     "vscode": {
       "settings": {
         "editor.quickSuggestions": {
           "other": "off"
         },
-        "files.autoSave": "onFocusChange",
+        "editor.suggest.showProperties": false,
         "editor.snippetSuggestions": "bottom",
+        "files.autoSave": "afterDelay",
         "xml.validation.enabled": true,
         "redhat.telemetry.enabled": false,
         "CodeChat.CodeChatServer.Command": "CodeChat_Server"
@@ -76,7 +78,8 @@
         "oscarlevin.pretext-tools",
         "CodeChat.codechat",
         "streetsidesoftware.code-spell-checker",
-        "alpinebuster.vscode-latex-table-editor"
+        "alpinebuster.vscode-latex-table-editor",
+        "mathematic.vscode-pdf"
       ]
     }
   }
